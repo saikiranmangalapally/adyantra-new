@@ -1,0 +1,1086 @@
+ADYANTRA
+Website Copy — All Pages
+Complete Content for All 8 Pages — All Sections
+────────────────────────────────────────────────────────────────────────────────
+Pages Included
+01 — Homepage
+02 — AI &amp; Automation
+03 — Web &amp; Software Development
+04 — Mobile App Development
+05 — E-commerce Solutions
+06 — UI/UX &amp; Product Design
+07 — Digital Marketing &amp; Growth
+08 — Branding &amp; Creative Services
+────────────────────────────────────────────────────────────────────────────────
+Note: Replace [Placeholder] items with real client names, data, and testimonials.
+Content Style Reference: Emblix Solutions (emblixsolutions.com)
+Prepared for: Adyantra Digital Agency, Hyderabad | 10 August 2026
+PAGE 1 — HOMEPAGE
+⬛ HERO SECTION
+HEADLINE (H1)
+We Design. Build. Grow. Automate.
+SUBHEADLINE (H2)
+Adyantra is Hyderabad&apos;s full-stack digital transformation agency — combining AI-powered automation, performance marketing, scalable web products, and brand-defining creative to accelerate businesses of every size.
+SUPPORTING COPY
+From strategy to execution, we bring together every capability your business needs under one roof. 9+ years. 500+ projects. One agency that sees the whole picture.
+CTA BUTTONS
+Primary: &quot;Start Your Project&quot;
+Secondary: &quot;Get Free Strategy Call&quot;
+STATS BAR
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">9+
+Years of Experience
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">500+
+Projects Delivered
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">12+
+Service Categories
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">₹25Cr+
+Ad Spend Managed
+⬛ PRIMARY SERVICE SPOTLIGHT — AI &amp; AUTOMATION
+Section Eyebrow
+Our Primary Focus
+Section Headline
+The Future of Business is Automated
+Section Copy
+AI is no longer a luxury for large enterprises. Adyantra builds AI agents, chatbots, and automation systems that eliminate repetitive work, respond to customers 24/7, qualify leads automatically, and run entire business workflows — so your team focuses only on what humans do best.
+→ 
+AI Chatbots &amp; Agents
+ — deployed in days, not months
+→ 
+WhatsApp AI
+ — meet your customers where they already are
+→ 
+Marketing &amp; Sales Automation
+ — nurture leads to close without lifting a finger
+→ 
+Generative AI
+ — content, copy, and creative at 10x speed
+CTA: &quot;Explore AI &amp; Automation →&quot;
+⬛ SERVICE CATEGORIES (HOMEPAGE GRID)
+Section Eyebrow
+Everything You Need to Grow Digitally
+Section Headline
+One Agency. Seven Capabilities. Infinite Potential.
+Click any capability to explore it in depth.
+01 — Web &amp; Software Development
+Custom websites, web apps, SaaS platforms, and internal tools built to scale. From a startup&apos;s first product to an enterprise&apos;s legacy replacement.
+CTA: &quot;Explore Web Dev →&quot;
+02 — Mobile App Development
+iOS, Android, Flutter, and React Native apps engineered for performance, user retention, and growth. From MVP to enterprise-grade mobile products.
+CTA: &quot;Explore Mobile Apps →&quot;
+03 — E-commerce Solutions
+Shopify, WooCommerce, headless commerce, Amazon, and Flipkart — we build stores and manage the ads that drive revenue. 9 years of marketplace expertise.
+CTA: &quot;Explore E-commerce →&quot;
+04 — UI/UX &amp; Product Design
+Research-driven design that converts. From wireframes to full design systems — every screen crafted to reduce friction and increase engagement.
+CTA: &quot;Explore Design →&quot;
+05 — Digital Marketing &amp; Growth
+Google Ads, Meta Ads, SEO, lead generation, and marketing automation — run by specialists with 9+ years of campaign management and ₹25Cr+ in managed spend.
+CTA: &quot;Explore Marketing →&quot;
+06 — Branding &amp; Creative Services
+Brand strategy, visual identity, video, social media, and creative campaigns. Built to make your brand unforgettable across every channel.
+CTA: &quot;Explore Branding →&quot;
+⬛ HOW WE WORK — HOMEPAGE PROCESS
+Section Eyebrow
+Our Approach
+Section Headline
+One Integrated Process from Idea to Impact
+1. 
+Discover — We audit your digital presence, market position, competitors, and growth opportunities
+2. 
+Design — Strategy, UX, and creative direction aligned to your audience and business goals
+3. 
+Build — Development, automation, and campaign setup — executed with precision
+4. 
+Launch — Zero-downtime go-live with monitoring, tracking, and quality sign-off
+5. 
+Grow — Ongoing optimization, performance marketing, and iterative improvement
+6. 
+Automate — AI and automation layered onto proven processes to scale without headcount
+⬛ INDUSTRIES — HOMEPAGE
+Section Headline
+Trusted by Businesses Across Every Sector
+Healthcare | Education | Real Estate | E-commerce | IT &amp; SaaS | NGOs | Retail | Manufacturing | Finance | Hospitality | Professional Services | Startups
+⬛ TESTIMONIALS — HOMEPAGE (Placeholder)
+Section Eyebrow
+What Our Clients Say
+Section Headline
+Real Results. Real Businesses.
+Testimonial 1 — [Placeholder]
+&quot;Adyantra transformed our entire digital presence in under 3 months. The Google Ads team reduced our cost per lead by 60% while doubling our lead volume. The ROI speaks for itself.&quot;
+— [Client Name], [Designation], [Company], Hyderabad
+Testimonial 2 — [Placeholder]
+&quot;We&apos;d worked with three agencies before Adyantra. None of them understood our NGO&apos;s goals the way this team did. Our Google Ad Grants campaign now brings in 10,000+ monthly visitors.&quot;
+— [Client Name], [Designation], [NGO Name], Hyderabad
+Testimonial 3 — [Placeholder]
+&quot;The AI WhatsApp chatbot they built for us handles 80% of customer queries without any human involvement. Our support team now focuses only on complex cases. Game-changing.&quot;
+— [Client Name], [Designation], [Company], Hyderabad
+⬛ FAQ — HOMEPAGE
+Q: What does Adyantra do?
+A: Adyantra is a full-service digital transformation agency based in Hyderabad. We offer AI &amp; Automation, Web &amp; Software Development, Mobile App Development, E-commerce Solutions, UI/UX Design, Digital Marketing &amp; Growth, and Branding &amp; Creative Services — all under one roof.
+Q: How long has Adyantra been in operation?
+A: Adyantra has been delivering digital services for 9+ years, working with 500+ clients across corporate, startup, and NGO sectors in Hyderabad, India, and internationally.
+Q: Do you work with NGOs and social-impact organisations?
+A: Yes. We have deep expertise in NGO digital campaigns, including Google Ad Grants management, awareness campaigns, and donor acquisition — alongside our corporate client work.
+Q: Which industries do you serve?
+A: We work across Healthcare, Education, Real Estate, E-commerce, IT &amp; SaaS, NGOs, Retail, Manufacturing, Finance, Hospitality, and Professional Services. Each engagement is led by industry-aware specialists.
+Q: How do I get started with Adyantra?
+A: Book a free strategy call or fill out our project brief on the Contact page. We&apos;ll respond within 24 hours with an initial assessment and next steps.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Ready to Transform Your Business Digitally?
+Book a free 30-minute strategy call. We&apos;ll audit your current digital presence and map out a clear growth roadmap — no obligation, no sales pressure.
+[ BOOK FREE STRATEGY CALL ]
+────────────────────────────────────────────────────────────────────────────────
+PAGE 2 — AI &amp; AUTOMATION (/ai-automation/)
+⬛ HERO SECTION
+HEADLINE (H1)
+Turn Your Business into an Autonomous Growth Machine
+SUBHEADLINE (H2)
+AI Agents, Chatbots, and Smart Automation — Built to Replace Repetitive Work and Accelerate Revenue
+We design, build, and deploy AI-powered systems that handle lead generation, customer support, sales follow-ups, content creation, and business operations — so your team focuses on what humans do best.
+CTA BUTTONS
+Primary: &quot;Book Free AI Strategy Session&quot;
+Secondary: &quot;See What We&apos;ve Built&quot;
+STATS BAR
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">50+
+AI Projects Delivered
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">200+
+Hours Saved / Month
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">24/7
+Autonomous Operation
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">80%
+Query Deflection Rate
+⬛ SERVICE OVERVIEW
+Section Eyebrow
+What We Solve With AI
+Section Headline
+AI That Works for Your Business — Not the Other Way Around
+Most businesses lose thousands of hours every year to manual, repetitive tasks that AI can handle better, faster, and cheaper. Adyantra identifies exactly where AI creates the highest ROI in your specific business — then builds, trains, and deploys those systems from scratch. No off-the-shelf tools. No generic solutions.
+⬛ OUR AI SERVICES
+Section Headline
+14 AI &amp; Automation Capabilities — One Integrated Delivery Team
+1. 
+AI Solutions
+ — Custom AI strategy and implementation mapped to your specific revenue and cost goals.
+2. 
+AI Chatbot Development
+ — Intelligent, context-aware chatbots trained on your business data that handle real conversations.
+3. 
+WhatsApp AI Chatbot Development
+ — Deploy 24/7 AI assistants on WhatsApp Business API — where your customers already spend their time.
+4. 
+Generative AI Solutions
+ — Content, code, creative, and copy generated at scale — blog posts, product descriptions, ad copy, and more.
+5. 
+Conversational AI
+ — Multi-turn dialogue systems that qualify leads, answer product queries, and book appointments automatically.
+6. 
+AI Automation
+ — Connect your tools, eliminate manual workflows, and let business processes run without human intervention.
+7. 
+AI Integration
+ — Plug AI capabilities into your existing CRM, ERP, helpdesk, and marketing stack without starting from scratch.
+8. 
+AI Agents
+ — Autonomous digital workers that complete multi-step tasks, make decisions, and report outcomes — on their own.
+9. 
+AI Sales Agents
+ — Never miss a follow-up again. AI agents that qualify, score, nurture, and route leads 24 hours a day.
+10. 
+AI Customer Support Agents
+ — Resolve 80%+ of support queries without human involvement — with escalation protocols for edge cases.
+11. 
+AI Lead Generation Automation
+ — AI-driven prospecting, scoring, and pipeline management that keeps your sales team&apos;s calendar full.
+12. 
+AI Marketing Automation
+ — Personalized campaigns, behaviorally triggered sequences, and smart retargeting — run by AI.
+13. 
+AI E-commerce Solutions
+ — Product recommendations, dynamic pricing, inventory intelligence, and abandoned cart recovery — automated.
+14. 
+Autonomous Business Operations
+ — End-to-end process automation for growing teams — from onboarding workflows to invoice processing.
+⬛ SOLUTIONS / USE CASES
+Section Eyebrow
+What We Actually Build
+Section Headline
+Practical AI That Delivers Measurable Outcomes
+→ 
+24/7 Customer Support
+ — Deploy AI agents that handle product inquiries, FAQs, complaints, and order status around the clock — in English, Telugu, and Hindi.
+→ 
+Lead Qualification at Scale
+ — AI systems that capture inbound leads, score them by intent, and route them to the right salesperson — instantly.
+→ 
+Marketing Content at 10x Speed
+ — Generate SEO blog posts, social media captions, ad copy, email sequences, and product descriptions on demand.
+→ 
+Sales Pipeline on Autopilot
+ — Automated follow-up sequences triggered by behavior — WhatsApp messages, emails, and call scheduling without a single manual touch.
+→ 
+E-commerce Personalization
+ — Show the right product to the right customer at the right time — increasing average order value without increasing traffic.
+→ 
+Back-Office Automation
+ — Invoice processing, data entry, report generation, HR onboarding, and scheduling — fully automated and error-free.
+⬛ WHY CHOOSE ADYANTRA FOR AI
+Section Headline
+Why Businesses Trust Adyantra to Build Their AI Systems
+1. 
+Business-First AI — We don&apos;t build AI for technology&apos;s sake. Every system is mapped to a specific revenue increase or cost reduction before a single line of code is written.
+2. 
+End-to-End Delivery — Strategy, design, development, data training, deployment, and ongoing optimization — all in one team, no coordination overhead.
+3. 
+No Black Boxes — Complete transparency on how your AI works, what data it uses, what decisions it makes, and how to override it.
+4. 
+Industry-Specific Training — AI systems trained on your industry&apos;s language, context, and edge cases — not generic models that hallucinate on domain queries.
+5. 
+Integration-Ready Architecture — Built to connect with your CRM, WhatsApp, email platform, ERP, and marketing stack from day one.
+6. 
+Ongoing Optimization — AI performance improves over time. We monitor, retrain, and improve your systems as your business data grows.
+⬛ PROCESS
+Section Headline
+How We Build Your AI System — 6-Step Delivery
+1. 
+Discovery &amp; Audit — Map your existing workflows, identify the highest-value automation opportunities, and calculate projected ROI before any build begins.
+2. 
+AI Blueprint — Design the full architecture, select the right AI models (GPT, Claude, Gemini, or open source), and define success metrics with your team.
+3. 
+Build &amp; Train — Develop the AI system and train it on your specific business data, FAQs, product catalogue, and communication style.
+4. 
+Integration &amp; Testing — Connect to your existing tools and rigorously test for accuracy, edge cases, and failure modes before go-live.
+5. 
+Deploy &amp; Monitor — Go live with real-time performance monitoring, feedback loops, human escalation protocols, and outcome dashboards.
+6. 
+Optimize — Continuous improvement cycles using real interaction data, user feedback, and model updates to improve accuracy and ROI over time.
+⬛ TECHNOLOGY STACK
+Section Headline
+AI Technologies We Work With
+Large Language Models: OpenAI GPT-4o | Anthropic Claude | Google Gemini | Meta Llama | Mistral
+Automation &amp; Orchestration: Zapier | Make.com | n8n | LangChain | LangGraph | CrewAI
+Infrastructure: Python | FastAPI | Node.js | AWS | Google Cloud | Docker
+Integrations: WhatsApp Business API | Twilio | Razorpay | HubSpot | Zoho CRM | Shopify
+Memory &amp; Search: Pinecone | Weaviate | PostgreSQL pgvector | Redis
+⬛ INDUSTRIES
+Section Headline
+AI &amp; Automation Across Every Sector
+→ 
+Healthcare Clinics &amp; Hospitals
+ — 24/7 appointment booking bots, patient FAQ agents, and discharge follow-up automation
+→ 
+Real Estate
+ — Property inquiry qualification, site visit scheduling, and buyer nurturing on WhatsApp
+→ 
+E-commerce &amp; D2C
+ — Order tracking bots, returns automation, and AI-powered product recommendations
+→ 
+Education &amp; EdTech
+ — Admissions chatbots, fee reminder automation, and student support agents
+→ 
+Professional Services
+ — Lead intake automation, proposal generation, and client onboarding workflows
+→ 
+NGOs
+ — Donor engagement bots, volunteer coordination, and beneficiary communication automation
+⬛ FAQ — AI &amp; AUTOMATION
+Q: Do we need to be a technology company to benefit from AI automation?
+A: Absolutely not. Our most impactful AI deployments have been for traditional businesses — clinics, real estate agencies, retailers, and educational institutions — where even basic automation creates enormous time savings.
+Q: How long does it take to deploy an AI chatbot or agent?
+A: A WhatsApp AI chatbot for customer support or lead qualification can be live in 2–4 weeks. More complex systems involving custom AI models, CRM integration, and multi-step workflows take 6–10 weeks depending on scope.
+Q: Will the AI understand our industry-specific language and context?
+A: Yes. We train every AI system on your specific business data — your product catalogue, FAQs, past conversations, and brand guidelines — so it speaks your language, not a generic one.
+Q: What happens when the AI gets something wrong?
+A: Every system we build has confidence thresholds and human escalation protocols. If the AI is not confident in a response, it automatically routes the conversation to a human agent. You always stay in control.
+Q: How much does AI automation cost?
+A: Costs depend on complexity, integrations, and scale. A basic WhatsApp chatbot starts from ₹50,000 one-time. Full AI automation suites for mid-size businesses range from ₹2L–₹10L+ depending on scope. Every engagement begins with a free strategy session to estimate ROI before you commit.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Ready to Automate Your Business?
+Book a free 30-minute AI strategy session. We&apos;ll identify your top 3 automation opportunities and calculate the ROI before we write a single line of code.
+[ BOOK FREE AI STRATEGY SESSION ]
+────────────────────────────────────────────────────────────────────────────────
+PAGE 3 — WEB &amp; SOFTWARE DEVELOPMENT (/web-software-development/)
+⬛ HERO SECTION
+Build Scalable Digital Products That Move Your Business Forward
+Custom Websites, Web Applications, SaaS Platforms, and Internal Tools — Built to Perform and Scale
+We don&apos;t just build websites. We engineer digital products that attract users, convert visitors, and run your business efficiently — whether you&apos;re a startup launching your first product or an enterprise replacing legacy systems.
+Primary CTA: &quot;Start Your Project&quot;
+Secondary CTA: &quot;View Our Portfolio&quot;
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">200+
+Websites Delivered
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">50+
+Web Applications Built
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">99%
+Uptime Guaranteed
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">9+
+Years of Delivery
+⬛ SERVICE OVERVIEW
+Most websites are built to look good. We build websites and web products that look good and perform — load fast, rank on Google, convert visitors, and integrate with the tools your business already uses.
+Whether you need a 5-page brand website, a 500-page e-commerce store, a complex SaaS product, or an internal business tool that replaces spreadsheets — our full-stack development team has delivered it all.
+⬛ OUR SERVICES
+Section Headline
+11 Web &amp; Software Development Services
+1. 
+Web Development
+ — Fast, SEO-optimized websites that convert visitors into customers — built mobile-first from day one.
+2. 
+Custom Web Application Development
+ — Bespoke web applications built precisely to your business logic — no off-the-shelf compromise.
+3. 
+PHP Development
+ — Powerful backend applications and high-performance APIs built on PHP and the Laravel framework.
+4. 
+WordPress Development
+ — Flexible, scalable CMS-based websites built for growth, easy management, and long-term editability.
+5. 
+React.js Development
+ — High-performance, interactive frontends built with modern React architecture for fast, dynamic experiences.
+6. 
+Node.js Development
+ — Scalable server-side solutions, real-time applications, and APIs powered by Node.js.
+7. 
+Wix Development
+ — Custom Wix builds for businesses that need fast, managed, no-maintenance deployment without sacrificing design.
+8. 
+API Development
+ — RESTful and GraphQL APIs that connect your platforms, power third-party integrations, and enable your ecosystem.
+9. 
+CMS Development
+ — Custom content management systems designed around your editorial workflow — for teams that publish frequently.
+10. 
+SaaS Development
+ — Multi-tenant software products with user management, billing, onboarding flows, and admin dashboards.
+11. 
+Custom Software Development
+ — End-to-end business software that replaces manual processes, spreadsheets, and expensive off-the-shelf tools.
+⬛ WHAT WE BUILD
+Section Headline
+7 Types of Digital Products We Deliver
+→ 
+Business Websites
+ — Fast, mobile-first, SEO-ready websites that represent your brand professionally and convert visitors into leads.
+→ 
+SaaS Platforms
+ — Subscription-based software products with user authentication, billing, onboarding, and admin control panels.
+→ 
+Web Applications
+ — Complex, data-driven apps with authentication, role-based access, integrations, and multi-step workflows.
+→ 
+Customer Portals
+ — Self-service portals where your customers manage accounts, orders, subscriptions, and support requests.
+→ 
+Admin Dashboards
+ — Internal control panels with real-time data visualizations, analytics, and operations management tools.
+→ 
+CRM Systems
+ — Custom customer relationship management tools tailored to your exact sales process and reporting needs.
+→ 
+Internal Business Tools
+ — Bespoke software that replaces error-prone spreadsheets and manual processes across your operations.
+⬛ WHY CHOOSE ADYANTRA
+1. 
+Outcome-First Architecture — Every project starts with your business goals, not a technology stack recommendation. We choose the tools that serve your outcomes.
+2. 
+SEO-Ready from Day 1 — Every site is built with technical SEO, Core Web Vitals, structured data, and page speed as non-negotiable requirements.
+3. 
+Mobile-First Design — 70%+ of your users are on mobile. Every product is designed and optimized for mobile before desktop.
+4. 
+Post-Launch Support — We don&apos;t disappear after delivery. Ongoing maintenance, updates, and improvements are built into every engagement.
+5. 
+Integration Expertise — Payment gateways, CRMs, analytics, email platforms, and automation tools — connected from the start.
+6. 
+Transparent Development — Weekly demos, shared project management boards, and open communication throughout the build.
+⬛ DEVELOPMENT PROCESS
+1. 
+Discovery — Business goals, user research, technical requirements, and competitive landscape analysis.
+2. 
+UX &amp; Architecture — Information architecture, user flow mapping, and technical design decisions.
+3. 
+Development — Sprint-based development with weekly demos and iterative feedback loops.
+4. 
+Testing — Functional, performance, cross-browser, and device testing before launch sign-off.
+5. 
+Deployment — Zero-downtime deployment with monitoring, backups, and rollback capability.
+6. 
+Maintenance — Ongoing updates, security patches, performance optimization, and feature additions.
+⬛ TECHNOLOGY STACK
+Frontend: React.js | Next.js | JavaScript | HTML5 / CSS3 | Tailwind CSS | TypeScript
+Backend: Node.js | PHP / Laravel | Python | REST APIs | GraphQL
+CMS: WordPress | Headless CMS (Contentful, Sanity) | Custom CMS
+Database: MySQL | PostgreSQL | MongoDB | Redis
+Infrastructure: AWS | Google Cloud | DigitalOcean | Docker | CI/CD pipelines
+⬛ INDUSTRIES
+Healthcare | Education | E-commerce | Real Estate | Finance | Professional Services | NGOs | Startups | Manufacturing
+⬛ FAQ — WEB &amp; SOFTWARE DEVELOPMENT
+Q: How long does it take to build a website?
+A: A standard 5–10 page business website takes 3–5 weeks. A custom web application or SaaS product typically takes 2–5 months depending on complexity, integrations, and scope.
+Q: Do you build on WordPress or custom code?
+A: Both — and we recommend what&apos;s right for your situation. WordPress is ideal for content-heavy sites needing easy management. Custom code is better for applications, SaaS, and complex business logic.
+Q: Will my website be SEO-optimized?
+A: Yes. Every site we build includes on-page SEO, technical SEO setup, Core Web Vitals optimization, structured data, and a Google Search Console integration. SEO is a build requirement, not an afterthought.
+Q: Can you integrate with my CRM or payment gateway?
+A: Yes. We have integration experience with HubSpot, Zoho CRM, Salesforce, Razorpay, Stripe, PayU, Instamojo, and most major Indian and international payment providers.
+Q: What ongoing support do you provide after launch?
+A: We offer monthly maintenance packages covering security updates, performance monitoring, content updates, bug fixes, and feature additions. Our team stays available after every project.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Have a Project in Mind?
+Share your requirements and we&apos;ll send back a free technical scope estimate within 48 hours.
+[ START YOUR PROJECT ]
+────────────────────────────────────────────────────────────────────────────────
+PAGE 4 — MOBILE APP DEVELOPMENT (/mobile-app-development/)
+⬛ HERO SECTION
+Mobile Apps That Your Users Can&apos;t Put Down
+iOS, Android, React Native, and Flutter Apps — Built for Performance, Retention, and Revenue
+From your first MVP to a full enterprise mobile product, Adyantra delivers apps that users love and businesses scale. Performance, security, and UX are not optional — they&apos;re the foundation.
+Primary CTA: &quot;Book Free App Strategy Session&quot;
+Secondary CTA: &quot;See Our App Portfolio&quot;
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">80+
+Apps Delivered
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">4.7★
+Avg. Store Rating
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">3
+Platforms Supported
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">9+
+Years Experience
+⬛ OUR SERVICES
+1. 
+Mobile App Development
+ — End-to-end app development covering strategy, design, development, testing, and App Store launch.
+2. 
+Android App Development
+ — Native Android apps in Kotlin/Java — built for Google ecosystem integration and full Android capabilities.
+3. 
+iOS App Development
+ — Swift-powered iOS apps that follow Apple design guidelines and are optimized for App Store approval.
+4. 
+React Native App Development
+ — High-performance cross-platform apps sharing a single codebase across iOS and Android.
+5. 
+Flutter App Development
+ — Google&apos;s framework for beautiful, natively compiled apps — one codebase, all platforms, pixel-perfect UI.
+6. 
+Cross-Platform App Development
+ — Write once, deploy everywhere — faster delivery, lower cost, same performance as native.
+7. 
+Mobile UI/UX Design
+ — User-centered interfaces designed for engagement, retention, and platform-native usability.
+8. 
+API Integration
+ — Connect your app to backend services, payment gateways, location services, and third-party tools.
+9. 
+App Maintenance &amp; Support
+ — Ongoing updates, OS compatibility, bug fixes, performance improvements, and feature additions.
+⬛ WHAT WE BUILD
+→ 
+E-commerce Apps
+ — Shop, cart, wishlist, checkout, payment, and delivery tracking in one native experience.
+→ 
+Business Apps
+ — Internal tools, field service apps, approval workflows, and operations management for teams on the go.
+→ 
+Customer Apps
+ — Branded consumer apps that keep your customers engaged with your product or service daily.
+→ 
+Booking &amp; Scheduling Apps
+ — Appointment booking, slot management, and reservation systems for service businesses.
+→ 
+Education Apps
+ — LMS, course streaming, video playback, quizzes, and student progress tracking.
+→ 
+Fintech Apps
+ — Digital wallets, investment tracking, loan management, and secure payment flows with compliance.
+→ 
+On-Demand Apps
+ — Uber-style delivery and service apps with real-time tracking, driver matching, and fleet management.
+→ 
+SaaS Mobile Apps
+ — Full-featured mobile interfaces for your SaaS product — parity with web on every platform.
+⬛ WHY CHOOSE ADYANTRA
+1. 
+Full-Cycle Delivery — Concept, design, development, QA, App Store launch, and post-launch support in one team.
+2. 
+User-Centric Design — Every screen is designed for engagement, minimal friction, and platform-native behavior.
+3. 
+Performance-First Build — Optimized for speed, battery life, offline functionality, and smooth animations.
+4. 
+App Store Expertise — ASO, screenshot design, app descriptions, and store listing optimization are included.
+5. 
+Security Built In — End-to-end encryption, secure authentication, GDPR-compliant data handling by default.
+⬛ DEVELOPMENT PROCESS
+1. 
+Requirement Mapping — Features, user personas, platform selection, and technical scope definition.
+2. 
+Wireframing &amp; Prototyping — Clickable prototypes for stakeholder alignment before any development begins.
+3. 
+UI/UX Design — High-fidelity screens aligned with your brand identity and platform guidelines.
+4. 
+Development — Agile sprints with weekly progress demos and continuous client feedback.
+5. 
+QA &amp; Testing — Functional, usability, performance, security, and multi-device testing.
+6. 
+Launch &amp; Post-Launch — App store submission, launch monitoring, crash tracking, and ongoing support.
+⬛ TECHNOLOGY STACK
+Cross-Platform: Flutter | React Native
+Native: Android (Kotlin / Java) | iOS (Swift / SwiftUI)
+Backend &amp; APIs: Node.js | Python | Firebase | REST APIs | GraphQL
+Payments: Razorpay | Stripe | PayU | UPI Integration
+Services: Push Notifications | Google Maps | Firebase Analytics | Crashlytics | App Store Connect | Play Console
+⬛ FAQ — MOBILE APP DEVELOPMENT
+Q: Should I build a native app or cross-platform?
+A: Cross-platform (Flutter or React Native) is the right choice for most businesses — you get near-native performance at 60–70% of the cost and timeline. Native development is recommended only when you need deep OS integration, maximum performance, or complex platform-specific features.
+Q: How long does it take to build a mobile app?
+A: A focused MVP typically takes 8–12 weeks. A full-featured app with custom backend, multiple user roles, and third-party integrations takes 16–24 weeks. We recommend starting with an MVP and iterating based on real user feedback.
+Q: Do you handle App Store and Play Store submission?
+A: Yes. App store submission, metadata writing, screenshot design, and compliance review are all part of our delivery scope.
+Q: Can you build an MVP first before the full app?
+A: Absolutely. We recommend this approach. A focused MVP lets you validate your concept with real users and real data before committing to the full product build.
+Q: What&apos;s included in post-launch support?
+A: Bug fixes, OS compatibility updates (when Apple/Google releases new versions), crash monitoring, minor feature additions, and App Store rating management are all covered under our post-launch maintenance plans.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Have an App Idea? Let&apos;s Build It.
+Book a free 30-minute app strategy session. We&apos;ll assess your concept, recommend the right platform, and give you a realistic timeline and cost estimate.
+[ BOOK FREE APP STRATEGY SESSION ]
+────────────────────────────────────────────────────────────────────────────────
+PAGE 5 — E-COMMERCE SOLUTIONS (/ecommerce-solutions/)
+⬛ HERO SECTION
+Turn Your Store into a Revenue-Generating Machine
+Shopify, WooCommerce, Custom Commerce — Built to Convert, Scale, and Automate
+Whether you&apos;re launching your first online store or migrating from a legacy platform, Adyantra builds e-commerce experiences that convert browsers into buyers and keep them coming back. We cover everything from development and design to marketplace advertising on Amazon and Flipkart — under one roof.
+Primary CTA: &quot;Get Free Store Audit&quot;
+Secondary CTA: &quot;Start Your Store&quot;
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">150+
+Stores Launched
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">9+
+Yrs Marketplace Expertise
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">₹15Cr+
+Marketplace Ad Spend
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">3.5x
+Avg. ROAS Delivered
+⬛ OUR E-COMMERCE SERVICES
+1. 
+E-commerce Development
+ — End-to-end store setup, architecture, and custom development from scratch or on an existing platform.
+2. 
+Shopify Development
+ — Custom Shopify stores, themes, and apps built for high conversion and easy management.
+3. 
+WooCommerce Development
+ — Powerful WordPress-based stores with complete customization, plugin ecosystem, and scalability.
+4. 
+BigCommerce Development
+ — Enterprise-grade B2B and B2C stores with BigCommerce&apos;s native multi-currency and catalog management.
+5. 
+Magento Development
+ — Complex, high-volume catalogue stores built on Magento&apos;s enterprise-grade architecture.
+6. 
+Headless Commerce
+ — Decoupled frontend built on Next.js with a flexible backend for maximum performance and design freedom.
+7. 
+Shopify Theme Development
+ — Custom Shopify themes built from scratch or extensively customized from existing themes.
+8. 
+Store Migration
+ — Migrate from any platform to Shopify, WooCommerce, or custom — with zero product data loss.
+9. 
+Store Redesign
+ — Conversion-focused redesigns that improve UX, reduce bounce rate, and increase revenue-per-visitor.
+10. 
+E-commerce UI/UX
+ — User research, heat mapping, CRO, and design that reduces cart abandonment and increases AOV.
+11. 
+3D Product Personalizers
+ — Interactive 3D product configurators for custom, personalized, or configurable products.
+12. 
+Dropshipping Store Development
+ — Supplier integration, product import automation, and margins-first store architecture for dropshippers.
+13. 
+B2B / Wholesale E-commerce
+ — Tiered pricing, bulk order management, purchase orders, credit terms, and customer-specific catalogues.
+14. 
+POS Integration
+ — Connect your online store to your physical POS for unified inventory, orders, and customer data.
+15. 
+Omnichannel Commerce
+ — Unified inventory, orders, and customer experience across website, Amazon, Flipkart, and social commerce.
+16. 
+E-commerce Automation
+ — Inventory sync, order processing, fulfillment updates, returns management, and review requests — automated.
+⬛ MARKETPLACE ADVERTISING (UNIQUE CAPABILITY)
+Section Headline
+India&apos;s Leading Marketplaces — Managed by Specialists
+Adyantra is one of very few agencies with 9+ years of hands-on experience managing Sponsored Ads on both Amazon India and Flipkart. Our marketplace advertising team runs full-funnel campaigns — from brand awareness to conversion — with dedicated ACOS and ROAS management.
+→ 
+Amazon Sponsored Products
+ — Keyword-targeted product campaigns with ACOS optimization
+→ 
+Amazon Sponsored Brands
+ — Brand store and headline campaigns for category dominance
+→ 
+Amazon Sponsored Display
+ — Retargeting and audience-based display campaigns
+→ 
+Flipkart Sponsored Products
+ — Flipkart PLA campaigns with bid strategy and SKU-level management
+→ 
+Flipkart Brand Campaigns
+ — Category domination through Flipkart&apos;s brand awareness placements
+→ 
+Google Shopping Ads
+ — Product listing ads driving direct purchase intent from Google
+⬛ WHY CHOOSE ADYANTRA FOR E-COMMERCE
+1. 
+Build + Market Under One Roof — We build the store and run the ads. No coordination lag between two agencies.
+2. 
+Amazon &amp; Flipkart Marketplace Depth — 9+ years of hands-on experience with India&apos;s top marketplace advertising platforms.
+3. 
+Conversion Architecture — Every design decision — from product page layout to checkout flow — is made with conversion rate optimization in mind.
+4. 
+Mobile Commerce First — Over 70% of Indian e-commerce traffic is mobile. Every store we build is designed for mobile first.
+5. 
+Revenue-Per-Visitor Thinking — We don&apos;t measure success in traffic. We measure it in revenue, ROAS, and repeat purchase rate.
+6. 
+Full Platform Coverage — From the store to the marketplace to the ads — one team manages the entire e-commerce ecosystem.
+⬛ PROCESS
+1. 
+Store Audit / Discovery — Analyse current performance, competitor landscape, conversion bottlenecks, and opportunity gaps.
+2. 
+Platform Decision — Shopify, WooCommerce, headless, or custom — we recommend the right platform for your growth stage.
+3. 
+Design &amp; UX — Brand-aligned, conversion-optimized store design with mobile-first approach and CRO built in.
+4. 
+Development &amp; Integration — Payment gateway, logistics partners (Shiprocket, Delhivery), ERP, and CRM integrations.
+5. 
+Launch &amp; Migration — Zero-downtime launch or clean data migration from your existing platform.
+6. 
+Growth &amp; Marketing — SEO, Google Shopping, Amazon/Flipkart ads, Meta catalogue ads, and email automation.
+⬛ PLATFORMS &amp; TOOLS
+E-commerce Platforms: Shopify | WooCommerce | BigCommerce | Magento | Headless (Next.js)
+Marketplaces: Amazon Seller Central | Flipkart Seller Hub | Meesho | Jio Mart
+Logistics Integrations: Shiprocket | Delhivery | Blue Dart | FedEx
+Payment: Razorpay | PayU | Cashfree | Stripe | COD Management
+Marketing: Google Shopping | Meta Catalogue Ads | WhatsApp Commerce | Email Marketing
+⬛ FAQ — E-COMMERCE SOLUTIONS
+Q: Which e-commerce platform is right for my business?
+A: Shopify for most businesses starting out or scaling — easiest to manage and most app ecosystem. WooCommerce for businesses heavily invested in WordPress. Custom or headless for enterprise-scale or highly specific requirements. We&apos;ll recommend based on your catalogue size, budget, and growth trajectory.
+Q: How long does it take to set up a Shopify store?
+A: A standard Shopify store with up to 100 products takes 3–5 weeks from kick-off to launch. Custom Shopify themes or complex integrations extend that to 6–10 weeks.
+Q: Can you handle Amazon and Flipkart ads along with our website?
+A: Yes — this is one of our core specializations. We manage the full e-commerce ecosystem: your website, marketplace listings, and all advertising channels in one integrated strategy.
+Q: Do you offer ongoing store management after launch?
+A: Yes. We offer monthly e-commerce management retainers covering product uploads, promotions management, CRO testing, marketplace ad management, and performance reporting.
+Q: What does a store migration include?
+A: Full product data migration (titles, descriptions, images, variants, prices), customer data migration, order history migration, URL redirect mapping for SEO, and post-migration QA testing.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Ready to Launch or Scale Your Online Store?
+Get a free e-commerce audit — we&apos;ll assess your current store or brief your new one and give you a clear roadmap to more revenue.
+[ GET FREE STORE AUDIT ]
+────────────────────────────────────────────────────────────────────────────────
+PAGE 6 — UI/UX &amp; PRODUCT DESIGN (/ui-ux-product-design/)
+⬛ HERO SECTION
+Design That Converts. Experiences That Retain.
+UI/UX Design, Product Design, and Design Systems — Built Around Your Users, Optimised for Your Business
+Great design is not decoration. It&apos;s the difference between a visitor who converts and one who bounces. Between a user who stays and one who churns. Adyantra&apos;s design team combines deep user research, behavioral psychology, and pixel-perfect execution to create digital experiences that perform as beautifully as they look.
+Primary CTA: &quot;Get Free Design Audit&quot;
+Secondary CTA: &quot;See Our Design Portfolio&quot;
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">300+
+Screens Designed
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">40%
+Avg. CRO Improvement
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">9+
+Years of Design Delivery
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">2.4x
+Avg. Engagement Lift
+⬛ OUR UI/UX SERVICES
+1. 
+UI/UX Design
+ — Research-driven interface design for web, mobile, and digital products that balances beauty with performance.
+2. 
+Website UI/UX
+ — Conversion-focused website design that communicates your brand, guides user journeys, and drives action.
+3. 
+Mobile App UI/UX
+ — Intuitive, platform-native mobile experiences that users return to — designed for engagement and retention.
+4. 
+SaaS Product Design
+ — Complex SaaS interfaces made approachable — onboarding, feature dashboards, and power user workflows.
+5. 
+Dashboard Design
+ — Data visualization and control panels that turn complexity into clarity for operators and decision-makers.
+6. 
+UX Research
+ — User interviews, competitive audits, heatmap analysis, and session recording review — evidence before design.
+7. 
+User Journey Mapping
+ — End-to-end mapping of how users discover, evaluate, engage with, and advocate for your product.
+8. 
+Wireframing
+ — Low-fidelity structure and information architecture before high-fidelity design investment.
+9. 
+Prototyping
+ — Clickable, testable Figma prototypes for stakeholder sign-off and user testing before development.
+10. 
+Design Systems
+ — Scalable component libraries with design tokens, usage guidelines, and Storybook documentation.
+11. 
+Product Redesign
+ — Evidence-based redesigns grounded in analytics, heatmaps, and user research — not aesthetic opinion.
+12. 
+Design Audit
+ — Expert review of your existing product with a prioritized improvement roadmap and UX debt assessment.
+13. 
+Conversion-Focused UX (CRO)
+ — A/B testing, landing page optimization, and funnel analysis integrated into the design process.
+⬛ DELIVERABLES
+What You Receive from Every Design Engagement
+→ 
+User flows and journey maps
+
+→ 
+Low-fidelity wireframes
+
+→ 
+High-fidelity UI screens — desktop and mobile
+
+→ 
+Interactive Figma prototypes
+
+→ 
+Design system / component library
+
+→ 
+Developer handoff documentation and specs
+
+→ 
+Responsive designs for all screen breakpoints
+
+⬛ WHY CHOOSE ADYANTRA FOR DESIGN
+1. 
+Design with Data — Every design decision is backed by user research, behavioral analytics, heatmaps, and conversion data — not intuition.
+2. 
+Business-Aware Designers — Our team understands what drives revenue. We design for metrics: conversions, activation, retention, and NPS.
+3. 
+Full Product Coverage — Landing pages, onboarding flows, complex SaaS dashboards, mobile apps, and everything in between.
+4. 
+Developer-Friendly Handoff — Figma files with complete component specs, design tokens, and documentation that developers actually use.
+5. 
+Post-Launch Iteration — We stay involved to test, measure, and improve after launch — not just design and disappear.
+6. 
+Integrated with Development — Our design and development teams work together, not in silos, ensuring every design is actually buildable.
+⬛ DESIGN PROCESS
+1. 
+Research — User interviews, analytics audit, competitor UX analysis, and behavioral data review.
+2. 
+Strategy — Information architecture, content hierarchy, and conversion funnel planning.
+3. 
+Wireframing — Low-fidelity layouts for structure and user flow — client review before visual design begins.
+4. 
+UI Design — High-fidelity screens with typography, color, imagery, and interaction states.
+5. 
+Prototyping — Clickable prototype built in Figma for stakeholder sign-off and usability testing.
+6. 
+Testing — Usability testing with real users to identify friction before development.
+7. 
+Design System — Component library and usage documentation for consistent implementation across the product.
+8. 
+Developer Handoff — Annotated specs, asset exports, and direct Figma access for the development team.
+⬛ INDUSTRIES
+SaaS &amp; B2B Platforms | EdTech | HealthTech | E-commerce &amp; D2C | Real Estate | Fintech | Consumer Apps | NGOs
+⬛ FAQ — UI/UX &amp; PRODUCT DESIGN
+Q: What tools does your design team use?
+A: Figma is our primary tool for UI design, wireframing, prototyping, and design systems. We also use FigJam for workshops, Hotjar and Clarity for heatmaps, and Google Analytics 4 for behavioral data.
+Q: Do you design for both mobile and desktop?
+A: Yes. Every engagement includes designs for all breakpoints — desktop, tablet, and mobile — with mobile-first priority given the traffic distribution in India.
+Q: Can you redesign my existing product?
+A: Absolutely. Product redesign is one of our core services. We start with a full UX audit of your current product, identify friction points and conversion barriers, then design the improved version with evidence-backed recommendations.
+Q: What does a design system include?
+A: A complete design system includes: a component library (buttons, forms, cards, navigation, modals), design tokens (colors, typography, spacing, border radius), usage guidelines, interaction states, and Figma documentation ready for developer handoff.
+Q: How involved is the development team in the design process?
+A: Very involved. Our design and development teams work in parallel from the wireframing stage. This eliminates the &quot;that can&apos;t be built&quot; problem and ensures every design decision is implementable on time and on budget.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Let&apos;s Build Something Users Love.
+Get a free UX audit of your current product or website. We&apos;ll identify the top 5 conversion barriers and show you exactly how to fix them.
+[ GET FREE DESIGN AUDIT ]
+────────────────────────────────────────────────────────────────────────────────
+PAGE 7 — DIGITAL MARKETING &amp; GROWTH (/digital-marketing-growth/)
+⬛ HERO SECTION
+Performance Marketing That Fills Your Pipeline and Grows Your Revenue
+Google Ads, Meta Ads, SEO, Lead Generation, and Marketing Automation — Engineered for Maximum ROI
+9+ years. ₹25 Crore+ in ad spend managed. 500+ campaigns across Google, Meta, Amazon, and Flipkart. Adyantra is Hyderabad&apos;s performance-first digital marketing agency — built for businesses that measure marketing in revenue, not vanity metrics.
+Primary CTA: &quot;Get Free Marketing Audit&quot;
+Secondary CTA: &quot;See Case Studies&quot;
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">₹25Cr+
+Ad Spend Managed
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">500+
+Campaigns Delivered
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">9+
+Years Experience
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">4.2x
+Avg. ROAS Delivered
+⬛ SERVICE OVERVIEW
+Most agencies run campaigns. Adyantra builds growth engines.
+We combine paid advertising, organic search, content marketing, email automation, and PR into a single, coordinated strategy — with full attribution, transparent reporting, and clear accountability to your revenue targets.
+And unlike generic agencies, we have deep, platform-certified expertise in the channels that matter most to Indian businesses: Google Ads, Meta Ads, Amazon Sponsored Ads, and Flipkart Sponsored Ads.
+⬛ OUR DIGITAL MARKETING SERVICES
+1. 
+Digital Marketing Strategy
+ — Full-channel digital marketing strategy with channel mix, budget allocation, and 90-day growth roadmap.
+2. 
+Performance Marketing
+ — ROI-first, full-funnel campaigns across all digital channels — every rupee tracked and attributed.
+3. 
+Google Ads
+ — Search, Display, Shopping, YouTube, Performance Max — with keyword strategy, bid management, and conversion tracking.
+4. 
+Meta Ads
+ — Facebook and Instagram campaigns with precision audience targeting, creative testing, and conversion-focused funnels.
+5. 
+PPC Advertising
+ — Pay-per-click campaigns across Google, Bing, and programmatic platforms — optimized for lowest CPA.
+6. 
+SEO
+ — On-page, off-page, and technical SEO that compounds your rankings, traffic, and lead quality over time.
+7. 
+Local SEO
+ — Dominate local search results and Google Maps listings for your city, area, and target geography.
+8. 
+Lead Generation
+ — Multi-channel lead gen strategies — landing pages, lead magnets, and retargeting funnels that fill your CRM.
+9. 
+Social Media Marketing
+ — Platform-native content, community management, and paid social that builds brand equity and drives sales.
+10. 
+Email Marketing
+ — Drip campaigns, newsletters, and automated sequences that nurture leads into loyal customers.
+11. 
+Marketing Automation
+ — CRM-connected, behaviorally triggered campaigns that work around the clock while you sleep.
+12. 
+Online Reputation Management
+ — Monitor, manage, and proactively improve your brand&apos;s reputation across Google, social, and review platforms.
+13. 
+Conversion Rate Optimization
+ — A/B testing, heatmap analysis, landing page optimization, and funnel refinement to maximize your ad ROI.
+14. 
+E-commerce Marketing
+ — Google Shopping, Meta Catalogue, Amazon Sponsored, Flipkart Sponsored, and D2C performance marketing.
+15. 
+Content Marketing
+ — SEO-optimized content that drives organic traffic, builds authority, and converts long-tail searchers.
+⬛ GROWTH FRAMEWORK
+Section Headline
+The Adyantra Growth System — Generate. Convert. Retain.
+STAGE 1 — GENERATE LEADS
+Drive high-intent traffic from the right channels:
+→ 
+Google Search Ads
+ — capture active purchase intent from people searching for your solution
+→ 
+Meta Ads
+ — reach your ideal customer on Facebook and Instagram with precision targeting
+→ 
+SEO &amp; Content
+ — build compounding organic traffic that reduces paid dependency over time
+→ 
+High-Converting Landing Pages
+ — purpose-built pages that turn ad clicks into leads
+STAGE 2 — CONVERT LEADS
+Turn prospects into buyers with systematic nurturing:
+→ 
+Conversion Rate Optimization
+ — A/B test every element of the funnel to maximize lead-to-sale rate
+→ 
+Remarketing Campaigns
+ — stay visible to prospects who didn&apos;t convert on the first visit
+→ 
+Email &amp; WhatsApp Automation
+ — automated sequences that follow up, educate, and close
+→ 
+Lead Scoring &amp; Segmentation
+ — prioritize the hottest leads for your sales team
+STAGE 3 — RETAIN CUSTOMERS
+Turn buyers into loyal repeat customers:
+→ 
+CRM &amp; Marketing Automation
+ — automated post-purchase journeys, upsell sequences, and re-engagement campaigns
+→ 
+Email Drip Sequences
+ — value-delivery content that keeps your brand top-of-mind
+→ 
+Loyalty &amp; Referral Programs
+ — systematic programs that drive repeat purchase and word-of-mouth growth
+→ 
+WhatsApp Broadcast Campaigns
+ — high-open-rate direct communications for offers, updates, and re-engagement
+⬛ OUR UNIQUE ADVANTAGES
+1. 
+9+ Years of Campaign Management — We&apos;ve managed campaigns since Google AdWords, through the AI era. Institutional knowledge that no new agency can replicate.
+2. 
+Amazon &amp; Flipkart Marketplace Specialists — A rare capability: full marketplace advertising expertise on India&apos;s two biggest e-commerce platforms, alongside web-based paid channels.
+3. 
+Full-Funnel Accountability — We track marketing performance from the first click to the closed deal — not just impressions and clicks.
+4. 
+NGO &amp; Corporate Depth — We serve commercial clients and NGOs with equal expertise, including Google Ad Grants management for non-profits.
+5. 
+Transparent, Real-Time Reporting — Live dashboards, monthly strategy reviews, and plain-English performance summaries. No vanity metrics, no confusion.
+6. 
+Integrated with PR — As a PR agency with a digital arm, we combine earned media and paid performance in campaigns that reinforce each other.
+⬛ PROCESS
+1. 
+Audit — Full digital audit: SEO health, ad account performance, competitor analysis, keyword landscape, and audience research.
+2. 
+Strategy — Custom channel mix, budget allocation, KPI framework, and 90-day roadmap.
+3. 
+Execute — Campaign launch, creative production, landing page build, conversion tracking setup, and UTM architecture.
+4. 
+Optimize — Weekly bid management, A/B testing, audience refinement, creative rotation, and funnel improvements.
+5. 
+Report — Monthly performance review with revenue attribution, ROI analysis, and strategic recommendations.
+⬛ PLATFORMS WE MANAGE
+Paid: Google Ads | Meta Ads (Facebook + Instagram) | YouTube Ads | LinkedIn Ads
+Marketplaces: Amazon Sponsored Ads | Flipkart Sponsored Ads
+Organic: Google Search Console | SEMrush | Ahrefs | Google Analytics 4
+Automation: HubSpot | Zoho CRM | WhatsApp Business API | Mailchimp | Klaviyo
+⬛ INDUSTRIES
+Healthcare | Real Estate | Education | E-commerce &amp; D2C | IT &amp; SaaS | NGOs | Retail | Hospitality | Finance | Professional Services
+⬛ FAQ — DIGITAL MARKETING &amp; GROWTH
+Q: How much budget do I need to start with Google Ads?
+A: For most service businesses in Hyderabad, we recommend a minimum monthly ad spend of ₹30,000–₹50,000 to generate meaningful data and consistent leads. E-commerce and high-competition verticals typically need ₹1L+ per month to compete effectively.
+Q: How long before I see results from SEO?
+A: Technical SEO improvements and on-page optimization typically show measurable improvements in 60–90 days. Significant keyword ranking gains and traffic growth generally appear in 3–6 months. SEO compounds — the longer you invest, the stronger the returns.
+Q: Do you manage Amazon and Flipkart ads together with our website ads?
+A: Yes. This is one of our core specializations. We manage integrated strategies across your brand website, Amazon Seller Central, and Flipkart Seller Hub — with consistent brand messaging and complementary budget allocation.
+Q: What makes Adyantra different from other digital marketing agencies?
+A: Three things: marketplace advertising expertise (Amazon + Flipkart) that most agencies don&apos;t have; full-funnel accountability from click to closed revenue; and the PR capability to combine earned and paid media in integrated campaigns. Plus 9 years of campaign data and institutional knowledge.
+Q: How do you measure and report campaign performance?
+A: Every client gets a live Google Looker Studio dashboard with real-time campaign data. Monthly strategy review calls include revenue attribution, ROI analysis, competitive benchmarking, and clear next-step recommendations. We report on what matters: leads, cost per lead, and revenue — not impressions.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Get Your Free Marketing Audit — Worth ₹15,000. Yours Free.
+We&apos;ll audit your current digital marketing, identify your biggest growth opportunities, and build a 90-day action plan — at no cost and with no obligation.
+[ CLAIM FREE MARKETING AUDIT ]
+────────────────────────────────────────────────────────────────────────────────
+PAGE 8 — BRANDING &amp; CREATIVE SERVICES (/branding-creative-services/)
+⬛ HERO SECTION
+Brands That People Remember. Creative That People Share.
+Brand Strategy, Visual Identity, Content Creation, and Campaign Execution — All Under One Roof
+A strong brand is your most durable business asset. Adyantra builds brands from the ground up — from the strategic foundation to the visual identity to the content that brings it to life every day across every channel. Whether you&apos;re launching your first brand or repositioning an established one, we design for recognition, resonance, and results.
+Primary CTA: &quot;Book Free Brand Consultation&quot;
+Secondary CTA: &quot;View Our Creative Portfolio&quot;
+<w:tblPr><w:tblW w:type="dxa" w:w="9360"/><w:tblBorders><w:top w:val="single" w:color="auto" w:sz="4"/><w:left w:val="single" w:color="auto" w:sz="4"/><w:bottom w:val="single" w:color="auto" w:sz="4"/><w:right w:val="single" w:color="auto" w:sz="4"/><w:insideH w:val="single" w:color="auto" w:sz="4"/><w:insideV w:val="single" w:color="auto" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/><w:gridCol w:w="2340"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">200+
+Brands Designed
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">9+
+Years of Creative Work
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">50+
+Campaign Executions
+<w:tcPr><w:tcW w:type="dxa" w:w="2340"/><w:shd w:fill="F0F9FF" w:val="clear"/></w:tcPr><w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:color w:val="2563EB"/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr><w:t xml:space="preserve">12+
+Industries Served
+⬛ OUR BRANDING &amp; CREATIVE SERVICES
+1. 
+Brand Strategy
+ — Define your brand&apos;s positioning, differentiation, voice, and narrative — the foundation everything else is built on.
+2. 
+Brand Identity
+ — Logo, color system, typography, and visual language that communicates your brand&apos;s personality at a glance.
+3. 
+Logo Design
+ — Professional, versatile logos that work at any size, in any medium, and stand out in any competitive landscape.
+4. 
+Visual Identity
+ — Complete visual system: iconography, patterns, illustration style, photography direction, and graphic language.
+5. 
+Brand Guidelines
+ — Comprehensive brand books that ensure your visual identity stays consistent across every team and every touchpoint.
+6. 
+Social Media Design
+ — Post templates, story designs, reel cover frames, and branded social assets for every platform.
+7. 
+Marketing Creatives
+ — Ads, banners, flyers, brochures, and promotional materials — designed for attention and built to convert.
+8. 
+Advertising Creatives
+ — High-performance ad creatives for Google Display, Meta, and outdoor — optimized for each channel&apos;s format.
+9. 
+Presentation Design
+ — Pitch decks, investor presentations, and sales decks that tell your story and win deals.
+10. 
+Video Marketing
+ — Brand films, product videos, explainer videos, and testimonial production for web and social.
+11. 
+Reels &amp; Short-Form Content
+ — Platform-optimized vertical video for Instagram Reels, YouTube Shorts, and LinkedIn — scroll-stopping, brand-aligned.
+12. 
+Creative Campaigns
+ — Integrated creative campaigns spanning digital, print, OOH, and social — built around a single, powerful idea.
+⬛ CREATIVE SOLUTIONS
+Section Headline
+What We Build for Your Business
+→ 
+Brand Launch
+ — Full brand launch strategy and creative execution — from brand book to launch day content to PR assets.
+→ 
+Product Launch
+ — Campaign creative for new product or service launches — across social, paid, email, and PR channels.
+→ 
+Social Media Campaigns
+ — Monthly creative retainers for ongoing social content, stories, reels, and community management assets.
+→ 
+Advertising Campaigns
+ — End-to-end creative production for multi-channel paid campaigns — concept, design, copy, and adaptation.
+→ 
+E-commerce Creatives
+ — Product photography direction, marketplace listing creative, and catalogue design that converts browsers.
+→ 
+Corporate Branding
+ — Annual reports, office signage, event branding, and corporate identity collateral for established businesses.
+⬛ WHY CHOOSE ADYANTRA FOR CREATIVE
+1. 
+Strategy Before Creative — We never design in a vacuum. Every creative decision is grounded in brand strategy, audience research, and business goals.
+2. 
+Marketing-Aware Creative Team — Our designers understand ad performance, conversion, and what creative actually works in market — not just what looks good in a portfolio.
+3. 
+Platform-Specific Execution — We don&apos;t resize. We redesign. Every creative is crafted natively for the format, platform, and audience it&apos;s targeting.
+4. 
+Consistent Brand Voice — Design and copy are crafted together. Your brand looks and sounds the same everywhere — from a Google Ad to a pitch deck.
+5. 
+Campaign-Ready Turnaround — Creative pipelines aligned to your campaign calendar. No bottlenecks, no last-minute scrambles.
+6. 
+Integrated with PR — As a PR agency, we bring media placement thinking to creative — assets built to earn coverage, not just buy it.
+⬛ CREATIVE PROCESS
+1. 
+Brand Discovery — Workshops with your team to understand your business, audience, competitive landscape, and aspirations.
+2. 
+Positioning — Define your brand&apos;s unique position, messaging architecture, and narrative framework.
+3. 
+Concept Development — 2–3 creative directions presented as moodboards with strategic rationale.
+4. 
+Refinement — Collaborative revision rounds toward the final chosen direction.
+5. 
+Final Design — Pixel-perfect execution of all brand and creative deliverables.
+6. 
+Guidelines &amp; Handoff — Complete brand documentation, asset library, and team briefing.
+7. 
+Ongoing Creative — Monthly creative retainer for campaigns, social content, and brand asset production.
+⬛ INDUSTRIES
+Startups | E-commerce &amp; D2C | Healthcare | Education | Real Estate | Professional Services | NGOs | FMCG | Hospitality
+⬛ FAQ — BRANDING &amp; CREATIVE SERVICES
+Q: Do you only do logo design or the full brand identity?
+A: We offer both — standalone logo design and full brand identity systems. We strongly recommend the full identity (logo + color system + typography + visual language + guidelines) because a logo alone doesn&apos;t create a coherent brand experience across all your marketing channels.
+Q: How is a brand identity different from a logo?
+A: A logo is one element. A brand identity is the complete visual system: the logo, the color palette, the typography, the icon library, the photography style, the pattern language, and the rules for how all of these work together. A brand identity is what makes your brand instantly recognizable across every touchpoint.
+Q: Do you handle ongoing social media content creation?
+A: Yes. We offer monthly creative retainers for social media — covering feed posts, stories, reels, and ad creative — with a dedicated design team who understands your brand and maintains consistency at scale.
+Q: Can you redesign our existing brand without losing brand equity?
+A: Yes. Brand evolution (improving an existing brand while preserving recognition) is different from a full rebrand. We start by auditing what brand equity exists, what to preserve, and what to improve — then execute an evolution or rebrand based on that evidence.
+Q: What does a brand guidelines document include?
+A: Our brand guidelines include: logo usage rules (sizes, clearspace, don&apos;ts), color system (primary, secondary, neutral palettes with HEX, RGB, CMYK values), typography system (font hierarchy, sizes, weights, usage), photography and illustration direction, icon usage, and co-branding rules.
+────────────────────────────────────────────────────────────────────────────────
+🚀  CALL TO ACTION
+Let&apos;s Build a Brand Worth Remembering.
+Book a free 30-minute brand consultation. We&apos;ll review your current brand positioning and show you what a strategic creative overhaul could look like for your business.
+[ BOOK FREE BRAND CONSULTATION ]
+────────────────────────────────────────────────────────────────────────────────
