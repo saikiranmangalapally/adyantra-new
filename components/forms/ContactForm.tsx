@@ -2,20 +2,31 @@
 
 import { useState } from "react";
 import { toast } from "sonner";
-import { Send, Loader2 } from "lucide-react";
-import { GradientButton } from "@/components/ui/Buttons";
+import { Send, Loader2, Check } from "lucide-react";
+
+const serviceOptions = [
+  "AI & Automation",
+  "Performance Marketing",
+  "Web Software Dev",
+  "Technical SEO",
+  "E-Commerce Growth",
+  "Full Suite Growth",
+];
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedService, setSelectedService] = useState("AI & Automation");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     company: "",
-    service: "AI Automation",
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -24,13 +35,18 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const payload = {
+      ...formData,
+      service: selectedService,
+    };
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       const data = await response.json();
@@ -40,15 +56,15 @@ export default function ContactForm() {
       }
 
       toast.success("Message sent successfully!", {
-        description: "We'll get back to you within 24 hours.",
+        description: "Our senior team will get back to you within 24 hours.",
       });
 
       // Reset form
       setFormData({
         name: "",
         email: "",
+        phone: "",
         company: "",
-        service: "AI Automation",
         message: "",
       });
     } catch (error: any) {
@@ -62,10 +78,37 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <label htmlFor="name" className="text-body-sm font-medium text-text-main">
-            Full Name <span className="text-accent">*</span>
+      {/* Service Selection Chips */}
+      <div>
+        <label className="block text-xs font-bold uppercase tracking-wider text-secondary mb-3">
+          Select Service of Interest <span className="text-red-500">*</span>
+        </label>
+        <div className="flex flex-wrap gap-2.5">
+          {serviceOptions.map((service) => {
+            const isSelected = selectedService === service;
+            return (
+              <button
+                key={service}
+                type="button"
+                onClick={() => setSelectedService(service)}
+                className={`px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer border ${
+                  isSelected
+                    ? "bg-primary text-white border-primary shadow-sm scale-[1.02]"
+                    : "bg-[#F8F9FD] text-secondary border-[#E2E4EB] hover:border-primary hover:bg-white"
+                }`}
+              >
+                {service}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Name & Email Fields */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+        <div className="space-y-1.5">
+          <label htmlFor="name" className="text-xs font-bold uppercase tracking-wider text-secondary">
+            Full Name <span className="text-red-500">*</span>
           </label>
           <input
             id="name"
@@ -74,13 +117,13 @@ export default function ContactForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full bg-surface-2 border border-border rounded-xl px-4 py-3 text-text-main placeholder-muted focus:outline-none focus:border-primary-glow focus:ring-1 focus:ring-primary-glow transition-all"
+            className="w-full bg-[#F8F9FD] border border-[#E2E4EB] rounded-2xl px-4 py-3.5 text-sm text-secondary placeholder:text-[#9A98A6] focus:outline-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/10 transition-all"
             placeholder="John Doe"
           />
         </div>
-        <div className="space-y-2">
-          <label htmlFor="email" className="text-body-sm font-medium text-text-main">
-            Work Email <span className="text-accent">*</span>
+        <div className="space-y-1.5">
+          <label htmlFor="email" className="text-xs font-bold uppercase tracking-wider text-secondary">
+            Work Email <span className="text-red-500">*</span>
           </label>
           <input
             id="email"
@@ -89,15 +132,30 @@ export default function ContactForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full bg-surface-2 border border-border rounded-xl px-4 py-3 text-text-main placeholder-muted focus:outline-none focus:border-primary-glow focus:ring-1 focus:ring-primary-glow transition-all"
+            className="w-full bg-[#F8F9FD] border border-[#E2E4EB] rounded-2xl px-4 py-3.5 text-sm text-secondary placeholder:text-[#9A98A6] focus:outline-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/10 transition-all"
             placeholder="john@company.com"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <label htmlFor="company" className="text-body-sm font-medium text-text-main">
+      {/* Phone & Company Fields */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="space-y-1.5">
+          <label htmlFor="phone" className="text-xs font-bold uppercase tracking-wider text-secondary">
+            Phone Number
+          </label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full bg-[#F8F9FD] border border-[#E2E4EB] rounded-2xl px-4 py-3.5 text-sm text-secondary placeholder:text-[#9A98A6] focus:outline-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/10 transition-all"
+            placeholder="+91 83092 75093"
+          />
+        </div>
+        <div className="space-y-1.5">
+          <label htmlFor="company" className="text-xs font-bold uppercase tracking-wider text-secondary">
             Company Name
           </label>
           <input
@@ -106,65 +164,52 @@ export default function ContactForm() {
             type="text"
             value={formData.company}
             onChange={handleChange}
-            className="w-full bg-surface-2 border border-border rounded-xl px-4 py-3 text-text-main placeholder-muted focus:outline-none focus:border-primary-glow focus:ring-1 focus:ring-primary-glow transition-all"
+            className="w-full bg-[#F8F9FD] border border-[#E2E4EB] rounded-2xl px-4 py-3.5 text-sm text-secondary placeholder:text-[#9A98A6] focus:outline-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/10 transition-all"
             placeholder="Acme Corp"
           />
         </div>
-        <div className="space-y-2">
-          <label htmlFor="service" className="text-body-sm font-medium text-text-main">
-            Service of Interest
-          </label>
-          <select
-            id="service"
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            className="w-full bg-surface-2 border border-border rounded-xl px-4 py-3 text-text-main focus:outline-none focus:border-primary-glow focus:ring-1 focus:ring-primary-glow transition-all appearance-none"
-          >
-            <option value="AI Automation">AI & Automation</option>
-            <option value="Digital Marketing">Digital Marketing</option>
-            <option value="Web Development">Web & Software Development</option>
-            <option value="UI/UX Design">UI/UX Design</option>
-            <option value="Branding">Branding & Creative</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
       </div>
 
-      <div className="space-y-2">
-        <label htmlFor="message" className="text-body-sm font-medium text-text-main">
-          Message <span className="text-accent">*</span>
+      {/* Message Textarea */}
+      <div className="space-y-1.5">
+        <label htmlFor="message" className="text-xs font-bold uppercase tracking-wider text-secondary">
+          Message / Project Goals <span className="text-red-500">*</span>
         </label>
         <textarea
           id="message"
           name="message"
           required
-          rows={5}
+          rows={4}
           value={formData.message}
           onChange={handleChange}
-          className="w-full bg-surface-2 border border-border rounded-xl px-4 py-3 text-text-main placeholder-muted focus:outline-none focus:border-primary-glow focus:ring-1 focus:ring-primary-glow transition-all resize-none"
+          className="w-full bg-[#F8F9FD] border border-[#E2E4EB] rounded-2xl px-4 py-3.5 text-sm text-secondary placeholder:text-[#9A98A6] focus:outline-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/10 transition-all resize-none"
           placeholder="Tell us about your project, goals, and timeline..."
         />
       </div>
 
-      <GradientButton 
-        type="submit" 
-        size="lg" 
-        className="w-full justify-center"
-        disabled={isSubmitting}
-      >
-        {isSubmitting ? (
-          <>
-            <Loader2 size={18} className="animate-spin" />
-            Sending...
-          </>
-        ) : (
-          <>
-            Send Message
-            <Send size={18} />
-          </>
-        )}
-      </GradientButton>
+      {/* Submit Button - Shadcn Input Button Solid */}
+      <div className="pt-2">
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="shadcn-input-button-solid w-full justify-center !min-w-full !h-[56px] disabled:opacity-70 disabled:cursor-not-allowed"
+        >
+          <span>
+            {isSubmitting ? "Submitting Inquiry..." : "Send Message"}
+          </span>
+          <span className="badge-icon">
+            {isSubmitting ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : (
+              <Send className="w-4 h-4" />
+            )}
+          </span>
+        </button>
+      </div>
+
+      <p className="text-[12px] text-center text-muted-foreground font-medium flex items-center justify-center gap-2">
+        <Check className="w-4 h-4 text-primary" /> 100% Confidential • Response within 24 hours
+      </p>
     </form>
   );
 }
