@@ -8,6 +8,15 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Adyantra Digital | AI Automation & Performance Digital Marketing Agency",
   description: "Technology-first digital marketing and AI automation agency. Specializing in Meta Ads, Google Ads, Next.js Web Software, Technical SEO, and AI Chatbot Workflows.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
