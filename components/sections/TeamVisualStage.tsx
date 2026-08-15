@@ -2,22 +2,22 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Users, Activity, ShieldCheck, Sparkles, CheckCircle2, Headphones } from "lucide-react";
+import { Users, Activity, Code2, Rocket, CheckCircle2 } from "lucide-react";
 
 export default function TeamVisualStage() {
   return (
-    <div className="relative w-full max-w-[550px] aspect-square flex items-center justify-center mx-auto">
-      {/* ── Background Stage Glow ── */}
-      <div className="absolute inset-4 rounded-full bg-gradient-to-tr from-cyan-400/20 via-primary/20 to-purple-500/20 blur-3xl animate-pulse pointer-events-none" />
+    <div className="relative w-full max-w-[520px] aspect-square flex items-center justify-center mx-auto select-none">
+      {/* ── Soft Ambient Glow ── */}
+      <div className="absolute inset-4 rounded-full bg-gradient-to-tr from-primary/15 via-indigo-500/10 to-cyan-400/15 blur-3xl pointer-events-none" />
 
       {/* ── Center 3D Artwork ── */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        animate={{ y: [0, -12, 0] }}
-        className="relative z-10 w-[82%] h-[82%] flex items-center justify-center drop-shadow-[0_20px_40px_rgba(15,115,188,0.2)]"
+        animate={{ y: [0, -10, 0] }}
+        className="relative z-10 w-[80%] h-[80%] flex items-center justify-center drop-shadow-[0_20px_40px_rgba(106,71,237,0.18)]"
       >
         <Image
           src="/assets/img/team/team-3d.png"
@@ -29,67 +29,67 @@ export default function TeamVisualStage() {
         />
       </motion.div>
 
-      {/* ── Floating Badge 1: Direct Comms (Top Left) ── */}
+      {/* ── Floating Badge 1: Direct Technical Access (Top Left) ── */}
       <motion.div
-        animate={{ y: [0, -8, 0] }}
+        animate={{ y: [0, -7, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.2 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute top-[8%] left-[-4%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 cursor-pointer"
+        className="absolute top-[8%] left-[-4%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-3 rounded-2xl shadow-lg flex items-center gap-3 cursor-pointer"
       >
-        <div className="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-600 flex items-center justify-center shrink-0">
-          <Users className="w-5 h-5" />
+        <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+          <Code2 className="w-4.5 h-4.5" />
         </div>
         <div>
           <p className="text-xs font-bold text-secondary leading-tight">Direct Access</p>
-          <p className="text-[11px] text-muted-foreground">Senior Strategists & Devs</p>
+          <p className="text-[11px] text-muted-foreground">Senior Tech Leads</p>
         </div>
       </motion.div>
 
-      {/* ── Floating Badge 2: 24/7 System Monitoring (Top Right) ── */}
+      {/* ── Floating Badge 2: Continuous Optimization (Top Right) ── */}
       <motion.div
-        animate={{ y: [0, 8, 0] }}
-        transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 0.8 }}
+        animate={{ y: [0, 7, 0] }}
+        transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 0.6 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute top-[16%] right-[-6%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 cursor-pointer"
+        className="absolute top-[12%] right-[-4%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-3 rounded-2xl shadow-lg flex items-center gap-3 cursor-pointer"
       >
-        <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
-          <Activity className="w-5 h-5" />
+        <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
+          <Activity className="w-4.5 h-4.5 animate-pulse" />
         </div>
         <div>
-          <p className="text-xs font-bold text-secondary leading-tight">24/7 Monitoring</p>
-          <p className="text-[11px] text-emerald-600 font-semibold">Active & Live</p>
+          <p className="text-xs font-bold text-secondary leading-tight">24/7 Tuning</p>
+          <p className="text-[11px] text-emerald-600 font-semibold">Live Attribution</p>
         </div>
       </motion.div>
 
-      {/* ── Floating Badge 3: 30-Day Guarantee (Bottom Left) ── */}
+      {/* ── Floating Badge 3: 100% In-House (Bottom Left) ── */}
       <motion.div
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1.2 }}
+        animate={{ y: [0, -8, 0] }}
+        transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute bottom-[18%] left-[-6%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 cursor-pointer"
+        className="absolute bottom-[14%] left-[-5%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-3 rounded-2xl shadow-lg flex items-center gap-3 cursor-pointer"
       >
-        <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-          <ShieldCheck className="w-5 h-5" />
+        <div className="w-9 h-9 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0">
+          <Users className="w-4.5 h-4.5" />
         </div>
         <div>
-          <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Risk-Free</p>
-          <p className="text-sm font-extrabold text-secondary">30-Day Guarantee</p>
+          <p className="text-xs font-bold text-secondary leading-tight">100% In-House</p>
+          <p className="text-[11px] text-purple-600 font-semibold">Zero Outsourcing</p>
         </div>
       </motion.div>
 
-      {/* ── Floating Badge 4: Full-Stack Talent (Bottom Right) ── */}
+      {/* ── Floating Badge 4: Tailored Growth (Bottom Right) ── */}
       <motion.div
         animate={{ y: [0, 6, 0] }}
-        transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 1.6 }}
+        transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 1.4 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute bottom-[10%] right-[-2%] z-20 bg-slate-900/90 backdrop-blur-md border border-white/10 p-3.5 rounded-2xl shadow-2xl flex items-center gap-3 text-white cursor-pointer"
+        className="absolute bottom-[10%] right-[-3%] z-20 bg-secondary/95 backdrop-blur-md border border-white/10 p-3 rounded-2xl shadow-xl flex items-center gap-3 text-white cursor-pointer"
       >
-        <div className="w-9 h-9 rounded-full bg-purple-500/20 text-purple-300 flex items-center justify-center shrink-0">
-          <Sparkles className="w-4 h-4 text-purple-300 animate-pulse" />
+        <div className="w-9 h-9 rounded-xl bg-primary/20 text-accent flex items-center justify-center shrink-0">
+          <Rocket className="w-4.5 h-4.5" />
         </div>
         <div>
-          <p className="text-xs font-bold text-white leading-tight">In-House Talent</p>
-          <p className="text-[11px] text-slate-300">Designers, Devs & Ads</p>
+          <p className="text-xs font-bold text-white leading-tight">Tailored Growth</p>
+          <p className="text-[11px] text-slate-300">+340% Avg ROAS</p>
         </div>
       </motion.div>
     </div>

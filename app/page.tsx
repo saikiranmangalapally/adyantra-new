@@ -23,6 +23,12 @@ import {
   Phone,
   Star,
   ChevronsRight,
+  Rocket,
+  Code2,
+  Activity,
+  TrendingUp,
+  Sparkles,
+  ShieldCheck,
 } from "lucide-react";
 import { slideUp, staggerContainer } from "@/lib/variants";
 
@@ -334,6 +340,7 @@ function ShadcnInputButton({
 export default function Home() {
   const [activeTab, setActiveTab] = useState("All Services");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [activeTeamPillar, setActiveTeamPillar] = useState<number>(0);
 
   const filteredServices = activeTab === "All Services" ? services : services.filter((s) => s.cat === activeTab);
 
@@ -470,36 +477,77 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           3. EXPERT TEAM & COLLABORATION
           ═══════════════════════════════════════ */}
-      <section className="section-padding bg-cover bg-center relative" style={{ backgroundImage: "url('/assets/img/team/team-bg.jpg')" }}>
-        <div className="absolute top-10 right-10 animate-[bounce_5s_infinite] opacity-40 pointer-events-none">
-          <Image src="/assets/img/service/rocket-shape.png" alt="Graphic Shape" width={120} height={120} className="w-auto h-auto" />
-        </div>
+      <section className="section-padding relative overflow-hidden bg-white border-y border-border/60" id="team-expertise">
+        {/* Subtle Ambient Radial Lighting */}
+        <div className="absolute top-1/4 -left-20 w-[420px] h-[420px] bg-primary/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 -right-20 w-[420px] h-[420px] bg-cyan-500/8 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Left Column: 3D Team Visual Stage */}
-            <motion.div className="lg:w-1/2 flex justify-center" initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            {/* Left Column: Clean 3D Team Visual Stage */}
+            <motion.div className="lg:w-1/2 flex justify-center" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
               <TeamVisualStage />
             </motion.div>
 
             {/* Right Content */}
             <motion.div className="lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-              <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">OUR TEAM & EXPERTISE</motion.div>
-              <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-3 text-secondary tracking-tight">
-                Work Directly with Senior Engineers & Growth Strategists
+              <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">
+                OUR TEAM & EXPERTISE
+              </motion.div>
+
+              <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4 text-secondary tracking-tight">
+                Work Directly with Senior Engineers & <span className="text-primary underline decoration-accent/60 decoration-4">Growth Strategists</span>
               </motion.h2>
-              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-6 leading-relaxed max-w-lg">
+
+              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-8 leading-relaxed max-w-xl">
                 We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
               </motion.p>
 
+              {/* Clean Feature Rows with Dedicated Icons (No Boxes) */}
               <motion.div variants={slideUp} className="flex flex-col sm:flex-row gap-4 sm:gap-10 mb-8">
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> 100% In-House Execution</li>
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> Tailored Growth Strategies</li>
+                <ul className="space-y-4">
+                  <motion.li
+                    whileHover={{ x: 4 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <Users className="w-4 h-4" />
+                    </div>
+                    <span className="group-hover:text-primary transition-colors">100% In-House Execution</span>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 4 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <Rocket className="w-4 h-4" />
+                    </div>
+                    <span className="group-hover:text-primary transition-colors">Tailored Growth Strategies</span>
+                  </motion.li>
                 </ul>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> Direct Senior Technical Access</li>
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> Continuous Campaign Optimization</li>
+                <ul className="space-y-4">
+                  <motion.li
+                    whileHover={{ x: 4 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <Code2 className="w-4 h-4" />
+                    </div>
+                    <span className="group-hover:text-primary transition-colors">Direct Senior Technical Access</span>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 4 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <Activity className="w-4 h-4" />
+                    </div>
+                    <span className="group-hover:text-primary transition-colors">Continuous Campaign Optimization</span>
+                  </motion.li>
                 </ul>
               </motion.div>
 
