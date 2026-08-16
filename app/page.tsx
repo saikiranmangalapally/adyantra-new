@@ -350,8 +350,15 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           1. HERO SECTION (Unchanged as requested)
           ═══════════════════════════════════════ */}
-      <section className="relative pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-white">
-        <div className="absolute inset-0 bg-[radial-gradient(#E2E4EB_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
+      <section className="relative pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden">
+        {/* Video background */}
+        <div className="absolute inset-0">
+          <video autoPlay loop muted playsInline className="h-full w-full object-cover">
+            <source src="/hero-bg.mp4" type="video/mp4" />
+          </video>
+          {/* Dark overlay for better text legibility */}
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
 
         <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
@@ -360,16 +367,16 @@ export default function Home() {
             <motion.div className="lg:w-[52%]" initial="hidden" animate="visible" variants={staggerContainer}>
               
               {/* Organic Badge */}
-              <motion.div variants={slideUp} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-border shadow-xs text-primary font-bold text-xs uppercase tracking-widest mb-6">
+              <motion.div variants={slideUp} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xs text-white font-bold text-xs uppercase tracking-widest mb-6">
                 <span className="w-2.5 h-2.5 rounded-full bg-primary animate-ping" />
                 <span>Next-Gen AI & Performance Systems</span>
               </motion.div>
 
-              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[52px] font-bold leading-[1.15] mb-6 text-secondary tracking-tight max-w-2xl">
+              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[52px] font-bold leading-[1.15] mb-6 text-white drop-shadow-lg tracking-tight max-w-2xl">
                 Accelerate Your Brand with <span className="text-primary underline decoration-accent/60 decoration-4">Performance-Driven</span> Digital Marketing Services.
               </motion.h1>
               
-              <motion.p variants={slideUp} className="text-base sm:text-lg text-muted-foreground mb-10 max-w-xl leading-relaxed">
+              <motion.p variants={slideUp} className="text-base sm:text-lg text-white/90 drop-shadow-md mb-10 max-w-xl leading-relaxed">
                 We engineer high-performance digital marketing ecosystems combining precision data science with world-class creative to scale brands aggressively and profitably.
               </motion.p>
               
@@ -379,20 +386,17 @@ export default function Home() {
               </motion.div>
 
               {/* Stats Bar */}
-              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-border/80">
+              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/20">
                 {heroStats.map((s, i) => (
                   <div key={i} className="group">
-                    <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary group-hover:scale-105 transition-transform inline-block">{s.value}</p>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-1">{s.label}</p>
+                    <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md group-hover:scale-105 transition-transform inline-block">{s.value}</p>
+                    <p className="text-xs font-semibold text-white/80 uppercase tracking-wider mt-1">{s.label}</p>
                   </div>
                 ))}
               </motion.div>
             </motion.div>
 
-            {/* Right Column: 3D Interactive Parallax Scene */}
-            <motion.div className="lg:w-[46%] w-full relative flex items-center justify-center" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
-              <Hero3DParallax />
-            </motion.div>
+            {/* Right Column Removed */}
 
           </div>
         </div>
