@@ -60,11 +60,11 @@ export default function ServiceCta() {
           <motion.div variants={slideUp}>
             <ShadcnInputButton href="/contact" variant="white">Book Strategy Call</ShadcnInputButton>
           </motion.div>
-          <motion.div variants={slideUp} className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-8 border-t border-white/20">
+          <motion.div variants={slideUp} className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/20">
             {ctaStats.map((s, i) => (
               <div key={i}>
-                <p className="text-3xl md:text-4xl font-bold text-white">{s.value}</p>
-                <p className="text-white/70 mt-1 text-xs">{s.label}</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">{s.value}</p>
+                <p className="text-white/80 mt-1 text-[11px] sm:text-xs">{s.label}</p>
               </div>
             ))}
           </motion.div>

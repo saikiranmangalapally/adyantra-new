@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Hero3DParallax from "@/components/hero/Hero3DParallax";
+import HeroVideoBackground from "@/components/hero/HeroVideoBackground";
 import WhyUsVisualStage from "@/components/sections/WhyUsVisualStage";
 import TeamVisualStage from "@/components/sections/TeamVisualStage";
 import Link from "next/link";
@@ -273,33 +274,33 @@ function ReviewCard({
   const roleParts = role.split(" • ");
 
   return (
-    <figure className="relative w-[340px] sm:w-[360px] shrink-0 cursor-pointer overflow-hidden rounded-3xl border border-border/80 bg-white p-5 sm:p-6 shadow-sm hover:shadow-xl hover:border-primary/50 hover:scale-[1.02] transition-all duration-300 mx-1.5 flex flex-col justify-between group">
+    <figure className="relative w-[290px] sm:w-[360px] shrink-0 cursor-pointer overflow-hidden rounded-3xl border border-border/80 bg-white p-4 sm:p-6 shadow-sm hover:shadow-xl hover:border-primary/50 hover:scale-[1.02] transition-all duration-300 mx-1 sm:mx-1.5 flex flex-col justify-between group">
       <div className="relative z-10">
-        <div className="flex items-center gap-3.5 mb-4">
-          <div className="w-10 h-10 rounded-full bg-primary text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+        <div className="flex items-center gap-2.5 sm:gap-3.5 mb-3 sm:mb-4">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
             {initials}
           </div>
-          <div>
-            <h4 className="font-bold text-secondary text-sm sm:text-base leading-tight group-hover:text-primary transition-colors">{name}</h4>
-            <span className="inline-flex items-center gap-1.5 mt-1 text-[11px] font-bold text-primary bg-primary/10 border border-primary/20 px-3 py-0.5 rounded-full whitespace-nowrap">
+          <div className="min-w-0 flex-1">
+            <h4 className="font-bold text-secondary text-sm sm:text-base leading-tight group-hover:text-primary transition-colors truncate">{name}</h4>
+            <span className="inline-flex items-center gap-1 sm:gap-1.5 mt-1 text-[10px] sm:text-[11px] font-bold text-primary bg-primary/10 border border-primary/20 px-2 sm:px-3 py-0.5 rounded-full max-w-full truncate">
               {roleParts.length === 2 ? (
                 <>
-                  <span className="whitespace-nowrap">{roleParts[0]}</span>
+                  <span className="truncate">{roleParts[0]}</span>
                   <span className="w-1 h-1 rounded-full bg-primary/70 shrink-0" />
-                  <span className="whitespace-nowrap">{roleParts[1]}</span>
+                  <span className="truncate">{roleParts[1]}</span>
                 </>
               ) : (
-                <span className="whitespace-nowrap">{role}</span>
+                <span className="truncate">{role}</span>
               )}
             </span>
           </div>
-          <div className="ml-auto flex items-center gap-0.5 text-amber-400">
+          <div className="ml-auto flex items-center gap-0.5 text-amber-400 shrink-0">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+              <Star key={i} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400 text-amber-400" />
             ))}
           </div>
         </div>
-        <p className="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed italic border-t border-border/70 pt-3.5">
+        <p className="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed italic border-t border-border/70 pt-3 sm:pt-3.5">
           &ldquo;{quote}&rdquo;
         </p>
       </div>
@@ -352,13 +353,7 @@ export default function Home() {
           ═══════════════════════════════════════ */}
       <section className="relative pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden">
         {/* Video background */}
-        <div className="absolute inset-0">
-          <video autoPlay loop muted playsInline className="h-full w-full object-cover">
-            <source src="/hero-bg.mp4" type="video/mp4" />
-          </video>
-          {/* Dark overlay for better text legibility */}
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
+        <HeroVideoBackground videoSrc="/hero-bg.mp4" overlayOpacity="bg-black/60" />
 
         <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
@@ -380,17 +375,17 @@ export default function Home() {
                 We engineer high-performance digital marketing ecosystems combining precision data science with world-class creative to scale brands aggressively and profitably.
               </motion.p>
               
-              <motion.div variants={slideUp} className="flex flex-wrap items-center gap-4 sm:gap-5 mb-14">
+              <motion.div variants={slideUp} className="flex flex-wrap items-center gap-3 sm:gap-5 mb-10 sm:mb-14">
                 <ShadcnInputButton href="/contact" variant="solid">Get Started</ShadcnInputButton>
                 <ShadcnInputButton href="#services" variant="outline">Our Services</ShadcnInputButton>
               </motion.div>
 
               {/* Stats Bar */}
-              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/20">
+              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-white/20">
                 {heroStats.map((s, i) => (
                   <div key={i} className="group">
-                    <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md group-hover:scale-105 transition-transform inline-block">{s.value}</p>
-                    <p className="text-xs font-semibold text-white/80 uppercase tracking-wider mt-1">{s.label}</p>
+                    <p className="text-xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md group-hover:scale-105 transition-transform inline-block">{s.value}</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-white/80 uppercase tracking-wider mt-1">{s.label}</p>
                   </div>
                 ))}
               </motion.div>
@@ -809,11 +804,11 @@ export default function Home() {
             <motion.div variants={slideUp}>
               <ShadcnInputButton href="/contact" variant="white">Book Strategy Call</ShadcnInputButton>
             </motion.div>
-            <motion.div variants={slideUp} className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-8 border-t border-white/20">
+            <motion.div variants={slideUp} className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/20">
               {ctaStats.map((s, i) => (
                 <div key={i}>
-                  <p className="text-3xl md:text-4xl font-bold text-white">{s.value}</p>
-                  <p className="text-white/70 mt-1 text-xs">{s.label}</p>
+                  <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">{s.value}</p>
+                  <p className="text-white/80 mt-1 text-[11px] sm:text-xs">{s.label}</p>
                 </div>
               ))}
             </motion.div>

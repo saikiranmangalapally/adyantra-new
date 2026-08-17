@@ -96,29 +96,29 @@ function ReviewCard({
   const roleParts = role.split(" • ");
 
   return (
-    <figure className="relative w-[340px] sm:w-[360px] shrink-0 cursor-pointer overflow-hidden rounded-3xl border border-border/80 bg-white p-5 sm:p-6 shadow-sm hover:shadow-xl hover:border-primary/50 hover:scale-[1.02] transition-all duration-300 mx-1.5 flex flex-col justify-between group">
+    <figure className="relative w-[290px] sm:w-[360px] shrink-0 cursor-pointer overflow-hidden rounded-3xl border border-border/80 bg-white p-4 sm:p-6 shadow-sm hover:shadow-xl hover:border-primary/50 hover:scale-[1.02] transition-all duration-300 mx-1 sm:mx-1.5 flex flex-col justify-between group">
       <div className="relative z-10">
-        <div className="flex items-center gap-3.5 mb-4">
-          <div className="w-10 h-10 rounded-full bg-primary text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+        <div className="flex items-center gap-2.5 sm:gap-3.5 mb-3 sm:mb-4">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
             {initials}
           </div>
-          <div>
-            <h4 className="font-bold text-secondary text-sm sm:text-base leading-tight group-hover:text-primary transition-colors">{name}</h4>
-            <span className="inline-flex items-center gap-1.5 mt-1 text-[11px] font-bold text-primary bg-primary/10 border border-primary/20 px-3 py-0.5 rounded-full whitespace-nowrap">
+          <div className="min-w-0 flex-1">
+            <h4 className="font-bold text-secondary text-sm sm:text-base leading-tight group-hover:text-primary transition-colors truncate">{name}</h4>
+            <span className="inline-flex items-center gap-1 sm:gap-1.5 mt-1 text-[10px] sm:text-[11px] font-bold text-primary bg-primary/10 border border-primary/20 px-2 sm:px-3 py-0.5 rounded-full max-w-full truncate">
               {roleParts.length === 2 ? (
                 <>
-                  <span className="whitespace-nowrap">{roleParts[0]}</span>
+                  <span className="truncate">{roleParts[0]}</span>
                   <span className="w-1 h-1 rounded-full bg-primary/70 shrink-0" />
-                  <span className="whitespace-nowrap">{roleParts[1]}</span>
+                  <span className="truncate">{roleParts[1]}</span>
                 </>
               ) : (
-                <span className="whitespace-nowrap">{role}</span>
+                <span className="truncate">{role}</span>
               )}
             </span>
           </div>
         </div>
         
-        <p className="text-secondary/75 leading-relaxed text-sm sm:text-[15px] font-medium tracking-tight">
+        <p className="text-secondary/75 leading-relaxed text-xs sm:text-sm font-medium tracking-tight">
           "{quote}"
         </p>
       </div>

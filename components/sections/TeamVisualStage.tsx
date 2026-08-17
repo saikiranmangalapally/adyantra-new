@@ -34,14 +34,14 @@ export default function TeamVisualStage() {
         animate={{ y: [0, -7, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.2 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute top-[8%] left-[-4%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-3 rounded-2xl shadow-lg flex items-center gap-3 cursor-pointer"
+        className="absolute top-[2%] sm:top-[8%] left-1 sm:left-[-4%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-2.5 sm:p-3 rounded-2xl shadow-lg flex items-center gap-2.5 sm:gap-3 cursor-pointer scale-90 sm:scale-100 origin-left"
       >
-        <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-          <Code2 className="w-4.5 h-4.5" />
+        <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+          <Code2 className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
         </div>
         <div>
-          <p className="text-xs font-bold text-secondary leading-tight">Direct Access</p>
-          <p className="text-[11px] text-muted-foreground">Senior Tech Leads</p>
+          <p className="text-[11px] sm:text-xs font-bold text-secondary leading-tight">Direct Access</p>
+          <p className="text-[10px] sm:text-[11px] text-muted-foreground">Senior Tech Leads</p>
         </div>
       </motion.div>
 
@@ -50,14 +50,14 @@ export default function TeamVisualStage() {
         animate={{ y: [0, 7, 0] }}
         transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 0.6 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute top-[12%] right-[-4%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-3 rounded-2xl shadow-lg flex items-center gap-3 cursor-pointer"
+        className="absolute top-[6%] sm:top-[12%] right-1 sm:right-[-4%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-2.5 sm:p-3 rounded-2xl shadow-lg flex items-center gap-2.5 sm:gap-3 cursor-pointer scale-90 sm:scale-100 origin-right"
       >
-        <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
-          <Activity className="w-4.5 h-4.5 animate-pulse" />
+        <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
+          <Activity className="w-4 h-4 sm:w-4.5 sm:h-4.5 animate-pulse" />
         </div>
         <div>
-          <p className="text-xs font-bold text-secondary leading-tight">24/7 Tuning</p>
-          <p className="text-[11px] text-emerald-600 font-semibold">Live Attribution</p>
+          <p className="text-[11px] sm:text-xs font-bold text-secondary leading-tight">24/7 Tuning</p>
+          <p className="text-[10px] sm:text-[11px] text-emerald-600 font-semibold">Live Attribution</p>
         </div>
       </motion.div>
 
@@ -66,14 +66,14 @@ export default function TeamVisualStage() {
         animate={{ y: [0, -8, 0] }}
         transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute bottom-[14%] left-[-5%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-3 rounded-2xl shadow-lg flex items-center gap-3 cursor-pointer"
+        className="absolute bottom-[8%] sm:bottom-[14%] left-1 sm:left-[-5%] z-20 bg-white/95 backdrop-blur-md border border-border/80 p-2.5 sm:p-3 rounded-2xl shadow-lg flex items-center gap-2.5 sm:gap-3 cursor-pointer scale-90 sm:scale-100 origin-left"
       >
-        <div className="w-9 h-9 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0">
-          <Users className="w-4.5 h-4.5" />
+        <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0">
+          <Users className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
         </div>
         <div>
-          <p className="text-xs font-bold text-secondary leading-tight">100% In-House</p>
-          <p className="text-[11px] text-purple-600 font-semibold">Zero Outsourcing</p>
+          <p className="text-[11px] sm:text-xs font-bold text-secondary leading-tight">100% In-House</p>
+          <p className="text-[10px] sm:text-[11px] text-purple-600 font-semibold">Zero Outsourcing</p>
         </div>
       </motion.div>
 
@@ -82,14 +82,14 @@ export default function TeamVisualStage() {
         animate={{ y: [0, 6, 0] }}
         transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 1.4 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute bottom-[10%] right-[-3%] z-20 bg-secondary/95 backdrop-blur-md border border-white/10 p-3 rounded-2xl shadow-xl flex items-center gap-3 text-white cursor-pointer"
+        className="absolute bottom-[4%] sm:bottom-[10%] right-1 sm:right-[-3%] z-20 bg-secondary/95 backdrop-blur-md border border-white/10 p-2.5 sm:p-3 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3 text-white cursor-pointer scale-90 sm:scale-100 origin-right"
       >
-        <div className="w-9 h-9 rounded-xl bg-primary/20 text-accent flex items-center justify-center shrink-0">
-          <Rocket className="w-4.5 h-4.5" />
+        <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-primary/20 text-accent flex items-center justify-center shrink-0">
+          <Rocket className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
         </div>
         <div>
-          <p className="text-xs font-bold text-white leading-tight">Tailored Growth</p>
-          <p className="text-[11px] text-slate-300">+340% Avg ROAS</p>
+          <p className="text-[11px] sm:text-xs font-bold text-white leading-tight">Tailored Growth</p>
+          <p className="text-[9px] sm:text-[11px] text-slate-300">+340% Avg ROAS</p>
         </div>
       </motion.div>
     </div>

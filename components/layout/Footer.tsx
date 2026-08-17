@@ -83,7 +83,9 @@ export default function Footer() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-xs mb-0.5">Mobile Phone</h4>
-                  <p className="text-xs text-gray-400 font-medium">+91 83092 75093</p>
+                  <a href="tel:+918309275093" className="text-xs text-gray-400 hover:text-cyan-400 font-medium transition-colors block">
+                    +91 83092 75093
+                  </a>
                 </div>
               </li>
               <li className="flex gap-3.5">
@@ -92,8 +94,12 @@ export default function Footer() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-xs mb-0.5">Email Support</h4>
-                  <p className="text-xs text-gray-400 font-medium">info@adyantra.in</p>
-                  <p className="text-xs text-gray-400 font-medium mt-0.5">adyantradigital@gmail.com</p>
+                  <a href="mailto:info@adyantra.in" className="text-xs text-gray-400 hover:text-cyan-400 font-medium transition-colors block">
+                    info@adyantra.in
+                  </a>
+                  <a href="mailto:adyantradigital@gmail.com" className="text-xs text-gray-400 hover:text-cyan-400 font-medium transition-colors block mt-0.5">
+                    adyantradigital@gmail.com
+                  </a>
                 </div>
               </li>
             </ul>

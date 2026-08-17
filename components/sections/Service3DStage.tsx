@@ -61,7 +61,7 @@ export default function Service3DStage({
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
           animate={{ y: [0, 8, 0] }}
-          className="absolute bottom-[5%] left-[-10%] z-20 w-[45%] h-[45%] flex items-center justify-center drop-shadow-xl"
+          className="absolute bottom-[5%] left-0 sm:left-[-10%] z-20 w-[45%] h-[45%] flex items-center justify-center drop-shadow-xl"
         >
           <Image
             src={finalImages[1]}
@@ -81,7 +81,7 @@ export default function Service3DStage({
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
           animate={{ y: [0, -8, 0] }}
-          className="absolute top-[2%] right-[-8%] z-0 w-[40%] h-[40%] flex items-center justify-center drop-shadow-xl"
+          className="absolute top-[2%] right-0 sm:right-[-8%] z-0 w-[40%] h-[40%] flex items-center justify-center drop-shadow-xl"
         >
           <Image
             src={finalImages[2]}
@@ -98,14 +98,14 @@ export default function Service3DStage({
         animate={{ y: [0, -8, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.2 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute top-[8%] left-[-2%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 cursor-pointer"
+        className="absolute top-[2%] sm:top-[8%] left-1 sm:left-[-2%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-2.5 sm:p-3.5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3 cursor-pointer scale-90 sm:scale-100 origin-left"
       >
-        <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-          <ShieldCheck className="w-5 h-5" />
+        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+          <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
         </div>
         <div>
-          <p className="text-xs font-extrabold text-secondary leading-tight">{badge1Title}</p>
-          <p className="text-[11px] text-muted-foreground font-semibold">{badge1Sub}</p>
+          <p className="text-[11px] sm:text-xs font-extrabold text-secondary leading-tight">{badge1Title}</p>
+          <p className="text-[10px] sm:text-[11px] text-muted-foreground font-semibold">{badge1Sub}</p>
         </div>
       </motion.div>
 
@@ -114,19 +114,19 @@ export default function Service3DStage({
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 0.8 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute top-[16%] right-[-4%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 cursor-pointer"
+        className="absolute top-[8%] sm:top-[16%] right-1 sm:right-[-4%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-2.5 sm:p-3.5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3 cursor-pointer scale-90 sm:scale-100 origin-right"
       >
-        <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
-          <Award className="w-5 h-5" />
+        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+          <Award className="w-4 h-4 sm:w-5 sm:h-5" />
         </div>
         <div>
           <div className="flex items-center gap-0.5 text-yellow-400">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-3 h-3 fill-current" />
+              <Star key={i} className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-current" />
             ))}
           </div>
-          <p className="text-xs font-extrabold text-secondary leading-tight mt-0.5">{badge2Title}</p>
-          <p className="text-[10px] text-muted-foreground font-bold uppercase tracking-wider">{badge2Sub}</p>
+          <p className="text-[11px] sm:text-xs font-extrabold text-secondary leading-tight mt-0.5">{badge2Title}</p>
+          <p className="text-[9px] sm:text-[10px] text-muted-foreground font-bold uppercase tracking-wider">{badge2Sub}</p>
         </div>
       </motion.div>
 
@@ -135,14 +135,14 @@ export default function Service3DStage({
         animate={{ y: [0, -6, 0] }}
         transition={{ repeat: Infinity, duration: 3.8, ease: "easeInOut", delay: 0.4 }}
         whileHover={{ scale: 1.05 }}
-        className="absolute bottom-[10%] right-[2%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 cursor-pointer"
+        className="absolute bottom-[4%] sm:bottom-[10%] right-1 sm:right-[2%] z-20 bg-white/95 backdrop-blur-md border border-white/80 p-2.5 sm:p-3.5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3 cursor-pointer scale-90 sm:scale-100 origin-right"
       >
-        <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
-          <TrendingUp className="w-5 h-5" />
+        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
+          <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5" />
         </div>
         <div>
-          <p className="text-xs font-extrabold text-secondary leading-tight">{badge3Title}</p>
-          <p className="text-[11px] text-muted-foreground font-semibold">{badge3Sub}</p>
+          <p className="text-[11px] sm:text-xs font-extrabold text-secondary leading-tight">{badge3Title}</p>
+          <p className="text-[10px] sm:text-[11px] text-muted-foreground font-semibold">{badge3Sub}</p>
         </div>
       </motion.div>
     </div>
