@@ -351,31 +351,31 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           1. HERO SECTION (Unchanged as requested)
           ═══════════════════════════════════════ */}
-      <section className="relative pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden">
-        {/* Video background */}
-        <HeroVideoBackground videoSrc="/hero-bg.mp4" overlayOpacity="bg-black/60" />
+      <section className="relative pt-28 pb-20 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-36 overflow-hidden">
+        {/* Video & Luminous Backdrop */}
+        <HeroVideoBackground videoSrc="/hero-bg.mp4" overlayOpacity="bg-slate-950/50" />
 
         <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
             
             {/* Left Content Column */}
-            <motion.div className="lg:w-[52%]" initial="hidden" animate="visible" variants={staggerContainer}>
+            <motion.div className="lg:w-[52%] w-full text-center lg:text-left" initial="hidden" animate="visible" variants={staggerContainer}>
               
               {/* Organic Badge */}
               <motion.div variants={slideUp} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xs text-white font-bold text-xs uppercase tracking-widest mb-6">
-                <span className="w-2.5 h-2.5 rounded-full bg-primary animate-ping" />
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
                 <span>Next-Gen AI & Performance Systems</span>
               </motion.div>
 
-              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[52px] font-bold leading-[1.15] mb-6 text-white drop-shadow-lg tracking-tight max-w-2xl">
+              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] xl:text-[50px] font-bold leading-[1.18] mb-5 sm:mb-6 text-white drop-shadow-lg tracking-tight max-w-2xl mx-auto lg:mx-0">
                 Accelerate Your Brand with <span className="text-primary underline decoration-accent/60 decoration-4">Performance-Driven</span> Digital Marketing Services.
               </motion.h1>
               
-              <motion.p variants={slideUp} className="text-base sm:text-lg text-white/90 drop-shadow-md mb-10 max-w-xl leading-relaxed">
+              <motion.p variants={slideUp} className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md mb-8 sm:mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                 We engineer high-performance digital marketing ecosystems combining precision data science with world-class creative to scale brands aggressively and profitably.
               </motion.p>
               
-              <motion.div variants={slideUp} className="flex flex-wrap items-center gap-3 sm:gap-5 mb-10 sm:mb-14">
+              <motion.div variants={slideUp} className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-5 mb-10 sm:mb-14">
                 <ShadcnInputButton href="/contact" variant="solid">Get Started</ShadcnInputButton>
                 <ShadcnInputButton href="#services" variant="outline">Our Services</ShadcnInputButton>
               </motion.div>
@@ -391,7 +391,15 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* Right Column Removed */}
+            {/* Right Column: 3D Interactive Parallax Scene (Desktop/Tablet) */}
+            <motion.div
+              className="lg:w-[46%] w-full relative hidden lg:flex items-center justify-center"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <Hero3DParallax />
+            </motion.div>
 
           </div>
         </div>
