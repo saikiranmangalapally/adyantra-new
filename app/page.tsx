@@ -350,15 +350,15 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           1. HERO SECTION
           ═══════════════════════════════════════ */}
-      <section className="relative pt-32 pb-24 sm:pt-36 sm:pb-28 lg:pt-44 lg:pb-36 overflow-hidden">
+      <section className="relative pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden">
         {/* Video & Luminous Backdrop */}
         <HeroVideoBackground videoSrc="/hero-bg.mp4" overlayOpacity="bg-slate-950/50" />
 
-        <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
-          <div className="flex flex-col items-center justify-center text-center">
+        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
             
-            {/* Main Content */}
-            <motion.div className="w-full max-w-4xl mx-auto" initial="hidden" animate="visible" variants={staggerContainer}>
+            {/* Left Content Column (Original Placement & Alignment) */}
+            <motion.div className="lg:w-[52%]" initial="hidden" animate="visible" variants={staggerContainer}>
               
               {/* Organic Badge */}
               <motion.div variants={slideUp} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xs text-white font-bold text-xs uppercase tracking-widest mb-6">
@@ -366,21 +366,21 @@ export default function Home() {
                 <span>Next-Gen AI & Performance Systems</span>
               </motion.div>
 
-              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] xl:text-[60px] font-bold leading-[1.12] mb-6 text-white drop-shadow-lg tracking-tight max-w-3xl mx-auto">
+              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[52px] font-bold leading-[1.15] mb-6 text-white drop-shadow-lg tracking-tight max-w-2xl">
                 Accelerate Your Brand with <span className="text-primary underline decoration-accent/60 decoration-4">Performance-Driven</span> Digital Marketing Services.
               </motion.h1>
               
-              <motion.p variants={slideUp} className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md mb-10 max-w-2xl mx-auto leading-relaxed">
+              <motion.p variants={slideUp} className="text-base sm:text-lg text-white/90 drop-shadow-md mb-10 max-w-xl leading-relaxed">
                 We engineer high-performance digital marketing ecosystems combining precision data science with world-class creative to scale brands aggressively and profitably.
               </motion.p>
               
-              <motion.div variants={slideUp} className="flex flex-wrap items-center justify-center gap-3.5 sm:gap-5 mb-14">
+              <motion.div variants={slideUp} className="flex flex-wrap items-center gap-3.5 sm:gap-5 mb-14">
                 <ShadcnInputButton href="/contact" variant="solid">Get Started</ShadcnInputButton>
                 <ShadcnInputButton href="#services" variant="outline">Our Services</ShadcnInputButton>
               </motion.div>
 
               {/* Stats Bar */}
-              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 pt-8 border-t border-white/20 max-w-3xl mx-auto">
+              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-white/20">
                 {heroStats.map((s, i) => (
                   <div key={i} className="group">
                     <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md group-hover:scale-105 transition-transform inline-block">{s.value}</p>
@@ -389,6 +389,8 @@ export default function Home() {
                 ))}
               </motion.div>
             </motion.div>
+
+            {/* Right column omitted (image & bg removed) */}
 
           </div>
         </div>
