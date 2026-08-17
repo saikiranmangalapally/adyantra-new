@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Hero3DParallax from "@/components/hero/Hero3DParallax";
 import HeroVideoBackground from "@/components/hero/HeroVideoBackground";
 import WhyUsVisualStage from "@/components/sections/WhyUsVisualStage";
 import TeamVisualStage from "@/components/sections/TeamVisualStage";
@@ -349,17 +348,17 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden">
 
       {/* ═══════════════════════════════════════
-          1. HERO SECTION (Unchanged as requested)
+          1. HERO SECTION
           ═══════════════════════════════════════ */}
-      <section className="relative pt-28 pb-20 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-36 overflow-hidden">
+      <section className="relative pt-32 pb-24 sm:pt-36 sm:pb-28 lg:pt-44 lg:pb-36 overflow-hidden">
         {/* Video & Luminous Backdrop */}
         <HeroVideoBackground videoSrc="/hero-bg.mp4" overlayOpacity="bg-slate-950/50" />
 
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
+          <div className="flex flex-col items-center justify-center text-center">
             
-            {/* Left Content Column */}
-            <motion.div className="lg:w-[52%] w-full text-center lg:text-left" initial="hidden" animate="visible" variants={staggerContainer}>
+            {/* Main Content */}
+            <motion.div className="w-full max-w-4xl mx-auto" initial="hidden" animate="visible" variants={staggerContainer}>
               
               {/* Organic Badge */}
               <motion.div variants={slideUp} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xs text-white font-bold text-xs uppercase tracking-widest mb-6">
@@ -367,38 +366,28 @@ export default function Home() {
                 <span>Next-Gen AI & Performance Systems</span>
               </motion.div>
 
-              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] xl:text-[50px] font-bold leading-[1.18] mb-5 sm:mb-6 text-white drop-shadow-lg tracking-tight max-w-2xl mx-auto lg:mx-0">
+              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] xl:text-[60px] font-bold leading-[1.12] mb-6 text-white drop-shadow-lg tracking-tight max-w-3xl mx-auto">
                 Accelerate Your Brand with <span className="text-primary underline decoration-accent/60 decoration-4">Performance-Driven</span> Digital Marketing Services.
               </motion.h1>
               
-              <motion.p variants={slideUp} className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md mb-8 sm:mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              <motion.p variants={slideUp} className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md mb-10 max-w-2xl mx-auto leading-relaxed">
                 We engineer high-performance digital marketing ecosystems combining precision data science with world-class creative to scale brands aggressively and profitably.
               </motion.p>
               
-              <motion.div variants={slideUp} className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-5 mb-10 sm:mb-14">
+              <motion.div variants={slideUp} className="flex flex-wrap items-center justify-center gap-3.5 sm:gap-5 mb-14">
                 <ShadcnInputButton href="/contact" variant="solid">Get Started</ShadcnInputButton>
                 <ShadcnInputButton href="#services" variant="outline">Our Services</ShadcnInputButton>
               </motion.div>
 
               {/* Stats Bar */}
-              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-white/20">
+              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 pt-8 border-t border-white/20 max-w-3xl mx-auto">
                 {heroStats.map((s, i) => (
                   <div key={i} className="group">
-                    <p className="text-xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md group-hover:scale-105 transition-transform inline-block">{s.value}</p>
+                    <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md group-hover:scale-105 transition-transform inline-block">{s.value}</p>
                     <p className="text-[10px] sm:text-xs font-semibold text-white/80 uppercase tracking-wider mt-1">{s.label}</p>
                   </div>
                 ))}
               </motion.div>
-            </motion.div>
-
-            {/* Right Column: 3D Interactive Parallax Scene (Desktop/Tablet) */}
-            <motion.div
-              className="lg:w-[46%] w-full relative hidden lg:flex items-center justify-center"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
-            >
-              <Hero3DParallax />
             </motion.div>
 
           </div>
