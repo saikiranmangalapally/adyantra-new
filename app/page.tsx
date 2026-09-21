@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import HeroMarketaStyle from "@/components/hero/HeroMarketaStyle";
+import AdyantraHero from "@/components/hero/AdyantraHero";
 import WhyUsVisualStage from "@/components/sections/WhyUsVisualStage";
 import TeamVisualStage from "@/components/sections/TeamVisualStage";
 import Link from "next/link";
@@ -351,7 +351,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           1. HERO SECTION
           ═══════════════════════════════════════ */}
-      <HeroMarketaStyle />
+      <AdyantraHero />
 
       {/* ═══════════════════════════════════════
           2. OUR SERVICES

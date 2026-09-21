@@ -44,3 +44,5 @@ next-env.d.ts
 public/assets/videos/
 
 .vercel
+live_*.png
+

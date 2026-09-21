@@ -70,3 +70,8 @@ export const Icons8Heart = (props: IconProps) => <Icons8Icon id="87" alt="Health
 export const Icons8Plug = (props: IconProps) => <Icons8Icon id="4052" alt="API" {...props} />;
 export const Icons8Home = (props: IconProps) => <Icons8Icon id="73" alt="Home" {...props} />;
 export const Icons8Medical = (props: IconProps) => <Icons8Icon id="14094" alt="Medical" {...props} />;
+export const Icons8Email = (props: IconProps) => <Icons8Icon id="63598" alt="Email" {...props} />;
+export const Icons8Globe = (props: IconProps) => <Icons8Icon id="3685" alt="Globe" {...props} />;
+export const Icons8Share = (props: IconProps) => <Icons8Icon id="98958" alt="Share" {...props} />;
+export const Icons8Camera = (props: IconProps) => <Icons8Icon id="85082" alt="Camera" {...props} />;
+
