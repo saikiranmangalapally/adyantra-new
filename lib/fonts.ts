@@ -1,10 +1,13 @@
-import { Plus_Jakarta_Sans, DM_Mono } from "next/font/google";
+import { Poppins, DM_Mono } from "next/font/google";
 
-export const jakarta = Plus_Jakarta_Sans({
+export const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-jakarta",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
   display: "swap",
 });
+
+export const jakarta = poppins; // Backwards compatibility for existing variable references
 
 export const dmMono = DM_Mono({
   subsets: ["latin"],
@@ -12,3 +15,4 @@ export const dmMono = DM_Mono({
   variable: "--font-mono",
   display: "swap",
 });
+

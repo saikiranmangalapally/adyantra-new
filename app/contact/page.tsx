@@ -24,12 +24,13 @@ import {
   ShoppingCart
 } from "lucide-react";
 import ContactForm from "@/components/forms/ContactForm";
+import { Icons8Mail, Icons8Phone, Icons8MapPin } from "@/components/ui/Icons8Icon";
 import { motion, AnimatePresence } from "framer-motion";
 import { slideUp, staggerContainer } from "@/lib/variants";
 
 const contactTiles = [
   {
-    icon: Mail,
+    icon: Icons8Mail,
     title: "Email Us",
     primaryText: "info@adyantra.in",
     secondaryText: "support@adyantra.in",
@@ -37,7 +38,7 @@ const contactTiles = [
     actionType: "copy",
   },
   {
-    icon: Phone,
+    icon: Icons8Phone,
     title: "Call Us",
     primaryText: "+91 83092 75093",
     secondaryText: "+1-855-763-0320",
@@ -45,7 +46,7 @@ const contactTiles = [
     actionType: "call",
   },
   {
-    icon: MapPin,
+    icon: Icons8MapPin,
     title: "Visit Us",
     primaryText: "Adyantra Digital",
     secondaryText: "HITEC City, Hyderabad, Telangana 500081",

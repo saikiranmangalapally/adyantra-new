@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { slideUp, staggerContainer } from "@/lib/variants";
 import TeamVisualStage from "@/components/sections/TeamVisualStage";
 import CTABanner from "@/components/ui/CTABanner";
+import { Icons8BarChart, Icons8Search, Icons8Zap, Icons8TrendingUp, Icons8Handshake, Icons8Brain } from "@/components/ui/Icons8Icon";
 
 const heroStats = [
   { value: "2018", label: "Year Established" },
@@ -50,32 +51,32 @@ const timeline = [
 
 const values = [
   { 
-    icon: <BarChart3 className="w-8 h-8 text-primary" />, 
+    icon: <Icons8BarChart size={32} color="ef5b52" />, 
     title: "Results-First", 
     desc: "Everything we do is measured. If it doesn't move a number that matters to you, we stop doing it."
   },
   { 
-    icon: <Search className="w-8 h-8 text-primary" />, 
+    icon: <Icons8Search size={32} color="ef5b52" />, 
     title: "Radical Transparency", 
     desc: "No black boxes. You see every campaign, every metric, every decision — in real time."
   },
   { 
-    icon: <Zap className="w-8 h-8 text-primary" />, 
+    icon: <Icons8Zap size={32} color="ef5b52" />, 
     title: "Speed & Agility", 
     desc: "Markets move fast. We ship fast, test fast, and pivot fast. Bureaucracy has no place here."
   },
   { 
-    icon: <LineChart className="w-8 h-8 text-primary" />, 
+    icon: <Icons8TrendingUp size={32} color="ef5b52" />, 
     title: "Data Over Opinions", 
     desc: "We let data win arguments. Gut feel is a starting point, never a conclusion."
   },
   { 
-    icon: <Handshake className="w-8 h-8 text-primary" />, 
+    icon: <Icons8Handshake size={32} color="ef5b52" />, 
     title: "Client Partnership", 
     desc: "We succeed when you succeed. Your goals are our goals — from strategy to execution to reporting."
   },
   { 
-    icon: <Brain className="w-8 h-8 text-primary" />, 
+    icon: <Icons8Brain size={32} color="ef5b52" />, 
     title: "Continuous Learning", 
     desc: "Google, Meta, and AI change weekly. Our team is always testing, learning, and adapting."
   },

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail } from "lucide-react";
+import { Icons8Phone, Icons8Mail } from "@/components/ui/Icons8Icon";
 
 export default function Footer() {
   return (
@@ -79,7 +79,7 @@ export default function Footer() {
             <ul className="space-y-5 text-xs sm:text-sm">
               <li className="flex gap-3.5">
                 <div className="w-9 h-9 shrink-0 rounded-lg bg-white/5 flex items-center justify-center text-primary">
-                  <Phone size={18} />
+                  <Icons8Phone size={18} color="ef5b52" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-xs mb-0.5">Mobile Phone</h4>
@@ -90,7 +90,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-3.5">
                 <div className="w-9 h-9 shrink-0 rounded-lg bg-white/5 flex items-center justify-center text-primary">
-                  <Mail size={18} />
+                  <Icons8Mail size={18} color="ef5b52" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-xs mb-0.5">Email Support</h4>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { jakarta, dmMono } from "@/lib/fonts";
+import { poppins, dmMono } from "@/lib/fonts";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html 
       lang="en" 
-      className={`${jakarta.variable} ${dmMono.variable} font-sans`}
+      className={`${poppins.variable} ${dmMono.variable} font-sans`}
       suppressHydrationWarning
     >
       <body className="bg-background text-foreground antialiased min-h-screen flex flex-col">

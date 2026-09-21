@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import HeroVideoBackground from "@/components/hero/HeroVideoBackground";
+import HeroMarketaStyle from "@/components/hero/HeroMarketaStyle";
 import WhyUsVisualStage from "@/components/sections/WhyUsVisualStage";
 import TeamVisualStage from "@/components/sections/TeamVisualStage";
 import Link from "next/link";
@@ -31,6 +31,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { slideUp, staggerContainer } from "@/lib/variants";
+import { Icons8Code, Icons8Home, Icons8Medical, Icons8Graduation, Icons8Handbag, Icons8Heart, Icons8Building } from "@/components/ui/Icons8Icon";
 
 /* ── ACCURATE BRAND DATA ── */
 
@@ -350,51 +351,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           1. HERO SECTION
           ═══════════════════════════════════════ */}
-      <section className="relative pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden">
-        {/* Video & Luminous Backdrop */}
-        <HeroVideoBackground videoSrc="/hero-bg.mp4" overlayOpacity="bg-slate-950/50" />
-
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-            
-            {/* Left Content Column (Original Placement & Alignment) */}
-            <motion.div className="lg:w-[52%]" initial="hidden" animate="visible" variants={staggerContainer}>
-              
-              {/* Organic Badge */}
-              <motion.div variants={slideUp} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xs text-white font-bold text-xs uppercase tracking-widest mb-6">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
-                <span>Next-Gen AI & Performance Systems</span>
-              </motion.div>
-
-              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[52px] font-bold leading-[1.15] mb-6 text-white drop-shadow-lg tracking-tight max-w-2xl">
-                Accelerate Your Brand with <span className="text-primary underline decoration-accent/60 decoration-4">Performance-Driven</span> Digital Marketing Services.
-              </motion.h1>
-              
-              <motion.p variants={slideUp} className="text-base sm:text-lg text-white/90 drop-shadow-md mb-10 max-w-xl leading-relaxed">
-                We engineer high-performance digital marketing ecosystems combining precision data science with world-class creative to scale brands aggressively and profitably.
-              </motion.p>
-              
-              <motion.div variants={slideUp} className="flex flex-wrap items-center gap-3.5 sm:gap-5 mb-14">
-                <ShadcnInputButton href="/contact" variant="solid">Get Started</ShadcnInputButton>
-                <ShadcnInputButton href="#services" variant="outline">Our Services</ShadcnInputButton>
-              </motion.div>
-
-              {/* Stats Bar */}
-              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-white/20">
-                {heroStats.map((s, i) => (
-                  <div key={i} className="group">
-                    <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md group-hover:scale-105 transition-transform inline-block">{s.value}</p>
-                    <p className="text-[10px] sm:text-xs font-semibold text-white/80 uppercase tracking-wider mt-1">{s.label}</p>
-                  </div>
-                ))}
-              </motion.div>
-            </motion.div>
-
-            {/* Right column omitted (image & bg removed) */}
-
-          </div>
-        </div>
-      </section>
+      <HeroMarketaStyle />
 
       {/* ═══════════════════════════════════════
           2. OUR SERVICES
@@ -585,60 +542,31 @@ export default function Home() {
               {[
                 {
                   title: "IT & Software Enterprises",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Code size={20} color="ef5b52" />,
                 },
                 {
                   title: "Real Estate & Housing",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                  ),
+                  icon: <Icons8Home size={20} color="ef5b52" />,
                 },
                 {
                   title: "Healthcare & Clinics",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Medical size={20} color="ef5b52" />,
                 },
                 {
                   title: "Education & Academies",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Graduation size={20} color="ef5b52" />,
                 },
                 {
                   title: "Fashion & D2C Apparel",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Handbag size={20} color="ef5b52" />,
                 },
                 {
                   title: "NGOs & Non-Profits",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.684a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Heart size={20} color="ef5b52" />,
                 },
                 {
                   title: "Other Enterprises & Businesses",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Building size={20} color="ef5b52" />,
                 },
               ].map((ind, i) => (
                 <div
@@ -661,60 +589,31 @@ export default function Home() {
               {[
                 {
                   title: "IT & Software Enterprises",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Code size={20} color="ef5b52" />,
                 },
                 {
                   title: "Real Estate & Housing",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                  ),
+                  icon: <Icons8Home size={20} color="ef5b52" />,
                 },
                 {
                   title: "Healthcare & Clinics",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Medical size={20} color="ef5b52" />,
                 },
                 {
                   title: "Education & Academies",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Graduation size={20} color="ef5b52" />,
                 },
                 {
                   title: "Fashion & D2C Apparel",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Handbag size={20} color="ef5b52" />,
                 },
                 {
                   title: "NGOs & Non-Profits",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.684a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Heart size={20} color="ef5b52" />,
                 },
                 {
                   title: "Other Enterprises & Businesses",
-                  icon: (
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  ),
+                  icon: <Icons8Building size={20} color="ef5b52" />,
                 },
               ].map((ind, i) => (
                 <div

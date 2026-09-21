@@ -3,17 +3,15 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Sparkles, TrendingUp, Bot } from "lucide-react";
+import { Sparkles, TrendingUp, Bot, Activity, ShieldCheck } from "lucide-react";
 
-// Static particle configs (avoids SSR hydration mismatch from Math.random)
+// Depth bokeh particle configs
 const BOKEH = [
-  { size: 80, top: "12%", left: "8%",  opacity: 0.15, duration: 7,   delay: 0,   color: "bg-cyan-300" },
-  { size: 50, top: "65%", left: "75%", opacity: 0.12, duration: 9,   delay: 1.2, color: "bg-purple-300" },
-  { size: 35, top: "30%", left: "85%", opacity: 0.18, duration: 6,   delay: 0.5, color: "bg-primary/40" },
-  { size: 60, top: "80%", left: "20%", opacity: 0.10, duration: 8,   delay: 2,   color: "bg-cyan-200" },
-  { size: 25, top: "50%", left: "60%", opacity: 0.20, duration: 5.5, delay: 0.8, color: "bg-white" },
-  { size: 18, top: "20%", left: "55%", opacity: 0.25, duration: 4.5, delay: 1.5, color: "bg-white" },
-  { size: 12, top: "75%", left: "45%", opacity: 0.30, duration: 6.5, delay: 0.3, color: "bg-white" },
+  { size: 90, top: "10%", left: "10%", opacity: 0.2, duration: 7, delay: 0, color: "bg-cyan-400" },
+  { size: 60, top: "60%", left: "80%", opacity: 0.18, duration: 9, delay: 1.2, color: "bg-purple-500" },
+  { size: 40, top: "25%", left: "85%", opacity: 0.25, duration: 6, delay: 0.5, color: "bg-indigo-400" },
+  { size: 70, top: "75%", left: "15%", opacity: 0.15, duration: 8, delay: 2, color: "bg-cyan-500" },
+  { size: 30, top: "45%", left: "65%", opacity: 0.3, duration: 5.5, delay: 0.8, color: "bg-white" },
 ];
 
 export default function Hero3DParallax() {
@@ -22,11 +20,11 @@ export default function Hero3DParallax() {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const mouseX = useSpring(x, { stiffness: 120, damping: 25 });
-  const mouseY = useSpring(y, { stiffness: 120, damping: 25 });
+  const mouseX = useSpring(x, { stiffness: 100, damping: 20 });
+  const mouseY = useSpring(y, { stiffness: 100, damping: 20 });
 
-  const rotateX = useTransform(mouseY, [-0.5, 0.5], ["8deg", "-8deg"]);
-  const rotateY = useTransform(mouseX, [-0.5, 0.5], ["-8deg", "8deg"]);
+  const rotateX = useTransform(mouseY, [-0.5, 0.5], ["9deg", "-9deg"]);
+  const rotateY = useTransform(mouseX, [-0.5, 0.5], ["-9deg", "9deg"]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
@@ -45,35 +43,39 @@ export default function Hero3DParallax() {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative w-full aspect-square max-w-[600px] flex items-center justify-center [perspective:1200px]"
+      className="relative w-full aspect-square max-w-[580px] mx-auto flex items-center justify-center [perspective:1200px] select-none"
     >
-      {/* ─── DRIBBBLE-STYLE 3D STUDIO BACKGROUND ─── */}
-      {/* This sits OUTSIDE the tilt container so it doesn't rotate with the robot */}
-      <div className="absolute inset-[-15%] rounded-[50%] overflow-hidden pointer-events-none">
-
-        {/* Base: Soft lavender-to-white radial gradient (studio backdrop) */}
-        <div className="absolute inset-0 bg-gradient-radial from-[#e8e0f0] via-[#f0ecf6] to-white" 
-             style={{ background: "radial-gradient(circle at 50% 40%, #e0d8f0 0%, #ece6f4 35%, #f5f2fa 60%, #ffffff 100%)" }} 
+      {/* ─── CYBER STUDIO BACKDROP (Matches 4K Commercial Video) ─── */}
+      <div className="absolute inset-[-10%] rounded-full overflow-hidden pointer-events-none">
+        {/* Deep Dark Nebula Gradient */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(circle at 50% 45%, rgba(123, 97, 255, 0.3) 0%, rgba(0, 229, 255, 0.18) 40%, rgba(10, 6, 24, 0.85) 70%, transparent 100%)",
+          }}
         />
 
-        {/* Subtle warm accent glow (top-right, like studio key light) */}
-        <div className="absolute top-[-10%] right-[-5%] w-[60%] h-[60%] rounded-full blur-[100px] opacity-40"
-             style={{ background: "radial-gradient(circle, #c4b5fd 0%, transparent 70%)" }}
+        {/* Ambient Key Glow (Top Right Cyan) */}
+        <div
+          className="absolute top-[-10%] right-[-5%] w-[65%] h-[65%] rounded-full blur-[90px] opacity-40"
+          style={{ background: "radial-gradient(circle, #00E5FF 0%, transparent 70%)" }}
         />
 
-        {/* Cool fill light (bottom-left) */}
-        <div className="absolute bottom-[-5%] left-[-10%] w-[50%] h-[50%] rounded-full blur-[80px] opacity-30"
-             style={{ background: "radial-gradient(circle, #a5f3fc 0%, transparent 70%)" }}
+        {/* Ambient Fill Glow (Bottom Left Purple) */}
+        <div
+          className="absolute bottom-[-10%] left-[-10%] w-[60%] h-[60%] rounded-full blur-[90px] opacity-35"
+          style={{ background: "radial-gradient(circle, #7B61FF 0%, transparent 70%)" }}
         />
 
-        {/* Depth-of-field Bokeh orbs (floating, slowly drifting) */}
+        {/* Floating Bokeh Orbs */}
         {BOKEH.map((b, i) => (
           <motion.div
             key={`bokeh-${i}`}
             animate={{
-              y: [0, -15, 5, 0],
+              y: [0, -14, 6, 0],
               x: [0, 8, -6, 0],
-              scale: [1, 1.08, 0.95, 1],
+              scale: [1, 1.1, 0.95, 1],
             }}
             transition={{
               repeat: Infinity,
@@ -81,7 +83,7 @@ export default function Hero3DParallax() {
               ease: "easeInOut",
               delay: b.delay,
             }}
-            className={`absolute rounded-full ${b.color} blur-[12px]`}
+            className={`absolute rounded-full ${b.color} blur-[14px]`}
             style={{
               width: b.size,
               height: b.size,
@@ -92,10 +94,9 @@ export default function Hero3DParallax() {
           />
         ))}
 
-        {/* Film grain / noise overlay for that premium 3D render texture */}
-        <div className="absolute inset-0 opacity-[0.03]"
-             style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")" }}
-        />
+        {/* Cyber Hologram Floor Rings */}
+        <div className="absolute bottom-[5%] left-1/2 -translate-x-1/2 w-[75%] h-[20%] rounded-full border border-cyan-500/30 shadow-[0_0_30px_rgba(0,229,255,0.2)] transform -rotate-x-60" />
+        <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 w-[55%] h-[15%] rounded-full border border-purple-500/40 shadow-[0_0_20px_rgba(123,97,255,0.25)] transform -rotate-x-60" />
       </div>
 
       {/* ─── 3D TILT CONTAINER ─── */}
@@ -107,79 +108,93 @@ export default function Hero3DParallax() {
         }}
         className="relative w-full h-full flex items-center justify-center"
       >
-
-        {/* Soft ground shadow beneath the robot */}
+        {/* Soft Ion Ground Shadow */}
         <div
-          style={{ transform: "translateZ(-30px)" }}
-          className="absolute bottom-[8%] left-[15%] right-[15%] h-[15%] rounded-[50%] bg-black/[0.06] blur-[25px]"
+          style={{ transform: "translateZ(-40px)" }}
+          className="absolute bottom-[6%] left-[18%] right-[18%] h-[16%] rounded-full bg-cyan-500/25 blur-[30px]"
         />
 
-        {/* Robot Image */}
+        {/* 3D Realistic Robot Character with Seamless Edge Fade */}
         <motion.div
-          animate={{ y: [0, -12, 0] }}
+          animate={{ y: [0, -14, 0] }}
           transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-          style={{ transform: "translateZ(0px)" }}
-          className="relative z-10 w-[80%] h-[80%] flex items-center justify-center"
+          style={{ transform: "translateZ(20px)" }}
+          className="relative z-10 w-[84%] h-[84%] flex items-center justify-center"
         >
-          <Image
-            src="/assets/img/hero/cute-robot-transparent-v2.png"
-            alt="3D AI Robot"
-            width={600}
-            height={600}
-            className="w-full h-auto object-contain drop-shadow-[0_25px_50px_rgba(100,60,180,0.18)]"
-            priority
-          />
+          <div
+            className="relative w-full h-full flex items-center justify-center"
+            style={{
+              maskImage: "radial-gradient(circle at 50% 52%, black 60%, transparent 74%)",
+              WebkitMaskImage: "radial-gradient(circle at 50% 52%, black 60%, transparent 74%)",
+            }}
+          >
+            <Image
+              src="/assets/img/hero/realistic-robot-hero.jpg"
+              alt="Adyantra 3D Realistic AI Mascot"
+              width={640}
+              height={640}
+              className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,229,255,0.3)]"
+              priority
+            />
+          </div>
         </motion.div>
 
-        {/* Floating UI Card 1: AI Status (Top Right) */}
+        {/* ─── FLOATING CYBER TELEMETRY CARDS ─── */}
+
+        {/* Card 1: 24/7 AI Automation (Top Right) */}
         <motion.div
           animate={{ y: [0, -8, 0] }}
-          transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.5 }}
+          transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 0.2 }}
           whileHover={{ scale: 1.08, z: 90 }}
-          style={{ transform: "translateZ(60px)" }}
-          className="absolute top-[12%] right-[-8%] z-20 cursor-pointer"
+          style={{ transform: "translateZ(70px)" }}
+          className="absolute top-[8%] right-[-4%] sm:right-[-2%] z-20 cursor-pointer"
         >
-          <div className="flex items-center gap-3 bg-white/95 backdrop-blur-xl border border-white/80 shadow-[0_12px_40px_rgba(0,0,0,0.08)] rounded-2xl p-3.5 pr-5 transition-shadow hover:shadow-[0_20px_50px_rgba(15,115,188,0.15)]">
-            <div className="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-500 shrink-0">
-              <Bot className="w-5 h-5" />
+          <div className="flex items-center gap-3 bg-[#0A0518]/90 backdrop-blur-xl border border-cyan-500/40 shadow-[0_10px_35px_rgba(0,229,255,0.25)] rounded-2xl p-3.5 pr-5 transition-all hover:border-cyan-400 hover:shadow-[0_15px_45px_rgba(0,229,255,0.4)]">
+            <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+              <Bot className="w-5 h-5 animate-pulse" />
             </div>
             <div>
-              <div className="text-sm font-bold text-slate-800">AI Active</div>
-              <div className="text-[11px] text-slate-500 font-medium">Automating 24/7</div>
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                <span className="text-xs font-mono font-bold text-white tracking-wide">AI AUTOMATION</span>
+              </div>
+              <div className="text-[11px] text-cyan-300/90 font-medium">24/7 Autonomous Leads</div>
             </div>
           </div>
         </motion.div>
 
-        {/* Floating UI Card 2: Growth Stats (Bottom Left) */}
+        {/* Card 2: +340% ROAS Performance (Bottom Left) */}
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut", delay: 1 }}
-          whileHover={{ scale: 1.08, z: 120 }}
-          style={{ transform: "translateZ(90px)" }}
-          className="absolute bottom-[18%] left-[-5%] z-20 cursor-pointer"
+          transition={{ repeat: Infinity, duration: 5.2, ease: "easeInOut", delay: 0.8 }}
+          whileHover={{ scale: 1.08, z: 110 }}
+          style={{ transform: "translateZ(85px)" }}
+          className="absolute bottom-[16%] left-[-4%] sm:left-[-2%] z-20 cursor-pointer"
         >
-          <div className="flex items-center gap-3 bg-white/95 backdrop-blur-xl border border-white/80 shadow-[0_12px_40px_rgba(0,0,0,0.08)] rounded-2xl p-3.5 pr-5 transition-shadow hover:shadow-[0_20px_50px_rgba(15,115,188,0.15)]">
-            <div className="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-primary shrink-0">
+          <div className="flex items-center gap-3 bg-[#0A0518]/90 backdrop-blur-xl border border-purple-500/40 shadow-[0_10px_35px_rgba(123,97,255,0.25)] rounded-2xl p-3.5 pr-5 transition-all hover:border-purple-400 hover:shadow-[0_15px_45px_rgba(123,97,255,0.4)]">
+            <div className="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
               <TrendingUp className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-sm font-bold text-slate-800">+340% ROAS</div>
-              <div className="text-[11px] text-slate-500 font-medium">Avg. Growth</div>
+              <div className="text-sm font-bold font-mono text-white tracking-wide">+340% ROAS</div>
+              <div className="text-[11px] text-purple-300/90 font-medium">Algorithmic Scaling</div>
             </div>
           </div>
         </motion.div>
 
-        {/* Floating Badge: Conversion (Bottom Right) */}
+        {/* Card 3: In-House Engineering (Bottom Right) */}
         <motion.div
           animate={{ y: [0, -6, 0] }}
-          transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 1.5 }}
-          whileHover={{ scale: 1.1, z: 150 }}
-          style={{ transform: "translateZ(120px)" }}
-          className="absolute bottom-[8%] right-[3%] z-30 cursor-pointer"
+          transition={{ repeat: Infinity, duration: 4.6, ease: "easeInOut", delay: 1.4 }}
+          whileHover={{ scale: 1.1, z: 130 }}
+          style={{ transform: "translateZ(100px)" }}
+          className="absolute bottom-[6%] right-[6%] z-30 cursor-pointer"
         >
-          <div className="flex items-center gap-2.5 bg-slate-900/95 backdrop-blur-xl shadow-[0_12px_40px_rgba(0,0,0,0.25)] rounded-full py-2.5 px-5 border border-white/20 transition-all hover:border-amber-400/50">
-            <Sparkles className="w-4 h-4 text-amber-400 animate-pulse" />
-            <span className="text-xs font-bold text-white tracking-wide">4.8x Conversion</span>
+          <div className="flex items-center gap-2.5 bg-[#090514]/95 backdrop-blur-xl shadow-[0_10px_35px_rgba(0,0,0,0.5)] rounded-full py-2.5 px-4 sm:px-5 border border-white/20 transition-all hover:border-cyan-400/60">
+            <Sparkles className="w-4 h-4 text-cyan-400 animate-pulse" />
+            <span className="text-[11px] sm:text-xs font-mono font-bold text-white tracking-wide">
+              100% IN-HOUSE DEV
+            </span>
           </div>
         </motion.div>
 

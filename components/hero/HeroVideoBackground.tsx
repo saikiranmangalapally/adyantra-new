@@ -81,7 +81,7 @@ export default function HeroVideoBackground({
         playsInline
         preload="auto"
         onPlay={() => setIsPlaying(true)}
-        className={`h-full w-full object-cover mix-blend-screen transition-opacity duration-1000 ${
+        className={`h-full w-full object-cover transition-opacity duration-1000 ${
           isPlaying ? "opacity-75" : "opacity-30"
         }`}
       >
@@ -89,7 +89,7 @@ export default function HeroVideoBackground({
       </video>
 
       {/* Dark tint overlay for crystal clear typography */}
-      <div className={`absolute inset-0 ${overlayOpacity} backdrop-blur-[0.5px]`} />
+      <div className={`absolute inset-0 ${overlayOpacity}`} />
 
       {/* Bottom seamless fade to next section */}
       <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white via-white/10 to-transparent pointer-events-none opacity-10" />

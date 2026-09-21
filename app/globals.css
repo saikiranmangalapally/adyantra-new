@@ -1,116 +1,160 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #fff;
-  --color-foreground: #17012C;
-  --color-surface: #F6F3FE;
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-surface: #f8faff;
   --color-surface-2: #ffffff;
-  --color-border: #E5E5E5;
+  --color-border: #e2e8f0;
 
-  /* Digtek Template Exact Colors */
-  --color-primary: #6A47ED;
+  /* Adyantra Unified Brand Colors (Matching Hero Section) */
+  --color-primary: #ef5b52;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #17012C;
+  --color-secondary: #0f172a;
   --color-secondary-foreground: #ffffff;
-  --color-accent: #C6F806;
+  --color-accent: #ef5b52;
 
-  --color-muted: #F6F3FE;
-  --color-muted-foreground: #504E4E;
+  --color-muted: #f8faff;
+  --color-muted-foreground: #586882;
 
-  --font-sans: var(--font-jakarta), sans-serif;
+  --font-sans: var(--font-poppins), 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: var(--font-mono), monospace;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-muted-foreground);
-    font-size: 16px;
-    line-height: 30px;
+    font-family: var(--font-sans);
+    font-size: 15.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
     color: var(--color-foreground);
-    font-weight: 700;
-    line-height: 1.2;
+    font-family: var(--font-sans);
+    font-weight: 600 !important;
+    font-size: clamp(30px, 3.6vw, 48px);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 600 !important;
+    font-size: clamp(24px, 2.6vw, 33px);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+  }
+
+  h3 {
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 600 !important;
+    font-size: clamp(17px, 1.8vw, 19px);
+    line-height: 1.35;
+  }
+
+  h4, h5, h6 {
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 600 !important;
+    line-height: 1.35;
   }
 }
 
 @layer components {
-  /* ── Shadcn UI Input Button Style (Expandable pill with nested right icon badge) ── */
+  /* ── Pearl Radial Canvas Background ── */
+  .bg-pearl-radial {
+    background: radial-gradient(ellipse at 50% 0%, #ffffff 0%, #f8faff 50%, #f0f4fc 100%);
+    background-color: #f8faff;
+  }
+
+  /* ── Pill Buttons (Matching Hero & Site Design) ── */
   .shadcn-input-button {
-    @apply relative inline-flex items-center justify-between min-w-0 sm:min-w-[200px] h-[48px] sm:h-[54px] rounded-full border border-[#DDE0E9] bg-white pl-5 sm:pl-7 pr-12 sm:pr-14 text-xs sm:text-sm font-bold uppercase tracking-wider text-[#17012C] shadow-sm hover:shadow-md hover:border-primary transition-all duration-300 shrink-0 cursor-pointer;
+    @apply relative inline-flex items-center justify-between min-w-0 sm:min-w-[190px] h-[46px] sm:h-[50px] rounded-full border border-[#DDE0E9] bg-white pl-5 sm:pl-6 pr-11 sm:pr-12 text-xs sm:text-sm font-semibold text-[#0f172a] shadow-xs hover:shadow-md hover:border-[#ef5b52] hover:text-[#ef5b52] transition-all duration-300 shrink-0 cursor-pointer;
   }
 
   .shadcn-input-button .badge-icon {
-    @apply absolute right-1 sm:right-1.5 top-1/2 -translate-y-1/2 flex size-8 sm:size-10 items-center justify-center rounded-full bg-primary text-white transition-all duration-300;
+    @apply absolute right-1.5 top-1/2 -translate-y-1/2 flex size-7 sm:size-8 items-center justify-center rounded-full bg-[#f8faff] text-[#0f172a] transition-all duration-300;
   }
 
   .shadcn-input-button:hover .badge-icon {
-    @apply scale-110 bg-secondary;
+    @apply scale-110 bg-[#ef5b52] text-white;
   }
 
   .shadcn-input-button-solid {
-    @apply relative inline-flex items-center justify-between min-w-0 sm:min-w-[210px] h-[48px] sm:h-[54px] rounded-full bg-primary pl-5 sm:pl-7 pr-12 sm:pr-14 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-lg hover:bg-secondary transition-all duration-300 shrink-0 cursor-pointer;
+    @apply relative inline-flex items-center justify-between min-w-0 sm:min-w-[195px] h-[46px] sm:h-[50px] rounded-full bg-[#0f172a] pl-5 sm:pl-6 pr-11 sm:pr-12 text-xs sm:text-sm font-semibold text-white shadow-md hover:bg-[#ef5b52] transition-all duration-300 shrink-0 cursor-pointer;
   }
 
   .shadcn-input-button-solid .badge-icon {
-    @apply absolute right-1 sm:right-1.5 top-1/2 -translate-y-1/2 flex size-8 sm:size-10 items-center justify-center rounded-full bg-white text-primary transition-all duration-300;
+    @apply absolute right-1.5 top-1/2 -translate-y-1/2 flex size-7 sm:size-8 items-center justify-center rounded-full bg-white/15 text-white transition-all duration-300;
   }
 
   .shadcn-input-button-solid:hover .badge-icon {
-    @apply scale-110 bg-primary text-white;
+    @apply scale-110 bg-white text-[#ef5b52];
   }
 
   .shadcn-input-button-white {
-    @apply relative inline-flex items-center justify-between min-w-0 sm:min-w-[220px] h-[48px] sm:h-[54px] rounded-full bg-white pl-5 sm:pl-7 pr-12 sm:pr-14 text-xs sm:text-sm font-bold uppercase tracking-wider text-primary shadow-lg hover:bg-secondary hover:text-white transition-all duration-300 shrink-0 cursor-pointer;
+    @apply relative inline-flex items-center justify-between min-w-0 sm:min-w-[200px] h-[46px] sm:h-[50px] rounded-full bg-white pl-5 sm:pl-6 pr-11 sm:pr-12 text-xs sm:text-sm font-semibold text-[#0f172a] shadow-md hover:bg-[#0f172a] hover:text-white transition-all duration-300 shrink-0 cursor-pointer;
   }
 
   .shadcn-input-button-white .badge-icon {
-    @apply absolute right-1 sm:right-1.5 top-1/2 -translate-y-1/2 flex size-8 sm:size-10 items-center justify-center rounded-full bg-primary text-white transition-all duration-300;
+    @apply absolute right-1.5 top-1/2 -translate-y-1/2 flex size-7 sm:size-8 items-center justify-center rounded-full bg-[#ef5b52] text-white transition-all duration-300;
   }
 
   .shadcn-input-button-white:hover .badge-icon {
-    @apply scale-110 bg-white text-secondary;
+    @apply scale-110 bg-white text-[#0f172a];
   }
 
-  /* ── Sub-title badge ── */
+  /* ── Sub-title pill kicker ── */
   .sub-title {
-    @apply inline-block px-5 py-2 rounded-md text-primary font-semibold uppercase text-sm tracking-wider;
-    background-color: #F6F3FE;
+    @apply inline-block px-4 py-1.5 rounded-full text-[#ef5b52] font-semibold text-xs tracking-wider uppercase border border-[#ef5b52]/20;
+    background-color: rgba(239, 91, 82, 0.06);
   }
 
   .sub-title.bg-color-2 {
-    background-color: #F3F1FE;
+    background-color: #f8faff;
+    border-color: rgba(220, 230, 248, 0.8);
+    color: #0f172a;
   }
 
   .sub-title.bg-color-3 {
-    @apply bg-white/20 text-white;
+    @apply bg-white/20 text-white border-white/30;
   }
 
-  /* ── Bento Grid Utilities (Kokonut UI style) ── */
+  /* ── Bento Grid Utilities ── */
   .bento-card {
-    @apply relative overflow-hidden rounded-[24px] bg-white border border-[#E5E5E5] p-8 transition-all duration-300 hover:border-primary/40;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.04);
+    @apply relative overflow-hidden rounded-[20px] bg-white border border-[#E2E8F0] p-7 transition-all duration-300 hover:border-[#ef5b52]/40;
+    box-shadow: 0px 4px 20px rgba(15, 23, 42, 0.04);
   }
 
   .bento-card:hover {
-    @apply -translate-y-1.5;
-    box-shadow: 0px 20px 40px rgba(106, 71, 237, 0.12);
+    @apply -translate-y-1;
+    box-shadow: 0px 16px 32px rgba(15, 23, 42, 0.08);
   }
 
   /* ── Service Card Items ── */
   .service-card-items {
-    @apply bg-white border border-[#DDE0E9] rounded-[20px] p-[40px_30px] text-center relative transition-all duration-300 flex flex-col items-center;
+    @apply bg-white border border-[#E2E8F0] rounded-[20px] p-6 text-center relative transition-all duration-300 flex flex-col items-center;
+    box-shadow: 0px 4px 16px rgba(15, 23, 42, 0.03);
   }
 
   .service-card-items:hover {
-    @apply -translate-y-2 border-[#6A47ED]/40;
-    box-shadow: 0px 15px 40px rgba(106, 71, 237, 0.1);
+    @apply -translate-y-1 border-[#ef5b52]/40;
+    box-shadow: 0px 16px 32px rgba(15, 23, 42, 0.08);
   }
 
   .service-card-items .service-thumb {
-    @apply w-full aspect-[334/249] rounded-[14px] overflow-hidden mb-[25px] relative bg-[#E2E4EB] flex items-center justify-center;
+    @apply w-full aspect-[334/210] rounded-[14px] overflow-hidden mb-5 relative bg-[#eaedf5] flex items-center justify-center;
   }
 
   .service-card-items .service-thumb img {
@@ -122,27 +166,27 @@
   }
 
   .service-card-items .content .title-2 {
-    @apply text-[24px] font-bold text-[#17012C] mb-[15px] leading-[1.3] text-center transition-colors;
+    @apply text-[19px] font-semibold text-[#0f172a] mb-3 leading-[1.3] text-center transition-colors;
   }
 
   .service-card-items .content .title-2 a {
-    @apply text-[#17012C] transition-colors hover:text-primary;
+    @apply text-[#0f172a] transition-colors hover:text-[#ef5b52];
   }
 
   .service-card-items .content p {
-    @apply text-[#504E4E] text-[15px] leading-[26px] mb-[25px] text-center max-w-[290px];
+    @apply text-[#586882] text-[14.5px] leading-[24px] mb-5 text-center max-w-[300px];
   }
 
   .service-card-items .content .service-btn {
-    @apply relative mt-auto inline-flex items-center justify-between min-w-[190px] h-[46px] rounded-full border border-[#DDE0E9] bg-white pl-6 pr-12 text-sm font-semibold text-[#17012C] hover:border-primary hover:text-primary transition-all duration-300;
+    @apply relative mt-auto inline-flex items-center justify-between min-w-[170px] h-[42px] rounded-full border border-[#DDE0E9] bg-white pl-5 pr-10 text-xs font-semibold text-[#0f172a] hover:border-[#ef5b52] hover:text-[#ef5b52] transition-all duration-300;
   }
 
   .service-card-items .content .service-btn .badge-icon {
-    @apply absolute right-1 top-1/2 -translate-y-1/2 flex size-8 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300;
+    @apply absolute right-1.5 top-1/2 -translate-y-1/2 flex size-7 items-center justify-center rounded-full bg-[#f8faff] text-[#0f172a] transition-all duration-300;
   }
 
   .service-card-items .content .service-btn:hover .badge-icon {
-    @apply bg-primary text-white;
+    @apply bg-[#ef5b52] text-white;
   }
 
   /* ── Marquee ── */
@@ -157,7 +201,7 @@
   }
 
   .cmn-textslide {
-    @apply flex items-center gap-4 px-6 text-2xl font-bold uppercase tracking-widest shrink-0;
+    @apply flex items-center gap-4 px-6 text-xl font-semibold uppercase tracking-wider shrink-0;
   }
 
   .stroke-text {
@@ -167,7 +211,7 @@
 
   /* ── Section padding ── */
   .section-padding {
-    @apply py-24 lg:py-28;
+    @apply py-20 lg:py-24;
   }
 }
 
@@ -180,3 +224,102 @@
   0% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
+
+/* ── Hero Workflow Flow-Line Animation ── */
+@keyframes hero-flow-dash {
+  0% { stroke-dashoffset: 8; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.hero-flow-line {
+  animation: hero-flow-dash 1.5s linear infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   GLOBAL AUTHORITATIVE UNIFORMITY ACROSS ALL ADYANTRA PAGES:
+   1. Typography: Poppins font family across everything.
+   2. Headings: Decreased weights to Poppins 600, reduced sizes (H1 clamp 30-48px, H2 clamp 24-33px, H3 ~19px).
+   3. Color Palette: Light mode, Pearl radial canvas, Deep Slate #0f172a headings, #586882 body, Coral #ef5b52 accents.
+   4. Spacing: Breathing space below fixed floating header on all pages.
+   5. Clean Unboxed Layouts: No dark boxes or harsh containers.
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+/* 1. Global Font & Heading Weights (Poppins 600) */
+body, html {
+  font-family: var(--font-sans) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-bold,
+.font-extrabold,
+.font-heading {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+}
+
+/* Preserve bold numbers on stats */
+.counter-value,
+.counter-num,
+[class*="stat-value"],
+.ady-stat-value {
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: clamp(44px, 4vw, 58px) !important;
+  line-height: 1 !important;
+}
+
+/* 2. Scaled-Down Heading Sizes */
+h1,
+.text-4xl,
+.text-5xl,
+.text-6xl,
+.text-\[48px\],
+.text-\[52px\] {
+  font-size: clamp(30px, 3.6vw, 48px) !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.02em !important;
+}
+
+h2,
+.text-3xl,
+.text-\[32px\] {
+  font-size: clamp(24px, 2.6vw, 33px) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.015em !important;
+}
+
+h3,
+.text-2xl,
+.title-2 {
+  font-size: clamp(17px, 1.8vw, 19.5px) !important;
+  line-height: 1.35 !important;
+}
+
+/* 3. Deep Slate Ink & Colors */
+h1, h2, h3, h4, h5, h6,
+.text-secondary {
+  color: #0f172a !important;
+}
+
+p,
+.text-muted-foreground {
+  color: #586882 !important;
+}
+
+.text-primary {
+  color: #ef5b52 !important;
+}
+
+/* 4. Top Clearance below Floating Header on all subpages */
+main > section:first-of-type,
+main > div:first-of-type {
+  padding-top: clamp(110px, 11vw, 135px) !important;
+}
+
+/* 5. Unboxed light-mode styling */
+.bg-surface,
+.bg-surface-2 {
+  background-color: #ffffff !important;
+  border-color: rgba(220, 230, 248, 0.75) !important;
+}
+
