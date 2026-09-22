@@ -8,6 +8,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<"marketing" | "ai" | null>(null);
+  const [mobileSubMenu, setMobileSubMenu] = useState<"marketing" | "ai" | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -216,12 +217,89 @@ export default function Navbar() {
           <Link href="/" className="ady-mobile-link" onClick={() => setMobileOpen(false)}>
             Home
           </Link>
-          <Link href="/digital-marketing-growth" className="ady-mobile-link" onClick={() => setMobileOpen(false)}>
-            Digital Marketing
-          </Link>
-          <Link href="/ai-automation" className="ady-mobile-link" onClick={() => setMobileOpen(false)}>
-            AI Automation
-          </Link>
+
+          {/* Mobile Digital Marketing with Accordion */}
+          <div className="ady-mobile-nav-group">
+            <div className="flex items-center justify-between w-full">
+              <Link
+                href="/digital-marketing-growth"
+                className="ady-mobile-link flex-1"
+                onClick={() => setMobileOpen(false)}
+              >
+                Digital Marketing
+              </Link>
+              <button
+                type="button"
+                className="p-2 text-slate-500 hover:text-[#ef5b52]"
+                onClick={() => setMobileSubMenu(mobileSubMenu === "marketing" ? null : "marketing")}
+                aria-label="Toggle digital marketing links"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  className={`transition-transform duration-200 ${mobileSubMenu === "marketing" ? "rotate-180" : ""}`}
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            </div>
+            {mobileSubMenu === "marketing" && (
+              <div className="pl-4 pb-2 flex flex-col gap-2 border-l-2 border-[#ef5b52]/20 my-1">
+                <Link href="/performance-marketing" className="text-xs text-slate-600 hover:text-[#ef5b52] py-1" onClick={() => setMobileOpen(false)}>Performance Marketing</Link>
+                <Link href="/seo" className="text-xs text-slate-600 hover:text-[#ef5b52] py-1" onClick={() => setMobileOpen(false)}>SEO &amp; Search Visibility</Link>
+                <Link href="/social-media-marketing" className="text-xs text-slate-600 hover:text-[#ef5b52] py-1" onClick={() => setMobileOpen(false)}>Meta &amp; Social Ads</Link>
+                <Link href="/ai-content-automation" className="text-xs text-slate-600 hover:text-[#ef5b52] py-1" onClick={() => setMobileOpen(false)}>AI Content &amp; Automation</Link>
+                <Link href="/web-design-development" className="text-xs text-slate-600 hover:text-[#ef5b52] py-1" onClick={() => setMobileOpen(false)}>Web Design &amp; Development</Link>
+                <Link href="/ecommerce-marketing" className="text-xs text-slate-600 hover:text-[#ef5b52] py-1" onClick={() => setMobileOpen(false)}>E-commerce Marketing</Link>
+              </div>
+            )}
+          </div>
+
+          {/* Mobile AI Automation with Accordion */}
+          <div className="ady-mobile-nav-group">
+            <div className="flex items-center justify-between w-full">
+              <Link
+                href="/ai-automation"
+                className="ady-mobile-link flex-1"
+                onClick={() => setMobileOpen(false)}
+              >
+                AI Automation
+              </Link>
+              <button
+                type="button"
+                className="p-2 text-slate-500 hover:text-[#ef5b52]"
+                onClick={() => setMobileSubMenu(mobileSubMenu === "ai" ? null : "ai")}
+                aria-label="Toggle AI automation links"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  className={`transition-transform duration-200 ${mobileSubMenu === "ai" ? "rotate-180" : ""}`}
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            </div>
+            {mobileSubMenu === "ai" && (
+              <div className="pl-4 pb-2 flex flex-col gap-2 border-l-2 border-[#7b4bf7]/20 my-1">
+                <Link href="/lead-generation" className="text-xs text-slate-600 hover:text-[#7b4bf7] py-1" onClick={() => setMobileOpen(false)}>Lead Generation</Link>
+                <Link href="/sales-follow-up" className="text-xs text-slate-600 hover:text-[#7b4bf7] py-1" onClick={() => setMobileOpen(false)}>Sales Follow-up</Link>
+                <Link href="/crm-automation" className="text-xs text-slate-600 hover:text-[#7b4bf7] py-1" onClick={() => setMobileOpen(false)}>CRM Automation</Link>
+                <Link href="/content-automation" className="text-xs text-slate-600 hover:text-[#7b4bf7] py-1" onClick={() => setMobileOpen(false)}>Content Automation</Link>
+                <Link href="/customer-support" className="text-xs text-slate-600 hover:text-[#7b4bf7] py-1" onClick={() => setMobileOpen(false)}>Customer Support</Link>
+                <Link href="/whatsapp-crm" className="text-xs text-slate-600 hover:text-[#7b4bf7] py-1" onClick={() => setMobileOpen(false)}>WhatsApp + CRM Bots</Link>
+              </div>
+            )}
+          </div>
+
           <Link href="/web-software-development" className="ady-mobile-link" onClick={() => setMobileOpen(false)}>
             Web Software
           </Link>
