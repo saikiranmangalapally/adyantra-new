@@ -45,4 +45,8 @@ public/assets/videos/
 
 .vercel
 live_*.png
+scratch/
+*.bak
+recovered_*.tsx
+services_step_*.tsx
 

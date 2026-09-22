@@ -1,1002 +1,823 @@
 "use client";
 
 import { useState } from "react";
-import AdyantraHero from "@/components/hero/AdyantraHero";
-import WhyUsVisualStage from "@/components/sections/WhyUsVisualStage";
-import TeamVisualStage from "@/components/sections/TeamVisualStage";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-
-import {
-  ArrowUpRight,
-  CheckCircle2,
-  Search,
-  Share2,
-  Globe,
-  Target,
-  Mail,
-  Users,
-  ShoppingCart,
-  Newspaper,
-  Bot,
-  Phone,
-  Star,
-  ChevronsRight,
-  Rocket,
-  Code2,
-  Activity,
-  TrendingUp,
-  Sparkles,
-  ShieldCheck,
-} from "lucide-react";
-import { slideUp, staggerContainer } from "@/lib/variants";
-import { Icons8Code, Icons8Home, Icons8Medical, Icons8Graduation, Icons8Handbag, Icons8Heart, Icons8Building } from "@/components/ui/Icons8Icon";
-
-/* ── ACCURATE BRAND DATA ── */
-
-const heroStats = [
-  { value: "06+", label: "Years of Industry Expertise" },
-  { value: "50+", label: "High-Growth Brands Scaled" },
-  { value: "100%", label: "In-House Engineering" },
-  { value: "Zero", label: "Outsourced Work" },
-];
-
-const serviceTabs = ["All Services", "Marketing & Growth", "Design & Dev", "Automation & AI"];
-
-const services = [
-  {
-    icon: Search,
-    title: "Search Engine Optimization (SEO)",
-    desc: "Dominate Google search engine rankings for your highest-converting keywords. We combine comprehensive technical SEO audits, keyword research, on-page optimization, content strategies, and high-authority link building to generate consistent, qualified organic traffic.",
-    cat: "Marketing & Growth",
-    img: "/assets/img/service/seo-3d.png",
-    href: "/digital-marketing-growth",
-  },
-  {
-    icon: Share2,
-    title: "Social Media & Meta Ads",
-    desc: "Scale brand visibility and acquisition across Instagram, Facebook, and LinkedIn. We design platform-native visual ad creatives, implement precise demographic targeting, and run retargeting campaigns built for maximum ROAS and direct response conversions.",
-    cat: "Marketing & Growth",
-    img: "/assets/img/service/smm-3d.png",
-    href: "/digital-marketing-growth",
-  },
-  {
-    icon: Mail,
-    title: "Email & Lead Nurturing Workflows",
-    desc: "Transform leads into loyal repeat customers with hyper-personalized email marketing automation. We build custom drip sequences, onboarding series, re-engagement workflows, and promotional campaigns that boost customer lifetime value.",
-    cat: "Marketing & Growth",
-    img: "/assets/img/service/email-3d.png",
-    href: "/digital-marketing-growth",
-  },
-  {
-    icon: Globe,
-    title: "Web Software & App Development",
-    desc: "Engineered for speed, security, and conversions. We design and build custom frontend web applications, responsive websites, and enterprise web solutions utilizing Next.js, React, and modern cloud architectures tailored to your business needs.",
-    cat: "Design & Dev",
-    img: "/assets/img/service/webdev-3d.png",
-    href: "/web-software-development",
-  },
-  {
-    icon: Target,
-    title: "Google Ads & PPC Performance",
-    desc: "Capture high-intent buyers at the exact moment they search for your products or services. We manage Google Search, Display, and Performance Max campaigns with strict negative keyword lists, conversion tracking, and bidding strategies optimized for lower Cost Per Lead.",
-    cat: "Marketing & Growth",
-    img: "/assets/img/service/ppc-3d.png",
-    href: "/digital-marketing-growth",
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-Commerce Growth & Storefronts",
-    desc: "Build scalable online stores designed for high checkout completion. From custom Shopify setups and headless commerce to payment gateway integration, product search optimization, and automated abandoned cart recovery, we turn visitors into buyers.",
-    cat: "Design & Dev",
-    img: "/assets/img/service/ecommerce-3d.png",
-    href: "/ecommerce-solutions",
-  },
-  {
-    icon: Newspaper,
-    title: "PR & Online Reputation Management",
-    desc: "Establish brand authority, secure featured media placements, and manage your digital footprint. We craft strategic press releases, coordinate media outreach, and protect your brand reputation across search engines and digital channels.",
-    cat: "Marketing & Growth",
-    img: "/assets/img/service/pr-3d.png",
-    href: "/digital-marketing-growth",
-  },
-  {
-    icon: Bot,
-    title: "AI Workflows & Chatbot Systems",
-    desc: "Automate repetitive customer support and sales operations. We build custom WhatsApp AI chatbots, CRM sync integrations, AI lead qualification workflows, and automated appointment booking systems using Make, Zapier, and n8n.",
-    cat: "Automation & AI",
-    img: "/assets/img/service/ai-3d.png",
-    href: "/ai-automation",
-  },
-  {
-    icon: Users,
-    title: "Affiliate & Partner Marketing",
-    desc: "Expand your brand distribution through performance-based affiliate networks, referral tracking systems, and strategic influencer partnerships that drive risk-free, measurable sales growth.",
-    cat: "Marketing & Growth",
-    img: "/assets/img/service/affiliate-3d.png",
-    href: "/digital-marketing-growth",
-  },
-];
-
-const ctaStats = [
-  { value: "6+", label: "Years Industry Experience" },
-  { value: "200+", label: "Successful Projects Executed" },
-  { value: "50+", label: "Happy Client Partners" },
-  { value: "98%", label: "Client Retention Rate" },
-];
-
-const capabilities = [
-  "Technical SEO & Organic Keyword Ranking",
-  "High-ROAS Meta & Google Performance Ads",
-  "Custom Next.js & React Web Application Dev",
-  "Scalable E-Commerce & Checkout Optimization",
-  "Brand Identity, UI/UX & Strategic PR",
-  "WhatsApp AI Chatbots & Workflow Automation",
-];
-
-const processSteps = [
-  {
-    num: "01",
-    title: "Discovery & Funnel Audit",
-    desc: "We perform a deep-dive audit of your current digital presence, advertising accounts, search rankings, tech stack, and competitor positioning to identify untapped revenue opportunities.",
-  },
-  {
-    num: "02",
-    title: "Strategy & Custom Roadmap",
-    desc: "We build a precise execution plan outlining channel allocation, target audience segments, ad messaging, conversion goals, and technical milestones for predictable growth.",
-  },
-  {
-    num: "03",
-    title: "In-House Execution & Deployment",
-    desc: "Our senior developers, performance marketers, and AI engineers launch ad campaigns, deploy custom web applications, and integrate automated workflows with speed.",
-  },
-  {
-    num: "04",
-    title: "Data-Driven Optimization & Scaling",
-    desc: "We monitor performance metrics daily, conducting A/B creative testing, bid adjustments, and conversion rate optimization to scale high-performing channels continuously.",
-  },
-];
-
-const clientReviews = [
-  {
-    name: "Shiva Kumar M.",
-    role: "Real Estate • Developer",
-    quote: "Adyantra completely transformed our property lead pipeline. Their targeted Meta and Google campaigns produced genuine site visit enquiries rather than junk leads. The team is responsive, transparent, and focused on real sales outcomes.",
-    initials: "SK",
-  },
-  {
-    name: "Pranay Kumar K.",
-    role: "IT & Software • Enterprise",
-    quote: "Adyantra seamlessly integrated our web application development and digital marketing requirements under one roof. They provided strategic improvements to our user onboarding funnel that noticeably increased conversions.",
-    initials: "PK",
-  },
-  {
-    name: "Sai Teja M.",
-    role: "Healthcare & Clinic • Director",
-    quote: "Our goal was establishing digital credibility and increasing patient consultations. Adyantra executed a transparent SEO and local search campaign with clear monthly tracking. Highly professional service.",
-    initials: "ST",
-  },
-  {
-    name: "Pravalika J.",
-    role: "Education Institution • Lead",
-    quote: "Adyantra solved our inconsistent student enrolment numbers. Their team redesigned our course landing pages and automated our lead follow-up workflows, doubling our overall enquiry conversion rate.",
-    initials: "PJ",
-  },
-  {
-    name: "Pramode K.",
-    role: "Enterprise Business • Owner",
-    quote: "A pragmatic and performance-focused team. Adyantra prioritizes actual revenue and customer acquisition over vanity metrics. Their hands-on technical guidance makes them a key growth partner.",
-    initials: "PK",
-  },
-  {
-    name: "Mani Deep M.",
-    role: "Real Estate • Executive",
-    quote: "Adyantra streamlined our lead capture and WhatsApp CRM follow-ups for premium housing projects. The real estate market demands fast communication, and their automated systems gave our sales team a major edge.",
-    initials: "MD",
-  },
-  {
-    name: "Priyanka S.",
-    role: "Education & Academy • Founder",
-    quote: "Our experience with Adyantra has been exceptional. They audited our entire student acquisition journey—from ad creative copy to checkout forms—providing end-to-end optimizations that boosted enrolments.",
-    initials: "PS",
-  },
-  {
-    name: "Santosh Kumar B.",
-    role: "Healthcare & Clinic • Director",
-    quote: "Adyantra took the time to study our medical practice before launching our campaigns. Their data-backed Google Search ads improved patient acquisitions while keeping our cost-per-lead low.",
-    initials: "SK",
-  },
-  {
-    name: "Jagadesh A.",
-    role: "Tech Enterprise • Founder",
-    quote: "Having web engineering and performance marketing handled by a single unified team eliminated miscommunication. Adyantra's technical execution is fast, secure, and conversion-focused.",
-    initials: "JA",
-  },
-  {
-    name: "Shekhar P.",
-    role: "Enterprise Business • Owner",
-    quote: "Adyantra stands out for their accountability and clear performance reporting. They consistently optimize ad spend and campaign messaging based on real conversion data.",
-    initials: "SP",
-  },
-  {
-    name: "Karthik M.",
-    role: "Real Estate • Developer",
-    quote: "Qualified buyer lead generation was our primary bottleneck. Adyantra refined our audience segmentation and ad copy, resulting in qualified leads and our highest sales quarter to date.",
-    initials: "KM",
-  },
-  {
-    name: "Vamshi Krishna",
-    role: "Enterprise Business • Owner",
-    quote: "Adyantra delivers strategic execution with a clear focus on bottom-line business profitability. Their technical expertise and dedicated account support make them a trusted long-term partner.",
-    initials: "VK",
-  },
-];
-
-const firstRowReviews = clientReviews.slice(0, 6);
-const secondRowReviews = clientReviews.slice(6, 12);
-
-const faqs = [
-  {
-    q: "How quickly can we expect measurable results from your digital campaigns?",
-    a: "Paid advertising campaigns across Google Ads and Meta Ads start delivering qualified leads within 7 to 14 days. Custom WhatsApp AI chatbots and lead automation systems begin capturing leads immediately upon deployment. Search Engine Optimization (SEO) strategies build sustainable organic search authority over 3 to 6 months.",
-  },
-  {
-    q: "Which specific services are best suited for my business goals?",
-    a: "If you need immediate leads and revenue, Google Search Ads, Meta Ads, and AI Lead Capture Workflows are recommended. If you want to scale brand equity and long-term organic traffic, Web Application Development, technical SEO, and Content Strategy are ideal. We evaluate your business during our discovery call and recommend a custom growth roadmap.",
-  },
-  {
-    q: "How does Adyantra track and measure campaign ROI?",
-    a: "We track clear business outcome metrics: Return on Ad Spend (ROAS), Cost Per Acquisition (CPA), Cost Per Qualified Lead (CPL), organic traffic conversion rates, and pipeline pipeline value. You receive detailed performance reports and transparent access to live campaign dashboards.",
-  },
-  {
-    q: "Can we start with a focused budget and scale as results improve?",
-    a: "Yes. We work with scaling businesses across flexible budget tiers. We allocate your initial marketing budget to high-intent conversion channels first, establishing positive ROI before scaling budget into broader reach and brand channels.",
-  },
-  {
-    q: "What differentiates Adyantra from conventional marketing agencies?",
-    a: "Adyantra unites custom web engineering, data-backed performance marketing, and AI workflow automation under one roof. We execute 100% of our work in-house with zero outsourcing, providing direct access to senior developers and growth strategists, backed by a 98% client retention rate.",
-  },
-];
-
-/* ── Crisp Solid Review Card Component (Left Aligned, Middle Dot Role System) ── */
-function ReviewCard({
-  name,
-  role,
-  quote,
-  initials,
-}: {
-  name: string;
-  role: string;
-  quote: string;
-  initials: string;
-}) {
-  const roleParts = role.split(" • ");
-
-  return (
-    <figure className="relative w-[290px] sm:w-[360px] shrink-0 cursor-pointer overflow-hidden rounded-3xl border border-border/80 bg-white p-4 sm:p-6 shadow-sm hover:shadow-xl hover:border-primary/50 hover:scale-[1.02] transition-all duration-300 mx-1 sm:mx-1.5 flex flex-col justify-between group">
-      <div className="relative z-10">
-        <div className="flex items-center gap-2.5 sm:gap-3.5 mb-3 sm:mb-4">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-            {initials}
-          </div>
-          <div className="min-w-0 flex-1">
-            <h4 className="font-bold text-secondary text-sm sm:text-base leading-tight group-hover:text-primary transition-colors truncate">{name}</h4>
-            <span className="inline-flex items-center gap-1 sm:gap-1.5 mt-1 text-[10px] sm:text-[11px] font-bold text-primary bg-primary/10 border border-primary/20 px-2 sm:px-3 py-0.5 rounded-full max-w-full truncate">
-              {roleParts.length === 2 ? (
-                <>
-                  <span className="truncate">{roleParts[0]}</span>
-                  <span className="w-1 h-1 rounded-full bg-primary/70 shrink-0" />
-                  <span className="truncate">{roleParts[1]}</span>
-                </>
-              ) : (
-                <span className="truncate">{role}</span>
-              )}
-            </span>
-          </div>
-          <div className="ml-auto flex items-center gap-0.5 text-amber-400 shrink-0">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400 text-amber-400" />
-            ))}
-          </div>
-        </div>
-        <p className="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed italic border-t border-border/70 pt-3 sm:pt-3.5">
-          &ldquo;{quote}&rdquo;
-        </p>
-      </div>
-    </figure>
-  );
-}
-
-/* ── Shadcn UI Input Button Component ── */
-function ShadcnInputButton({
-  href,
-  children,
-  variant = "solid",
-  className = "",
-}: {
-  href: string;
-  children: React.ReactNode;
-  variant?: "solid" | "outline" | "white";
-  className?: string;
-}) {
-  const variantStyle = {
-    solid: "shadcn-input-button-solid",
-    outline: "shadcn-input-button",
-    white: "shadcn-input-button-white",
-  }[variant];
-
-  return (
-    <Link href={href} className={`${variantStyle} ${className}`}>
-      <span>{children}</span>
-      <span className="badge-icon">
-        <ArrowUpRight className="size-4" />
-      </span>
-    </Link>
-  );
-}
-
-/* ── MAIN HOMEPAGE COMPONENT ── */
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("All Services");
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [activeTeamPillar, setActiveTeamPillar] = useState<number>(0);
+  const [activeFilter, setActiveFilter] = useState("all");
 
-  const filteredServices = activeTab === "All Services" ? services : services.filter((s) => s.cat === activeTab);
+  const services = [
+    {
+      id: 1,
+      category: "marketing",
+      img: "/assets/img/service/seo-3d.png",
+      title: "Search Engine Optimization (SEO)",
+      desc: "Dominate Google rankings with technical audits, keyword strategies, and high-authority link building for qualified organic traffic.",
+      href: "/digital-marketing-growth#seo",
+    },
+    {
+      id: 2,
+      category: "marketing",
+      img: "/assets/img/service/ppc-3d.png",
+      title: "Social Media & Meta Ads",
+      desc: "Scale brand visibility across Instagram, Facebook, and LinkedIn with platform-native creatives and precise demographic targeting.",
+      href: "/digital-marketing-growth#meta-ads",
+    },
+    {
+      id: 3,
+      category: "marketing",
+      img: "/assets/img/service/pr-3d.png",
+      title: "Email & Lead Nurturing Workflows",
+      desc: "Transform leads into loyal customers with hyper-personalized email drip sequences, onboarding series, and re-engagement workflows.",
+      href: "/ai-automation#workflows",
+    },
+    {
+      id: 4,
+      category: "design",
+      img: "/assets/img/service/webdev-3d.png",
+      title: "Web Software & App Development",
+      desc: "Engineered for speed, security, and conversions using Next.js, React, and modern cloud architectures tailored to your needs.",
+      href: "/web-software-development",
+    },
+    {
+      id: 5,
+      category: "marketing",
+      img: "/assets/img/service/ppc-3d.png",
+      title: "Google Ads & PPC Performance",
+      desc: "Capture high-intent buyers with Google Search, Display, and Performance Max campaigns optimized for lower Cost Per Lead.",
+      href: "/digital-marketing-growth#google-ads",
+    },
+    {
+      id: 6,
+      category: "design",
+      img: "/assets/img/service/ecommerce-3d.png",
+      title: "E-Commerce Growth & Storefronts",
+      desc: "Build scalable online stores with custom Shopify setups, payment integration, and automated abandoned cart recovery.",
+      href: "/digital-marketing-growth#ecommerce",
+    },
+    {
+      id: 7,
+      category: "marketing",
+      img: "/assets/img/service/pr-3d.png",
+      title: "PR & Online Reputation Management",
+      desc: "Establish brand authority with strategic press releases, featured media placements, and digital reputation management.",
+      href: "/digital-marketing-growth#influencer",
+    },
+    {
+      id: 8,
+      category: "automation",
+      img: "/assets/img/service/ai-3d.png",
+      title: "AI Workflows & Chatbot Systems",
+      desc: "Automate customer support and sales with custom WhatsApp AI chatbots, CRM sync, and lead qualification workflows.",
+      href: "/ai-automation#chatbots",
+    },
+    {
+      id: 9,
+      category: "marketing",
+      img: "/assets/img/service/ecommerce-3d.png",
+      title: "Affiliate & Partner Marketing",
+      desc: "Expand brand distribution through performance-based affiliate networks, referral systems, and strategic influencer partnerships.",
+      href: "/digital-marketing-growth#influencer",
+    },
+  ];
+
+  const filteredServices =
+    activeFilter === "all"
+      ? services
+      : services.filter((s) => s.category === activeFilter);
 
   return (
     <main className="min-h-screen overflow-x-hidden">
+      {/* ═══════════════════ NEW ADYANTRA HERO SECTION ═══════════════════ */}
+      <section className="ady-hero-section relative overflow-hidden" id="home">
+        <div className="ady-canvas-container">
+          <div className="ady-hero-card">
+            {/* 3D Concentric Oval Tunnel */}
+            <div className="ady-tunnel-container" id="adyTunnel">
+              <div className="ady-tunnel-ring ady-ring-outermost" />
+              <div className="ady-tunnel-ring ady-ring-7" />
+              <div className="ady-tunnel-ring ady-ring-6" />
+              <div className="ady-tunnel-ring ady-ring-5" />
+              <div className="ady-tunnel-ring ady-ring-4" />
+              <div className="ady-tunnel-ring ady-ring-3" />
+              <div className="ady-tunnel-ring ady-ring-2" />
+              <div className="ady-tunnel-ring ady-ring-1" />
+              <div className="ady-tunnel-ring ady-center-well" />
+            </div>
 
-      {/* ═══════════════════════════════════════
-          1. HERO SECTION
-          ═══════════════════════════════════════ */}
-      <AdyantraHero />
+            {/* Typography */}
+            <div className="ady-hero-content">
+              <h1 className="ady-main-title">
+                <span className="ady-title-line1">Accelerate Your Brand with</span>
+                <span className="ady-title-line2">Performance–Driven AI-Automations</span>
+                <span className="ady-title-line3">&amp; Digital Marketing Services.</span>
+              </h1>
+              <p className="ady-subtitle">
+                We engineer high-performance digital marketing ecosystems and AI automations to scale brands profitably.
+              </p>
 
-      {/* ═══════════════════════════════════════
-          2. OUR SERVICES
-          ═══════════════════════════════════════ */}
-      <section className="service-section fix section-padding relative overflow-hidden bg-white" id="services">
-        <div className="bg-shape-2 absolute top-0 left-0 opacity-10 pointer-events-none">
-          <Image src="/assets/img/service/bg-shape-2.png" alt="Background Graphic" width={400} height={400} className="w-auto h-auto" />
+              {/* Action Buttons */}
+              <div className="ady-cta-group">
+                <Link href="/contact" className="ady-btn-dark">
+                  <span>Get Started</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+                <a href="#services" className="ady-btn-ghost">
+                  <span>Our Services</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Waveform Stage */}
+            <div className="ady-waveform-stage">
+              <svg className="ady-wave-svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
+                <path
+                  id="adyWaveformPath"
+                  className="ady-wave-curve"
+                  d="M 0,160 C 45,160 75,90 118,90 C 160,90 205,168 258,170 C 285,171 305,235 330,235 C 355,235 375,215 395,195 C 415,175 425,95 450,95 C 490,95 540,165 609,165 C 678,165 725,95 770,95 C 805,95 835,130 868,145 C 885,153 895,235 915,235 C 935,235 955,140 970,75 C 985,75 1030,115 1088,115 C 1125,115 1165,125 1200,125"
+                />
+                <circle className="ady-pulse-dot" r="4.5">
+                  <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#adyWaveformPath" />
+                  </animateMotion>
+                </circle>
+              </svg>
+
+              {/* Badges */}
+              <div className="ady-float-badge ady-badge-coral" style={{ left: "9.83%", top: "30.0%" }} title="Meta & Social Ads">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="18" cy="5" r="3" />
+                  <circle cx="6" cy="12" r="3" />
+                  <circle cx="18" cy="19" r="3" />
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+              </div>
+
+              <div className="ady-float-badge ady-badge-white" style={{ left: "21.5%", top: "56.7%" }} title="Web App Engineering">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </div>
+
+              <div className="ady-float-badge ady-badge-coral" style={{ left: "32.9%", top: "65.0%" }} title="ROAS & PPC Growth">
+                <span className="ady-badge-dollar">$</span>
+              </div>
+
+              <div className="ady-center-cta-wrap" style={{ left: "50.75%", top: "55.0%" }}>
+                <Link href="/contact" className="ady-center-pill-btn">
+                  <span>Contact Us</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+
+              <div className="ady-float-badge ady-badge-white" style={{ left: "72.3%", top: "48.3%" }} title="Email & Lead Workflows">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+
+              <div className="ady-wave-glow-dot" style={{ left: "80.8%", top: "25.0%" }} />
+
+              <div className="ady-float-badge ady-badge-coral" style={{ left: "90.67%", top: "38.3%" }} title="Social Content & Influencer Growth">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </div>
+            </div>
+
+            {/* AI Agent Interactive Widget */}
+            <aside className="ady-ai-widget">
+              <div className="ady-widget-glow" />
+              <div className="ady-widget-top">
+                <div className="ady-widget-avatar">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Adyantra AI Guide" />
+                </div>
+                <p className="ady-widget-text">Ask our AI Agent to explore our approach in seconds</p>
+              </div>
+              <Link href="/about" className="ady-widget-link">
+                <span>Learn Our Approach</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </Link>
+            </aside>
+          </div>
         </div>
-        <div className="right-shape-3 absolute top-0 right-0 opacity-15 pointer-events-none">
-          <Image src="/assets/img/service/right-shape-3.png" alt="Background Graphic Right" width={300} height={400} className="w-auto h-auto" />
-        </div>
+      </section>
 
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="section-title text-center mb-12">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="sub-title bg-color-2 mb-3">
-              <span>OUR SERVICES</span>
-            </motion.div>
-            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
-              Integrated Digital Growth & <br className="hidden md:block" /> AI Automation Services
-            </motion.h2>
-            <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              We provide full-spectrum digital marketing, web engineering, and AI automation solutions engineered to generate qualified leads, boost conversions, and scale revenue.
-            </motion.p>
+      {/* Stats Bar */}
+      <div className="ady-stats-bridge-bar relative z-20">
+        <div className="ady-stats-container">
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">06+</p>
+            <p className="ady-stat-label">Years of Industry Expertise</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">50+</p>
+            <p className="ady-stat-label">High-Growth Brands Scaled</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">100%</p>
+            <p className="ady-stat-label">In-House Engineering</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">Zero</p>
+            <p className="ady-stat-label">Outsourced Work</p>
+          </div>
+        </div>
+      </div>
+
+      {/* ═══════════════════ SERVICES SECTION ═══════════════════ */}
+      <section className="section services-ref-section" id="services" aria-labelledby="services-ref-title">
+        <div className="shell">
+          <div className="services-ref-header services-ref-header--centered">
+            <span className="ref-pill-kicker">OUR SERVICES</span>
+            <h2 id="services-ref-title" className="services-ref-heading">
+              Integrated Digital Growth &amp;
+              <br />
+              <span className="ady-gradient-text">AI Automation Services</span>
+            </h2>
+            <p className="services-ref-subtitle">
+              We provide full-spectrum digital marketing, web engineering, and AI automation solutions
+              <br className="hidden sm:inline" /> engineered to generate qualified leads, boost conversions, and scale revenue.
+            </p>
           </div>
 
-          {/* Category Tabs */}
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="flex flex-wrap justify-center gap-2.5 mb-12">
-            {serviceTabs.map((tab) => (
-              <button key={tab} onClick={() => setActiveTab(tab)} className={`px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer ${activeTab === tab ? "bg-primary text-white shadow-sm" : "bg-surface text-secondary border border-border hover:border-primary hover:text-primary"}`}>
-                {tab}
-              </button>
+          {/* Filter Tabs */}
+          <div className="services-filter-tabs">
+            <button
+              className={`services-tab ${activeFilter === "all" ? "services-tab--active" : ""}`}
+              onClick={() => setActiveFilter("all")}
+            >
+              ALL SERVICES
+            </button>
+            <button
+              className={`services-tab ${activeFilter === "marketing" ? "services-tab--active" : ""}`}
+              onClick={() => setActiveFilter("marketing")}
+            >
+              MARKETING &amp; GROWTH
+            </button>
+            <button
+              className={`services-tab ${activeFilter === "design" ? "services-tab--active" : ""}`}
+              onClick={() => setActiveFilter("design")}
+            >
+              DESIGN &amp; DEV
+            </button>
+            <button
+              className={`services-tab ${activeFilter === "automation" ? "services-tab--active" : ""}`}
+              onClick={() => setActiveFilter("automation")}
+            >
+              AUTOMATION &amp; AI
+            </button>
+          </div>
+
+          {/* 9 Service Cards Grid */}
+          <div className="services-ref-grid services-ref-grid--9">
+            {filteredServices.map((item) => (
+              <article key={item.id} className="service-ref-card" data-category={item.category}>
+                <div className="service-ref-card__visual">
+                  <img src={item.img} alt={item.title} loading="lazy" />
+                </div>
+                <h3 className="service-ref-card__title">{item.title}</h3>
+                <p className="service-ref-card__desc">{item.desc}</p>
+                <div className="service-ref-card__action">
+                  <Link href={item.href} className="service-ref-explore-btn">
+                    Explore Service <span className="explore-btn-icon">»</span>
+                  </Link>
+                </div>
+              </article>
             ))}
-          </motion.div>
-
-          {/* Service Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <AnimatePresence>
-              {filteredServices.map((svc, i) => (
-                <motion.div
-                  key={svc.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.3, delay: i * 0.05 }}
-                  className="service-card-items style-2 group"
-                >
-                  {/* Service Thumbnail Banner */}
-                  <div className="service-thumb">
-                    <Image
-                      src={svc.img}
-                      alt={svc.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover"
-                    />
-                  </div>
-
-                  {/* Service Content */}
-                  <div className="content">
-                    <h3 className="title-2">
-                      <Link href={svc.href || "/contact"}>{svc.title}</Link>
-                    </h3>
-                    <p>{svc.desc}</p>
-                    <Link href={svc.href || "/contact"} className="service-btn">
-                      <span>Explore Service</span>
-                      <span className="badge-icon">
-                        <ChevronsRight className="size-4" />
-                      </span>
-                    </Link>
-                  </div>
-                </motion.div>
-              ))}
-            </AnimatePresence>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          3. EXPERT TEAM & COLLABORATION
-          ═══════════════════════════════════════ */}
-      <section className="section-padding relative overflow-hidden bg-white border-y border-border/60" id="team-expertise">
-        {/* Subtle Ambient Radial Lighting */}
-        <div className="absolute top-1/4 -left-20 w-[420px] h-[420px] bg-primary/8 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 -right-20 w-[420px] h-[420px] bg-cyan-500/8 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            {/* Left Column: Clean 3D Team Visual Stage */}
-            <motion.div className="lg:w-1/2 flex justify-center" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-              <TeamVisualStage />
-            </motion.div>
-
-            {/* Right Content */}
-            <motion.div className="lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-              <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">
-                OUR TEAM & EXPERTISE
-              </motion.div>
-
-              <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4 text-secondary tracking-tight">
-                Work Directly with Senior Engineers & <span className="text-primary underline decoration-accent/60 decoration-4">Growth Strategists</span>
-              </motion.h2>
-
-              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-8 leading-relaxed max-w-xl">
-                We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
-              </motion.p>
-
-              {/* Clean Feature Rows with Dedicated Icons (No Boxes) */}
-              <motion.div variants={slideUp} className="flex flex-col sm:flex-row gap-4 sm:gap-10 mb-8">
-                <ul className="space-y-4">
-                  <motion.li
-                    whileHover={{ x: 4 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
-                  >
-                    <div className="w-7 h-7 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Users className="w-4 h-4" />
-                    </div>
-                    <span className="group-hover:text-primary transition-colors">100% In-House Execution</span>
-                  </motion.li>
-                  <motion.li
-                    whileHover={{ x: 4 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
-                  >
-                    <div className="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Rocket className="w-4 h-4" />
-                    </div>
-                    <span className="group-hover:text-primary transition-colors">Tailored Growth Strategies</span>
-                  </motion.li>
-                </ul>
-                <ul className="space-y-4">
-                  <motion.li
-                    whileHover={{ x: 4 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
-                  >
-                    <div className="w-7 h-7 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Code2 className="w-4 h-4" />
-                    </div>
-                    <span className="group-hover:text-primary transition-colors">Direct Senior Technical Access</span>
-                  </motion.li>
-                  <motion.li
-                    whileHover={{ x: 4 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="flex items-center gap-3 text-sm font-bold text-secondary group cursor-default"
-                  >
-                    <div className="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Activity className="w-4 h-4" />
-                    </div>
-                    <span className="group-hover:text-primary transition-colors">Continuous Campaign Optimization</span>
-                  </motion.li>
-                </ul>
-              </motion.div>
-
-              <motion.div variants={slideUp}>
-                <ShadcnInputButton href="/about" variant="solid">Meet Our Leadership</ShadcnInputButton>
-              </motion.div>
-            </motion.div>
+      {/* ═══════════════════ ABOUT US SECTION ═══════════════════ */}
+      <section className="section about" id="about" aria-labelledby="about-title">
+        <div className="shell split-layout split-layout--about">
+          <div className="copy-block about-copy">
+            <span className="ref-pill-kicker">ABOUT ADYANTRA DIGITAL</span>
+            <h2 id="about-title" className="about-headline">
+              Engineering Measurable Digital Advantage <br />
+              <span className="ady-gradient-text">For Scaling Businesses.</span>
+            </h2>
+            <p>
+              Adyantra Digital is a premier technology-first digital marketing and AI automation agency. Over 6+ years, we have partnered with 50+ growth-focused companies to turn their online footprint into a reliable customer engine.
+            </p>
+            <p>
+              By uniting modern web application engineering, performance marketing analytics, and custom AI workflow automation, we eliminate digital inefficiencies and deliver transparent, high-ROAS returns.
+            </p>
+            <Link className="text-link" href="/about">
+              Read our full story <b>&rarr;</b>
+            </Link>
+          </div>
+          <div className="pillar-panel">
+            <span className="ref-pill-kicker">CORE TECHNICAL PILLARS</span>
+            <h3>Our core competencies driving sustained growth for clients.</h3>
+            <ol>
+              <li><span>Technical SEO &amp; Organic Keyword Ranking</span><b>01</b></li>
+              <li><span>High-ROAS Meta &amp; Google Performance Ads</span><b>02</b></li>
+              <li><span>Custom Next.js &amp; React Web Application Dev</span><b>03</b></li>
+              <li><span>Scalable E-Commerce &amp; Checkout Optimization</span><b>04</b></li>
+              <li><span>Brand Identity, UI/UX &amp; Strategic PR</span><b>05</b></li>
+              <li><span>WhatsApp AI Chatbots &amp; Workflow Automation</span><b>06</b></li>
+            </ol>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          4. TARGET DOMAIN EXPERTISE (Glassmorphism Finish - Clean Serving Domains)
-          ═══════════════════════════════════════ */}
-      <section className="relative py-20 bg-slate-50/50 border-y border-border/60 overflow-hidden" id="industries">
-        {/* Organic Glass Ambient Lighting */}
-        <div className="absolute top-1/4 -left-20 w-[420px] h-[420px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 -right-20 w-[420px] h-[420px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(#E2E4EB_1px,transparent_1px)] [background-size:32px_32px] opacity-30 pointer-events-none" />
-
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="text-center mb-12">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="sub-title bg-color-2 mb-3">
-              TARGET DOMAIN EXPERTISE
-            </motion.div>
-            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-secondary">
-              Domains We Serve
-            </motion.h2>
-            <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
+      {/* ═══════════════════ TARGET DOMAIN EXPERTISE SECTION ═══════════════════ */}
+      <section className="section industries-ref-section" id="industries" aria-labelledby="industries-ref-title">
+        <div className="industries-ref-glow" />
+        <div className="shell">
+          <div className="section-heading section-heading--center">
+            <span className="ref-pill-kicker">TARGET DOMAIN EXPERTISE</span>
+            <h2 id="industries-ref-title" className="industries-ref-heading">
+              Domains <span className="ady-gradient-text">We Serve</span>
+            </h2>
+            <p className="industries-ref-subtitle">
               Custom digital marketing strategies and AI automation solutions tailored for high-growth business sectors.
-            </motion.p>
+            </p>
           </div>
+        </div>
 
-          {/* Auto-Scrolling Infinite Marquee Row (Enlarged Glass Pills, No Indicators) */}
-          <div className="relative flex overflow-hidden py-3 group">
-            <div className="flex shrink-0 gap-5 animate-[marquee_30s_linear_infinite] group-hover:[animation-play-state:paused]">
-              {[
-                {
-                  title: "IT & Software Enterprises",
-                  icon: <Icons8Code size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Real Estate & Housing",
-                  icon: <Icons8Home size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Healthcare & Clinics",
-                  icon: <Icons8Medical size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Education & Academies",
-                  icon: <Icons8Graduation size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Fashion & D2C Apparel",
-                  icon: <Icons8Handbag size={20} color="ef5b52" />,
-                },
-                {
-                  title: "NGOs & Non-Profits",
-                  icon: <Icons8Heart size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Other Enterprises & Businesses",
-                  icon: <Icons8Building size={20} color="ef5b52" />,
-                },
-              ].map((ind, i) => (
-                <div
-                  key={i}
-                  className="shrink-0 group/pill relative bg-white/85 backdrop-blur-xl border border-white/90 shadow-md hover:shadow-lg hover:border-primary/50 hover:scale-105 transition-all duration-300 rounded-full px-6 py-3.5 flex items-center gap-3.5"
-                >
-                  <span className="font-bold text-secondary text-sm sm:text-base group-hover/pill:text-primary transition-colors whitespace-nowrap">
-                    {ind.title}
-                  </span>
-
-                  <div className="w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover/pill:scale-110 transition-transform">
-                    {ind.icon}
-                  </div>
-                </div>
-              ))}
+        <div className="domains-marquee-wrap">
+          <div className="domains-marquee-track">
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Education &amp; Academies</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=11173&format=png&color=7b4bf7" width="20" height="20" alt="Education" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=21815&format=png&color=7b4bf7" width="20" height="20" alt="Fashion" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=87&format=png&color=7b4bf7" width="20" height="20" alt="NGOs" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=53373&format=png&color=7b4bf7" width="20" height="20" alt="Enterprises" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">IT &amp; Software Enterprises</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=2778&format=png&color=7b4bf7" width="20" height="20" alt="Software" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Real Estate &amp; Housing</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=73&format=png&color=7b4bf7" width="20" height="20" alt="Real Estate" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Healthcare &amp; Clinics</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=14094&format=png&color=7b4bf7" width="20" height="20" alt="Healthcare" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=9671&format=png&color=7b4bf7" width="20" height="20" alt="E-Commerce" /></span>
             </div>
 
-            {/* Duplicated for Seamless Infinite Loop */}
-            <div className="flex shrink-0 gap-5 animate-[marquee_30s_linear_infinite] group-hover:[animation-play-state:paused]" aria-hidden="true">
-              {[
-                {
-                  title: "IT & Software Enterprises",
-                  icon: <Icons8Code size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Real Estate & Housing",
-                  icon: <Icons8Home size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Healthcare & Clinics",
-                  icon: <Icons8Medical size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Education & Academies",
-                  icon: <Icons8Graduation size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Fashion & D2C Apparel",
-                  icon: <Icons8Handbag size={20} color="ef5b52" />,
-                },
-                {
-                  title: "NGOs & Non-Profits",
-                  icon: <Icons8Heart size={20} color="ef5b52" />,
-                },
-                {
-                  title: "Other Enterprises & Businesses",
-                  icon: <Icons8Building size={20} color="ef5b52" />,
-                },
-              ].map((ind, i) => (
-                <div
-                  key={`dup-${i}`}
-                  className="shrink-0 group/pill relative bg-white/85 backdrop-blur-xl border border-white/90 shadow-md hover:shadow-lg hover:border-primary/50 hover:scale-105 transition-all duration-300 rounded-full px-6 py-3.5 flex items-center gap-3.5"
-                >
-                  <span className="font-bold text-secondary text-sm sm:text-base group-hover/pill:text-primary transition-colors whitespace-nowrap">
-                    {ind.title}
-                  </span>
-
-                  <div className="w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover/pill:scale-110 transition-transform">
-                    {ind.icon}
-                  </div>
-                </div>
-              ))}
+            {/* Duplicate Set for Seamless Infinite Loop */}
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Education &amp; Academies</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=11173&format=png&color=7b4bf7" width="20" height="20" alt="Education" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=21815&format=png&color=7b4bf7" width="20" height="20" alt="Fashion" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=87&format=png&color=7b4bf7" width="20" height="20" alt="NGOs" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=53373&format=png&color=7b4bf7" width="20" height="20" alt="Enterprises" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">IT &amp; Software Enterprises</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=2778&format=png&color=7b4bf7" width="20" height="20" alt="Software" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Real Estate &amp; Housing</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=73&format=png&color=7b4bf7" width="20" height="20" alt="Real Estate" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Healthcare &amp; Clinics</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=14094&format=png&color=7b4bf7" width="20" height="20" alt="Healthcare" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
+              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=9671&format=png&color=7b4bf7" width="20" height="20" alt="E-Commerce" /></span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          5. ABOUT US & CORE CAPABILITIES
-          ═══════════════════════════════════════ */}
-      <section className="section-padding bg-white relative overflow-hidden" id="about">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16">
-            
-            {/* Left Column: ABOUT US */}
-            <motion.div className="lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-              <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">ABOUT ADYANTRA DIGITAL</motion.div>
-              <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4">
-                Engineering Measurable Digital Advantage <br />
-                <span className="text-primary">For Scaling Businesses.</span>
-              </motion.h2>
-              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-3 leading-relaxed">
-                Adyantra Digital is a premier technology-first digital marketing and AI automation agency. Over 6+ years, we have partnered with 50+ growth-focused companies across Real Estate, Healthcare, Education, E-commerce, and IT Enterprises to turn their online footprint into a reliable customer engine.
-              </motion.p>
-              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-6 leading-relaxed">
-                By uniting modern web application engineering, performance marketing analytics, and custom AI workflow automation, we eliminate digital inefficiencies and deliver transparent, high-ROAS returns.
-              </motion.p>
-
-              <motion.div variants={slideUp}>
-                <ShadcnInputButton href="/about" variant="solid">Read Our Full Story</ShadcnInputButton>
-              </motion.div>
-            </motion.div>
-
-            {/* Right Column: CORE CAPABILITIES */}
-            <motion.div className="lg:w-1/2 w-full" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-              <h3 className="text-xs font-bold uppercase tracking-widest text-primary mb-1.5">CORE TECHNICAL PILLARS</h3>
-              <p className="text-xs text-muted-foreground mb-5">Our core competencies driving sustained growth for clients.</p>
-              
-              <div className="border-t border-border/80">
-                {capabilities.map((cap, i) => (
-                  <div key={i} className="py-4 border-b border-border/80 flex items-center justify-between group hover:bg-surface/50 px-2 transition-colors">
-                    <div className="flex flex-col">
-                      <span className="font-bold text-secondary text-base md:text-lg group-hover:text-primary transition-colors">
-                        {cap}
-                      </span>
-                    </div>
-                    <span className="text-xs font-semibold text-primary group-hover:scale-110 transition-transform">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
+      {/* ═══════════════════ ACCELERATE YOUR REVENUE BANNER ═══════════════════ */}
+      <section className="growth-banner" id="growth-banner" aria-labelledby="growth-title">
+        <div className="shell">
+          <div>
+            <p className="kicker">Accelerate your revenue</p>
+            <h2 id="growth-title">
+              Ready to scale your business with <em>performance ads &amp; AI automation?</em>
+            </h2>
+          </div>
+          <div className="growth-banner__action">
+            <p>Book a 30-minute discovery call with our technical strategy team to audit your current sales funnel and receive a custom digital expansion plan.</p>
+            <Link className="button button--coral" href="/contact">
+              Book strategy call <b>&rarr;</b>
+            </Link>
+          </div>
+          <div className="stat-row" aria-label="Adyantra results">
+            <div><b>6+</b><span>Years industry experience</span></div>
+            <div><b>200+</b><span>Successful projects executed</span></div>
+            <div><b>50+</b><span>Happy client partners</span></div>
+            <div><b>98%</b><span>Client retention rate</span></div>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          6. CTA BANNER
-          ═══════════════════════════════════════ */}
-      <section className="relative py-20 overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/assets/img/cta-counter-bg.jpg')" }}>
-        <div className="absolute inset-0 bg-primary/90" />
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10 text-center text-white">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-            <motion.div variants={slideUp} className="sub-title bg-color-3 mb-3">ACCELERATE YOUR REVENUE</motion.div>
-            <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-3 text-white">
-              Ready to scale your business with <br className="hidden md:block" /> performance ads & AI automation?
-            </motion.h2>
-            <motion.p variants={slideUp} className="text-white/80 text-sm sm:text-base mb-8 max-w-xl mx-auto">
-              Book a 30-minute discovery call with our technical strategy team to audit your current sales funnel and receive a custom digital expansion plan.
-            </motion.p>
-            <motion.div variants={slideUp}>
-              <ShadcnInputButton href="/contact" variant="white">Book Strategy Call</ShadcnInputButton>
-            </motion.div>
-            <motion.div variants={slideUp} className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/20">
-              {ctaStats.map((s, i) => (
-                <div key={i}>
-                  <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">{s.value}</p>
-                  <p className="text-white/80 mt-1 text-[11px] sm:text-xs">{s.label}</p>
-                </div>
-              ))}
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
-          7. OUR PROCESS
-          ═══════════════════════════════════════ */}
-      <section className="section-padding relative bg-white overflow-hidden" id="process">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1100px] relative z-10">
-          <div className="text-center mb-10">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="sub-title bg-color-2 mb-3">
-              OUR PROVEN PROCESS
-            </motion.div>
-            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
-              A Transparent 4-Step Growth Methodology
-            </motion.h2>
-            <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              Our structured 4-phase framework ensures rapid deployment, data-driven optimization, and predictable scaling.
-            </motion.p>
+      {/* ═══════════════════ PROCESS SECTION ═══════════════════ */}
+      <section className="section process" aria-labelledby="process-title">
+        <div className="shell">
+          <div className="section-heading section-heading--center">
+            <span className="ref-pill-kicker">OUR PROVEN PROCESS</span>
+            <h2 id="process-title">
+              A Transparent <span className="ady-gradient-text">4-Step Growth Methodology</span>
+            </h2>
+            <p>Our structured 4-phase framework ensures rapid deployment, data-driven optimization, and predictable scaling.</p>
           </div>
-
-          {/* Process Rows */}
-          <div className="border-t border-border/80">
-            {processSteps.map((step, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="py-6 border-b border-border/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-8 group hover:bg-surface/50 px-4 rounded-xl transition-colors"
-              >
-                <div className="flex items-center gap-6 md:w-[40%] shrink-0">
-                  <span className="text-primary font-bold text-base md:text-lg">{step.num}</span>
-                  <h3 className="text-lg md:text-xl font-bold text-secondary group-hover:text-primary transition-colors">{step.title}</h3>
-                </div>
-                <p className="text-muted-foreground text-xs md:text-sm leading-relaxed md:w-[55%]">
-                  {step.desc}
-                </p>
-              </motion.div>
-            ))}
+          <div className="process-grid">
+            <article>
+              <span>01</span>
+              <h3>Discovery &amp; Funnel Audit</h3>
+              <p>We audit your digital presence, advertising accounts, search rankings, tech stack, and competitor positioning to find untapped revenue opportunities.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Strategy &amp; Custom Roadmap</h3>
+              <p>We build a precise plan for channel allocation, audiences, messaging, conversion goals, and technical milestones.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>In-House Execution &amp; Deployment</h3>
+              <p>Senior developers, performance marketers, and AI engineers launch your campaigns, applications, and workflows with speed.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Data-Driven Optimization &amp; Scaling</h3>
+              <p>We monitor performance daily, run focused tests, tune bids, and optimize conversion paths for scalable results.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          8. WHY CHOOSE US
-          ═══════════════════════════════════════ */}
-      <section className="section-padding bg-cover bg-center relative" id="why-us" style={{ backgroundImage: "url('/assets/img/team/team-bg.jpg')" }}>
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            <motion.div className="lg:w-1/2 flex justify-center" initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
-              <WhyUsVisualStage />
-            </motion.div>
-            <motion.div className="lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-              <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">THE ADYANTRA ADVANTAGE</motion.div>
-              <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4">
-                Engineered for High ROAS & <br />
-                <span className="text-primary">Sustainable Market Dominance.</span>
-              </motion.h2>
-              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-6 leading-relaxed">
-                While traditional agencies rely on outdated templates and guesswork, Adyantra builds custom growth engines—combining high-performance frontend tech, AI workflow automation, and precision audience targeting.
-              </motion.p>
-              <motion.div variants={slideUp} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                {[
-                  "100% In-House Developers & Marketers",
-                  "Data-Driven ROAS & Conversion Focus",
-                  "No Long-Term Lock-in Contracts",
-                  "Transparent Campaign Reporting",
-                  "Dedicated Lead Technical Lead",
-                  "98% Client Retention Rate",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2.5">
-                    <CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" />
-                    <span className="font-semibold text-xs sm:text-sm text-secondary">{item}</span>
-                  </div>
-                ))}
-              </motion.div>
-              <motion.div variants={slideUp}>
-                <ShadcnInputButton href="/about" variant="solid">Explore Our Methodology</ShadcnInputButton>
-              </motion.div>
-            </motion.div>
+      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (EXACT MOCKUP MATCH) ═══════════════════ */}
+      <section className="section expertise" id="advantage" aria-labelledby="expertise-title">
+        <div className="shell split-layout">
+          <div className="expertise-visual">
+            <div className="expertise-visual__orb" />
+            <img
+              src="/assets/img/team/team-3d.png"
+              alt="Work Directly with Senior Engineers & Growth Strategists"
+              loading="lazy"
+            />
+            <div className="proof-chip proof-chip--one">
+              <b>DIRECT ACCESS</b>
+              <span>Senior tech leads</span>
+            </div>
+            <div className="proof-chip proof-chip--two">
+              <b>24/7 TUNING</b>
+              <span>Live attribution</span>
+            </div>
+            <div className="proof-chip proof-chip--three">
+              <b>100% IN-HOUSE</b>
+              <span>Zero outsourcing</span>
+            </div>
+            <div className="proof-chip proof-chip--four">
+              <b>TAILORED GROWTH</b>
+              <span>+340% Avg ROAS</span>
+            </div>
+          </div>
+          <div className="copy-block">
+            <p className="advantage-kicker">OUR TEAM &amp; EXPERTISE</p>
+            <h2 id="expertise-title" className="advantage-exact-heading">
+              Work Directly with Senior <br />
+              Engineers <em>&amp; Growth <br />Strategists</em>
+            </h2>
+            <p className="advantage-exact-desc">
+              We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
+            </p>
+            <ul className="check-list-grid">
+              <li>100% In-House Execution</li>
+              <li>Tailored Growth Strategies</li>
+              <li>Direct Senior Technical Access</li>
+              <li>Continuous Campaign Optimization</li>
+            </ul>
+            <Link className="advantage-leadership-link" href="/about">
+              Meet our leadership <b>&rarr;</b>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          9. CLIENT REVIEWS (Crisp Solid Cards & Middle Line System)
-          ═══════════════════════════════════════ */}
-      <section className="section-padding relative overflow-hidden bg-white border-t border-border/80" id="testimonials">
-
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10 text-center mb-12">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-            <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">CLIENT REVIEWS</motion.div>
-            <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-secondary">What Our Clients Say</motion.h2>
-            <motion.p variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
+      {/* ═══════════════════ CLIENT REVIEWS SECTION ═══════════════════ */}
+      <section className="section reviews-ref-section" id="testimonials" aria-labelledby="reviews-ref-title">
+        <div className="shell">
+          <div className="section-heading section-heading--center">
+            <span className="ref-pill-kicker">CLIENT REVIEWS</span>
+            <h2 id="reviews-ref-title" className="reviews-ref-heading">
+              What Our <span className="ady-gradient-text">Clients Say</span>
+            </h2>
+            <p className="reviews-ref-subtitle">
               Real feedback from 50+ scaling brands and business owners we partner with.
-            </motion.p>
-          </motion.div>
-        </div>
-
-        {/* 2-Row Auto-Scrolling Infinite Marquees (No Overlap, Compact Vertical Gap) */}
-        <div className="relative flex flex-col gap-3 overflow-hidden py-2">
-          {/* Row 1 (Left Scrolling) */}
-          <div className="flex overflow-hidden group py-2">
-            <div className="flex shrink-0 gap-2 animate-[marquee_45s_linear_infinite] group-hover:[animation-play-state:paused]">
-              {firstRowReviews.map((review, i) => (
-                <ReviewCard key={i} {...review} />
-              ))}
-            </div>
-            <div className="flex shrink-0 gap-2 animate-[marquee_45s_linear_infinite] group-hover:[animation-play-state:paused]" aria-hidden="true">
-              {firstRowReviews.map((review, i) => (
-                <ReviewCard key={`dup1-${i}`} {...review} />
-              ))}
-            </div>
-          </div>
-
-          {/* Row 2 (Right Scrolling) */}
-          <div className="flex overflow-hidden group py-2">
-            <div className="flex shrink-0 gap-2 animate-[marquee-reverse_45s_linear_infinite] group-hover:[animation-play-state:paused]">
-              {secondRowReviews.map((review, i) => (
-                <ReviewCard key={i} {...review} />
-              ))}
-            </div>
-            <div className="flex shrink-0 gap-2 animate-[marquee-reverse_45s_linear_infinite] group-hover:[animation-play-state:paused]" aria-hidden="true">
-              {secondRowReviews.map((review, i) => (
-                <ReviewCard key={`dup2-${i}`} {...review} />
-              ))}
-            </div>
+            </p>
           </div>
         </div>
-      </section>
 
-      {/* ═══════════════════════════════════════
-          10. FAQ
-          ═══════════════════════════════════════ */}
-      <section className="section-padding relative bg-white overflow-hidden" id="faq">
-        <div className="max-w-[1000px] mx-auto px-4 md:px-8 relative z-10">
-          <div className="text-center mb-10">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="sub-title bg-color-2 mb-3">
-              CLEAR ANSWERS
-            </motion.div>
-            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
-              Frequently Asked Questions
-            </motion.h2>
-            <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              Everything you need to know about our growth frameworks, technical execution, timelines, and reporting.
-            </motion.p>
-          </div>
-
-          <div className="relative border-t border-border/80">
-            {faqs.map((faq, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
-                className="border-b border-border/80"
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between py-5 text-left hover:text-primary transition-colors cursor-pointer group"
-                >
-                  <span className="font-bold text-secondary text-base md:text-lg pr-6 group-hover:text-primary transition-colors">
-                    {faq.q}
-                  </span>
-                  <span className="text-primary font-bold text-xl shrink-0">
-                    {openFaq === i ? "−" : "+"}
-                  </span>
-                </button>
-                <AnimatePresence>
-                  {openFaq === i && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <p className="pb-5 text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                        {faq.a}
-                      </p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
-          11. CONNECT WITH OUR TEAM (Clean Contact Labels)
-          ═══════════════════════════════════════ */}
-      <section className="section-padding relative overflow-hidden bg-[#FAFAFC] border-t border-border/60" id="contact">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-            
-            {/* Left Column: Contact Details */}
-            <motion.div className="lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-              <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">CONNECT WITH OUR TEAM</motion.div>
-              <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-3 text-secondary">
-                Ready to accelerate your <br />
-                <span className="text-primary">digital market advantage?</span>
-              </motion.h2>
-              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-8 leading-relaxed">
-                Partner with Adyantra Digital to elevate search rankings, capture high-intent leads, and automate revenue operations.
-              </motion.p>
-              
-              <motion.div variants={slideUp} className="space-y-7">
-                {/* Email Support (Clean List) */}
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-secondary text-base sm:text-lg mb-1.5">Email Support</h4>
-                    <p className="text-muted-foreground text-sm sm:text-base font-medium">
-                      <a href="mailto:info@adyantra.in" className="text-primary hover:underline font-semibold">info@adyantra.in</a>
-                    </p>
-                    <p className="text-muted-foreground text-sm sm:text-base font-medium mt-1">
-                      <a href="mailto:adyantradigital@gmail.com" className="text-primary hover:underline font-semibold">adyantradigital@gmail.com</a>
-                    </p>
+        <div className="reviews-marquee-wrap">
+          <div className="reviews-marquee-track">
+            {/* Review Cards */}
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--purple">PJ</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Pravalika J.</h3>
+                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
                   </div>
                 </div>
-
-                {/* Direct Phone (Clean List) */}
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-secondary text-base sm:text-lg mb-1.5">Direct Phone</h4>
-                    <p className="text-muted-foreground text-sm sm:text-base font-medium">
-                      <a href="tel:+918309275093" className="text-secondary hover:text-primary font-bold">+91 83092 75093</a>
-                    </p>
-                  </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
                 </div>
-              </motion.div>
-            </motion.div>
-
-            {/* Right Column: Contact Form */}
-            <motion.div className="lg:w-1/2 w-full" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-              <div className="bg-white p-7 sm:p-9 rounded-3xl shadow-md border border-border">
-                <h3 className="text-xl sm:text-2xl font-bold text-secondary mb-1.5">Request a Free Growth Audit</h3>
-                <p className="text-xs sm:text-sm text-muted-foreground mb-6">Fill out the form below and our strategy lead will connect with you within 24 hours.</p>
-
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-[11px] font-bold text-secondary uppercase tracking-wider mb-1.5">Your Name</label>
-                      <input type="text" placeholder="John Doe" className="w-full px-3.5 py-2.5 rounded-xl border border-border focus:border-primary focus:outline-hidden text-xs sm:text-sm bg-surface" />
-                    </div>
-                    <div>
-                      <label className="block text-[11px] font-bold text-secondary uppercase tracking-wider mb-1.5">Email Address</label>
-                      <input type="email" placeholder="john@company.com" className="w-full px-3.5 py-2.5 rounded-xl border border-border focus:border-primary focus:outline-hidden text-xs sm:text-sm bg-surface" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-[11px] font-bold text-secondary uppercase tracking-wider mb-1.5">Phone Number</label>
-                    <input type="tel" placeholder="+91 83092 75093" className="w-full px-3.5 py-2.5 rounded-xl border border-border focus:border-primary focus:outline-hidden text-xs sm:text-sm bg-surface" />
-                  </div>
-                  <div>
-                    <label className="block text-[11px] font-bold text-secondary uppercase tracking-wider mb-1.5">Services Interested In</label>
-                    <select className="w-full px-3.5 py-2.5 rounded-xl border border-border focus:border-primary focus:outline-hidden text-xs sm:text-sm bg-surface text-secondary font-medium">
-                      <option value="digital-marketing">Digital Marketing & SEO</option>
-                      <option value="ai-automation">AI Automation & Workflows</option>
-                      <option value="web-dev">Web Design & Development</option>
-                      <option value="ppc-ads">PPC & Meta Ads</option>
-                      <option value="ecommerce">E-commerce Solutions</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-[11px] font-bold text-secondary uppercase tracking-wider mb-1.5">Project Details</label>
-                    <textarea rows={3} placeholder="Tell us about your business goals..." className="w-full px-3.5 py-2.5 rounded-xl border border-border focus:border-primary focus:outline-hidden text-xs sm:text-sm bg-surface" />
-                  </div>
-                  <ShadcnInputButton href="/contact" variant="solid" className="w-full justify-center py-3.5">
-                    Send Message
-                  </ShadcnInputButton>
-                </form>
               </div>
-            </motion.div>
+              <blockquote className="review-ref-quote">
+                &ldquo;Adyantra solved our inconsistent student enrolment numbers. Their team redesigned our course landing pages and automated our lead follow-up workflows, doubling our overall enquiry conversion rate.&rdquo;
+              </blockquote>
+            </article>
+
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--indigo">PK</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Pramode K.</h3>
+                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                  </div>
+                </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+              </div>
+              <blockquote className="review-ref-quote">
+                &ldquo;A pragmatic and performance-focused team. Adyantra prioritizes actual revenue and customer acquisition over vanity metrics. Their hands-on technical guidance makes them a key growth partner.&rdquo;
+              </blockquote>
+            </article>
+
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--violet">MD</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Mani Deep M.</h3>
+                    <span className="review-ref-role-pill">Real Estate &bull; Executive</span>
+                  </div>
+                </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+              </div>
+              <blockquote className="review-ref-quote">
+                &ldquo;Adyantra streamlined our lead capture and WhatsApp CRM follow-ups for premium housing projects. The real estate market demands fast communication, and their automated systems gave our sales team a major edge.&rdquo;
+              </blockquote>
+            </article>
+
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--rose">SK</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Shiva Kumar M.</h3>
+                    <span className="review-ref-role-pill">Real Estate Developer</span>
+                  </div>
+                </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+              </div>
+              <blockquote className="review-ref-quote">
+                &ldquo;Adyantra completely transformed our property lead pipeline. Their targeted campaigns produced genuine site visit enquiries rather than junk leads, scaling our closed transaction value significantly.&rdquo;
+              </blockquote>
+            </article>
+
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--cyan">ST</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Sai Teja M.</h3>
+                    <span className="review-ref-role-pill">Healthcare &bull; Clinic Director</span>
+                  </div>
+                </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+              </div>
+              <blockquote className="review-ref-quote">
+                &ldquo;Our goal was building digital credibility and increasing patient consultations. The campaign was transparent, compliant, and highly professional, resulting in a 4x increase in patient bookings.&rdquo;
+              </blockquote>
+            </article>
+
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--purple">VK</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Vamshi Krishna</h3>
+                    <span className="review-ref-role-pill">Enterprise Business Owner</span>
+                  </div>
+                </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+              </div>
+              <blockquote className="review-ref-quote">
+                &ldquo;Their strategic execution is grounded in bottom-line profitability, technical expertise, and dedicated support. They helped us scale organic pipeline while drastically reducing customer acquisition costs.&rdquo;
+              </blockquote>
+            </article>
+
+            {/* Duplicate Set for Loop */}
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--purple">PJ</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Pravalika J.</h3>
+                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                  </div>
+                </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+              </div>
+              <blockquote className="review-ref-quote">
+                &ldquo;Adyantra solved our inconsistent student enrolment numbers. Their team redesigned our course landing pages and automated our lead follow-up workflows, doubling our overall enquiry conversion rate.&rdquo;
+              </blockquote>
+            </article>
+
+            <article className="review-ref-card review-card--scroll">
+              <div className="review-ref-card__top">
+                <div className="review-ref-client">
+                  <div className="review-ref-avatar avatar--indigo">PK</div>
+                  <div className="review-ref-meta">
+                    <h3 className="review-ref-name">Pramode K.</h3>
+                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                  </div>
+                </div>
+                <div className="review-ref-stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+              </div>
+              <blockquote className="review-ref-quote">
+                &ldquo;A pragmatic and performance-focused team. Adyantra prioritizes actual revenue and customer acquisition over vanity metrics. Their hands-on technical guidance makes them a key growth partner.&rdquo;
+              </blockquote>
+            </article>
           </div>
         </div>
       </section>
 
+      {/* ═══════════════════ FAQ SECTION ═══════════════════ */}
+      <section className="section faq" id="faq" aria-labelledby="faq-title">
+        <div className="shell faq-layout">
+          <div className="section-heading">
+            <span className="ref-pill-kicker">CLEAR ANSWERS</span>
+            <h2 id="faq-title">
+              Frequently Asked <br />
+              <span className="ady-gradient-text">Questions</span>
+            </h2>
+            <p>Everything you need to know about our growth frameworks, technical execution, timelines, and reporting.</p>
+          </div>
+          <div className="faq-list">
+            <details open>
+              <summary>
+                How quickly can we expect measurable results from your digital campaigns?<b>+</b>
+              </summary>
+              <p>Timelines depend on your market and starting point. Paid acquisition can yield early signals within weeks, while SEO and conversion work compound over the following months.</p>
+            </details>
+            <details>
+              <summary>
+                Which specific services are best suited for my business goals?<b>+</b>
+              </summary>
+              <p>We recommend a focused mix after auditing your current funnel, opportunity size, audience, and technical readiness.</p>
+            </details>
+            <details>
+              <summary>
+                How does Adyantra track and measure campaign ROI?<b>+</b>
+              </summary>
+              <p>Clear attribution, conversion tracking, and performance reports keep both lead quality and revenue outcomes visible.</p>
+            </details>
+            <details>
+              <summary>
+                Can we start with a focused budget and scale as results improve?<b>+</b>
+              </summary>
+              <p>Yes. We build a practical initial roadmap, validate what works, and increase investment where it produces meaningful outcomes.</p>
+            </details>
+            <details>
+              <summary>
+                What differentiates Adyantra from conventional marketing agencies?<b>+</b>
+              </summary>
+              <p>Senior in-house execution combines engineering, performance media, and AI automation in one accountable team.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════ CONTACT SECTION ═══════════════════ */}
+      <section className="contact" id="contact" aria-labelledby="contact-title">
+        <div className="shell contact__grid">
+          <div className="contact__copy">
+            <span className="ref-pill-kicker">CONNECT WITH OUR TEAM</span>
+            <h2 id="contact-title">
+              Ready to accelerate your <span className="ady-gradient-text">digital market advantage?</span>
+            </h2>
+            <p>Partner with Adyantra Digital to elevate search rankings, capture high-intent leads, and automate revenue operations.</p>
+            <div className="contact-method">
+              <span>
+                <img src="https://img.icons8.com/?size=48&id=63598&format=png&color=ef5b52" width="22" height="22" alt="Email" style={{ verticalAlign: "middle" }} />
+              </span>
+              <div>
+                <b>Email support</b>
+                <a href="mailto:info@adyantra.in">info@adyantra.in</a>
+                <a href="mailto:adyantradigital@gmail.com">adyantradigital@gmail.com</a>
+              </div>
+            </div>
+            <div className="contact-method">
+              <span>
+                <img src="https://img.icons8.com/?size=48&id=9659&format=png&color=ef5b52" width="22" height="22" alt="Phone" style={{ verticalAlign: "middle" }} />
+              </span>
+              <div>
+                <b>Direct phone</b>
+                <a href="tel:+918309275093">+91 83092 75093</a>
+              </div>
+            </div>
+          </div>
+          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+            <h3>Request a Free Growth Audit</h3>
+            <p>Fill out the form below and our strategy lead will connect with you within 24 hours.</p>
+            <div className="field-row">
+              <label>
+                Your name
+                <input required name="name" placeholder="John Doe" />
+              </label>
+              <label>
+                Email address
+                <input required type="email" name="email" placeholder="john@company.com" />
+              </label>
+            </div>
+            <div className="field-row">
+              <label>
+                Phone number
+                <input name="phone" placeholder="+91 83092 75093" />
+              </label>
+              <label>
+                Services interested in
+                <select name="service">
+                  <option>Digital Marketing &amp; SEO</option>
+                  <option>AI Automation &amp; Workflows</option>
+                  <option>Web Design &amp; Development</option>
+                  <option>PPC &amp; Meta Ads</option>
+                  <option>E-commerce Solutions</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Project details
+              <textarea name="details" rows={4} placeholder="Tell us a little about your goals" />
+            </label>
+            <button className="button button--primary" type="submit">
+              Send message <b>&rarr;</b>
+            </button>
+            <p className="form-note" aria-live="polite" />
+          </form>
+        </div>
+      </section>
     </main>
   );
 }

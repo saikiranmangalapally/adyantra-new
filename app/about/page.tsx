@@ -2,428 +2,387 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, CheckCircle2, ChevronRight, BarChart3, Search, Zap, LineChart, Handshake, Brain, Star, Target, Share2, Database, PieChart, TrendingUp } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { slideUp, staggerContainer } from "@/lib/variants";
-import TeamVisualStage from "@/components/sections/TeamVisualStage";
-import CTABanner from "@/components/ui/CTABanner";
-import { Icons8BarChart, Icons8Search, Icons8Zap, Icons8TrendingUp, Icons8Handshake, Icons8Brain } from "@/components/ui/Icons8Icon";
-
-const heroStats = [
-  { value: "2018", label: "Year Established" },
-  { value: "50+", label: "Brands Scaled" },
-  { value: "100%", label: "In-House Team" },
-  { value: "1st", label: "Principles Over Profits" },
-];
-
-const timeline = [
-  { 
-    year: "2018", 
-    title: "We Started With Websites", 
-    tagline: "Build the digital foundation",
-    event: "Building websites and digital foundations for businesses." 
-  },
-  { 
-    year: "2019–2021", 
-    title: "Performance Marketing", 
-    tagline: "Generate demand",
-    event: "Expanded into PPC and paid acquisition, helping businesses turn traffic into measurable results." 
-  },
-  { 
-    year: "2021–2023", 
-    title: "Social Media & Growth", 
-    tagline: "Build attention & engagement",
-    event: "Added social media marketing, content, campaigns, and audience growth." 
-  },
-  { 
-    year: "2023–2025", 
-    title: "E-commerce Growth", 
-    tagline: "Convert & grow revenue",
-    event: "Moved deeper into e-commerce, marketplace marketing, conversion optimization, and performance-driven growth." 
-  },
-  { 
-    year: "2025–Now", 
-    title: "AI Automation", 
-    tagline: "Automate operations & scale",
-    event: "Evolved from helping businesses get customers to helping them automate what happens after the customer arrives." 
-  },
-];
-
-const values = [
-  { 
-    icon: <Icons8BarChart size={32} color="ef5b52" />, 
-    title: "Results-First", 
-    desc: "Everything we do is measured. If it doesn't move a number that matters to you, we stop doing it."
-  },
-  { 
-    icon: <Icons8Search size={32} color="ef5b52" />, 
-    title: "Radical Transparency", 
-    desc: "No black boxes. You see every campaign, every metric, every decision — in real time."
-  },
-  { 
-    icon: <Icons8Zap size={32} color="ef5b52" />, 
-    title: "Speed & Agility", 
-    desc: "Markets move fast. We ship fast, test fast, and pivot fast. Bureaucracy has no place here."
-  },
-  { 
-    icon: <Icons8TrendingUp size={32} color="ef5b52" />, 
-    title: "Data Over Opinions", 
-    desc: "We let data win arguments. Gut feel is a starting point, never a conclusion."
-  },
-  { 
-    icon: <Icons8Handshake size={32} color="ef5b52" />, 
-    title: "Client Partnership", 
-    desc: "We succeed when you succeed. Your goals are our goals — from strategy to execution to reporting."
-  },
-  { 
-    icon: <Icons8Brain size={32} color="ef5b52" />, 
-    title: "Continuous Learning", 
-    desc: "Google, Meta, and AI change weekly. Our team is always testing, learning, and adapting."
-  },
-];
-
-const team = [
-  { 
-    name: "Saikiran Mangalapally", 
-    role: "Founder & CEO", 
-    initials: "SM",
-    quote: "We don't just build marketing campaigns. We architect scalable digital growth systems that evolve as your business scales — from foundational web development to enterprise AI automation." 
-  },
-];
-
-const certifications = [
-  { name: "Google Ads Certified", icon: <Target className="w-6 h-6 text-[#4285F4]" />, issuer: "Google" },
-  { name: "Meta Blueprint Certified", icon: <Share2 className="w-6 h-6 text-[#0668E1]" />, issuer: "Meta" },
-  { name: "HubSpot Marketing Certified", icon: <Database className="w-6 h-6 text-[#FF7A59]" />, issuer: "HubSpot" },
-  { name: "Google Analytics 4", icon: <PieChart className="w-6 h-6 text-[#F4B400]" />, issuer: "Google" },
-  { name: "SEMrush Certified", icon: <TrendingUp className="w-6 h-6 text-[#FF642D]" />, issuer: "SEMrush" },
-];
-
-function ShadcnInputButton({
-  href,
-  children,
-  variant = "solid",
-  className = "",
-}: {
-  href: string;
-  children: React.ReactNode;
-  variant?: "solid" | "outline" | "white";
-  className?: string;
-}) {
-  const variantStyle = {
-    solid: "shadcn-input-button-solid",
-    outline: "shadcn-input-button",
-    white: "shadcn-input-button-white",
-  }[variant];
-
-  return (
-    <Link href={href} className={`${variantStyle} ${className}`}>
-      <span>{children}</span>
-      <span className="badge-icon">
-        <ArrowUpRight className="size-4" />
-      </span>
-    </Link>
-  );
-}
+import { useState } from "react";
 
 export default function AboutPage() {
+  const [activeStep, setActiveStep] = useState(0);
+
+  const evolutionSteps = [
+    {
+      phase: "01",
+      title: "Build",
+      tagline: "High-Performance Digital Foundations",
+      desc: "Engineered modern websites, custom web apps, and digital infrastructure built for speed, responsiveness, and zero friction.",
+      icon: "https://img.icons8.com/?size=96&id=16412&format=png&color=ef5b52",
+    },
+    {
+      phase: "02",
+      title: "Acquire",
+      tagline: "Predictable Paid & Organic Inbound",
+      desc: "Architected multi-channel acquisition engines across Google Ads, Meta Ads, Technical SEO, and content distribution to drive high-intent traffic.",
+      icon: "https://img.icons8.com/?size=96&id=90&format=png&color=7b4bf7",
+    },
+    {
+      phase: "03",
+      title: "Engage",
+      tagline: "Brand Resonance & Audience Retention",
+      desc: "Crafted compelling visual narratives, social authority, content ecosystems, and automated email nurturing that turn visitors into loyal advocates.",
+      icon: "https://img.icons8.com/?size=96&id=87&format=png&color=ef5b52",
+    },
+    {
+      phase: "04",
+      title: "Sell",
+      tagline: "Conversion Rate & E-Commerce Scale",
+      desc: "Optimized checkout flows, conversion funnels, personalized product recommendations, and frictionless transaction loops to maximize LTV.",
+      icon: "https://img.icons8.com/?size=96&id=9671&format=png&color=7b4bf7",
+    },
+    {
+      phase: "05",
+      title: "Automate",
+      tagline: "Autonomous AI Workflows & Systems",
+      desc: "Integrated bespoke AI agents, event-driven webhooks, RAG knowledge bots, and CRM sync to run operational execution on autopilot.",
+      icon: "https://img.icons8.com/?size=96&id=37410&format=png&color=ef5b52",
+    },
+  ];
+
+  const coreValues = [
+    {
+      title: "Radical Engineering Transparency",
+      desc: "No vanity metrics, hidden markups, or vague reports. Every dollar spent and every line of code deployed is tracked directly against business growth.",
+      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=ef5b52",
+    },
+    {
+      title: "First-Principles Problem Solving",
+      desc: "We don't copy cookie-cutter playbooks. We break down your unit economics, acquisition bottlenecks, and workflow friction from the ground up.",
+      icon: "https://img.icons8.com/?size=96&id=4052&format=png&color=7b4bf7",
+    },
+    {
+      title: "100% In-House Craftsmanship",
+      desc: "We never outsource critical engineering or strategic campaign management. Your systems are built and optimized by dedicated senior practitioners.",
+      icon: "https://img.icons8.com/?size=96&id=53373&format=png&color=ef5b52",
+    },
+    {
+      title: "Velocity with Reliability",
+      desc: "Ship fast without breaking things. Automated CI/CD, rigorous quality assurance, and real-time monitoring ensure high uptime and continuous progress.",
+      icon: "https://img.icons8.com/?size=96&id=2854&format=png&color=7b4bf7",
+    },
+  ];
+
+  const reviews = [
+    {
+      quote: "Adyantra scaled our D2C brand from $40k to over $180k monthly revenue with their combined Meta ads and automated email flows. True partners.",
+      author: "Aditya Verma",
+      role: "Founder, Kensho Living",
+      location: "Bengaluru, India",
+    },
+    {
+      quote: "The Next.js web portal they engineered is blisteringly fast. Our organic SEO rankings shot up within 60 days, driving 300% more inbound queries.",
+      author: "Sneha Reddy",
+      role: "VP Marketing, NovaTech Labs",
+      location: "Hyderabad, India",
+    },
+    {
+      quote: "Their AI WhatsApp bot handles 85% of our patient inquiries instantly. Bookings are up 4x and our support team is finally freed from repetitive chats.",
+      author: "Dr. K. Raman",
+      role: "Director, Apex Healthcare",
+      location: "Chennai, India",
+    },
+    {
+      quote: "No agency has understood our unit economics better. They don't just run ads; they fix your funnel, improve margins, and automate the pipeline.",
+      author: "Rohan Mehta",
+      role: "Co-Founder, UrbanCraft",
+      location: "Mumbai, India",
+    },
+  ];
+
   return (
-    <main className="min-h-screen overflow-x-hidden">
-      
-      {/* ═══════════════════════════════════════
-          1. HERO SECTION (Exactly matching Home Hero structure)
-          ═══════════════════════════════════════ */}
-      <section className="relative pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-white">
-        <div className="absolute inset-0 bg-[radial-gradient(#E2E4EB_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
+    <main className="ady-main-content">
+      {/* ═══════════════════ SECTION 1: FLAGSHIP HERO ═══════════════════ */}
+      <section className="ady-hero-section relative overflow-hidden" id="home">
+        <div className="ady-tunnel-container" id="adyTunnel">
+          <div className="ady-tunnel-layer ady-tunnel-1" />
+          <div className="ady-tunnel-layer ady-tunnel-2" />
+          <div className="ady-tunnel-layer ady-tunnel-3" />
+        </div>
 
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-            
-            {/* Left Content Column */}
-            <motion.div className="lg:w-[52%]" initial="hidden" animate="visible" variants={staggerContainer}>
-              
-              <motion.div variants={slideUp} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-border shadow-xs text-primary font-bold text-xs uppercase tracking-widest mb-6">
-                <span className="w-2.5 h-2.5 rounded-full bg-primary animate-ping" />
-                <span>About Adyantra Digital</span>
-              </motion.div>
+        <div className="shell text-center relative z-10 pt-16 pb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#ef5b52]/20 shadow-sm mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#ef5b52]">
+              Who We Are
+            </span>
+          </div>
 
-              <motion.h1 variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[52px] font-bold leading-[1.15] mb-6 text-secondary tracking-tight max-w-2xl">
-                We Build Digital Growth Systems That <span className="text-primary underline decoration-accent/60 decoration-4">Evolve With Your Business.</span>
-              </motion.h1>
-              
-              <motion.p variants={slideUp} className="text-base sm:text-lg text-muted-foreground mb-10 max-w-xl leading-relaxed">
-                From websites and performance marketing to e-commerce and AI automation — we've spent years helping businesses build, grow, and now automate their digital operations.
-              </motion.p>
-              
-              <motion.div variants={slideUp} className="flex flex-wrap items-center gap-4 sm:gap-5 mb-14">
-                <ShadcnInputButton href="/contact" variant="solid">Work With Us</ShadcnInputButton>
-                <ShadcnInputButton href="#story" variant="outline">Our Journey</ShadcnInputButton>
-              </motion.div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
+            Architecting Predictable Growth &amp;{" "}
+            <span className="ady-gradient-text">Autonomous Digital Systems</span>
+          </h1>
 
-              {/* Stats Bar */}
-              <motion.div variants={slideUp} className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-border/80">
-                {heroStats.map((s, i) => (
-                  <div key={i} className="group">
-                    <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary group-hover:scale-105 transition-transform inline-block">{s.value}</p>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-1">{s.label}</p>
-                  </div>
-                ))}
-              </motion.div>
-            </motion.div>
+          <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">
+            From modern web applications and multi-channel acquisition to autonomous AI systems — we build resilient digital engines that scale with your enterprise.
+          </p>
 
-            {/* Right Column */}
-            <motion.div className="lg:w-[46%] w-full relative flex items-center justify-center" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
-              <TeamVisualStage />
-            </motion.div>
-
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+            <Link href="/contact" className="shadcn-input-button-solid">
+              <span>Work With Us</span>
+              <span className="badge-icon">&rarr;</span>
+            </Link>
+            <a href="#evolution" className="shadcn-input-button">
+              <span>Our Evolution</span>
+              <span className="badge-icon">&darr;</span>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          2. OUR JOURNEY (Exactly matching Home Process structure)
-          ═══════════════════════════════════════ */}
-      <section className="section-padding relative bg-white overflow-hidden border-t border-border/80" id="story">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1100px] relative z-10">
-          <div className="section-title text-center mb-12">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="sub-title bg-color-2 mb-3">
-              <span>OUR EVOLUTION</span>
-            </motion.div>
-            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-secondary">
-              From Digital Foundations to Intelligent Businesses
-            </motion.h2>
-            <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              Our journey isn't just about adding services. It's a logical evolution: <span className="font-bold text-primary">Build → Acquire → Engage → Sell → Automate</span>.
-            </motion.p>
+      {/* ═══════════════════ STATS BRIDGE BAR (FLAGSHIP PATTERN) ═══════════════════ */}
+      <div className="ady-stats-bridge-bar relative z-20">
+        <div className="ady-stats-container">
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">2018</p>
+            <p className="ady-stat-label">Year Established</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">50+</p>
+            <p className="ady-stat-label">Brands Scaled</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">100%</p>
+            <p className="ady-stat-label">In-House Engineering</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">Zero</p>
+            <p className="ady-stat-label">Outsourced Work</p>
+          </div>
+        </div>
+      </div>
+
+      {/* ═══════════════════ SECTION 2: EXECUTIVE VISION & PURPOSE ═══════════════════ */}
+      <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="mission">
+        <div className="shell">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left 3D Visual Asset */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative p-6 rounded-3xl bg-gradient-to-br from-[#f8fafc] to-[#f1f5f9] border border-[#e2e8f0] shadow-sm max-w-md w-full">
+                <Image
+                  src="/assets/img/about/about-3d.png"
+                  alt="Adyantra Digital Architecture & Growth"
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-contain drop-shadow-md"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Right Strategic Narrative */}
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b4bf7]/10 text-[#7b4bf7] text-xs font-semibold uppercase tracking-wider mb-4">
+                Our Strategic Purpose
+              </div>
+              <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-6 leading-snug">
+                Engineering Measurable Competitive Advantages For Ambitious Brands
+              </h2>
+              <p className="text-base text-[#586882] mb-5 leading-relaxed">
+                Most agencies focus strictly on vanity outputs — impressions, clicks, or isolated design templates. At Adyantra, we believe digital presence without commercial velocity is dead weight.
+              </p>
+              <p className="text-base text-[#586882] mb-8 leading-relaxed">
+                We bridge the gap between high-performance software engineering, aggressive paid performance marketing, and cutting-edge autonomous AI workflows to build end-to-end engines where every component drives measurable return on investment.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-xl bg-[#f8fafc] border border-[#e2e8f0]">
+                  <h4 className="font-semibold text-[#0f172a] mb-1">Commercial Rigor</h4>
+                  <p className="text-xs text-[#586882]">Every initiative is mapped directly to CAC, ROAS, pipeline velocity, and customer lifetime value.</p>
+                </div>
+                <div className="p-4 rounded-xl bg-[#f8fafc] border border-[#e2e8f0]">
+                  <h4 className="font-semibold text-[#0f172a] mb-1">Autonomous Systems</h4>
+                  <p className="text-xs text-[#586882]">Automating repetitive manual handoffs so your human talent focuses strictly on strategic innovation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════ SECTION 3: THE ADYANTRA EVOLUTION ═══════════════════ */}
+      <section className="section py-20 bg-[#f8fafc] border-t border-[#e2e8f0]" id="evolution">
+        <div className="shell">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ef5b52]/10 text-[#ef5b52] text-xs font-semibold uppercase tracking-wider mb-3">
+              The Adyantra Framework
+            </span>
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
+              From Digital Foundations To Intelligent Businesses
+            </h2>
+            <p className="text-base text-[#586882]">
+              A deliberate progression designed to eliminate operational friction and scale conversions without multiplying overhead.
+            </p>
           </div>
 
-          {/* Process Rows */}
-          <div className="border-t border-border/80">
-            {timeline.map((step, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="py-6 border-b border-border/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-8 group hover:bg-surface/50 px-4 rounded-xl transition-colors"
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            {evolutionSteps.map((step, idx) => (
+              <div
+                key={step.phase}
+                onClick={() => setActiveStep(idx)}
+                className={`cursor-pointer p-6 rounded-2xl transition-all duration-300 border ${
+                  activeStep === idx
+                    ? "bg-white border-[#ef5b52] shadow-md -translate-y-1"
+                    : "bg-white/70 border-[#e2e8f0] hover:bg-white hover:border-[#cbd5e1]"
+                }`}
               >
-                <div className="flex items-center gap-6 md:w-[40%] shrink-0">
-                  <span className="text-4xl md:text-5xl font-black text-primary/10 group-hover:text-primary/20 transition-colors w-16 text-center">
-                    {String(i + 1).padStart(2, "0")}
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-bold text-[#ef5b52] px-2 py-0.5 rounded bg-[#ef5b52]/10">
+                    PHASE {step.phase}
                   </span>
-                  <div>
-                    <h3 className="font-bold text-secondary text-lg md:text-xl group-hover:text-primary transition-colors">
-                      {step.title}
-                    </h3>
-                    <p className="text-xs font-bold uppercase tracking-widest text-primary/70 mt-1">
-                      {step.tagline}
-                    </p>
-                  </div>
+                  <img src={step.icon} width="28" height="28" alt={step.title} />
                 </div>
-                
-                <p className="text-muted-foreground text-sm leading-relaxed md:w-[40%] font-medium">
-                  {step.event}
-                </p>
-                
-                <div className="hidden md:flex shrink-0 w-[10%] justify-end">
-                  <div className="w-10 h-10 rounded-full border border-border/80 flex items-center justify-center text-muted-foreground group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">
-                    <ChevronRight className="w-5 h-5" />
-                  </div>
-                </div>
-              </motion.div>
+                <h3 className="text-xl font-semibold text-[#0f172a] mb-2">{step.title}</h3>
+                <h4 className="text-xs font-semibold text-[#7b4bf7] mb-3">{step.tagline}</h4>
+                <p className="text-xs text-[#586882] leading-relaxed">{step.desc}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          3. OUR PRINCIPLES (Exactly matching Home Services structure)
-          ═══════════════════════════════════════ */}
-      <section className="service-section fix section-padding relative overflow-hidden bg-white border-t border-border/80" id="values">
-        <div className="bg-shape-2 absolute top-0 left-0 opacity-10 pointer-events-none">
-          <Image src="/assets/img/service/bg-shape-2.png" alt="Background Graphic" width={400} height={400} className="w-auto h-auto" />
-        </div>
-        <div className="right-shape-3 absolute top-0 right-0 opacity-15 pointer-events-none">
-          <Image src="/assets/img/service/right-shape-3.png" alt="Background Graphic Right" width={300} height={400} className="w-auto h-auto" />
-        </div>
-
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="section-title text-center mb-12">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="sub-title bg-color-2 mb-3">
-              <span>OUR PRINCIPLES</span>
-            </motion.div>
-            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
-              The Values That Guide Us
-            </motion.h2>
-            <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              We act as an extension of your growth team with transparency, speed, and mathematical rigour.
-            </motion.p>
+      {/* ═══════════════════ SECTION 4: CORE ENGINEERING VALUES ═══════════════════ */}
+      <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="values">
+        <div className="shell">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b4bf7]/10 text-[#7b4bf7] text-xs font-semibold uppercase tracking-wider mb-3">
+              Our Principles
+            </span>
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
+              Core Principles That Guide Every Engagement
+            </h2>
+            <p className="text-base text-[#586882]">
+              We operate with uncompromising standards to deliver durable competitive advantages for our client partners.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <AnimatePresence>
-              {values.map((v, i) => (
-                <motion.div
-                  key={v.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: i * 0.05 }}
-                  className="service-card-items style-2 group"
-                >
-                  <div className="p-8 pb-0">
-                    <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                      {v.icon}
-                    </div>
-                  </div>
-                  <div className="content">
-                    <h3 className="title-2 text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                      {v.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm font-medium leading-relaxed">{v.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
-          4. LEADERSHIP (Exactly matching Home Team/Expertise structure)
-          ═══════════════════════════════════════ */}
-      <section className="section-padding bg-cover bg-center relative border-t border-border/80" style={{ backgroundImage: "url('/assets/img/team/team-bg.jpg')" }} id="team">
-        <div className="absolute top-10 right-10 animate-[bounce_5s_infinite] opacity-40 pointer-events-none">
-          <Image src="/assets/img/service/rocket-shape.png" alt="Graphic Shape" width={120} height={120} className="w-auto h-auto" />
-        </div>
-
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            
-            {/* Left Column: Founder Profile Card matching Home review card */}
-            <motion.div className="lg:w-1/2 flex justify-center" initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
-              <figure className="relative w-full max-w-[420px] shrink-0 overflow-hidden rounded-3xl border border-border/80 bg-white p-6 sm:p-8 shadow-sm hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group">
-                <div className="relative z-10">
-                  <div className="flex items-center gap-4 mb-5">
-                    <div className="w-14 h-14 rounded-full bg-primary text-white font-bold text-lg flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-                      {team[0].initials}
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-secondary text-lg leading-tight group-hover:text-primary transition-colors">{team[0].name}</h4>
-                      <span className="inline-flex items-center gap-1.5 mt-1.5 text-xs font-bold text-primary bg-primary/10 border border-primary/20 px-3 py-0.5 rounded-full whitespace-nowrap">
-                        {team[0].role}
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-sm sm:text-base text-slate-800 font-medium leading-relaxed italic border-t border-border/70 pt-5">
-                    &ldquo;{team[0].quote}&rdquo;
-                  </p>
-                  <div className="mt-6 flex items-center gap-0.5 text-amber-400">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                    ))}
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {coreValues.map((v, i) => (
+              <div key={i} className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] flex gap-5 items-start">
+                <div className="w-14 h-14 rounded-2xl bg-white border border-[#e2e8f0] flex items-center justify-center shrink-0 shadow-sm">
+                  <img src={v.icon} width="32" height="32" alt={v.title} />
                 </div>
-              </figure>
-            </motion.div>
-
-            {/* Right Content */}
-            <motion.div className="lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-              <div className="section-title mb-10">
-                <motion.div variants={slideUp} className="sub-title bg-color-2 mb-3">
-                  <span>LEADERSHIP</span>
-                </motion.div>
-                <motion.h2 variants={slideUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4 text-secondary tracking-tight">
-                  Architecting Growth Systems Since 2018
-                </motion.h2>
+                <div>
+                  <h3 className="text-xl font-semibold text-[#0f172a] mb-2">{v.title}</h3>
+                  <p className="text-sm text-[#586882] leading-relaxed">{v.desc}</p>
+                </div>
               </div>
-              <motion.p variants={slideUp} className="text-muted-foreground text-sm sm:text-base mb-6 leading-relaxed max-w-lg">
-                Our approach is deeply technical and strategy-first. We bridge the gap between digital foundation, performance marketing, and cutting-edge AI automation.
-              </motion.p>
-              
-              <motion.div variants={slideUp} className="flex flex-col sm:flex-row gap-4 sm:gap-10 mb-8">
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> Full-Stack Ecosystems</li>
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> Data-Driven Scale</li>
-                </ul>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> Autonomous AI Integration</li>
-                  <li className="flex items-center gap-2.5 font-medium text-sm text-secondary"><CheckCircle2 className="text-primary w-4.5 h-4.5 shrink-0" /> Transparent Operations</li>
-                </ul>
-              </motion.div>
-            </motion.div>
-
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 5. CERTIFICATIONS */}
-      <section className="relative py-20 bg-slate-50/50 border-y border-border/60 overflow-hidden" id="certifications">
-        {/* Organic Glass Ambient Lighting */}
-        <div className="absolute top-1/4 -left-20 w-[420px] h-[420px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 -right-20 w-[420px] h-[420px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(#E2E4EB_1px,transparent_1px)] [background-size:32px_32px] opacity-30 pointer-events-none" />
+      {/* ═══════════════════ SECTION 5: LEADERSHIP PREVIEW ═══════════════════ */}
+      <section className="section py-20 bg-[#f8fafc] border-t border-[#e2e8f0]" id="team">
+        <div className="shell">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-7">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ef5b52]/10 text-[#ef5b52] text-xs font-semibold uppercase tracking-wider mb-4">
+                Senior Practitioners
+              </span>
+              <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-6">
+                Hands-On Leadership Working Directly On Your Accounts
+              </h2>
+              <p className="text-base text-[#586882] mb-6 leading-relaxed">
+                We intentionally run a high-density, senior-led organization. When you partner with Adyantra, you don&apos;t get pitched by senior founders only to be handed off to junior interns.
+              </p>
+              <p className="text-base text-[#586882] mb-8 leading-relaxed">
+                Our founders and technical architects personally design your growth architectures, review ad deployments, and optimize data pipelines to ensure zero compromise in execution quality.
+              </p>
 
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px] relative z-10">
-          <div className="section-title text-center mb-12">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="sub-title bg-color-2 mb-3">
-              <span>TRUST & ACCREDITATION</span>
-            </motion.div>
-            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-secondary">
-              Platform Certifications
-            </motion.h2>
-            <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              Certified partners across major performance marketing and analytics platforms.
-            </motion.p>
-          </div>
-
-          <div className="relative flex overflow-hidden py-3 group">
-            <div className="flex shrink-0 gap-5 animate-[marquee_25s_linear_infinite] group-hover:[animation-play-state:paused]">
-              {certifications.map((c, i) => (
-                <div
-                  key={i}
-                  className="shrink-0 group/pill relative bg-white/85 backdrop-blur-xl border border-white/90 shadow-md hover:shadow-lg hover:border-primary/50 hover:scale-105 transition-all duration-300 rounded-full px-6 py-3.5 flex items-center gap-4"
-                >
-                  <div className="w-10 h-10 rounded-full bg-slate-50 border border-border flex items-center justify-center shrink-0 group-hover/pill:scale-110 transition-transform shadow-sm">
-                    {c.icon}
-                  </div>
-                  <div className="flex flex-col pr-2">
-                    <span className="font-bold text-secondary text-sm sm:text-base group-hover/pill:text-primary transition-colors whitespace-nowrap">
-                      {c.name}
-                    </span>
-                    <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-widest">{c.issuer}</span>
-                  </div>
-                </div>
-              ))}
+              <div className="flex items-center gap-6">
+                <Link href="/careers" className="shadcn-input-button-solid">
+                  <span>Join Our Team</span>
+                  <span className="badge-icon">&rarr;</span>
+                </Link>
+                <Link href="/contact" className="shadcn-input-button">
+                  <span>Speak With Leadership</span>
+                  <span className="badge-icon">&rarr;</span>
+                </Link>
+              </div>
             </div>
-            
-            {/* Duplicated for Seamless Infinite Loop */}
-            <div className="flex shrink-0 gap-5 animate-[marquee_25s_linear_infinite] group-hover:[animation-play-state:paused]" aria-hidden="true">
-              {certifications.map((c, i) => (
-                <div
-                  key={`dup-${i}`}
-                  className="shrink-0 group/pill relative bg-white/85 backdrop-blur-xl border border-white/90 shadow-md hover:shadow-lg hover:border-primary/50 hover:scale-105 transition-all duration-300 rounded-full px-6 py-3.5 flex items-center gap-4"
-                >
-                  <div className="w-10 h-10 rounded-full bg-slate-50 border border-border flex items-center justify-center shrink-0 group-hover/pill:scale-110 transition-transform shadow-sm">
-                    {c.icon}
-                  </div>
-                  <div className="flex flex-col pr-2">
-                    <span className="font-bold text-secondary text-sm sm:text-base group-hover/pill:text-primary transition-colors whitespace-nowrap">
-                      {c.name}
-                    </span>
-                    <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-widest">{c.issuer}</span>
-                  </div>
+
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative rounded-3xl overflow-hidden border border-[#e2e8f0] shadow-lg max-w-md w-full bg-white">
+                <Image
+                  src="/assets/img/about/about-leader.jpg"
+                  alt="Adyantra Leadership"
+                  width={600}
+                  height={500}
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-[#0f172a]">Senior Engineering &amp; Strategy Core</h3>
+                  <p className="text-xs text-[#ef5b52] font-semibold mt-1">Hyderabad &bull; Bengaluru &bull; Remote</p>
+                  <p className="text-xs text-[#586882] mt-3 leading-relaxed">
+                    Bringing together over a decade of cross-functional experience in full-stack architecture, performance growth, and enterprise AI workflows.
+                  </p>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 6. CTA BANNER */}
-      <CTABanner />
+      {/* ═══════════════════ SECTION 6: CLIENT REVIEWS MARQUEE ═══════════════════ */}
+      <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="testimonials">
+        <div className="shell">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b4bf7]/10 text-[#7b4bf7] text-xs font-semibold uppercase tracking-wider mb-3">
+              Client Testimonials
+            </span>
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
+              What Founders &amp; Operators Say About Adyantra
+            </h2>
+            <p className="text-base text-[#586882]">
+              Real feedback from the leaders whose growth pipelines and digital platforms we empower.
+            </p>
+          </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {reviews.map((r, i) => (
+              <div key={i} className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] flex flex-col justify-between shadow-sm">
+                <p className="text-sm md:text-base text-[#0f172a] italic mb-6 leading-relaxed">
+                  &ldquo;{r.quote}&rdquo;
+                </p>
+                <div>
+                  <div className="font-semibold text-[#0f172a] text-sm">{r.author}</div>
+                  <div className="text-xs text-[#ef5b52] font-medium">{r.role}</div>
+                  <div className="text-xs text-[#586882] mt-0.5">{r.location}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════ SECTION 7: CALL TO ACTION BANNER ═══════════════════ */}
+      <section className="growth-banner" id="growth-banner">
+        <div className="shell">
+          <div className="growth-banner__inner">
+            <div className="growth-banner__content">
+              <span className="growth-banner__kicker">READY TO SCALE?</span>
+              <h2 id="growth-title" className="text-2xl md:text-3xl font-semibold text-white mt-2 mb-3">
+                Let&apos;s Build Your Growth Architecture Together.
+              </h2>
+              <p className="text-sm text-white/80 max-w-xl">
+                Schedule a confidential 30-minute growth audit with our senior strategists. We will evaluate your current acquisition funnels, software performance, and automation bottlenecks.
+              </p>
+            </div>
+            <div className="growth-banner__action">
+              <Link href="/contact" className="btn btn--white btn--shadow">
+                <span>Request Growth Audit</span>
+                <span className="btn__arrow">&rarr;</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

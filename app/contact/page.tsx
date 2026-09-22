@@ -1,396 +1,372 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Clock, 
-  MessageSquare, 
-  ShieldCheck, 
-  Users, 
-  Sparkles, 
-  ArrowUpRight, 
-  ChevronDown, 
-  Copy, 
-  Check,
-  CheckCircle2,
-  Search,
-  Share2,
-  Globe,
-  Bot,
-  Target,
-  ShoppingCart
-} from "lucide-react";
-import ContactForm from "@/components/forms/ContactForm";
-import { Icons8Mail, Icons8Phone, Icons8MapPin } from "@/components/ui/Icons8Icon";
-import { motion, AnimatePresence } from "framer-motion";
-import { slideUp, staggerContainer } from "@/lib/variants";
-
-const contactTiles = [
-  {
-    icon: Icons8Mail,
-    title: "Email Us",
-    primaryText: "info@adyantra.in",
-    secondaryText: "support@adyantra.in",
-    description: "Drop us an email and we'll get back to you within 24 hours.",
-    actionType: "copy",
-  },
-  {
-    icon: Icons8Phone,
-    title: "Call Us",
-    primaryText: "+91 83092 75093",
-    secondaryText: "+1-855-763-0320",
-    description: "Mon - Fri, 9:00 AM to 6:00 PM (IST)",
-    actionType: "call",
-  },
-  {
-    icon: Icons8MapPin,
-    title: "Visit Us",
-    primaryText: "Adyantra Digital",
-    secondaryText: "HITEC City, Hyderabad, Telangana 500081",
-    description: "Come say hi at our headquarters.",
-    actionType: "visit",
-  },
-];
-
-const capabilities = [
-  {
-    icon: Search,
-    title: "Search Engine Optimization (SEO)",
-    desc: "Dominate Google search engine rankings for your highest-converting keywords with technical audits and content strategies.",
-  },
-  {
-    icon: Share2,
-    title: "Social Media & Meta Ads",
-    desc: "Scale brand visibility and acquisition across Instagram, Facebook, and LinkedIn with high-ROAS ad campaigns.",
-  },
-  {
-    icon: Globe,
-    title: "Web Software & App Development",
-    desc: "Engineered for speed and conversions utilizing Next.js, React, and modern cloud architectures.",
-  },
-  {
-    icon: Target,
-    title: "Google Ads & PPC Performance",
-    desc: "Capture high-intent buyers with optimized search, display, and Performance Max campaign management.",
-  },
-  {
-    icon: Bot,
-    title: "AI Workflows & Chatbots",
-    desc: "Automate sales and support operations with custom WhatsApp AI chatbots and CRM lead qualification workflows.",
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-Commerce Storefronts",
-    desc: "Scalable online stores designed for high checkout completion, product search optimization, and abandoned cart recovery.",
-  },
-];
-
-const faqs = [
-  {
-    question: "What happens after I submit the contact form?",
-    answer:
-      "Within 24 hours, one of our senior strategy directors will review your website, ad accounts, and tech stack. We will prepare a custom audit and schedule an intro call to present actionable growth recommendations.",
-  },
-  {
-    question: "How fast can we launch a marketing campaign or project?",
-    answer:
-      "Performance ad campaigns (Meta & Google Ads) typically launch within 3 to 5 business days following account setup and audience research. Web application projects usually kick off within 1 week of strategy alignment.",
-  },
-  {
-    question: "Do I get direct access to developers and media buyers?",
-    answer:
-      "Yes, 100%. We replace non-technical middle managers with direct Slack and WhatsApp communication with the engineers, designers, and media buyers executing your account.",
-  },
-  {
-    question: "What industries do you specialize in?",
-    answer:
-      "We specialize in Real Estate, B2B IT & SaaS, Healthcare Clinics, Higher Education, E-Commerce brands, and Professional Enterprise Services across India, North America, and UAE.",
-  },
-];
 
 export default function ContactPage() {
-  const [copiedEmail, setCopiedEmail] = useState(false);
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [selectedServices, setSelectedServices] = useState<string[]>([
+    "Performance Marketing",
+  ]);
+  const [budget, setBudget] = useState("$2,500 - $5,000 / mo");
 
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedEmail(true);
-    setTimeout(() => setCopiedEmail(false), 2000);
+  const toggleService = (svc: string) => {
+    if (selectedServices.includes(svc)) {
+      setSelectedServices(selectedServices.filter((s) => s !== svc));
+    } else {
+      setSelectedServices([...selectedServices, svc]);
+    }
   };
 
-  const toggleFaq = (index: number) => {
-    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormSubmitted(true);
+    setTimeout(() => {
+      setFormSubmitted(false);
+    }, 6000);
   };
+
+  const servicesList = [
+    "Performance Marketing",
+    "SEO & Organic Growth",
+    "AI Automation Systems",
+    "Web Software & Next.js",
+    "CRM & Lead Pipeline",
+    "E-Commerce Solutions",
+  ];
+
+  const budgetTiers = [
+    "< $2,500 / mo",
+    "$2,500 - $5,000 / mo",
+    "$5,000 - $15,000 / mo",
+    "$15,000+ / mo",
+  ];
+
+  const faqs = [
+    {
+      q: "What happens after I submit this request?",
+      a: "A senior growth strategist or technical architect will review your website and requirements within 24 hours. We will prepare an initial competitive teardown and invite you to a confidential 30-minute discovery call.",
+    },
+    {
+      q: "Do you sign Mutual Non-Disclosure Agreements (NDAs)?",
+      a: "Yes. Before reviewing sensitive proprietary code, CRM data, or financial metrics, we are glad to execute our mutual NDA or review your company's standard agreement.",
+    },
+    {
+      q: "What is your typical project onboarding timeline?",
+      a: "For performance marketing campaigns and AI workflow integrations, onboarding typically takes 5 to 7 business days. For full-scale custom web software builds, we conduct a 2-week architectural sprint followed by bi-weekly releases.",
+    },
+    {
+      q: "Do you work with international clients outside India?",
+      a: "Yes. Over 60% of our client partners are headquartered across the United States, United Kingdom, UAE, and Singapore, with overlapping operational hours and dedicated communications channels on Slack or WhatsApp.",
+    },
+  ];
 
   return (
-    <main className="min-h-screen bg-white text-muted-foreground overflow-x-hidden pt-28 pb-20">
-      
-      {/* ═══════════════════════════════════════
-          1. MAIN CONTACT SECTION (NO HERO SECTION)
-          ═══════════════════════════════════════ */}
-      <section className="section-padding pt-12 lg:pt-16 bg-white relative">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px]">
-          
-          {/* Section Title Header (Exact Home Page Format) */}
-          <div className="section-title text-center mb-14">
-            <motion.div initial="hidden" animate="visible" variants={slideUp} className="sub-title bg-color-2 mb-3">
-              <span>GET IN TOUCH</span>
-            </motion.div>
-            <motion.h1 initial="hidden" animate="visible" variants={slideUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-tight tracking-tight">
-              Let's Build Something <span className="text-primary underline decoration-accent/60 decoration-4">Extraordinary</span>
-            </motion.h1>
-            <motion.p initial="hidden" animate="visible" variants={slideUp} className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              Whether you're looking to automate your workflow, scale your revenue, or build a new platform—our team of experts is ready to help you execute.
-            </motion.p>
+    <main className="ady-main-content">
+      {/* ═══════════════════ SECTION 1: FLAGSHIP HERO ═══════════════════ */}
+      <section className="ady-hero-section relative overflow-hidden" id="home">
+        <div className="ady-tunnel-container" id="adyTunnel">
+          <div className="ady-tunnel-layer ady-tunnel-1" />
+          <div className="ady-tunnel-layer ady-tunnel-2" />
+          <div className="ady-tunnel-layer ady-tunnel-3" />
+        </div>
+
+        <div className="shell text-center relative z-10 pt-16 pb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#ef5b52]/20 shadow-sm mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#ef5b52]">
+              Start A Conversation
+            </span>
           </div>
 
-          <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-            
-            {/* LEFT COLUMN: CONTACT TILES (2 Cols) */}
-            <div className="lg:col-span-2 space-y-8">
-              
-              {/* Tile 1: Email */}
-              <div className="flex gap-5 group">
-                <div className="w-12 h-12 rounded-xl bg-surface-2 border border-border flex items-center justify-center flex-shrink-0 text-primary group-hover:scale-110 transition-transform">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-semibold text-secondary mb-1 text-base">
-                    Email Us
-                  </h3>
-                  <p className="text-xs text-muted-foreground mb-2">
-                    Drop us an email and we'll get back to you within 24 hours.
-                  </p>
-                  <div className="space-y-1">
-                    <div className="text-sm font-bold text-secondary flex items-center gap-2">
-                      <span>info@adyantra.in</span>
-                      <button
-                        onClick={() => copyToClipboard("info@adyantra.in")}
-                        className="text-xs text-primary hover:underline cursor-pointer"
-                        title="Copy email"
-                      >
-                        {copiedEmail ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                      </button>
-                    </div>
-                    <div className="text-sm font-medium text-secondary">support@adyantra.in</div>
-                  </div>
-                </div>
-              </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
+            Let&apos;s Build Something{" "}
+            <span className="ady-gradient-text">Measurable Together</span>
+          </h1>
 
-              {/* Tile 2: Phone */}
-              <div className="flex gap-5 group">
-                <div className="w-12 h-12 rounded-xl bg-surface-2 border border-border flex items-center justify-center flex-shrink-0 text-primary group-hover:scale-110 transition-transform">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-semibold text-secondary mb-1 text-base">
-                    Call Us
-                  </h3>
-                  <p className="text-xs text-muted-foreground mb-2">
-                    Mon - Fri, 9:00 AM to 6:00 PM (IST)
-                  </p>
-                  <div className="space-y-1">
-                    <div className="text-sm font-bold text-secondary">+91 83092 75093</div>
-                    <div className="text-sm font-medium text-secondary">+1-855-763-0320</div>
-                  </div>
-                  <div className="mt-3">
-                    <a
-                      href="https://wa.me/918309275093"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-500 text-white text-xs font-bold hover:bg-emerald-600 transition-colors shadow-xs"
-                    >
-                      <MessageSquare className="w-3.5 h-3.5" />
-                      <span>Chat on WhatsApp</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">
+            Whether you are looking to scale paid acquisition, engineer high-performance web software, or deploy autonomous AI agents — our senior strategists are ready.
+          </p>
 
-              {/* Tile 3: Visit Us */}
-              <div className="flex gap-5 group">
-                <div className="w-12 h-12 rounded-xl bg-surface-2 border border-border flex items-center justify-center flex-shrink-0 text-primary group-hover:scale-110 transition-transform">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-semibold text-secondary mb-1 text-base">
-                    Visit Us
-                  </h3>
-                  <p className="text-xs text-muted-foreground mb-2">
-                    Come say hi at our headquarters.
-                  </p>
-                  <div className="space-y-1 text-sm font-medium text-secondary">
-                    <div className="font-bold">Adyantra Digital</div>
-                    <div>HITEC City, Hyderabad</div>
-                    <div>Telangana 500081</div>
-                  </div>
-                </div>
-              </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+            <a href="#audit-form" className="shadcn-input-button-solid">
+              <span>Request Growth Audit</span>
+              <span className="badge-icon">&darr;</span>
+            </a>
+            <a href="tel:+918309275093" className="shadcn-input-button">
+              <span>Direct Phone Call</span>
+              <span className="badge-icon">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-              {/* In-House Promise Highlights */}
-              <div className="p-6 rounded-2xl bg-surface border border-border space-y-3">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-primary">Why Work With Us</h4>
-                <ul className="space-y-2.5">
-                  <li className="flex items-center gap-2.5 font-medium text-xs text-secondary">
-                    <CheckCircle2 className="text-primary w-4 h-4 shrink-0" /> 100% In-House Technical Execution
-                  </li>
-                  <li className="flex items-center gap-2.5 font-medium text-xs text-secondary">
-                    <CheckCircle2 className="text-primary w-4 h-4 shrink-0" /> Direct Access to Senior Engineers
-                  </li>
-                  <li className="flex items-center gap-2.5 font-medium text-xs text-secondary">
-                    <CheckCircle2 className="text-primary w-4 h-4 shrink-0" /> 24-Hour Response SLA
-                  </li>
-                </ul>
-              </div>
+      {/* ═══════════════════ STATS BRIDGE BAR (FLAGSHIP PATTERN) ═══════════════════ */}
+      <div className="ady-stats-bridge-bar relative z-20">
+        <div className="ady-stats-container">
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">&lt; 24h</p>
+            <p className="ady-stat-label">Response Time</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">100%</p>
+            <p className="ady-stat-label">In-House Consultation</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">Zero</p>
+            <p className="ady-stat-label">Obligation Audit</p>
+          </div>
+          <div className="ady-stat-item">
+            <p className="ady-stat-value">Direct</p>
+            <p className="ady-stat-label">Senior Partner Access</p>
+          </div>
+        </div>
+      </div>
 
+      {/* ═══════════════════ SECTION 2: 3 DIRECT CONTACT CHANNELS ═══════════════════ */}
+      <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="channels">
+        <div className="shell">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            {/* Phone Card */}
+            <div className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] text-center hover:bg-white hover:border-[#cbd5e1] hover:shadow-md transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-white border border-[#e2e8f0] flex items-center justify-center mx-auto mb-5 shadow-sm">
+                <img
+                  src="https://img.icons8.com/?size=96&id=9659&format=png&color=ef5b52"
+                  width="30"
+                  height="30"
+                  alt="Direct Phone"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0f172a] mb-2">Direct Phone</h3>
+              <p className="mb-2">
+                <a
+                  href="tel:+918309275093"
+                  className="text-base font-bold text-[#ef5b52] hover:text-[#d9483f]"
+                >
+                  +91 83092 75093
+                </a>
+              </p>
+              <p className="text-xs text-[#586882]">Mon - Fri, 9:00 AM - 6:30 PM IST</p>
             </div>
 
-            {/* RIGHT COLUMN: CONTACT FORM CARD (3 Cols) */}
-            <div className="lg:col-span-3">
-              <div className="bento-card p-8 md:p-10 border-border relative">
-                <h2 className="text-xl font-bold text-secondary mb-2">
-                  Send us a message
-                </h2>
-                <p className="text-xs text-muted-foreground mb-8">
-                  Fill out the form below and we'll get back to you with a custom strategy.
+            {/* Email Card */}
+            <div className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] text-center hover:bg-white hover:border-[#cbd5e1] hover:shadow-md transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-white border border-[#e2e8f0] flex items-center justify-center mx-auto mb-5 shadow-sm">
+                <img
+                  src="https://img.icons8.com/?size=96&id=63598&format=png&color=ef5b52"
+                  width="30"
+                  height="30"
+                  alt="Email Address"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0f172a] mb-2">Email Inquiries</h3>
+              <p className="mb-2">
+                <a
+                  href="mailto:info@adyantra.in"
+                  className="text-base font-bold text-[#7b4bf7] hover:text-[#6a3ce2]"
+                >
+                  info@adyantra.in
+                </a>
+              </p>
+              <p className="text-xs text-[#586882]">Replies within 24 hours guaranteed</p>
+            </div>
+
+            {/* Headquarters Card */}
+            <div className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] text-center hover:bg-white hover:border-[#cbd5e1] hover:shadow-md transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-white border border-[#e2e8f0] flex items-center justify-center mx-auto mb-5 shadow-sm">
+                <img
+                  src="https://img.icons8.com/?size=96&id=3723&format=png&color=ef5b52"
+                  width="30"
+                  height="30"
+                  alt="Office Location"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0f172a] mb-2">Headquarters</h3>
+              <p className="text-base font-semibold text-[#0f172a] mb-1">
+                HITEC City, Hyderabad
+              </p>
+              <p className="text-xs text-[#586882]">Telangana 500081, India</p>
+            </div>
+          </div>
+
+          {/* Interactive Proposal Form Card */}
+          <div
+            className="max-w-4xl mx-auto p-8 md:p-12 rounded-3xl bg-[#f8fafc] border border-[#e2e8f0] shadow-lg"
+            id="audit-form"
+          >
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ef5b52]/10 text-[#ef5b52] text-xs font-semibold uppercase tracking-wider mb-3">
+                Book Your Audit
+              </span>
+              <h2 className="text-2xl md:text-3xl font-semibold text-[#0f172a] mb-3">
+                Request A Confidential Growth Proposal
+              </h2>
+              <p className="text-sm text-[#586882]">
+                Tell us about your objectives. We will review your digital footprint and propose actionable recommendations.
+              </p>
+            </div>
+
+            {formSubmitted ? (
+              <div className="p-8 rounded-2xl bg-emerald-50 border border-emerald-200 text-center">
+                <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                  ✓
+                </div>
+                <h3 className="text-xl font-semibold text-emerald-900 mb-2">
+                  Growth Audit Request Received!
+                </h3>
+                <p className="text-sm text-emerald-700 max-w-md mx-auto">
+                  Thank you for reaching out. A senior Adyantra partner will review your project and email you within 24 hours to schedule our discovery session.
                 </p>
-
-                <ContactForm />
               </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
-          2. CORE CAPABILITIES (Home Page Section System)
-          ═══════════════════════════════════════ */}
-      <section className="section-padding bg-slate-50/50 border-y border-border/60">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px]">
-          <div className="section-title text-center mb-12">
-            <div className="sub-title bg-color-2 mb-3"><span>OUR CAPABILITIES</span></div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-secondary">
-              What We Deliver
-            </h2>
-            <p className="text-muted-foreground mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              Integrated digital growth, web software development, and AI automation built for scaling brands.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {capabilities.map((cap, i) => {
-              const IconComp = cap.icon;
-              return (
-                <div key={i} className="bento-card p-6 flex flex-col justify-between group">
-                  <div>
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <IconComp className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-lg font-bold text-secondary mb-2">{cap.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{cap.desc}</p>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-8">
+                {/* Services Checkbox Pills */}
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-[#0f172a] mb-3">
+                    1. Select Areas of Interest
+                  </label>
+                  <div className="flex flex-wrap gap-2.5">
+                    {servicesList.map((svc) => (
+                      <button
+                        type="button"
+                        key={svc}
+                        onClick={() => toggleService(svc)}
+                        className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 ${
+                          selectedServices.includes(svc)
+                            ? "bg-[#0f172a] text-white shadow-sm"
+                            : "bg-white text-[#586882] hover:bg-slate-100 border border-[#e2e8f0]"
+                        }`}
+                      >
+                        {selectedServices.includes(svc) ? "✓ " : "+ "}
+                        {svc}
+                      </button>
+                    ))}
                   </div>
                 </div>
-              );
-            })}
+
+                {/* Budget Selection Pills */}
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-[#0f172a] mb-3">
+                    2. Approximate Monthly Budget
+                  </label>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    {budgetTiers.map((tier) => (
+                      <button
+                        type="button"
+                        key={tier}
+                        onClick={() => setBudget(tier)}
+                        className={`px-3 py-2.5 rounded-xl text-xs font-semibold text-center transition-all duration-200 ${
+                          budget === tier
+                            ? "bg-[#ef5b52] text-white shadow-sm"
+                            : "bg-white text-[#586882] hover:bg-slate-100 border border-[#e2e8f0]"
+                        }`}
+                      >
+                        {tier}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Input Fields Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. Rahul Sharma"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                      Work Email *
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      placeholder="e.g. rahul@company.com"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      required
+                      placeholder="e.g. +91 98765 43210"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                      Company Website / URL
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="e.g. https://yourcompany.com"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                    />
+                  </div>
+                </div>
+
+                {/* Textarea */}
+                <div>
+                  <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                    Project Details &amp; Key Bottlenecks
+                  </label>
+                  <textarea
+                    rows={4}
+                    placeholder="Briefly describe your current acquisition channels, software stack, or workflow challenges..."
+                    className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                  />
+                </div>
+
+                {/* Submit Action */}
+                <div className="text-center pt-2">
+                  <button
+                    type="submit"
+                    className="shadcn-input-button-solid px-8 py-3.5 text-base font-semibold w-full sm:w-auto"
+                  >
+                    <span>Submit Proposal Request</span>
+                    <span className="badge-icon">&rarr;</span>
+                  </button>
+                  <p className="text-[11px] text-[#586882] mt-3">
+                    Strict confidentiality guaranteed. We never sell or share your contact data.
+                  </p>
+                </div>
+              </form>
+            )}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          3. FREQUENTLY ASKED QUESTIONS (Home Page Section System)
-          ═══════════════════════════════════════ */}
-      <section className="section-padding bg-white">
-        <div className="container mx-auto px-4 md:px-8 max-w-[900px]">
-          <div className="section-title text-center mb-12">
-            <div className="sub-title bg-color-2 mb-3"><span>FREQUENTLY ASKED QUESTIONS</span></div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-secondary tracking-tight">
-              Everything You Need to Know
+      {/* ═══════════════════ SECTION 3: FREQUENTLY ASKED QUESTIONS ═══════════════════ */}
+      <section className="section py-20 bg-[#f8fafc] border-t border-[#e2e8f0]" id="faq">
+        <div className="shell max-w-3xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b4bf7]/10 text-[#7b4bf7] text-xs font-semibold uppercase tracking-wider mb-3">
+              Helpful Information
+            </span>
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
+              Frequently Asked Questions
             </h2>
-            <p className="text-sm text-muted-foreground mt-3">
-              Clear answers regarding our onboarding, timelines, and technical collaboration model.
+            <p className="text-base text-[#586882]">
+              What to expect before and during our preliminary growth consultations.
             </p>
           </div>
 
           <div className="space-y-4">
-            {faqs.map((faq, index) => {
-              const isOpen = openFaqIndex === index;
-              return (
-                <div
-                  key={index}
-                  className="border border-border rounded-2xl overflow-hidden transition-all bg-white hover:border-primary/40"
-                >
-                  <button
-                    onClick={() => toggleFaq(index)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left font-bold text-secondary text-base hover:text-primary transition-colors cursor-pointer"
-                  >
-                    <span>{faq.question}</span>
-                    <div
-                      className={`w-8 h-8 rounded-full bg-surface flex items-center justify-center shrink-0 text-primary transition-transform duration-300 ${
-                        isOpen ? "rotate-180 bg-primary text-white" : ""
-                      }`}
-                    >
-                      <ChevronDown className="w-4 h-4" />
-                    </div>
-                  </button>
-                  <AnimatePresence>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        <div className="px-6 pb-6 text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4">
-                          {faq.answer}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
-          4. HIGH IMPACT BOTTOM CTA BANNER (Home Page System)
-          ═══════════════════════════════════════ */}
-      <section className="pb-20 bg-white">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px]">
-          <div className="bg-secondary text-white rounded-[32px] p-8 md:p-14 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px] pointer-events-none" />
-            
-            <div className="max-w-2xl relative z-10 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-accent font-bold text-xs uppercase tracking-wider mb-4">
-                <Sparkles className="w-3.5 h-3.5" />
-                Ready for Predictable Revenue Growth?
+            {faqs.map((f, i) => (
+              <div key={i} className="p-6 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm">
+                <h3 className="text-base font-semibold text-[#0f172a] mb-2">{f.q}</h3>
+                <p className="text-sm text-[#586882] leading-relaxed">{f.a}</p>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight mb-4">
-                Scale Your Marketing & AI Infrastructure Today.
-              </h2>
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Connect with our senior team for a complimentary audit of your current Google/Meta Ads or custom web architecture.
-              </p>
-            </div>
-
-            <div className="relative z-10 shrink-0">
-              <a
-                href="https://wa.me/918309275093"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shadcn-input-button-white text-xs sm:text-sm"
-              >
-                <span>Instant WhatsApp Call</span>
-                <span className="badge-icon">
-                  <ArrowUpRight className="size-4" />
-                </span>
-              </a>
-            </div>
+            ))}
           </div>
         </div>
       </section>

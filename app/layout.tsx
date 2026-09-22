@@ -30,6 +30,9 @@ export default function RootLayout({
       className={`${poppins.variable} ${dmMono.variable} font-sans`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="stylesheet" href="/styles.css?v=20260922_3" />
+      </head>
       <body className="bg-background text-foreground antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1 flex flex-col relative">{children}</main>
