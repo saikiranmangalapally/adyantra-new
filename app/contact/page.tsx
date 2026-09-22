@@ -72,30 +72,36 @@ export default function ContactPage() {
         </div>
 
         <div className="shell text-center relative z-10 pt-16 pb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#ef5b52]/20 shadow-sm mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#ef5b52]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#eff6ff] border border-[#bfdbfe]/60 shadow-sm mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#2563eb] animate-pulse" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#2563eb]">
               Start A Conversation
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6 font-heading">
             Let&apos;s Build Something{" "}
-            <span className="ady-gradient-text">Measurable Together</span>
+            <span className="bg-gradient-to-r from-[#2563eb] to-[#0284c7] bg-clip-text text-transparent">Measurable Together</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">
+          <p className="text-base md:text-lg text-[#64748b] max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
             Whether you are looking to scale paid acquisition, engineer high-performance web software, or deploy autonomous AI agents — our senior strategists are ready.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a href="#audit-form" className="shadcn-input-button-solid">
+            <a
+              href="#audit-form"
+              className="px-6 py-3.5 rounded-full bg-[#0f172a] text-white font-medium text-sm hover:bg-[#1e293b] shadow-sm hover:shadow-md transition-all inline-flex items-center gap-2"
+            >
               <span>Request Growth Audit</span>
-              <span className="badge-icon">&darr;</span>
+              <span className="text-xs">&darr;</span>
             </a>
-            <a href="tel:+918309275093" className="shadcn-input-button">
+            <a
+              href="tel:+918309275093"
+              className="px-6 py-3.5 rounded-full bg-white text-[#0f172a] border border-[#e2e8f0] font-medium text-sm hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-all inline-flex items-center gap-2 shadow-sm"
+            >
               <span>Direct Phone Call</span>
-              <span className="badge-icon">&rarr;</span>
+              <span className="text-xs">&rarr;</span>
             </a>
           </div>
         </div>
@@ -131,61 +137,61 @@ export default function ContactPage() {
             <div className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] text-center hover:bg-white hover:border-[#cbd5e1] hover:shadow-md transition-all duration-300">
               <div className="w-14 h-14 rounded-2xl bg-white border border-[#e2e8f0] flex items-center justify-center mx-auto mb-5 shadow-sm">
                 <img
-                  src="https://img.icons8.com/?size=96&id=9659&format=png&color=ef5b52"
+                  src="https://img.icons8.com/?size=96&id=9659&format=png&color=2563eb"
                   width="30"
                   height="30"
                   alt="Direct Phone"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-[#0f172a] mb-2">Direct Phone</h3>
+              <h3 className="text-xl font-semibold text-[#0f172a] mb-2 font-heading">Direct Phone</h3>
               <p className="mb-2">
                 <a
                   href="tel:+918309275093"
-                  className="text-base font-bold text-[#ef5b52] hover:text-[#d9483f]"
+                  className="text-base font-bold text-[#2563eb] hover:text-[#1d4ed8]"
                 >
                   +91 83092 75093
                 </a>
               </p>
-              <p className="text-xs text-[#586882]">Mon - Fri, 9:00 AM - 6:30 PM IST</p>
+              <p className="text-xs text-[#64748b]">Mon - Fri, 9:00 AM - 6:30 PM IST</p>
             </div>
 
             {/* Email Card */}
             <div className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] text-center hover:bg-white hover:border-[#cbd5e1] hover:shadow-md transition-all duration-300">
               <div className="w-14 h-14 rounded-2xl bg-white border border-[#e2e8f0] flex items-center justify-center mx-auto mb-5 shadow-sm">
                 <img
-                  src="https://img.icons8.com/?size=96&id=63598&format=png&color=ef5b52"
+                  src="https://img.icons8.com/?size=96&id=63598&format=png&color=0284c7"
                   width="30"
                   height="30"
                   alt="Email Address"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-[#0f172a] mb-2">Email Inquiries</h3>
+              <h3 className="text-xl font-semibold text-[#0f172a] mb-2 font-heading">Email Inquiries</h3>
               <p className="mb-2">
                 <a
                   href="mailto:info@adyantra.in"
-                  className="text-base font-bold text-[#7b4bf7] hover:text-[#6a3ce2]"
+                  className="text-base font-bold text-[#2563eb] hover:text-[#1d4ed8]"
                 >
                   info@adyantra.in
                 </a>
               </p>
-              <p className="text-xs text-[#586882]">Replies within 24 hours guaranteed</p>
+              <p className="text-xs text-[#64748b]">Replies within 24 hours guaranteed</p>
             </div>
 
             {/* Headquarters Card */}
             <div className="p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] text-center hover:bg-white hover:border-[#cbd5e1] hover:shadow-md transition-all duration-300">
               <div className="w-14 h-14 rounded-2xl bg-white border border-[#e2e8f0] flex items-center justify-center mx-auto mb-5 shadow-sm">
                 <img
-                  src="https://img.icons8.com/?size=96&id=3723&format=png&color=ef5b52"
+                  src="https://img.icons8.com/?size=96&id=3723&format=png&color=2563eb"
                   width="30"
                   height="30"
                   alt="Office Location"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-[#0f172a] mb-2">Headquarters</h3>
+              <h3 className="text-xl font-semibold text-[#0f172a] mb-2 font-heading">Headquarters</h3>
               <p className="text-base font-semibold text-[#0f172a] mb-1">
                 HITEC City, Hyderabad
               </p>
-              <p className="text-xs text-[#586882]">Telangana 500081, India</p>
+              <p className="text-xs text-[#64748b]">Telangana 500081, India</p>
             </div>
           </div>
 
@@ -195,13 +201,13 @@ export default function ContactPage() {
             id="audit-form"
           >
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ef5b52]/10 text-[#ef5b52] text-xs font-semibold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff6ff] text-[#2563eb] text-xs font-semibold uppercase tracking-wider mb-3 border border-[#bfdbfe]/60">
                 Book Your Audit
               </span>
-              <h2 className="text-2xl md:text-3xl font-semibold text-[#0f172a] mb-3">
+              <h2 className="text-2xl md:text-3xl font-semibold text-[#0f172a] mb-3 font-heading">
                 Request A Confidential Growth Proposal
               </h2>
-              <p className="text-sm text-[#586882]">
+              <p className="text-sm text-[#64748b]">
                 Tell us about your objectives. We will review your digital footprint and propose actionable recommendations.
               </p>
             </div>
@@ -211,7 +217,7 @@ export default function ContactPage() {
                 <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   ✓
                 </div>
-                <h3 className="text-xl font-semibold text-emerald-900 mb-2">
+                <h3 className="text-xl font-semibold text-emerald-900 mb-2 font-heading">
                   Growth Audit Request Received!
                 </h3>
                 <p className="text-sm text-emerald-700 max-w-md mx-auto">
@@ -222,7 +228,7 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-8">
                 {/* Services Checkbox Pills */}
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#0f172a] mb-3">
+                  <label className="block text-xs font-bold uppercase tracking-wider text-[#0f172a] mb-3 font-heading">
                     1. Select Areas of Interest
                   </label>
                   <div className="flex flex-wrap gap-2.5">
@@ -234,7 +240,7 @@ export default function ContactPage() {
                         className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 ${
                           selectedServices.includes(svc)
                             ? "bg-[#0f172a] text-white shadow-sm"
-                            : "bg-white text-[#586882] hover:bg-slate-100 border border-[#e2e8f0]"
+                            : "bg-white text-[#64748b] hover:bg-slate-100 border border-[#e2e8f0]"
                         }`}
                       >
                         {selectedServices.includes(svc) ? "✓ " : "+ "}
@@ -246,7 +252,7 @@ export default function ContactPage() {
 
                 {/* Budget Selection Pills */}
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#0f172a] mb-3">
+                  <label className="block text-xs font-bold uppercase tracking-wider text-[#0f172a] mb-3 font-heading">
                     2. Approximate Monthly Budget
                   </label>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
@@ -257,8 +263,8 @@ export default function ContactPage() {
                         onClick={() => setBudget(tier)}
                         className={`px-3 py-2.5 rounded-xl text-xs font-semibold text-center transition-all duration-200 ${
                           budget === tier
-                            ? "bg-[#ef5b52] text-white shadow-sm"
-                            : "bg-white text-[#586882] hover:bg-slate-100 border border-[#e2e8f0]"
+                            ? "bg-[#2563eb] text-white shadow-sm"
+                            : "bg-white text-[#64748b] hover:bg-slate-100 border border-[#e2e8f0]"
                         }`}
                       >
                         {tier}
@@ -270,59 +276,59 @@ export default function ContactPage() {
                 {/* Input Fields Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2 font-heading">
                       Full Name *
                     </label>
                     <input
                       type="text"
                       required
                       placeholder="e.g. Rahul Sharma"
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#2563eb]"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2 font-heading">
                       Work Email *
                     </label>
                     <input
                       type="email"
                       required
                       placeholder="e.g. rahul@company.com"
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#2563eb]"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2 font-heading">
                       Phone Number *
                     </label>
                     <input
                       type="tel"
                       required
                       placeholder="e.g. +91 98765 43210"
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#2563eb]"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                    <label className="block text-xs font-semibold text-[#0f172a] mb-2 font-heading">
                       Company Website / URL
                     </label>
                     <input
                       type="text"
                       placeholder="e.g. https://yourcompany.com"
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#2563eb]"
                     />
                   </div>
                 </div>
 
                 {/* Textarea */}
                 <div>
-                  <label className="block text-xs font-semibold text-[#0f172a] mb-2">
+                  <label className="block text-xs font-semibold text-[#0f172a] mb-2 font-heading">
                     Project Details &amp; Key Bottlenecks
                   </label>
                   <textarea
                     rows={4}
                     placeholder="Briefly describe your current acquisition channels, software stack, or workflow challenges..."
-                    className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#ef5b52]"
+                    className="w-full px-4 py-3 rounded-xl bg-white border border-[#e2e8f0] text-sm text-[#0f172a] focus:outline-none focus:border-[#2563eb]"
                   />
                 </div>
 
@@ -330,12 +336,12 @@ export default function ContactPage() {
                 <div className="text-center pt-2">
                   <button
                     type="submit"
-                    className="shadcn-input-button-solid px-8 py-3.5 text-base font-semibold w-full sm:w-auto"
+                    className="px-8 py-3.5 rounded-full bg-[#0f172a] text-white text-sm font-semibold hover:bg-[#1e293b] transition-all shadow-md inline-flex items-center gap-2"
                   >
-                    <span>Submit Proposal Request</span>
-                    <span className="badge-icon">&rarr;</span>
+                    <span>Submit Audit Request</span>
+                    <span>&rarr;</span>
                   </button>
-                  <p className="text-[11px] text-[#586882] mt-3">
+                  <p className="text-[11px] text-[#64748b] mt-3">
                     Strict confidentiality guaranteed. We never sell or share your contact data.
                   </p>
                 </div>

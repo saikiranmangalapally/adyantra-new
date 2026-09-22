@@ -73,20 +73,29 @@ export default function Navbar() {
             className={`ady-nav-dropdown-wrap ${activeDropdown === "marketing" ? "stay-open open" : ""}`}
             data-open={activeDropdown === "marketing"}
           >
-            <button
-              type="button"
-              className={`ady-nav-link ady-has-dropdown ${activeDropdown === "marketing" ? "active" : ""}`}
-              onClick={(e) => {
-                e.stopPropagation();
-                setActiveDropdown((prev) => (prev === "marketing" ? null : "marketing"));
-              }}
-              aria-expanded={activeDropdown === "marketing"}
-            >
-              <span>Digital Marketing</span>
-              <svg className="ady-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
+            <div className="ady-nav-link-group">
+              <Link
+                href="/digital-marketing-growth"
+                className={`ady-nav-link ady-has-dropdown ${activeDropdown === "marketing" ? "active" : ""}`}
+                onClick={() => setActiveDropdown(null)}
+              >
+                <span>Digital Marketing</span>
+              </Link>
+              <button
+                type="button"
+                className="ady-dropdown-toggle-btn"
+                aria-label="Toggle Digital Marketing submenu"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setActiveDropdown((prev) => (prev === "marketing" ? null : "marketing"));
+                }}
+              >
+                <svg className="ady-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            </div>
             <div className="ady-dropdown-menu-clean-2col">
               <div className="ady-drop-col">
                 <div className="ady-drop-col-title">Performance &amp; Search</div>
@@ -112,20 +121,29 @@ export default function Navbar() {
             className={`ady-nav-dropdown-wrap ${activeDropdown === "ai" ? "stay-open open" : ""}`}
             data-open={activeDropdown === "ai"}
           >
-            <button
-              type="button"
-              className={`ady-nav-link ady-has-dropdown ${activeDropdown === "ai" ? "active" : ""}`}
-              onClick={(e) => {
-                e.stopPropagation();
-                setActiveDropdown((prev) => (prev === "ai" ? null : "ai"));
-              }}
-              aria-expanded={activeDropdown === "ai"}
-            >
-              <span>AI Automation</span>
-              <svg className="ady-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
+            <div className="ady-nav-link-group">
+              <Link
+                href="/ai-automation"
+                className={`ady-nav-link ady-has-dropdown ${activeDropdown === "ai" ? "active" : ""}`}
+                onClick={() => setActiveDropdown(null)}
+              >
+                <span>AI Automation</span>
+              </Link>
+              <button
+                type="button"
+                className="ady-dropdown-toggle-btn"
+                aria-label="Toggle AI Automation submenu"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setActiveDropdown((prev) => (prev === "ai" ? null : "ai"));
+                }}
+              >
+                <svg className="ady-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            </div>
             <div className="ady-dropdown-menu-clean-2col">
               <div className="ady-drop-col">
                 <div className="ady-drop-col-title">AI Automation Systems</div>

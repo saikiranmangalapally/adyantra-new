@@ -3,97 +3,90 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function CareersPage() {
+export default function CareerPage() {
   const [activeDept, setActiveDept] = useState("all");
 
   const jobs = [
     {
-      id: 1,
-      title: "Senior AI Automation Architect",
+      id: "ai-engineer",
       dept: "ai",
       deptLabel: "AI Systems",
-      location: "Hyderabad (HITEC City) / Hybrid",
+      title: "Senior AI Automation Architect",
+      location: "HITEC City, Hyderabad (Hybrid)",
       type: "Full-Time",
-      experience: "3+ years",
-      tech: ["Python", "FastAPI", "RAG / Vector DBs", "n8n / Make", "LLM APIs"],
-      desc: "Architect autonomous multi-agent pipelines, private knowledge base agents, and bidirectional CRM syncing for high-growth enterprise accounts.",
+      desc: "Architect production agentic workflows, multi-tool LLM routing (LangChain / LlamaIndex), WhatsApp Cloud API integrations, and vector search systems.",
+      tech: ["Python", "FastAPI", "OpenAI / Claude APIs", "n8n / Make", "PostgreSQL"],
     },
     {
-      id: 2,
-      title: "Senior Full-Stack Next.js / React Engineer",
+      id: "fullstack-engineer",
       dept: "engineering",
       deptLabel: "Engineering",
-      location: "Hyderabad / Remote (India)",
+      title: "Full-Stack Web Engineer (Next.js / TypeScript)",
+      location: "HITEC City, Hyderabad (Hybrid)",
       type: "Full-Time",
-      experience: "4+ years",
-      tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-      desc: "Build blisteringly fast web applications, enterprise portals, and headless e-commerce storefronts optimized for 100/100 Core Web Vitals.",
+      desc: "Build ultra-fast Next.js 15 web applications, high-converting CRO landing experiences, and headless CMS integrations with 100/100 Core Web Vitals.",
+      tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "Server Actions", "Vercel"],
     },
     {
-      id: 3,
-      title: "Performance Marketing Growth Lead",
+      id: "performance-marketer",
       dept: "growth",
       deptLabel: "Growth & Media",
-      location: "Hyderabad (On-site)",
+      title: "Performance Marketing Lead (Meta & Google Ads)",
+      location: "HITEC City, Hyderabad (Hybrid)",
       type: "Full-Time",
-      experience: "4+ years",
-      tech: ["Meta Advantage+", "Google PMax", "GA4", "Klaviyo", "First-Party CAPI"],
-      desc: "Direct and scale paid acquisition systems across major advertising channels for funded D2C brands and global B2B SaaS companies.",
+      desc: "Manage high-volume ad spend ($50k+/mo) across Meta Ads Manager, Google Ads (Search, PMax), and TikTok Ads with server-side CAPI tracking.",
+      tech: ["Google Ads", "Meta Ads Manager", "GA4 / GTM", "Triple Whale", "Looker Studio"],
     },
     {
-      id: 4,
-      title: "Technical SEO & Inbound Strategist",
+      id: "seo-strategist",
       dept: "growth",
       deptLabel: "Growth & Media",
-      location: "Hyderabad / Hybrid",
+      title: "Senior Technical SEO Strategist",
+      location: "Remote / Hybrid",
       type: "Full-Time",
-      experience: "3+ years",
-      tech: ["Schema Markup", "Core Web Vitals", "Ahrefs", "Content Clusters", "Next.js SEO"],
-      desc: "Spearhead programmatic SEO, semantic knowledge graphs, and high-intent keyword strategies that scale high-margin organic pipeline.",
+      desc: "Lead deep technical crawl audits, programmatic SEO architectures, content topical authority clusters, and high-tier digital PR outreach.",
+      tech: ["Ahrefs", "Screaming Frog", "Semrush", "Schema.org", "BigQuery"],
     },
     {
-      id: 5,
-      title: "Senior UI/UX & Design Systems Lead",
+      id: "product-designer",
       dept: "design",
-      deptLabel: "Design & Product",
-      location: "Hyderabad / Hybrid",
+      deptLabel: "Design",
+      title: "Senior UI/UX & Motion Designer",
+      location: "HITEC City, Hyderabad (Hybrid)",
       type: "Full-Time",
-      experience: "4+ years",
-      tech: ["Figma", "Design Systems", "Prototyping", "Conversion UX", "Micro-animations"],
-      desc: "Craft state-of-the-art interactive user interfaces, conversion-optimized landing page systems, and digital product designs for modern software platforms.",
+      desc: "Design premium, conversion-obsessed web interfaces, design systems in Figma, 3D web assets, and micro-interactions with smooth UX fidelity.",
+      tech: ["Figma", "Framer", "Spline / Blender", "CSS Animation", "Design Systems"],
     },
   ];
 
   const perks = [
     {
-      title: "Top-Tier Hardware Stipend",
-      desc: "M-series MacBook Pro or custom high-end workstation plus external 4K monitors to ensure zero developer latency.",
-      icon: "https://img.icons8.com/?size=96&id=16412&format=png&color=ef5b52",
+      title: "Competitive Compensation & ESOPs",
+      desc: "Top-tier base salary benchmarked against top product agencies, with equity options for core engineering contributors.",
+      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=2563eb",
     },
     {
-      title: "Comprehensive Health Insurance",
-      desc: "Full family health coverage with cashless hospitalization across top medical networks in India.",
-      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=7b4bf7",
+      title: "Annual Learning & AI Budget",
+      desc: "₹1,00,000+ per year for courses, LLM subscriptions, technical books, API testing credits, and developer tools.",
+      icon: "https://img.icons8.com/?size=96&id=4052&format=png&color=0284c7",
     },
     {
-      title: "Generous Learning Budget",
-      desc: "₹1,00,000 annual allowance for books, specialized AI engineering courses, conferences, and technical certifications.",
-      icon: "https://img.icons8.com/?size=96&id=11173&format=png&color=ef5b52",
+      title: "Top-Tier Hardware",
+      desc: "Latest Apple MacBook Pro M3/M4 or custom Linux dev workstation with dual 4K external monitors.",
+      icon: "https://img.icons8.com/?size=96&id=16412&format=png&color=2563eb",
     },
     {
-      title: "Hybrid & High-Autonomy Culture",
-      desc: "Work in our modern HITEC City studio with flexible hybrid days, zero micro-management, and high ownership.",
-      icon: "https://img.icons8.com/?size=96&id=53373&format=png&color=7b4bf7",
+      title: "Flexible Hybrid Autonomy",
+      desc: "Work from our modern HITEC City collaborative studio or from home. We measure outcomes, not clocked seat time.",
+      icon: "https://img.icons8.com/?size=96&id=2854&format=png&color=0284c7",
     },
   ];
 
   const filteredJobs =
-    activeDept === "all"
-      ? jobs
-      : jobs.filter((j) => j.dept === activeDept);
+    activeDept === "all" ? jobs : jobs.filter((j) => j.dept === activeDept);
 
   return (
-    <main className="ady-main-content">
+    <main className="ady-main-content bg-white">
       {/* ═══════════════════ SECTION 1: FLAGSHIP HERO ═══════════════════ */}
       <section className="ady-hero-section relative overflow-hidden" id="home">
         <div className="ady-tunnel-container" id="adyTunnel">
@@ -103,30 +96,38 @@ export default function CareersPage() {
         </div>
 
         <div className="shell text-center relative z-10 pt-16 pb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#ef5b52]/20 shadow-sm mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#ef5b52]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#eff6ff] border border-[#bfdbfe]/60 shadow-sm mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#2563eb] animate-pulse" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#2563eb]">
               Join Our Core Team
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6 font-heading">
             Build The Future Of Autonomous Growth &amp;{" "}
-            <span className="ady-gradient-text">Digital Engineering</span>
+            <span className="bg-gradient-to-r from-[#2563eb] to-[#0284c7] bg-clip-text text-transparent">
+              Digital Engineering
+            </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">
+          <p className="text-base md:text-lg text-[#64748b] max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
             Work with a high-density team of senior software engineers, AI architects, and growth practitioners in HITEC City, Hyderabad.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a href="#open-roles" className="shadcn-input-button-solid">
+            <a
+              href="#open-roles"
+              className="px-6 py-3.5 rounded-full bg-[#0f172a] text-white font-medium text-sm hover:bg-[#1e293b] shadow-sm hover:shadow-md transition-all inline-flex items-center gap-2"
+            >
               <span>View Open Roles</span>
-              <span className="badge-icon">&darr;</span>
+              <span className="text-xs">&darr;</span>
             </a>
-            <a href="#culture" className="shadcn-input-button">
+            <a
+              href="#culture"
+              className="px-6 py-3.5 rounded-full bg-white text-[#0f172a] border border-[#e2e8f0] font-medium text-sm hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-all inline-flex items-center gap-2 shadow-sm"
+            >
               <span>Our Culture &amp; Perks</span>
-              <span className="badge-icon">&rarr;</span>
+              <span className="text-xs">&rarr;</span>
             </a>
           </div>
         </div>
@@ -158,13 +159,13 @@ export default function CareersPage() {
       <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="open-roles">
         <div className="shell max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ef5b52]/10 text-[#ef5b52] text-xs font-semibold uppercase tracking-wider mb-3">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff6ff] text-[#2563eb] text-xs font-semibold uppercase tracking-wider mb-3 border border-[#bfdbfe]/60">
               Career Opportunities
             </span>
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4 font-heading">
               Open Positions Across Engineering &amp; Growth
             </h2>
-            <p className="text-base text-[#586882]">
+            <p className="text-base text-[#64748b]">
               Explore active openings and apply directly to work on high-impact projects.
             </p>
           </div>
@@ -181,10 +182,10 @@ export default function CareersPage() {
               <button
                 key={d.id}
                 onClick={() => setActiveDept(d.id)}
-                className={`px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
+                className={`px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
                   activeDept === d.id
                     ? "bg-[#0f172a] text-white shadow-md -translate-y-0.5"
-                    : "bg-[#f8fafc] text-[#586882] hover:bg-slate-100 border border-[#e2e8f0]"
+                    : "bg-[#f8fafc] text-[#64748b] hover:text-[#0f172a] hover:bg-slate-100 border border-[#e2e8f0]"
                 }`}
               >
                 {d.label}
@@ -201,23 +202,23 @@ export default function CareersPage() {
               >
                 <div className="max-w-2xl">
                   <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <span className="text-[10px] font-bold text-[#7b4bf7] px-2 py-0.5 rounded bg-[#7b4bf7]/10 uppercase tracking-wide">
+                    <span className="text-[10px] font-bold text-[#2563eb] px-2.5 py-0.5 rounded-full bg-[#eff6ff] border border-[#bfdbfe]/60 uppercase tracking-wide">
                       {job.deptLabel}
                     </span>
-                    <span className="text-xs text-[#586882]">&bull;</span>
-                    <span className="text-xs font-medium text-[#586882]">{job.location}</span>
-                    <span className="text-xs text-[#586882]">&bull;</span>
-                    <span className="text-xs font-medium text-[#586882]">{job.type}</span>
+                    <span className="text-xs text-[#64748b]">&bull;</span>
+                    <span className="text-xs font-medium text-[#64748b]">{job.location}</span>
+                    <span className="text-xs text-[#64748b]">&bull;</span>
+                    <span className="text-xs font-medium text-[#64748b]">{job.type}</span>
                   </div>
 
-                  <h3 className="text-xl font-semibold text-[#0f172a] mb-2">{job.title}</h3>
-                  <p className="text-xs text-[#586882] leading-relaxed mb-4">{job.desc}</p>
+                  <h3 className="text-xl font-semibold text-[#0f172a] mb-2 font-heading">{job.title}</h3>
+                  <p className="text-xs text-[#64748b] leading-relaxed mb-4">{job.desc}</p>
 
                   <div className="flex flex-wrap gap-1.5">
                     {job.tech.map((t, idx) => (
                       <span
                         key={idx}
-                        className="text-[10px] font-medium text-[#0f172a] px-2 py-0.5 rounded bg-white border border-[#e2e8f0]"
+                        className="text-[11px] font-medium text-[#0f172a] px-2.5 py-0.5 rounded-full bg-white border border-[#e2e8f0]"
                       >
                         {t}
                       </span>
@@ -228,7 +229,7 @@ export default function CareersPage() {
                 <div className="shrink-0">
                   <Link
                     href="/contact"
-                    className="shadcn-input-button-solid text-xs font-semibold px-6 py-2.5 inline-block text-center"
+                    className="px-6 py-2.5 rounded-full bg-[#0f172a] text-white font-medium text-xs hover:bg-[#1e293b] shadow-sm inline-block text-center transition-colors"
                   >
                     <span>Apply Now &rarr;</span>
                   </Link>
@@ -243,26 +244,26 @@ export default function CareersPage() {
       <section className="section py-20 bg-[#f8fafc] border-t border-[#e2e8f0]" id="culture">
         <div className="shell">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b4bf7]/10 text-[#7b4bf7] text-xs font-semibold uppercase tracking-wider mb-3">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff6ff] text-[#2563eb] text-xs font-semibold uppercase tracking-wider mb-3 border border-[#bfdbfe]/60">
               Life At Adyantra
             </span>
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4 font-heading">
               Invested In Your Long-Term Mastery
             </h2>
-            <p className="text-base text-[#586882]">
+            <p className="text-base text-[#64748b]">
               We believe elite talent does its best work when equipped with the best tools, complete autonomy, and competitive incentives.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {perks.map((p, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm flex flex-col justify-between">
+              <div key={i} className="p-6 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm flex flex-col justify-between hover:border-[#cbd5e1] hover:shadow-md transition-all">
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-[#f8fafc] border border-[#e2e8f0] flex items-center justify-center mb-5">
                     <img src={p.icon} width="26" height="26" alt={p.title} />
                   </div>
-                  <h3 className="text-lg font-semibold text-[#0f172a] mb-2">{p.title}</h3>
-                  <p className="text-xs text-[#586882] leading-relaxed">{p.desc}</p>
+                  <h3 className="text-base font-semibold text-[#0f172a] mb-2 font-heading">{p.title}</h3>
+                  <p className="text-xs text-[#64748b] leading-relaxed">{p.desc}</p>
                 </div>
               </div>
             ))}
@@ -275,8 +276,8 @@ export default function CareersPage() {
         <div className="shell">
           <div className="growth-banner__inner">
             <div className="growth-banner__content">
-              <span className="growth-banner__kicker">DON&apos;T SEE YOUR ROLE?</span>
-              <h2 id="growth-title" className="text-2xl md:text-3xl font-semibold text-white mt-2 mb-3">
+              <span className="growth-banner__kicker text-[#60a5fa]">DON&apos;T SEE YOUR ROLE?</span>
+              <h2 id="growth-title" className="text-2xl md:text-3xl font-semibold text-white mt-2 mb-3 font-heading">
                 Pitch Us Your Superpower.
               </h2>
               <p className="text-sm text-white/80 max-w-xl">

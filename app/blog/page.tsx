@@ -24,7 +24,7 @@ export default function BlogPage() {
       readTime: "7 min read",
       date: "September 18, 2026",
       author: "Adyantra Strategy Core",
-      img: "/assets/img/service/ai_systems.png",
+      img: "/assets/img/service/ai-3d.png",
       featured: true,
     },
     {
@@ -60,7 +60,7 @@ export default function BlogPage() {
       readTime: "6 min read",
       date: "August 28, 2026",
       author: "Automation Engineering",
-      img: "/assets/img/service/gen_chatbot.png",
+      img: "/assets/img/service/ai/crm-automation.jpg",
       featured: false,
     },
     {
@@ -84,7 +84,7 @@ export default function BlogPage() {
       readTime: "8 min read",
       date: "August 14, 2026",
       author: "SEO Strategy Core",
-      img: "/assets/img/service/gen_seo.png",
+      img: "/assets/img/service/seo-3d.png",
       featured: false,
     },
   ];
@@ -97,7 +97,7 @@ export default function BlogPage() {
   const featuredArticle = articles.find((a) => a.featured) || articles[0];
 
   return (
-    <main className="ady-main-content">
+    <main className="ady-main-content bg-white">
       {/* ═══════════════════ SECTION 1: FLAGSHIP HERO ═══════════════════ */}
       <section className="ady-hero-section relative overflow-hidden" id="home">
         <div className="ady-tunnel-container" id="adyTunnel">
@@ -107,30 +107,38 @@ export default function BlogPage() {
         </div>
 
         <div className="shell text-center relative z-10 pt-16 pb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#ef5b52]/20 shadow-sm mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#ef5b52]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#eff6ff] border border-[#bfdbfe]/60 shadow-sm mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#2563eb] animate-pulse" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#2563eb]">
               Thought Leadership &amp; Engineering Insights
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6 font-heading">
             Perspectives on AI, Growth Systems &amp;{" "}
-            <span className="ady-gradient-text">Modern Web Engineering</span>
+            <span className="bg-gradient-to-r from-[#2563eb] to-[#0284c7] bg-clip-text text-transparent">
+              Modern Web Engineering
+            </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">
+          <p className="text-base md:text-lg text-[#64748b] max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
             Practical teardowns, architectural blueprints, and unit-economic strategies from senior practitioners scaling modern digital operations.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a href="#articles" className="shadcn-input-button-solid">
+            <a
+              href="#articles"
+              className="px-6 py-3.5 rounded-full bg-[#0f172a] text-white font-medium text-sm hover:bg-[#1e293b] shadow-sm hover:shadow-md transition-all inline-flex items-center gap-2"
+            >
               <span>Explore All Articles</span>
-              <span className="badge-icon">&darr;</span>
+              <span className="text-xs">&darr;</span>
             </a>
-            <a href="#newsletter" className="shadcn-input-button">
-              <span>Subscribe to Newsletter</span>
-              <span className="badge-icon">&rarr;</span>
+            <a
+              href="#newsletter"
+              className="px-6 py-3.5 rounded-full bg-white text-[#0f172a] border border-[#e2e8f0] font-medium text-sm hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-all inline-flex items-center gap-2 shadow-sm"
+            >
+              <span>Subscribe to Updates</span>
+              <span className="text-xs">&rarr;</span>
             </a>
           </div>
         </div>
@@ -162,7 +170,7 @@ export default function BlogPage() {
       <section className="section py-16 bg-white border-t border-[#e2e8f0]" id="featured">
         <div className="shell">
           <div className="mb-6 flex items-center justify-between">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#ef5b52]">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff6ff] text-[#2563eb] text-xs font-semibold uppercase tracking-wider border border-[#bfdbfe]/60">
               Featured Deep Dive
             </span>
           </div>
@@ -170,35 +178,35 @@ export default function BlogPage() {
           <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-[#f8fafc] to-[#f1f5f9] border border-[#e2e8f0] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#ef5b52]/10 text-[#ef5b52]">
+                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#eff6ff] text-[#2563eb] border border-[#bfdbfe]/60">
                   {featuredArticle.categoryLabel}
                 </span>
-                <span className="text-xs text-[#586882]">&bull;</span>
-                <span className="text-xs text-[#586882]">{featuredArticle.readTime}</span>
-                <span className="text-xs text-[#586882]">&bull;</span>
-                <span className="text-xs text-[#586882]">{featuredArticle.date}</span>
+                <span className="text-xs text-[#64748b]">&bull;</span>
+                <span className="text-xs text-[#64748b]">{featuredArticle.readTime}</span>
+                <span className="text-xs text-[#64748b]">&bull;</span>
+                <span className="text-xs text-[#64748b]">{featuredArticle.date}</span>
               </div>
 
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0f172a] mb-4 leading-snug">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0f172a] mb-4 leading-snug font-heading">
                 <Link
                   href={`/blog/${featuredArticle.slug}`}
-                  className="hover:text-[#ef5b52] transition-colors"
+                  className="hover:text-[#2563eb] transition-colors"
                 >
                   {featuredArticle.title}
                 </Link>
               </h2>
 
-              <p className="text-base text-[#586882] leading-relaxed mb-6">
+              <p className="text-base text-[#64748b] leading-relaxed mb-6">
                 {featuredArticle.excerpt}
               </p>
 
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold text-[#0f172a]">
+              <div className="flex items-center justify-between pt-4 border-t border-[#e2e8f0]">
+                <span className="text-xs font-semibold text-[#0f172a] font-heading">
                   By {featuredArticle.author}
                 </span>
                 <Link
                   href={`/blog/${featuredArticle.slug}`}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#ef5b52] hover:text-[#d9483f]"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#2563eb] hover:text-[#1d4ed8] transition-colors"
                 >
                   <span>Read Full Article</span>
                   <span>&rarr;</span>
@@ -223,13 +231,13 @@ export default function BlogPage() {
       <section className="section py-20 bg-[#f8fafc] border-t border-[#e2e8f0]" id="articles">
         <div className="shell">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b4bf7]/10 text-[#7b4bf7] text-xs font-semibold uppercase tracking-wider mb-3">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff6ff] text-[#2563eb] text-xs font-semibold uppercase tracking-wider mb-3 border border-[#bfdbfe]/60">
               Explore Insights
             </span>
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4 font-heading">
               Latest Engineering &amp; Growth Dispatches
             </h2>
-            <p className="text-base text-[#586882]">
+            <p className="text-base text-[#64748b]">
               Filter our research by technical domain or growth discipline.
             </p>
           </div>
@@ -248,7 +256,7 @@ export default function BlogPage() {
                 className={`px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
                   activeCategory === tab.id
                     ? "bg-[#0f172a] text-white shadow-md -translate-y-0.5"
-                    : "bg-white text-[#586882] hover:bg-slate-100 border border-[#e2e8f0]"
+                    : "bg-white text-[#64748b] hover:text-[#0f172a] hover:bg-slate-50 border border-[#e2e8f0]"
                 }`}
               >
                 {tab.label}
@@ -273,33 +281,33 @@ export default function BlogPage() {
                     />
                   </div>
 
-                  <div className="flex items-center gap-2 text-xs text-[#586882] mb-3">
-                    <span className="font-semibold text-[#7b4bf7] uppercase tracking-wide text-[10px]">
+                  <div className="flex items-center gap-2 text-xs text-[#64748b] mb-3">
+                    <span className="font-semibold text-[#2563eb] uppercase tracking-wide text-[11px] px-2 py-0.5 rounded bg-[#eff6ff] border border-[#bfdbfe]/60">
                       {art.categoryLabel}
                     </span>
                     <span>&bull;</span>
                     <span>{art.readTime}</span>
                   </div>
 
-                  <h3 className="text-lg font-semibold text-[#0f172a] mb-3 leading-snug">
+                  <h3 className="text-lg font-semibold text-[#0f172a] mb-3 leading-snug font-heading">
                     <Link
                       href={`/blog/${art.slug}`}
-                      className="hover:text-[#ef5b52] transition-colors"
+                      className="hover:text-[#2563eb] transition-colors"
                     >
                       {art.title}
                     </Link>
                   </h3>
 
-                  <p className="text-xs text-[#586882] leading-relaxed mb-6">
+                  <p className="text-xs text-[#64748b] leading-relaxed mb-6">
                     {art.excerpt}
                   </p>
                 </div>
 
                 <div className="pt-4 border-t border-[#f1f5f9] flex items-center justify-between">
-                  <span className="text-[11px] text-[#586882]">{art.date}</span>
+                  <span className="text-[11px] text-[#64748b]">{art.date}</span>
                   <Link
                     href={`/blog/${art.slug}`}
-                    className="text-xs font-semibold text-[#ef5b52] hover:text-[#d9483f]"
+                    className="text-xs font-semibold text-[#2563eb] hover:text-[#1d4ed8] transition-colors"
                   >
                     Read Article &rarr;
                   </Link>
@@ -314,13 +322,13 @@ export default function BlogPage() {
       <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="newsletter">
         <div className="shell max-w-3xl mx-auto">
           <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white shadow-xl text-center">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold uppercase tracking-wider mb-4 border border-white/20">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold uppercase tracking-wider mb-4 border border-white/20">
               Direct Engineering Dispatch
             </span>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-3">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-3 font-heading">
               Join 12,000+ Founders &amp; Operators
             </h2>
-            <p className="text-sm text-slate-300 max-w-lg mx-auto mb-8">
+            <p className="text-sm text-slate-300 max-w-lg mx-auto mb-8 leading-relaxed">
               Receive our weekly analysis on AI agent workflows, paid acquisition algorithm changes, and high-performance web architecture.
             </p>
 
@@ -337,11 +345,11 @@ export default function BlogPage() {
                   type="email"
                   required
                   placeholder="Enter your work email..."
-                  className="px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white text-sm placeholder-slate-400 focus:outline-none focus:border-[#ef5b52] flex-1"
+                  className="px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white text-sm placeholder-slate-400 focus:outline-none focus:border-[#2563eb] flex-1"
                 />
                 <button
                   type="submit"
-                  className="px-6 py-3 rounded-xl bg-[#ef5b52] text-white text-sm font-semibold hover:bg-[#d9483f] transition-colors shadow-md"
+                  className="px-6 py-3 rounded-xl bg-[#2563eb] text-white text-sm font-semibold hover:bg-[#1d4ed8] transition-colors shadow-md"
                 >
                   Subscribe
                 </button>
@@ -360,8 +368,8 @@ export default function BlogPage() {
         <div className="shell">
           <div className="growth-banner__inner">
             <div className="growth-banner__content">
-              <span className="growth-banner__kicker">WANT CUSTOM STRATEGY?</span>
-              <h2 id="growth-title" className="text-2xl md:text-3xl font-semibold text-white mt-2 mb-3">
+              <span className="growth-banner__kicker text-[#60a5fa]">WANT CUSTOM STRATEGY?</span>
+              <h2 id="growth-title" className="text-2xl md:text-3xl font-semibold text-white mt-2 mb-3 font-heading">
                 Let&apos;s Review Your Growth &amp; Tech Stack.
               </h2>
               <p className="text-sm text-white/80 max-w-xl">
