@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="emailCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <linearGradient id="emailFlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7b4bf7"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <filter id="emailCardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Canvas Background -->
+  <rect width="380" height="200" rx="14" fill="url(#emailCanvasBg)"/>
+
+  <!-- Top Title & Global Open Rate Pill -->
+  <g transform="translate(24, 16)" filter="url(#emailCardShadow)">
+    <rect width="332" height="34" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Email Pill -->
+    <rect x="10" y="6" width="154" height="22" rx="11" fill="#f3e8ff" stroke="#e9d5ff" stroke-width="0.8"/>
+    <circle cx="21" cy="17" r="4" fill="#7b4bf7"/>
+    <text x="31" y="21" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#6d28d9">LIFECYCLE EMAIL DRIP</text>
+    
+    <!-- Open Rate Metric -->
+    <rect x="236" y="6" width="86" height="22" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8"/>
+    <text x="279" y="20.5" font-family="'Poppins', sans-serif" font-size="9" font-weight="800" fill="#059669" text-anchor="middle">68% Open Rate</text>
+  </g>
+
+  <!-- 3 Stage Flow Pipeline Connected by Arrows -->
+  <g transform="translate(24, 60)">
+    <!-- Stage 1: Inbound Lead -->
+    <g transform="translate(0, 0)" filter="url(#emailCardShadow)">
+      <rect width="98" height="120" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+      <circle cx="49" cy="30" r="16" fill="#f3e8ff"/>
+      <!-- Envelope Icon -->
+      <path d="M39 24 L49 32 L59 24 M39 24 L39 36 L59 36 L59 24 Z" fill="none" stroke="#7b4bf7" stroke-width="1.8" stroke-linejoin="round"/>
+      <text x="49" y="62" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#0f172a" text-anchor="middle">Lead Trigger</text>
+      <text x="49" y="76" font-family="'Poppins', sans-serif" font-size="8" font-weight="500" fill="#64748b" text-anchor="middle">Form / Ad Submit</text>
+      <rect x="12" y="88" width="74" height="20" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.8"/>
+      <text x="49" y="101.5" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#475569" text-anchor="middle">Instant &lt; 2s</text>
+    </g>
+
+    <!-- Connecting Arrow 1 -->
+    <path d="M 104 60 L 114 60" stroke="#7b4bf7" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="112 56, 118 60, 112 64" fill="#7b4bf7"/>
+
+    <!-- Stage 2: AI Nurture Sequence (Hero Card) -->
+    <g transform="translate(120, 0)" filter="url(#emailCardShadow)">
+      <rect width="102" height="120" rx="10" fill="#ffffff" stroke="#7b4bf7" stroke-width="1.5"/>
+      <circle cx="51" cy="30" r="16" fill="#ede9fe"/>
+      <!-- Smart Branching Nodes Icon -->
+      <circle cx="42" cy="30" r="3" fill="#7b4bf7"/>
+      <circle cx="60" cy="24" r="3" fill="#ec4899"/>
+      <circle cx="60" cy="36" r="3" fill="#10b981"/>
+      <line x1="45" y1="30" x2="57" y2="24" stroke="#7b4bf7" stroke-width="1.2"/>
+      <line x1="45" y1="30" x2="57" y2="36" stroke="#7b4bf7" stroke-width="1.2"/>
+      
+      <text x="51" y="62" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#0f172a" text-anchor="middle">Smart Drip</text>
+      <text x="51" y="76" font-family="'Poppins', sans-serif" font-size="8" font-weight="600" fill="#7b4bf7" text-anchor="middle">Dynamic Timing</text>
+      <rect x="12" y="88" width="78" height="20" rx="5" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="0.8"/>
+      <text x="51" y="101.5" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#be185d" text-anchor="middle">+42% CVR</text>
+    </g>
+
+    <!-- Connecting Arrow 2 -->
+    <path d="M 228 60 L 238 60" stroke="#7b4bf7" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="236 56, 242 60, 236 64" fill="#7b4bf7"/>
+
+    <!-- Stage 3: Closed Booking -->
+    <g transform="translate(244, 0)" filter="url(#emailCardShadow)">
+      <rect width="88" height="120" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+      <circle cx="44" cy="30" r="16" fill="#ecfdf5"/>
+      <!-- Checkmark Icon -->
+      <polyline points="36 30, 42 36, 52 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="44" y="62" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#0f172a" text-anchor="middle">Call Booked</text>
+      <text x="44" y="76" font-family="'Poppins', sans-serif" font-size="8" font-weight="500" fill="#64748b" text-anchor="middle">CRM Auto-Lock</text>
+      <rect x="8" y="88" width="72" height="20" rx="5" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8"/>
+      <text x="44" y="101.5" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#059669" text-anchor="middle">Zero Lost</text>
+    </g>
+  </g>
+</svg>

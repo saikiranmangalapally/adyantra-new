@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="affCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fefce8"/>
+      <stop offset="100%" stop-color="#fef9c3"/>
+    </linearGradient>
+    <linearGradient id="hubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b4bf7"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="affCardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Canvas Background -->
+  <rect width="380" height="200" rx="14" fill="url(#affCanvasBg)"/>
+
+  <!-- Main Network Architecture Visual Frame -->
+  <g transform="translate(24, 16)" filter="url(#affCardShadow)">
+    <rect width="332" height="168" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    
+    <!-- Header status bar -->
+    <g transform="translate(14, 12)">
+      <rect width="138" height="22" rx="11" fill="#fef9c3" stroke="#fde047" stroke-width="0.8"/>
+      <circle cx="11" cy="11" r="3.5" fill="#ca8a04"/>
+      <text x="21" y="15" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#854d0e">PARTNER NETWORK</text>
+
+      <rect x="220" y="0" width="84" height="22" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8"/>
+      <text x="262" y="14.5" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#059669" text-anchor="middle">+180% Referral</text>
+    </g>
+
+    <!-- Network Graph: Connecting Lines -->
+    <!-- Line to Node 1 -->
+    <path d="M 84 94 C 120 74, 140 70, 180 62" fill="none" stroke="#7b4bf7" stroke-width="2" stroke-dasharray="4 3"/>
+    <!-- Line to Node 2 -->
+    <path d="M 84 94 C 120 114, 140 120, 180 126" fill="none" stroke="#eab308" stroke-width="2" stroke-dasharray="4 3"/>
+
+    <!-- Central Brand Hub (Left Center) -->
+    <g transform="translate(24, 66)">
+      <rect width="90" height="56" rx="10" fill="#ffffff" stroke="#7b4bf7" stroke-width="1.5"/>
+      <circle cx="45" cy="20" r="10" fill="url(#hubGrad)"/>
+      <!-- Handshake / Users Icon -->
+      <circle cx="41" cy="18" r="3" fill="#ffffff"/>
+      <circle cx="49" cy="18" r="3" fill="#ffffff"/>
+      <path d="M37 26 C37 23, 53 23, 53 26" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+      
+      <text x="45" y="42" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#0f172a" text-anchor="middle">Brand Hub</text>
+      <text x="45" y="50" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="600" fill="#7b4bf7" text-anchor="middle">Adyantra Tracking</text>
+    </g>
+
+    <!-- Partner Node 1: High-Reach Creator (Top Right) -->
+    <g transform="translate(180, 44)">
+      <rect width="124" height="38" rx="8" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="0.8"/>
+      <circle cx="18" cy="19" r="9" fill="#7b4bf7"/>
+      <text x="18" y="22.5" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">★</text>
+      <text x="34" y="16" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#0f172a">Top Creator</text>
+      <text x="34" y="28" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#7c3aed">4.2x Blended ROI</text>
+      <rect x="94" y="9" width="22" height="20" rx="4" fill="#ffffff"/>
+      <text x="105" y="22" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="800" fill="#059669" text-anchor="middle">240k</text>
+    </g>
+
+    <!-- Partner Node 2: Performance Affiliate (Bottom Right) -->
+    <g transform="translate(180, 106)">
+      <rect width="124" height="38" rx="8" fill="#fefce8" stroke="#fde047" stroke-width="0.8"/>
+      <circle cx="18" cy="19" r="9" fill="#eab308"/>
+      <text x="18" y="22" font-family="'Poppins', sans-serif" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">$</text>
+      <text x="34" y="16" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#0f172a">B2B Partner</text>
+      <text x="34" y="28" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#ca8a04">54 Closed Deals</text>
+      <rect x="94" y="9" width="22" height="20" rx="4" fill="#ffffff"/>
+      <text x="105" y="22" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="800" fill="#ca8a04" text-anchor="middle">100%</text>
+    </g>
+  </g>
+</svg>

@@ -20,7 +20,7 @@ export default function TeamVisualStage() {
         className="relative z-10 w-[80%] h-[80%] flex items-center justify-center drop-shadow-[0_20px_40px_rgba(106,71,237,0.18)]"
       >
         <Image
-          src="/assets/img/team/team-3d.png"
+          src="/assets/img/team/team-3d.png?v=5"
           alt="Our Expert Team Collaboration"
           width={600}
           height={600}

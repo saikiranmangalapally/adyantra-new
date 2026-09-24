@@ -3,6 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { DomainIcon } from "@/components/icons/DomainIcons";
+import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
+import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
+import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -24,7 +29,7 @@ export default function BlogPage() {
       readTime: "7 min read",
       date: "September 18, 2026",
       author: "Adyantra Strategy Core",
-      img: "/assets/img/service/ai-3d.png",
+      img: "/assets/img/service/vectors/service-ai-systems.svg?v=3",
       featured: true,
     },
     {
@@ -36,7 +41,7 @@ export default function BlogPage() {
       readTime: "5 min read",
       date: "September 12, 2026",
       author: "PPC Engineering Team",
-      img: "/assets/img/service/ai/ad-creative-automation.jpg",
+      img: "/assets/img/service/vectors/service-google-ppc.svg?v=3",
       featured: false,
     },
     {
@@ -48,7 +53,7 @@ export default function BlogPage() {
       readTime: "9 min read",
       date: "September 04, 2026",
       author: "Web Systems Lead",
-      img: "/assets/img/service/webdev-3d.png",
+      img: "/assets/img/service/vectors/service-web-development.svg?v=3",
       featured: false,
     },
     {
@@ -60,7 +65,7 @@ export default function BlogPage() {
       readTime: "6 min read",
       date: "August 28, 2026",
       author: "Automation Engineering",
-      img: "/assets/img/service/ai/crm-automation.jpg",
+      img: "/assets/img/service/vectors/service-crm-automation.svg?v=3",
       featured: false,
     },
     {
@@ -72,7 +77,7 @@ export default function BlogPage() {
       readTime: "6 min read",
       date: "August 20, 2026",
       author: "E-Commerce Growth Team",
-      img: "/assets/img/service/ai/ecommerce-automation.png",
+      img: "/assets/img/service/vectors/service-ecommerce.svg?v=3",
       featured: false,
     },
     {
@@ -84,7 +89,7 @@ export default function BlogPage() {
       readTime: "8 min read",
       date: "August 14, 2026",
       author: "SEO Strategy Core",
-      img: "/assets/img/service/seo-3d.png",
+      img: "/assets/img/service/vectors/service-seo.svg?v=3",
       featured: false,
     },
   ];
@@ -169,114 +174,14 @@ export default function BlogPage() {
               </div>
             </div>
 
-            {/* Waveform Stage */}
-            <div className="ady-waveform-stage">
-              <svg className="ady-wave-svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
-                <path
-                  id="adyWaveformPath"
-                  className="ady-wave-curve"
-                  d="M 0,160 C 45,160 75,90 118,90 C 160,90 205,168 258,170 C 285,171 305,235 330,235 C 355,235 375,215 395,195 C 415,175 425,95 450,95 C 490,95 540,165 609,165 C 678,165 725,95 770,95 C 805,95 835,130 868,145 C 885,153 895,235 915,235 C 935,235 955,140 970,75 C 985,75 1030,115 1088,115 C 1125,115 1165,125 1200,125"
-                />
-                <circle className="ady-pulse-dot" r="4.5">
-                  <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
-                    <mpath href="#adyWaveformPath" />
-                  </animateMotion>
-                </circle>
-              </svg>
-
-              {/* Badges */}
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "9.83%", top: "30.0%" }} title="AI Research">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="18" cy="5" r="3" />
-                  <circle cx="6" cy="12" r="3" />
-                  <circle cx="18" cy="19" r="3" />
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "21.5%", top: "56.7%" }} title="Next.js Performance">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "32.9%", top: "65.0%" }} title="Unit Economics">
-                <span className="ady-badge-dollar">$</span>
-              </div>
-
-              <div className="ady-center-cta-wrap" style={{ left: "50.75%", top: "55.0%" }}>
-                <a href="#newsletter" className="ady-center-pill-btn">
-                  <span>Get Dispatches</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "72.3%", top: "48.3%" }} title="Automation Pipelines">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="16" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </div>
-
-              <div className="ady-wave-glow-dot" style={{ left: "80.8%", top: "25.0%" }} />
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "90.67%", top: "38.3%" }} title="Analytics Insights">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </div>
-            </div>
-
-            {/* AI Agent Interactive Widget */}
-            <aside className="ady-ai-widget">
-              <div className="ady-widget-glow" />
-              <div className="ady-widget-top">
-                <div className="ady-widget-avatar">
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Adyantra Research Lead" />
-                </div>
-                <p className="ady-widget-text">Explore our blueprints, code snippets &amp; teardowns</p>
-              </div>
-              <a href="#articles" className="ady-widget-link">
-                <span>View Dispatches</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
-            </aside>
+            {/* Waveform Stage with Unbroken Luminous Curve, Floating Squircles & AI Assistant */}
+            <HeroWaveformStage />
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 2: STATS BRIDGE BAR (CURRENT THEME) ═══════════════════ */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">25+</p>
-            <p className="ady-stat-label">Architectural Dispatches</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">100%</p>
-            <p className="ady-stat-label">Practitioner Authored</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Weekly</p>
-            <p className="ady-stat-label">Engineering Deep-Dives</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Zero</p>
-            <p className="ady-stat-label">Generic Marketing Fluff</p>
-          </div>
-        </div>
-      </div>
+      {/* ═══════════════════ SECTION 2: SERVICES SCROLLING SECTION ═══════════════════ */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SECTION 3: FEATURED LEAD ARTICLE ═══════════════════ */}
       <section className="section py-16" id="featured">
@@ -497,7 +402,7 @@ export default function BlogPage() {
 
             <div className="expert-tablet-card">
               <Image
-                src="/assets/img/service/service-header-tablet.jpg"
+                src="/assets/img/service/service-header-tablet.svg"
                 alt="Adyantra Strategic Performance Dashboard"
                 width={800}
                 height={500}
@@ -519,7 +424,7 @@ export default function BlogPage() {
               <div className="expert-dual-images">
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-collab-team.jpg"
+                    src="/assets/img/service/service-collab-team.svg"
                     alt="Adyantra Engineering Collaboration"
                     width={600}
                     height={400}
@@ -528,7 +433,7 @@ export default function BlogPage() {
                 </div>
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-analytics-review.jpg"
+                    src="/assets/img/service/service-analytics-review.svg"
                     alt="Adyantra Growth Analytics Teardowns"
                     width={600}
                     height={400}
@@ -634,7 +539,7 @@ export default function BlogPage() {
 
               <div className="expert-cta-card">
                 <Image
-                  src="/assets/img/service/service-cta-transform.jpg"
+                  src="/assets/img/service/service-cta-transform.svg"
                   alt="Transform Your Business with Adyantra"
                   fill
                   className="expert-cta-bg-img"
@@ -683,35 +588,35 @@ export default function BlogPage() {
           <div className="domains-marquee-track">
             <div className="domain-pill-card">
               <span className="domain-pill-text">Education &amp; Academies</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=11173&format=png&color=7b4bf7" width="20" height="20" alt="Education" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=21815&format=png&color=7b4bf7" width="20" height="20" alt="Fashion" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=87&format=png&color=7b4bf7" width="20" height="20" alt="NGOs" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=53373&format=png&color=7b4bf7" width="20" height="20" alt="Enterprises" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">IT &amp; Software Enterprises</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=2778&format=png&color=7b4bf7" width="20" height="20" alt="Software" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Real Estate &amp; Housing</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=73&format=png&color=7b4bf7" width="20" height="20" alt="Real Estate" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Healthcare &amp; Clinics</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=14094&format=png&color=7b4bf7" width="20" height="20" alt="Healthcare" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=9671&format=png&color=7b4bf7" width="20" height="20" alt="E-Commerce" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
             </div>
           </div>
         </div>
@@ -733,10 +638,10 @@ export default function BlogPage() {
             </Link>
           </div>
           <div className="stat-row" aria-label="Adyantra results">
-            <div><b>6+</b><span>Years industry experience</span></div>
-            <div><b>200+</b><span>Successful projects executed</span></div>
-            <div><b>50+</b><span>Happy client partners</span></div>
-            <div><b>98%</b><span>Client retention rate</span></div>
+            <div><b>06+</b><span>Years of Industry Expertise</span></div>
+            <div><b>50+</b><span>High-Growth Brands Scaled</span></div>
+            <div><b>100%</b><span>In-House Engineering</span></div>
+            <div><b>Zero</b><span>Outsourced Work</span></div>
           </div>
         </div>
       </section>
@@ -776,54 +681,8 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 11: THE ADYANTRA ADVANTAGE (EXACT THEME MATCH) ═══════════════════ */}
-      <section className="section expertise" id="advantage" aria-labelledby="expertise-title">
-        <div className="shell split-layout">
-          <div className="expertise-visual">
-            <div className="expertise-visual__orb" />
-            <img
-              src="/assets/img/team/team-3d.png"
-              alt="Work Directly with Senior Engineers & Growth Strategists"
-              loading="lazy"
-            />
-            <div className="proof-chip proof-chip--one">
-              <b>DIRECT ACCESS</b>
-              <span>Senior tech leads</span>
-            </div>
-            <div className="proof-chip proof-chip--two">
-              <b>24/7 TUNING</b>
-              <span>Live attribution</span>
-            </div>
-            <div className="proof-chip proof-chip--three">
-              <b>100% IN-HOUSE</b>
-              <span>Zero outsourcing</span>
-            </div>
-            <div className="proof-chip proof-chip--four">
-              <b>TAILORED GROWTH</b>
-              <span>+340% Avg ROAS</span>
-            </div>
-          </div>
-          <div className="copy-block">
-            <p className="advantage-kicker">OUR TEAM &amp; EXPERTISE</p>
-            <h2 id="expertise-title" className="advantage-exact-heading">
-              Work Directly with Senior <br />
-              Engineers <em>&amp; Growth <br />Strategists</em>
-            </h2>
-            <p className="advantage-exact-desc">
-              We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
-            </p>
-            <ul className="check-list-grid">
-              <li>100% In-House Execution</li>
-              <li>Tailored Growth Strategies</li>
-              <li>Direct Senior Technical Access</li>
-              <li>Continuous Campaign Optimization</li>
-            </ul>
-            <Link className="advantage-leadership-link" href="/contact">
-              Connect with our team <b>&rarr;</b>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ═══════════════════ SECTION 11: THE ADYANTRA ADVANTAGE (OUR TEAM & EXPERTISE) ═══════════════════ */}
+      <OurTeamExpertiseSection />
 
       {/* ═══════════════════ SECTION 12: CLIENT REVIEWS (CURRENT THEME MARQUEE) ═══════════════════ */}
       <section className="section reviews-ref-section" id="testimonials" aria-labelledby="reviews-ref-title">
@@ -847,7 +706,7 @@ export default function BlogPage() {
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -865,7 +724,7 @@ export default function BlogPage() {
                   <div className="review-ref-avatar avatar--indigo">PK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pramode K.</h3>
-                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                    <span className="review-ref-role-pill">Enterprise Business &bull; Owner</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leadCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f0fdfa"/>
+      <stop offset="100%" stop-color="#ccfbf1"/>
+    </linearGradient>
+    <filter id="leadCardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="380" height="200" rx="14" fill="url(#leadCanvasBg)"/>
+
+  <g transform="translate(24, 16)" filter="url(#leadCardShadow)">
+    <rect width="332" height="168" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    
+    <!-- Top Bar -->
+    <g transform="translate(14, 12)">
+      <rect width="168" height="22" rx="11" fill="#ccfbf1" stroke="#99f6e4" stroke-width="0.8"/>
+      <circle cx="11" cy="11" r="3.5" fill="#0d9488"/>
+      <text x="21" y="15" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#0f766e">AUTONOMOUS LEAD GEN</text>
+
+      <rect x="220" y="0" width="84" height="22" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8"/>
+      <text x="262" y="14.5" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#059669" text-anchor="middle">&lt; 5s Contact</text>
+    </g>
+
+    <!-- Funnel Ingestion Cards -->
+    <g transform="translate(16, 46)">
+      <!-- Left: Ingestion Feed -->
+      <g filter="url(#leadCardShadow)">
+        <rect width="180" height="106" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="14" y="20" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#64748b">Verified Lead Feed</text>
+        
+        <!-- Lead Item 1 -->
+        <g transform="translate(12, 30)">
+          <rect width="156" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.8"/>
+          <circle cx="16" cy="15" r="7" fill="#ecfdf5"/>
+          <polyline points="13 15, 15 17, 19 13" fill="none" stroke="#10b981" stroke-width="1.5"/>
+          <text x="30" y="15" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#0f172a">Enterprise Tech VP</text>
+          <text x="30" y="24" font-family="'Poppins', sans-serif" font-size="7" fill="#64748b">Apollo &amp; Form Verified</text>
+          <rect x="114" y="6" width="36" height="18" rx="4" fill="#ecfdf5"/>
+          <text x="132" y="18" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="800" fill="#059669" text-anchor="middle">98% Fit</text>
+        </g>
+
+        <!-- Lead Item 2 -->
+        <g transform="translate(12, 66)">
+          <rect width="156" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.8"/>
+          <circle cx="16" cy="15" r="7" fill="#eff6ff"/>
+          <polyline points="13 15, 15 17, 19 13" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+          <text x="30" y="15" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#0f172a">D2C Brand Founder</text>
+          <text x="30" y="24" font-family="'Poppins', sans-serif" font-size="7" fill="#64748b">High-Intent Buyer</text>
+          <rect x="114" y="6" width="36" height="18" rx="4" fill="#eff6ff"/>
+          <text x="132" y="18" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="800" fill="#2563eb" text-anchor="middle">95% Fit</text>
+        </g>
+      </g>
+
+      <!-- Right: Velocity Stats -->
+      <g transform="translate(192, 0)" filter="url(#leadCardShadow)">
+        <rect width="108" height="106" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#64748b">Lead Velocity</text>
+        <text x="12" y="44" font-family="'Poppins', sans-serif" font-size="18" font-weight="800" fill="#0d9488">10x Speed</text>
+        
+        <rect x="10" y="64" width="88" height="32" rx="6" fill="#f0fdfa"/>
+        <text x="54" y="77" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#0f766e" text-anchor="middle">Zero Manual</text>
+        <text x="54" y="88" font-family="'Poppins', sans-serif" font-size="7" fill="#64748b" text-anchor="middle">Data Entry</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -3,6 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
+import { DomainIcon } from "@/components/icons/DomainIcons";
+import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
+import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
+import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -11,74 +16,98 @@ export default function Home() {
     {
       id: 1,
       category: "marketing",
-      img: "/assets/img/service/seo-3d.png",
-      title: "Search Engine Optimization (SEO)",
-      desc: "Dominate Google rankings with technical audits, keyword strategies, and high-authority link building for qualified organic traffic.",
+      img: "/assets/img/service/illustrations/service-seo.svg",
+      title: "Search Engine Optimization",
+      desc: "Rank #1 on Google with high-authority technical SEO, audits, and topic clusters.",
       href: "/digital-marketing-growth#seo",
     },
     {
       id: 2,
       category: "marketing",
-      img: "/assets/img/service/ppc-3d.png",
+      img: "/assets/img/service/illustrations/service-social-meta.svg",
       title: "Social Media & Meta Ads",
-      desc: "Scale brand visibility across Instagram, Facebook, and LinkedIn with platform-native creatives and precise demographic targeting.",
+      desc: "Scale high-ROAS paid campaigns across Instagram, Facebook, and LinkedIn.",
       href: "/digital-marketing-growth#meta-ads",
     },
     {
       id: 3,
       category: "marketing",
-      img: "/assets/img/service/pr-3d.png",
-      title: "Email & Lead Nurturing Workflows",
-      desc: "Transform leads into loyal customers with hyper-personalized email drip sequences, onboarding series, and re-engagement workflows.",
-      href: "/ai-automation#workflows",
+      img: "/assets/img/service/illustrations/service-email-workflows.svg",
+      title: "Email & Lead Workflows",
+      desc: "Convert inbound leads with automated email drip workflows and CRM triggers.",
+      href: "/digital-marketing-growth#email",
     },
     {
       id: 4,
       category: "design",
-      img: "/assets/img/service/webdev-3d.png",
-      title: "Web Software & App Development",
-      desc: "Engineered for speed, security, and conversions using Next.js, React, and modern cloud architectures tailored to your needs.",
-      href: "/web-software-development",
+      img: "/assets/img/service/illustrations/service-web-development.svg",
+      title: "Web Software & App Dev",
+      desc: "High-speed Next.js web applications engineered for speed and conversion.",
+      href: "/digital-marketing-growth#web",
     },
     {
       id: 5,
       category: "marketing",
-      img: "/assets/img/service/ppc-3d.png",
-      title: "Google Ads & PPC Performance",
-      desc: "Capture high-intent buyers with Google Search, Display, and Performance Max campaigns optimized for lower Cost Per Lead.",
+      img: "/assets/img/service/illustrations/service-google-ppc.svg",
+      title: "Google Ads & PPC",
+      desc: "Capture high-intent buyers with Google Search, Display, and Performance Max.",
       href: "/digital-marketing-growth#google-ads",
     },
     {
       id: 6,
       category: "design",
-      img: "/assets/img/service/ecommerce-3d.png",
-      title: "E-Commerce Growth & Storefronts",
-      desc: "Build scalable online stores with custom Shopify setups, payment integration, and automated abandoned cart recovery.",
+      img: "/assets/img/service/illustrations/service-ecommerce.svg",
+      title: "E-Commerce Growth",
+      desc: "Boost store checkout rates with custom Shopify stores and cart recovery.",
       href: "/digital-marketing-growth#ecommerce",
     },
     {
       id: 7,
       category: "marketing",
-      img: "/assets/img/service/pr-3d.png",
-      title: "PR & Online Reputation Management",
-      desc: "Establish brand authority with strategic press releases, featured media placements, and digital reputation management.",
-      href: "/digital-marketing-growth#influencer",
+      img: "/assets/img/service/illustrations/service-pr-reputation.svg",
+      title: "PR & Brand Reputation",
+      desc: "Establish verified brand authority with tier-1 media and digital PR placements.",
+      href: "/digital-marketing-growth#pr",
     },
     {
       id: 8,
       category: "automation",
-      img: "/assets/img/service/ai-3d.png",
-      title: "AI Workflows & Chatbot Systems",
-      desc: "Automate customer support and sales with custom WhatsApp AI chatbots, CRM sync, and lead qualification workflows.",
-      href: "/ai-automation#chatbots",
+      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
+      title: "AI Workflows & Chatbots",
+      desc: "Automate 24/7 lead qualification and customer sales with WhatsApp AI bots.",
+      href: "/digital-marketing-growth#automation",
     },
     {
       id: 9,
       category: "marketing",
-      img: "/assets/img/service/ecommerce-3d.png",
-      title: "Affiliate & Partner Marketing",
-      desc: "Expand brand distribution through performance-based affiliate networks, referral systems, and strategic influencer partnerships.",
+      img: "/assets/img/service/illustrations/service-affiliate-partners.svg",
+      title: "Affiliate & Partner Growth",
+      desc: "Multiply revenue distribution through high-performing affiliate creator networks.",
       href: "/digital-marketing-growth#influencer",
+    },
+    {
+      id: 10,
+      category: "marketing",
+      img: "/assets/img/service/illustrations/service-lead-generation.svg",
+      title: "Lead Generation Systems",
+      desc: "Capture, verify, and route high-intent leads automatically with scoring models.",
+      href: "/digital-marketing-growth#leads",
+    },
+    {
+      id: 11,
+      category: "automation",
+      img: "/assets/img/service/illustrations/service-crm-automation.svg",
+      title: "CRM Automation",
+      desc: "Eliminate manual entry and auto-sync records across HubSpot, Zoho, and Salesforce.",
+      href: "/digital-marketing-growth#crm",
+    },
+    {
+      id: 12,
+      category: "marketing",
+      img: "/assets/img/service/illustrations/service-analytics.svg",
+      title: "Analytics & Intelligence",
+      desc: "Full-funnel GA4, server-side CAPI tracking, and live executive Looker dashboards.",
+      href: "/digital-marketing-growth#analytics",
     },
   ];
 
@@ -136,114 +165,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Waveform Stage */}
-            <div className="ady-waveform-stage">
-              <svg className="ady-wave-svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
-                <path
-                  id="adyWaveformPath"
-                  className="ady-wave-curve"
-                  d="M 0,160 C 45,160 75,90 118,90 C 160,90 205,168 258,170 C 285,171 305,235 330,235 C 355,235 375,215 395,195 C 415,175 425,95 450,95 C 490,95 540,165 609,165 C 678,165 725,95 770,95 C 805,95 835,130 868,145 C 885,153 895,235 915,235 C 935,235 955,140 970,75 C 985,75 1030,115 1088,115 C 1125,115 1165,125 1200,125"
-                />
-                <circle className="ady-pulse-dot" r="4.5">
-                  <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
-                    <mpath href="#adyWaveformPath" />
-                  </animateMotion>
-                </circle>
-              </svg>
-
-              {/* Badges */}
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "9.83%", top: "30.0%" }} title="Meta & Social Ads">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="18" cy="5" r="3" />
-                  <circle cx="6" cy="12" r="3" />
-                  <circle cx="18" cy="19" r="3" />
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "21.5%", top: "56.7%" }} title="Web App Engineering">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "32.9%", top: "65.0%" }} title="ROAS & PPC Growth">
-                <span className="ady-badge-dollar">$</span>
-              </div>
-
-              <div className="ady-center-cta-wrap" style={{ left: "50.75%", top: "55.0%" }}>
-                <Link href="/contact" className="ady-center-pill-btn">
-                  <span>Contact Us</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "72.3%", top: "48.3%" }} title="Email & Lead Workflows">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="16" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </div>
-
-              <div className="ady-wave-glow-dot" style={{ left: "80.8%", top: "25.0%" }} />
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "90.67%", top: "38.3%" }} title="Social Content & Influencer Growth">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </div>
-            </div>
-
-            {/* AI Agent Interactive Widget */}
-            <aside className="ady-ai-widget">
-              <div className="ady-widget-glow" />
-              <div className="ady-widget-top">
-                <div className="ady-widget-avatar">
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Adyantra AI Guide" />
-                </div>
-                <p className="ady-widget-text">Ask our AI Agent to explore our approach in seconds</p>
-              </div>
-              <Link href="/about" className="ady-widget-link">
-                <span>Learn Our Approach</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </Link>
-            </aside>
+            {/* Waveform Stage with Unbroken Luminous Curve, Floating Squircles & AI Assistant */}
+            <HeroWaveformStage />
           </div>
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">06+</p>
-            <p className="ady-stat-label">Years of Industry Expertise</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">50+</p>
-            <p className="ady-stat-label">High-Growth Brands Scaled</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">100%</p>
-            <p className="ady-stat-label">In-House Engineering</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Zero</p>
-            <p className="ady-stat-label">Outsourced Work</p>
-          </div>
-        </div>
-      </div>
+      {/* Services Scrolling Ribbon */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SERVICES SECTION ═══════════════════ */}
       <section className="section services-ref-section" id="services" aria-labelledby="services-ref-title">
@@ -289,18 +218,26 @@ export default function Home() {
             </button>
           </div>
 
-          {/* 9 Service Cards Grid */}
+          {/* 9 Service Cards Grid - Order: Image (1st) → Title (2nd) → Content (3rd) → Button (4th) */}
           <div className="services-ref-grid services-ref-grid--9">
             {filteredServices.map((item) => (
               <article key={item.id} className="service-ref-card" data-category={item.category}>
+                {/* 1. Image (First - Large Visual Stage) */}
                 <div className="service-ref-card__visual">
                   <img src={item.img} alt={item.title} loading="lazy" />
                 </div>
+
+                {/* 2. Title (Second) */}
                 <h3 className="service-ref-card__title">{item.title}</h3>
+
+                {/* 3. Subtitle / Content (Third) */}
                 <p className="service-ref-card__desc">{item.desc}</p>
+
+                {/* 4. Button (Fourth - Read more pill button) */}
                 <div className="service-ref-card__action">
-                  <Link href={item.href} className="service-ref-explore-btn">
-                    Explore Service <span className="explore-btn-icon">»</span>
+                  <Link href={item.href} className="service-ref-readmore-btn">
+                    <span>Read more</span>
+                    <span className="readmore-btn-arrow">&rarr;</span>
                   </Link>
                 </div>
               </article>
@@ -362,69 +299,69 @@ export default function Home() {
           <div className="domains-marquee-track">
             <div className="domain-pill-card">
               <span className="domain-pill-text">Education &amp; Academies</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=11173&format=png&color=7b4bf7" width="20" height="20" alt="Education" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=21815&format=png&color=7b4bf7" width="20" height="20" alt="Fashion" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=87&format=png&color=7b4bf7" width="20" height="20" alt="NGOs" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=53373&format=png&color=7b4bf7" width="20" height="20" alt="Enterprises" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">IT &amp; Software Enterprises</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=2778&format=png&color=7b4bf7" width="20" height="20" alt="Software" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Real Estate &amp; Housing</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=73&format=png&color=7b4bf7" width="20" height="20" alt="Real Estate" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Healthcare &amp; Clinics</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=14094&format=png&color=7b4bf7" width="20" height="20" alt="Healthcare" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=9671&format=png&color=7b4bf7" width="20" height="20" alt="E-Commerce" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
             </div>
 
             {/* Duplicate Set for Seamless Infinite Loop */}
             <div className="domain-pill-card">
               <span className="domain-pill-text">Education &amp; Academies</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=11173&format=png&color=7b4bf7" width="20" height="20" alt="Education" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=21815&format=png&color=7b4bf7" width="20" height="20" alt="Fashion" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=87&format=png&color=7b4bf7" width="20" height="20" alt="NGOs" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=53373&format=png&color=7b4bf7" width="20" height="20" alt="Enterprises" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">IT &amp; Software Enterprises</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=2778&format=png&color=7b4bf7" width="20" height="20" alt="Software" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Real Estate &amp; Housing</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=73&format=png&color=7b4bf7" width="20" height="20" alt="Real Estate" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Healthcare &amp; Clinics</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=14094&format=png&color=7b4bf7" width="20" height="20" alt="Healthcare" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=9671&format=png&color=7b4bf7" width="20" height="20" alt="E-Commerce" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
             </div>
           </div>
         </div>
@@ -446,10 +383,10 @@ export default function Home() {
             </Link>
           </div>
           <div className="stat-row" aria-label="Adyantra results">
-            <div><b>6+</b><span>Years industry experience</span></div>
-            <div><b>200+</b><span>Successful projects executed</span></div>
-            <div><b>50+</b><span>Happy client partners</span></div>
-            <div><b>98%</b><span>Client retention rate</span></div>
+            <div><b>06+</b><span>Years of Industry Expertise</span></div>
+            <div><b>50+</b><span>High-Growth Brands Scaled</span></div>
+            <div><b>100%</b><span>In-House Engineering</span></div>
+            <div><b>Zero</b><span>Outsourced Work</span></div>
           </div>
         </div>
       </section>
@@ -489,54 +426,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (EXACT MOCKUP MATCH) ═══════════════════ */}
-      <section className="section expertise" id="advantage" aria-labelledby="expertise-title">
-        <div className="shell split-layout">
-          <div className="expertise-visual">
-            <div className="expertise-visual__orb" />
-            <img
-              src="/assets/img/team/team-3d.png"
-              alt="Work Directly with Senior Engineers & Growth Strategists"
-              loading="lazy"
-            />
-            <div className="proof-chip proof-chip--one">
-              <b>DIRECT ACCESS</b>
-              <span>Senior tech leads</span>
-            </div>
-            <div className="proof-chip proof-chip--two">
-              <b>24/7 TUNING</b>
-              <span>Live attribution</span>
-            </div>
-            <div className="proof-chip proof-chip--three">
-              <b>100% IN-HOUSE</b>
-              <span>Zero outsourcing</span>
-            </div>
-            <div className="proof-chip proof-chip--four">
-              <b>TAILORED GROWTH</b>
-              <span>+340% Avg ROAS</span>
-            </div>
-          </div>
-          <div className="copy-block">
-            <p className="advantage-kicker">OUR TEAM &amp; EXPERTISE</p>
-            <h2 id="expertise-title" className="advantage-exact-heading">
-              Work Directly with Senior <br />
-              Engineers <em>&amp; Growth <br />Strategists</em>
-            </h2>
-            <p className="advantage-exact-desc">
-              We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
-            </p>
-            <ul className="check-list-grid">
-              <li>100% In-House Execution</li>
-              <li>Tailored Growth Strategies</li>
-              <li>Direct Senior Technical Access</li>
-              <li>Continuous Campaign Optimization</li>
-            </ul>
-            <Link className="advantage-leadership-link" href="/about">
-              Meet our leadership <b>&rarr;</b>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (OUR TEAM & EXPERTISE) ═══════════════════ */}
+      <OurTeamExpertiseSection />
 
       {/* ═══════════════════ CLIENT REVIEWS SECTION ═══════════════════ */}
       <section className="section reviews-ref-section" id="testimonials" aria-labelledby="reviews-ref-title">
@@ -561,7 +452,7 @@ export default function Home() {
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -579,7 +470,7 @@ export default function Home() {
                   <div className="review-ref-avatar avatar--indigo">PK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pramode K.</h3>
-                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                    <span className="review-ref-role-pill">Enterprise Business &bull; Owner</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -670,7 +561,7 @@ export default function Home() {
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -688,7 +579,7 @@ export default function Home() {
                   <div className="review-ref-avatar avatar--indigo">PK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pramode K.</h3>
-                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                    <span className="review-ref-role-pill">Enterprise Business &bull; Owner</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -760,7 +651,10 @@ export default function Home() {
             <p>Partner with Adyantra Digital to elevate search rankings, capture high-intent leads, and automate revenue operations.</p>
             <div className="contact-method">
               <span>
-                <img src="https://img.icons8.com/?size=48&id=63598&format=png&color=ef5b52" width="22" height="22" alt="Email" style={{ verticalAlign: "middle" }} />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: "middle" }}>
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
               </span>
               <div>
                 <b>Email support</b>
@@ -770,7 +664,9 @@ export default function Home() {
             </div>
             <div className="contact-method">
               <span>
-                <img src="https://img.icons8.com/?size=48&id=9659&format=png&color=ef5b52" width="22" height="22" alt="Phone" style={{ verticalAlign: "middle" }} />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: "middle" }}>
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
               </span>
               <div>
                 <b>Direct phone</b>

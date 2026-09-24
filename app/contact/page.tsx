@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 
 export default function ContactPage() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -107,27 +108,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ STATS BRIDGE BAR (FLAGSHIP PATTERN) ═══════════════════ */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">&lt; 24h</p>
-            <p className="ady-stat-label">Response Time</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">100%</p>
-            <p className="ady-stat-label">In-House Consultation</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Zero</p>
-            <p className="ady-stat-label">Obligation Audit</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Direct</p>
-            <p className="ady-stat-label">Senior Partner Access</p>
-          </div>
-        </div>
-      </div>
+      {/* ═══════════════════ SERVICES SCROLLING SECTION ═══════════════════ */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SECTION 2: 3 DIRECT CONTACT CHANNELS ═══════════════════ */}
       <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="channels">

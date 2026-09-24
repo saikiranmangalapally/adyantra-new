@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="auditCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#f5f3ff"/>
+    </linearGradient>
+    <filter id="auditCardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="380" height="200" rx="14" fill="url(#auditCanvasBg)"/>
+
+  <g transform="translate(24, 16)" filter="url(#auditCardShadow)">
+    <rect width="332" height="168" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    
+    <!-- Top Header -->
+    <g transform="translate(14, 12)">
+      <rect width="180" height="22" rx="11" fill="#ede9fe" stroke="#c4b5fd" stroke-width="0.8"/>
+      <circle cx="11" cy="11" r="3.5" fill="#7b4bf7"/>
+      <text x="21" y="15" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#6d28d9">GROWTH &amp; AI AUDIT</text>
+
+      <rect x="220" y="0" width="84" height="22" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8"/>
+      <text x="262" y="14.5" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#059669" text-anchor="middle">90-Day Plan</text>
+    </g>
+
+    <!-- Audit Diagnostic Cards -->
+    <g transform="translate(16, 46)">
+      <!-- Left: Full Funnel Diagnostic Scores -->
+      <g filter="url(#auditCardShadow)">
+        <rect width="180" height="106" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="14" y="20" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#64748b">Diagnostic Scorecard</text>
+        
+        <!-- Score Bar 1: Paid Traffic -->
+        <g transform="translate(14, 28)">
+          <text x="0" y="9" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#0f172a">Paid Acquisition Efficiency</text>
+          <rect x="0" y="13" width="152" height="6" rx="3" fill="#f1f5f9"/>
+          <rect x="0" y="13" width="138" height="6" rx="3" fill="#7b4bf7"/>
+        </g>
+
+        <!-- Score Bar 2: Technical Architecture -->
+        <g transform="translate(14, 52)">
+          <text x="0" y="9" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#0f172a">Technical Speed &amp; Web Vitals</text>
+          <rect x="0" y="13" width="152" height="6" rx="3" fill="#f1f5f9"/>
+          <rect x="0" y="13" width="148" height="6" rx="3" fill="#10b981"/>
+        </g>
+
+        <!-- Score Bar 3: AI Automation Readiness -->
+        <g transform="translate(14, 76)">
+          <text x="0" y="9" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#0f172a">AI Automation Readiness</text>
+          <rect x="0" y="13" width="152" height="6" rx="3" fill="#f1f5f9"/>
+          <rect x="0" y="13" width="142" height="6" rx="3" fill="#de358d"/>
+        </g>
+      </g>
+
+      <!-- Right: Roadmap Deliverable Card -->
+      <g transform="translate(192, 0)" filter="url(#auditCardShadow)">
+        <rect width="108" height="106" rx="8" fill="#ffffff" stroke="#7b4bf7" stroke-width="1.2"/>
+        <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#64748b">Growth ROI</text>
+        <text x="12" y="44" font-family="'Poppins', sans-serif" font-size="18" font-weight="800" fill="#7b4bf7">+4.8x Lift</text>
+
+        <rect x="8" y="58" width="92" height="38" rx="6" fill="#f5f3ff"/>
+        <text x="54" y="72" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#6d28d9" text-anchor="middle">Step-By-Step</text>
+        <text x="54" y="84" font-family="'Poppins', sans-serif" font-size="7" font-weight="600" fill="#0f172a" text-anchor="middle">Execution Map</text>
+      </g>
+    </g>
+  </g>
+</svg>

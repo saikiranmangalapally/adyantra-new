@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="contentCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <filter id="contentCardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Canvas Background -->
+  <rect width="380" height="200" rx="14" fill="url(#contentCanvasBg)"/>
+
+  <!-- Main Multiplier Frame -->
+  <g transform="translate(24, 16)" filter="url(#contentCardShadow)">
+    <rect width="332" height="168" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    
+    <!-- Header status bar -->
+    <g transform="translate(14, 12)">
+      <rect width="148" height="22" rx="11" fill="#eff6ff" stroke="#bfdbfe" stroke-width="0.8"/>
+      <circle cx="11" cy="11" r="3.5" fill="#2563eb"/>
+      <text x="21" y="15" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#1d4ed8">CONTENT ENGINE</text>
+
+      <rect x="220" y="0" width="84" height="22" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8"/>
+      <text x="262" y="14.5" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#059669" text-anchor="middle">10x Output</text>
+    </g>
+
+    <!-- Center Left: 1 Master Content Source Brief Card -->
+    <g transform="translate(16, 48)">
+      <rect width="96" height="106" rx="10" fill="#f5f3ff" stroke="#7b4bf7" stroke-width="1.5"/>
+      <circle cx="48" cy="28" r="14" fill="#ffffff"/>
+      <text x="48" y="32" font-family="'Poppins', sans-serif" font-size="12" font-weight="800" fill="#7b4bf7" text-anchor="middle">1</text>
+      
+      <text x="48" y="58" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#0f172a" text-anchor="middle">Core Brief</text>
+      <text x="48" y="70" font-family="'Poppins', sans-serif" font-size="7.5" fill="#64748b" text-anchor="middle">Brand Voice DNA</text>
+      
+      <rect x="10" y="80" width="76" height="18" rx="4" fill="#ffffff"/>
+      <text x="48" y="92.5" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#7b4bf7" text-anchor="middle">SOURCE ASSET</text>
+    </g>
+
+    <!-- Branching Connectors -->
+    <path d="M 112 101 C 130 101, 134 62, 150 62" fill="none" stroke="#3b82f6" stroke-width="1.8"/>
+    <path d="M 112 101 C 130 101, 134 88, 150 88" fill="none" stroke="#ec4899" stroke-width="1.8"/>
+    <path d="M 112 101 C 130 101, 134 114, 150 114" fill="none" stroke="#10b981" stroke-width="1.8"/>
+    <path d="M 112 101 C 130 101, 134 140, 150 140" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
+
+    <!-- Right Side: 4 Generated Multi-Format Formats -->
+    <!-- Format 1: SEO Articles -->
+    <g transform="translate(150, 48)">
+      <rect width="166" height="24" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="0.8"/>
+      <circle cx="12" cy="12" r="4" fill="#2563eb"/>
+      <text x="24" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#1e40af">SEO Pillar Articles</text>
+      <text x="156" y="16" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#059669" text-anchor="end">Page #1</text>
+    </g>
+
+    <!-- Format 2: Viral Reels Scripts -->
+    <g transform="translate(150, 76)">
+      <rect width="166" height="24" rx="6" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="0.8"/>
+      <circle cx="12" cy="12" r="4" fill="#db2777"/>
+      <text x="24" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#9d174d">Reels &amp; Short Scripts</text>
+      <text x="156" y="16" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#db2777" text-anchor="end">Viral Hooks</text>
+    </g>
+
+    <!-- Format 3: Email Newsletters -->
+    <g transform="translate(150, 104)">
+      <rect width="166" height="24" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8"/>
+      <circle cx="12" cy="12" r="4" fill="#059669"/>
+      <text x="24" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#065f46">Email Drips &amp; Blasts</text>
+      <text x="156" y="16" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#059669" text-anchor="end">High CVR</text>
+    </g>
+
+    <!-- Format 4: LinkedIn Carousels -->
+    <g transform="translate(150, 132)">
+      <rect width="166" height="24" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="0.8"/>
+      <circle cx="12" cy="12" r="4" fill="#d97706"/>
+      <text x="24" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#92400e">Executive Thought Piece</text>
+      <text x="156" y="16" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#d97706" text-anchor="end">B2B Reach</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <!-- Subtle ambient background glow -->
+  <circle cx="160" cy="115" r="90" fill="#f5f3ff" opacity="0.6"/>
+  <circle cx="210" cy="85" r="45" fill="#e0f2fe" opacity="0.4"/>
+
+  <!-- Background Checklist Document on Stand -->
+  <g transform="translate(196, 68)" stroke="#cbd5e1" stroke-width="1.2" fill="#ffffff">
+    <rect width="44" height="60" rx="4"/>
+    <!-- Checklist items -->
+    <line x1="8" y1="14" x2="36" y2="14" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="12" cy="26" r="3" fill="#10b981" stroke="none"/>
+    <line x1="18" y1="26" x2="36" y2="26" stroke="#cbd5e1" stroke-width="2"/>
+    <circle cx="12" cy="38" r="3" fill="#10b981" stroke="none"/>
+    <line x1="18" y1="38" x2="36" y2="38" stroke="#cbd5e1" stroke-width="2"/>
+    <circle cx="12" cy="50" r="3" fill="#7c3aed" stroke="none"/>
+    <line x1="18" y1="50" x2="36" y2="50" stroke="#cbd5e1" stroke-width="2"/>
+  </g>
+
+  <!-- Big Magnifying Glass in Center inspecting Flow -->
+  <g transform="translate(142, 60)">
+    <!-- Lens Rim & Glass -->
+    <circle cx="36" cy="36" r="32" fill="#f8fafc" opacity="0.75" stroke="#1e1b4b" stroke-width="5"/>
+    <circle cx="36" cy="36" r="28" fill="#e0e7ff" opacity="0.4"/>
+    <!-- Lens Reflection Streak -->
+    <path d="M 22 22 A 20 20 0 0 1 50 22" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Upward Trendline inside Magnifier -->
+    <path d="M 16 50 L 30 38 L 44 42 L 56 24" stroke="#7c3aed" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="56" cy="24" r="3.5" fill="#f97316"/>
+    <!-- Handle -->
+    <line x1="60" y1="60" x2="90" y2="90" stroke="#1e1b4b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="68" y1="68" x2="92" y2="92" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Left Character: Specialist holding clipboard/tablet analyzing metrics -->
+  <!-- Legs -->
+  <path d="M 88 136 L 82 158 L 80 182" stroke="#1e1b4b" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <path d="M 94 136 L 98 158 L 102 182" stroke="#1e1b4b" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- Torso (Crisp White/Lavender Shirt & Tie matching reference) -->
+  <path d="M 82 104 C 90 100, 98 102, 100 116 L 98 138 L 86 138 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <!-- Dark Tie -->
+  <polygon points="90,105 92,105 94,118 91,124 88,118" fill="#1e1b4b"/>
+  <!-- Left Arm holding Tablet / Clipboard -->
+  <path d="M 94 110 L 108 116 L 104 126" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <!-- Clipboard -->
+  <rect x="100" y="112" width="16" height="22" rx="2" fill="#7c3aed"/>
+  <line x1="104" y1="118" x2="112" y2="118" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="104" y1="123" x2="112" y2="123" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- Head & Hair -->
+  <circle cx="90" cy="94" r="7.5" fill="#fbcfe8"/>
+  <path d="M 83 94 C 83 86, 94 84, 98 90 C 99 94, 94 96, 90 96 Z" fill="#1e1b4b"/>
+
+  <!-- Right Character: Marketer pointing towards the analytics/workflow -->
+  <!-- Legs (Skirt & tights or pants) -->
+  <path d="M 230 144 L 226 166 L 224 184" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 236 144 L 242 166 L 246 184" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Torso (Violet / Magenta Blazer) -->
+  <path d="M 226 108 C 234 104, 242 106, 244 120 L 240 144 L 228 144 Z" fill="#9333ea"/>
+  <!-- Raised Arm with Hand Pointing -->
+  <path d="M 230 114 L 214 106 L 200 108" stroke="#9333ea" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <circle cx="198" cy="108" r="2.5" fill="#fbcfe8"/>
+  <!-- Head & Long Hair -->
+  <circle cx="236" cy="98" r="7.5" fill="#fbcfe8"/>
+  <path d="M 228 98 C 228 88, 242 86, 246 94 C 248 102, 246 114, 242 114 Z" fill="#1e1b4b"/>
+
+  <!-- Floating Automated Email Envelope at Top Center -->
+  <g transform="translate(136, 32)">
+    <rect width="36" height="24" rx="4" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+    <path d="M 2 3 L 18 15 L 34 3" stroke="#7c3aed" stroke-width="1.5" fill="none"/>
+    <circle cx="34" cy="4" r="5" fill="#10b981"/>
+    <text x="34" y="6.5" font-family="'Poppins', sans-serif" font-size="7" font-weight="900" fill="#ffffff" text-anchor="middle">✓</text>
+  </g>
+
+  <!-- Gears at Bottom Right on Floor -->
+  <g transform="translate(202, 170) scale(0.6)" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc">
+    <circle cx="20" cy="20" r="14"/>
+    <path d="M20 2 v4 M20 34 v4 M2 20 h4 M34 20 h4"/>
+  </g>
+</svg>

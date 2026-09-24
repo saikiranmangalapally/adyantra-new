@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 
 export default function WebSoftwareDevelopmentPage() {
   const [activeTab, setActiveTab] = useState("frontend");
@@ -24,7 +25,7 @@ export default function WebSoftwareDevelopmentPage() {
       id: "portals",
       title: "Enterprise Web Portals & RBAC",
       desc: "Secure customer and vendor portals featuring role-based access control, multi-tenant schemas, authentication guardrails, and real-time team dashboards.",
-      icon: "https://img.icons8.com/?size=96&id=53373&format=png&color=7b4bf7",
+      icon: "https://img.icons8.com/?size=96&id=53373&format=png&color=ef5b52",
       badge: "Security & Governance",
     },
     {
@@ -38,7 +39,7 @@ export default function WebSoftwareDevelopmentPage() {
       id: "pwas",
       title: "Progressive Web Apps (PWAs)",
       desc: "Offline-first architectures, service worker caching, instant app-like navigation, and mobile home-screen installability without app store friction.",
-      icon: "https://img.icons8.com/?size=96&id=ZwGNoFXGbt9n&format=png&color=7b4bf7",
+      icon: "https://img.icons8.com/?size=96&id=ZwGNoFXGbt9n&format=png&color=ef5b52",
       badge: "Mobile Speed",
     },
     {
@@ -52,7 +53,7 @@ export default function WebSoftwareDevelopmentPage() {
       id: "security",
       title: "Performance & Security Hardening",
       desc: "Penetration-tested infrastructure, strict CSP headers, DDoS protection, edge caching via Cloudflare/Vercel, and automated vulnerability scanning.",
-      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=7b4bf7",
+      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=ef5b52",
       badge: "Enterprise Grade",
     },
   ];
@@ -166,27 +167,8 @@ export default function WebSoftwareDevelopmentPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ STATS BRIDGE BAR (FLAGSHIP PATTERN) ═══════════════════ */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">100/100</p>
-            <p className="ady-stat-label">Core Web Vitals</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">&lt; 0.8s</p>
-            <p className="ady-stat-label">LCP Page Speed</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">99.99%</p>
-            <p className="ady-stat-label">Cloud SLA Uptime</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">100%</p>
-            <p className="ady-stat-label">Strict Type Safety</p>
-          </div>
-        </div>
-      </div>
+      {/* ═══════════════════ SERVICES SCROLLING SECTION ═══════════════════ */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SECTION 2: 6 CORE ENGINEERING MODULES ═══════════════════ */}
       <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="services">

@@ -31,10 +31,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "We eliminate the guesswork from digital expansion. By building deterministic marketing models based on historical data and real-time algorithmic bidding, we turn your marketing department from a cost center into a predictable profit center."
     },
     subServices: [
-      { title: "Meta & Google Ads Management", desc: "Algorithmic bidding and dynamic creative testing on Facebook, Instagram, and Google Search.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Conversion Rate Optimization", desc: "Multivariate testing of landing pages to maximize lead capture and checkout completions.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Multi-Touch Analytics", desc: "Implementation of server-side tracking (CAPI) to bypass iOS14 restrictions and track true ROI.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Lifecycle Email & SMS", desc: "Automated retention sequences to maximize Customer Lifetime Value (LTV).", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Meta & Google Ads Management", desc: "Algorithmic bidding and dynamic creative testing on Facebook, Instagram, and Google Search.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Conversion Rate Optimization", desc: "Multivariate testing of landing pages to maximize lead capture and checkout completions.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Multi-Touch Analytics", desc: "Implementation of server-side tracking (CAPI) to bypass iOS14 restrictions and track true ROI.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Lifecycle Email & SMS", desc: "Automated retention sequences to maximize Customer Lifetime Value (LTV).", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Deep Technical Audit", description: "We analyze your historical ad account data, pixel health, tracking setup, and competitor positioning to identify immediate revenue leaks.", timeline: "Days 1-7" },
@@ -85,10 +85,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "Your audience consumes content faster than a traditional team can produce it. Our AI content automation bridges that gap, delivering hyper-personalized, data-backed assets that engage your ideal buyers and accelerate your sales pipeline 24/7."
     },
     subServices: [
-      { title: "Programmatic SEO Engines", desc: "Architecture for generating thousands of targeted, location-based or product-based landing pages using structured AI models.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Automated Social Pipelines", desc: "AI-driven trend analysis, copy generation, and automated scheduling for absolute omni-channel presence.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Dynamic Sales Copy generation", desc: "Hyper-personalized cold email and SMS sequences powered by behavioral triggers and CRM data enrichment.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Brand Voice Cloning", desc: "Strict system prompts and vector databases (RAG) to ensure AI output matches your exact brand tone.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Programmatic SEO Engines", desc: "Architecture for generating thousands of targeted, location-based or product-based landing pages using structured AI models.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Automated Social Pipelines", desc: "AI-driven trend analysis, copy generation, and automated scheduling for absolute omni-channel presence.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Dynamic Sales Copy generation", desc: "Hyper-personalized cold email and SMS sequences powered by behavioral triggers and CRM data enrichment.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Brand Voice Cloning", desc: "Strict system prompts and vector databases (RAG) to ensure AI output matches your exact brand tone.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Brand Voice & Data Ingestion", description: "We scrape and analyze your past content, brand guidelines, and high-performing assets to build a custom vector database.", timeline: "Weeks 1-2" },
@@ -139,10 +139,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "From sophisticated abandoned cart sequences to complex B2B lead nurturing pipelines lasting 12+ months, our automation strategies trigger highly personalized actions based on deep user behavior, ensuring maximum engagement."
     },
     subServices: [
-      { title: "Behavioral Email Sequences", desc: "Highly segmented automated email logic based on exactly what users click, view, and purchase.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "WhatsApp & SMS Automation", desc: "Direct-to-phone messaging for high-intent lead closing and appointment reminders with 98% open rates.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Dynamic Lead Scoring", desc: "Algorithms that track engagement across your site and emails to identify your hottest leads automatically.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "CRM Implementation & Auditing", desc: "Complete setup and overhaul of HubSpot, ActiveCampaign, or GoHighLevel for maximum efficiency.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Behavioral Email Sequences", desc: "Highly segmented automated email logic based on exactly what users click, view, and purchase.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "WhatsApp & SMS Automation", desc: "Direct-to-phone messaging for high-intent lead closing and appointment reminders with 98% open rates.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Dynamic Lead Scoring", desc: "Algorithms that track engagement across your site and emails to identify your hottest leads automatically.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "CRM Implementation & Auditing", desc: "Complete setup and overhaul of HubSpot, ActiveCampaign, or GoHighLevel for maximum efficiency.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Funnel Mapping & Audit", description: "We map out your entire customer journey, identifying drop-off points and missed follow-up opportunities.", timeline: "Weeks 1-2" },
@@ -193,10 +193,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "We transform your social channels from stagnant digital brochures into dynamic, highly engaged communities that act as your most powerful customer acquisition asset."
     },
     subServices: [
-      { title: "Short-Form Video (Reels/TikTok)", desc: "High-retention, fast-paced video content engineered specifically for algorithmic virality.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "B2B LinkedIn Authority", desc: "Ghostwriting and executive brand building to position your leadership as industry titans.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Community Management", desc: "Proactive engagement, comment moderation, and DM management to foster extreme loyalty.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Social Commerce Integration", desc: "Setting up Instagram/Facebook Shops and TikTok Shop for frictionless in-app purchasing.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Short-Form Video (Reels/TikTok)", desc: "High-retention, fast-paced video content engineered specifically for algorithmic virality.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "B2B LinkedIn Authority", desc: "Ghostwriting and executive brand building to position your leadership as industry titans.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Community Management", desc: "Proactive engagement, comment moderation, and DM management to foster extreme loyalty.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Social Commerce Integration", desc: "Setting up Instagram/Facebook Shops and TikTok Shop for frictionless in-app purchasing.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Brand Identity & Trend Analysis", description: "Deep dive into your brand archetype, competitor positioning, and current platform algorithms.", timeline: "Weeks 1-2" },
@@ -247,10 +247,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "Paid ads stop working the moment you stop paying. A well-engineered SEO strategy builds a compounding digital asset that drives highly qualified, free traffic to your business for years to come."
     },
     subServices: [
-      { title: "Technical SEO Audits", desc: "Deep crawl analysis, resolving canonical conflicts, schema markup, and JavaScript rendering issues.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Content Silos & Topical Authority", desc: "Architecting structured content hubs to completely dominate specific industry niches.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Digital PR & Link Building", desc: "Acquiring editorial backlinks from high Domain Rating (DR) publications in your industry.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Local SEO & Map Pack", desc: "Aggressive optimization for local businesses to dominate the 'Near Me' Google search results.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Technical SEO Audits", desc: "Deep crawl analysis, resolving canonical conflicts, schema markup, and JavaScript rendering issues.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Content Silos & Topical Authority", desc: "Architecting structured content hubs to completely dominate specific industry niches.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Digital PR & Link Building", desc: "Acquiring editorial backlinks from high Domain Rating (DR) publications in your industry.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Local SEO & Map Pack", desc: "Aggressive optimization for local businesses to dominate the 'Near Me' Google search results.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Comprehensive Technical Audit", description: "We run deep crawls using tools like Screaming Frog to identify and fix every indexability issue on your site.", timeline: "Weeks 1-3" },
@@ -301,10 +301,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "We handle the entire growth ecosystem for your store—from high-converting ad creatives to advanced backend email retention flows—turning your Shopify store into a highly efficient revenue engine."
     },
     subServices: [
-      { title: "Meta & TikTok Performance Ads", desc: "Aggressive creative testing and algorithmic scaling on social platforms.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Google Performance Max", desc: "Data-feed optimization and advanced machine learning deployment on Google.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Klaviyo Email & SMS Retention", desc: "Advanced flows (Welcome, Abandoned Cart, Post-Purchase) to drive 30%+ of total revenue.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Shopify CRO", desc: "Heatmap analysis and A/B testing on product pages to increase overall conversion rate.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Meta & TikTok Performance Ads", desc: "Aggressive creative testing and algorithmic scaling on social platforms.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Google Performance Max", desc: "Data-feed optimization and advanced machine learning deployment on Google.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Klaviyo Email & SMS Retention", desc: "Advanced flows (Welcome, Abandoned Cart, Post-Purchase) to drive 30%+ of total revenue.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Shopify CRO", desc: "Heatmap analysis and A/B testing on product pages to increase overall conversion rate.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Unit Economics Audit", description: "We analyze your margins, AOV, and historical CAC to establish strict profitability targets.", timeline: "Week 1" },
@@ -355,10 +355,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "We don't just build websites; we build digital growth engines. Our technical infrastructure provides the ultimate foundation for your paid ads and organic SEO to thrive."
     },
     subServices: [
-      { title: "Custom Corporate Websites", desc: "High-end, bespoke websites engineered for B2B lead generation and brand authority.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "High-Converting Landing Pages", desc: "Hyper-optimized, blazing-fast single pages designed specifically to maximize paid ad ROI.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Web Application Development", desc: "Complex, scalable SaaS platforms and custom portals built on React and Node.js.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Headless E-Commerce", desc: "Decoupled Shopify architectures using Next.js for sub-second page loads and custom buying experiences.", href: "/contact", img: "/assets/img/service/webdev-3d.png" }
+      { title: "Custom Corporate Websites", desc: "High-end, bespoke websites engineered for B2B lead generation and brand authority.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "High-Converting Landing Pages", desc: "Hyper-optimized, blazing-fast single pages designed specifically to maximize paid ad ROI.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Web Application Development", desc: "Complex, scalable SaaS platforms and custom portals built on React and Node.js.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Headless E-Commerce", desc: "Decoupled Shopify architectures using Next.js for sub-second page loads and custom buying experiences.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" }
     ],
     processSteps: [
       { title: "Discovery & Architecture", description: "We map user journeys, create wireframes, and define the technical stack required for your goals.", timeline: "Weeks 1-2" },
@@ -409,10 +409,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "We bridge the gap between fragmented marketing platforms, centralizing your data into a single source of truth so you can scale your business with absolute mathematical confidence."
     },
     subServices: [
-      { title: "Server-Side Tracking (CAPI)", desc: "Implementation of Meta CAPI and Google sGTM to bypass ad blockers and recover lost data.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "GA4 Configuration & Migration", desc: "Expert setup of Google Analytics 4, including custom event tracking and funnel reports.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Custom BI Dashboards", desc: "Building beautiful, real-time Looker Studio or PowerBI dashboards tailored to your KPIs.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Conversion Rate Optimization (CRO)", desc: "Utilizing heatmap and session recording data (Hotjar/Clarity) to remove UX friction.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Server-Side Tracking (CAPI)", desc: "Implementation of Meta CAPI and Google sGTM to bypass ad blockers and recover lost data.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "GA4 Configuration & Migration", desc: "Expert setup of Google Analytics 4, including custom event tracking and funnel reports.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Custom BI Dashboards", desc: "Building beautiful, real-time Looker Studio or PowerBI dashboards tailored to your KPIs.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Conversion Rate Optimization (CRO)", desc: "Utilizing heatmap and session recording data (Hotjar/Clarity) to remove UX friction.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Data Integrity Audit", description: "We analyze your current tracking setup to identify duplicate events, missing data, and attribution errors.", timeline: "Week 1" },
@@ -463,10 +463,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "We handle the entire lifecycle of influencer marketing—from discovery and contract negotiation to campaign execution and paid amplification—delivering massive brand awareness and measurable sales."
     },
     subServices: [
-      { title: "Creator Discovery & Vetting", desc: "Using advanced tools to audit engagement rates, fake followers, and audience demographics.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "UGC Content Generation", desc: "Sourcing high-quality, direct-response User Generated Content for use in your own paid ads.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Influencer Whitelisting", desc: "Running targeted Meta and TikTok ads through the creator's handle for massive ROI.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Ambassador Programs", desc: "Building long-term, affiliate-based relationships with creators for sustained organic growth.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Creator Discovery & Vetting", desc: "Using advanced tools to audit engagement rates, fake followers, and audience demographics.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "UGC Content Generation", desc: "Sourcing high-quality, direct-response User Generated Content for use in your own paid ads.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Influencer Whitelisting", desc: "Running targeted Meta and TikTok ads through the creator's handle for massive ROI.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Ambassador Programs", desc: "Building long-term, affiliate-based relationships with creators for sustained organic growth.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Audience Profiling", description: "We define your exact buyer persona and map it against influencer demographic databases.", timeline: "Week 1" },
@@ -517,10 +517,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "From hyper-personalized sales outreach videos to massive organic TikTok campaigns, our AI video automation ensures your brand is omnipresent across all visual mediums."
     },
     subServices: [
-      { title: "AI Avatar Video Generation", desc: "Lifelike, brand-consistent synthetic avatars for corporate training, ads, and explainer videos.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Automated Short-Form Editing", desc: "AI-driven clipping of long-form podcasts into viral TikToks and Reels with dynamic captions.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Generative Voice & Audio", desc: "Studio-quality synthetic voiceovers and audio generation mimicking specific brand tones.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Programmatic Video Ads", desc: "Generating hundreds of ad variations automatically to test hooks and find the ultimate winning creative.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "AI Avatar Video Generation", desc: "Lifelike, brand-consistent synthetic avatars for corporate training, ads, and explainer videos.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Automated Short-Form Editing", desc: "AI-driven clipping of long-form podcasts into viral TikToks and Reels with dynamic captions.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Generative Voice & Audio", desc: "Studio-quality synthetic voiceovers and audio generation mimicking specific brand tones.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Programmatic Video Ads", desc: "Generating hundreds of ad variations automatically to test hooks and find the ultimate winning creative.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Script & Strategy Engineering", description: "We utilize LLMs to write high-converting, direct-response video scripts tailored to your audience.", timeline: "Week 1" },
@@ -571,10 +571,10 @@ export const marketingData: Record<string, ServicePageData> = {
       description: "We handle the end-to-end management of your affiliate program, ensuring you only pay for actual sales while protecting your brand from low-quality traffic and fraud."
     },
     subServices: [
-      { title: "Program Strategy & Launch", desc: "Defining commission structures, cookie durations, and selecting the optimal tracking network.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Aggressive Partner Recruitment", desc: "Outbound headhunting of high-volume media buyers, review sites, and niche influencers.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Affiliate Activation & Support", desc: "Creating converting banners, landing pages, and email swipes for affiliates to use.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Compliance & Fraud Monitoring", desc: "Strict auditing of traffic sources to prevent trademark bidding and fraudulent conversions.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Program Strategy & Launch", desc: "Defining commission structures, cookie durations, and selecting the optimal tracking network.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Aggressive Partner Recruitment", desc: "Outbound headhunting of high-volume media buyers, review sites, and niche influencers.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Affiliate Activation & Support", desc: "Creating converting banners, landing pages, and email swipes for affiliates to use.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Compliance & Fraud Monitoring", desc: "Strict auditing of traffic sources to prevent trademark bidding and fraudulent conversions.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Infrastructure Setup", description: "Integration of tracking platforms with your e-commerce or SaaS backend.", timeline: "Weeks 1-2" },

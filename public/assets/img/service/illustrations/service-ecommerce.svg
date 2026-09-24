@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <!-- Subtle ambient background glow -->
+  <circle cx="160" cy="115" r="90" fill="#f0fdf4" opacity="0.6"/>
+  <circle cx="210" cy="80" r="45" fill="#fef3c7" opacity="0.4"/>
+
+  <!-- Storefront with Striped Awning in Background -->
+  <g transform="translate(68, 52)">
+    <!-- Awning -->
+    <path d="M 0 20 L 10 0 L 110 0 L 120 20 Z" fill="#7c3aed"/>
+    <!-- Stripes -->
+    <polygon points="10,0 22,0 18,20 6,20" fill="#ffffff"/>
+    <polygon points="34,0 46,0 42,20 30,20" fill="#ffffff"/>
+    <polygon points="58,0 70,0 66,20 54,20" fill="#ffffff"/>
+    <polygon points="82,0 94,0 90,20 78,20" fill="#ffffff"/>
+    <polygon points="106,0 110,0 120,20 114,20" fill="#ffffff"/>
+    <!-- Awning Scallop Edges -->
+    <circle cx="12" cy="20" r="6" fill="#7c3aed"/>
+    <circle cx="24" cy="20" r="6" fill="#ffffff"/>
+    <circle cx="36" cy="20" r="6" fill="#7c3aed"/>
+    <circle cx="48" cy="20" r="6" fill="#ffffff"/>
+    <circle cx="60" cy="20" r="6" fill="#7c3aed"/>
+    <circle cx="72" cy="20" r="6" fill="#ffffff"/>
+    <circle cx="84" cy="20" r="6" fill="#7c3aed"/>
+    <circle cx="96" cy="20" r="6" fill="#ffffff"/>
+    <circle cx="108" cy="20" r="6" fill="#7c3aed"/>
+
+    <!-- Glass Store Window -->
+    <rect x="10" y="24" width="100" height="74" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="60" y1="24" x2="60" y2="98" stroke="#cbd5e1" stroke-width="1.2"/>
+    <!-- Product on Pedestal inside window -->
+    <rect x="22" y="56" width="22" height="24" rx="3" fill="#ec4899"/>
+    <rect x="74" y="50" width="24" height="30" rx="3" fill="#3b82f6"/>
+  </g>
+
+  <!-- Big Shopping Cart in Center Packed with Purchases -->
+  <g transform="translate(136, 102)">
+    <!-- Cart Basket -->
+    <path d="M 0 10 L 10 10 L 26 48 L 62 48 L 74 18 L 18 18" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Basket Grid -->
+    <line x1="22" y1="26" x2="68" y2="26" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="24" y1="36" x2="64" y2="36" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="36" y1="18" x2="36" y2="48" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="50" y1="18" x2="50" y2="48" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Cart Wheels -->
+    <circle cx="32" cy="56" r="5" fill="#1e1b4b"/>
+    <circle cx="32" cy="56" r="2" fill="#ffffff"/>
+    <circle cx="56" cy="56" r="5" fill="#1e1b4b"/>
+    <circle cx="56" cy="56" r="2" fill="#ffffff"/>
+    <!-- Cart Packages Inside -->
+    <rect x="26" y="2" width="22" height="20" rx="2" fill="#f59e0b"/>
+    <line x1="26" y1="10" x2="48" y2="10" stroke="#d97706" stroke-width="1.5"/>
+    <rect x="44" y="-8" width="20" height="26" rx="2" fill="#10b981"/>
+    <line x1="44" y1="2" x2="64" y2="2" stroke="#059669" stroke-width="1.5"/>
+  </g>
+
+  <!-- Floating Secure Checkout Card on Right -->
+  <g transform="translate(208, 64)">
+    <rect width="64" height="40" rx="6" fill="#1e1b4b"/>
+    <rect x="0" y="8" width="64" height="8" fill="#475569"/>
+    <circle cx="12" cy="26" r="4" fill="#facc15"/>
+    <circle cx="18" cy="26" r="4" fill="#ef4444" opacity="0.8"/>
+    <!-- Verified Badge -->
+    <circle cx="52" cy="26" r="6" fill="#10b981"/>
+    <path d="M 49 26 L 51 28 L 55 24" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Happy Shopper / Merchant on Left pushing cart -->
+  <!-- Legs -->
+  <path d="M 116 138 L 112 160 L 110 184" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 122 138 L 126 160 L 130 184" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Torso (Mint / Emerald Top) -->
+  <path d="M 112 108 C 120 104, 128 106, 130 120 L 126 142 L 114 142 Z" fill="#10b981"/>
+  <!-- Arm pushing cart handle -->
+  <path d="M 120 114 L 132 118 L 144 116" stroke="#10b981" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <!-- Head & Hair -->
+  <circle cx="118" cy="96" r="7.5" fill="#fbcfe8"/>
+  <path d="M 111 96 C 111 88, 122 86, 126 92 C 127 96, 122 98, 118 98 Z" fill="#1e1b4b"/>
+</svg>

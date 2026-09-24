@@ -23,9 +23,9 @@ const defaultFallbackData: ServicePageData = {
     description: "Eliminate manual effort and scale your operational velocity with our proven engineering framework."
   },
   subServices: [
-    { title: "Strategic Architecture & Design", desc: "Custom blueprinting and technical roadmap development for your growth goals.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-    { title: "Automated Workflow Integration", desc: "Connecting your software tools via secure APIs to streamline operations.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-    { title: "Performance Optimization", desc: "Continuous testing and data analytics to maximize ROI and operational speed.", href: "/contact", img: "/assets/img/service/webdev-3d.png" }
+    { title: "Strategic Architecture & Design", desc: "Custom blueprinting and technical roadmap development for your growth goals.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-chatbots.svg" },
+    { title: "Automated Workflow Integration", desc: "Connecting your software tools via secure APIs to streamline operations.", href: "/contact", img: "/assets/img/service/illustrations/service-email-workflows.svg" },
+    { title: "Performance Optimization", desc: "Continuous testing and data analytics to maximize ROI and operational speed.", href: "/contact", img: "/assets/img/service/illustrations/service-web-development.svg" }
   ],
   processSteps: [
     { title: "Discovery & Technical Audit", description: "We analyze your existing workflows, data infrastructure, and growth bottlenecks.", timeline: "Week 1" },

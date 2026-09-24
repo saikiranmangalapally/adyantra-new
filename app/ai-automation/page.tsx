@@ -3,6 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
+import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
+import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
+import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
 
 export default function AIAutomationPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -13,7 +17,7 @@ export default function AIAutomationPage() {
     {
       id: 1,
       category: "systems",
-      img: "/assets/img/service/ai/lead-generation.jpg",
+      img: "/assets/img/service/illustrations/service-lead-generation.svg",
       title: "Lead Generation",
       desc: "Capture, verify, and enrich high-intent leads across search, paid campaigns, and web forms with automated scoring and instant routing.",
       href: "/lead-generation",
@@ -21,7 +25,7 @@ export default function AIAutomationPage() {
     {
       id: 2,
       category: "systems",
-      img: "/assets/img/service/ai/sales-followup.jpg",
+      img: "/assets/img/service/illustrations/service-social-meta.svg",
       title: "Sales Follow-up",
       desc: "Never drop a qualified prospect. AI-timed multi-touch sequences across email, SMS, and WhatsApp triggered by real-time customer intent signals.",
       href: "/sales-follow-up",
@@ -29,7 +33,7 @@ export default function AIAutomationPage() {
     {
       id: 3,
       category: "systems",
-      img: "/assets/img/service/ai/crm-automation.jpg",
+      img: "/assets/img/service/illustrations/service-crm-automation.svg",
       title: "CRM Automation",
       desc: "Eliminate manual data entry. Auto-sync lead sources, enrich customer records, and automate deal progression across HubSpot, Salesforce, and Zoho.",
       href: "/crm-automation",
@@ -37,7 +41,7 @@ export default function AIAutomationPage() {
     {
       id: 4,
       category: "systems",
-      img: "/assets/img/service/ai/content-automation.jpg",
+      img: "/assets/img/service/illustrations/service-pr-reputation.svg",
       title: "Content Automation",
       desc: "Turn 1 core brand brief into high-ranking articles, social posts, newsletters, and email drips with custom LLM pipelines and brand voice guardrails.",
       href: "/content-automation",
@@ -45,7 +49,7 @@ export default function AIAutomationPage() {
     {
       id: 5,
       category: "systems",
-      img: "/assets/img/service/ai/ad-creative-automation.jpg",
+      img: "/assets/img/service/illustrations/service-google-ppc.svg",
       title: "Ad Creative Automation",
       desc: "Generate hundreds of high-converting creative variations, hooks, and localized copy sets programmatically tested against live ad ROAS.",
       href: "/ad-creative-automation",
@@ -53,7 +57,7 @@ export default function AIAutomationPage() {
     {
       id: 6,
       category: "systems",
-      img: "/assets/img/service/ai/customer-support.jpg",
+      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
       title: "Customer Support",
       desc: "Deliver sub-second resolution for 85%+ of inbound tickets with RAG-powered knowledge base agents and instant escalations to human specialists.",
       href: "/customer-support",
@@ -61,7 +65,7 @@ export default function AIAutomationPage() {
     {
       id: 7,
       category: "systems",
-      img: "/assets/img/service/ai/appointment-booking.jpg",
+      img: "/assets/img/service/illustrations/service-email-workflows.svg",
       title: "Appointment Booking",
       desc: "Self-scheduling conversational agents that qualify prospects in chat, check calendar availability in real time, and lock appointments into your CRM.",
       href: "/appointment-booking",
@@ -69,7 +73,7 @@ export default function AIAutomationPage() {
     {
       id: 8,
       category: "systems",
-      img: "/assets/img/service/ai/ecommerce-automation.png",
+      img: "/assets/img/service/illustrations/service-ecommerce.svg",
       title: "E-commerce Automation",
       desc: "Dynamic cart abandonment triggers, smart inventory reorder alerts, automated invoice generation, and post-purchase review collection workflows.",
       href: "/ecommerce-automation",
@@ -77,7 +81,7 @@ export default function AIAutomationPage() {
     {
       id: 9,
       category: "architecture",
-      img: "/assets/img/service/ai_systems.png",
+      img: "/assets/img/service/illustrations/service-web-development.svg",
       title: "AI System Design",
       desc: "Comprehensive enterprise architectural blueprints mapping data flow, security boundaries, model selection, and scalable cloud infrastructure.",
       href: "/ai-system-design",
@@ -85,7 +89,7 @@ export default function AIAutomationPage() {
     {
       id: 10,
       category: "architecture",
-      img: "/assets/img/service/gen_workflow.png",
+      img: "/assets/img/service/illustrations/service-email-workflows.svg",
       title: "Workflow Architecture",
       desc: "Robust event-driven architectures with idempotent execution, fallback retries, error handling, and distributed queuing for zero data loss.",
       href: "/workflow-architecture",
@@ -93,7 +97,7 @@ export default function AIAutomationPage() {
     {
       id: 11,
       category: "architecture",
-      img: "/assets/img/service/ai-3d.png",
+      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
       title: "AI Agent Development",
       desc: "Build autonomous multi-agent frameworks capable of tool use, API calling, long-term memory retrieval, and autonomous multi-step reasoning.",
       href: "/ai-agent-development",
@@ -101,7 +105,7 @@ export default function AIAutomationPage() {
     {
       id: 12,
       category: "architecture",
-      img: "/assets/img/service/webdev-3d.png",
+      img: "/assets/img/service/illustrations/service-web-development.svg",
       title: "AI Stack Integration",
       desc: "Seamlessly integrate cutting-edge LLMs (OpenAI, Claude, Gemini, DeepSeek) into your proprietary databases, ERPs, and legacy software stacks.",
       href: "/ai-stack-integration",
@@ -109,7 +113,7 @@ export default function AIAutomationPage() {
     {
       id: 13,
       category: "architecture",
-      img: "/assets/img/service/gen_chatbot.png",
+      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
       title: "WhatsApp + CRM",
       desc: "Official Meta WhatsApp Cloud API integrations with bidirectional webhook routing to sync conversations, tags, and contacts directly into your CRM.",
       href: "/whatsapp-crm",
@@ -117,7 +121,7 @@ export default function AIAutomationPage() {
     {
       id: 14,
       category: "architecture",
-      img: "/assets/img/service/gen_b2b.png",
+      img: "/assets/img/service/illustrations/service-affiliate-partners.svg",
       title: "Zapier / Make / n8n",
       desc: "Production-grade enterprise automation setups on Make.com, n8n (self-hosted or cloud), and Zapier with modular microservices and health monitors.",
       href: "/zapier-make-n8n",
@@ -125,10 +129,18 @@ export default function AIAutomationPage() {
     {
       id: 15,
       category: "architecture",
-      img: "/assets/img/service/gen_dashboard.png",
+      img: "/assets/img/service/illustrations/service-seo.svg",
       title: "AI Audit & Strategy",
       desc: "Evaluate your company's operational bottlenecks, uncover high-ROI automation opportunities, and receive a phased 90-day execution roadmap.",
       href: "/ai-audit-strategy",
+    },
+    {
+      id: 16,
+      category: "systems",
+      img: "/assets/img/service/illustrations/service-analytics.svg",
+      title: "Predictive Analytics & ML",
+      desc: "Deploy custom machine learning models, churn forecasting, and automated data pipelines integrated with executive Looker dashboards.",
+      href: "/analytics-reporting",
     },
   ];
 
@@ -143,7 +155,7 @@ export default function AIAutomationPage() {
       id: "SYSTEMS",
       label: "AI SYSTEMS",
       color: "#ef5b52",
-      img: "/assets/img/service/ai_systems.png",
+      img: "/assets/img/service/vectors/service-ai-systems.svg?v=3",
       badge: "Autonomous Inbound & Execution",
       desc: "Deploy autonomous systems for lead generation, multi-touch sales follow-ups, and automated customer support that scale your capacity 24/7.",
       sub: ["Automated Lead Scraping & Verification", "Multi-Touch Sales Follow-up Drips", "RAG Customer Support Bots", "Automated Booking & CRM Locking"],
@@ -158,7 +170,7 @@ export default function AIAutomationPage() {
       id: "ARCHITECTURE",
       label: "ARCHITECTURE",
       color: "#7b4bf7",
-      img: "/assets/img/service/gen_workflow.png",
+      img: "/assets/img/service/vectors/service-email-workflows.svg?v=3",
       badge: "Enterprise Workflow Infrastructure",
       desc: "Resilient event-driven architectures connecting CRMs, payment gateways, and databases with idempotent execution and zero data loss.",
       sub: ["Zapier / Make / n8n Enterprise Pipelines", "Custom Autonomous Agent Development", "Official WhatsApp Cloud API Sync", "AI Audit & Feasibility Roadmaps"],
@@ -173,7 +185,7 @@ export default function AIAutomationPage() {
       id: "CRM",
       label: "CRM SYNC",
       color: "#3b82f6",
-      img: "/assets/img/service/ai/crm-automation.jpg",
+      img: "/assets/img/service/vectors/service-crm-automation.svg?v=3",
       badge: "Two-Way Pipeline Synchronization",
       desc: "Real-time synchronization between incoming ad leads, conversation transcripts, deal stages, and enterprise CRMs (HubSpot, Salesforce, Zoho).",
       sub: ["Instant Contact Enrichment", "Multi-Channel Source Attribution", "Automated Stage Progression", "Deduplication & Clean Data"],
@@ -188,7 +200,7 @@ export default function AIAutomationPage() {
       id: "AGENTS",
       label: "AI AGENTS",
       color: "#10b981",
-      img: "/assets/img/service/ai_systems.png",
+      img: "/assets/img/service/vectors/service-ai-chatbots.svg?v=3",
       badge: "Multi-Step Autonomous Reasoning",
       desc: "Autonomous LLM agents capable of dynamic decision making, tool-calling, external database querying, and self-correcting execution loops.",
       sub: ["Dynamic Tool & API Calling", "Private RAG Vector Grounding", "Semantic Memory Retrieval", "Deterministic Fallbacks"],
@@ -296,116 +308,14 @@ export default function AIAutomationPage() {
               </div>
             </div>
 
-            {/* Waveform Stage */}
-            <div className="ady-waveform-stage">
-              <svg className="ady-wave-svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
-                <path
-                  id="adyWaveformPathAI"
-                  className="ady-wave-curve"
-                  d="M 0,160 C 45,160 75,90 118,90 C 160,90 205,168 258,170 C 285,171 305,235 330,235 C 355,235 375,215 395,195 C 415,175 425,95 450,95 C 490,95 540,165 609,165 C 678,165 725,95 770,95 C 805,95 835,130 868,145 C 885,153 895,235 915,235 C 935,235 955,140 970,75 C 985,75 1030,115 1088,115 C 1125,115 1165,125 1200,125"
-                />
-                <circle className="ady-pulse-dot" r="4.5">
-                  <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
-                    <mpath href="#adyWaveformPathAI" />
-                  </animateMotion>
-                </circle>
-              </svg>
-
-              {/* Badges */}
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "9.83%", top: "30.0%" }} title="AI Lead Generation">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <line x1="19" y1="8" x2="19" y2="14" />
-                  <line x1="22" y1="11" x2="16" y2="11" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "21.5%", top: "56.7%" }} title="CRM & Pipeline Sync">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3" />
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "32.9%", top: "65.0%" }} title="Autonomous AI Agents">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="11" width="18" height="10" rx="2" />
-                  <circle cx="12" cy="5" r="2" />
-                  <path d="M12 7v4" />
-                  <line x1="8" y1="16" x2="8" y2="16.01" />
-                  <line x1="16" y1="16" x2="16" y2="16.01" />
-                </svg>
-              </div>
-
-              <div className="ady-center-cta-wrap" style={{ left: "50.75%", top: "55.0%" }}>
-                <Link href="/contact" className="ady-center-pill-btn">
-                  <span>Contact Us</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "72.3%", top: "48.3%" }} title="WhatsApp Automation">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                </svg>
-              </div>
-
-              <div className="ady-wave-glow-dot" style={{ left: "80.8%", top: "25.0%" }} />
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "90.67%", top: "38.3%" }} title="Zapier & n8n Workflows">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                </svg>
-              </div>
-            </div>
-
-            {/* AI Agent Interactive Widget */}
-            <aside className="ady-ai-widget">
-              <div className="ady-widget-glow" />
-              <div className="ady-widget-top">
-                <div className="ady-widget-avatar">
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Adyantra AI Guide" />
-                </div>
-                <p className="ady-widget-text">Ask our AI Agent to explore our automation stack in seconds</p>
-              </div>
-              <Link href="/about" className="ady-widget-link">
-                <span>Learn Our Approach</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </Link>
-            </aside>
+            {/* Waveform Stage with Unbroken Luminous Curve, Floating Squircles & AI Assistant */}
+            <HeroWaveformStage />
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 2: STATS BRIDGE BAR (HOME PAGE PATTERN) ═══════════════════ */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">95%</p>
-            <p className="ady-stat-label">Manual Tasks Automated</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">&lt; 5s</p>
-            <p className="ady-stat-label">Lead Response &amp; Dispatch</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">24/7</p>
-            <p className="ady-stat-label">Autonomous Operation</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">10x</p>
-            <p className="ady-stat-label">Operational Efficiency</p>
-          </div>
-        </div>
-      </div>
+      {/* ═══════════════════ SECTION 2: SERVICES SCROLLING RIBBON ═══════════════════ */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SECTION 3: SERVICES GRID WITH TABS (HOME PAGE CARDS) ═══════════════════ */}
       <section className="section services-ref-section" id="services-grid" aria-labelledby="services-ref-title">
@@ -468,14 +378,26 @@ export default function AIAutomationPage() {
 
               return (
                 <article key={item.id} id={cardId} className="service-ref-card scroll-mt-28" data-category={item.category}>
+                  {/* 1. Image (First - Large Visual Stage) */}
                   <div className="service-ref-card__visual">
-                    <img src={item.img} alt={item.title} loading="lazy" />
+                    <Link href={item.href} className="block">
+                      <img src={item.img} alt={item.title} loading="lazy" />
+                    </Link>
                   </div>
-                  <h3 className="service-ref-card__title">{item.title}</h3>
+
+                  {/* 2. Title (Second) */}
+                  <h3 className="service-ref-card__title">
+                    <Link href={item.href}>{item.title}</Link>
+                  </h3>
+
+                  {/* 3. Subtitle / Content (Third) */}
                   <p className="service-ref-card__desc">{item.desc}</p>
+
+                  {/* 4. Button (Fourth - Read more pill button) */}
                   <div className="service-ref-card__action">
-                    <Link href={item.href} className="service-ref-explore-btn">
-                      Explore Service <span className="explore-btn-icon">»</span>
+                    <Link href={item.href} className="service-ref-readmore-btn">
+                      <span>Read more</span>
+                      <span className="readmore-btn-arrow">&rarr;</span>
                     </Link>
                   </div>
                 </article>
@@ -506,7 +428,7 @@ export default function AIAutomationPage() {
 
             <div className="expert-tablet-card">
               <Image
-                src="/assets/img/service/service-header-tablet.jpg"
+                src="/assets/img/service/service-header-tablet.svg"
                 alt="Adyantra AI Architecture Command Center"
                 width={800}
                 height={500}
@@ -532,7 +454,7 @@ export default function AIAutomationPage() {
               <div className="expert-dual-images">
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-collab-team.jpg"
+                    src="/assets/img/service/service-collab-team.svg"
                     alt="Adyantra AI Architecture Strategy"
                     width={600}
                     height={400}
@@ -541,7 +463,7 @@ export default function AIAutomationPage() {
                 </div>
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-analytics-review.jpg"
+                    src="/assets/img/service/service-analytics-review.svg"
                     alt="Adyantra Workflow Telemetry Monitoring"
                     width={600}
                     height={400}
@@ -708,7 +630,7 @@ export default function AIAutomationPage() {
               {/* Transform Banner */}
               <div className="expert-cta-card">
                 <Image
-                  src="/assets/img/service/service-cta-transform.jpg"
+                  src="/assets/img/service/service-cta-transform.svg"
                   alt="Transform Your Business With AI"
                   fill
                   className="expert-cta-bg-img"
@@ -841,10 +763,10 @@ export default function AIAutomationPage() {
             </Link>
           </div>
           <div className="stat-row" aria-label="Adyantra results">
-            <div><b>95%</b><span>Tasks automated</span></div>
-            <div><b>&lt; 5s</b><span>Lead response time</span></div>
-            <div><b>50+</b><span>Pipelines deployed</span></div>
-            <div><b>99.9%</b><span>System uptime</span></div>
+            <div><b>06+</b><span>Years of Industry Expertise</span></div>
+            <div><b>50+</b><span>High-Growth Brands Scaled</span></div>
+            <div><b>100%</b><span>In-House Engineering</span></div>
+            <div><b>Zero</b><span>Outsourced Work</span></div>
           </div>
         </div>
       </section>
@@ -884,54 +806,8 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (EXACT MOCKUP MATCH) ═══════════════════ */}
-      <section className="section expertise" id="advantage" aria-labelledby="expertise-title">
-        <div className="shell split-layout">
-          <div className="expertise-visual">
-            <div className="expertise-visual__orb" />
-            <img
-              src="/assets/img/team/team-3d.png"
-              alt="Work Directly with Senior Engineers & Growth Strategists"
-              loading="lazy"
-            />
-            <div className="proof-chip proof-chip--one">
-              <b>DIRECT ACCESS</b>
-              <span>Senior tech leads</span>
-            </div>
-            <div className="proof-chip proof-chip--two">
-              <b>24/7 TUNING</b>
-              <span>Live attribution</span>
-            </div>
-            <div className="proof-chip proof-chip--three">
-              <b>100% IN-HOUSE</b>
-              <span>Zero outsourcing</span>
-            </div>
-            <div className="proof-chip proof-chip--four">
-              <b>TAILORED GROWTH</b>
-              <span>+340% Avg ROAS</span>
-            </div>
-          </div>
-          <div className="copy-block">
-            <p className="advantage-kicker">OUR TEAM &amp; EXPERTISE</p>
-            <h2 id="expertise-title" className="advantage-exact-heading">
-              Work Directly with Senior <br />
-              Engineers <em>&amp; Growth <br />Strategists</em>
-            </h2>
-            <p className="advantage-exact-desc">
-              We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
-            </p>
-            <ul className="check-list-grid">
-              <li>100% In-House Execution</li>
-              <li>Tailored Growth Strategies</li>
-              <li>Direct Senior Technical Access</li>
-              <li>Continuous Campaign Optimization</li>
-            </ul>
-            <Link className="advantage-leadership-link" href="/about">
-              Meet our leadership <b>&rarr;</b>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (OUR TEAM & EXPERTISE) ═══════════════════ */}
+      <OurTeamExpertiseSection />
 
       {/* ═══════════════════ SECTION 11: CLIENT REVIEWS (HOME PAGE MARQUEE) ═══════════════════ */}
       <section className="section reviews-ref-section" id="testimonials" aria-labelledby="reviews-ref-title">
@@ -956,7 +832,7 @@ export default function AIAutomationPage() {
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -974,7 +850,7 @@ export default function AIAutomationPage() {
                   <div className="review-ref-avatar avatar--indigo">PK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pramode K.</h3>
-                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                    <span className="review-ref-role-pill">Enterprise Business &bull; Owner</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -1065,7 +941,7 @@ export default function AIAutomationPage() {
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -1083,7 +959,7 @@ export default function AIAutomationPage() {
                   <div className="review-ref-avatar avatar--indigo">PK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pramode K.</h3>
-                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                    <span className="review-ref-role-pill">Enterprise Business &bull; Owner</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">

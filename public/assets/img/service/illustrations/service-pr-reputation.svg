@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <!-- Subtle ambient background glow -->
+  <circle cx="160" cy="115" r="90" fill="#fdf4ff" opacity="0.6"/>
+  <circle cx="110" cy="70" r="45" fill="#f5f3ff" opacity="0.5"/>
+
+  <!-- Press Media Headline Card in Center -->
+  <g transform="translate(64, 46)">
+    <rect width="192" height="110" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <!-- Newspaper Header -->
+    <rect width="192" height="22" rx="8" fill="#1e1b4b"/>
+    <text x="14" y="15" font-family="'Poppins', sans-serif" font-size="9" font-weight="800" fill="#ffffff">DAILY TECH JOURNAL</text>
+    <text x="178" y="15" font-family="'Poppins', sans-serif" font-size="8" fill="#a5b4fc" text-anchor="end">PRESS RELEASE</text>
+
+    <!-- Headline & Column layout -->
+    <text x="14" y="38" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#0f172a">Adyantra® Featured In Top Media</text>
+    <line x1="14" y1="46" x2="178" y2="46" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Photo Box -->
+    <rect x="14" y="52" width="54" height="46" rx="4" fill="#f1f5f9"/>
+    <circle cx="41" cy="70" r="12" fill="#7c3aed" opacity="0.8"/>
+    
+    <!-- Text Lines -->
+    <line x1="76" y1="56" x2="174" y2="56" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="76" y1="66" x2="164" y2="66" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="76" y1="76" x2="170" y2="76" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="76" y1="86" x2="152" y2="86" stroke="#cbd5e1" stroke-width="2"/>
+  </g>
+
+  <!-- 5-Star Reputation Rating Badge on Left -->
+  <g transform="translate(32, 112)">
+    <rect width="78" height="42" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <text x="39" y="18" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#64748b" text-anchor="middle">TRUST SCORE</text>
+    <!-- 5 Golden Stars -->
+    <text x="39" y="32" font-family="'Poppins', sans-serif" font-size="11" fill="#f59e0b" text-anchor="middle">★★★★★</text>
+  </g>
+
+  <!-- Megaphone Broadcasting Brand Authority on Right -->
+  <g transform="translate(204, 114)">
+    <polygon points="10,14 36,4 36,32" fill="#7c3aed"/>
+    <ellipse cx="36" cy="18" rx="6" ry="14" fill="#a855f7"/>
+    <rect x="2" y="10" width="10" height="10" rx="3" fill="#1e1b4b"/>
+    <path d="M 6 20 L 10 32" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/>
+    <!-- Broadcast Waves -->
+    <path d="M 46 10 C 52 14, 52 22, 46 26" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 54 4 C 64 10, 64 26, 54 32" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Brand Spokesperson on Right -->
+  <!-- Legs -->
+  <path d="M 244 146 L 240 168 L 238 186" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 250 146 L 254 168 L 258 186" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Torso (Dark Navy Suit) -->
+  <path d="M 240 114 C 248 110, 256 112, 258 126 L 254 148 L 242 148 Z" fill="#1e1b4b"/>
+  <!-- Arm holding Microphone -->
+  <path d="M 244 120 L 230 128 L 222 126" stroke="#1e1b4b" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <!-- Microphone -->
+  <rect x="216" y="122" width="6" height="12" rx="3" fill="#cbd5e1"/>
+  <!-- Head & Hair -->
+  <circle cx="248" cy="104" r="7.5" fill="#fbcfe8"/>
+  <path d="M 241 104 C 241 96, 252 94, 256 100 C 257 104, 252 106, 248 106 Z" fill="#6d28d9"/>
+</svg>

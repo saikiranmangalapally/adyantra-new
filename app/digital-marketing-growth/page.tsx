@@ -3,6 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
+import { DomainIcon } from "@/components/icons/DomainIcons";
+import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
+import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
+import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
 
 export default function DigitalMarketingGrowthPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -13,7 +18,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 1,
       category: "marketing",
-      img: "/assets/img/service/ppc-3d.png",
+      img: "/assets/img/service/illustrations/service-google-ppc.svg",
       title: "Performance Marketing",
       desc: "Design and manage measurable paid acquisition systems across major advertising platforms (Google, Meta, LinkedIn, PMax, Retargeting).",
       href: "/performance-marketing",
@@ -21,7 +26,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 2,
       category: "marketing",
-      img: "/assets/img/service/seo-3d.png",
+      img: "/assets/img/service/illustrations/service-seo.svg",
       title: "SEO & Organic Growth",
       desc: "Technical SEO, On-Page, Off-Page, Local Map Packs, E-commerce SEO, and authority building for high-intent organic search.",
       href: "/seo",
@@ -29,7 +34,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 3,
       category: "marketing",
-      img: "/assets/img/service/smm-3d.png",
+      img: "/assets/img/service/illustrations/service-social-meta.svg",
       title: "Social Media & Meta Ads",
       desc: "Scale brand visibility across Instagram, Facebook, and LinkedIn with viral Reels, Shorts, Paid Social, and Community Growth.",
       href: "/social-media-marketing",
@@ -37,7 +42,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 4,
       category: "marketing",
-      img: "/assets/img/service/pr-3d.png",
+      img: "/assets/img/service/illustrations/service-email-workflows.svg",
       title: "Content Marketing",
       desc: "Position content as an acquisition and conversion asset: SEO Content, Blog Assets, Copywriting, and AI-assisted repurposing.",
       href: "/ai-content-automation",
@@ -45,7 +50,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 5,
       category: "marketing",
-      img: "/assets/img/service/email-3d.png",
+      img: "/assets/img/service/illustrations/service-email-workflows.svg",
       title: "Email & Lead Nurturing",
       desc: "Automate the complete customer lifecycle with Drip Campaigns, Welcome Sequences, Onboarding, and Retention workflows.",
       href: "/marketing-automation",
@@ -53,7 +58,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 6,
       category: "automation",
-      img: "/assets/img/service/ai-3d.png",
+      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
       title: "AI Marketing & Automation",
       desc: "Turn repetitive operations into automated systems: AI Lead Gen, Sales Automation, Content Pipelines, Chatbots, n8n, Make & Zapier.",
       href: "/ai-automation",
@@ -61,7 +66,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 7,
       category: "design",
-      img: "/assets/img/service/pr-3d.png",
+      img: "/assets/img/service/illustrations/service-social-meta.svg",
       title: "Video & Creative Marketing",
       desc: "Transform 1 core creative asset into Instagram Reels, Meta Ads, YouTube Shorts, and Motion Graphics for maximum reach.",
       href: "/ai-video-marketing",
@@ -69,7 +74,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 8,
       category: "design",
-      img: "/assets/img/service/webdev-3d.png",
+      img: "/assets/img/service/illustrations/service-web-development.svg",
       title: "Web Design & Development",
       desc: "We build digital experiences that turn traffic into action. Custom Next.js, React, Landing Pages, and CRO engineering.",
       href: "/web-design-development",
@@ -77,7 +82,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 9,
       category: "marketing",
-      img: "/assets/img/service/ecommerce-3d.png",
+      img: "/assets/img/service/illustrations/service-ecommerce.svg",
       title: "E-Commerce Growth",
       desc: "Amazon PPC, Flipkart Marketing, Shopify Custom Storefronts, Google Shopping, D2C Marketing, and Cart Recovery.",
       href: "/ecommerce-marketing",
@@ -85,7 +90,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 10,
       category: "marketing",
-      img: "/assets/img/service/affiliate-3d.png",
+      img: "/assets/img/service/illustrations/service-affiliate-partners.svg",
       title: "Influencer & Affiliate Growth",
       desc: "Creator discovery, Instagram & YouTube campaigns, partner recruitment, referral tracking, and performance commission models.",
       href: "/influencer-marketing",
@@ -93,7 +98,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 11,
       category: "marketing",
-      img: "/assets/img/service/pr-3d.png",
+      img: "/assets/img/service/illustrations/service-pr-reputation.svg",
       title: "PR & Digital Reputation",
       desc: "Build visibility, build authority, and protect brand reputation through press releases, media outreach, and search control.",
       href: "/branding-creative-services",
@@ -101,10 +106,42 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 12,
       category: "automation",
-      img: "/assets/img/service/seo-3d.png",
+      img: "/assets/img/service/illustrations/service-analytics.svg",
       title: "Analytics & Marketing Intelligence",
       desc: "GA4, Google Tag Manager, Meta CAPI, Server Attribution, Looker Studio Dashboards, and Live Marketing Command Centers.",
       href: "/analytics-reporting",
+    },
+    {
+      id: 13,
+      category: "marketing",
+      img: "/assets/img/service/illustrations/service-lead-generation.svg",
+      title: "Lead Generation Systems",
+      desc: "Capture, verify, and route high-intent leads automatically with scoring models and instant qualification.",
+      href: "/lead-generation",
+    },
+    {
+      id: 14,
+      category: "automation",
+      img: "/assets/img/service/illustrations/service-crm-automation.svg",
+      title: "CRM Automation",
+      desc: "Eliminate manual data entry and auto-sync records across HubSpot, Zoho, and Salesforce pipelines.",
+      href: "/crm-automation",
+    },
+    {
+      id: 15,
+      category: "automation",
+      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
+      title: "AI Agent Development",
+      desc: "Build autonomous multi-agent systems for tool use, API calling, long-term memory, and task execution.",
+      href: "/ai-agent-development",
+    },
+    {
+      id: 16,
+      category: "automation",
+      img: "/assets/img/service/illustrations/service-social-meta.svg",
+      title: "WhatsApp & Sales Follow-Up",
+      desc: "Official WhatsApp Cloud API sequences for automated appointments, cart recovery, and deal closings.",
+      href: "/whatsapp-crm",
     },
   ];
 
@@ -119,7 +156,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "PERFORMANCE",
       label: "PERFORMANCE",
       color: "#ef5b52",
-      img: "/assets/img/service/ppc-3d.png",
+      img: "/assets/img/service/vectors/service-google-ppc.svg?v=3",
       badge: "Paid Acquisition & High-ROAS",
       desc: "Design and scale predictive paid acquisition across Google Ads, Meta Ads, and LinkedIn B2B with multi-touch server attribution.",
       sub: ["Google Ads (Search & PMax)", "Meta & Instagram Retargeting", "LinkedIn B2B Conversion Funnels", "Conversion API (CAPI) Tracking"],
@@ -134,7 +171,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "SEO",
       label: "SEO & ORGANIC",
       color: "#7b4bf7",
-      img: "/assets/img/service/seo-3d.png",
+      img: "/assets/img/service/vectors/service-seo.svg?v=3",
       badge: "Search Authority & Organic Traffic",
       desc: "Dominate Google search with technical site architecture audits, programmatic keyword ranking, and authoritative backlink distribution.",
       sub: ["Technical Crawl & Speed Audits", "High-Intent Keyword Clusters", "E-commerce & Local Map Pack SEO", "High-Authority Digital PR Links"],
@@ -149,7 +186,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "SOCIAL",
       label: "SOCIAL & CREATIVE",
       color: "#de358d",
-      img: "/assets/img/service/smm-3d.png",
+      img: "/assets/img/service/vectors/service-social-meta.svg?v=3",
       badge: "Viral Reach & Brand Engagement",
       desc: "Capture high-velocity attention with platform-native Instagram Reels, YouTube Shorts, viral paid social ads, and community engagement.",
       sub: ["Viral Reels & Shorts Strategy", "Performance Ad Creative Testing", "Community Management & DMs", "Creator & Influencer Seeding"],
@@ -164,7 +201,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "CONTENT",
       label: "CONTENT ENGINE",
       color: "#3b82f6",
-      img: "/assets/img/service/pr-3d.png",
+      img: "/assets/img/service/vectors/service-content-automation.svg?v=3",
       badge: "Acquisition & Conversion Storytelling",
       desc: "Position high-value content as an inbound revenue engine: thought leadership articles, case studies, conversion copy, and multi-format repurposing.",
       sub: ["SEO Pillar Content Assets", "Direct-Response Conversion Copy", "Multi-Format Video Repurposing", "AI-Assisted Editorial Workflows"],
@@ -179,7 +216,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "AI",
       label: "AI & AUTOMATION",
       color: "#10b981",
-      img: "/assets/img/service/ai-3d.png",
+      img: "/assets/img/service/vectors/service-ai-systems.svg?v=3",
       badge: "Autonomous Agents & System Sync",
       desc: "Turn repetitive customer touchpoints into automated revenue engines: custom WhatsApp AI chatbots, automated lead qualification, and CRM synchronization.",
       sub: ["24/7 WhatsApp AI Chatbots", "Instant CRM Enrichment & Sync", "n8n, Make & Zapier Workflows", "Autonomous SDR Appointment Bots"],
@@ -194,7 +231,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "CREATIVE",
       label: "BRAND & CREATIVE",
       color: "#f59e0b",
-      img: "/assets/img/service/pr-3d.png",
+      img: "/assets/img/service/vectors/service-video.svg?v=3",
       badge: "High-Converting Design Assets",
       desc: "Engineered visual identities, motion graphics, 3D assets, and high-CTR advertising collateral built specifically to drive user action.",
       sub: ["High-CTR Ad Creative Packs", "3D Modeling & Motion Graphics", "Brand Identity Guidelines", "Landing Page Visual Design"],
@@ -209,7 +246,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "WEB",
       label: "WEB & APPS",
       color: "#6366f1",
-      img: "/assets/img/service/webdev-3d.png",
+      img: "/assets/img/service/vectors/service-web-development.svg?v=3",
       badge: "Modern Next.js & React Engineering",
       desc: "Fast, responsive web applications engineered with Next.js, React, and server-side optimization to convert traffic into paying customers.",
       sub: ["Custom Next.js Web Platforms", "Conversion Rate Optimization (CRO)", "Interactive Calculators & Portals", "Sub-Second Global Page Speed"],
@@ -224,7 +261,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "ECOMMERCE",
       label: "E-COMMERCE",
       color: "#ec4899",
-      img: "/assets/img/service/ecommerce-3d.png",
+      img: "/assets/img/service/vectors/service-ecommerce.svg?v=3",
       badge: "Storefront CRO & Marketplace Scale",
       desc: "Scale direct-to-consumer and marketplace sales with custom Shopify storefronts, Amazon & Flipkart PPC, and abandoned checkout recovery.",
       sub: ["Custom Shopify Storefronts", "Amazon & Marketplace PPC", "Automated Cart Abandonment Drips", "1-Click Frictionless Checkout"],
@@ -239,7 +276,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "ANALYTICS",
       label: "ANALYTICS & INTEL",
       color: "#06b6d4",
-      img: "/assets/img/service/seo-3d.png",
+      img: "/assets/img/service/vectors/service-crm-automation.svg?v=3",
       badge: "Full-Funnel Data Attribution",
       desc: "Eliminate blind spots with Google Analytics 4, Tag Manager, Meta CAPI server events, Looker Studio dashboards, and executive reporting.",
       sub: ["GA4 & Server Tag Manager", "Meta & Google CAPI Integration", "Multi-Touch Attribution Models", "Real-Time Executive Dashboards"],
@@ -254,7 +291,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "PR",
       label: "PR & REPUTATION",
       color: "#8b5cf6",
-      img: "/assets/img/service/affiliate-3d.png",
+      img: "/assets/img/service/vectors/service-pr-reputation.svg?v=3",
       badge: "Media Distribution & Digital Authority",
       desc: "Build credibility and digital market leadership through targeted tier-1 media placements, press releases, and executive reputation management.",
       sub: ["Tier-1 Media Distribution", "Executive Thought Leadership", "Brand Reputation Monitoring", "SEO-Driven Digital PR Assets"],
@@ -345,114 +382,14 @@ export default function DigitalMarketingGrowthPage() {
               </div>
             </div>
 
-            {/* Waveform Stage */}
-            <div className="ady-waveform-stage">
-              <svg className="ady-wave-svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
-                <path
-                  id="adyWaveformPath"
-                  className="ady-wave-curve"
-                  d="M 0,160 C 45,160 75,90 118,90 C 160,90 205,168 258,170 C 285,171 305,235 330,235 C 355,235 375,215 395,195 C 415,175 425,95 450,95 C 490,95 540,165 609,165 C 678,165 725,95 770,95 C 805,95 835,130 868,145 C 885,153 895,235 915,235 C 935,235 955,140 970,75 C 985,75 1030,115 1088,115 C 1125,115 1165,125 1200,125"
-                />
-                <circle className="ady-pulse-dot" r="4.5">
-                  <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
-                    <mpath href="#adyWaveformPath" />
-                  </animateMotion>
-                </circle>
-              </svg>
-
-              {/* Badges */}
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "9.83%", top: "30.0%" }} title="Google & Meta Ads">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="18" cy="5" r="3" />
-                  <circle cx="6" cy="12" r="3" />
-                  <circle cx="18" cy="19" r="3" />
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "21.5%", top: "56.7%" }} title="Web App & Software">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "32.9%", top: "65.0%" }} title="ROAS & Performance">
-                <span className="ady-badge-dollar">$</span>
-              </div>
-
-              <div className="ady-center-cta-wrap" style={{ left: "50.75%", top: "55.0%" }}>
-                <Link href="/contact" className="ady-center-pill-btn">
-                  <span>Contact Us</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "72.3%", top: "48.3%" }} title="AI & CRM Workflows">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="16" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </div>
-
-              <div className="ady-wave-glow-dot" style={{ left: "80.8%", top: "25.0%" }} />
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "90.67%", top: "38.3%" }} title="Analytics & Revenue">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </div>
-            </div>
-
-            {/* AI Agent Interactive Widget */}
-            <aside className="ady-ai-widget">
-              <div className="ady-widget-glow" />
-              <div className="ady-widget-top">
-                <div className="ady-widget-avatar">
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Adyantra AI Guide" />
-                </div>
-                <p className="ady-widget-text">Ask our AI Agent to explore our approach in seconds</p>
-              </div>
-              <Link href="/about" className="ady-widget-link">
-                <span>Learn Our Approach</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </Link>
-            </aside>
+            {/* Waveform Stage with Unbroken Luminous Curve, Floating Squircles & AI Assistant */}
+            <HeroWaveformStage />
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 2: STATS BRIDGE BAR (HOME PAGE PATTERN) ═══════════════════ */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">06+</p>
-            <p className="ady-stat-label">Years of Industry Expertise</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">50+</p>
-            <p className="ady-stat-label">High-Growth Brands Scaled</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">100%</p>
-            <p className="ady-stat-label">In-House Engineering</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Zero</p>
-            <p className="ady-stat-label">Outsourced Work</p>
-          </div>
-        </div>
-      </div>
+      {/* ═══════════════════ SECTION 2: SERVICES SCROLLING RIBBON ═══════════════════ */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SECTION 3: SERVICES GRID WITH TABS (HOME PAGE CARDS) ═══════════════════ */}
       <section className="section services-ref-section" id="services-grid" aria-labelledby="services-ref-title">
@@ -514,27 +451,39 @@ export default function DigitalMarketingGrowthPage() {
                 10: "influencer",
                 11: "pr",
                 12: "analytics",
+                13: "leads",
+                14: "crm",
+                15: "ai-agents",
+                16: "whatsapp",
               };
               const cardId = anchorMap[item.id] || `service-card-${item.id}`;
 
               return (
                 <article key={item.id} id={cardId} className="service-ref-card scroll-mt-28" data-category={item.category}>
-                <div className="service-ref-card__visual">
-                  <Link href={item.href} className="block">
-                    <img src={item.img} alt={item.title} loading="lazy" />
-                  </Link>
-                </div>
-                <h3 className="service-ref-card__title">
-                  <Link href={item.href}>{item.title}</Link>
-                </h3>
-                <p className="service-ref-card__desc">{item.desc}</p>
-                <div className="service-ref-card__action">
-                  <Link href={item.href} className="service-ref-explore-btn">
-                    Explore Service <span className="explore-btn-icon">»</span>
-                  </Link>
-                </div>
-              </article>
-            );
+                  {/* 1. Image (First - Large Visual Stage) */}
+                  <div className="service-ref-card__visual">
+                    <Link href={item.href} className="block">
+                      <img src={item.img} alt={item.title} loading="lazy" />
+                    </Link>
+                  </div>
+
+                  {/* 2. Title (Second) */}
+                  <h3 className="service-ref-card__title">
+                    <Link href={item.href}>{item.title}</Link>
+                  </h3>
+
+                  {/* 3. Subtitle / Content (Third) */}
+                  <p className="service-ref-card__desc">{item.desc}</p>
+
+                  {/* 4. Button (Fourth - Read more pill button) */}
+                  <div className="service-ref-card__action">
+                    <Link href={item.href} className="service-ref-readmore-btn">
+                      <span>Read more</span>
+                      <span className="readmore-btn-arrow">&rarr;</span>
+                    </Link>
+                  </div>
+                </article>
+              );
           })}
           </div>
         </div>
@@ -561,7 +510,7 @@ export default function DigitalMarketingGrowthPage() {
 
             <div className="expert-tablet-card">
               <Image
-                src="/assets/img/service/service-header-tablet.jpg"
+                src="/assets/img/service/service-header-tablet.svg"
                 alt="Adyantra Strategic Performance Dashboard"
                 width={800}
                 height={500}
@@ -587,7 +536,7 @@ export default function DigitalMarketingGrowthPage() {
               <div className="expert-dual-images">
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-collab-team.jpg"
+                    src="/assets/img/service/service-collab-team.svg"
                     alt="Adyantra Growth Strategy Collaboration"
                     width={600}
                     height={400}
@@ -596,7 +545,7 @@ export default function DigitalMarketingGrowthPage() {
                 </div>
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-analytics-review.jpg"
+                    src="/assets/img/service/service-analytics-review.svg"
                     alt="Adyantra Data & Campaign Optimization"
                     width={600}
                     height={400}
@@ -764,7 +713,7 @@ export default function DigitalMarketingGrowthPage() {
               {/* Card 2: Transform CTA Card */}
               <div className="expert-cta-card">
                 <Image
-                  src="/assets/img/service/service-cta-transform.jpg"
+                  src="/assets/img/service/service-cta-transform.svg"
                   alt="Transform Your Business with Adyantra"
                   fill
                   className="expert-cta-bg-img"
@@ -847,35 +796,35 @@ export default function DigitalMarketingGrowthPage() {
           <div className="domains-marquee-track">
             <div className="domain-pill-card">
               <span className="domain-pill-text">Education &amp; Academies</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=11173&format=png&color=7b4bf7" width="20" height="20" alt="Education" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=21815&format=png&color=7b4bf7" width="20" height="20" alt="Fashion" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=87&format=png&color=7b4bf7" width="20" height="20" alt="NGOs" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=53373&format=png&color=7b4bf7" width="20" height="20" alt="Enterprises" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">IT &amp; Software Enterprises</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=2778&format=png&color=7b4bf7" width="20" height="20" alt="Software" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Real Estate &amp; Housing</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=73&format=png&color=7b4bf7" width="20" height="20" alt="Real Estate" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">Healthcare &amp; Clinics</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=14094&format=png&color=7b4bf7" width="20" height="20" alt="Healthcare" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
             </div>
             <div className="domain-pill-card">
               <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
-              <span className="domain-pill-icon"><img src="https://img.icons8.com/?size=48&id=9671&format=png&color=7b4bf7" width="20" height="20" alt="E-Commerce" /></span>
+              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
             </div>
           </div>
         </div>
@@ -897,10 +846,10 @@ export default function DigitalMarketingGrowthPage() {
             </Link>
           </div>
           <div className="stat-row" aria-label="Adyantra results">
-            <div><b>6+</b><span>Years industry experience</span></div>
-            <div><b>200+</b><span>Successful projects executed</span></div>
-            <div><b>50+</b><span>Happy client partners</span></div>
-            <div><b>98%</b><span>Client retention rate</span></div>
+            <div><b>06+</b><span>Years of Industry Expertise</span></div>
+            <div><b>50+</b><span>High-Growth Brands Scaled</span></div>
+            <div><b>100%</b><span>In-House Engineering</span></div>
+            <div><b>Zero</b><span>Outsourced Work</span></div>
           </div>
         </div>
       </section>
@@ -940,54 +889,8 @@ export default function DigitalMarketingGrowthPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (EXACT MOCKUP MATCH) ═══════════════════ */}
-      <section className="section expertise" id="advantage" aria-labelledby="expertise-title">
-        <div className="shell split-layout">
-          <div className="expertise-visual">
-            <div className="expertise-visual__orb" />
-            <img
-              src="/assets/img/team/team-3d.png"
-              alt="Work Directly with Senior Engineers & Growth Strategists"
-              loading="lazy"
-            />
-            <div className="proof-chip proof-chip--one">
-              <b>DIRECT ACCESS</b>
-              <span>Senior tech leads</span>
-            </div>
-            <div className="proof-chip proof-chip--two">
-              <b>24/7 TUNING</b>
-              <span>Live attribution</span>
-            </div>
-            <div className="proof-chip proof-chip--three">
-              <b>100% IN-HOUSE</b>
-              <span>Zero outsourcing</span>
-            </div>
-            <div className="proof-chip proof-chip--four">
-              <b>TAILORED GROWTH</b>
-              <span>+340% Avg ROAS</span>
-            </div>
-          </div>
-          <div className="copy-block">
-            <p className="advantage-kicker">OUR TEAM &amp; EXPERTISE</p>
-            <h2 id="expertise-title" className="advantage-exact-heading">
-              Work Directly with Senior <br />
-              Engineers <em>&amp; Growth <br />Strategists</em>
-            </h2>
-            <p className="advantage-exact-desc">
-              We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
-            </p>
-            <ul className="check-list-grid">
-              <li>100% In-House Execution</li>
-              <li>Tailored Growth Strategies</li>
-              <li>Direct Senior Technical Access</li>
-              <li>Continuous Campaign Optimization</li>
-            </ul>
-            <Link className="advantage-leadership-link" href="/about">
-              Meet our leadership <b>&rarr;</b>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (OUR TEAM & EXPERTISE) ═══════════════════ */}
+      <OurTeamExpertiseSection />
 
       {/* ═══════════════════ SECTION 11: CLIENT REVIEWS (HOME PAGE MARQUEE) ═══════════════════ */}
       <section className="section reviews-ref-section" id="testimonials" aria-labelledby="reviews-ref-title">
@@ -1012,7 +915,7 @@ export default function DigitalMarketingGrowthPage() {
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -1030,7 +933,7 @@ export default function DigitalMarketingGrowthPage() {
                   <div className="review-ref-avatar avatar--indigo">PK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pramode K.</h3>
-                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                    <span className="review-ref-role-pill">Enterprise Business &bull; Owner</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -1121,7 +1024,7 @@ export default function DigitalMarketingGrowthPage() {
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -1139,7 +1042,7 @@ export default function DigitalMarketingGrowthPage() {
                   <div className="review-ref-avatar avatar--indigo">PK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pramode K.</h3>
-                    <span className="review-ref-role-pill">Enterprise Busi... &bull; Ow...</span>
+                    <span className="review-ref-role-pill">Enterprise Business &bull; Owner</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -1189,7 +1092,10 @@ export default function DigitalMarketingGrowthPage() {
             <p>Connect your marketing, technology and automation into one scalable system.</p>
             <div className="contact-method">
               <span>
-                <img src="https://img.icons8.com/?size=48&id=63598&format=png&color=ef5b52" width="22" height="22" alt="Email" style={{ verticalAlign: "middle" }} />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: "middle" }}>
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
               </span>
               <div>
                 <b>Email support</b>
@@ -1198,7 +1104,9 @@ export default function DigitalMarketingGrowthPage() {
             </div>
             <div className="contact-method">
               <span>
-                <img src="https://img.icons8.com/?size=48&id=9659&format=png&color=ef5b52" width="22" height="22" alt="Phone" style={{ verticalAlign: "middle" }} />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: "middle" }}>
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
               </span>
               <div>
                 <b>Direct phone</b>

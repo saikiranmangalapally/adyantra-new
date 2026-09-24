@@ -3,6 +3,13 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
+import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
+import { ExecutionRoadmapVisual, DataAttributionVisual } from "@/components/sections/ExecutionAndAttributionVisuals";
+import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
+import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
+import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
+import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
 
 export interface ServicePageData {
   hero: {
@@ -76,6 +83,33 @@ function getServiceStats(badge: string, customStats?: { val: string; label: stri
     { val: "100%", label: "In-House Engineering" },
     { val: "Zero", label: "Outsourced Work" },
   ];
+}
+
+function getServiceIllustration(img?: string): string {
+  if (!img) return "/assets/img/service/illustrations/service-seo.svg";
+  if (img.includes("/illustrations/")) return img;
+  const filename = img.split("/").pop()?.split("?")[0] || "";
+  const mapping: Record<string, string> = {
+    "service-google-ppc.svg": "/assets/img/service/illustrations/service-google-ppc.svg",
+    "service-seo.svg": "/assets/img/service/illustrations/service-seo.svg",
+    "service-social-meta.svg": "/assets/img/service/illustrations/service-social-meta.svg",
+    "service-email-workflows.svg": "/assets/img/service/illustrations/service-email-workflows.svg",
+    "service-web-development.svg": "/assets/img/service/illustrations/service-web-development.svg",
+    "service-ecommerce.svg": "/assets/img/service/illustrations/service-ecommerce.svg",
+    "service-pr-reputation.svg": "/assets/img/service/illustrations/service-pr-reputation.svg",
+    "service-ai-chatbots.svg": "/assets/img/service/illustrations/service-ai-chatbots.svg",
+    "service-affiliate-partners.svg": "/assets/img/service/illustrations/service-affiliate-partners.svg",
+    "service-ai-systems.svg": "/assets/img/service/illustrations/service-ai-chatbots.svg",
+    "service-content-automation.svg": "/assets/img/service/illustrations/service-email-workflows.svg",
+    "service-customer-support.svg": "/assets/img/service/illustrations/service-ai-chatbots.svg",
+    "service-appointment-booking.svg": "/assets/img/service/illustrations/service-email-workflows.svg",
+    "service-lead-generation.svg": "/assets/img/service/illustrations/service-lead-generation.svg",
+    "service-crm-automation.svg": "/assets/img/service/illustrations/service-crm-automation.svg",
+    "service-analytics.svg": "/assets/img/service/illustrations/service-analytics.svg",
+    "service-video.svg": "/assets/img/service/illustrations/service-social-meta.svg",
+    "service-audit-strategy.svg": "/assets/img/service/illustrations/service-seo.svg",
+  };
+  return mapping[filename] || "/assets/img/service/illustrations/service-seo.svg";
 }
 
 export default function ServicePageTemplate({ data }: ServicePageTemplateProps) {
@@ -164,104 +198,14 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
               </div>
             </div>
 
-            {/* Waveform Stage */}
-            <div className="ady-waveform-stage">
-              <svg className="ady-wave-svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
-                <path
-                  id="adyWaveformPath"
-                  className="ady-wave-curve"
-                  d="M 0,160 C 45,160 75,90 118,90 C 160,90 205,168 258,170 C 285,171 305,235 330,235 C 355,235 375,215 395,195 C 415,175 425,95 450,95 C 490,95 540,165 609,165 C 678,165 725,95 770,95 C 805,95 835,130 868,145 C 885,153 895,235 915,235 C 935,235 955,140 970,75 C 985,75 1030,115 1088,115 C 1125,115 1165,125 1200,125"
-                />
-                <circle className="ady-pulse-dot" r="4.5">
-                  <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
-                    <mpath href="#adyWaveformPath" />
-                  </animateMotion>
-                </circle>
-              </svg>
-
-              {/* Badges */}
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "9.83%", top: "30.0%" }} title="Google & Meta Ads">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="18" cy="5" r="3" />
-                  <circle cx="6" cy="12" r="3" />
-                  <circle cx="18" cy="19" r="3" />
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "21.5%", top: "56.7%" }} title="Web App & Software">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </div>
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "32.9%", top: "65.0%" }} title="ROAS & Performance">
-                <span className="ady-badge-dollar">$</span>
-              </div>
-
-              <div className="ady-center-cta-wrap" style={{ left: "50.75%", top: "55.0%" }}>
-                <Link href="#contact" className="ady-center-pill-btn">
-                  <span>Contact Us</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-
-              <div className="ady-float-badge ady-badge-white" style={{ left: "72.3%", top: "48.3%" }} title="AI & CRM Workflows">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="16" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </div>
-
-              <div className="ady-wave-glow-dot" style={{ left: "80.8%", top: "25.0%" }} />
-
-              <div className="ady-float-badge ady-badge-coral" style={{ left: "90.67%", top: "38.3%" }} title="Analytics & Revenue">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </div>
-            </div>
-
-            {/* AI Agent Interactive Widget */}
-            <aside className="ady-ai-widget">
-              <div className="ady-widget-glow" />
-              <div className="ady-widget-top">
-                <div className="ady-widget-avatar">
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Adyantra AI Guide" />
-                </div>
-                <p className="ady-widget-text">Ask our AI Agent to explore our approach in seconds</p>
-              </div>
-              <Link href="/about" className="ady-widget-link">
-                <span>Learn Our Approach</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </Link>
-            </aside>
+            {/* Waveform Stage with Unbroken Luminous Curve, Floating Squircles & AI Assistant */}
+            <HeroWaveformStage />
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 2: STATS BRIDGE BAR ═══════════════════ */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          {stats.map((item, idx) => (
-            <div key={idx} className="ady-stat-item">
-              <p className="ady-stat-value">{item.val}</p>
-              <p className="ady-stat-label">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* ═══════════════════ SECTION 2: SERVICES SCROLLING RIBBON ═══════════════════ */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SECTION 3: SERVICES GRID WITH TABS ═══════════════════ */}
       <section className="section services-ref-section" id="services-grid" aria-labelledby="services-ref-title">
@@ -290,18 +234,26 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
           <div className="services-ref-grid services-ref-grid--9">
             {filteredSubServices.map((item, idx) => (
               <article key={idx} className="service-ref-card scroll-mt-28">
+                {/* 1. Image (First - Large Visual Stage) */}
                 <div className="service-ref-card__visual">
                   <Link href={item.href || "#contact"} className="block">
-                    <img src={item.img || "/assets/img/service/ai-3d.png"} alt={item.title} loading="lazy" />
+                    <img src={getServiceIllustration(item.img)} alt={item.title} loading="lazy" />
                   </Link>
                 </div>
+
+                {/* 2. Title (Second) */}
                 <h3 className="service-ref-card__title">
                   <Link href={item.href || "#contact"}>{item.title}</Link>
                 </h3>
+
+                {/* 3. Subtitle / Content (Third) */}
                 <p className="service-ref-card__desc">{item.desc}</p>
+
+                {/* 4. Button (Fourth - Read more pill button) */}
                 <div className="service-ref-card__action">
-                  <Link href={item.href || "#contact"} className="service-ref-explore-btn">
-                    Explore Service <span className="explore-btn-icon">»</span>
+                  <Link href={item.href || "#contact"} className="service-ref-readmore-btn">
+                    <span>Read more</span>
+                    <span className="readmore-btn-arrow">&rarr;</span>
                   </Link>
                 </div>
               </article>
@@ -328,21 +280,14 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
               </p>
             </div>
 
-            <div className="expert-tablet-card">
-              <Image
-                src="/assets/img/service/service-header-tablet.jpg"
-                alt="Adyantra Strategic Performance Dashboard"
-                width={800}
-                height={500}
-                className="expert-tablet-img"
-                priority
-              />
+            <div className="expert-tablet-card w-full">
+              <ExecutiveTabletMockup title={data.about.title} />
             </div>
           </div>
 
           {/* Main Content Split Grid: Left Content (65%) & Right Sidebar (35%) */}
           <div className="expert-split-grid">
-            {/* Left Column: Overview + Dual Photos + What's Included */}
+            {/* Left Column: Overview + Dual Visuals + What's Included */}
             <div className="expert-content-col">
               {/* Overview Block */}
               <div className="expert-overview-block">
@@ -352,26 +297,10 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                 </p>
               </div>
 
-              {/* Two Side-by-Side Images */}
-              <div className="expert-dual-images">
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-collab-team.jpg"
-                    alt="Adyantra Growth Strategy Collaboration"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-analytics-review.jpg"
-                    alt="Adyantra Data & Campaign Optimization"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
+              {/* Two Side-by-Side Visuals */}
+              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ExecutionRoadmapVisual />
+                <DataAttributionVisual />
               </div>
 
               {/* What's Included Box */}
@@ -409,7 +338,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                     <li key={idx} className="expert-recent-item">
                       <span className="expert-check-icon">
                         <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                          <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
+                          <circle cx="10" cy="10" r="9" stroke="#ef5b52" strokeWidth="2" fill="rgba(239, 91, 82, 0.15)" />
                           <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </span>
@@ -421,12 +350,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
 
               {/* Card 2: Transform CTA Card */}
               <div className="expert-cta-card">
-                <Image
-                  src="/assets/img/service/service-cta-transform.jpg"
-                  alt="Transform Your Business with Adyantra"
-                  fill
-                  className="expert-cta-bg-img"
-                />
+                <TransformCtaBannerVisual />
                 <div className="expert-cta-overlay" />
                 <div className="expert-cta-content">
                   <h4 className="expert-cta-heading">
@@ -555,10 +479,10 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
             </Link>
           </div>
           <div className="stat-row" aria-label="Adyantra results">
-            <div><b>6+</b><span>Years industry experience</span></div>
-            <div><b>200+</b><span>Successful projects executed</span></div>
-            <div><b>50+</b><span>Happy client partners</span></div>
-            <div><b>98%</b><span>Client retention rate</span></div>
+            <div><b>06+</b><span>Years of Industry Expertise</span></div>
+            <div><b>50+</b><span>High-Growth Brands Scaled</span></div>
+            <div><b>100%</b><span>In-House Engineering</span></div>
+            <div><b>Zero</b><span>Outsourced Work</span></div>
           </div>
         </div>
       </section>
@@ -585,54 +509,8 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
         </div>
       </section>
 
-      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (EXACT MOCKUP MATCH) ═══════════════════ */}
-      <section className="section expertise" id="advantage" aria-labelledby="expertise-title">
-        <div className="shell split-layout">
-          <div className="expertise-visual">
-            <div className="expertise-visual__orb" />
-            <img
-              src="/assets/img/team/team-3d.png"
-              alt="Work Directly with Senior Engineers & Growth Strategists"
-              loading="lazy"
-            />
-            <div className="proof-chip proof-chip--one">
-              <b>DIRECT ACCESS</b>
-              <span>Senior tech leads</span>
-            </div>
-            <div className="proof-chip proof-chip--two">
-              <b>24/7 TUNING</b>
-              <span>Live attribution</span>
-            </div>
-            <div className="proof-chip proof-chip--three">
-              <b>100% IN-HOUSE</b>
-              <span>Zero outsourcing</span>
-            </div>
-            <div className="proof-chip proof-chip--four">
-              <b>TAILORED GROWTH</b>
-              <span>+340% Avg ROAS</span>
-            </div>
-          </div>
-          <div className="copy-block">
-            <p className="advantage-kicker">OUR TEAM &amp; EXPERTISE</p>
-            <h2 id="expertise-title" className="advantage-exact-heading">
-              Work Directly with Senior <br />
-              Engineers <em>&amp; Growth <br />Strategists</em>
-            </h2>
-            <p className="advantage-exact-desc">
-              We replace non-technical account managers with senior developers, performance marketers, and AI architects who take complete accountability for your digital performance.
-            </p>
-            <ul className="check-list-grid">
-              <li>100% In-House Execution</li>
-              <li>Tailored Growth Strategies</li>
-              <li>Direct Senior Technical Access</li>
-              <li>Continuous Campaign Optimization</li>
-            </ul>
-            <Link className="advantage-leadership-link" href="/about">
-              Meet our leadership <b>&rarr;</b>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ═══════════════════ THE ADYANTRA ADVANTAGE (OUR TEAM & EXPERTISE) ═══════════════════ */}
+      <OurTeamExpertiseSection />
 
       {/* ═══════════════════ SECTION 11: CLIENT REVIEWS MARQUEE ═══════════════════ */}
       <section className="section reviews-ref-section" id="testimonials" aria-labelledby="reviews-ref-title">
@@ -656,7 +534,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                   <div className="review-ref-avatar avatar--purple">PJ</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Pravalika J.</h3>
-                    <span className="review-ref-role-pill">Education Institu... &bull; Le...</span>
+                    <span className="review-ref-role-pill">Education Institution &bull; Leadership</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -674,7 +552,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                   <div className="review-ref-avatar avatar--coral">SK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Suresh Kumar</h3>
-                    <span className="review-ref-role-pill">Real Estate Devel... &bull; Pr...</span>
+                    <span className="review-ref-role-pill">Real Estate Developer &bull; Principal</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -692,7 +570,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                   <div className="review-ref-avatar avatar--blue">AR</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Ananya Rao</h3>
-                    <span className="review-ref-role-pill">D2C Fashion &bull; E-comme...</span>
+                    <span className="review-ref-role-pill">D2C Fashion &bull; E-commerce</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">
@@ -710,7 +588,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                   <div className="review-ref-avatar avatar--purple">VK</div>
                   <div className="review-ref-meta">
                     <h3 className="review-ref-name">Vikram K.</h3>
-                    <span className="review-ref-role-pill">B2B SaaS Founder &bull; Gro...</span>
+                    <span className="review-ref-role-pill">B2B SaaS Founder &bull; Growth Lead</span>
                   </div>
                 </div>
                 <div className="review-ref-stars" aria-label="5 out of 5 stars">

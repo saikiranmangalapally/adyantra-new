@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 
 export default function CareerPage() {
   const [activeDept, setActiveDept] = useState("all");
@@ -133,27 +134,8 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ STATS BRIDGE BAR (FLAGSHIP PATTERN) ═══════════════════ */}
-      <div className="ady-stats-bridge-bar relative z-20">
-        <div className="ady-stats-container">
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">100%</p>
-            <p className="ady-stat-label">In-House Craftsmanship</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Top 1%</p>
-            <p className="ady-stat-label">Engineering Density</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">₹1L+</p>
-            <p className="ady-stat-label">Annual Learning Budget</p>
-          </div>
-          <div className="ady-stat-item">
-            <p className="ady-stat-value">Hybrid</p>
-            <p className="ady-stat-label">Autonomy &amp; Flexibility</p>
-          </div>
-        </div>
-      </div>
+      {/* ═══════════════════ SERVICES SCROLLING SECTION ═══════════════════ */}
+      <ServicesScrollingBar />
 
       {/* ═══════════════════ SECTION 2: OPEN ROLES BOARD ═══════════════════ */}
       <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="open-roles">

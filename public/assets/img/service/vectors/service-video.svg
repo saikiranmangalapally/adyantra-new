@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="videoCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#fdf2f8"/>
+    </linearGradient>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7b4bf7"/>
+      <stop offset="50%" stop-color="#de358d"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="videoCardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Canvas Background -->
+  <rect width="380" height="200" rx="14" fill="url(#videoCanvasBg)"/>
+
+  <!-- Main Video Studio Interface Card Frame -->
+  <g transform="translate(24, 16)" filter="url(#videoCardShadow)">
+    <rect width="332" height="168" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    
+    <!-- Studio Header Bar -->
+    <path d="M 0 12 C 0 5.37, 5.37 0, 12 0 L 320 0 C 326.63 0, 332 5.37, 332 12 L 332 34 L 0 34 Z" fill="#f8fafc"/>
+    <line x1="0" y1="34" x2="332" y2="34" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Video Clapper / Play Icon -->
+    <circle cx="20" cy="17" r="8" fill="#fdf2f8"/>
+    <polygon points="18 13, 24 17, 18 21" fill="#de358d"/>
+    <text x="34" y="21" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="700" fill="#0f172a">Video &amp; Motion Creative Studio</text>
+    
+    <!-- Aspect Ratio Pills -->
+    <rect x="228" y="7" width="94" height="20" rx="4" fill="#ede9fe"/>
+    <text x="275" y="20.5" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#6d28d9" text-anchor="middle">9:16 • 16:9 • 1:1 REPURPOSE</text>
+
+    <!-- Top Left: Video Monitor Preview -->
+    <g transform="translate(16, 44)">
+      <rect width="160" height="66" rx="8" fill="#1e1b4b"/>
+      <!-- Glowing Gradient Film Scene -->
+      <rect x="3" y="3" width="154" height="60" rx="6" fill="url(#timelineGrad)" opacity="0.85"/>
+      <circle cx="80" cy="33" r="14" fill="rgba(255,255,255,0.3)" stroke="#ffffff" stroke-width="1"/>
+      <polygon points="77 27, 85 33, 77 39" fill="#ffffff"/>
+      <text x="12" y="55" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#ffffff">4K Motion Graphics</text>
+    </g>
+
+    <!-- Top Right: Metrics Display -->
+    <g transform="translate(188, 44)">
+      <rect width="128" height="66" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.8"/>
+      <text x="12" y="18" font-family="'Poppins', sans-serif" font-size="8" font-weight="600" fill="#64748b">Retention Rate</text>
+      <text x="12" y="38" font-family="'Poppins', sans-serif" font-size="16" font-weight="800" fill="#de358d">+65% Hook</text>
+      <text x="12" y="54" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#059669">10x Asset Output</text>
+    </g>
+
+    <!-- Bottom: Multi-Track Timeline Audio / Video Strips -->
+    <g transform="translate(16, 118)">
+      <rect width="300" height="38" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.8"/>
+      
+      <!-- Video Track 1 -->
+      <rect x="8" y="6" width="94" height="11" rx="3" fill="#c084fc"/>
+      <rect x="108" y="6" width="70" height="11" rx="3" fill="#f472b6"/>
+      <rect x="184" y="6" width="108" height="11" rx="3" fill="#fb923c"/>
+      
+      <!-- Audio Track 2 (Waveforms) -->
+      <rect x="8" y="21" width="140" height="11" rx="3" fill="#e2e8f0"/>
+      <rect x="154" y="21" width="138" height="11" rx="3" fill="#cbd5e1"/>
+      
+      <!-- Playhead Red Line -->
+      <line x1="120" y1="2" x2="120" y2="36" stroke="#ef4444" stroke-width="1.8"/>
+      <circle cx="120" cy="2" r="3" fill="#ef4444"/>
+    </g>
+  </g>
+</svg>

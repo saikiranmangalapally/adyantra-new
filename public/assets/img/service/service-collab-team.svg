@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCollab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8faff"/>
+      <stop offset="100%" stop-color="#f0f4fc"/>
+    </linearGradient>
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef5b52"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b4bf7"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="600" height="400" rx="20" fill="url(#bgCollab)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Subtle Header -->
+  <g transform="translate(24, 24)">
+    <rect width="180" height="28" rx="14" fill="#ede9fe" stroke="rgba(123,75,247,0.2)"/>
+    <circle cx="14" cy="14" r="4" fill="#7b4bf7"/>
+    <text x="26" y="18" fill="#7b4bf7" font-size="11" font-weight="700" font-family="'Poppins', sans-serif" letter-spacing="0.04em">CREATIVE SQUAD LAB</text>
+    <text x="200" y="19" fill="#64748b" font-size="12" font-family="'Poppins', sans-serif">Omnichannel Campaign Architecture</text>
+  </g>
+
+  <!-- Center Hub: Adyantra Strategy Core -->
+  <g transform="translate(225, 140)">
+    <rect width="150" height="110" rx="18" fill="#ffffff" stroke="#7b4bf7" stroke-width="2" filter="url(#cardShadow)"/>
+    <circle cx="75" cy="40" r="22" fill="url(#violetGrad)"/>
+    <!-- Brand Icon -->
+    <path d="M68 40 L73 34 L77 42 L82 36" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="75" y="74" fill="#0f172a" font-size="12" font-weight="700" font-family="'Poppins', sans-serif" text-anchor="middle">Strategy Engine</text>
+    <text x="75" y="90" fill="#64748b" font-size="10" font-family="'Poppins', sans-serif" text-anchor="middle">Audience Matrix</text>
+    <rect x="36" y="94" width="78" height="18" rx="9" fill="#ecfdf5" stroke="#10b981" stroke-width="0.8"/>
+    <text x="75" y="106" fill="#059669" font-size="9" font-weight="700" font-family="'Poppins', sans-serif" text-anchor="middle">Active Scaling</text>
+  </g>
+
+  <!-- Connecting Vector Curves -->
+  <!-- To Node 1 (Meta Ads) -->
+  <path d="M 225 180 C 160 180, 160 120, 150 110" fill="none" stroke="#7b4bf7" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- To Node 2 (Google PPC) -->
+  <path d="M 225 210 C 160 210, 160 280, 150 290" fill="none" stroke="#ef5b52" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- To Node 3 (Retention Drips) -->
+  <path d="M 375 180 C 440 180, 440 120, 450 110" fill="none" stroke="#0284c7" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- To Node 4 (Analytics Attribution) -->
+  <path d="M 375 210 C 440 210, 440 280, 450 290" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Left Top Node 1: Meta & Instagram Creative -->
+  <g transform="translate(24, 75)">
+    <rect width="138" height="88" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <circle cx="24" cy="24" r="10" fill="#fdf2f8"/>
+    <rect x="18" y="18" width="12" height="12" rx="3" fill="#de358d"/>
+    <text x="42" y="27" fill="#0f172a" font-size="11" font-weight="700" font-family="'Poppins', sans-serif">Meta &amp; Reels</text>
+    <text x="14" y="48" fill="#64748b" font-size="9.5" font-family="'Poppins', sans-serif">32 Creative Sets</text>
+    <rect x="14" y="56" width="60" height="18" rx="5" fill="#fdf2f8"/>
+    <text x="44" y="69" fill="#be185d" font-size="10" font-weight="700" font-family="'Poppins', sans-serif" text-anchor="middle">5.8% CTR</text>
+  </g>
+
+  <!-- Left Bottom Node 2: Google Search & PMax -->
+  <g transform="translate(24, 250)">
+    <rect width="138" height="88" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <circle cx="24" cy="24" r="10" fill="#fff1f2"/>
+    <rect x="18" y="18" width="12" height="12" rx="3" fill="#ef5b52"/>
+    <text x="42" y="27" fill="#0f172a" font-size="11" font-weight="700" font-family="'Poppins', sans-serif">Google Search</text>
+    <text x="14" y="48" fill="#64748b" font-size="9.5" font-family="'Poppins', sans-serif">High-Intent B2B</text>
+    <rect x="14" y="56" width="60" height="18" rx="5" fill="#ecfdf5"/>
+    <text x="44" y="69" fill="#059669" font-size="10" font-weight="700" font-family="'Poppins', sans-serif" text-anchor="middle">5.2x ROAS</text>
+  </g>
+
+  <!-- Right Top Node 3: Automated Retention -->
+  <g transform="translate(438, 75)">
+    <rect width="138" height="88" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <circle cx="24" cy="24" r="10" fill="#f0f9ff"/>
+    <rect x="18" y="18" width="12" height="12" rx="3" fill="#0284c7"/>
+    <text x="42" y="27" fill="#0f172a" font-size="11" font-weight="700" font-family="'Poppins', sans-serif">Email &amp; Drips</text>
+    <text x="14" y="48" fill="#64748b" font-size="9.5" font-family="'Poppins', sans-serif">Lifecycle Sync</text>
+    <rect x="14" y="56" width="60" height="18" rx="5" fill="#f0f9ff"/>
+    <text x="44" y="69" fill="#0284c7" font-size="10" font-weight="700" font-family="'Poppins', sans-serif" text-anchor="middle">48% Open</text>
+  </g>
+
+  <!-- Right Bottom Node 4: First-Party Attribution -->
+  <g transform="translate(438, 250)">
+    <rect width="138" height="88" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <circle cx="24" cy="24" r="10" fill="#ecfdf5"/>
+    <rect x="18" y="18" width="12" height="12" rx="3" fill="#10b981"/>
+    <text x="42" y="27" fill="#0f172a" font-size="11" font-weight="700" font-family="'Poppins', sans-serif">Server CAPI</text>
+    <text x="14" y="48" fill="#64748b" font-size="9.5" font-family="'Poppins', sans-serif">Zero Data Loss</text>
+    <rect x="14" y="56" width="60" height="18" rx="5" fill="#ecfdf5"/>
+    <text x="44" y="69" fill="#059669" font-size="10" font-weight="700" font-family="'Poppins', sans-serif" text-anchor="middle">100% Track</text>
+  </g>
+
+  <!-- Bottom Metric Bar -->
+  <g transform="translate(24, 354)">
+    <rect width="552" height="30" rx="8" fill="#f1f5f9"/>
+    <text x="16" y="20" fill="#475569" font-size="10.5" font-weight="600" font-family="'Poppins', sans-serif">Engine Status: All 12 Modules Synchronized in Real-Time</text>
+    <circle cx="490" cy="15" r="4" fill="#10b981"/>
+    <text x="500" y="19" fill="#059669" font-size="10" font-weight="700" font-family="'Poppins', sans-serif">99.98% SLA</text>
+  </g>
+</svg>

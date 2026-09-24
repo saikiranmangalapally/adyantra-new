@@ -71,17 +71,37 @@ export async function POST(req: Request) {
 
     const data = await req.json();
 
-    // Validate required fields
-    if (!data.name || !data.email || !data.message) {
+    // 1. Silent Honeypot Trap (blocks automated form scrapers)
+    if (data.hp_company || data.website_url) {
+      return NextResponse.json(
+        { message: "Thank you! Your message has been sent successfully." },
+        { status: 200, headers: rateLimitHeaders }
+      );
+    }
+
+    // 2. Validate required fields
+    const name = typeof data.name === "string" ? data.name.trim() : "";
+    const email = typeof data.email === "string" ? data.email.trim() : "";
+    const message = typeof data.message === "string" ? data.message.trim() : "";
+
+    if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Name, email, and message are required." },
         { status: 400, headers: rateLimitHeaders }
       );
     }
 
-    // Email format validation regex
+    // 3. String length constraints (prevents buffer/payload exhaustion)
+    if (name.length > 100 || email.length > 150 || message.length > 3000) {
+      return NextResponse.json(
+        { error: "Submission payload exceeds maximum allowed field limits." },
+        { status: 400, headers: rateLimitHeaders }
+      );
+    }
+
+    // 4. Email format validation regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
+    if (!emailRegex.test(email)) {
       return NextResponse.json(
         { error: "Please provide a valid email address." },
         { status: 400, headers: rateLimitHeaders }
@@ -89,7 +109,7 @@ export async function POST(req: Request) {
     }
 
     // Simulate network delay for realistic feedback
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 300));
 
     return NextResponse.json(
       { message: "Thank you! Your message has been sent successfully." },

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="socialCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fff8f9"/>
+      <stop offset="100%" stop-color="#fef2f4"/>
+    </linearGradient>
+    <linearGradient id="reelsVideoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#de358d"/>
+      <stop offset="100%" stop-color="#7b4bf7"/>
+    </linearGradient>
+    <filter id="socialCardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Canvas Background -->
+  <rect width="380" height="200" rx="14" fill="url(#socialCanvasBg)"/>
+  
+  <!-- Subtle decorative grid -->
+  <line x1="20" y1="56" x2="360" y2="56" stroke="#fce7f3" stroke-width="0.8" stroke-dasharray="4 4"/>
+  <line x1="20" y1="130" x2="360" y2="130" stroke="#fce7f3" stroke-width="0.8" stroke-dasharray="4 4"/>
+
+  <!-- Left: Sleek Smartphone Mockup (Reels / Meta Video) -->
+  <g transform="translate(24, 16)" filter="url(#socialCardShadow)">
+    <!-- Phone Outer Body -->
+    <rect width="100" height="168" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <!-- Phone Inner Screen -->
+    <rect x="5" y="5" width="90" height="158" rx="12" fill="url(#reelsVideoGrad)"/>
+    
+    <!-- Notch / Camera Pill -->
+    <rect x="35" y="8" width="30" height="6" rx="3" fill="rgba(0,0,0,0.3)"/>
+    
+    <!-- Play Button & Circular Glass Ring -->
+    <circle cx="50" cy="74" r="18" fill="rgba(255,255,255,0.25)" stroke="#ffffff" stroke-width="1.2"/>
+    <polygon points="46 66, 58 74, 46 82" fill="#ffffff"/>
+
+    <!-- Bottom Audio & Caption Pill -->
+    <rect x="10" y="122" width="80" height="32" rx="6" fill="rgba(15,23,42,0.55)"/>
+    <text x="16" y="136" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#ffffff">Viral Meta Creative</text>
+    <!-- Mini Equalizer Audio Bars -->
+    <rect x="16" y="142" width="3" height="7" rx="1" fill="#ffffff"/>
+    <rect x="22" y="140" width="3" height="9" rx="1" fill="#ffffff"/>
+    <rect x="28" y="143" width="3" height="6" rx="1" fill="#ffffff"/>
+    <rect x="34" y="139" width="3" height="10" rx="1" fill="#ffffff"/>
+    <rect x="40" y="142" width="3" height="7" rx="1" fill="#ffffff"/>
+
+    <!-- Floating Engagement Bubble 1: Heart Likes -->
+    <g transform="translate(70, 36)" filter="url(#socialCardShadow)">
+      <rect width="64" height="24" rx="12" fill="#ffffff" stroke="#fecdd3" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Poppins', sans-serif" font-size="11">❤️</text>
+      <text x="28" y="16" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#be123c">18.4k</text>
+    </g>
+  </g>
+
+  <!-- Right: Meta Ads Performance Dashboard Cards -->
+  <g transform="translate(142, 16)">
+    <!-- Top Header Card: Meta Partner Verification -->
+    <g filter="url(#socialCardShadow)">
+      <rect width="214" height="38" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Meta Infinity Logo Glyph -->
+      <circle cx="22" cy="19" r="10" fill="#f0f9ff"/>
+      <path d="M16 19 C16 16, 20 16, 22 19 C24 22, 28 22, 28 19 C28 16, 24 16, 22 19 C20 22, 16 22, 16 19 Z" fill="none" stroke="#0284c7" stroke-width="1.5"/>
+      <text x="38" y="23" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#0f172a">Meta &amp; Social Ads</text>
+      <!-- Active Pill -->
+      <rect x="156" y="9" width="46" height="20" rx="10" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="0.8"/>
+      <text x="179" y="22.5" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#be185d" text-anchor="middle">ACTIVE</text>
+    </g>
+
+    <!-- Main Metric 1: Blended ROAS & Multiplier -->
+    <g transform="translate(0, 48)" filter="url(#socialCardShadow)">
+      <rect width="102" height="120" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#64748b">Blended ROAS</text>
+      <text x="12" y="44" font-family="'Poppins', sans-serif" font-size="20" font-weight="800" fill="#7b4bf7">4.8x</text>
+      
+      <!-- Mini ROAS Progress Bar -->
+      <rect x="12" y="60" width="78" height="8" rx="4" fill="#f1f5f9"/>
+      <rect x="12" y="60" width="66" height="8" rx="4" fill="#7b4bf7"/>
+
+      <rect x="10" y="86" width="82" height="20" rx="5" fill="#f5f3ff"/>
+      <text x="51" y="99.5" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#6d28d9" text-anchor="middle">+340% Lift</text>
+    </g>
+
+    <!-- Main Metric 2: Creative CTR & Top 1% Badge -->
+    <g transform="translate(112, 48)" filter="url(#socialCardShadow)">
+      <rect width="102" height="120" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#64748b">Creative CTR</text>
+      <text x="12" y="44" font-family="'Poppins', sans-serif" font-size="20" font-weight="800" fill="#de358d">5.8%</text>
+      
+      <!-- Mini CTR Progress Bar -->
+      <rect x="12" y="60" width="78" height="8" rx="4" fill="#f1f5f9"/>
+      <rect x="12" y="60" width="72" height="8" rx="4" fill="#de358d"/>
+
+      <rect x="10" y="86" width="82" height="20" rx="5" fill="#fdf2f8"/>
+      <text x="51" y="99.5" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#be185d" text-anchor="middle">TOP 1% ADS</text>
+    </g>
+  </g>
+</svg>

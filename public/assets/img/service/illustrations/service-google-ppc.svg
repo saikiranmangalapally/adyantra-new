@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <!-- Subtle ambient background glow -->
+  <circle cx="160" cy="115" r="90" fill="#fffbeb" opacity="0.6"/>
+  <circle cx="100" cy="70" r="45" fill="#fef2f2" opacity="0.5"/>
+
+  <!-- Google Ads Top Result Card in Center -->
+  <g transform="translate(48, 48)">
+    <rect width="224" height="48" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="12" y="18" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#1e1b4b">Sponsored</text>
+    <text x="74" y="18" font-family="'Poppins', sans-serif" font-size="8.5" fill="#64748b">google.com/search</text>
+    
+    <!-- Top 1 Ad Badge -->
+    <rect x="156" y="6" width="56" height="18" rx="4" fill="#ef4444"/>
+    <text x="184" y="18.5" font-family="'Poppins', sans-serif" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">★ TOP AD</text>
+
+    <!-- Ad Title -->
+    <text x="12" y="36" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">Adyantra® Google Performance Max</text>
+  </g>
+
+  <!-- ROI Revenue Coins Stack on Left -->
+  <g transform="translate(56, 118)">
+    <!-- Base Coin -->
+    <ellipse cx="24" cy="46" rx="22" ry="7" fill="#d97706"/>
+    <path d="M 2 46 L 2 54 A 22 7 0 0 0 46 54 L 46 46 Z" fill="#b45309"/>
+    <ellipse cx="24" cy="54" rx="22" ry="7" fill="#f59e0b"/>
+    <!-- Coin 2 -->
+    <ellipse cx="24" cy="36" rx="22" ry="7" fill="#d97706"/>
+    <path d="M 2 36 L 2 44 A 22 7 0 0 0 46 44 L 46 36 Z" fill="#b45309"/>
+    <ellipse cx="24" cy="44" rx="22" ry="7" fill="#fbbf24"/>
+    <!-- Coin 3 -->
+    <ellipse cx="24" cy="26" rx="22" ry="7" fill="#d97706"/>
+    <path d="M 2 26 L 2 34 A 22 7 0 0 0 46 34 L 46 26 Z" fill="#b45309"/>
+    <ellipse cx="24" cy="34" rx="22" ry="7" fill="#fde047"/>
+    <text x="24" y="37" font-family="'Poppins', sans-serif" font-size="11" font-weight="900" fill="#b45309" text-anchor="middle">$</text>
+  </g>
+
+  <!-- Bar Chart with Growth Multiplier in Center -->
+  <g transform="translate(126, 114)">
+    <rect width="90" height="66" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Bars -->
+    <rect x="14" y="38" width="12" height="20" rx="3" fill="#cbd5e1"/>
+    <rect x="34" y="24" width="12" height="34" rx="3" fill="#f59e0b"/>
+    <rect x="54" y="12" width="12" height="46" rx="3" fill="#10b981"/>
+    <!-- Upward Trendline -->
+    <path d="M 18 36 L 40 22 L 60 10" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="60" cy="10" r="3" fill="#ef4444"/>
+  </g>
+
+  <!-- PPC Strategist Celebrating & Tuning Bids on Right -->
+  <!-- Legs -->
+  <path d="M 244 140 L 240 162 L 238 184" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 250 140 L 254 162 L 258 184" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Torso (Coral / Amber Shirt) -->
+  <path d="M 240 108 C 248 104, 256 106, 258 120 L 254 142 L 242 142 Z" fill="#ea580c"/>
+  <!-- Raised Arm with Thumbs Up -->
+  <path d="M 244 114 L 230 106 L 222 104" stroke="#ea580c" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <circle cx="220" cy="104" r="2.5" fill="#fbcfe8"/>
+  <!-- Head & Hair -->
+  <circle cx="248" cy="98" r="7.5" fill="#fbcfe8"/>
+  <path d="M 241 98 C 241 90, 252 88, 256 94 C 257 98, 252 100, 248 100 Z" fill="#1e1b4b"/>
+
+  <!-- Click Cursor Arrow pointing at Top Ad -->
+  <g transform="translate(180, 84)">
+    <polygon points="0,0 4,16 8,11 14,14 16,10 10,7 16,3" fill="#1e1b4b"/>
+  </g>
+</svg>

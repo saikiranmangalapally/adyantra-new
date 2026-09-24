@@ -31,10 +31,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "Our AI systems act as an army of tireless SDRs. They handle the grueling work of prospecting, initial outreach, and follow-up, delivering only pre-qualified, warm appointments directly to your calendar."
     },
     subServices: [
-      { title: "B2B Outreach Automation", desc: "Complex, branching LinkedIn and Email sequences that feel completely 1-on-1.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Intent Data Mining", desc: "Identifying companies actively searching for your specific solution via 3rd-party data providers.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Inbound Funnel Engineering", desc: "High-converting, extremely fast landing pages integrated with automated qualification chatbots.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Database Reactivation", desc: "AI-driven SMS and Email campaigns to wake up dead leads sitting dormant in your CRM.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "B2B Outreach Automation", desc: "Complex, branching LinkedIn and Email sequences that feel completely 1-on-1.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Intent Data Mining", desc: "Identifying companies actively searching for your specific solution via 3rd-party data providers.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Inbound Funnel Engineering", desc: "High-converting, extremely fast landing pages integrated with automated qualification chatbots.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Database Reactivation", desc: "AI-driven SMS and Email campaigns to wake up dead leads sitting dormant in your CRM.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Ideal Customer Profile (ICP) Modeling", description: "We define the exact mathematical parameters (revenue, headcount, tech stack) of your most profitable clients.", timeline: "Week 1" },
@@ -85,10 +85,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "We provide your media buyers with an infinite supply of data-backed, high-converting ad assets designed to beat ad fatigue and drive down customer acquisition costs."
     },
     subServices: [
-      { title: "Dynamic Static Ad Generation", desc: "Automated batch processing of product image variations, badges, and headline overlays.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "AI UGC Scripting & Video Rendering", desc: "Generative AI scripts paired with synthetic voiceovers and dynamic captions for short-form video ads.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Automated Meta/TikTok Ad Pushes", desc: "Direct API connections to upload new creative variations directly into campaign draft queues.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Creative Fatigue Monitoring", desc: "Algorithmic tracking that automatically flags declining click-through rates (CTR) and triggers new variant launches.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Dynamic Static Ad Generation", desc: "Automated batch processing of product image variations, badges, and headline overlays.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "AI UGC Scripting & Video Rendering", desc: "Generative AI scripts paired with synthetic voiceovers and dynamic captions for short-form video ads.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Automated Meta/TikTok Ad Pushes", desc: "Direct API connections to upload new creative variations directly into campaign draft queues.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Creative Fatigue Monitoring", desc: "Algorithmic tracking that automatically flags declining click-through rates (CTR) and triggers new variant launches.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Brand Kit & Guidelines Integration", description: "Ingesting your fonts, brand colors, product assets, and past top-performing ads into our design pipeline.", timeline: "Week 1" },
@@ -139,10 +139,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "Multiply your content reach by 10x. Our automated pipelines transform single blog posts or videos into dozens of tailored assets distributed across your entire digital presence."
     },
     subServices: [
-      { title: "Podcast & Video Repurposing", desc: "Automatically converting video links into SEO blog posts, Twitter threads, and LinkedIn carousels.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Programmatic Blog Publishing", desc: "Automated keyword research to published WordPress/Webflow article pipelines.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Newsletter Automation", desc: "Weekly content curation and email dispatch compiled automatically from your RSS feeds.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Social Scheduling Sync", desc: "Hands-off social media distribution pipelines connecting your CMS directly to social channels.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Podcast & Video Repurposing", desc: "Automatically converting video links into SEO blog posts, Twitter threads, and LinkedIn carousels.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Programmatic Blog Publishing", desc: "Automated keyword research to published WordPress/Webflow article pipelines.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Newsletter Automation", desc: "Weekly content curation and email dispatch compiled automatically from your RSS feeds.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Social Scheduling Sync", desc: "Hands-off social media distribution pipelines connecting your CMS directly to social channels.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Content Input & Model Fine-Tuning", description: "Training AI models on your brand's unique tone of voice and industry terminology.", timeline: "Weeks 1-2" },
@@ -193,10 +193,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "Capture prospect intent at peak moment. Our AI agents qualify leads conversationally 24/7/365, eliminating phone tag and filling your sales calendars autonomously."
     },
     subServices: [
-      { title: "Website Conversational Booking Bots", desc: "Interactive AI widgets that qualify site visitors and lock in calendar slots instantly.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "WhatsApp & SMS Booking Agents", desc: "Direct-to-phone conversational scheduling with 98% open rates and instant response times.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Round-Robin Sales Routing", desc: "Intelligent distribution of booked meetings to appropriate sales reps based on region or availability.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Automated No-Show Prevention", desc: "Multi-channel reminder sequences (Email/SMS) with 1-click reschedule links to maximize show rates.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Website Conversational Booking Bots", desc: "Interactive AI widgets that qualify site visitors and lock in calendar slots instantly.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "WhatsApp & SMS Booking Agents", desc: "Direct-to-phone conversational scheduling with 98% open rates and instant response times.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Round-Robin Sales Routing", desc: "Intelligent distribution of booked meetings to appropriate sales reps based on region or availability.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Automated No-Show Prevention", desc: "Multi-channel reminder sequences (Email/SMS) with 1-click reschedule links to maximize show rates.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Qualification Logic Mapping", description: "Defining the exact criteria required for a prospect to be deemed qualified for a sales call.", timeline: "Week 1" },
@@ -247,10 +247,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "We completely eliminate human error from your sales cycle. Our AI systems ensure that every single lead you generate receives the exact right follow-up message at the exact right time, drastically increasing your close rate."
     },
     subServices: [
-      { title: "Post-Demo Automation", desc: "Automated sequences providing case studies and answering objections immediately after a sales call.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Proposal Tracking Sequences", desc: "Triggers that fire the moment a prospect opens a PDF proposal or visits a checkout link.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "No-Show Reactivation", desc: "Aggressive SMS and Email sequences designed specifically to rebook prospects who missed their meetings.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Long-Term Nurture Flows", desc: "12-month educational sequences for prospects who aren't ready to buy today, but will be tomorrow.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Post-Demo Automation", desc: "Automated sequences providing case studies and answering objections immediately after a sales call.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Proposal Tracking Sequences", desc: "Triggers that fire the moment a prospect opens a PDF proposal or visits a checkout link.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "No-Show Reactivation", desc: "Aggressive SMS and Email sequences designed specifically to rebook prospects who missed their meetings.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Long-Term Nurture Flows", desc: "12-month educational sequences for prospects who aren't ready to buy today, but will be tomorrow.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Sales Cycle Audit", description: "We analyze your current sales process to identify exactly where leads are dropping off.", timeline: "Week 1" },
@@ -301,10 +301,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "We transform your CRM from a manual data repository into a dynamic, automated command center that drives your sales team's daily actions and provides flawless data to management."
     },
     subServices: [
-      { title: "HubSpot & Salesforce Architecture", desc: "Complete ground-up builds or complex overhauls of enterprise CRM environments.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Automated Data Enrichment", desc: "Using Clearbit or Apollo APIs to automatically fill in missing lead data (Revenue, Headcount, etc.).", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Smart Lead Routing", desc: "Round-robin assignment logic based on territory, deal size, or rep availability.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Custom Dashboard Creation", desc: "Building executive-level reports tracking Sales Velocity, Pipeline Value, and Close Rates.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "HubSpot & Salesforce Architecture", desc: "Complete ground-up builds or complex overhauls of enterprise CRM environments.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Automated Data Enrichment", desc: "Using Clearbit or Apollo APIs to automatically fill in missing lead data (Revenue, Headcount, etc.).", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Smart Lead Routing", desc: "Round-robin assignment logic based on territory, deal size, or rep availability.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Custom Dashboard Creation", desc: "Building executive-level reports tracking Sales Velocity, Pipeline Value, and Close Rates.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Process Audit & Mapping", description: "We document your exact ideal sales process and identify all manual bottlenecks.", timeline: "Weeks 1-2" },
@@ -355,10 +355,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "Drastically reduce your support costs while simultaneously improving customer satisfaction scores (CSAT). Our AI agents provide flawless, instant support around the clock."
     },
     subServices: [
-      { title: "RAG-Powered Chatbots", desc: "AI bots that dynamically read your documentation to answer complex questions conversationally.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Helpdesk Ticket Triage", desc: "AI systems that automatically categorize, tag, and route incoming email tickets to the correct department.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "E-Commerce Order Management", desc: "Bots integrated with Shopify APIs to instantly provide tracking info and process returns.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Multi-Lingual Support", desc: "Native translation capabilities allowing one bot to support customers globally in 50+ languages.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "RAG-Powered Chatbots", desc: "AI bots that dynamically read your documentation to answer complex questions conversationally.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Helpdesk Ticket Triage", desc: "AI systems that automatically categorize, tag, and route incoming email tickets to the correct department.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "E-Commerce Order Management", desc: "Bots integrated with Shopify APIs to instantly provide tracking info and process returns.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Multi-Lingual Support", desc: "Native translation capabilities allowing one bot to support customers globally in 50+ languages.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Knowledge Base Ingestion", description: "We scrape and structure all your FAQs, PDFs, and historical support tickets into a vector database.", timeline: "Weeks 1-2" },
@@ -409,10 +409,10 @@ export const aiSystemsData: Record<string, ServicePageData> = {
       description: "We build the digital infrastructure that allows high-growth D2C brands to process thousands of orders daily without inventory errors or logistical bottlenecks."
     },
     subServices: [
-      { title: "ERP & Accounting Integration", desc: "Automated syncing of Shopify orders, taxes, and fees directly into QuickBooks or Xero.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Multi-Channel Inventory Sync", desc: "Real-time stock level synchronization across Shopify, Amazon, and physical retail POS systems.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Automated Order Routing", desc: "Complex logic to route specific SKUs to different 3PLs or dropship vendors instantly.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Dynamic Product Tagging", desc: "Automated Shopify scripts to tag VIP customers, hide out-of-stock items, or apply tiered discounts.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "ERP & Accounting Integration", desc: "Automated syncing of Shopify orders, taxes, and fees directly into QuickBooks or Xero.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
+      { title: "Multi-Channel Inventory Sync", desc: "Real-time stock level synchronization across Shopify, Amazon, and physical retail POS systems.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
+      { title: "Automated Order Routing", desc: "Complex logic to route specific SKUs to different 3PLs or dropship vendors instantly.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
+      { title: "Dynamic Product Tagging", desc: "Automated Shopify scripts to tag VIP customers, hide out-of-stock items, or apply tiered discounts.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
     ],
     processSteps: [
       { title: "Logistical Audit", description: "We map out your current order flow, identifying bottlenecks and manual entry points.", timeline: "Weeks 1-2" },
