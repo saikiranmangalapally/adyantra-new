@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
+import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
+import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
+import { DomainIcon } from "@/components/icons/DomainIcons";
 
 export default function CareerPage() {
   const [activeDept, setActiveDept] = useState("all");
@@ -64,7 +67,7 @@ export default function CareerPage() {
     {
       title: "Competitive Compensation & ESOPs",
       desc: "Top-tier base salary benchmarked against top product agencies, with equity options for core engineering contributors.",
-      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=2563eb",
+      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=ef5b52",
     },
     {
       title: "Annual Learning & AI Budget",
@@ -74,12 +77,12 @@ export default function CareerPage() {
     {
       title: "Top-Tier Hardware",
       desc: "Latest Apple MacBook Pro M3/M4 or custom Linux dev workstation with dual 4K external monitors.",
-      icon: "https://img.icons8.com/?size=96&id=16412&format=png&color=2563eb",
+      icon: "https://img.icons8.com/?size=96&id=16412&format=png&color=ef5b52",
     },
     {
       title: "Flexible Hybrid Autonomy",
       desc: "Work from our modern HITEC City collaborative studio or from home. We measure outcomes, not clocked seat time.",
-      icon: "https://img.icons8.com/?size=96&id=2854&format=png&color=0284c7",
+      icon: "https://img.icons8.com/?size=96&id=2854&format=png&color=7b4bf7",
     },
   ];
 
@@ -87,49 +90,61 @@ export default function CareerPage() {
     activeDept === "all" ? jobs : jobs.filter((j) => j.dept === activeDept);
 
   return (
-    <main className="ady-main-content bg-white">
-      {/* ═══════════════════ SECTION 1: FLAGSHIP HERO ═══════════════════ */}
+    <main className="min-h-screen overflow-x-hidden">
+      {/* ═══════════════════ SECTION 1: FLAGSHIP HERO (HOME PAGE THEME) ═══════════════════ */}
       <section className="ady-hero-section relative overflow-hidden" id="home">
-        <div className="ady-tunnel-container" id="adyTunnel">
-          <div className="ady-tunnel-layer ady-tunnel-1" />
-          <div className="ady-tunnel-layer ady-tunnel-2" />
-          <div className="ady-tunnel-layer ady-tunnel-3" />
-        </div>
+        <div className="ady-canvas-container">
+          <div className="ady-hero-card">
+            {/* 3D Concentric Oval Tunnel */}
+            <div className="ady-tunnel-container" id="adyTunnel">
+              <div className="ady-tunnel-ring ady-ring-outermost" />
+              <div className="ady-tunnel-ring ady-ring-7" />
+              <div className="ady-tunnel-ring ady-ring-6" />
+              <div className="ady-tunnel-ring ady-ring-5" />
+              <div className="ady-tunnel-ring ady-ring-4" />
+              <div className="ady-tunnel-ring ady-ring-3" />
+              <div className="ady-tunnel-ring ady-ring-2" />
+              <div className="ady-tunnel-ring ady-ring-1" />
+              <div className="ady-tunnel-ring ady-center-well" />
+            </div>
 
-        <div className="shell text-center relative z-10 pt-16 pb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#eff6ff] border border-[#bfdbfe]/60 shadow-sm mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#2563eb] animate-pulse" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#2563eb]">
-              Join Our Core Team
-            </span>
-          </div>
+            {/* Typography */}
+            <div className="ady-hero-content">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/5 border border-slate-900/10 text-xs font-semibold tracking-wider text-[#ef5b52] mb-4 shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
+                JOIN OUR CORE TEAM
+              </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6 font-heading">
-            Build The Future Of Autonomous Growth &amp;{" "}
-            <span className="bg-gradient-to-r from-[#2563eb] to-[#0284c7] bg-clip-text text-transparent">
-              Digital Engineering
-            </span>
-          </h1>
+              <h1 className="ady-main-title">
+                <span className="ady-title-line1">Build The Future Of</span>
+                <span className="ady-title-line2">Autonomous Growth &amp;</span>
+                <span className="ady-title-line3">Digital Engineering.</span>
+              </h1>
+              <p className="ady-subtitle">
+                Work with a high-density team of senior software engineers, AI architects, and performance marketers in HITEC City, Hyderabad.
+              </p>
 
-          <p className="text-base md:text-lg text-[#64748b] max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-            Work with a high-density team of senior software engineers, AI architects, and growth practitioners in HITEC City, Hyderabad.
-          </p>
+              {/* Action Buttons */}
+              <div className="ady-cta-group">
+                <a href="#open-roles" className="ady-btn-dark">
+                  <span>View Open Roles</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#culture" className="ady-btn-ghost">
+                  <span>Culture &amp; Perks</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a
-              href="#open-roles"
-              className="px-6 py-3.5 rounded-full bg-[#0f172a] text-white font-medium text-sm hover:bg-[#1e293b] shadow-sm hover:shadow-md transition-all inline-flex items-center gap-2"
-            >
-              <span>View Open Roles</span>
-              <span className="text-xs">&darr;</span>
-            </a>
-            <a
-              href="#culture"
-              className="px-6 py-3.5 rounded-full bg-white text-[#0f172a] border border-[#e2e8f0] font-medium text-sm hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-all inline-flex items-center gap-2 shadow-sm"
-            >
-              <span>Our Culture &amp; Perks</span>
-              <span className="text-xs">&rarr;</span>
-            </a>
+            {/* Waveform Stage with Unbroken Luminous Curve, Floating Squircles & AI Assistant */}
+            <HeroWaveformStage />
           </div>
         </div>
       </section>
@@ -137,70 +152,65 @@ export default function CareerPage() {
       {/* ═══════════════════ SERVICES SCROLLING SECTION ═══════════════════ */}
       <ServicesScrollingBar />
 
-      {/* ═══════════════════ SECTION 2: OPEN ROLES BOARD ═══════════════════ */}
-      <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="open-roles">
+      {/* ═══════════════════ SECTION 2: OPEN ROLES BOARD (HOME PAGE CARD STYLE) ═══════════════════ */}
+      <section className="section services-ref-section" id="open-roles" aria-labelledby="roles-title">
         <div className="shell max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff6ff] text-[#2563eb] text-xs font-semibold uppercase tracking-wider mb-3 border border-[#bfdbfe]/60">
-              Career Opportunities
-            </span>
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4 font-heading">
-              Open Positions Across Engineering &amp; Growth
+          <div className="services-ref-header services-ref-header--centered">
+            <span className="ref-pill-kicker">CAREER OPPORTUNITIES</span>
+            <h2 id="roles-title" className="services-ref-heading">
+              Open Positions Across <span className="ady-gradient-text">Engineering &amp; Growth</span>
             </h2>
-            <p className="text-base text-[#64748b]">
+            <p className="services-ref-subtitle">
               Explore active openings and apply directly to work on high-impact projects.
             </p>
           </div>
 
           {/* Department Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-2.5 mb-12">
+          <div className="services-filter-tabs mb-10">
             {[
-              { id: "all", label: "All Roles (5)" },
-              { id: "ai", label: "AI Systems (1)" },
-              { id: "engineering", label: "Engineering (1)" },
-              { id: "growth", label: "Growth & Media (2)" },
-              { id: "design", label: "Design (1)" },
+              { id: "all", label: `ALL ROLES (${jobs.length})` },
+              { id: "ai", label: "AI SYSTEMS" },
+              { id: "engineering", label: "ENGINEERING" },
+              { id: "growth", label: "GROWTH & MEDIA" },
+              { id: "design", label: "DESIGN" },
             ].map((d) => (
               <button
                 key={d.id}
                 onClick={() => setActiveDept(d.id)}
-                className={`px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
-                  activeDept === d.id
-                    ? "bg-[#0f172a] text-white shadow-md -translate-y-0.5"
-                    : "bg-[#f8fafc] text-[#64748b] hover:text-[#0f172a] hover:bg-slate-100 border border-[#e2e8f0]"
-                }`}
+                className={`services-tab ${activeDept === d.id ? "services-tab--active" : ""}`}
               >
                 {d.label}
               </button>
             ))}
           </div>
 
-          {/* Job List */}
+          {/* Job Cards in Home Page Ref Card Style */}
           <div className="space-y-4">
             {filteredJobs.map((job) => (
               <div
                 key={job.id}
-                className="p-6 md:p-8 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] hover:border-[#cbd5e1] hover:bg-white hover:shadow-md transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-6"
+                className="service-ref-card p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6"
+                style={{ textAlign: "left", alignItems: "flex-start" }}
               >
                 <div className="max-w-2xl">
                   <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <span className="text-[10px] font-bold text-[#2563eb] px-2.5 py-0.5 rounded-full bg-[#eff6ff] border border-[#bfdbfe]/60 uppercase tracking-wide">
+                    <span className="text-[10px] font-bold text-[#ef5b52] px-2.5 py-0.5 rounded-full bg-coral-500/10 border border-[#ef5b52]/20 uppercase tracking-wide">
                       {job.deptLabel}
                     </span>
-                    <span className="text-xs text-[#64748b]">&bull;</span>
-                    <span className="text-xs font-medium text-[#64748b]">{job.location}</span>
-                    <span className="text-xs text-[#64748b]">&bull;</span>
-                    <span className="text-xs font-medium text-[#64748b]">{job.type}</span>
+                    <span className="text-xs text-slate-400">&bull;</span>
+                    <span className="text-xs font-medium text-slate-500">{job.location}</span>
+                    <span className="text-xs text-slate-400">&bull;</span>
+                    <span className="text-xs font-medium text-slate-500">{job.type}</span>
                   </div>
 
-                  <h3 className="text-xl font-semibold text-[#0f172a] mb-2 font-heading">{job.title}</h3>
-                  <p className="text-xs text-[#64748b] leading-relaxed mb-4">{job.desc}</p>
+                  <h3 className="service-ref-card__title mb-2">{job.title}</h3>
+                  <p className="service-ref-card__desc mb-4" style={{ WebkitLineClamp: "none" }}>{job.desc}</p>
 
                   <div className="flex flex-wrap gap-1.5">
                     {job.tech.map((t, idx) => (
                       <span
                         key={idx}
-                        className="text-[11px] font-medium text-[#0f172a] px-2.5 py-0.5 rounded-full bg-white border border-[#e2e8f0]"
+                        className="text-[11px] font-medium text-slate-700 px-2.5 py-0.5 rounded-full bg-slate-100 border border-slate-200"
                       >
                         {t}
                       </span>
@@ -208,12 +218,13 @@ export default function CareerPage() {
                   </div>
                 </div>
 
-                <div className="shrink-0">
+                <div className="shrink-0 self-start md:self-center">
                   <Link
                     href="/contact"
-                    className="px-6 py-2.5 rounded-full bg-[#0f172a] text-white font-medium text-xs hover:bg-[#1e293b] shadow-sm inline-block text-center transition-colors"
+                    className="service-ref-readmore-btn"
                   >
-                    <span>Apply Now &rarr;</span>
+                    <span>Apply Now</span>
+                    <span className="readmore-btn-arrow">&rarr;</span>
                   </Link>
                 </div>
               </div>
@@ -223,29 +234,27 @@ export default function CareerPage() {
       </section>
 
       {/* ═══════════════════ SECTION 3: CULTURE & PERKS ═══════════════════ */}
-      <section className="section py-20 bg-[#f8fafc] border-t border-[#e2e8f0]" id="culture">
+      <section className="section py-20 bg-slate-50/50 border-t border-slate-100" id="culture">
         <div className="shell">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff6ff] text-[#2563eb] text-xs font-semibold uppercase tracking-wider mb-3 border border-[#bfdbfe]/60">
-              Life At Adyantra
-            </span>
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4 font-heading">
-              Invested In Your Long-Term Mastery
+          <div className="section-heading section-heading--center">
+            <span className="ref-pill-kicker">LIFE AT ADYANTRA</span>
+            <h2>
+              Invested In Your <span className="ady-gradient-text">Long-Term Mastery</span>
             </h2>
-            <p className="text-base text-[#64748b]">
+            <p>
               We believe elite talent does its best work when equipped with the best tools, complete autonomy, and competitive incentives.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {perks.map((p, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm flex flex-col justify-between hover:border-[#cbd5e1] hover:shadow-md transition-all">
+              <div key={i} className="service-ref-card p-6 flex flex-col justify-between" style={{ textAlign: "left" }}>
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-[#f8fafc] border border-[#e2e8f0] flex items-center justify-center mb-5">
-                    <img src={p.icon} width="26" height="26" alt={p.title} />
+                  <div className="w-12 h-12 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-5">
+                    <img src={p.icon} width="24" height="24" alt={p.title} />
                   </div>
-                  <h3 className="text-base font-semibold text-[#0f172a] mb-2 font-heading">{p.title}</h3>
-                  <p className="text-xs text-[#64748b] leading-relaxed">{p.desc}</p>
+                  <h3 className="service-ref-card__title mb-2 text-base">{p.title}</h3>
+                  <p className="service-ref-card__desc text-xs" style={{ WebkitLineClamp: "none" }}>{p.desc}</p>
                 </div>
               </div>
             ))}
@@ -253,28 +262,119 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 4: CALL TO ACTION BANNER ═══════════════════ */}
-      <section className="growth-banner" id="growth-banner">
+      {/* ═══════════════════ SECTION 4: TARGET DOMAIN EXPERTISE MARQUEE ═══════════════════ */}
+      <section className="section industries-ref-section" id="industries" aria-labelledby="industries-ref-title">
+        <div className="industries-ref-glow" />
         <div className="shell">
-          <div className="growth-banner__inner">
-            <div className="growth-banner__content">
-              <span className="growth-banner__kicker text-[#60a5fa]">DON&apos;T SEE YOUR ROLE?</span>
-              <h2 id="growth-title" className="text-2xl md:text-3xl font-semibold text-white mt-2 mb-3 font-heading">
-                Pitch Us Your Superpower.
-              </h2>
-              <p className="text-sm text-white/80 max-w-xl">
-                We are always excited to meet exceptional engineers, designers, and growth hackers. Send us your GitHub, portfolio, or proof of work.
-              </p>
+          <div className="section-heading section-heading--center">
+            <span className="ref-pill-kicker">TARGET DOMAIN EXPERTISE</span>
+            <h2 id="industries-ref-title" className="industries-ref-heading">
+              Domains <span className="ady-gradient-text">We Serve</span>
+            </h2>
+            <p className="industries-ref-subtitle">
+              Custom digital marketing strategies and AI automation solutions tailored for high-growth business sectors.
+            </p>
+          </div>
+        </div>
+
+        <div className="domains-marquee-wrap">
+          <div className="domains-marquee-track">
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Education &amp; Academies</span>
+              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
             </div>
-            <div className="growth-banner__action">
-              <Link href="mailto:careers@adyantra.in" className="btn btn--white btn--shadow">
-                <span>Send Open Application</span>
-                <span className="btn__arrow">&rarr;</span>
-              </Link>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
+              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
+              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
+              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">IT &amp; Software Enterprises</span>
+              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Real Estate &amp; Housing</span>
+              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Healthcare &amp; Clinics</span>
+              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
+              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
+            </div>
+
+            {/* Duplicate Set for Seamless Loop */}
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Education &amp; Academies</span>
+              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
+              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
+              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
+              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">IT &amp; Software Enterprises</span>
+              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Real Estate &amp; Housing</span>
+              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">Healthcare &amp; Clinics</span>
+              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
+            </div>
+            <div className="domain-pill-card">
+              <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
+              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
             </div>
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════ SECTION 5: ACCELERATE YOUR REVENUE BANNER ═══════════════════ */}
+      <section className="growth-banner" id="growth-banner">
+        <div className="shell">
+          <div>
+            <p className="kicker">Accelerate your career</p>
+            <h2 id="growth-title">
+              Don&apos;t see your specific role? <em>Pitch us your superpower.</em>
+            </h2>
+          </div>
+          <div className="growth-banner__action">
+            <p>We are always excited to meet exceptional engineers, designers, and growth practitioners. Send us your GitHub, portfolio, or proof of work.</p>
+            <a className="button button--coral" href="mailto:careers@adyantra.in">
+              Send Open Application <b>&rarr;</b>
+            </a>
+          </div>
+          <div className="stat-row" aria-label="Adyantra culture metrics">
+            <div><b>100%</b><span>Autonomy &amp; Ownership</span></div>
+            <div><b>₹1.0L+</b><span>Annual Learning Budget</span></div>
+            <div><b>Hybrid</b><span>HITEC City Studio</span></div>
+            <div><b>Top 1%</b><span>Engineering Standards</span></div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════ SECTION 6: OUR TEAM & EXPERTISE ═══════════════════ */}
+      <OurTeamExpertiseSection />
     </main>
   );
 }
