@@ -66,14 +66,12 @@ export default function OurTeamExpertiseSection() {
             </div>
           </div>
 
-          <Link className="advantage-cta-btn" href="/about">
-            <span>MEET OUR LEADERSHIP</span>
-            <div className="advantage-cta-btn__arrow">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7" />
-                <polyline points="7 7 17 7 17 17" />
-              </svg>
-            </div>
+          <Link className="ady-btn-dark" href="/about">
+            <span>Meet Our Leadership</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
           </Link>
         </div>
       </div>

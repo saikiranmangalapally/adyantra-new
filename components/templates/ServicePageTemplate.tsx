@@ -355,57 +355,61 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
       {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE ═══════════════════ */}
       <section className="section expert-showcase-section" id="ecosystem" aria-labelledby="expert-showcase-heading">
         <div className="shell">
-          {/* Top Header Grid: Left Headline & Right Tablet Preview */}
-          <div className="expert-top-grid">
-            <div className="expert-header-left">
-              <span className="expert-kicker-pill">
-                <span className="expert-kicker-dot" />
-                Our Expertise
-              </span>
-              <h2 id="expert-showcase-heading" className="expert-main-heading">
-                {data.about.title}
-              </h2>
-              <p className="expert-main-desc">
-                {data.about.paragraphs[0]}
-              </p>
-            </div>
-
-            <div className="expert-tablet-card w-full">
-              <ExecutiveTabletMockup title={data.about.title} />
-            </div>
+          {/* Unified Section Header */}
+          <div className="services-ref-header services-ref-header--centered" style={{ marginBottom: "26px" }}>
+            <span className="ref-pill-kicker">OUR EXPERTISE</span>
+            <h2 id="expert-showcase-heading" className="services-ref-heading">
+              {data.about.title}
+            </h2>
+            <p className="services-ref-subtitle" style={{ maxWidth: "780px", marginBottom: "0" }}>
+              {data.about.paragraphs[0]}
+            </p>
           </div>
 
-          {/* Main Content Split Grid: Left Content (65%) & Right Sidebar (35%) */}
-          <div className="expert-split-grid">
-            {/* Left Column: Overview + Dual Visuals + What's Included */}
-            <div className="expert-content-col">
-              {/* Overview Block */}
-              <div className="expert-overview-block">
-                <h3 className="expert-section-title">Overview</h3>
-                <p className="expert-overview-text">
-                  {data.about.paragraphs.slice(1).join(" ") || data.about.paragraphs[0]}
-                </p>
+          {/* Unified Balanced 2-Column Grid (Zero Spacings and Gaps) */}
+          <div className="expert-unified-grid">
+            {/* Left Column: Interactive Tablet + Dual Visuals + Strategic Overview */}
+            <div className="expert-left-pane">
+              {/* 1. Executive Tablet Stage */}
+              <div className="expert-tablet-card">
+                <ExecutiveTabletMockup title={data.about.title} />
               </div>
 
-              {/* Two Side-by-Side Visuals */}
-              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* 2. Dual Side-by-Side Visuals */}
+              <div className="expert-dual-images">
                 <ExecutionRoadmapVisual />
                 <DataAttributionVisual />
               </div>
 
-              {/* What's Included Box */}
+              {/* 3. Strategic Overview Card */}
+              <div className="expert-overview-box">
+                <h3 className="expert-box-title">Technical Overview &amp; Execution Framework</h3>
+                <p className="expert-box-text">
+                  {data.about.paragraphs.slice(1).join(" ") || data.about.paragraphs[0]}
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column: What's Included Pillars + Core Systems + Transform CTA */}
+            <div className="expert-right-pane">
+              {/* What's Included & Core Capabilities Card */}
               <div className="expert-included-card">
-                <h4 className="expert-included-title">What&apos;s Included</h4>
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="expert-included-title">What&apos;s Included</h4>
+                  <span className="text-[10.5px] font-bold text-[#ef5b52] px-2.5 py-0.5 rounded-full bg-coral-500/10 border border-[#ef5b52]/20 uppercase tracking-wide">
+                    FULL-STACK
+                  </span>
+                </div>
                 <div className="expert-accent-line" />
                 <p className="expert-included-desc">
-                  Our comprehensive full-funnel architecture covers everything from strategic inception to data-backed retention and cross-platform ROI maximization.
+                  Full-funnel technical deliverables covering strategic architecture, automated workflows, and continuous optimization.
                 </p>
 
                 <div className="expert-check-grid">
                   {data.about.pillars.map((pillar, idx) => (
                     <div key={idx} className="expert-check-item">
                       <span className="expert-check-icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
                           <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
                           <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
@@ -415,19 +419,21 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                   ))}
                 </div>
               </div>
-            </div>
 
-            {/* Right Column: Recent Services + Transform Banner */}
-            <aside className="expert-sidebar-col">
-              {/* Card 1: Recent Services */}
+              {/* Core Systems Module List */}
               <div className="expert-recent-services-card">
-                <h4 className="expert-recent-title">Core Systems</h4>
-                <div className="expert-accent-line" style={{ width: "45px" }} />
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="expert-recent-title">Core Systems</h4>
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                    {data.subServices.length} SYSTEMS
+                  </span>
+                </div>
+                <div className="expert-accent-line" style={{ width: "40px" }} />
                 <ul className="expert-recent-list">
-                  {data.subServices.slice(0, 6).map((svc, idx) => (
+                  {data.subServices.slice(0, 5).map((svc, idx) => (
                     <li key={idx} className="expert-recent-item">
                       <span className="expert-check-icon">
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
                           <circle cx="10" cy="10" r="9" stroke="#ef5b52" strokeWidth="2" fill="rgba(239, 91, 82, 0.15)" />
                           <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
@@ -438,30 +444,24 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                 </ul>
               </div>
 
-              {/* Card 2: Transform CTA Card */}
-              <div className="expert-cta-card">
-                <TransformCtaBannerVisual />
-                <div className="expert-cta-overlay" />
-                <div className="expert-cta-content">
-                  <h4 className="expert-cta-heading">
-                    Transform <br />
-                    Your Business <br />
-                    with <span className="ady-gradient-text">Adyantra!</span>
-                  </h4>
-                  <p className="expert-cta-desc">
-                    Take your digital marketing and automation to the next level with data-driven strategies and innovative solutions.
-                  </p>
-                  <a
-                    href="#contact"
-                    className="shadcn-input-button-solid"
-                    style={{ marginTop: "10px", width: "100%", justifyContent: "space-between" }}
-                  >
-                    <span>Book A Discovery Call</span>
-                    <span className="badge-icon">→</span>
-                  </a>
-                </div>
+              {/* Compact Transform CTA Card */}
+              <div className="expert-compact-cta-card">
+                <h4 className="text-xl font-extrabold text-white mb-1.5 leading-snug">
+                  Transform Your Business with <span className="ady-gradient-text">Adyantra!</span>
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed mb-4">
+                  Deploy data-backed acquisition systems and custom AI automations engineered for scalable revenue.
+                </p>
+                <Link
+                  href="#contact"
+                  className="ady-btn-dark w-full justify-center text-xs py-2.5"
+                  style={{ width: "100%" }}
+                >
+                  <span>Book A Discovery Call</span>
+                  <span className="readmore-btn-arrow">&rarr;</span>
+                </Link>
               </div>
-            </aside>
+            </div>
           </div>
         </div>
       </section>

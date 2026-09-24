@@ -12,7 +12,6 @@ export default function ContactPage() {
   const [selectedServices, setSelectedServices] = useState<string[]>([
     "Performance Marketing",
   ]);
-  const [budget, setBudget] = useState("$2,500 - $5,000 / mo");
 
   const toggleService = (svc: string) => {
     if (selectedServices.includes(svc)) {
@@ -37,13 +36,6 @@ export default function ContactPage() {
     "Web Software & Next.js",
     "CRM & Lead Pipeline",
     "E-Commerce Solutions",
-  ];
-
-  const budgetTiers = [
-    "< $2,500 / mo",
-    "$2,500 - $5,000 / mo",
-    "$5,000 - $15,000 / mo",
-    "$15,000+ / mo",
   ];
 
   const faqs = [
@@ -283,10 +275,10 @@ export default function ContactPage() {
                 <h3>Request A Confidential Growth Proposal</h3>
                 <p>Fill out the form below and our strategy lead will connect with you within 24 hours.</p>
 
-                {/* 1. Services Checkbox Pills */}
+                {/* Services Checkbox Pills */}
                 <div style={{ marginBottom: "20px" }}>
                   <label style={{ display: "block", marginBottom: "8px", fontSize: "10px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "#59617d" }}>
-                    1. Select Areas of Interest
+                    Select Areas of Interest
                   </label>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {servicesList.map((svc) => (
@@ -308,36 +300,6 @@ export default function ContactPage() {
                       >
                         {selectedServices.includes(svc) ? "✓ " : "+ "}
                         {svc}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* 2. Budget Selection Pills */}
-                <div style={{ marginBottom: "20px" }}>
-                  <label style={{ display: "block", marginBottom: "8px", fontSize: "10px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "#59617d" }}>
-                    2. Approximate Monthly Budget
-                  </label>
-                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))", gap: "8px" }}>
-                    {budgetTiers.map((tier) => (
-                      <button
-                        type="button"
-                        key={tier}
-                        onClick={() => setBudget(tier)}
-                        style={{
-                          padding: "8px 12px",
-                          borderRadius: "10px",
-                          fontSize: "12px",
-                          fontWeight: 600,
-                          textAlign: "center",
-                          cursor: "pointer",
-                          transition: "all 0.2s ease",
-                          border: budget === tier ? "1px solid #ef5b52" : "1px solid #dfe3ee",
-                          background: budget === tier ? "#ef5b52" : "rgba(255, 255, 255, 0.85)",
-                          color: budget === tier ? "#fff" : "#59617d",
-                        }}
-                      >
-                        {tier}
                       </button>
                     ))}
                   </div>
