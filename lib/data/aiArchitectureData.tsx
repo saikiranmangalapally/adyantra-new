@@ -4,218 +4,205 @@ import { ServicePageData } from "@/components/templates/ServicePageTemplate";
 export const aiArchitectureData: Record<string, ServicePageData> = {
   "ai-architecture-consulting": {
     hero: {
-      badge: "AI CONSULTING",
-      title: <>Future-Proof Your Business With <span className="text-primary underline decoration-accent/60 decoration-4">Enterprise AI Architecture</span></>,
-      description: "Don't get left behind. We provide high-level strategic consulting to help enterprise leadership identify, design, and deploy generative AI solutions that drastically reduce operational costs and create defensible market moats."
+      badge: "ENTERPRISE AI ARCHITECTURE",
+      title: <>Build Resilient AI Systems With <span className="text-primary underline decoration-accent/60 decoration-4">Enterprise Architecture</span></>,
+      description: "Scale AI initiatives from prototype to production with zero data vulnerability. We architect enterprise LLM gateways, vector database pipelines, and secure API middleware engineered for high throughput, sub-100ms latency, and strict SOC2 compliance."
     },
     about: {
-      title: "Strategic AI Implementation for Enterprises",
+      title: "Mission-Critical AI Infrastructure Engineering",
       paragraphs: [
-        "The rapid advancement of Large Language Models (LLMs) and generative AI has created an adapt-or-die scenario for modern businesses. However, haphazardly buying AI software without a cohesive strategy leads to data silos, security vulnerabilities, and negative ROI. Adyantra Digital provides the technical and strategic oversight required for successful enterprise AI adoption.",
-        "Our consulting process begins with a deep, forensic analysis of your current operational bottlenecks. We identify the exact workflows—from customer support to internal data retrieval—that are ripe for AI automation. We then architect a bespoke AI roadmap, detailing the exact models, infrastructure, and data governance policies required.",
-        "We are model-agnostic. Whether your use case requires fine-tuning open-source models like Llama 3 for absolute data privacy, or leveraging the raw power of GPT-4o and Claude 3.5 Sonnet, we design the optimal architecture to maximize performance while minimizing computational costs (inference)."
+        "Deploying artificial intelligence inside enterprise environments involves significant engineering hurdles: vendor lock-in, unpredictable API latency, data leakage risks, and uncontrollable token costs. Toy demos and unmanaged API calls collapse under production traffic loads.",
+        "Adyantra Digital designs and deploys robust enterprise AI architectures. We construct secure LLM gateways featuring model fallback routing, semantic caching, rate limiting, and strict PII redacting filters. Our vector database pipelines (Pinecone, Qdrant, pgvector) ensure accurate retrieval for domain-specific RAG applications.",
+        "By enforcing strict zero-trust principles and containerized microservice deployments, we enable organizations to leverage frontier AI models with complete confidence in security and uptime."
       ],
       pillars: [
-        "Forensic Enterprise Workflow & Bottleneck Audit",
-        "Model-Agnostic AI Stack Selection & Benchmarking",
-        "Enterprise Data Governance & Compliance (SOC2/GDPR)",
-        "Fine-Tuning Open-Source LLMs (Llama 3/Mistral)",
-        "Retrieval-Augmented Generation (RAG) Architecture Design",
-        "Proof-of-Concept (PoC) Prototype Rapid Execution",
-        "Executive Leadership & Internal Team AI Upskilling"
+        "Enterprise LLM Gateway Design (Model Fallback, Caching & Cost Caps)",
+        "Sub-100ms API Latency Infrastructure & Global Edge Deployments",
+        "Zero-Trust Security, Data Isolation & PII Sanitization Filters",
+        "Scalable Vector Database Architecture (Qdrant, Pinecone & pgvector)",
+        "SOC2, HIPAA & GDPR Architectural Compliance Guardrails",
+        "Idempotent Event-Driven Microservices on Kubernetes & Docker",
+        "Full Telemetry, Token Observability & Automated Error Alerting"
       ]
     },
     intro: {
-      tagline: "Executive AI Strategy",
-      headline: "Stop Experimenting. Start Engineering ROI.",
-      description: "Move past toy AI tools and ChatGPT wrappers. We design scalable, secure, and highly integrated AI infrastructures that solve complex, multi-million dollar operational problems for your business."
+      tagline: "Enterprise AI Architecture",
+      headline: "Production-Grade AI Built for Scale, Speed, and Compliance",
+      description: "We design and deploy mission-critical AI systems engineered for resilient high-throughput production environments."
     },
     subServices: [
-      { title: "AI Readiness Audits", desc: "Evaluating your current tech stack and data cleanliness to determine if you are ready for LLM deployment.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Custom LLM Strategy", desc: "Determining whether to use off-the-shelf APIs, RAG architecture, or fine-tune open-source models.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Data Security & Governance", desc: "Establishing strict guardrails to ensure PII and proprietary IP are never leaked to public AI models.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Proof of Concept (PoC) Development", desc: "Rapid prototyping of AI solutions to prove ROI before committing to enterprise-wide deployment.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Enterprise AI Blueprints", desc: "Detailed technical architecture documentation mapping model selection, security, and cloud infrastructure.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-architecture.svg" },
+      { title: "LLM Gateway & Security", desc: "Centralized API gateway with automatic fallback routing, semantic caching, and token cost caps.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-agents.svg" },
+      { title: "Compliance & PII Guardrails", desc: "Automated sanitization filters ensuring proprietary client data is never leaked to external models.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-audit.svg" },
+      { title: "Sub-100ms Edge Infrastructure", desc: "Deploying lightweight models and edge caching for instant global response times.", href: "/contact", img: "/assets/img/service/illustrations/service-web-development.svg" }
     ],
     processSteps: [
-      { title: "Executive Discovery", description: "In-depth workshops with C-suite and department heads to identify high-cost operational bottlenecks.", timeline: "Weeks 1-2" },
-      { title: "Technical Feasibility Audit", description: "Our engineers analyze your data warehouses, APIs, and infrastructure to assess AI readiness.", timeline: "Weeks 3-4" },
-      { title: "Architecture Blueprinting", description: "Delivering a comprehensive technical roadmap, detailing the recommended AI stack, costs, and timeline.", timeline: "Weeks 5-6" },
-      { title: "PoC Execution & Handoff", description: "Building a functional prototype for a single use-case to demonstrate measurable value to stakeholders.", timeline: "Weeks 7-10" }
+      { title: "System & Security Audit", description: "Evaluating existing cloud architecture, data privacy requirements, and volume projections.", timeline: "Week 1" },
+      { title: "Architectural Blueprinting", description: "Designing containerized microservices, vector search pipelines, and failover topologies.", timeline: "Weeks 1-2" },
+      { title: "Prototype & Stress Testing", description: "Simulating heavy concurrency, testing fallback triggers, and verifying PII scrubbing filters.", timeline: "Weeks 2-4" },
+      { title: "Production Rollout & Monitoring", description: "Deploying to production cloud environments with Prometheus observability and live alerts.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Business-First Approach", description: "We don't implement AI for the sake of AI. Every recommendation is tied directly to reducing costs or increasing revenue." },
-      { title: "Deep Technical Bench", description: "Our consultants are actual AI engineers and data scientists, not just high-level strategists." },
-      { title: "Absolute Vendor Neutrality", description: "We are not tied to Microsoft, Google, or OpenAI. We recommend the exact model that fits your specific need and budget." },
-      { title: "Security Obsessed", description: "We understand enterprise compliance. Our architectures utilize private VPCs and secure endpoints to protect your data." }
+      { title: "99.99% Uptime Architecture", description: "Multi-model fallback logic ensures your application never goes down when an individual LLM provider suffers an outage." },
+      { title: "-60% Token Cost Reduction", description: "Semantic caching and intelligent prompt compression cut monthly API expenditure significantly." },
+      { title: "Zero-Trust Data Isolation", description: "Client data is processed through private VPC endpoints without exposure to public training models." }
     ],
     faqData: [
-      { q: "What is the difference between AI Consulting and AI Development?", a: "AI Consulting is the strategic phase; AI Development is the actual coding and deployment of that blueprint." },
-      { q: "Is our data safe if we use AI?", a: "We design architectures using Enterprise APIs with zero-data-retention policies, or deploy open-source models locally within your own secure servers." },
-      { q: "How do we know which AI model is right for us?", a: "We analyze the task requirements and run benchmark tests to determine the optimal model for speed and cost." },
-      { q: "How long does a Proof of Concept (PoC) take?", a: "A functional PoC typically takes between 4 to 8 weeks to develop, test, and present." },
-      { q: "Do you help train our internal team?", a: "Yes, we provide extensive workshops and documentation to upskill your internal team." }
+      { q: "How do you protect proprietary corporate data when using AI models?", a: "We deploy private VPC networking, automated PII redaction middleware, and enforce zero-data-retention agreements with enterprise AI providers like Anthropic and OpenAI." },
+      { q: "What is an LLM Gateway and why does our company need one?", a: "An LLM Gateway is a centralized router managing all internal AI requests. It provides automated failover between models, enforces rate limits, logs usage telemetry, and caches common queries to cut token costs." }
     ]
   },
+
   "workflow-architecture": {
     hero: {
-      badge: "SYSTEMS ARCHITECTURE",
-      title: <>Eliminate Manual Operations With <span className="text-primary underline decoration-accent/60 decoration-4">Workflow Architecture</span></>,
-      description: "Scale your output without scaling your headcount. We design and build hyper-efficient, fully automated digital workflows that connect your fragmented software stack into a single, cohesive engine."
+      badge: "FAULT-TOLERANT ARCHITECTURE",
+      title: <>Connect Disparate Systems With <span className="text-primary underline decoration-accent/60 decoration-4">Event-Driven Workflows</span></>,
+      description: "Eliminate broken webhooks and manual data syncs. We architect fault-tolerant, event-driven integration systems with idempotent queues, automated retries, and dead-letter handling across your entire enterprise software stack."
     },
     about: {
-      title: "Engineering the Invisible Workforce",
+      title: "Industrial-Grade Integration Engineering",
       paragraphs: [
-        "In most scaling businesses, highly paid employees spend up to 40% of their day doing 'glue work'—manually moving data from a CRM to a spreadsheet, drafting repetitive emails, or chasing down approvals. This manual overhead destroys profit margins. Adyantra Digital solves this through expert Workflow Architecture.",
-        "We are specialists in Business Process Automation (BPA). We conduct deep forensic audits of your daily operations to identify repetitive tasks. Then, utilizing enterprise-grade middleware like n8n, Make.com, or custom Node.js AWS Lambda functions, we build 'invisible bridges' between your disconnected software tools.",
-        "Whether it's automating employee onboarding, building complex financial reconciliation loops, or creating dynamic project management triggers in Jira or Asana, our architectures ensure that data flows flawlessly and instantly across your organization, drastically reducing human error."
+        "As businesses adopt dozens of specialized SaaS tools, data fragmentation causes operational gridlock. Standard point-to-point Zapier triggers frequently fail silently during API rate limits or schema changes, creating invisible revenue loss.",
+        "Adyantra Digital engineers industrial-strength workflow architectures using n8n, Apache Kafka, and cloud message queues (AWS SQS / Google Cloud Pub/Sub). We implement idempotent execution logic so transactions are never processed twice, and dead-letter queues capture edge-case payloads for safe reprocessing.",
+        "Whether syncing multi-million-dollar ERP inventory or orchestrating complex customer onboarding sequences, our architectures guarantee 100% data integrity."
       ],
       pillars: [
-        "Forensic Business Process Mapping & Blueprinting",
-        "Enterprise Middleware Engineering (n8n/Make.com)",
-        "Serverless Node.js & Python AWS Lambda Functions",
-        "Zero-Touch Employee & Client Onboarding Loops",
-        "Automated Financial & Invoicing Reconciliation",
-        "Fault-Tolerant Auto-Retry & Error Catching Logic",
-        "Real-Time Slack/Teams Operational Alerting"
+        "Event-Driven Architecture with Guaranteed At-Least-Once Delivery",
+        "Idempotent Message Processing & Duplicate Prevention",
+        "Dead-Letter Queues (DLQ) & Automated Exponential Backoff Retries",
+        "Scalable Message Brokers (Cloud Pub/Sub, Redis & RabbitMQ)",
+        "End-to-End Payload Encryption in Transit & at Rest",
+        "Self-Hosted n8n & Dockerized Integration Microservices",
+        "Real-Time Health Monitoring & Instant PagerDuty/Slack Alerts"
       ]
     },
     intro: {
-      tagline: "Operational Excellence",
-      headline: "Stop Doing Software's Job",
-      description: "We transform your business from a chaotic collection of disjointed apps into a streamlined, automated machine where data moves autonomously, allowing your team to focus strictly on high-value, creative work."
+      tagline: "Resilient Integration",
+      headline: "Zero Data Loss Across Complex Business Workflows",
+      description: "We build reliable event-driven integration pipelines connecting your software tools with guaranteed execution."
     },
     subServices: [
-      { title: "SaaS API Integrations", desc: "Connecting distinct platforms (e.g., Salesforce, Slack, Jira, Stripe) to share data instantly.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Custom Middleware Development", desc: "Building secure, scalable Node.js/Python serverless functions for tasks too complex for Zapier.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "HR & Onboarding Automation", desc: "Zero-touch employee onboarding: auto-generating contracts, creating software accounts, and assigning training.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Financial & Invoicing Loops", desc: "Automating quote-to-cash processes, syncing CRM closed deals directly into QuickBooks/Xero.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Event-Driven Integration Mesh", desc: "Connecting CRMs, payment gateways, and databases through asynchronous message brokers.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" },
+      { title: "Idempotent Queue Pipelines", desc: "Guaranteed single-execution logic preventing duplicate customer billings or double task assignments.", href: "/contact", img: "/assets/img/service/illustrations/service-crm-automation.svg" },
+      { title: "Custom Middleware Development", desc: "Lightweight Node.js microservices transforming custom data schemas between legacy and modern APIs.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-architecture.svg" },
+      { title: "Zero-Loss Disaster Recovery", desc: "Dead-letter queues and automated error alerting ensuring failed payloads are safely re-executed.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-audit.svg" }
     ],
     processSteps: [
-      { title: "Workflow Audit & Mapping", description: "Shadowing your team and creating detailed BPMN diagrams of current bottlenecks.", timeline: "Weeks 1-2" },
-      { title: "System Architecture Design", description: "Selecting the optimal integration platforms and designing the data schema.", timeline: "Weeks 2-3" },
-      { title: "Build & Sandbox Testing", description: "Developing the automations in a secure testing environment to ensure edge-cases are handled.", timeline: "Weeks 4-6" },
-      { title: "Deployment & Monitoring", description: "Pushing the workflows live, setting up error-alerting via Slack, and training your staff.", timeline: "Weeks 7-8" }
+      { title: "Data Flow & Failure Audit", description: "Mapping every external API dependency, payload format, rate limit, and historical failure mode.", timeline: "Week 1" },
+      { title: "Queue & Schema Architecture", description: "Designing asynchronous message queues, payload schemas, and automated retry policies.", timeline: "Weeks 1-2" },
+      { title: "Pipeline Build & Concurrency Stress Testing", description: "Deploying microservices and bombarding endpoints with burst traffic to verify stability.", timeline: "Weeks 2-3" },
+      { title: "Monitoring & SLA Signoff", description: "Configuring telemetry dashboards and delivering comprehensive failover documentation.", timeline: "Week 4" }
     ],
     whyChooseUs: [
-      { title: "Beyond Basic Zapier", description: "We handle complex data transformations, arrays, and iterative loops that basic automation tools can't support." },
-      { title: "Fault-Tolerant Design", description: "Our architectures include auto-retries, error catching, and redundant fallbacks so your operations never halt." },
-      { title: "Security First", description: "We utilize secure webhook protocols (HMAC), API key rotation, and encrypted data transmission." },
-      { title: "Scalable Infrastructure", description: "Whether processing 10 tasks a day or 100,000, our serverless architectures scale automatically without crashing." }
+      { title: "Zero Dropped Transactions", description: "Our message buffering architectures survive third-party API outages without losing data." },
+      { title: "Self-Hosted Privacy", description: "We deploy secure, self-hosted integration clusters behind your own corporate firewall." },
+      { title: "Sub-Second Data Sync", description: "Event-driven webhooks process transactions near-instantaneously across all connected systems." }
     ],
     faqData: [
-      { q: "Is this the same as Zapier?", a: "Zapier is for simple tasks. For enterprise Workflow Architecture involving complex logic and high volume, we use Make.com, n8n, or custom serverless code." },
-      { q: "What happens if a software platform changes its API?", a: "We build robust error-handling. If an endpoint fails, the system automatically alerts our technical team via Slack." },
-      { q: "Can you automate legacy software that doesn't have an API?", a: "Yes, via direct SQL database connections, secure FTP file drops, or Robotic Process Automation (RPA)." },
-      { q: "How do we calculate the ROI of Workflow Architecture?", a: "We calculate ROI based on hours saved multiplied by hourly rates. Clients typically see full ROI within 3-6 months." },
-      { q: "Will automation replace my employees?", a: "No, it frees up your skilled staff from copy-paste admin work to focus on strategic growth." }
+      { q: "What is idempotent execution and why is it important?", a: "Idempotency ensures that even if an event notification is received multiple times due to a network glitch, the underlying action (such as charging a card or creating an invoice) is executed only once." },
+      { q: "Can you replace our existing expensive Zapier account with self-hosted n8n?", a: "Yes. Self-hosting n8n in your private cloud eliminates per-task billing, reduces monthly software costs by up to 80%, and guarantees complete data privacy." }
     ]
   },
+
   "ai-agent-development": {
     hero: {
-      badge: "CUSTOM AI AGENTS",
-      title: <>Deploy Autonomous Workforces With <span className="text-primary underline decoration-accent/60 decoration-4">AI Agent Development</span></>,
-      description: "Move beyond simple chatbots. We engineer autonomous AI Agents capable of reasoning, utilizing external tools, and executing complex, multi-step workflows entirely on their own."
+      badge: "AUTONOMOUS AI AGENTS",
+      title: <>Deploy Autonomous Capacity With <span className="text-primary underline decoration-accent/60 decoration-4">Custom AI Agents</span></>,
+      description: "Move beyond passive chatbots. We engineer autonomous AI agents equipped with cognitive reasoning loops, external tool execution, and vector memory to execute complex multi-step business workflows with 99.4% accuracy."
     },
     about: {
-      title: "Engineering Autonomous Digital Employees",
+      title: "Autonomous Decision-Making & Workflow Execution",
       paragraphs: [
-        "The current paradigm of AI relies on human prompting—you ask a question, the AI gives an answer. Adyantra Digital is pioneering the next frontier: Autonomous AI Agents. These are sophisticated AI systems that are given a high-level goal and determine the necessary steps to achieve it without human intervention.",
-        "We build Agents using advanced frameworks like LangChain, AutoGen, and CrewAI. These frameworks allow the LLM to 'think' (reasoning), access the internet, read databases, and use tools via API (like sending emails, updating CRMs, or executing code).",
-        "Imagine an AI Agent acting as a Financial Analyst: You ask for a competitor report. The Agent independently browses the web for recent SEC filings, parses the PDFs, runs financial models using a Python interpreter, and generates a formatted dashboard—all autonomously. We build these bespoke, highly capable systems tailored to your specific operational needs."
+        "Simple chatbots can only answer pre-scripted questions. Autonomous AI agents, by contrast, possess the capability to reason, formulate multi-step plans, access external databases, call third-party APIs, and evaluate the success of their own actions.",
+        "Adyantra Digital builds task-specific autonomous agent squads. Whether acting as an autonomous Sales Development Rep (SDR) researching leads and personalizing outreach, or a technical triage agent resolving software tickets, our agents execute business processes without human intervention.",
+        "We implement strict execution guardrails, state-machine boundaries, and human-in-the-loop checkpoints to guarantee safe, reliable operation in production environments."
       ],
       pillars: [
-        "Autonomous Agentic Reasoning (ReAct Prompting)",
-        "Multi-Agent Team Orchestration (CrewAI/AutoGen)",
-        "Custom Python Tool Binding & API Function Calling",
-        "Human-in-the-Loop Approval & Permission Safety",
-        "LangChain & LlamaIndex RAG Data Memory Ingestion",
-        "Autonomous Web Scraping & Market Research Agents",
-        "Token-Optimized Low-Cost Inference Architecture"
+        "Multi-Step Autonomous Reasoning & Tool-Use Execution",
+        "Long-Term & Short-Term Vector Memory Persistence",
+        "Deterministic State-Machine Guardrails & Safety Boundaries",
+        "Integration with External APIs (Search, SQL, CRM & Email)",
+        "Human-in-the-Loop Escalation & Verification Checkpoints",
+        "Self-Reflective Evaluation & Error-Recovery Feedback Loops",
+        "Multi-Agent Collaborative Squad Architectures"
       ]
     },
     intro: {
-      tagline: "Autonomous Execution",
-      headline: "AI That Actually Does the Work For You",
-      description: "We don't just build tools that generate text; we build autonomous software entities that can interact with your existing tech stack, execute decisions, and solve complex problems continuously."
+      tagline: "Autonomous Intelligence",
+      headline: "AI Agents That Think, Plan, and Execute Real Work",
+      description: "We deploy cognitive software agents capable of executing end-to-end multi-step business operations autonomously."
     },
     subServices: [
-      { title: "Autonomous Research Agents", desc: "Bots that continuously scrape the web, monitor competitors, and summarize industry data autonomously.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Multi-Agent Systems (CrewAI)", desc: "Orchestrating teams of AI agents (e.g., a 'Researcher' agent passing data to a 'Writer' agent) to complete complex projects.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "Internal Copilots", desc: "Custom AI assistants integrated into your internal Slack or Microsoft Teams that can query company databases on command.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Automated Coding Agents", desc: "Systems that can analyze bug reports, write patches, and submit pull requests in your GitHub repositories.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Autonomous SDR Agents", desc: "Agents that research prospect company accounts, verify lead criteria, and draft bespoke email outreach.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-agents.svg" },
+      { title: "Custom Tool Execution", desc: "Empowering agents to query SQL databases, execute API calls, and generate reports on demand.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" },
+      { title: "RAG & Vector Memory", desc: "Long-term episodic memory allowing agents to recall past customer conversations and preferences.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-architecture.svg" },
+      { title: "Multi-Agent Collaboration", desc: "Coordinated squads of specialized agents (Researcher, Writer, Reviewer) solving complex tasks together.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" }
     ],
     processSteps: [
-      { title: "Use-Case Definition & Logic Flow", description: "Defining the exact goal of the agent, the data it needs to access, and the actions it is permitted to take.", timeline: "Weeks 1-2" },
-      { title: "Framework & LLM Selection", description: "Selecting the optimal foundation model (GPT-4o, Claude) and orchestration framework (LangChain, AutoGen).", timeline: "Week 3" },
-      { title: "Tool Binding & API Integration", description: "Programming the custom tools (Python scripts, REST APIs) that the agent will use to interact with the world.", timeline: "Weeks 4-6" },
-      { title: "Guardrail Testing & Deployment", description: "Extensive sandboxed testing to ensure the agent doesn't enter infinite loops or execute destructive actions.", timeline: "Weeks 7-9" }
+      { title: "Agent Role & Scope Blueprinting", description: "Defining the agent's objective, permissible actions, external tools, and escalation conditions.", timeline: "Week 1" },
+      { title: "Cognitive Loop & Tool Engineering", description: "Writing deterministic system logic, tool definitions, and fallback error handling in LangChain/CrewAI.", timeline: "Weeks 1-3" },
+      { title: "Evaluation & Adversarial Testing", description: "Running automated benchmark evaluations against hundreds of edge cases to verify 99%+ accuracy.", timeline: "Weeks 3-4" },
+      { title: "Deployment with Human Oversight", description: "Launching into production with a verification dashboard for monitoring agent reasoning steps.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Pioneers in Agentic AI", description: "We are at the cutting edge of LLM research, actively deploying production-ready multi-agent systems." },
-      { title: "Strict Safety Guardrails", description: "Autonomous AI can be dangerous if left unchecked. We implement strict 'Human-in-the-Loop' approvals for critical actions." },
-      { title: "Advanced Tool Creation", description: "We don't just use pre-built tools. Our Python developers write custom functions for the AI to interact with your proprietary systems." },
-      { title: "Cost-Optimized Inference", description: "Agents consume massive amounts of tokens while 'thinking'. We optimize prompts and use caching to keep API costs strictly controlled." }
+      { title: "99.4% Task Pass Rate", description: "Rigorous adversarial testing ensures agents execute assigned tasks without getting trapped in loops." },
+      { title: "Deterministic Guardrails", description: "Hardcoded safety boundaries prevent unauthorized financial or contractual commitments." },
+      { title: "Full Execution Transparency", description: "Every thought step, tool call, and decision is logged with comprehensive audit trails." }
     ],
     faqData: [
-      { q: "What is the difference between an AI Agent and ChatGPT?", a: "ChatGPT is reactive; an AI Agent is proactive and autonomous, planning and executing multi-step tasks independently." },
-      { q: "Is it safe to let an AI Agent act autonomously?", a: "We implement strict Human-in-the-Loop approvals for sensitive actions." },
-      { q: "What frameworks do you use to build AI Agents?", a: "LangChain, LlamaIndex, AutoGen, and CrewAI." },
-      { q: "How expensive are AI Agents to run?", a: "We optimize inference using hybrid model routing to keep token costs strictly managed." },
-      { q: "Can an AI Agent integrate with our custom internal software?", a: "Yes, by writing custom Python tools and API connectors." }
+      { q: "How do you prevent an autonomous agent from taking harmful actions?", a: "We enforce strict permission boundaries using state machines. High-risk actions (such as publishing code or executing financial refunds) require explicit human approval via 1-click Slack buttons." },
+      { q: "What frameworks do you build AI agents with?", a: "We build on top of industry-standard frameworks including LangGraph, CrewAI, AutoGen, and custom Python/TypeScript orchestration runtimes." }
     ]
   },
+
   "whatsapp-crm": {
     hero: {
-      badge: "CONVERSATIONAL COMMERCE",
-      title: <>Turn Chats Into Revenue With <span className="text-primary underline decoration-accent/60 decoration-4">WhatsApp & CRM Integration</span></>,
-      description: "WhatsApp has a 98% open rate. We build powerful conversational commerce engines by integrating the WhatsApp Business API directly into your CRM, enabling automated sales, instant support, and mass broadcasting at scale."
+      badge: "WHATSAPP COMMERCE & CRM",
+      title: <>Turn Conversations Into Revenue With <span className="text-primary underline decoration-accent/60 decoration-4">WhatsApp CRM Automation</span></>,
+      description: "Reach your customers where they spend their day. We build official Meta WhatsApp Business Cloud API automation—combining interactive product catalogs, 24/7 sales bots, and two-way CRM synchronization that delivers 98% open rates."
     },
     about: {
-      title: "Unlocking the World's Most Powerful Channel",
+      title: "High-Conversion Conversational Commerce",
       paragraphs: [
-        "Email marketing is suffering from declining open rates, and cold calling is highly inefficient. WhatsApp is the most direct, intimate channel to reach your customers, boasting near-100% visibility. However, managing WhatsApp manually on a single phone is impossible to scale. Adyantra Digital solves this by engineering robust WhatsApp Business API infrastructures.",
-        "We connect the official Meta WhatsApp API directly into your CRM (HubSpot, Salesforce, GoHighLevel). This allows your entire sales team to manage conversations from a centralized dashboard, track chat history permanently against the contact record, and trigger automated messages based on CRM deal stages.",
-        "Furthermore, we layer conversational AI (chatbots) on top of this infrastructure. We build intelligent flows that can qualify leads, answer FAQs, process e-commerce orders, and book appointments directly within the WhatsApp interface, providing a frictionless experience for your customers."
+        "Email open rates hover around 20%, while SMS is frequently blocked by carrier spam filters. WhatsApp offers an astonishing 98% message open rate and 45%+ response rate, making it the most direct and effective communication channel in the world.",
+        "Adyantra Digital builds compliant conversational commerce engines using the official Meta WhatsApp Business Cloud API. We deploy interactive catalogs, automated lead triage, instant order checkout, and appointment scheduling directly inside WhatsApp chat.",
+        "Every incoming conversation and customer detail is synchronized in real time with HubSpot, Salesforce, or Zoho, giving your sales team an unfair competitive edge."
       ],
       pillars: [
-        "Official Meta WhatsApp Business API Provisioning",
-        "Centralized 2-Way CRM Integration (HubSpot/Salesforce)",
-        "ChatGPT-Powered Conversational In-Chat Bots",
-        "Automated WhatsApp Sales Sequences & Abandoned Cart Recovery",
-        "Meta-Approved Template Message Broadcast Management",
-        "Multi-Agent Simultaneous Inbox Dashboard Setup",
-        "Shopify Order & Shipping Notification Automation"
+        "Official Meta WhatsApp Cloud API Setup & Verified Green Badge",
+        "Interactive Native Product Catalogs & 1-Tap Checkout Flows",
+        "Sub-5-Second Conversational AI Lead Qualification",
+        "Two-Way Real-Time Synchronization with Enterprise CRMs",
+        "Personalized Segmentation Broadcasts & Opt-In Compliance",
+        "Automated Multi-Agent Sales & Support Team Inbox Routing",
+        "Attributable Revenue & Conversion Attribution Dashboards"
       ]
     },
     intro: {
-      tagline: "Direct-to-Consumer Communication",
-      headline: "Engage Customers Where They Actually Spend Their Time",
-      description: "We transform WhatsApp from a simple messaging app into a highly automated, deeply integrated sales and support powerhouse for your business."
+      tagline: "Conversational Commerce",
+      headline: "Engage Buyers on the World's Most Popular Messaging App",
+      description: "We deploy official WhatsApp Business automation that qualifies leads, showcases products, and closes sales directly inside chat."
     },
     subServices: [
-      { title: "WhatsApp API to CRM Integration", desc: "Syncing all chats, media, and statuses directly into HubSpot, Salesforce, or Zoho.", href: "/contact", img: "/assets/img/service/ai-3d.png" },
-      { title: "Automated Sales Sequences", desc: "Triggering abandoned cart reminders and meeting follow-ups via WhatsApp automatically.", href: "/contact", img: "/assets/img/service/seo-3d.png" },
-      { title: "AI WhatsApp Chatbots", desc: "Deploying ChatGPT-powered bots to handle 24/7 customer support and lead qualification in-chat.", href: "/contact", img: "/assets/img/service/webdev-3d.png" },
-      { title: "Compliant Broadcast Campaigns", desc: "Managing template approvals and sending mass promotional messages without getting banned.", href: "/contact", img: "/assets/img/service/seo-3d.png" }
+      { title: "Official WhatsApp Cloud API", desc: "Direct integration with Meta's cloud infrastructure for maximum delivery speed and verified green badge.", href: "/contact", img: "/assets/img/service/illustrations/service-whatsapp-crm.svg" },
+      { title: "Interactive Product Catalogs", desc: "Allowing customers to browse product collections, select variants, and purchase inside chat.", href: "/contact", img: "/assets/img/service/illustrations/service-ecommerce.svg" },
+      { title: "Two-Way CRM Synchronization", desc: "Auto-logging every WhatsApp message, attachment, and stage update directly into your CRM deal record.", href: "/contact", img: "/assets/img/service/illustrations/service-crm-automation.svg" },
+      { title: "Targeted Retargeting Broadcasts", desc: "Sending personalized notifications and cart recovery reminders to opted-in buyer segments.", href: "/contact", img: "/assets/img/service/illustrations/service-sales-followup.svg" }
     ],
     processSteps: [
-      { title: "API Provisioning & Verification", description: "We handle the complex Meta Business verification process and provision your official WhatsApp API number.", timeline: "Weeks 1-2" },
-      { title: "CRM Architecture & Sync", description: "Engineering the two-way sync between the WhatsApp API provider and your CRM.", timeline: "Weeks 2-3" },
-      { title: "Automation & Bot Building", description: "Designing the conversational flows, integrating AI, and setting up automated trigger sequences.", timeline: "Weeks 3-5" },
-      { title: "Template Approval & Launch", description: "Submitting High-Quality Message Templates to Meta for approval and launching the system.", timeline: "Week 6" }
+      { title: "Meta Verification & Number Setup", description: "Registering your brand phone number on Meta Business Manager and securing official API access.", timeline: "Week 1" },
+      { title: "Catalog & Dialogue Architecture", description: "Configuring interactive menus, product catalogs, qualification prompts, and fallback routes.", timeline: "Weeks 1-2" },
+      { title: "CRM Webhook Integration", description: "Connecting WhatsApp webhooks to your CRM to sync contacts, deals, and team notifications.", timeline: "Weeks 2-3" },
+      { title: "Launch & Broadcast Cadence", description: "Going live and configuring automated cart abandonment and event reminder broadcast triggers.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Meta API Experts", description: "We navigate strict Meta compliance guidelines so you don't risk getting your number banned." },
-      { title: "Seamless CRM Data", description: "We ensure every single message is logged in your CRM, maintaining perfect data integrity for your sales team." },
-      { title: "Advanced Conversational AI", description: "We don't build frustrating 'Press 1' bots. We use LLMs for natural, fluid conversation." },
-      { title: "Multi-Agent Dashboards", description: "We set up infrastructure allowing 50+ sales reps to handle WhatsApp chats simultaneously from one number." }
+      { title: "98% Inbound Open Rate", description: "WhatsApp messages are seen and read almost instantly by nearly every customer." },
+      { title: "Official Meta Partner API", description: "Zero risk of phone number bans by adhering strictly to Meta's Cloud API guidelines." },
+      { title: "Unified Team Inbox", description: "Allow multiple human sales reps to respond to customer inquiries from one central business number." }
     ],
     faqData: [
-      { q: "WhatsApp App vs. WhatsApp Business API?", a: "The free App is for 1 phone; the API allows unlimited reps, CRM syncing, AI chatbots, and bulk broadcasts." },
-      { q: "Can my number get banned?", a: "We keep you 100% compliant using official API channels and Meta-approved templates." },
-      { q: "How much does the WhatsApp API cost?", a: "Meta charges per 24-hour conversation window depending on country and message type." },
-      { q: "Can we use our existing phone number?", a: "Yes, we can migrate your landline or mobile number to the official API." },
-      { q: "Do you integrate with Shopify?", a: "Yes, for order confirmations, shipping alerts, and abandoned cart recovery." }
+      { q: "Is our business phone number safe from bans on WhatsApp?", a: "Yes. By using the official Meta WhatsApp Business Cloud API through verified Meta Business accounts, your number is completely protected from unapproved third-party bot bans." },
+      { q: "Can multiple team members manage customer chats simultaneously?", a: "Yes. We deploy a multi-agent team inbox where incoming conversations are auto-routed to available sales representatives with full customer CRM history visible." }
     ]
   }
 };

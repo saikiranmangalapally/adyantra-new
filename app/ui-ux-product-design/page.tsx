@@ -102,7 +102,7 @@ export default function UIUXProductDesignPage() {
             {/* 3D Floating Glass Badge Stage (Homepage Engine) */}
             <div className="lg:col-span-5 flex justify-center">
               <Service3DStage
-                imageSrc="/assets/img/about/about-3d.png"
+                imageSrc="/assets/img/service/illustrations/service-ui-ux-design.svg"
                 imageAlt="UI UX Design 3D Stage"
                 badge1Title="Figma Native"
                 badge1Sub="Auto-Layout Systems"

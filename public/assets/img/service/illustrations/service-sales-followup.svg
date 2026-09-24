@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <circle cx="160" cy="110" r="90" fill="#fdf4ff" opacity="0.8"/>
+  <!-- Pipeline Velocity Board -->
+  <rect x="55" y="42" width="210" height="125" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="55" y="42" width="210" height="24" rx="10" fill="#0f172a"/>
+  <text x="70" y="58" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ffffff">Autonomous Lead Nurturing Sequence</text>
+  <!-- Timeline Connection Line -->
+  <path d="M 85 105 L 235 105" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <!-- Touchpoint 1: Instant Ping -->
+  <circle cx="85" cy="105" r="14" fill="#3b82f6"/>
+  <text x="81" y="109" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#ffffff">0m</text>
+  <text x="68" y="130" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#1e293b">WhatsApp</text>
+  <!-- Touchpoint 2: Value Delivery -->
+  <circle cx="160" cy="105" r="14" fill="#8b5cf6"/>
+  <text x="153" y="109" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ffffff">24h</text>
+  <text x="144" y="130" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#1e293b">Case Study</text>
+  <!-- Touchpoint 3: Closing Call -->
+  <circle cx="235" cy="105" r="14" fill="#10b981"/>
+  <text x="228" y="109" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ffffff">72h</text>
+  <text x="220" y="130" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#1e293b">Demo Call</text>
+  <!-- Deal Closed Score Badge -->
+  <g transform="translate(130, 142)">
+    <rect width="145" height="30" rx="15" fill="#ffffff" stroke="#ef5b52" stroke-width="1.4"/>
+    <circle cx="16" cy="15" r="9" fill="#ef5b52"/>
+    <path d="M 12 15 L 15 18 L 20 12" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="32" y="15" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#0f172a">Pipeline Velocity</text>
+    <text x="32" y="24" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#ef5b52">+64% Deal Close Rate</text>
+  </g>
+  <rect x="40" y="184" width="240" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

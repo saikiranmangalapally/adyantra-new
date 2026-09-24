@@ -107,7 +107,7 @@ export default function MobileAppDevelopmentPage() {
             {/* 3D Floating Glass Badge Stage (Homepage Engine) */}
             <div className="lg:col-span-5 flex justify-center">
               <Service3DStage
-                imageSrc="/assets/img/service/smm-3d.png"
+                imageSrc="/assets/img/service/illustrations/service-mobile-apps.svg"
                 imageAlt="Mobile App Development 3D Stage"
                 badge1Title="60 FPS Native"
                 badge1Sub="Fluid Motion"

@@ -6,594 +6,569 @@ export const marketingData: Record<string, ServicePageData> = {
     hero: {
       badge: "PERFORMANCE MARKETING",
       title: <>Accelerate Revenue With <span className="text-primary underline decoration-accent/60 decoration-4">Data-Driven Growth</span></>,
-      description: "Stop burning budget on generic campaigns. We engineer high-ROAS digital marketing ecosystems that combine precision audience targeting, dynamic creative optimization, and deep funnel analytics to scale your brand predictably and profitably."
+      description: "Stop burning ad budget on vanity impressions. We engineer high-ROAS acquisition systems uniting algorithmic media buying, dynamic creative optimization, and server-side attribution to scale your pipeline profitably."
     },
     about: {
       title: "Engineered For Sustainable Market Dominance",
       paragraphs: [
-        "In a hyper-competitive digital landscape, relying on outdated ad strategies leads to diminishing returns. At Adyantra Digital, we don't just 'run ads'—we architect comprehensive growth engines. Our approach unifies paid acquisition, organic visibility, and conversion rate optimization (CRO) into a single, cohesive revenue-generation machine.",
-        "We leverage proprietary data models to identify high-intent cohorts, reducing your Cost Per Acquisition (CPA) while scaling ad spend. By aggressively A/B testing ad creatives, landing page layouts, and offer structures, we ensure every dollar you invest is mathematically optimized to produce maximum yield.",
-        "Our team of senior media buyers, technical SEO specialists, and data scientists work in tandem. We map the entire customer journey from the first impression to the final checkout, deploying multi-touch attribution to uncover exactly which channels drive your highest Lifetime Value (LTV) customers."
+        "In modern customer acquisition, fragmented campaigns create cost leaks and attribution blindness. At Adyantra Digital, we architect integrated growth engines where paid search, social media performance, and technical SEO feed directly into a unified conversion funnel.",
+        "We build deterministic audience models using first-party customer cohorts to lower your blended Customer Acquisition Cost (CAC). By deploying continuous multivariate experiments on messaging, creative angles, and landing page checkout flows, every marketing dollar works toward verified revenue.",
+        "Our cross-functional guild of senior media buyers, conversion engineers, and data analysts monitor daily ROAS velocity. We replace guesswork with server-side CAPI tracking, ensuring complete visibility across the entire customer lifecycle."
       ],
       pillars: [
-        "Multi-Channel Paid Acquisition (Meta & Google Ads)",
-        "Conversion Rate Optimization (CRO & A/B Testing)",
-        "Advanced Server-Side Multi-Touch Attribution",
-        "Dynamic Direct-Response Creative Production",
+        "Multi-Channel Paid Acquisition (Google Search, PMax & Meta Ads)",
+        "Conversion Rate Optimization (CRO & Multivariate A/B Testing)",
+        "Server-Side Attribution & First-Party Data Ingestion (sGTM / CAPI)",
+        "Dynamic Direct-Response Creative & Video Asset Production",
         "Full-Funnel Customer Lifetime Value (LTV) Expansion",
-        "Algorithmic Bidding & Budget Allocation Logic",
-        "Continuous Landing Page & Offer Structure Optimization"
+        "Algorithmic Bidding Optimization & Margin Protection",
+        "Continuous Landing Page Velocity & Funnel Friction Removal"
       ]
     },
     intro: {
       tagline: "Growth Architecture",
       headline: "Predictable Scaling Through Mathematical Marketing",
-      description: "We eliminate the guesswork from digital expansion. By building deterministic marketing models based on historical data and real-time algorithmic bidding, we turn your marketing department from a cost center into a predictable profit center."
+      description: "We eliminate guesswork from digital expansion. By pairing first-party customer telemetry with machine-learning bidding models, we turn marketing into a predictable revenue driver."
     },
     subServices: [
-      { title: "Meta & Google Ads Management", desc: "Algorithmic bidding and dynamic creative testing on Facebook, Instagram, and Google Search.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Conversion Rate Optimization", desc: "Multivariate testing of landing pages to maximize lead capture and checkout completions.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Multi-Touch Analytics", desc: "Implementation of server-side tracking (CAPI) to bypass iOS14 restrictions and track true ROI.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "Lifecycle Email & SMS", desc: "Automated retention sequences to maximize Customer Lifetime Value (LTV).", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Meta & Google Ads Scaling", desc: "Algorithmic bidding and dynamic creative testing on Facebook, Instagram, and Google Search.", href: "/contact", img: "/assets/img/service/illustrations/service-google-ppc.svg" },
+      { title: "Conversion Rate Optimization", desc: "Multivariate testing of page architecture and micro-copy to maximize completed checkouts.", href: "/contact", img: "/assets/img/service/illustrations/service-ui-ux-design.svg" },
+      { title: "Multi-Touch Attribution", desc: "Server-side tracking (sGTM & Meta CAPI) ensuring 100% signal durability and zero tracking loss.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" },
+      { title: "Lifecycle Email & SMS", desc: "Automated retention sequences and behavioral triggers to multiply Customer Lifetime Value.", href: "/contact", img: "/assets/img/service/illustrations/service-email-workflows.svg" }
     ],
     processSteps: [
-      { title: "Deep Technical Audit", description: "We analyze your historical ad account data, pixel health, tracking setup, and competitor positioning to identify immediate revenue leaks.", timeline: "Days 1-7" },
-      { title: "Funnel Architecture & Tracking", description: "Deployment of server-side Google Tag Manager (sGTM) and Meta CAPI to ensure 100% accurate data attribution.", timeline: "Days 7-14" },
-      { title: "Creative Production & Launch", description: "Our in-house design team produces high-converting video and static assets tailored to specific audience cohorts.", timeline: "Days 14-21" },
-      { title: "Algorithmic Scaling", description: "Once baseline ROAS is achieved, we aggressively scale budgets horizontally across winning audiences and creatives.", timeline: "Ongoing" }
+      { title: "Deep Technical & Funnel Audit", description: "We analyze your historical ad data, pixel health, tracking setup, and competitor positioning to identify immediate revenue leaks.", timeline: "Days 1-7" },
+      { title: "Server-Side Tracking Architecture", description: "Deployment of server-side Google Tag Manager (sGTM) and Meta CAPI to establish 100% accurate data attribution.", timeline: "Days 7-14" },
+      { title: "Direct-Response Creative Sprints", description: "Our in-house design team produces high-converting video and static variations tailored to your core buyer personas.", timeline: "Days 14-21" },
+      { title: "Algorithmic Scaling & ROAS Protection", description: "Once benchmark ROAS is established, we systematically scale budgets horizontally across proven cohorts and winners.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Data-Obsessed Media Buyers", description: "Our team manages millions in ad spend and relies on strict KPIs, not vanity metrics." },
-      { title: "Server-Side Tracking Expertise", description: "We implement advanced API tracking to recover 20-30% of lost data from ad blockers." },
-      { title: "Creative-First Strategy", description: "We treat ad creative as the ultimate targeting tool, constantly refreshing assets to prevent fatigue." },
-      { title: "Transparent Reporting Dashboards", description: "You get 24/7 access to live Looker Studio dashboards tracking every dollar spent." }
+      { title: "Data-Obsessed Media Buyers", description: "Our media team manages high-volume budgets focused entirely on customer acquisition costs and net revenue." },
+      { title: "Server-Side Attribution Experts", description: "We implement advanced server APIs to recover the 25-35% of conversion signals lost to browser ad blockers." },
+      { title: "Creative-First Velocity", description: "We treat direct-response creative as your primary targeting tool, refreshing concepts weekly to eliminate fatigue." },
+      { title: "Live Executive Dashboards", description: "You receive 24/7 access to real-time Looker Studio reporting tracking pipeline value and blended ROAS." }
     ],
     faqData: [
-      { q: "How long does it take to see a positive ROI?", a: "While we often find immediate 'quick wins' in the first 30 days by plugging revenue leaks, a fully optimized, scalable algorithmic campaign typically requires 60-90 days of data seasoning." },
-      { q: "Do you handle the ad creative and copywriting?", a: "Yes. Adyantra Digital has a 100% in-house creative team of designers, copywriters, and video editors who specialize in direct-response marketing." },
-      { q: "How do you track conversions with iOS14 and ad blockers?", a: "We utilize Server-Side Tracking (sGTM) and Conversions API (CAPI) directly from your server to the ad platforms, bypassing browser-level restrictions." },
-      { q: "What is your minimum monthly ad spend requirement?", a: "To ensure statistical significance in our testing and provide room for algorithmic optimization, we typically partner with brands spending a minimum of $5,000/month." },
-      { q: "Do you lock clients into long-term contracts?", a: "No. We believe our performance should keep you as a client. We operate on flexible month-to-month agreements after an initial 90-day onboarding period." }
+      { q: "How long does it take to achieve positive ROAS on paid acquisition?", a: "Initial campaign validation and quick-win optimizations typically yield measurable efficiency gains within 14-30 days, with full algorithmic maturity and scalable stability achieved in 60-90 days." },
+      { q: "Do you handle ad creatives, copy, and video assets in-house?", a: "Yes. Adyantra Digital has a 100% in-house creative studio of motion designers, conversion copywriters, and video editors specializing in direct-response formats." },
+      { q: "How do you track conversions accurately despite iOS privacy restrictions?", a: "We build server-side tracking pipelines using sGTM and Meta Conversions API (CAPI), transmitting hashed first-party customer events directly to advertising networks." },
+      { q: "What is your minimum monthly ad spend recommendation?", a: "To ensure adequate conversion volume for algorithmic machine learning models to optimize effectively, we recommend a minimum ad budget of $3,500 to $5,000 monthly." },
+      { q: "Are clients locked into long-term retainers?", a: "No. We partner on flexible 90-day initial validation sprints followed by rolling monthly performance terms. We retain clients through tangible business outcomes." }
     ]
   },
+
   "ai-content-automation": {
     hero: {
-      badge: "AI CONTENT ENGINEERING",
-      title: <>Scale Your Reach With <span className="text-primary underline decoration-accent/60 decoration-4">AI-Driven Content</span></>,
-      description: "Stop relying on slow, manual content creation. We engineer sophisticated AI workflows that generate high-quality, SEO-optimized content at massive scale—driving exponential traffic growth while slashing operational overhead."
+      badge: "RANKWISE CONTENT ENGINE",
+      title: <>Scale Organic Authority With <span className="text-primary underline decoration-accent/60 decoration-4">49-Factor SEO Content</span></>,
+      description: "Publish authoritative, human-first articles engineered against 49 measurable SEO ranking signals. We eliminate robotic AI fluff to secure Google Featured Snippets, build topical authority, and accelerate organic inbound leads."
     },
     about: {
-      title: "Content Engineering for High-Growth Enterprises",
+      title: "Human-First Content Architecture for Scaling Brands",
       paragraphs: [
-        "In today's algorithmic landscape, content volume and relevance dictate market dominance. However, scaling human production introduces massive cost and quality bottlenecks. Adyantra Digital solves this by architecting bespoke AI content generation models trained specifically on your brand's unique voice, industry data, and target personas.",
-        "We don't just use out-of-the-box LLMs to generate generic text. We engineer full-funnel content ecosystems. This involves setting up programmatic SEO architectures where thousands of hyper-targeted landing pages are generated, validated, and published automatically, ensuring every long-tail keyword in your industry is captured.",
-        "Furthermore, our AI workflows seamlessly integrate with your existing CMS (WordPress, Shopify, Webflow) and CRM platforms. From drafting personalized cold-outreach emails to generating omni-channel social media matrices, our automation eliminates human bottlenecks, allowing your team to focus on high-level strategy."
+        "Search algorithms increasingly penalize generic, low-effort AI writing. Adyantra Digital deploys the RankWise Content Engine—a rigorous framework combining human subject-matter expertise with structured LLM workflows that score 46+/49 on Google's technical and editorial ranking signals.",
+        "We craft topical clusters with rich E-E-A-T proof points, real-world data benchmarks, and concise 40-60 word definition blocks tailored for Featured Snippets. Every piece is audited for keyword placement, heading hierarchy, semantic LSI terms, and zero burned-word vocabulary.",
+        "Our publishing pipelines connect directly into your CMS (Next.js, WordPress, Webflow, Shopify). From executive thought leadership to programmatic landing pages, we deliver editorial excellence at 10x traditional speed without sacrificing credibility."
       ],
       pillars: [
-        "Custom LLM Fine-Tuning & Prompt Engineering",
-        "Programmatic SEO Engine Architecture",
-        "Multi-Channel Automated Content Distribution",
-        "RAG Vector Database Ingestion (Brand Voice Cloning)",
-        "Zero-Hallucination Human-In-The-Loop Approval Flows",
-        "Automated Social Media Copy & Carousel Generation",
-        "Direct API CMS Publishing Pipelines (WordPress/Webflow)"
+        "RankWise 49-Factor Ranking Audit & Verification",
+        "Google Featured Snippet & Direct Answer Optimization",
+        "E-E-A-T Demonstration (Credentials, Data Points & Citations)",
+        "Topical Authority Clustering & Semantic LSI Matrices",
+        "Zero-Hallucination Human Editorial Review Gates",
+        "Direct CMS Publishing Pipelines (Next.js / WordPress / Webflow)",
+        "High-Intent Programmatic SEO Landing Page Architectures"
       ]
     },
     intro: {
-      tagline: "Intelligent Scaling",
-      headline: "Dominate Search & Social Without the Human Overhead",
-      description: "Your audience consumes content faster than a traditional team can produce it. Our AI content automation bridges that gap, delivering hyper-personalized, data-backed assets that engage your ideal buyers and accelerate your sales pipeline 24/7."
+      tagline: "Content That Ranks",
+      headline: "Writing for Humans First, Search Engines Second",
+      description: "We craft content that earns trust from human readers while satisfying every technical ranking factor required by modern search engines."
     },
     subServices: [
-      { title: "Programmatic SEO Engines", desc: "Architecture for generating thousands of targeted, location-based or product-based landing pages using structured AI models.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Automated Social Pipelines", desc: "AI-driven trend analysis, copy generation, and automated scheduling for absolute omni-channel presence.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "Dynamic Sales Copy generation", desc: "Hyper-personalized cold email and SMS sequences powered by behavioral triggers and CRM data enrichment.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Brand Voice Cloning", desc: "Strict system prompts and vector databases (RAG) to ensure AI output matches your exact brand tone.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Technical Content Audits", desc: "Scoring existing content against 49 ranking factors to identify structural, keyword, and schema gaps.", href: "/contact", img: "/assets/img/service/illustrations/service-seo.svg" },
+      { title: "Programmatic Topic Clusters", desc: "Mapping and executing dense topical hubs covering every high-intent search query in your sector.", href: "/contact", img: "/assets/img/service/illustrations/service-content-automation.svg" },
+      { title: "Direct-Response Copywriting", desc: "High-converting sales copy, email sequences, and landing page headlines crafted for action.", href: "/contact", img: "/assets/img/service/illustrations/service-sales-followup.svg" },
+      { title: "Omnichannel Repurposing", desc: "Transforming long-form flagship articles into social carousels, video scripts, and executive newsletters.", href: "/contact", img: "/assets/img/service/illustrations/service-social-meta.svg" }
     ],
     processSteps: [
-      { title: "Brand Voice & Data Ingestion", description: "We scrape and analyze your past content, brand guidelines, and high-performing assets to build a custom vector database.", timeline: "Weeks 1-2" },
-      { title: "Workflow Architecture & Integration", description: "Connecting your CMS, CRM, and social channels via n8n or Make.com to enable seamless, automated publishing.", timeline: "Weeks 2-3" },
-      { title: "Prompt Engineering & Quality Testing", description: "Rigorous testing of system prompts and automated validation scripts to ensure zero hallucinations and high quality.", timeline: "Weeks 3-4" },
-      { title: "Deployment & Automated Scaling", description: "Flipping the switch on the programmatic engine, generating and publishing content autonomously.", timeline: "Ongoing" }
+      { title: "Topic Architecture & SERP Analysis", description: "We identify keyword opportunities, analyze competitor snippet vulnerabilities, and construct comprehensive editorial briefs.", timeline: "Week 1" },
+      { title: "RankWise Content Drafting", description: "Our editorial engine generates first-draft assets satisfying all readability, keyword density, and heading hierarchy rules.", timeline: "Weeks 1-2" },
+      { title: "E-E-A-T & Data Enrichment", description: "Human subject-matter editors inject proprietary data benchmarks, industry citations, and custom diagrams.", timeline: "Weeks 2-3" },
+      { title: "Structured Publishing & Indexing", description: "We deploy schema markup (JSON-LD), internal links, and push live via CMS APIs for rapid search engine indexing.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Zero AI Hallucinations", description: "We use strict parameter controls and Retrieval-Augmented Generation (RAG) to ensure absolute factual accuracy." },
-      { title: "Massive Cost Reduction", description: "Achieve the output of a 20-person content team for a fraction of the cost." },
-      { title: "SEO-First Architecture", description: "Every piece of content is engineered to satisfy Google's Helpful Content (E-E-A-T) guidelines." },
-      { title: "Native CMS Integration", description: "We build custom APIs to plug directly into WordPress, Webflow, Shopify, or your custom tech stack." }
+      { title: "RankWise 49-Factor Standard", description: "Every article is scored against 49 precise ranking factors before reaching production." },
+      { title: "Zero Cliché AI Vocabulary", description: "We systematically eliminate burned AI filler phrases to protect your domain from HCU penalties." },
+      { title: "Built-In Featured Snippet Blocks", description: "We format direct answers to win Position Zero across conversational search engines and AI Overviews." },
+      { title: "Turnkey CMS Integration", description: "From markdown generation to meta tags and schema, articles are formatted ready for instant publishing." }
     ],
     faqData: [
-      { q: "Will AI content hurt my Google rankings?", a: "No. Google's official stance rewards high-quality content regardless of how it is produced. We engineer our AI to strictly adhere to E-E-A-T principles, ensuring your content ranks safely and effectively." },
-      { q: "Does the content sound robotic or generic?", a: "Not at all. We utilize advanced prompt engineering and fine-tune large language models (LLMs) using your existing brand voice, style guides, and terminology." },
-      { q: "Can we review the content before it goes live?", a: "parser. We build 'human-in-the-loop' workflows where your team can quickly approve, edit, or reject staged content." },
-      { q: "How do you ensure factual accuracy?", a: "We use RAG (Retrieval-Augmented Generation) which forces the AI to pull facts solely from a strictly controlled database of your company's own documents." },
-      { q: "What platforms can you automate content for?", a: "We build publishing pipelines for WordPress, Shopify, Webflow, LinkedIn, X, Facebook, Instagram, and major CRMs." }
+      { q: "What makes RankWise content different from standard ChatGPT text?", a: "RankWise content enforces 49 technical ranking signals including strict keyword placement, active voice readability, custom data points, E-E-A-T author credentials, and zero burned AI cliché words." },
+      { q: "How quickly do newly published articles begin to rank?", a: "With clean schema markup and proper technical indexing, articles targeting low-to-medium competition clusters often index within 48-72 hours and climb to page 1 within 30-90 days." },
+      { q: "Can this system match our company's unique tone and style guidelines?", a: "Yes. We ingest your past high-performing writing, style books, and brand guidelines into custom system guardrails to maintain an authentic, consistent brand voice." },
+      { q: "Does your content include JSON-LD Schema markup?", a: "Yes. All articles are generated complete with schema markup (Article, FAQPage, BreadcrumbList) for rich search engine display." }
     ]
   },
+
   "marketing-automation": {
     hero: {
-      badge: "REVENUE AUTOMATION",
-      title: <>Turn Traffic Into Revenue With <span className="text-primary underline decoration-accent/60 decoration-4">Marketing Automation</span></>,
-      description: "Eliminate manual follow-ups and leaky funnels. We build intelligent, multi-channel automation ecosystems that capture, score, and nurture leads 24/7, dramatically accelerating your sales cycle."
+      badge: "MARKETING AUTOMATION",
+      title: <>Systematize Your Pipeline With <span className="text-primary underline decoration-accent/60 decoration-4">Automated Workflows</span></>,
+      description: "Eliminate manual lead tracking and pipeline leakage. We engineer event-driven marketing workflows connecting your forms, ad accounts, WhatsApp API, and CRM into an autonomous conversion system."
     },
     about: {
-      title: "Intelligent Workflows for Measurable Advantage",
+      title: "Zero-Leakage Customer Journey Engineering",
       paragraphs: [
-        "Most businesses lose massive amounts of revenue simply because leads fall through the cracks. Sales teams are too busy to follow up 7+ times, and generic email blasts are ignored. Adyantra Digital solves this by engineering interconnected marketing systems that capture, nurture, and close prospects automatically.",
-        "By deeply integrating your CRM (HubSpot, Salesforce, GoHighLevel) with advanced automation logic, we ensure the right message hits the right prospect at the exact right time. We build complex branching logic based on user behavior—if they visit the pricing page, they get a specific SMS; if they abandon a cart, they get a personalized email.",
-        "Our marketing automation setups go beyond basic autoresponders. We implement dynamic lead scoring algorithms that quantify prospect engagement, alerting your human sales team the exact moment a lead is 'hot' and ready to close."
+        "When prospects wait hours for a sales response, conversion rates drop by over 80%. Adyantra Digital builds instant-response automation systems that qualify leads within seconds of submission, route deals to top reps, and trigger tailored nurturing sequences across WhatsApp, SMS, and email.",
+        "We integrate fragmented tools—linking your Meta Ads, Google Ads, Zapier, Make.com, HubSpot, Zoho, and internal databases into a cohesive, fault-tolerant infrastructure with automated retries and dead-letter queues.",
+        "By replacing manual data entry with reliable event webhooks, your sales team spends 100% of their time closing qualified opportunities rather than chasing dead leads."
       ],
       pillars: [
-        "Advanced Enterprise CRM Architecture (HubSpot/Salesforce)",
-        "Dynamic Multi-Touch Lead Scoring Algorithms",
-        "Real-Time Behavioral Trigger Sequences",
-        "Omni-Channel Messaging (Email, SMS, WhatsApp Sync)",
-        "Automated Lead Assignment & Sales Round-Robin Logic",
-        "Pipeline Velocity & Drop-off Analytics",
-        "Closed-Loop Revenue Attribution Infrastructure"
+        "Sub-15-Second Lead Qualification & Scoring Engines",
+        "Multi-Platform Webhook & API Mesh (Make / Zapier / n8n)",
+        "Two-Way WhatsApp Business API & SMS Automation",
+        "CRM Lifecycle Deal Stage Progression & Task Assignment",
+        "Dynamic Cart Abandonment & Win-Back Triggers",
+        "Idempotent Execution & Automated Error Handling",
+        "Live Executive Revenue Pipeline Dashboards"
       ]
     },
     intro: {
-      tagline: "Systematized Sales",
-      headline: "Stop Chasing Leads. Let Your Systems Convert Them.",
-      description: "From sophisticated abandoned cart sequences to complex B2B lead nurturing pipelines lasting 12+ months, our automation strategies trigger highly personalized actions based on deep user behavior, ensuring maximum engagement."
+      tagline: "Autonomous Operations",
+      headline: "Never Miss a High-Intent Customer Lead",
+      description: "We build reliable automation bridges connecting lead acquisition to CRM deal closing with zero manual latency."
     },
     subServices: [
-      { title: "Behavioral Email Sequences", desc: "Highly segmented automated email logic based on exactly what users click, view, and purchase.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "WhatsApp & SMS Automation", desc: "Direct-to-phone messaging for high-intent lead closing and appointment reminders with 98% open rates.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Dynamic Lead Scoring", desc: "Algorithms that track engagement across your site and emails to identify your hottest leads automatically.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "CRM Implementation & Auditing", desc: "Complete setup and overhaul of HubSpot, ActiveCampaign, or GoHighLevel for maximum efficiency.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Lead Ingestion & Scoring", desc: "Instant capture, enrichment, and predictive scoring routing high-intent buyers to senior closers.", href: "/contact", img: "/assets/img/service/illustrations/service-lead-generation.svg" },
+      { title: "Omnichannel Drip Workflows", desc: "Coordinated WhatsApp, SMS, and email sequences triggered by real-time customer behavioral signals.", href: "/contact", img: "/assets/img/service/illustrations/service-whatsapp-crm.svg" },
+      { title: "CRM Sync & Deal Hygiene", desc: "Automatic field normalization, duplicate prevention, and stage progression across your sales CRM.", href: "/contact", img: "/assets/img/service/illustrations/service-crm-automation.svg" },
+      { title: "Multi-Platform Middleware", desc: "Custom n8n and Make.com architectures connecting legacy databases with modern marketing software.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" }
     ],
     processSteps: [
-      { title: "Funnel Mapping & Audit", description: "We map out your entire customer journey, identifying drop-off points and missed follow-up opportunities.", timeline: "Weeks 1-2" },
-      { title: "Tech Stack Integration", description: "We connect your website, CRM, advertising platforms, and communication channels via robust APIs.", timeline: "Weeks 2-3" },
-      { title: "Workflow Logic Design", description: "Building complex conditional branches, delay timers, and dynamic tags to hyper-personalize the user journey.", timeline: "Weeks 3-4" },
-      { title: "Testing & Iteration", description: "Live A/B testing of subject lines, wait times, and offer structures to maximize conversion rates.", timeline: "Ongoing" }
+      { title: "Workflow & Tooling Discovery", description: "We map your current tech stack, lead sources, and team handoffs to locate pipeline bottlenecks.", timeline: "Days 1-5" },
+      { title: "System Architecture & Logic Design", description: "Blueprinting trigger conditions, enrichment filters, fallback routes, and message payloads.", timeline: "Days 6-12" },
+      { title: "Integration & Sandbox Testing", description: "Building webhooks, testing multi-branch sequences, and simulating edge cases with dummy transactions.", timeline: "Days 13-20" },
+      { title: "Production Deployment & Monitoring", description: "Going live with automated execution logs, instant Slack alerting for errors, and continuous uptime audits.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Omni-Channel Expertise", description: "We seamlessly blend Email, SMS, WhatsApp, and Retargeting Ads into unified sequences." },
-      { title: "Complex Logic Specialists", description: "We build advanced 'If/Then' logic trees that respond to real-time prospect behavior." },
-      { title: "CRM Agnostic Approach", description: "Whether you use HubSpot, Salesforce, or niche software, we have the technical depth to integrate it." },
-      { title: "Sales Alignment", description: "Our automations are designed specifically to feed highly-qualified, booked appointments to your closers." }
+      { title: "Sub-15s Response Speed", description: "Leads receive personalized outreach within seconds, maximizing contact and conversion rates." },
+      { title: "Enterprise Fault Tolerance", description: "Every workflow incorporates automated retries and error alerting to ensure zero dropped data." },
+      { title: "Official WhatsApp Cloud API", description: "We implement verified Meta WhatsApp APIs for compliant, high-deliverability conversational sales." },
+      { title: "CRM Platform Agnostic", description: "We build seamlessly across HubSpot, Salesforce, Zoho, Pipedrive, and custom PostgreSQL systems." }
     ],
     faqData: [
-      { q: "What CRM software do you recommend?", a: "We frequently work with HubSpot for B2B enterprises, Klaviyo for E-commerce, and GoHighLevel for agencies and local service businesses." },
-      { q: "Will automated emails end up in spam?", a: "We configure DMARC, DKIM, and SPF records and implement domain warm-up protocols to ensure 95%+ inbox deliverability." },
-      { q: "Can marketing automation help if my sales cycle is very long?", a: "Yes. For 6-12 month B2B sales cycles, we build long-term drip campaigns that keep your brand top-of-mind." },
-      { q: "Do you provide copywriting for automated emails?", a: "Yes, our direct-response copywriters craft all email, SMS, and WhatsApp scripts." },
-      { q: "How do you track the ROI of automation?", a: "We implement closed-loop reporting attributing CRM closed-won revenue directly back to automation sequences." }
+      { q: "Which automation platforms do you specialize in?", a: "We build complex architectures using n8n (self-hosted or cloud), Make.com, Zapier, custom Node.js webhooks, and direct native REST APIs." },
+      { q: "Can you automate WhatsApp messages for incoming website leads?", a: "Yes. Using the official Meta WhatsApp Business Cloud API, we deploy automated two-way chatbots that qualify prospects and book meetings." },
+      { q: "What happens if an external API goes down during a sync?", a: "Our workflow architectures include idempotent queuing and retry mechanisms that buffer payloads and re-attempt execution until delivery is verified." }
     ]
   },
+
   "social-media-marketing": {
     hero: {
-      badge: "SOCIAL DOMINANCE",
-      title: <>Build Unbreakable Loyalty With <span className="text-primary underline decoration-accent/60 decoration-4">Strategic Social Media</span></>,
-      description: "Move beyond vanity metrics. We engineer full-funnel social media architectures that combine viral organic content with high-converting paid social to build communities, drive deep brand loyalty, and generate measurable revenue."
+      badge: "PAID SOCIAL ACCELERATION",
+      title: <>Dominate Social Feeds With <span className="text-primary underline decoration-accent/60 decoration-4">High-Converting Ads</span></>,
+      description: "Transform your social channels into predictable revenue drivers. We combine direct-response video creative, dynamic Meta Advantage+ campaigns, and deep audience segmentation to scale your return on ad spend."
     },
     about: {
-      title: "Architecting Digital Communities for Scaling Brands",
+      title: "Direct-Response Paid Social Built for Conversion",
       paragraphs: [
-        "In the modern attention economy, posting generic graphics three times a week is a waste of resources. Social media algorithms reward high-retention video, contrarian thought leadership, and deep community engagement. Adyantra Digital builds highly aggressive, culturally relevant social media strategies that command attention.",
-        "We approach social media as a dual-engine system: The 'Organic Engine' builds trust, authority, and massive top-of-funnel reach through short-form video and authoritative writing. The 'Paid Engine' captures that attention, retargets engaged users, and forcefully drives them into your conversion funnels.",
-        "Our in-house production team handles everything from scriptwriting and creative direction to video editing and community management. We utilize advanced sentiment analysis to gauge audience reception and pivot our content strategy dynamically based on algorithmic trends."
+        "In the modern social advertising landscape, static stock images and vanity follower counts no longer generate meaningful revenue. Success requires high-volume creative iteration, thumb-stopping hooks, and machine-learning campaign structures.",
+        "Adyantra Digital produces and tests 20+ creative variations monthly across Meta (Instagram & Facebook), TikTok, and LinkedIn. We pair direct-response video storytelling with server-side CAPI tracking, ensuring social algorithms find your highest-spending customers.",
+        "From cold prospecting to personalized dynamic retargeting, our full-funnel paid social frameworks deliver steady, scalable customer acquisition for high-growth brands."
       ],
       pillars: [
-        "High-Retention Short-Form Video Production (Reels/TikTok)",
-        "Executive B2B Thought Leadership (LinkedIn Ghostwriting)",
-        "Proactive Community Cultivation & DM Lead Capture",
-        "Algorithmic Trend & Retention Graph Analytics",
-        "Social Commerce Integration (Instagram/TikTok Shop)",
-        "Omni-Channel Content Calendar Architecture",
-        "Paid Social Retargeting Funnel Alignment"
+        "Meta Advantage+ & Dynamic Creative Optimization (DCO)",
+        "Direct-Response Short-Form Video Production (Reels & TikToks)",
+        "High-Converting Headline Hook & Angle Testing Matrices",
+        "Server-Side Meta Conversions API (CAPI) Tracking",
+        "B2B Account-Based Marketing (ABM) on LinkedIn",
+        "Omnichannel Dynamic Product Retargeting Flows",
+        "Predictable Customer Acquisition Cost (CAC) Management"
       ]
     },
     intro: {
-      tagline: "Omni-Channel Presence",
-      headline: "Command Attention in a Noisy World",
-      description: "We transform your social channels from stagnant digital brochures into dynamic, highly engaged communities that act as your most powerful customer acquisition asset."
+      tagline: "Social Performance",
+      headline: "Creative Is Your Most Powerful Targeting Lever",
+      description: "We craft thumb-stopping direct-response video and static creative assets optimized to capture buyer attention and drive profitable checkouts."
     },
     subServices: [
-      { title: "Short-Form Video (Reels/TikTok)", desc: "High-retention, fast-paced video content engineered specifically for algorithmic virality.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "B2B LinkedIn Authority", desc: "Ghostwriting and executive brand building to position your leadership as industry titans.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Community Management", desc: "Proactive engagement, comment moderation, and DM management to foster extreme loyalty.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Social Commerce Integration", desc: "Setting up Instagram/Facebook Shops and TikTok Shop for frictionless in-app purchasing.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Meta Advantage+ Campaigns", desc: "Machine-learning campaign structures maximizing return on ad spend across Instagram and Facebook.", href: "/contact", img: "/assets/img/service/illustrations/service-social-meta.svg" },
+      { title: "Dynamic Creative Optimization", desc: "Algorithmic testing of hooks, angles, and CTA overlays to discover breakout winning creative assets.", href: "/contact", img: "/assets/img/service/illustrations/service-ad-creative.svg" },
+      { title: "Direct-Response Reels & Video", desc: "Short-form video assets engineered to arrest feed scrolling and drive immediate landing page clicks.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-video.svg" },
+      { title: "B2B LinkedIn Marketing", desc: "High-precision account-based targeting to engage C-suite decision makers and generate enterprise pipeline.", href: "/contact", img: "/assets/img/service/illustrations/service-lead-generation.svg" }
     ],
     processSteps: [
-      { title: "Brand Identity & Trend Analysis", description: "Deep dive into your brand archetype, competitor positioning, and current platform algorithms.", timeline: "Weeks 1-2" },
-      { title: "Content Matrix Architecture", description: "Developing a 30-day content calendar spanning educational, entertaining, and promotional pillars.", timeline: "Weeks 2-3" },
-      { title: "In-House Production", description: "Our studio team shoots, edits, and produces high-quality video and static assets.", timeline: "Continuous" },
-      { title: "Analytics & Algorithmic Pivot", description: "Weekly review of retention graphs and engagement rates to double down on winning formats.", timeline: "Ongoing" }
+      { title: "Competitor & Creative Analysis", description: "We analyze high-performing creative hooks and angle saturation in your niche using ad intelligence tools.", timeline: "Week 1" },
+      { title: "Creative Sprint Production", description: "Our studio scripts, designs, and edits initial creative concepts across 9:16 vertical and 1:1 feed formats.", timeline: "Weeks 1-2" },
+      { title: "Campaign Launch & DCO Sandbox", description: "Deploying campaigns under consolidated structures to feed ad algorithms statistically significant conversion data.", timeline: "Weeks 2-3" },
+      { title: "Scale Winning Angles", description: "Doubling down on winning angles with fresh visual variations and scaling budgets profitably.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Video-First Strategy", description: "We prioritize short-form video (TikTok, Reels, Shorts) which drives 80% of modern social engagement." },
-      { title: "B2B & B2C Expertise", description: "Whether you need aggressive TikTok trends or professional LinkedIn thought leadership, we have specialized teams." },
-      { title: "Data-Backed Creative", description: "We don't guess. We analyze video retention graphs to optimize hook rates and watch times." },
-      { title: "Full-Stack Production", description: "No outsourced editing. Our in-house team ensures rapid turnaround times and brand consistency." }
+      { title: "In-House Creative Studio", description: "We shoot, edit, and iterate video and static assets internally, delivering rapid turnaround times." },
+      { title: "Algorithmic Best Practices", description: "We structure campaigns aligned with modern machine-learning ad algorithms to avoid audience overlap." },
+      { title: "Attribution Transparency", description: "Every conversion is verified via server-side CAPI and third-party attribution models." }
     ],
     faqData: [
-      { q: "Which social platforms should my business be on?", a: "B2B companies target LinkedIn and X; E-commerce brands dominate TikTok, Instagram, and Pinterest." },
-      { q: "How many times a week do you post?", a: "We recommend 3-5 high-quality posts per week including 2-3 short-form videos." },
-      { q: "Do you handle answering comments and messages?", a: "Yes, community management and DM lead capture are fully included." },
-      { q: "How do we measure success on social media?", a: "Primary KPIs are profile visits, link clicks, lead capture, and attributable revenue." },
-      { q: "Do I have to record videos myself?", a: "We provide scripts if you want to be on camera, or use UGC creators/motion graphics if you prefer hands-off." }
+      { q: "How many creative variations do you produce each month?", a: "Depending on your monthly ad spend and tier, our creative studio produces between 12 and 30 new direct-response video and static variations monthly." },
+      { q: "Do you supply UGC creators and voiceovers?", a: "Yes. We source, direct, and license vetted creators, matching authentic voices to your core customer demographics." }
     ]
   },
+
   "seo": {
     hero: {
-      badge: "SEARCH DOMINANCE",
-      title: <>Capture High-Intent Traffic With <span className="text-primary underline decoration-accent/60 decoration-4">Technical SEO</span></>,
-      description: "Dominate Google's top rankings. We deploy advanced technical architecture, programmatic content strategies, and high-authority link acquisition to secure sustainable organic traffic that converts."
+      badge: "TECHNICAL & PROGRAMMATIC SEO",
+      title: <>Capture High-Intent Demand With <span className="text-primary underline decoration-accent/60 decoration-4">RankWise SEO</span></>,
+      description: "Dominate Google search results with technical audits, topical authority clusters, and the RankWise 49-factor framework. We engineer websites to rank in top positions and capture compounding inbound organic revenue."
     },
     about: {
-      title: "Algorithmic Engineering for Organic Growth",
+      title: "Technical Search Engine Optimization Engineered for ROI",
       paragraphs: [
-        "Search Engine Optimization is no longer about keyword stuffing or buying spammy backlinks. It is a highly technical discipline requiring perfect website architecture, rapid load times, and exceptionally structured content. Adyantra Digital approaches SEO as an engineering problem.",
-        "We start with a granular technical audit, resolving JavaScript rendering issues, optimizing Core Web Vitals, and restructuring your URL hierarchy for optimal crawlability. By ensuring search engines can perfectly parse and index your site, we lay the foundation for explosive growth.",
-        "On the content side, we utilize entity-based SEO and semantic topic clustering. Instead of targeting single keywords, we build massive topical authority maps, positioning your brand as the definitive industry resource. Coupled with our digital PR campaigns to secure high-DR backlinks, we push your site to the top of competitive SERPs."
+        "Organic search represents your business's highest-margin acquisition channel. However, outdated keyword stuffing and low-quality PBN links no longer work in modern search ecosystems driven by Google's helpful content systems and AI Overviews.",
+        "Adyantra Digital deploys the proprietary RankWise 49-Factor methodology. We build search architectures that excel across technical site health, Core Web Vitals, semantic entity mapping, and human-first editorial standards.",
+        "By structuring deep topic clusters with clear internal link flows and JSON-LD schema markup, we transform your domain into an acknowledged authority in your market, driving qualified organic pipeline that compounds month over month."
       ],
       pillars: [
-        "Developer-Led Technical SEO Architecture",
-        "Core Web Vitals Speed & Hydration Optimization",
-        "Semantic Topic Clustering & Entity Mapping",
-        "Programmatic Long-Tail Keyword Generation",
-        "High-DR Editorial Link Acquisition & Digital PR",
-        "Structured Schema Markup (JSON-LD) Deployment",
-        "Google Helpful Content & E-E-A-T Alignment"
+        "RankWise 49-Factor Ranking Audit & Remediation",
+        "Core Web Vitals Optimization (Sub-100ms INP, LCP & CLS)",
+        "Topical Authority Clustering & Semantic Entity Mapping",
+        "Google Featured Snippet & AI Overview Domination",
+        "Enterprise JSON-LD Schema Markup (Service, Organization, FAQ)",
+        "Internal PageRank Architecture & Crawl Budget Optimization",
+        "High-Authority Digital PR & Editorial Backlink Acquisition"
       ]
     },
     intro: {
-      tagline: "Organic Revenue",
-      headline: "Stop Paying for Every Click",
-      description: "Paid ads stop working the moment you stop paying. A well-engineered SEO strategy builds a compounding digital asset that drives highly qualified, free traffic to your business for years to come."
+      tagline: "Search Dominance",
+      headline: "Rank for High-Intent Commercial Queries",
+      description: "We optimize your technical architecture, content quality, and domain authority to turn search engines into compounding customer channels."
     },
     subServices: [
-      { title: "Technical SEO Audits", desc: "Deep crawl analysis, resolving canonical conflicts, schema markup, and JavaScript rendering issues.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "Content Silos & Topical Authority", desc: "Architecting structured content hubs to completely dominate specific industry niches.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Digital PR & Link Building", desc: "Acquiring editorial backlinks from high Domain Rating (DR) publications in your industry.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Local SEO & Map Pack", desc: "Aggressive optimization for local businesses to dominate the 'Near Me' Google search results.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Technical Site Health Audits", desc: "Comprehensive crawling to eliminate 404s, redirect chains, canonical errors, and index bloat.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-audit.svg" },
+      { title: "RankWise Editorial Content", desc: "Long-form search assets built against 49 factors, optimized for Featured Snippet Position Zero.", href: "/contact", img: "/assets/img/service/illustrations/service-seo.svg" },
+      { title: "Enterprise Schema Markup", desc: "JSON-LD structured data for rich snippet enhancements across Google mobile and desktop search.", href: "/contact", img: "/assets/img/service/illustrations/service-content-automation.svg" },
+      { title: "Digital PR & Authority Outreach", desc: "Earning contextual backlinks from tier-1 media publications and reputable industry domains.", href: "/contact", img: "/assets/img/service/illustrations/service-pr-reputation.svg" }
     ],
     processSteps: [
-      { title: "Comprehensive Technical Audit", description: "We run deep crawls using tools like Screaming Frog to identify and fix every indexability issue on your site.", timeline: "Weeks 1-3" },
-      { title: "Keyword & Entity Mapping", description: "Mapping high-intent keywords to specific URLs and planning out semantic content clusters.", timeline: "Weeks 3-4" },
-      { title: "On-Page & Content Deployment", description: "Optimizing existing pages and deploying new, highly structured content assets.", timeline: "Months 2-3" },
-      { title: "Off-Page Authority Building", description: "Continuous outreach to secure high-quality, relevant backlinks to push rankings higher.", timeline: "Ongoing" }
+      { title: "Full Technical & Log File Audit", description: "Crawling every URL on your domain to resolve server response delays, indexation gaps, and mobile issues.", timeline: "Week 1" },
+      { title: "Keyword & Entity Opportunity Mapping", description: "Grouping thousands of high-intent search terms into cohesive topic clusters with clear search intent.", timeline: "Weeks 1-2" },
+      { title: "On-Page & Schema Deployment", description: "Rewriting titles, optimizing headings, deploying JSON-LD schema, and structuring internal links.", timeline: "Weeks 2-4" },
+      { title: "Authority Growth & Ongoing Content", description: "Publishing weekly RankWise clusters and running targeted digital PR to build domain rating.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Developer-Led SEO", description: "Our SEOs work side-by-side with Next.js developers to implement complex technical fixes immediately." },
-      { title: "White-Hat Only", description: "We strictly adhere to Google's guidelines, ensuring your site is protected from algorithmic penalties." },
-      { title: "Entity-Based Strategy", description: "We optimize for semantic search and entities, not just outdated keyword density metrics." },
-      { title: "Transparent ROI Reporting", description: "We tie organic traffic directly to revenue and lead generation in our custom dashboards." }
+      { title: "The RankWise 49-Factor Standard", description: "We adhere strictly to a 49-factor technical and content checklist ensuring no ranking factor is overlooked." },
+      { title: "Sub-100ms Core Web Vitals", description: "Our web engineers optimize frontend bundles for flawless speed scores across Google PageSpeed." },
+      { title: "Zero Black-Hat Risk", description: "We protect your brand by exclusively applying white-hat, Google-compliant optimization practices." }
     ],
     faqData: [
-      { q: "How long does it take for SEO to show results?", a: "Significant organic growth typically takes 3 to 6 months of technical fixes, content deployment, and link acquisition." },
-      { q: "Is SEO better than Google Ads (PPC)?", a: "PPC offers instant testing; SEO builds compounding long-term ROI. We recommend running both in tandem." },
-      { q: "Do you guarantee page 1 rankings?", a: "We guarantee executing a mathematically sound, proven framework that consistently yields top SERP positions." },
-      { q: "What happens if Google updates its algorithm?", a: "Our focus on technical excellence and E-E-A-T content insulates clients from negative core update hits." },
-      { q: "Do you buy backlinks?", a: "No. We acquire high-DR links strictly through manual editorial outreach and digital PR." }
+      { q: "How long does it take for SEO investments to generate revenue?", a: "While technical fixes and low-hanging fruit keywords often show ranking momentum in 30-60 days, authoritative commercial terms typically achieve top-3 rankings in 3 to 6 months of steady execution." },
+      { q: "How do you optimize for Google's new AI Overviews (SGE)?", a: "We apply the RankWise Featured Snippet methodology: concise 40-60 word definition blocks, structured tables, bulleted process lists, and verified E-E-A-T credentials that AI crawlers cite directly." }
     ]
   },
+
   "ecommerce-marketing": {
     hero: {
-      badge: "E-COMMERCE GROWTH",
-      title: <>Scale Your D2C Brand With <span className="text-primary underline decoration-accent/60 decoration-4">Precision E-Commerce Marketing</span></>,
-      description: "Drive explosive revenue growth. We architect high-ROAS ad campaigns, optimize conversion rates, and build aggressive retention systems to maximize profitability for modern E-Commerce brands."
+      badge: "E-COMMERCE ACCELERATION",
+      title: <>Scale Online Store Sales With <span className="text-primary underline decoration-accent/60 decoration-4">D2C Growth Engines</span></>,
+      description: "Scale your e-commerce brand profitably across Shopify, Amazon, and Meta. We combine high-converting storefront architecture, multi-channel shopping ads, and automated cart abandonment flows to maximize revenue."
     },
     about: {
-      title: "Data-Driven Scaling for Direct-to-Consumer Brands",
+      title: "Full-Funnel Commerce Architecture for D2C Brands",
       paragraphs: [
-        "Scaling an E-Commerce brand requires a delicate balance of Customer Acquisition Cost (CAC) and Lifetime Value (LTV). Adyantra Digital provides the mathematical rigor needed to scale your ad spend without sacrificing profitability.",
-        "We dominate top-of-funnel acquisition using dynamic, AI-optimized creatives across Meta, TikTok, and Google Shopping. Our media buying approach is highly structured, testing dozens of variables weekly to identify the exact combinations that drive the cheapest, highest-converting traffic.",
-        "Simultaneously, we plug revenue leaks at the bottom of the funnel. We deploy complex Klaviyo email flows, SMS cart recovery, and on-site Conversion Rate Optimization (CRO) to ensure that every visitor you pay for has the highest possible probability of purchasing."
+        "Scaling an online retail brand requires synchronized performance across advertising, storefront user experience, and post-purchase customer retention. A breakdown in any of these three stages destroys your net contribution margin.",
+        "Adyantra Digital builds unified commerce systems. We optimize your store for sub-second page loads, frictionless one-click checkouts, and high Average Order Value (AOV) through intelligent bundles and upsells.",
+        "Our growth team runs multi-channel acquisition across Meta Advantage+ Shopping, Google Performance Max, and Amazon PPC while automated email and SMS workflows capture lost revenue and drive repeat purchases."
       ],
       pillars: [
-        "Omni-Channel Customer Acquisition (Meta/TikTok/PMax)",
-        "Klaviyo Advanced Email & SMS Lifecycle Retention",
-        "Shopify Product Page Conversion Rate Optimization (CRO)",
-        "AOV Expansion (Automated Upsells & Cross-Sells)",
-        "Dynamic Product Data Feed Optimization",
-        "Customer Lifetime Value (LTV) Cohort Analysis",
-        "Profit-on-Ad-Spend (POAS) Financial Modeling"
+        "Google Performance Max & Shopping Campaign Management",
+        "Meta Advantage+ Shopping & Dynamic Product Ads (DPA)",
+        "Shopify & Custom Storefront Checkout Rate Optimization",
+        "Automated Cart Recovery Sequences (WhatsApp, SMS, Email)",
+        "Average Order Value (AOV) Expansion & Post-Purchase Upsells",
+        "Customer Lifetime Value (LTV) Retention & VIP Loyalty Flows",
+        "First-Party Data Integration & Server-Side Shopify CAPI"
       ]
     },
     intro: {
-      tagline: "Profitable Scaling",
-      headline: "Stop Guessing. Start Scaling Profitably.",
-      description: "We handle the entire growth ecosystem for your store—from high-converting ad creatives to advanced backend email retention flows—turning your Shopify store into a highly efficient revenue engine."
+      tagline: "Commerce Scaling",
+      headline: "Turn Store Visitors Into Repeat Customers",
+      description: "We optimize your e-commerce storefront, paid traffic acquisition, and retention flows to build a profitable, compounding retail brand."
     },
     subServices: [
-      { title: "Meta & TikTok Performance Ads", desc: "Aggressive creative testing and algorithmic scaling on social platforms.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "Google Performance Max", desc: "Data-feed optimization and advanced machine learning deployment on Google.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Klaviyo Email & SMS Retention", desc: "Advanced flows (Welcome, Abandoned Cart, Post-Purchase) to drive 30%+ of total revenue.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Shopify CRO", desc: "Heatmap analysis and A/B testing on product pages to increase overall conversion rate.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Performance Max & Shopping Ads", desc: "Capturing high-intent shoppers on Google Search, YouTube, and the Google Shopping tab.", href: "/contact", img: "/assets/img/service/illustrations/service-google-ppc.svg" },
+      { title: "Storefront UX & CRO", desc: "Removing checkout friction, optimizing mobile product pages, and deploying smart bundles.", href: "/contact", img: "/assets/img/service/illustrations/service-ui-ux-design.svg" },
+      { title: "Automated Cart Recovery", desc: "Multi-channel WhatsApp, SMS, and email triggers recovering up to 22% of abandoned checkouts.", href: "/contact", img: "/assets/img/service/illustrations/service-ecommerce.svg" },
+      { title: "Customer Retention & VIP Flows", desc: "Automated post-purchase onboarding, replenishment reminders, and loyalty incentives.", href: "/contact", img: "/assets/img/service/illustrations/service-email-workflows.svg" }
     ],
     processSteps: [
-      { title: "Unit Economics Audit", description: "We analyze your margins, AOV, and historical CAC to establish strict profitability targets.", timeline: "Week 1" },
-      { title: "Tracking & Feed Optimization", description: "Setting up server-side tracking (CAPI) and optimizing your Google/Meta product catalogs.", timeline: "Week 2" },
-      { title: "Creative Production & Launch", description: "Designing high-converting UGC and static assets for initial testing.", timeline: "Week 3" },
-      { title: "Scale & Retention Phase", description: "Scaling winning ad sets vertically while deploying advanced email retention flows.", timeline: "Ongoing" }
+      { title: "Storefront & Attribution Audit", description: "We analyze your checkout funnel drop-offs, tracking accuracy, and product margin contributions.", timeline: "Days 1-7" },
+      { title: "Tracking & Retention Deployment", description: "Installing server-side Shopify CAPI and configuring automated cart recovery drip workflows.", timeline: "Days 7-14" },
+      { title: "Shopping Campaign Restructuring", description: "Deploying Google Performance Max and Meta Advantage+ catalogs with segmented product margins.", timeline: "Days 14-21" },
+      { title: "Continuous AOV & Margin Scaling", description: "Testing new bundles, dynamic pricing thresholds, and creative angles to grow net profitability.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Profit-Focused Scaling", description: "We optimize for POAS (Profit on Ad Spend) and Contribution Margin, not just top-line revenue." },
-      { title: "Creative Powerhouse", description: "We produce dozens of high-performing ad creatives monthly to prevent ad fatigue." },
-      { title: "Deep Shopify Integration", description: "Our technical team builds custom Shopify apps and liquid scripts for complex tracking needs." },
-      { title: "Holistic Funnel Approach", description: "We don't just buy ads; we actively optimize your website and email marketing to improve ROI." }
+      { title: "Profit Margin Focused", description: "We optimize campaigns for contribution margin and net profit, not just top-line revenue." },
+      { title: "Shopify & Custom Headless Experts", description: "Our developers build high-speed storefronts that load in under 1 second on mobile networks." },
+      { title: "Proven +20% Cart Recovery", description: "Our multi-channel WhatsApp and SMS recovery flows consistently rescue high-intent buyers." }
     ],
     faqData: [
-      { q: "What is your target ROAS?", a: "We establish Break-Even ROAS during discovery and set aggressive targets based on your specific margins." },
-      { q: "Do you produce video ads?", a: "Yes, we source UGC creators, write direct-response scripts, and edit custom videos for TikTok and Meta." },
-      { q: "Can you help fix a store with a low conversion rate?", a: "If your store converts below 2%, we focus on CRO, site speed, and checkout flow before scaling ad spend." },
-      { q: "How much of my revenue should come from Email/SMS?", a: "We target 25% to 40% of total revenue driven via automated Klaviyo email flows and SMS." },
-      { q: "Do you manage Amazon stores?", a: "Our primary expertise is scaling D2C Shopify stores, though we partner with Amazon specialists when requested." }
+      { q: "Which e-commerce platforms do you support?", a: "We work primarily with Shopify, Shopify Plus, WooCommerce, and custom headless Next.js e-commerce storefronts." },
+      { q: "How do you recover abandoned checkouts?", a: "We deploy an automated 3-touch sequence: instant WhatsApp message with cart link within 15 minutes, followed by personalized email reminders with dynamic incentives." }
     ]
   },
+
   "web-design-development": {
     hero: {
-      badge: "WEB ENGINEERING",
-      title: <>Build High-Performance Digital Experiences With <span className="text-primary underline decoration-accent/60 decoration-4">Custom Web Development</span></>,
-      description: "Your website is your ultimate sales asset. We engineer blazing-fast, technically superior web applications and marketing sites designed to dominate search rankings and maximize conversion rates."
+      badge: "ENGINEERING & DEV",
+      title: <>High-Speed Web Software <span className="text-primary underline decoration-accent/60 decoration-4">Engineered to Convert</span></>,
+      description: "Slow, bloated websites kill conversions and search rankings. We architect modern Next.js and React web applications engineered for sub-100ms latency, responsive aesthetics, and maximum conversion rates."
     },
     about: {
-      title: "Technical Excellence Meets Conversion Psychology",
+      title: "Modern Web Engineering Built for Growth & Speed",
       paragraphs: [
-        "In a digital ecosystem where a 1-second delay reduces conversions by 7%, outdated WordPress templates and bloated page builders are actively losing you money. Adyantra Digital builds bespoke, high-performance web solutions using modern tech stacks like Next.js, React, and Node.js.",
-        "We bridge the gap between stunning aesthetic design and aggressive performance marketing. Our UI/UX designers utilize psychological principles and heatmapping data to design frictionless user journeys, while our engineers ensure the code is lightweight, secure, and infinitely scalable.",
-        "Every platform we build is engineered with a 'SEO-First' architecture. We guarantee near-perfect Core Web Vitals scores out of the box, ensuring Google ranks your site effortlessly while users enjoy a snappy, app-like experience on both desktop and mobile."
+        "Your website is the digital headquarters of your business. If it takes more than 2 seconds to load or fails on mobile screens, prospective customers bounce and your paid ad spend is squandered.",
+        "Adyantra Digital designs and develops bespoke web applications using Next.js, TypeScript, and modern headless architectures. We achieve 100/100 Core Web Vitals scores, seamless animations, and structured conversion paths that guide visitors to purchase or inquire.",
+        "Every line of code is crafted 100% in-house. We integrate secure CMS backends, enterprise APIs, and real-time CRM webhooks so your site functions as an automated customer generation asset."
       ],
       pillars: [
-        "Modern Enterprise Tech Stack (Next.js 16, React, Tailwind CSS)",
-        "Sub-Second Core Web Vitals & Hydration Performance",
-        "Conversion-Centered UI/UX Wireframing & Design",
-        "Headless CMS Integration (Sanity, Strapi, Contentful)",
-        "Mobile-First Responsive Interface Engineering",
-        "Server-Side Rendering (SSR) & Static Site Generation (SSG)",
-        "Robust Security & Zero Technical Debt Architecture"
+        "Full-Stack Next.js, React & TypeScript Architecture",
+        "Sub-100ms Page Load Speeds & 100/100 Core Web Vitals",
+        "Conversion-Optimized Landing Page Design (CRO)",
+        "Enterprise API & Webhook Integrations (CRM / ERP / Payment)",
+        "Responsive Mobile-First Interface & Motion Micro-Interactions",
+        "Strict SOC2, GDPR & Security Best Practice Compliance",
+        "Clean, Maintainable Codebase with Zero Bloated Plugins"
       ]
     },
     intro: {
-      tagline: "High-Performance Web",
-      headline: "Stop Losing Customers to Slow, Ugly Websites",
-      description: "We don't just build websites; we build digital growth engines. Our technical infrastructure provides the ultimate foundation for your paid ads and organic SEO to thrive."
+      tagline: "Software Excellence",
+      headline: "Speed, Security, and Seamless Conversion",
+      description: "We build custom web software combining world-class aesthetics with blisteringly fast engineering to scale your business."
     },
     subServices: [
-      { title: "Custom Corporate Websites", desc: "High-end, bespoke websites engineered for B2B lead generation and brand authority.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "High-Converting Landing Pages", desc: "Hyper-optimized, blazing-fast single pages designed specifically to maximize paid ad ROI.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Web Application Development", desc: "Complex, scalable SaaS platforms and custom portals built on React and Node.js.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "Headless E-Commerce", desc: "Decoupled Shopify architectures using Next.js for sub-second page loads and custom buying experiences.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" }
+      { title: "Custom Next.js Web Apps", desc: "Production-grade web applications engineered with server-side rendering for optimal speed.", href: "/contact", img: "/assets/img/service/illustrations/service-web-development.svg" },
+      { title: "Design Systems & UI/UX", desc: "Bespoke design systems, responsive wireframes, and interactive prototypes built for engagement.", href: "/contact", img: "/assets/img/service/illustrations/service-ui-ux-design.svg" },
+      { title: "Cross-Platform Mobile Apps", desc: "Native iOS and Android mobile applications built on React Native with offline capability.", href: "/contact", img: "/assets/img/service/illustrations/service-mobile-apps.svg" },
+      { title: "API & Backend Integrations", desc: "Connecting payment gateways, authentication providers, and CRM endpoints via secure webhooks.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" }
     ],
     processSteps: [
-      { title: "Discovery & Architecture", description: "We map user journeys, create wireframes, and define the technical stack required for your goals.", timeline: "Weeks 1-2" },
-      { title: "UI/UX Design", description: "Our designers craft high-fidelity, pixel-perfect Figma prototypes for your approval.", timeline: "Weeks 3-4" },
-      { title: "Frontend & Backend Engineering", description: "Our developers write clean, scalable code, integrating necessary CMS and API connections.", timeline: "Weeks 5-8" },
-      { title: "QA & High-Speed Launch", description: "Rigorous cross-browser testing, SEO optimization, and a seamless deployment to production servers.", timeline: "Week 9" }
+      { title: "Architecture & User Flow Wireframing", description: "Blueprinting component structures, database schemas, and intuitive customer conversion paths.", timeline: "Weeks 1-2" },
+      { title: "High-Fidelity UI/UX Design", description: "Designing interactive prototypes with custom dark mode palettes, typographic scales, and micro-animations.", timeline: "Weeks 2-3" },
+      { title: "Full-Stack Development & Testing", description: "Writing clean, modular TypeScript code with strict linting, mobile responsiveness, and speed tuning.", timeline: "Weeks 3-5" },
+      { title: "Deployment & Lighthouse Speed Auditing", description: "Deploying to global Edge networks with 99.99% uptime SLAs and verified 100/100 Core Web Vitals.", timeline: "Week 6" }
     ],
     whyChooseUs: [
-      { title: "Next.js & React Specialists", description: "We utilize enterprise-grade frameworks to deliver secure, lightning-fast performance." },
-      { title: "Conversion-Centric Design", description: "Every button, layout, and color choice is driven by data to maximize user action." },
-      { title: "Perfect Core Web Vitals", description: "Our sites consistently score 95+ on Google Lighthouse, boosting your SEO automatically." },
-      { title: "Zero Technical Debt", description: "We write clean, modular, and extensively documented code that is easy to scale in the future." }
+      { title: "Sub-100ms Latency Guarantee", description: "We eliminate monolithic framework bloat, delivering near-instant page transitions on edge CDN networks." },
+      { title: "100% In-House Engineers", description: "Zero outsourcing. Senior full-stack engineers author and maintain every component." },
+      { title: "Engineered for Conversion", description: "Every page is designed with prominent visual hierarchy, social proof, and streamlined action triggers." }
     ],
     faqData: [
-      { q: "Do you use WordPress or custom code?", a: "We specialize in Next.js and React for superior speed and security, but can build custom, lightweight WordPress themes if required." },
-      { q: "How long does a custom website take to build?", a: "A standard corporate site takes 6-8 weeks; complex web applications or Headless E-Commerce take 12-16 weeks." },
-      { q: "Will I be able to update the website myself?", a: "Yes, we integrate modern Headless CMS tools (Sanity/Strapi) so your marketing team can easily update content." },
-      { q: "Do you provide hosting and maintenance?", a: "We deploy on Vercel or AWS and offer ongoing maintenance retainers." },
-      { q: "Are your websites mobile-friendly?", a: "Every site is built 'Mobile-First' for flawless performance across all device screens." }
+      { q: "Why do you build with Next.js instead of WordPress?", a: "Next.js delivers unmatched performance (sub-100ms loading), enterprise-grade security with no vulnerable plugins, and superior SEO through dynamic server-side rendering." },
+      { q: "Will our internal team be able to update content easily?", a: "Yes. We connect modern headless CMS platforms (Sanity, Strapi, or Contentful) allowing your team to edit text, images, and blog posts with simple visual forms." }
     ]
   },
+
   "analytics-reporting": {
     hero: {
-      badge: "DATA & ANALYTICS",
-      title: <>Make Profitable Decisions With <span className="text-primary underline decoration-accent/60 decoration-4">Advanced Analytics</span></>,
-      description: "Stop guessing which marketing channels are working. We engineer complex data architectures and real-time dashboards to provide absolute clarity on your Customer Acquisition Cost (CAC) and Lifetime Value (LTV)."
+      badge: "MARKETING INTELLIGENCE",
+      title: <>Uncover Hidden Revenue With <span className="text-primary underline decoration-accent/60 decoration-4">Unified Analytics</span></>,
+      description: "Stop flying blind with broken tracking and inaccurate metrics. We implement server-side tracking, multi-touch attribution models, and live executive Looker Studio command centers so you know your exact customer acquisition economics."
     },
     about: {
-      title: "Absolute Clarity in a Privacy-First World",
+      title: "Data Integrity & Attribution Architecture",
       paragraphs: [
-        "In the era of iOS14, ad blockers, and strict privacy regulations, relying on standard browser-based tracking is a recipe for disaster. Adyantra Digital builds resilient, server-side data infrastructure that ensures you capture every critical user interaction accurately.",
-        "We implement advanced multi-touch attribution models to uncover the true customer journey. Instead of simply crediting the last click, we reveal how your organic social, paid search, and email marketing work together to generate revenue, allowing you to allocate budget with surgical precision.",
-        "Finally, we visualize this complex data in beautiful, real-time Looker Studio dashboards. No more waiting for end-of-month PDF reports. You get instant access to live, actionable metrics that dictate executive decision-making."
+        "Modern privacy updates and ad blockers cause traditional client-side analytics to lose up to 30% of critical conversion events. Relying on fragmented data leads to misallocated ad budgets and inaccurate customer lifetime value estimates.",
+        "Adyantra Digital architects resilient tracking ecosystems. We deploy server-side Google Tag Manager (sGTM), Meta Conversions API (CAPI), and clean first-party data pipelines to ensure every transaction and customer touchpoint is accurately recorded.",
+        "We synthesize this raw data into intuitive, real-time Looker Studio dashboards. Executives, marketing leaders, and sales teams get an unvarnished view of customer acquisition costs, blended ROAS, and pipeline velocity."
       ],
       pillars: [
-        "Server-Side Tagging Infrastructure (sGTM)",
-        "Meta & Google Conversions API (CAPI) Deployment",
-        "GA4 Advanced Configuration & Event Customization",
-        "Multi-Touch Custom Attribution Modeling",
-        "Real-Time Executive Looker Studio & PowerBI Dashboards",
-        "UX Heatmap & Session Recording Analytics (Hotjar)",
-        "GDPR/CCPA Consent Mode Compliance Setup"
+        "Server-Side Google Tag Manager (sGTM) Infrastructure",
+        "Meta Conversions API (CAPI) & Google Enhanced Conversions",
+        "First-Party Data Governance & Signal Durability",
+        "Cross-Channel Multi-Touch Attribution Modeling",
+        "Automated Real-Time Looker Studio Executive Dashboards",
+        "Custom Event Tracking & User Behavior Flow Analysis",
+        "Data Hygiene, Deduplication & Pipeline Health Alerts"
       ]
     },
     intro: {
-      tagline: "Data Architecture",
-      headline: "Turn Raw Data into Revenue-Generating Insights",
-      description: "We bridge the gap between fragmented marketing platforms, centralizing your data into a single source of truth so you can scale your business with absolute mathematical confidence."
+      tagline: "Marketing Intelligence",
+      headline: "Make Confident Decisions Grounded in Truth",
+      description: "We build reliable data pipelines and automated visual dashboards that reveal your true marketing ROI."
     },
     subServices: [
-      { title: "Server-Side Tracking (CAPI)", desc: "Implementation of Meta CAPI and Google sGTM to bypass ad blockers and recover lost data.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "GA4 Configuration & Migration", desc: "Expert setup of Google Analytics 4, including custom event tracking and funnel reports.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Custom BI Dashboards", desc: "Building beautiful, real-time Looker Studio or PowerBI dashboards tailored to your KPIs.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Conversion Rate Optimization (CRO)", desc: "Utilizing heatmap and session recording data (Hotjar/Clarity) to remove UX friction.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Server-Side CAPI Setup", desc: "Bypassing browser ad blockers by transmitting verified conversion data directly from your server.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" },
+      { title: "Executive Looker Dashboards", desc: "Clean, real-time command centers tracking spend, revenue, ROAS, and customer CAC in one place.", href: "/contact", img: "/assets/img/service/illustrations/service-crm-automation.svg" },
+      { title: "Attribution Modeling", desc: "Uncovering the true value of top-of-funnel channels with multi-touch data attribution models.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-audit.svg" },
+      { title: "Conversion Funnel Telemetry", desc: "Detailed tracking of micro-conversions, scroll depth, form drop-offs, and checkout steps.", href: "/contact", img: "/assets/img/service/illustrations/service-lead-generation.svg" }
     ],
     processSteps: [
-      { title: "Data Integrity Audit", description: "We analyze your current tracking setup to identify duplicate events, missing data, and attribution errors.", timeline: "Week 1" },
-      { title: "Infrastructure Deployment", description: "Setting up Google Tag Manager, GA4, and establishing server-side tracking environments.", timeline: "Weeks 2-3" },
-      { title: "Custom Event Mapping", description: "Configuring complex tracking for specific button clicks, form submissions, and video views.", timeline: "Week 3" },
-      { title: "Dashboard Visualization", description: "Building and training your team on custom real-time reporting dashboards.", timeline: "Week 4" }
+      { title: "Tracking & Pixel Health Audit", description: "Diagnosing missing tags, duplicate triggers, unverified domains, and data discrepancy rates.", timeline: "Days 1-5" },
+      { title: "Server-Side Infrastructure Setup", description: "Configuring cloud server containers for sGTM and connecting direct Meta, Google, and TikTok APIs.", timeline: "Days 6-12" },
+      { title: "Event Schema & Schema Testing", description: "Mapping purchase, lead, and signup events with custom parameter passing and transaction verification.", timeline: "Days 13-18" },
+      { title: "Executive Dashboard Delivery", description: "Connecting data warehouses to Looker Studio with automated refreshes and role-based views.", timeline: "Days 19-25" }
     ],
     whyChooseUs: [
-      { title: "Deep Technical Expertise", description: "We don't just use standard plugins; we write custom JavaScript for complex tracking scenarios." },
-      { title: "Privacy Compliance", description: "We ensure your tracking setup is fully compliant with GDPR, CCPA, and modern consent modes." },
-      { title: "Business-Centric Metrics", description: "We focus on visualizing profit margins and LTV, not just vanity metrics like clicks and impressions." },
-      { title: "Cross-Platform Integration", description: "We centralize data from Shopify, Salesforce, Meta, and Google into a unified data warehouse." }
+      { title: "100% Signal Durability", description: "Server-side tracking safeguards your data against browser restrictions and cookie decay." },
+      { title: "Blended CAC & LTV Clarity", description: "We calculate true blended economics across all paid and organic acquisition channels." },
+      { title: "No Fluff Metric Focus", description: "We focus on revenue, cash flow, and cost per acquisition rather than vanity impressions." }
     ],
     faqData: [
-      { q: "Why is my Facebook ad data different from my Google Analytics data?", a: "Different platforms use different attribution windows. We deploy server-side tracking to create a unified single source of truth." },
-      { q: "What is Server-Side Tracking and do I need it?", a: "Yes. Server-Side tracking sends data directly from your server, recovering 20-30% of data lost to ad blockers." },
-      { q: "Can you build dashboards for my executive team?", a: "We build high-level, profit-focused dashboards for C-suite and granular reports for marketing managers." },
-      { q: "Do you provide Conversion Rate Optimization (CRO) services?", a: "Yes, using heatmaps and GA4 data to run targeted A/B tests that improve conversion rates." },
-      { q: "How long does a full analytics setup take?", a: "A standard setup takes 2-3 weeks; enterprise data warehouse setups take 4-6 weeks." }
+      { q: "Why do I need server-side tracking (sGTM)?", a: "Standard client-side tags are routinely blocked by privacy extensions, iOS updates, and Safari ITP. Server-side tracking routes data directly through your own domain, restoring 20-30% of lost conversion signals." },
+      { q: "Can you connect our custom CRM or database to Looker Studio?", a: "Yes. We build automated data connectors linking BigQuery, PostgreSQL, HubSpot, Stripe, and ad platforms directly into unified reporting views." }
     ]
   },
+
   "influencer-marketing": {
     hero: {
-      badge: "CREATOR PARTNERSHIPS",
-      title: <>Scale Authentic Trust With <span className="text-primary underline decoration-accent/60 decoration-4">Influencer Marketing</span></>,
-      description: "Leverage the power of human connection. We architect data-driven influencer campaigns and UGC pipelines that turn trusted creators into highly profitable customer acquisition channels for your brand."
+      badge: "CREATOR & INFLUENCER GROWTH",
+      title: <>Scale Brand Trust With <span className="text-primary underline decoration-accent/60 decoration-4">Vetted Creators</span></>,
+      description: "Harness the power of authentic creator partnerships. We source, negotiate, and execute performance influencer campaigns across Instagram and YouTube that drive real customer engagement and measurable sales."
     },
     about: {
-      title: "Data-Backed Creator Integration",
+      title: "Performance-Driven Creator Partnerships",
       paragraphs: [
-        "Modern consumers are blind to traditional advertising; they buy based on trust and authentic recommendations. Adyantra Digital transforms influencer marketing from a vanity PR exercise into a measurable, high-ROI performance channel.",
-        "We bypass the outdated model of paying for 'shoutouts.' Instead, we utilize advanced audience overlap analysis to identify micro and macro-creators whose followers perfectly match your ideal customer profile. We negotiate strict performance deliverables, ensuring you get usable assets and trackable conversions.",
-        "Furthermore, we secure the rights to 'whitelist' or 'spark' creator content. This allows us to run highly targeted paid ads directly through the influencer's social media handles, combining the authenticity of the creator with the algorithmic precision of our media buying team."
+        "Consumers no longer respond to generic branded advertising. They purchase from trusted creators who authentically integrate products into their daily lifestyle. However, managing dozens of creators manually is chaotic and prone to wasted spend.",
+        "Adyantra Digital turns influencer marketing into a structured acquisition channel. We vet creator audiences for real engagement, negotiate content licensing rights for paid ad whitelisting, and track every campaign with unique affiliate referral links.",
+        "By repurposing winning creator videos across your paid Meta and TikTok ad accounts, you multiply campaign reach while reducing creative production costs."
       ],
       pillars: [
-        "Audience Demographic & Bot-Audit Vetting",
-        "Performance Contract & Usage Rights Negotiation",
-        "Direct-Response UGC Content Asset Pipeline",
-        "Creator Whitelisting & Paid Social Spark Ads",
-        "Affiliate & Coupon Tracking System Setup",
-        "Product Seeding & Logistics Management",
-        "Attributable ROAS & Customer Acquisition Cost Analytics"
+        "Audience Authenticity & Fake Follower Auditing",
+        "End-to-End Creator Contracting & Usage Rights Licensing",
+        "Performance Whitelisting & Dark Posting on Meta / TikTok",
+        "Unique Coupon & Server-Side Affiliate Attribution",
+        "Direct-Response Creative Briefing & Storyboard Review",
+        "Tiered Ambassador & Micro-Influencer Management",
+        "Attributable ROAS & Cost Per Acquisition Tracking"
       ]
     },
     intro: {
-      tagline: "Authentic Acquisition",
-      headline: "Turn Creators Into High-Converting Sales Engines",
-      description: "We handle the entire lifecycle of influencer marketing—from discovery and contract negotiation to campaign execution and paid amplification—delivering massive brand awareness and measurable sales."
+      tagline: "Authentic Reach",
+      headline: "Partner With Creators Your Customers Already Trust",
+      description: "We handle creator discovery, contract negotiations, creative briefs, and performance tracking to turn influencers into reliable revenue generators."
     },
     subServices: [
-      { title: "Creator Discovery & Vetting", desc: "Using advanced tools to audit engagement rates, fake followers, and audience demographics.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "UGC Content Generation", desc: "Sourcing high-quality, direct-response User Generated Content for use in your own paid ads.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Influencer Whitelisting", desc: "Running targeted Meta and TikTok ads through the creator's handle for massive ROI.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Ambassador Programs", desc: "Building long-term, affiliate-based relationships with creators for sustained organic growth.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Creator Discovery & Vetting", desc: "Auditing audience demographics, engagement ratios, and brand affinity to avoid fake influencers.", href: "/contact", img: "/assets/img/service/illustrations/service-influencer-marketing.svg" },
+      { title: "Affiliate & Commission Structures", desc: "Setting up automated performance commission networks that reward creators for verified sales.", href: "/contact", img: "/assets/img/service/illustrations/service-affiliate-partners.svg" },
+      { title: "Creator Video Whitelisting", desc: "Running paid ads directly through creator social handles for higher trust and lower CPMs.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-video.svg" },
+      { title: "Attribution & Sales Tracking", desc: "Tracking campaign performance with unique coupon codes and server-side UTM parameters.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" }
     ],
     processSteps: [
-      { title: "Audience Profiling", description: "We define your exact buyer persona and map it against influencer demographic databases.", timeline: "Week 1" },
-      { title: "Outreach & Negotiation", description: "Handling all communication, contract negotiations, and usage rights securement.", timeline: "Weeks 2-3" },
-      { title: "Creative Briefing & Execution", description: "Providing detailed creative briefs to ensure the content hits key selling propositions.", timeline: "Weeks 3-5" },
-      { title: "Paid Amplification", description: "Whitelisting the best performing organic content and scaling it with paid ad budget.", timeline: "Ongoing" }
+      { title: "Persona & Creator Mapping", description: "Identifying high-affinity micro and macro creators who align with your ideal customer profile.", timeline: "Week 1" },
+      { title: "Outreach & Rate Negotiation", description: "Contacting creators, negotiating usage rights, and securing favorable deliverables and fee structures.", timeline: "Weeks 1-2" },
+      { title: "Product Seeding & Content Review", description: "Shipping products, reviewing draft videos against creative briefs, and approving final assets.", timeline: "Weeks 2-3" },
+      { title: "Launch & Whitelisting Scale", description: "Coordinating posting dates and boosting top-performing posts via paid Meta ad campaigns.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Performance-Focused", description: "We track every campaign using custom promo codes and UTM parameters to measure exact ROI." },
-      { title: "Rigorous Vetting", description: "We heavily audit creators to ensure they have authentic engagement, not bot farms." },
-      { title: "End-to-End Management", description: "We handle product shipping, contracts, payments, and reporting so you don't have to." },
-      { title: "UGC Integration", description: "We bridge the gap between influencer marketing and performance ads by securing full content usage rights." }
+      { title: "Strict Audience Vetting", description: "We run deep algorithmic scans on every creator to eliminate bot followings and low engagement." },
+      { title: "Usage Rights Included", description: "We secure full digital advertising rights so your team can repurpose content across your ad accounts." },
+      { title: "Performance-Based Terms", description: "We structure deals tying creator compensation to actual revenue and customer acquisitions." }
     ],
     faqData: [
-      { q: "How do you measure the ROI of an influencer?", a: "We use unique discount codes, UTM links, and post-purchase surveys to track direct revenue." },
-      { q: "Micro-influencers vs. Macro-influencers?", a: "Micro-influencers drive higher conversion rates; macro-influencers drive massive top-of-funnel reach." },
-      { q: "What is 'Whitelisting'?", a: "Whitelisting allows us to run targeted ads directly through the creator's social handle for higher trust and lower CPA." },
-      { q: "Do you handle paying the influencers?", a: "Yes, we handle all negotiations, product seeding, and payouts." },
-      { q: "Who owns the content the influencer creates?", a: "We negotiate full usage rights for your brand to repurpose UGC across your ads and site." }
+      { q: "How do you measure ROI on influencer campaigns?", a: "We track performance through unique discount codes, custom affiliate links, and lift in branded search volume during the campaign window." },
+      { q: "Do you work with micro-influencers or celebrity creators?", a: "We focus primarily on high-engagement micro-influencers (10k-150k followers) who generate significantly higher conversion rates per dollar spent than celebrity accounts." }
     ]
   },
+
   "ai-video-marketing": {
     hero: {
       badge: "AI VIDEO PRODUCTION",
-      title: <>Dominate Attention With <span className="text-primary underline decoration-accent/60 decoration-4">AI Video Automation</span></>,
-      description: "Produce high-retention video content at impossible speeds. We leverage generative AI, synthetic avatars, and automated editing pipelines to scale your video marketing efforts without the massive costs of traditional production."
+      title: <>Capture Feed Attention With <span className="text-primary underline decoration-accent/60 decoration-4">AI Video Creatives</span></>,
+      description: "Scale your short-form video production without expensive studio equipment. We engineer automated AI video pipelines that script, render, caption, and format high-converting Reels, Shorts, and paid video ads."
     },
     about: {
-      title: "Algorithmic Video Production at Scale",
+      title: "Direct-Response Video Marketing at Scale",
       paragraphs: [
-        "Video is the undisputed king of digital engagement, but traditional production is expensive, slow, and hard to scale. Adyantra Digital disrupts this model by deploying advanced AI video pipelines that generate, edit, and iterate content at exponential rates.",
-        "We utilize state-of-the-art generative models (like Sora, Runway, and ElevenLabs) to create hyper-realistic voiceovers, dynamic b-roll, and synthetic avatars. This allows us to produce hundreds of localized, personalized video variations for A/B testing on Meta and TikTok in a matter of hours.",
-        "Beyond generation, our AI editing workflows automatically identify high-retention hooks, apply dynamic captions, and format content for every social platform perfectly. The result is a massive volume of highly engaging video content that dominates algorithmic feeds and slashes your Cost Per Acquisition."
+        "Short-form video is the dominant media format across modern digital channels. However, traditional video production is prohibitively slow, costly, and difficult to test across multiple angles.",
+        "Adyantra Digital deploys automated video production workflows. We generate dozens of hook variations, synthetic voiceovers, animated captions, and platform-native 9:16 aspect ratios engineered specifically for Instagram Reels, YouTube Shorts, and Meta ad feeds.",
+        "Our iterative video testing model allows brands to test 10x more angles per week, identifying breakout winning creatives that lower Cost Per Click (CPC) and dramatically boost customer acquisition volume."
       ],
       pillars: [
-        "Generative AI B-Roll & Visual Synthesis (Runway/Sora)",
-        "Synthetic Avatar & Voiceover Cloning (ElevenLabs)",
-        "Automated High-Retention Hook Clipping & Editing",
-        "Multivariate Video Ad Variant Generation",
-        "Dynamic Multi-Language Dubbing & Lip Sync",
-        "Automated Animated Caption & Subtitle Generation",
-        "Direct API Platform Format Optimization (Vertical 9:16)"
+        "Short-Form Direct-Response Scripting & Hook Engineering",
+        "Automated Multi-Format Video Rendering (9:16, 1:1, 16:9)",
+        "AI Voiceover Synthesis with Authentic Human Inflections",
+        "Dynamic Animated Subtitles & B-Roll Visual Stitching",
+        "High-Velocity Creative A/B Testing on Meta & TikTok",
+        "Multi-Language Video Localization & Dubbing",
+        "Direct-Response CTA Overlays for Maximum Click-Throughs"
       ]
     },
     intro: {
-      tagline: "Next-Gen Content",
-      headline: "Infinite Video Output. Fractional Cost.",
-      description: "From hyper-personalized sales outreach videos to massive organic TikTok campaigns, our AI video automation ensures your brand is omnipresent across all visual mediums."
+      tagline: "Video Acceleration",
+      headline: "Publish 20+ High-Converting Video Variations Monthly",
+      description: "We combine automated video rendering with direct-response copywriting to produce scroll-stopping video assets built to sell."
     },
     subServices: [
-      { title: "AI Avatar Video Generation", desc: "Lifelike, brand-consistent synthetic avatars for corporate training, ads, and explainer videos.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "Automated Short-Form Editing", desc: "AI-driven clipping of long-form podcasts into viral TikToks and Reels with dynamic captions.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Generative Voice & Audio", desc: "Studio-quality synthetic voiceovers and audio generation mimicking specific brand tones.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Programmatic Video Ads", desc: "Generating hundreds of ad variations automatically to test hooks and find the ultimate winning creative.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "AI Video Production Studio", desc: "Generating high-definition video assets with automated B-roll insertion and dynamic transitions.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-video.svg" },
+      { title: "Multi-Format DCO Variations", desc: "Rendering vertical 9:16 Reels and square 1:1 feed variations with different opening hooks.", href: "/contact", img: "/assets/img/service/illustrations/service-ad-creative.svg" },
+      { title: "AI Voiceover & Subtitles", desc: "Crystal-clear synthesized voices paired with high-contrast animated captions for silent feed viewing.", href: "/contact", img: "/assets/img/service/illustrations/service-content-automation.svg" },
+      { title: "Paid Social Video Scaling", desc: "Deploying winning video creatives into Meta Advantage+ and YouTube Shorts advertising campaigns.", href: "/contact", img: "/assets/img/service/illustrations/service-social-meta.svg" }
     ],
     processSteps: [
-      { title: "Script & Strategy Engineering", description: "We utilize LLMs to write high-converting, direct-response video scripts tailored to your audience.", timeline: "Week 1" },
-      { title: "Asset Generation & Synthesis", description: "Deploying AI models to generate visuals, avatars, and hyper-realistic voiceovers.", timeline: "Week 2" },
-      { title: "Automated Assembly & Editing", description: "Compiling assets, adding dynamic captions, and formatting for specific platform algorithms.", timeline: "Week 3" },
-      { title: "Multivariate Ad Testing", description: "Deploying variations into ad accounts to algorithmically discover the highest ROI creative.", timeline: "Ongoing" }
+      { title: "Angle Scripting & Hook Matrix", description: "Writing 10+ distinct 3-second hook variations targeting specific customer pain points and objections.", timeline: "Week 1" },
+      { title: "Automated Rendering & Voiceover", description: "Stitching high-resolution footage, generating voice tracks, and rendering animated kinetic typography.", timeline: "Weeks 1-2" },
+      { title: "Creative A/B Launch", description: "Deploying variations into live ad campaigns to identify the lowest CPA and highest retention hooks.", timeline: "Weeks 2-3" },
+      { title: "Iteration & Winner Expansion", description: "Iterating on the winning 20% of creatives by testing new end cards and direct-response CTAs.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Cutting-Edge AI Stack", description: "We leverage the absolute latest models from OpenAI, Runway, Midjourney, and ElevenLabs." },
-      { title: "Rapid Creative Iteration", description: "We can swap out video hooks, voiceovers, or visuals in minutes, not days, for aggressive ad testing." },
-      { title: "Massive Cost Efficiency", description: "Eliminate the need for expensive studios, actors, and weeks of manual editing." },
-      { title: "Hyper-Personalization", description: "We can programmatically generate personalized videos addressing prospects by name for elite cold outreach." }
+      { title: "10x Production Speed", description: "Generate dozens of polished video variations in days rather than waiting weeks for studio crews." },
+      { title: "Optimized for Silent Viewing", description: "High-contrast dynamic captions ensure message delivery even when users browse feeds on mute." },
+      { title: "Built for Direct Response", description: "Every second of footage is engineered to drive clicks, app installs, and e-commerce purchases." }
     ],
     faqData: [
-      { q: "Do AI avatars look fake or creepy?", a: "We use premium synthetic models that are indistinguishable from real actors." },
-      { q: "Can we clone our CEO's voice and likeness?", a: "Yes, with proper authorization we train custom models to replicate your leadership's voice." },
-      { q: "Will social media algorithms penalize AI video?", a: "Algorithms optimize for watch time; engaging AI video is pushed heavily." },
-      { q: "How fast can you produce videos?", a: "We can generate dozens of finished video variations in a single day." },
-      { q: "Can AI videos be used for B2B marketing?", a: "Yes, ideal for software demos, explainer videos, and personalized LinkedIn outreach." }
+      { q: "Can we use our own brand footage and product clips?", a: "Yes. We can incorporate your raw product unboxings, customer testimonials, and brand b-roll into our automated rendering pipeline." },
+      { q: "How realistic do the AI voiceovers sound?", a: "We utilize next-generation neural voice models that sound indistinguishable from professional voice actors, complete with natural pacing and emotion." }
     ]
   },
+
   "affiliate-marketing": {
     hero: {
-      badge: "PARTNER NETWORKS",
-      title: <>Drive Risk-Free Revenue With <span className="text-primary underline decoration-accent/60 decoration-4">Affiliate Marketing</span></>,
-      description: "Pay only for performance. We build, manage, and scale high-volume affiliate programs that recruit top-tier publishers to aggressively market your products on a Cost-Per-Acquisition (CPA) basis."
+      badge: "AFFILIATE & PARTNER SCALE",
+      title: <>Multiply Distribution With <span className="text-primary underline decoration-accent/60 decoration-4">Affiliate Networks</span></>,
+      description: "Scale your customer acquisition with zero upfront ad risk. We recruit, onboard, and manage high-volume affiliate partners and creators who promote your brand on a verified pay-per-sale commission model."
     },
     about: {
-      title: "Building Armies of Performance Marketers",
+      title: "Performance Partnerships That Protect Margins",
       paragraphs: [
-        "Why shoulder all the risk of ad spend when you can have thousands of experienced marketers selling your product for a commission? Adyantra Digital architects elite affiliate programs that turn third-party publishers into your most aggressive sales force.",
-        "We handle the complex infrastructure required to scale: selecting the right tracking networks (Impact, ShareASale, CJ), defining competitive commission structures, and generating the creative assets publishers need to succeed. But technology is only half the battle.",
-        "Our true value lies in recruitment and relationship management. We proactively headhunt super-affiliates, high-traffic media buyers, and niche bloggers, negotiating exclusive payouts and providing them with continuous strategic support to ensure they drive massive, high-quality volume to your business."
+        "Relying solely on paid advertising leaves your business vulnerable to rising ad auction costs and policy changes. An affiliate marketing engine creates a decentralized sales army that only gets paid when they generate confirmed revenue.",
+        "Adyantra Digital designs, launches, and manages enterprise affiliate programs. We recruit top-tier publishers, comparison portals, and niche content creators, providing them with conversion-tested creatives, tracking links, and competitive commission tiers.",
+        "With automated fraud detection and server-side tracking, we ensure every commission payout is tied to a legitimate, verified customer transaction."
       ],
       pillars: [
-        "Enterprise Tracking Network Setup (Impact/ShareASale/CJ)",
-        "Outbound Super-Affiliate & Media Buyer Recruitment",
-        "Commission Tiering & Payout Structure Modeling",
-        "Automated Coupon Hijacking & Trademark Bidding Protection",
-        "Converting Promotional Banners & Copy Swipes Resource Hub",
-        "API Integration & Real-Time Sale Reconciliation",
-        "Compliance Auditing & Partner Relationship Management"
+        "Custom Affiliate Program Architecture & Commission Structuring",
+        "Proactive Partner Recruitment & Content Publisher Outreach",
+        "Automated Affiliate Tracking & Server-Side Webhook Attributions",
+        "Affiliate Asset Portal (Banners, Copy Swipes & Promo Codes)",
+        "Affiliate Fraud Protection & Coupon Abuse Prevention",
+        "Tiered Performance Incentives for Super-Affiliate Retention",
+        "Automated Payout Reconciliation & Accounting Sync"
       ]
     },
     intro: {
-      tagline: "Performance Partnerships",
-      headline: "Scale Revenue with Zero Upfront Ad Spend",
-      description: "We handle the end-to-end management of your affiliate program, ensuring you only pay for actual sales while protecting your brand from low-quality traffic and fraud."
+      tagline: "Partner Ecosystem",
+      headline: "Only Pay When Customers Actually Purchase",
+      description: "We recruit, equip, and manage an active network of affiliate promoters driving verified revenue to your storefront."
     },
     subServices: [
-      { title: "Program Strategy & Launch", desc: "Defining commission structures, cookie durations, and selecting the optimal tracking network.", href: "/contact", img: "/assets/img/service/vectors/service-ai-systems.svg" },
-      { title: "Aggressive Partner Recruitment", desc: "Outbound headhunting of high-volume media buyers, review sites, and niche influencers.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" },
-      { title: "Affiliate Activation & Support", desc: "Creating converting banners, landing pages, and email swipes for affiliates to use.", href: "/contact", img: "/assets/img/service/vectors/service-web-development.svg" },
-      { title: "Compliance & Fraud Monitoring", desc: "Strict auditing of traffic sources to prevent trademark bidding and fraudulent conversions.", href: "/contact", img: "/assets/img/service/vectors/service-google-ppc.svg" }
+      { title: "Program Setup & Commission Modeling", desc: "Designing competitive tiered payout structures that attract top affiliates while protecting profit margins.", href: "/contact", img: "/assets/img/service/illustrations/service-affiliate-partners.svg" },
+      { title: "Partner Sourcing & Outreach", desc: "Direct outreach to authority comparison sites, industry bloggers, and high-influence reviewers.", href: "/contact", img: "/assets/img/service/illustrations/service-lead-generation.svg" },
+      { title: "Fraud & Coupon Protection", desc: "Automated monitoring preventing coupon code leakage, trademark bidding, and bot transactions.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" },
+      { title: "Affiliate Tracking & Attribution", desc: "First-party server tracking ensuring accurate attribution across complex multi-touch customer journeys.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" }
     ],
     processSteps: [
-      { title: "Infrastructure Setup", description: "Integration of tracking platforms with your e-commerce or SaaS backend.", timeline: "Weeks 1-2" },
-      { title: "Asset Creation", description: "Developing a comprehensive resource hub with high-converting creatives for affiliates.", timeline: "Week 3" },
-      { title: "Launch & Initial Recruitment", description: "Publishing the program and running targeted outbound campaigns to recruit initial partners.", timeline: "Weeks 4-6" },
-      { title: "Optimization & VIP Management", description: "Identifying top performers and negotiating tiered payouts to incentivize maximum volume.", timeline: "Ongoing" }
+      { title: "Margin Analysis & Program Rules", description: "Calculating allowable customer acquisition costs and establishing strict promotional terms of service.", timeline: "Week 1" },
+      { title: "Tracking Integration & Asset Prep", description: "Configuring affiliate tracking software and preparing high-converting marketing collateral and copy.", timeline: "Weeks 1-2" },
+      { title: "Targeted Publisher Recruitment", description: "Conducting personalized outreach to hundreds of high-ranking editorial review sites and creators.", timeline: "Weeks 2-4" },
+      { title: "Ongoing Partner Management", description: "Distributing monthly promotional calendars, optimizing conversion paths, and auditing payouts.", timeline: "Ongoing" }
     ],
     whyChooseUs: [
-      { title: "Extensive Network Contacts", description: "We leverage our existing relationships with super-affiliates to jumpstart your program's growth." },
-      { title: "Strict Brand Protection", description: "We actively monitor for coupon-hijacking and unauthorized PPC trademark bidding." },
-      { title: "Technical Integration Expertise", description: "Flawless API integrations to ensure tracking is 100% accurate across all devices." },
-      { title: "Proactive Management", description: "We don't just 'launch and leave'. We actively coach affiliates on how to sell your product better." }
+      { title: "Zero Ad Spend Waste", description: "You pay commissions strictly upon verified customer purchases, eliminating media waste." },
+      { title: "Proactive Publisher Relations", description: "We actively build direct relationships with super-affiliates to secure prominent homepage features." },
+      { title: "Strict Brand Guardrails", description: "We enforce brand compliance rules to prevent misleading claims or unauthorized discount promotions." }
     ],
     faqData: [
-      { q: "What is a good commission rate to offer?", a: "SaaS offers 20-30% recurring; e-commerce ranges 10-20%. We run competitive analysis for your niche." },
-      { q: "Which affiliate network should I use?", a: "Impact Radius/ShareASale for E-Commerce; PartnerStack for SaaS." },
-      { q: "How do you prevent brand bidding?", a: "We enforce strict terms and run automated SERP monitoring to withhold commissions on trademark violations." },
-      { q: "How long does an affiliate program take to gain traction?", a: "3-4 months of aggressive recruitment creates a consistent snowball revenue stream." },
-      { q: "Do I have to pay affiliates for returns?", a: "No, a 30-day locking period ensures commissions are paid only after return windows close." }
+      { q: "Which affiliate tracking platforms do you integrate with?", a: "We work with top platforms including Impact, CJ Affiliate, ShareASale, Refersion, UpPromote, and custom server-side webhook systems." },
+      { q: "How do you prevent affiliates from bidding on our brand name?", a: "We enforce negative keyword policies and monitor search engine results with automated brand-bidding audit tools to catch and disqualify violators." }
     ]
   }
 };

@@ -218,7 +218,7 @@ export default function WebSoftwareDevelopmentPage() {
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative p-6 rounded-3xl bg-white border border-[#e2e8f0] shadow-md max-w-md w-full">
                 <Image
-                  src="/assets/img/service/webdev-3d.png"
+                  src="/assets/img/service/illustrations/service-web-development.svg"
                   alt="Modern Web Software Architecture"
                   width={500}
                   height={500}

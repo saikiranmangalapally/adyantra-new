@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <circle cx="160" cy="110" r="90" fill="#f0fdf4" opacity="0.8"/>
+  <rect x="50" y="40" width="220" height="130" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="50" y="40" width="220" height="24" rx="10" fill="#0f172a"/>
+  <text x="65" y="56" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#10b981">Fintech Lead Underwriting &amp; Qualification Engine</text>
+  <!-- Credit Scoring Gauge -->
+  <circle cx="105" cy="105" r="30" stroke="#e2e8f0" stroke-width="6"/>
+  <path d="M 80 115 A 30 30 0 1 1 130 115" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+  <text x="95" y="108" font-family="'Poppins', sans-serif" font-size="11" font-weight="900" fill="#0f172a">780</text>
+  <text x="91" y="118" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="600" fill="#64748b">Verified Score</text>
+  <!-- Pipeline Lead Cards -->
+  <g transform="translate(150, 78)">
+    <rect width="105" height="20" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="8" y="13" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#0f172a">Tier-1 Qualified Lead</text>
+    <rect x="74" y="5" width="24" height="10" rx="5" fill="#dcfce7"/>
+    <text x="78" y="12" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="800" fill="#15803d">PASS</text>
+  </g>
+  <g transform="translate(150, 104)">
+    <rect width="105" height="20" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="8" y="13" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#0f172a">Real-Time Routing</text>
+    <text x="78" y="13" font-family="'Poppins', sans-serif" font-size="6" font-weight="600" fill="#3b82f6">&lt; 300ms</text>
+  </g>
+  <!-- Results Badge -->
+  <g transform="translate(125, 140)">
+    <rect width="145" height="30" rx="15" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="16" cy="15" r="9" fill="#10b981"/>
+    <text x="32" y="15" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#0f172a">FinTech Enterprise Result</text>
+    <text x="32" y="24" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#059669">+260% Qualified Volume (4.6x)</text>
+  </g>
+  <rect x="40" y="184" width="240" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

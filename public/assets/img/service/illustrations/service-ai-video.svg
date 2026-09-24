@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <circle cx="160" cy="110" r="90" fill="#fdf2f8" opacity="0.8"/>
+  <!-- Video Timeline Studio -->
+  <rect x="55" y="40" width="210" height="125" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="55" y="40" width="210" height="24" rx="10" fill="#0f172a"/>
+  <text x="70" y="56" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ffffff">AI Video Production &amp; Dynamic Reels</text>
+  <!-- Video Viewport -->
+  <rect x="70" y="72" width="95" height="52" rx="6" fill="#1e1b4b"/>
+  <circle cx="117" cy="98" r="14" fill="#ec4899"/>
+  <polygon points="113,91 125,98 113,105" fill="#ffffff"/>
+  <!-- Audio Waveform Layer -->
+  <g transform="translate(175, 75)">
+    <rect x="0" y="8" width="3" height="14" rx="1.5" fill="#ec4899"/>
+    <rect x="6" y="2" width="3" height="26" rx="1.5" fill="#3b82f6"/>
+    <rect x="12" y="5" width="3" height="20" rx="1.5" fill="#8b5cf6"/>
+    <rect x="18" y="0" width="3" height="30" rx="1.5" fill="#10b981"/>
+    <rect x="24" y="6" width="3" height="18" rx="1.5" fill="#f59e0b"/>
+    <rect x="30" y="10" width="3" height="10" rx="1.5" fill="#ec4899"/>
+    <rect x="36" y="3" width="3" height="24" rx="1.5" fill="#3b82f6"/>
+    <text x="0" y="42" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="600" fill="#64748b">AI Voiceover &amp; Subs</text>
+  </g>
+  <!-- Export Badge -->
+  <g transform="translate(140, 138)">
+    <rect width="130" height="30" rx="15" fill="#ffffff" stroke="#ec4899" stroke-width="1.5"/>
+    <circle cx="16" cy="15" r="9" fill="#ec4899"/>
+    <text x="13" y="19" font-family="'Poppins', sans-serif" font-size="10" font-weight="900" fill="#ffffff">▶</text>
+    <text x="32" y="15" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#0f172a">Omnichannel Rendering</text>
+    <text x="32" y="24" font-family="'Poppins', sans-serif" font-size="8" font-weight="800" fill="#db2777">4K / 9:16 Shorts Export</text>
+  </g>
+  <rect x="40" y="184" width="240" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

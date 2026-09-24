@@ -103,7 +103,7 @@ export default function EcommerceSolutionsPage() {
             {/* 3D Floating Glass Badge Stage (Homepage Engine) */}
             <div className="lg:col-span-5 flex justify-center">
               <Service3DStage
-                imageSrc="/assets/img/service/ecommerce-3d.png"
+                imageSrc="/assets/img/service/illustrations/service-ecommerce.svg"
                 imageAlt="E-Commerce Solutions 3D Stage"
                 badge1Title="Shopify Plus"
                 badge1Sub="Certified Partner"

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <circle cx="160" cy="110" r="90" fill="#fff7ed" opacity="0.7"/>
+  <!-- DCO Design Canvas Grid -->
+  <!-- 9:16 Vertical Reel (Left) -->
+  <rect x="45" y="45" width="60" height="110" rx="8" fill="#ffffff" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="52" y="55" width="46" height="65" rx="4" fill="#ffedd5"/>
+  <circle cx="75" cy="87" r="12" fill="#f97316"/>
+  <polygon points="72,81 81,87 72,93" fill="#ffffff"/>
+  <rect x="52" y="126" width="38" height="5" rx="2.5" fill="#ea580c"/>
+  <rect x="52" y="135" width="26" height="4" rx="2" fill="#cbd5e1"/>
+  <rect x="52" y="143" width="46" height="8" rx="4" fill="#0f172a"/>
+  <text x="61" y="149" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#ffffff">SHOP NOW</text>
+  <!-- 1:1 Feed Post (Center) -->
+  <rect x="115" y="35" width="95" height="105" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="122" y="42" width="81" height="60" rx="6" fill="#1e1b4b"/>
+  <circle cx="162" cy="72" r="16" fill="#6366f1"/>
+  <path d="M 152 78 Q 162 62 172 78" stroke="#38bdf8" stroke-width="2.5" fill="none"/>
+  <rect x="122" y="108" width="60" height="6" rx="2" fill="#0f172a"/>
+  <rect x="122" y="118" width="75" height="4" rx="2" fill="#cbd5e1"/>
+  <rect x="122" y="126" width="50" height="4" rx="2" fill="#e2e8f0"/>
+  <!-- 16:9 Banner (Right) -->
+  <rect x="220" y="55" width="75" height="48" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="225" y="60" width="65" height="26" rx="4" fill="#dbeafe"/>
+  <rect x="225" y="90" width="40" height="5" rx="2" fill="#2563eb"/>
+  <!-- Floating Performance Winner Badge -->
+  <g transform="translate(145, 140)">
+    <rect width="125" height="32" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="18" cy="16" r="10" fill="#10b981"/>
+    <text x="13" y="20" font-family="'Poppins', sans-serif" font-size="11" font-weight="900" fill="#ffffff">★</text>
+    <text x="34" y="15" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#0f172a">A/B Winner Variant</text>
+    <text x="34" y="25" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#059669">+320% ROAS (CTR 4.8%)</text>
+  </g>
+  <rect x="35" y="184" width="250" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

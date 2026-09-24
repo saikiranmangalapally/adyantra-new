@@ -20,7 +20,7 @@ export default function PortfolioPage() {
       statDesc: "Scaled monthly revenue from $25k to $140k in 7 months",
       desc: "Architected a full-funnel acquisition engine combining Meta Advantage+ shopping campaigns, Google PMax retargeting, and automated post-purchase Klaviyo retention flows.",
       tags: ["Meta Ads", "Google PMax", "Shopify Plus", "Klaviyo"],
-      img: "/assets/img/service/vectors/service-ecommerce.svg?v=3",
+      img: "/assets/img/portfolio/case-study-ecommerce-scaling.svg",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function PortfolioPage() {
       statDesc: "Autonomous qualification and CRM sync for 1,200+ monthly enterprise leads",
       desc: "Engineered an autonomous lead ingestion engine using LLM classifiers, instant HubSpot contact enrichment, and bidirectional Slack notifications for immediate executive booking.",
       tags: ["AI Agents", "HubSpot CRM", "FastAPI", "Slack Webhooks"],
-      img: "/assets/img/service/vectors/service-lead-generation.svg?v=3",
+      img: "/assets/img/portfolio/case-study-fintech-ai.svg",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export default function PortfolioPage() {
       statDesc: "Sub-second Next.js web application with real-time slot calendar synchronization",
       desc: "Re-engineered a legacy appointment portal into a high-performance Next.js 15 web application with automated WhatsApp appointment reminders and local search optimization.",
       tags: ["Next.js 15", "PostgreSQL", "WhatsApp Cloud API", "Tailwind CSS"],
-      img: "/assets/img/service/vectors/service-appointment-booking.svg?v=3",
+      img: "/assets/img/portfolio/case-study-booking-automation.svg",
     },
     {
       id: 4,
@@ -59,7 +59,7 @@ export default function PortfolioPage() {
       statDesc: "RAG knowledge assistant handling 40,000+ monthly admission inquiries",
       desc: "Deployed a 24/7 conversational counseling bot integrated into WhatsApp and web chat that evaluates student eligibility, recommends curricula, and collects enrollment fees.",
       tags: ["RAG Vectors", "OpenAI API", "Stripe Connect", "Make.com"],
-      img: "/assets/img/service/vectors/service-customer-support.svg?v=3",
+      img: "/assets/img/portfolio/case-study-whatsapp-crm.svg",
     },
     {
       id: 5,
@@ -72,7 +72,7 @@ export default function PortfolioPage() {
       statDesc: "Hyper-targeted HNI acquisition via Google Search & Meta lead pipelines",
       desc: "Built a private investor acquisition funnel leveraging geo-fenced high-intent search terms, interactive 3D virtual floorplans, and instant CRM call scheduling.",
       tags: ["Google Search", "Meta Ads", "Salesforce Sync", "Interactive 3D"],
-      img: "/assets/img/service/vectors/service-google-ppc.svg?v=3",
+      img: "/assets/img/portfolio/case-study-saas-seo.svg",
     },
     {
       id: 6,
@@ -85,7 +85,7 @@ export default function PortfolioPage() {
       statDesc: "Multi-tenant regulatory portal processing high-volume transactions",
       desc: "Engineered an audit-ready compliance dashboard with strict role-based access control, cryptographic verification, and distributed microservices deployed to AWS ECS.",
       tags: ["React", "TypeScript", "AWS ECS", "Docker"],
-      img: "/assets/img/service/vectors/service-web-development.svg?v=3",
+      img: "/assets/img/portfolio/case-study-mobile-web-app.svg",
     },
   ];
 

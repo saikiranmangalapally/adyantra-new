@@ -94,7 +94,7 @@ export default function BrandingCreativeServicesPage() {
             {/* 3D Floating Glass Badge Stage (Homepage Engine) */}
             <div className="lg:col-span-5 flex justify-center">
               <Service3DStage
-                imageSrc="/assets/img/service/pr-3d.png"
+                imageSrc="/assets/img/service/illustrations/service-branding-creative.svg"
                 imageAlt="Branding Creative Services 3D Stage"
                 badge1Title="Vector Assets"
                 badge1Sub="Full Brand Kit"

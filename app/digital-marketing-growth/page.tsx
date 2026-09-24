@@ -8,6 +8,9 @@ import { DomainIcon } from "@/components/icons/DomainIcons";
 import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
 import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
 import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
+import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
+import { ExecutionRoadmapVisual, DataAttributionVisual } from "@/components/sections/ExecutionAndAttributionVisuals";
+import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
 
 export default function DigitalMarketingGrowthPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -42,7 +45,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 4,
       category: "marketing",
-      img: "/assets/img/service/illustrations/service-email-workflows.svg",
+      img: "/assets/img/service/illustrations/service-content-automation.svg",
       title: "Content Marketing",
       desc: "Position content as an acquisition and conversion asset: SEO Content, Blog Assets, Copywriting, and AI-assisted repurposing.",
       href: "/ai-content-automation",
@@ -58,7 +61,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 6,
       category: "automation",
-      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
+      img: "/assets/img/service/illustrations/service-ai-agents.svg",
       title: "AI Marketing & Automation",
       desc: "Turn repetitive operations into automated systems: AI Lead Gen, Sales Automation, Content Pipelines, Chatbots, n8n, Make & Zapier.",
       href: "/ai-automation",
@@ -66,7 +69,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 7,
       category: "design",
-      img: "/assets/img/service/illustrations/service-social-meta.svg",
+      img: "/assets/img/service/illustrations/service-ai-video.svg",
       title: "Video & Creative Marketing",
       desc: "Transform 1 core creative asset into Instagram Reels, Meta Ads, YouTube Shorts, and Motion Graphics for maximum reach.",
       href: "/ai-video-marketing",
@@ -90,7 +93,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 10,
       category: "marketing",
-      img: "/assets/img/service/illustrations/service-affiliate-partners.svg",
+      img: "/assets/img/service/illustrations/service-influencer-marketing.svg",
       title: "Influencer & Affiliate Growth",
       desc: "Creator discovery, Instagram & YouTube campaigns, partner recruitment, referral tracking, and performance commission models.",
       href: "/influencer-marketing",
@@ -98,7 +101,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 11,
       category: "marketing",
-      img: "/assets/img/service/illustrations/service-pr-reputation.svg",
+      img: "/assets/img/service/illustrations/service-branding-creative.svg",
       title: "PR & Digital Reputation",
       desc: "Build visibility, build authority, and protect brand reputation through press releases, media outreach, and search control.",
       href: "/branding-creative-services",
@@ -130,7 +133,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 15,
       category: "automation",
-      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
+      img: "/assets/img/service/illustrations/service-ai-agents.svg",
       title: "AI Agent Development",
       desc: "Build autonomous multi-agent systems for tool use, API calling, long-term memory, and task execution.",
       href: "/ai-agent-development",
@@ -138,7 +141,7 @@ export default function DigitalMarketingGrowthPage() {
     {
       id: 16,
       category: "automation",
-      img: "/assets/img/service/illustrations/service-social-meta.svg",
+      img: "/assets/img/service/illustrations/service-whatsapp-crm.svg",
       title: "WhatsApp & Sales Follow-Up",
       desc: "Official WhatsApp Cloud API sequences for automated appointments, cart recovery, and deal closings.",
       href: "/whatsapp-crm",
@@ -156,7 +159,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "PERFORMANCE",
       label: "PERFORMANCE",
       color: "#ef5b52",
-      img: "/assets/img/service/vectors/service-google-ppc.svg?v=3",
+      img: "/assets/img/service/illustrations/service-google-ppc.svg",
       badge: "Paid Acquisition & High-ROAS",
       desc: "Design and scale predictive paid acquisition across Google Ads, Meta Ads, and LinkedIn B2B with multi-touch server attribution.",
       sub: ["Google Ads (Search & PMax)", "Meta & Instagram Retargeting", "LinkedIn B2B Conversion Funnels", "Conversion API (CAPI) Tracking"],
@@ -171,7 +174,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "SEO",
       label: "SEO & ORGANIC",
       color: "#7b4bf7",
-      img: "/assets/img/service/vectors/service-seo.svg?v=3",
+      img: "/assets/img/service/illustrations/service-seo.svg",
       badge: "Search Authority & Organic Traffic",
       desc: "Dominate Google search with technical site architecture audits, programmatic keyword ranking, and authoritative backlink distribution.",
       sub: ["Technical Crawl & Speed Audits", "High-Intent Keyword Clusters", "E-commerce & Local Map Pack SEO", "High-Authority Digital PR Links"],
@@ -186,7 +189,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "SOCIAL",
       label: "SOCIAL & CREATIVE",
       color: "#de358d",
-      img: "/assets/img/service/vectors/service-social-meta.svg?v=3",
+      img: "/assets/img/service/illustrations/service-social-meta.svg",
       badge: "Viral Reach & Brand Engagement",
       desc: "Capture high-velocity attention with platform-native Instagram Reels, YouTube Shorts, viral paid social ads, and community engagement.",
       sub: ["Viral Reels & Shorts Strategy", "Performance Ad Creative Testing", "Community Management & DMs", "Creator & Influencer Seeding"],
@@ -201,7 +204,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "CONTENT",
       label: "CONTENT ENGINE",
       color: "#3b82f6",
-      img: "/assets/img/service/vectors/service-content-automation.svg?v=3",
+      img: "/assets/img/service/illustrations/service-content-automation.svg",
       badge: "Acquisition & Conversion Storytelling",
       desc: "Position high-value content as an inbound revenue engine: thought leadership articles, case studies, conversion copy, and multi-format repurposing.",
       sub: ["SEO Pillar Content Assets", "Direct-Response Conversion Copy", "Multi-Format Video Repurposing", "AI-Assisted Editorial Workflows"],
@@ -216,7 +219,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "AI",
       label: "AI & AUTOMATION",
       color: "#10b981",
-      img: "/assets/img/service/vectors/service-ai-systems.svg?v=3",
+      img: "/assets/img/service/illustrations/service-ai-agents.svg",
       badge: "Autonomous Agents & System Sync",
       desc: "Turn repetitive customer touchpoints into automated revenue engines: custom WhatsApp AI chatbots, automated lead qualification, and CRM synchronization.",
       sub: ["24/7 WhatsApp AI Chatbots", "Instant CRM Enrichment & Sync", "n8n, Make & Zapier Workflows", "Autonomous SDR Appointment Bots"],
@@ -231,7 +234,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "CREATIVE",
       label: "BRAND & CREATIVE",
       color: "#f59e0b",
-      img: "/assets/img/service/vectors/service-video.svg?v=3",
+      img: "/assets/img/service/illustrations/service-ai-video.svg",
       badge: "High-Converting Design Assets",
       desc: "Engineered visual identities, motion graphics, 3D assets, and high-CTR advertising collateral built specifically to drive user action.",
       sub: ["High-CTR Ad Creative Packs", "3D Modeling & Motion Graphics", "Brand Identity Guidelines", "Landing Page Visual Design"],
@@ -246,7 +249,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "WEB",
       label: "WEB & APPS",
       color: "#6366f1",
-      img: "/assets/img/service/vectors/service-web-development.svg?v=3",
+      img: "/assets/img/service/illustrations/service-web-development.svg",
       badge: "Modern Next.js & React Engineering",
       desc: "Fast, responsive web applications engineered with Next.js, React, and server-side optimization to convert traffic into paying customers.",
       sub: ["Custom Next.js Web Platforms", "Conversion Rate Optimization (CRO)", "Interactive Calculators & Portals", "Sub-Second Global Page Speed"],
@@ -261,7 +264,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "ECOMMERCE",
       label: "E-COMMERCE",
       color: "#ec4899",
-      img: "/assets/img/service/vectors/service-ecommerce.svg?v=3",
+      img: "/assets/img/service/illustrations/service-ecommerce.svg",
       badge: "Storefront CRO & Marketplace Scale",
       desc: "Scale direct-to-consumer and marketplace sales with custom Shopify storefronts, Amazon & Flipkart PPC, and abandoned checkout recovery.",
       sub: ["Custom Shopify Storefronts", "Amazon & Marketplace PPC", "Automated Cart Abandonment Drips", "1-Click Frictionless Checkout"],
@@ -276,7 +279,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "ANALYTICS",
       label: "ANALYTICS & INTEL",
       color: "#06b6d4",
-      img: "/assets/img/service/vectors/service-crm-automation.svg?v=3",
+      img: "/assets/img/service/illustrations/service-crm-automation.svg",
       badge: "Full-Funnel Data Attribution",
       desc: "Eliminate blind spots with Google Analytics 4, Tag Manager, Meta CAPI server events, Looker Studio dashboards, and executive reporting.",
       sub: ["GA4 & Server Tag Manager", "Meta & Google CAPI Integration", "Multi-Touch Attribution Models", "Real-Time Executive Dashboards"],
@@ -291,7 +294,7 @@ export default function DigitalMarketingGrowthPage() {
       id: "PR",
       label: "PR & REPUTATION",
       color: "#8b5cf6",
-      img: "/assets/img/service/vectors/service-pr-reputation.svg?v=3",
+      img: "/assets/img/service/illustrations/service-branding-creative.svg",
       badge: "Media Distribution & Digital Authority",
       desc: "Build credibility and digital market leadership through targeted tier-1 media placements, press releases, and executive reputation management.",
       sub: ["Tier-1 Media Distribution", "Executive Thought Leadership", "Brand Reputation Monitoring", "SEO-Driven Digital PR Assets"],
@@ -508,15 +511,8 @@ export default function DigitalMarketingGrowthPage() {
               </p>
             </div>
 
-            <div className="expert-tablet-card">
-              <Image
-                src="/assets/img/service/service-header-tablet.svg"
-                alt="Adyantra Strategic Performance Dashboard"
-                width={800}
-                height={500}
-                className="expert-tablet-img"
-                priority
-              />
+            <div className="expert-tablet-card w-full">
+              <ExecutiveTabletMockup title="Integrated Growth Engine Architecture" />
             </div>
           </div>
 
@@ -533,116 +529,9 @@ export default function DigitalMarketingGrowthPage() {
               </div>
 
               {/* Two Side-by-Side Images */}
-              <div className="expert-dual-images">
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-collab-team.svg"
-                    alt="Adyantra Growth Strategy Collaboration"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-analytics-review.svg"
-                    alt="Adyantra Data & Campaign Optimization"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
-              </div>
-
-              {/* What's Included Box */}
-              <div className="expert-included-card">
-                <h4 className="expert-included-title">What&apos;s Included</h4>
-                <div className="expert-accent-line" />
-                <p className="expert-included-desc">
-                  Our comprehensive full-funnel marketing architecture covers everything from strategic inception to data-backed retention and cross-platform ROI maximization.
-                </p>
-
-                <div className="expert-check-grid">
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Platform Strategy &amp; Planning</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Performance Reporting &amp; Analytics</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Creative Content Production</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Influencer Collaborations</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Paid Ads Management</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Social Listening &amp; Trend Monitoring</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Community Engagement</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Autonomous CRM &amp; Lead Workflows</span>
-                  </div>
-                </div>
+              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ExecutionRoadmapVisual />
+                <DataAttributionVisual />
               </div>
             </div>
 
@@ -712,12 +601,7 @@ export default function DigitalMarketingGrowthPage() {
 
               {/* Card 2: Transform CTA Card */}
               <div className="expert-cta-card">
-                <Image
-                  src="/assets/img/service/service-cta-transform.svg"
-                  alt="Transform Your Business with Adyantra"
-                  fill
-                  className="expert-cta-bg-img"
-                />
+                <TransformCtaBannerVisual />
                 <div className="expert-cta-overlay" />
                 <div className="expert-cta-content">
                   <h4 className="expert-cta-heading">

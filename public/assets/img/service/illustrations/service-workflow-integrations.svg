@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <circle cx="160" cy="110" r="90" fill="#f0fdfa" opacity="0.8"/>
+  <!-- Workflow Integration Canvas -->
+  <rect x="50" y="45" width="220" height="120" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="50" y="45" width="220" height="24" rx="10" fill="#0f172a"/>
+  <text x="65" y="61" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ffffff">Zapier · Make · n8n Mesh Automation</text>
+  <!-- Node 1: Webhook Ingestion -->
+  <rect x="65" y="85" width="55" height="40" rx="6" fill="#f8fafc" stroke="#f97316" stroke-width="1.4"/>
+  <text x="73" y="102" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#ea580c">WEBHOOK</text>
+  <text x="73" y="114" font-family="'Poppins', sans-serif" font-size="6" fill="#64748b">Instant Trigger</text>
+  <!-- Node 2: Data Transformer -->
+  <rect x="145" y="85" width="55" height="40" rx="6" fill="#f8fafc" stroke="#6366f1" stroke-width="1.4"/>
+  <text x="151" y="102" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4f46e5">TRANSFORM</text>
+  <text x="151" y="114" font-family="'Poppins', sans-serif" font-size="6" fill="#64748b">Clean &amp; Enrich</text>
+  <!-- Node 3: CRM Destination -->
+  <rect x="225" y="85" width="55" height="40" rx="6" fill="#f8fafc" stroke="#10b981" stroke-width="1.4"/>
+  <text x="233" y="102" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#059669">DATABASE</text>
+  <text x="233" y="114" font-family="'Poppins', sans-serif" font-size="6" fill="#64748b">Sync 100%</text>
+  <!-- Pipeline Data Cables with Flow Arrows -->
+  <path d="M 120 105 L 145 105" stroke="#f97316" stroke-width="2.5"/>
+  <path d="M 200 105 L 225 105" stroke="#10b981" stroke-width="2.5"/>
+  <!-- Metric Badge -->
+  <g transform="translate(160, 138)">
+    <rect width="115" height="26" rx="13" fill="#ffffff" stroke="#10b981" stroke-width="1.2"/>
+    <circle cx="14" cy="13" r="6" fill="#10b981"/>
+    <text x="26" y="17" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#059669">0 Failed Executions</text>
+  </g>
+  <rect x="40" y="184" width="240" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

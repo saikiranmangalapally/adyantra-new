@@ -87,29 +87,75 @@ function getServiceStats(badge: string, customStats?: { val: string; label: stri
 
 function getServiceIllustration(img?: string): string {
   if (!img) return "/assets/img/service/illustrations/service-seo.svg";
-  if (img.includes("/illustrations/")) return img;
   const filename = img.split("/").pop()?.split("?")[0] || "";
   const mapping: Record<string, string> = {
-    "service-google-ppc.svg": "/assets/img/service/illustrations/service-google-ppc.svg",
+    // Search & PPC
     "service-seo.svg": "/assets/img/service/illustrations/service-seo.svg",
+    "seo-3d.png": "/assets/img/service/illustrations/service-seo.svg",
+    "service-google-ppc.svg": "/assets/img/service/illustrations/service-google-ppc.svg",
+    "ppc-3d.png": "/assets/img/service/illustrations/service-google-ppc.svg",
+    // Social & Meta
     "service-social-meta.svg": "/assets/img/service/illustrations/service-social-meta.svg",
+    "smm-3d.png": "/assets/img/service/illustrations/service-social-meta.svg",
+    // Email & Workflows
     "service-email-workflows.svg": "/assets/img/service/illustrations/service-email-workflows.svg",
+    "email-3d.png": "/assets/img/service/illustrations/service-email-workflows.svg",
+    // Web Dev & Software
     "service-web-development.svg": "/assets/img/service/illustrations/service-web-development.svg",
+    "webdev-3d.png": "/assets/img/service/illustrations/service-web-development.svg",
+    // E-Commerce
     "service-ecommerce.svg": "/assets/img/service/illustrations/service-ecommerce.svg",
+    "ecommerce-3d.png": "/assets/img/service/illustrations/service-ecommerce.svg",
+    "ecommerce-automation.png": "/assets/img/service/illustrations/service-ecommerce.svg",
+    // PR & Reputation
     "service-pr-reputation.svg": "/assets/img/service/illustrations/service-pr-reputation.svg",
+    "pr-3d.png": "/assets/img/service/illustrations/service-pr-reputation.svg",
+    // AI Chatbots & Systems
     "service-ai-chatbots.svg": "/assets/img/service/illustrations/service-ai-chatbots.svg",
+    "ai-3d.png": "/assets/img/service/illustrations/service-ai-chatbots.svg",
+    // Affiliate & Partners
     "service-affiliate-partners.svg": "/assets/img/service/illustrations/service-affiliate-partners.svg",
-    "service-ai-systems.svg": "/assets/img/service/illustrations/service-ai-chatbots.svg",
-    "service-content-automation.svg": "/assets/img/service/illustrations/service-email-workflows.svg",
-    "service-customer-support.svg": "/assets/img/service/illustrations/service-ai-chatbots.svg",
-    "service-appointment-booking.svg": "/assets/img/service/illustrations/service-email-workflows.svg",
+    "affiliate-3d.png": "/assets/img/service/illustrations/service-affiliate-partners.svg",
+    // Lead Gen & CRM
     "service-lead-generation.svg": "/assets/img/service/illustrations/service-lead-generation.svg",
+    "lead-generation.jpg": "/assets/img/service/illustrations/service-lead-generation.svg",
+    "ai_leadgen.png": "/assets/img/service/illustrations/service-lead-generation.svg",
     "service-crm-automation.svg": "/assets/img/service/illustrations/service-crm-automation.svg",
+    "crm-automation.jpg": "/assets/img/service/illustrations/service-crm-automation.svg",
+    // Analytics
     "service-analytics.svg": "/assets/img/service/illustrations/service-analytics.svg",
-    "service-video.svg": "/assets/img/service/illustrations/service-social-meta.svg",
-    "service-audit-strategy.svg": "/assets/img/service/illustrations/service-seo.svg",
+    "service-analytics-review.svg": "/assets/img/service/illustrations/service-analytics.svg",
+    // Dedicated New Vector SVGs
+    "service-content-automation.svg": "/assets/img/service/illustrations/service-content-automation.svg",
+    "content-automation.jpg": "/assets/img/service/illustrations/service-content-automation.svg",
+    "service-ad-creative.svg": "/assets/img/service/illustrations/service-ad-creative.svg",
+    "ad-creative-automation.jpg": "/assets/img/service/illustrations/service-ad-creative.svg",
+    "service-customer-support.svg": "/assets/img/service/illustrations/service-customer-support.svg",
+    "customer-support.jpg": "/assets/img/service/illustrations/service-customer-support.svg",
+    "service-appointment-booking.svg": "/assets/img/service/illustrations/service-appointment-booking.svg",
+    "appointment-booking.jpg": "/assets/img/service/illustrations/service-appointment-booking.svg",
+    "service-sales-followup.svg": "/assets/img/service/illustrations/service-sales-followup.svg",
+    "sales-followup.jpg": "/assets/img/service/illustrations/service-sales-followup.svg",
+    "ai_sales.png": "/assets/img/service/illustrations/service-sales-followup.svg",
+    "service-ai-architecture.svg": "/assets/img/service/illustrations/service-ai-architecture.svg",
+    "service-ai-agents.svg": "/assets/img/service/illustrations/service-ai-agents.svg",
+    "service-ai-systems.svg": "/assets/img/service/illustrations/service-ai-agents.svg",
+    "ai_systems.png": "/assets/img/service/illustrations/service-ai-agents.svg",
+    "service-workflow-integrations.svg": "/assets/img/service/illustrations/service-workflow-integrations.svg",
+    "service-whatsapp-crm.svg": "/assets/img/service/illustrations/service-whatsapp-crm.svg",
+    "service-ui-ux-design.svg": "/assets/img/service/illustrations/service-ui-ux-design.svg",
+    "about-3d.png": "/assets/img/service/illustrations/service-ui-ux-design.svg",
+    "service-mobile-apps.svg": "/assets/img/service/illustrations/service-mobile-apps.svg",
+    "service-branding-creative.svg": "/assets/img/service/illustrations/service-branding-creative.svg",
+    "service-influencer-marketing.svg": "/assets/img/service/illustrations/service-influencer-marketing.svg",
+    "service-ai-audit.svg": "/assets/img/service/illustrations/service-ai-audit.svg",
+    "service-audit-strategy.svg": "/assets/img/service/illustrations/service-ai-audit.svg",
+    "service-ai-video.svg": "/assets/img/service/illustrations/service-ai-video.svg",
+    "service-video.svg": "/assets/img/service/illustrations/service-ai-video.svg",
   };
-  return mapping[filename] || "/assets/img/service/illustrations/service-seo.svg";
+  if (mapping[filename]) return mapping[filename];
+  if (img.startsWith("/assets/img/service/illustrations/")) return img;
+  return "/assets/img/service/illustrations/service-seo.svg";
 }
 
 export default function ServicePageTemplate({ data }: ServicePageTemplateProps) {
@@ -121,8 +167,52 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
       ? data.subServices
       : data.subServices; // All services visible
 
+  // RankWise Structured JSON-LD Data for SEO Rich Snippets
+  const extractTitleText = (node: any): string => {
+    if (!node) return "";
+    if (typeof node === "string") return node;
+    if (Array.isArray(node)) return node.map(extractTitleText).join(" ");
+    if (node && node.props && node.props.children) return extractTitleText(node.props.children);
+    return "";
+  };
+  const pageTitle = extractTitleText(data.hero.title) || data.hero.badge;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": `${pageTitle} | Adyantra Digital`,
+        "provider": {
+          "@type": "Organization",
+          "name": "Adyantra Digital",
+          "url": "https://adyantra.in"
+        },
+        "description": data.hero.description,
+        "areaServed": "Global",
+        "serviceType": data.hero.badge
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": data.faqData.map((faq) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <main className="services-page-root min-h-screen overflow-x-hidden">
+      {/* RankWise SEO Rich Snippets Injection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* ═══════════════════ SECTION 1: FLAGSHIP HERO WITH WAVEFORM & AI WIDGET ═══════════════════ */}
       <section className="ady-hero-section relative overflow-hidden" id="home">

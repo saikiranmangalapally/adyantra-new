@@ -7,6 +7,9 @@ import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
 import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
 import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
+import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
+import { ExecutionRoadmapVisual, DataAttributionVisual } from "@/components/sections/ExecutionAndAttributionVisuals";
+import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
 
 export default function AIAutomationPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -25,7 +28,7 @@ export default function AIAutomationPage() {
     {
       id: 2,
       category: "systems",
-      img: "/assets/img/service/illustrations/service-social-meta.svg",
+      img: "/assets/img/service/illustrations/service-sales-followup.svg",
       title: "Sales Follow-up",
       desc: "Never drop a qualified prospect. AI-timed multi-touch sequences across email, SMS, and WhatsApp triggered by real-time customer intent signals.",
       href: "/sales-follow-up",
@@ -41,7 +44,7 @@ export default function AIAutomationPage() {
     {
       id: 4,
       category: "systems",
-      img: "/assets/img/service/illustrations/service-pr-reputation.svg",
+      img: "/assets/img/service/illustrations/service-content-automation.svg",
       title: "Content Automation",
       desc: "Turn 1 core brand brief into high-ranking articles, social posts, newsletters, and email drips with custom LLM pipelines and brand voice guardrails.",
       href: "/content-automation",
@@ -49,7 +52,7 @@ export default function AIAutomationPage() {
     {
       id: 5,
       category: "systems",
-      img: "/assets/img/service/illustrations/service-google-ppc.svg",
+      img: "/assets/img/service/illustrations/service-ad-creative.svg",
       title: "Ad Creative Automation",
       desc: "Generate hundreds of high-converting creative variations, hooks, and localized copy sets programmatically tested against live ad ROAS.",
       href: "/ad-creative-automation",
@@ -57,7 +60,7 @@ export default function AIAutomationPage() {
     {
       id: 6,
       category: "systems",
-      img: "/assets/img/service/illustrations/service-ai-chatbots.svg",
+      img: "/assets/img/service/illustrations/service-customer-support.svg",
       title: "Customer Support",
       desc: "Deliver sub-second resolution for 85%+ of inbound tickets with RAG-powered knowledge base agents and instant escalations to human specialists.",
       href: "/customer-support",
@@ -65,7 +68,7 @@ export default function AIAutomationPage() {
     {
       id: 7,
       category: "systems",
-      img: "/assets/img/service/illustrations/service-email-workflows.svg",
+      img: "/assets/img/service/illustrations/service-appointment-booking.svg",
       title: "Appointment Booking",
       desc: "Self-scheduling conversational agents that qualify prospects in chat, check calendar availability in real time, and lock appointments into your CRM.",
       href: "/appointment-booking",
@@ -81,7 +84,7 @@ export default function AIAutomationPage() {
     {
       id: 9,
       category: "architecture",
-      img: "/assets/img/service/illustrations/service-web-development.svg",
+      img: "/assets/img/service/illustrations/service-ai-architecture.svg",
       title: "AI System Design",
       desc: "Comprehensive enterprise architectural blueprints mapping data flow, security boundaries, model selection, and scalable cloud infrastructure.",
       href: "/ai-system-design",
@@ -89,7 +92,7 @@ export default function AIAutomationPage() {
     {
       id: 10,
       category: "architecture",
-      img: "/assets/img/service/illustrations/service-email-workflows.svg",
+      img: "/assets/img/service/illustrations/service-workflow-integrations.svg",
       title: "Workflow Architecture",
       desc: "Robust event-driven architectures with idempotent execution, fallback retries, error handling, and distributed queuing for zero data loss.",
       href: "/workflow-architecture",
@@ -155,7 +158,7 @@ export default function AIAutomationPage() {
       id: "SYSTEMS",
       label: "AI SYSTEMS",
       color: "#ef5b52",
-      img: "/assets/img/service/vectors/service-ai-systems.svg?v=3",
+      img: "/assets/img/service/illustrations/service-ai-agents.svg",
       badge: "Autonomous Inbound & Execution",
       desc: "Deploy autonomous systems for lead generation, multi-touch sales follow-ups, and automated customer support that scale your capacity 24/7.",
       sub: ["Automated Lead Scraping & Verification", "Multi-Touch Sales Follow-up Drips", "RAG Customer Support Bots", "Automated Booking & CRM Locking"],
@@ -170,7 +173,7 @@ export default function AIAutomationPage() {
       id: "ARCHITECTURE",
       label: "ARCHITECTURE",
       color: "#7b4bf7",
-      img: "/assets/img/service/vectors/service-email-workflows.svg?v=3",
+      img: "/assets/img/service/illustrations/service-workflow-integrations.svg",
       badge: "Enterprise Workflow Infrastructure",
       desc: "Resilient event-driven architectures connecting CRMs, payment gateways, and databases with idempotent execution and zero data loss.",
       sub: ["Zapier / Make / n8n Enterprise Pipelines", "Custom Autonomous Agent Development", "Official WhatsApp Cloud API Sync", "AI Audit & Feasibility Roadmaps"],
@@ -185,7 +188,7 @@ export default function AIAutomationPage() {
       id: "CRM",
       label: "CRM SYNC",
       color: "#3b82f6",
-      img: "/assets/img/service/vectors/service-crm-automation.svg?v=3",
+      img: "/assets/img/service/illustrations/service-crm-automation.svg",
       badge: "Two-Way Pipeline Synchronization",
       desc: "Real-time synchronization between incoming ad leads, conversation transcripts, deal stages, and enterprise CRMs (HubSpot, Salesforce, Zoho).",
       sub: ["Instant Contact Enrichment", "Multi-Channel Source Attribution", "Automated Stage Progression", "Deduplication & Clean Data"],
@@ -200,7 +203,7 @@ export default function AIAutomationPage() {
       id: "AGENTS",
       label: "AI AGENTS",
       color: "#10b981",
-      img: "/assets/img/service/vectors/service-ai-chatbots.svg?v=3",
+      img: "/assets/img/service/illustrations/service-customer-support.svg",
       badge: "Multi-Step Autonomous Reasoning",
       desc: "Autonomous LLM agents capable of dynamic decision making, tool-calling, external database querying, and self-correcting execution loops.",
       sub: ["Dynamic Tool & API Calling", "Private RAG Vector Grounding", "Semantic Memory Retrieval", "Deterministic Fallbacks"],
@@ -426,15 +429,8 @@ export default function AIAutomationPage() {
               </p>
             </div>
 
-            <div className="expert-tablet-card">
-              <Image
-                src="/assets/img/service/service-header-tablet.svg"
-                alt="Adyantra AI Architecture Command Center"
-                width={800}
-                height={500}
-                className="expert-tablet-img"
-                priority
-              />
+            <div className="expert-tablet-card w-full">
+              <ExecutiveTabletMockup title="Autonomous System Orchestrator" />
             </div>
           </div>
 
@@ -451,116 +447,9 @@ export default function AIAutomationPage() {
               </div>
 
               {/* Two Side-by-Side Images */}
-              <div className="expert-dual-images">
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-collab-team.svg"
-                    alt="Adyantra AI Architecture Strategy"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-analytics-review.svg"
-                    alt="Adyantra Workflow Telemetry Monitoring"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
-              </div>
-
-              {/* What's Included Box */}
-              <div className="expert-included-card">
-                <h4 className="expert-included-title">What&apos;s Included</h4>
-                <div className="expert-accent-line" />
-                <p className="expert-included-desc">
-                  Our comprehensive full-funnel automation architecture covers everything from initial bottleneck audit to data-backed retention and multi-agent workflow execution.
-                </p>
-
-                <div className="expert-check-grid">
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>AI Lead Generation &amp; Enrichment</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Sub-5-Second Multi-Channel Inbound Routing</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>24/7 WhatsApp Cloud Conversational AI</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Bi-Directional CRM &amp; Database State Sync</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Custom Autonomous Multi-Agent Workflows</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Zero-Hallucination RAG &amp; Vector Embeddings</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Fault-Tolerant Retries &amp; Idempotent Pipelines</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>24/7 Webhook Health &amp; Telemetry Monitoring</span>
-                  </div>
-                </div>
+              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ExecutionRoadmapVisual />
+                <DataAttributionVisual />
               </div>
             </div>
 
@@ -629,12 +518,7 @@ export default function AIAutomationPage() {
 
               {/* Transform Banner */}
               <div className="expert-cta-card">
-                <Image
-                  src="/assets/img/service/service-cta-transform.svg"
-                  alt="Transform Your Business With AI"
-                  fill
-                  className="expert-cta-bg-img"
-                />
+                <TransformCtaBannerVisual />
                 <div className="expert-cta-overlay" />
                 <div className="expert-cta-content">
                   <h4 className="expert-cta-heading">

@@ -6,6 +6,8 @@ import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
 import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
 import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
+import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
+import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
 
 export default function AboutPage() {
   const faqs = [
@@ -147,15 +149,8 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="expert-tablet-card">
-              <Image
-                src="/assets/img/service/service-header-tablet.svg"
-                alt="Adyantra Strategic Performance Dashboard"
-                width={800}
-                height={500}
-                className="expert-tablet-img"
-                priority
-              />
+            <div className="expert-tablet-card w-full">
+              <ExecutiveTabletMockup title="Adyantra Engineering Mindset" />
             </div>
           </div>
 
@@ -170,11 +165,11 @@ export default function AboutPage() {
               </div>
 
               {/* Dual Photos */}
-              <div className="expert-dual-images">
+              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-collab-team.svg"
-                    alt="Adyantra Strategy & Architecture Team"
+                    src="/assets/img/about/about-technical-dna.svg"
+                    alt="Cross-Functional In-House Guild"
                     width={600}
                     height={400}
                     className="expert-photo"
@@ -182,103 +177,12 @@ export default function AboutPage() {
                 </div>
                 <div className="expert-dual-img-card">
                   <Image
-                    src="/assets/img/service/service-analytics-review.svg"
-                    alt="Adyantra In-House Performance Optimization"
+                    src="/assets/img/about/about-client-impact.svg"
+                    alt="50+ Brands Scaled & Attributable Growth"
                     width={600}
                     height={400}
                     className="expert-photo"
                   />
-                </div>
-              </div>
-
-              {/* What's Included Box */}
-              <div className="expert-included-card">
-                <h4 className="expert-included-title">What Defines Our Standard</h4>
-                <div className="expert-accent-line" />
-                <p className="expert-included-desc">
-                  Our comprehensive full-funnel marketing architecture covers everything from strategic inception to data-backed retention and cross-platform ROI maximization.
-                </p>
-
-                <div className="expert-check-grid">
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>100% In-House Technical Teams</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Direct Senior Lead Communication</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Server-Side Conversion APIs (CAPI)</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Sub-Second Fast Next.js Platforms</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Automated Lead Pipeline Workflows</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Real-Time Business Intelligence</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Zero Long-Term Lock-in Traps</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Autonomous CRM &amp; WhatsApp Bots</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -347,12 +251,7 @@ export default function AboutPage() {
               </div>
 
               <div className="expert-cta-card">
-                <Image
-                  src="/assets/img/service/service-cta-transform.svg"
-                  alt="Transform Your Business with Adyantra"
-                  fill
-                  className="expert-cta-bg-img"
-                />
+                <TransformCtaBannerVisual />
                 <div className="expert-cta-overlay" />
                 <div className="expert-cta-content">
                   <h4 className="expert-cta-heading">

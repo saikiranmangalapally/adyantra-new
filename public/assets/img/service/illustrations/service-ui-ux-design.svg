@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <circle cx="160" cy="110" r="90" fill="#fdf2f8" opacity="0.8"/>
+  <!-- Design Canvas / Wireframe to Hi-Fi -->
+  <rect x="60" y="38" width="200" height="130" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="60" y="38" width="200" height="24" rx="10" fill="#0f172a"/>
+  <text x="75" y="54" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ec4899">Design System &amp; Product UI/UX</text>
+  <!-- Wireframe Blueprint (Left) -->
+  <rect x="75" y="72" width="70" height="85" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="82" y="80" width="30" height="6" rx="2" fill="#94a3b8"/>
+  <rect x="82" y="90" width="56" height="24" rx="4" fill="#e2e8f0"/>
+  <rect x="82" y="120" width="40" height="6" rx="2" fill="#cbd5e1"/>
+  <!-- Hi-Fi Prototype (Right) -->
+  <rect x="155" y="68" width="95" height="89" rx="8" fill="#ffffff" stroke="#ec4899" stroke-width="1.5"/>
+  <rect x="162" y="76" width="40" height="8" rx="2" fill="#0f172a"/>
+  <rect x="162" y="88" width="81" height="32" rx="6" fill="#fce7f3"/>
+  <rect x="162" y="125" width="45" height="12" rx="6" fill="#ec4899"/>
+  <text x="170" y="134" font-family="'Poppins', sans-serif" font-size="6" font-weight="700" fill="#ffffff">Convert</text>
+  <!-- Design Pointer Cursor -->
+  <polygon points="195,130 205,145 200,147 205,158 200,160 195,149 188,153" fill="#0f172a"/>
+  <!-- Conversion Uplift Metric -->
+  <g transform="translate(170, 142)">
+    <rect width="115" height="28" rx="14" fill="#ffffff" stroke="#ec4899" stroke-width="1.4"/>
+    <circle cx="15" cy="14" r="8" fill="#ec4899"/>
+    <text x="28" y="18" font-family="'Poppins', sans-serif" font-size="8" font-weight="800" fill="#be185d">+45% UX Conversion</text>
+  </g>
+  <rect x="40" y="184" width="240" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

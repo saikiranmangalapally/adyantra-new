@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%" fill="none">
+  <circle cx="160" cy="110" r="90" fill="#fdf4ff" opacity="0.8"/>
+  <rect x="50" y="38" width="220" height="132" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="50" y="38" width="220" height="26" rx="10" fill="#0f172a"/>
+  <text x="65" y="55" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#ec4899">Eliminating Pipeline Leakage in CRM</text>
+  <!-- Pipeline Leak Seal Diagram -->
+  <g transform="translate(70, 76)">
+    <rect width="180" height="45" rx="8" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1"/>
+    <circle cx="30" cy="22" r="10" fill="#db2777"/>
+    <text x="25" y="26" font-family="'Poppins', sans-serif" font-size="9" font-weight="800" fill="#ffffff">⚡</text>
+    <text x="50" y="18" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#0f172a">Automated SLA Escalation</text>
+    <text x="50" y="28" font-family="'Poppins', sans-serif" font-size="6.5" fill="#be185d">No lead unattended &gt; 5 minutes</text>
+  </g>
+  <!-- Badge -->
+  <g transform="translate(130, 138)">
+    <rect width="140" height="30" rx="15" fill="#ffffff" stroke="#db2777" stroke-width="1.5"/>
+    <circle cx="16" cy="15" r="9" fill="#db2777"/>
+    <text x="32" y="15" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#0f172a">Pipeline Velocity</text>
+    <text x="32" y="24" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#be185d">+62% Opportunity Win Rate</text>
+  </g>
+  <rect x="40" y="184" width="240" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

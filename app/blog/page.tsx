@@ -8,6 +8,9 @@ import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
 import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
 import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
+import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
+import { ExecutionRoadmapVisual, DataAttributionVisual } from "@/components/sections/ExecutionAndAttributionVisuals";
+import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -21,27 +24,39 @@ export default function BlogPage() {
 
   const articles = [
     {
+      slug: "technical-seo-audit-checklist",
+      title: "The 2026 SEO Content Engine: Mastering 49 Ranking Factors & E-E-A-T",
+      excerpt: "Why generic AI writing gets penalized. How Google evaluates the RankWise 49-factor framework, 40-60 word featured snippet answer blocks, and zero burned AI cliché words.",
+      category: "marketing",
+      categoryLabel: "SEO Strategy",
+      readTime: "8 min read",
+      date: "September 22, 2026",
+      author: "RankWise SEO Guild",
+      img: "/assets/img/blog/blog-seo-rankwise-engine.svg",
+      featured: true,
+    },
+    {
       slug: "future-of-ai-in-digital-marketing",
-      title: "The Future of Autonomous AI in Performance Marketing: Beyond Simple Prompting",
-      excerpt: "How modern growth teams are deploying multi-agent reasoning, dynamic creative generation, and closed-loop ROAS optimization to outperform manual media buyers.",
+      title: "Deploying Autonomous AI Agents in Sales: Beyond Basic Prompting",
+      excerpt: "How modern enterprise growth teams deploy multi-agent cognitive loops, CRM tool-calling, and closed-loop meeting scheduling to accelerate pipeline velocity.",
       category: "ai",
       categoryLabel: "AI Automation",
       readTime: "7 min read",
       date: "September 18, 2026",
       author: "Adyantra Strategy Core",
-      img: "/assets/img/service/vectors/service-ai-systems.svg?v=3",
-      featured: true,
+      img: "/assets/img/blog/blog-autonomous-ai-agents.svg",
+      featured: false,
     },
     {
       slug: "maximize-roi-google-ads",
-      title: "Maximizing ROI on Google Ads in 2026: The New PMax and First-Party Data Playbook",
-      excerpt: "Why relying solely on platform algorithms burns budget. How to feed offline conversion value adjustments and enhanced conversion tracking into your bid strategies.",
+      title: "Scaling Meta Advantage+ & Google PMax: The Dynamic Creative Playbook",
+      excerpt: "Why single-creative campaigns fail. How to feed multi-variant direct-response hooks and first-party conversion values into algorithmic bidding models.",
       category: "marketing",
       categoryLabel: "Paid Growth",
       readTime: "5 min read",
       date: "September 12, 2026",
       author: "PPC Engineering Team",
-      img: "/assets/img/service/vectors/service-google-ppc.svg?v=3",
+      img: "/assets/img/blog/blog-meta-advantage-plus.svg",
       featured: false,
     },
     {
@@ -53,43 +68,31 @@ export default function BlogPage() {
       readTime: "9 min read",
       date: "September 04, 2026",
       author: "Web Systems Lead",
-      img: "/assets/img/service/vectors/service-web-development.svg?v=3",
+      img: "/assets/img/blog/blog-modern-web-engineering.svg",
       featured: false,
     },
     {
       slug: "crm-sync-automation-guide",
-      title: "The Zero-Leakage Lead Pipeline: Integrating WhatsApp Cloud API with Enterprise CRM",
+      title: "The Zero-Leakage Lead Pipeline: Integrating WhatsApp Cloud API with CRM",
       excerpt: "Step-by-step architectural breakdown of bidirectional webhook synchronization between Meta ad leads, WhatsApp chatbots, and HubSpot deal stages.",
       category: "ai",
       categoryLabel: "AI Automation",
       readTime: "6 min read",
       date: "August 28, 2026",
       author: "Automation Engineering",
-      img: "/assets/img/service/vectors/service-crm-automation.svg?v=3",
+      img: "/assets/img/blog/blog-crm-pipeline-velocity.svg",
       featured: false,
     },
     {
       slug: "ecommerce-cart-recovery-systems",
-      title: "Beyond Basic Email Reminders: Intelligent Dynamic E-Commerce Cart Recovery",
-      excerpt: "How personalized predictive discount thresholds and multi-channel timing triggers recover 22% more abandoned revenue than traditional drip sequences.",
+      title: "First-Party Data Attribution: Bypassing iOS Tracking Restrictions with Server CAPI",
+      excerpt: "How server-side Google Tag Manager and Meta Conversions API recover 25-35% of lost customer signals and restore true attribution visibility.",
       category: "marketing",
-      categoryLabel: "E-Commerce",
+      categoryLabel: "Analytics",
       readTime: "6 min read",
       date: "August 20, 2026",
-      author: "E-Commerce Growth Team",
-      img: "/assets/img/service/vectors/service-ecommerce.svg?v=3",
-      featured: false,
-    },
-    {
-      slug: "technical-seo-audit-checklist",
-      title: "The 2026 Technical SEO Architecture: JavaScript Rendering & Semantic Entities",
-      excerpt: "Why traditional keyword stuffing is obsolete. How search engines evaluate knowledge graphs, entity relationships, and sub-second TTFB rendering.",
-      category: "marketing",
-      categoryLabel: "SEO Strategy",
-      readTime: "8 min read",
-      date: "August 14, 2026",
-      author: "SEO Strategy Core",
-      img: "/assets/img/service/vectors/service-seo.svg?v=3",
+      author: "Analytics Core",
+      img: "/assets/img/blog/blog-cookieless-attribution.svg",
       featured: false,
     },
   ];
@@ -400,15 +403,8 @@ export default function BlogPage() {
               </p>
             </div>
 
-            <div className="expert-tablet-card">
-              <Image
-                src="/assets/img/service/service-header-tablet.svg"
-                alt="Adyantra Strategic Performance Dashboard"
-                width={800}
-                height={500}
-                className="expert-tablet-img"
-                priority
-              />
+            <div className="expert-tablet-card w-full">
+              <ExecutiveTabletMockup title="Strategic Marketing Intelligence" />
             </div>
           </div>
 
@@ -421,75 +417,9 @@ export default function BlogPage() {
                 </p>
               </div>
 
-              <div className="expert-dual-images">
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-collab-team.svg"
-                    alt="Adyantra Engineering Collaboration"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/service/service-analytics-review.svg"
-                    alt="Adyantra Growth Analytics Teardowns"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
-              </div>
-
-              <div className="expert-included-card">
-                <h4 className="expert-included-title">What&apos;s Included In Every Blueprint</h4>
-                <div className="expert-accent-line" />
-                <p className="expert-included-desc">
-                  We provide end-to-end transparency: architectural diagrams, stack recommendations, and unit-economic benchmarks.
-                </p>
-
-                <div className="expert-check-grid">
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Actionable Implementation Steps</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Real-World Benchmark Metrics</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Production Architecture Diagrams</span>
-                  </div>
-
-                  <div className="expert-check-item">
-                    <span className="expert-check-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Full-Funnel Automation Schemas</span>
-                  </div>
-                </div>
+              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ExecutionRoadmapVisual />
+                <DataAttributionVisual />
               </div>
             </div>
 
@@ -538,12 +468,7 @@ export default function BlogPage() {
               </div>
 
               <div className="expert-cta-card">
-                <Image
-                  src="/assets/img/service/service-cta-transform.svg"
-                  alt="Transform Your Business with Adyantra"
-                  fill
-                  className="expert-cta-bg-img"
-                />
+                <TransformCtaBannerVisual />
                 <div className="expert-cta-overlay" />
                 <div className="expert-cta-content">
                   <h4 className="expert-cta-heading">
