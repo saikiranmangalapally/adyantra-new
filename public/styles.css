@@ -4240,13 +4240,13 @@ section.process {
   background: #ffffff !important;
   background-color: #ffffff !important;
   border-bottom: 1px solid rgba(220, 230, 248, 0.75) !important;
-  padding: 105px 0 !important;
+  padding: 85px 0 95px 0 !important;
 }
 .process-grid {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important;
   gap: 24px !important;
-  margin-top: 50px !important;
+  margin-top: 45px !important;
 }
 @media (max-width: 991px) {
   .process-grid {
@@ -4260,41 +4260,57 @@ section.process {
 }
 .process-grid article {
   background: #ffffff !important;
-  border: 1px solid rgba(220, 230, 248, 0.85) !important;
+  border: 1.5px solid rgba(220, 230, 248, 0.85) !important;
   border-radius: 20px !important;
-  padding: 32px 26px !important;
+  padding: 30px 24px !important;
   box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.05) !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
-  transition: all 0.3s ease !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 .process-grid article:hover {
   transform: translateY(-4px) !important;
-  box-shadow: 0 16px 36px -8px rgba(123, 75, 247, 0.1) !important;
-  border-color: rgba(123, 75, 247, 0.35) !important;
+  box-shadow: 0 20px 42px -8px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(239, 91, 82, 0.15) !important;
+  border-color: rgba(239, 91, 82, 0.35) !important;
 }
 .process-grid article > span {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 44px !important;
+  height: 44px !important;
   border-radius: 999px !important;
-  background: #ede9fe !important;
-  color: #7b4bf7 !important;
+  background: linear-gradient(135deg, rgba(239, 91, 82, 0.1) 0%, rgba(123, 75, 247, 0.1) 100%) !important;
+  color: #ef5b52 !important;
+  border: 1px solid rgba(239, 91, 82, 0.22) !important;
   font-family: 'Poppins', sans-serif !important;
   font-size: 14px !important;
   font-weight: 700 !important;
-  margin-bottom: 22px !important;
+  margin-bottom: 20px !important;
+  transition: all 0.3s ease !important;
+}
+.process-grid article:hover > span {
+  background: linear-gradient(135deg, #ef5b52 0%, #7b4bf7 100%) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  transform: scale(1.06) !important;
+  box-shadow: 0 6px 18px rgba(239, 91, 82, 0.35) !important;
 }
 .process-grid article h3 {
   font-family: 'Poppins', sans-serif !important;
-  font-size: 18.5px !important;
+  font-size: 18px !important;
   font-weight: 700 !important;
-  color: #11142e !important;
+  color: #0f172a !important;
   line-height: 1.35 !important;
-  margin: 0 0 12px 0 !important;
+  margin: 0 0 10px 0 !important;
+}
+.process-grid article p {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+  color: #586882 !important;
+  margin: 0 !important;
 }
 
 /* ── Section 9: The Adyantra Advantage (.advantage) ── */
@@ -4865,7 +4881,7 @@ section.process {
   background: #ffffff !important;
   background-color: #ffffff !important;
   border-bottom: 1px solid rgba(220, 230, 248, 0.75) !important;
-  padding: 105px 0 !important;
+  padding: 85px 0 95px 0 !important;
 }
 
 /* Section 9: The Adyantra Advantage (.advantage) — Pearl Radial Canvas */

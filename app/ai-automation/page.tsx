@@ -9,7 +9,6 @@ import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
 import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
 import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
 import { ExecutionRoadmapVisual, DataAttributionVisual } from "@/components/sections/ExecutionAndAttributionVisuals";
-import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
 
 export default function AIAutomationPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -410,136 +409,130 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE (REFERENCE DESIGN) ═══════════════════ */}
+      {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE ═══════════════════ */}
       <section className="section expert-showcase-section" id="ecosystem" aria-labelledby="expert-showcase-heading">
         <div className="shell">
-          {/* Top Header Grid: Left Headline & Right Tablet Preview */}
-          <div className="expert-top-grid">
-            <div className="expert-header-left">
-              <span className="expert-kicker-pill">
-                <span className="expert-kicker-dot" />
-                Our Automation Architecture
-              </span>
-              <h2 id="expert-showcase-heading" className="expert-main-heading">
-                Scale Your Operations with Autonomous <br />
-                <span className="ady-gradient-text">AI Systems &amp; Workflow Pipelines</span>
-              </h2>
-              <p className="expert-main-desc">
-                Maximize execution velocity, eliminate manual data bottlenecks, and drive predictable conversions across every customer channel with custom-engineered autonomous event meshes.
-              </p>
-            </div>
-
-            <div className="expert-tablet-card w-full">
-              <ExecutiveTabletMockup title="Autonomous System Orchestrator" />
-            </div>
+          {/* Centered Section Header */}
+          <div className="services-ref-header services-ref-header--centered" style={{ marginBottom: "26px" }}>
+            <span className="ref-pill-kicker">OUR AUTOMATION ARCHITECTURE</span>
+            <h2 id="expert-showcase-heading" className="services-ref-heading">
+              Scale Your Operations with Autonomous <br />
+              <span className="ady-gradient-text">AI Systems &amp; Workflow Pipelines</span>
+            </h2>
+            <p className="services-ref-subtitle" style={{ maxWidth: "780px", marginBottom: "0" }}>
+              Maximize execution velocity, eliminate manual data bottlenecks, and drive predictable conversions across every customer channel with custom-engineered autonomous event meshes.
+            </p>
           </div>
 
-          {/* Main Content Split Grid: Left Content (65%) & Right Sidebar (35%) */}
-          <div className="expert-split-grid">
-            {/* Left Column: Overview + Dual Photos + What's Included */}
-            <div className="expert-content-col">
-              {/* Overview Block */}
-              <div className="expert-overview-block">
-                <h3 className="expert-section-title">Overview</h3>
-                <p className="expert-overview-text">
-                  At Adyantra, we engineer bespoke AI systems and automation architectures that eliminate repetitive operational bottlenecks. From capturing incoming leads in under 5 seconds to multi-agent reasoning, bi-directional CRM syncing, and automated customer support, we construct resilient operational engines that scale your capacity without compounding headcount.
-                </p>
+          {/* Unified Balanced 2-Column Grid (Zero Spacings and Gaps) */}
+          <div className="expert-unified-grid">
+            {/* Left Column: Interactive Tablet + Dual Visuals + Strategic Overview */}
+            <div className="expert-left-pane">
+              {/* 1. Executive Tablet Stage */}
+              <div className="expert-tablet-card">
+                <ExecutiveTabletMockup title="Autonomous System Orchestrator" />
               </div>
 
-              {/* Two Side-by-Side Images */}
-              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* 2. Dual Side-by-Side Visuals */}
+              <div className="expert-dual-images">
                 <ExecutionRoadmapVisual />
                 <DataAttributionVisual />
               </div>
+
+              {/* 3. Strategic Overview Card */}
+              <div className="expert-overview-box">
+                <h3 className="expert-box-title">Technical Overview &amp; Execution Framework</h3>
+                <p className="expert-box-text">
+                  At Adyantra, we engineer bespoke AI systems and automation architectures that eliminate repetitive operational bottlenecks. From capturing incoming leads in under 5 seconds to multi-agent reasoning, bi-directional CRM syncing, and automated customer support, we construct resilient operational engines that scale your capacity without compounding headcount.
+                </p>
+              </div>
             </div>
 
-            {/* Right Column: Recent Services + Transform Banner */}
-            <aside className="expert-sidebar-col">
+            {/* Right Column: What's Included / Recent Services + Transform CTA */}
+            <div className="expert-right-pane">
+              {/* Card 1: What's Included Card */}
+              <div className="expert-included-card">
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="expert-included-title">What&apos;s Included</h4>
+                  <span className="text-[10.5px] font-bold text-[#ef5b52] px-2.5 py-0.5 rounded-full bg-coral-500/10 border border-[#ef5b52]/20 uppercase tracking-wide">
+                    FULL-STACK
+                  </span>
+                </div>
+                <div className="expert-accent-line" />
+                <p className="expert-included-desc">
+                  Full-stack autonomous systems covering intelligent multi-channel routing, event-driven webhooks, RAG knowledge bases, and continuous pipeline monitoring.
+                </p>
+                <div className="expert-check-grid">
+                  {[
+                    "Multi-Channel Inbound Webhooks & Routing",
+                    "Deterministic RAG & Vector Memory Guardrails",
+                    "Bi-directional CRM & Database State Sync",
+                    "Autonomous Multi-Step Agentic Reasoning Loops",
+                    "Idempotent Queues & Automated Retry Handlers",
+                    "Enterprise SOC2 & GDPR Data Privacy Protocols"
+                  ].map((pillar, idx) => (
+                    <div key={idx} className="expert-check-item">
+                      <span className="expert-check-icon">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                          <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
+                          <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      <span>{pillar}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Card 2: Core Systems Modules */}
               <div className="expert-recent-services-card">
-                <h4 className="expert-recent-title">Recent Services</h4>
-                <div className="expert-accent-line" style={{ width: "45px" }} />
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="expert-recent-title">Core Systems</h4>
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                    6 DISCIPLINES
+                  </span>
+                </div>
+                <div className="expert-accent-line" style={{ width: "40px" }} />
                 <ul className="expert-recent-list">
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <Link href="/lead-generation">Lead Generation</Link>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <Link href="/crm-automation">CRM Automation</Link>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <Link href="/whatsapp-crm">WhatsApp + CRM</Link>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <Link href="/ai-agent-development">AI Agent Development</Link>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <Link href="/zapier-make-n8n">Zapier / Make / n8n</Link>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <Link href="/ai-audit-strategy">AI Audit &amp; Strategy</Link>
-                  </li>
+                  {[
+                    { name: "Lead Generation & Inbound Capture", href: "/lead-generation" },
+                    { name: "Sales Follow-up & Multichannel Drips", href: "/sales-follow-up" },
+                    { name: "CRM Automation & State Sync", href: "/crm-automation" },
+                    { name: "AI Agent Development & Tool Use", href: "/ai-agent-development" },
+                    { name: "Zapier / Make / n8n Enterprise Pipelines", href: "/zapier-make-n8n" },
+                    { name: "AI Audit, Feasibility & Architecture", href: "/ai-audit-strategy" }
+                  ].map((svc, idx) => (
+                    <li key={idx} className="expert-recent-item">
+                      <span className="expert-check-icon">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                          <circle cx="10" cy="10" r="9" stroke="#ef5b52" strokeWidth="2" fill="rgba(239, 91, 82, 0.15)" />
+                          <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      <Link href={svc.href}>{svc.name}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
-              {/* Transform Banner */}
-              <div className="expert-cta-card">
-                <TransformCtaBannerVisual />
-                <div className="expert-cta-overlay" />
-                <div className="expert-cta-content">
-                  <h4 className="expert-cta-heading">
-                    Transform <br />
-                    Your Business <br />
-                    with <span className="ady-gradient-text">Adyantra AI!</span>
-                  </h4>
-                  <p className="expert-cta-desc">
-                    Take your operations to the next level with autonomous workflows and intelligent AI solutions. Let&apos;s build your automated engine together!
-                  </p>
-                  <a
-                    href="#contact"
-                    className="shadcn-input-button-solid"
-                    style={{ marginTop: "10px", width: "100%", justifyContent: "space-between" }}
-                  >
-                    <span>Book A Discovery Call</span>
-                    <span className="badge-icon">→</span>
-                  </a>
-                </div>
+              {/* Card 3: Compact Transform CTA Card */}
+              <div className="expert-compact-cta-card">
+                <h4 className="text-xl font-extrabold text-white mb-1.5 leading-snug">
+                  Transform Your Business with <span className="ady-gradient-text">Adyantra AI!</span>
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed mb-4">
+                  Take your operations to the next level with autonomous workflows and intelligent AI solutions. Let&apos;s build your automated engine together!
+                </p>
+                <Link
+                  href="/contact"
+                  className="ady-btn-dark w-full justify-center text-xs py-2.5"
+                  style={{ width: "100%" }}
+                >
+                  <span>Book A Discovery Call</span>
+                  <span className="readmore-btn-arrow">&rarr;</span>
+                </Link>
               </div>
-            </aside>
+            </div>
           </div>
         </div>
       </section>
@@ -655,43 +648,104 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 10: OUR PROVEN PROCESS (HOME PAGE 4-STEP GRID) ═══════════════════ */}
+      {/* ═══════════════════ SECTION 10: OUR PROVEN PROCESS (CURRENT THEME 4-STEP GRID) ═══════════════════ */}
       <section className="section process" aria-labelledby="process-title">
         <div className="shell">
-          <div className="section-heading section-heading--center">
+          <div className="services-ref-header services-ref-header--centered">
             <span className="ref-pill-kicker">OUR PROVEN PROCESS</span>
-            <h2 id="process-title">
+            <h2 id="process-title" className="services-ref-heading">
               A Transparent <span className="ady-gradient-text">4-Phase Automation Methodology</span>
             </h2>
-            <p>Our structured framework ensures rapid deployment, data-driven optimization, and predictable scaling.</p>
+            <p className="services-ref-subtitle">
+              Our structured framework ensures rapid deployment, data-driven optimization, and predictable scaling.
+            </p>
           </div>
           <div className="process-grid">
             <article>
               <span>01</span>
               <h3>Discovery &amp; Process Audit</h3>
-              <p>We audit your digital presence, advertising accounts, data flows, tech stack, and manual bottlenecks.</p>
+              <p>We audit your manual workflows, communication channels, data silos, CRM architecture, and operational bottlenecks.</p>
             </article>
             <article>
               <span>02</span>
               <h3>Strategize &amp; Architecture</h3>
-              <p>System allocation, webhook endpoints, growth roadmap, and multi-agent workflow architecture.</p>
+              <p>Event-driven webhook routing, agent logic trees, data validation guardrails, and enterprise integration roadmap.</p>
             </article>
             <article>
               <span>03</span>
-              <h3>Build &amp; Sandbox Test</h3>
-              <p>Workflows, agent prompts, database syncs, error tracking setup, and edge-case simulation.</p>
+              <h3>Build &amp; Sandbox Simulation</h3>
+              <p>Develop custom agent workflows, private vector RAG retrieval, idempotent database syncs, and edge-case stress testing.</p>
             </article>
             <article>
               <span>04</span>
               <h3>Launch &amp; Live Telemetry</h3>
-              <p>Deploy automations into production, activate real-time health monitors, and provide SLA support.</p>
+              <p>Deploy automations into production with zero downtime, real-time error alerts, latency monitors, and proactive SLA support.</p>
             </article>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════ THE ADYANTRA ADVANTAGE (OUR TEAM & EXPERTISE) ═══════════════════ */}
-      <OurTeamExpertiseSection />
+      <OurTeamExpertiseSection
+        kicker="OUR TEAM & EXPERTISE"
+        heading={
+          <>
+            Work Directly with Senior <br />
+            AI Architects &amp; <span className="team-growth-highlight">Workflow Engineers</span>
+          </>
+        }
+        description="We replace non-technical account managers with senior developers, AI architects, and systems engineers who take complete end-to-end accountability for your automation infrastructure."
+        features={[
+          {
+            iconColor: "purple",
+            text: "100% In-House Engineering",
+            icon: (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            ),
+          },
+          {
+            iconColor: "indigo",
+            text: "Direct Senior Architect Access",
+            icon: (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            ),
+          },
+          {
+            iconColor: "sky",
+            text: "Bespoke Automation Engines",
+            icon: (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                <line x1="9" y1="12" x2="15" y2="18" />
+              </svg>
+            ),
+          },
+          {
+            iconColor: "emerald",
+            text: "Continuous Telemetry & SLA Support",
+            icon: (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            ),
+          },
+        ]}
+        chipProps={{
+          chipTL: { title: "Direct Access", sub: "Senior AI Leads" },
+          chipTR: { title: "24/7 Tuning", sub: "Live Telemetry" },
+          chipBL: { title: "100% In-House", sub: "Zero Outsourcing" },
+          chipBR: { title: "Autonomous SLA", sub: "99.99% Uptime" },
+        }}
+      />
 
       {/* ═══════════════════ SECTION 11: CLIENT REVIEWS (HOME PAGE MARQUEE) ═══════════════════ */}
       <section className="section reviews-ref-section" id="testimonials" aria-labelledby="reviews-ref-title">

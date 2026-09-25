@@ -2,7 +2,24 @@
 
 import React from "react";
 
-export default function ExpertiseVisualStage() {
+export interface ExpertiseChipData {
+  title: string;
+  sub: string;
+}
+
+export interface ExpertiseVisualStageProps {
+  chipTL?: ExpertiseChipData;
+  chipTR?: ExpertiseChipData;
+  chipBL?: ExpertiseChipData;
+  chipBR?: ExpertiseChipData;
+}
+
+export default function ExpertiseVisualStage({
+  chipTL = { title: "Direct Access", sub: "Senior Tech Leads" },
+  chipTR = { title: "24/7 Tuning", sub: "Live Attribution" },
+  chipBL = { title: "100% In-House", sub: "Zero Outsourcing" },
+  chipBR = { title: "Tailored Growth", sub: "+340% Avg ROAS" },
+}: ExpertiseVisualStageProps) {
   return (
     <div className="expertise-visual-stage">
       {/* ── Main 3D Artwork Card (Decreased to compact balanced size) ── */}
@@ -24,8 +41,8 @@ export default function ExpertiseVisualStage() {
           </svg>
         </div>
         <div className="team-proof-chip__content">
-          <strong className="team-proof-chip__title">Direct Access</strong>
-          <span className="team-proof-chip__sub team-proof-chip__sub--muted">Senior Tech Leads</span>
+          <strong className="team-proof-chip__title">{chipTL.title}</strong>
+          <span className="team-proof-chip__sub team-proof-chip__sub--muted">{chipTL.sub}</span>
         </div>
       </div>
 
@@ -37,8 +54,8 @@ export default function ExpertiseVisualStage() {
           </svg>
         </div>
         <div className="team-proof-chip__content">
-          <strong className="team-proof-chip__title">24/7 Tuning</strong>
-          <span className="team-proof-chip__sub team-proof-chip__sub--emerald">Live Attribution</span>
+          <strong className="team-proof-chip__title">{chipTR.title}</strong>
+          <span className="team-proof-chip__sub team-proof-chip__sub--emerald">{chipTR.sub}</span>
         </div>
       </div>
 
@@ -53,8 +70,8 @@ export default function ExpertiseVisualStage() {
           </svg>
         </div>
         <div className="team-proof-chip__content">
-          <strong className="team-proof-chip__title">100% In-House</strong>
-          <span className="team-proof-chip__sub team-proof-chip__sub--purple">Zero Outsourcing</span>
+          <strong className="team-proof-chip__title">{chipBL.title}</strong>
+          <span className="team-proof-chip__sub team-proof-chip__sub--purple">{chipBL.sub}</span>
         </div>
       </div>
 
@@ -68,8 +85,8 @@ export default function ExpertiseVisualStage() {
           </svg>
         </div>
         <div className="team-proof-chip__content">
-          <strong className="team-proof-chip__title team-proof-chip__title--white">Tailored Growth</strong>
-          <span className="team-proof-chip__sub team-proof-chip__sub--silver">+340% Avg ROAS</span>
+          <strong className="team-proof-chip__title team-proof-chip__title--white">{chipBR.title}</strong>
+          <span className="team-proof-chip__sub team-proof-chip__sub--silver">{chipBR.sub}</span>
         </div>
       </div>
     </div>
