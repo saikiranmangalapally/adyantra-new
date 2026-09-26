@@ -40,16 +40,24 @@
   .ady-hero-section h1,
   .ady-main-title,
   .hero-section h1,
-  .ady-title-line1,
-  .ady-title-line2,
-  .ady-title-line3,
   .subpage-title {
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-weight: 650 !important;
-    font-size: clamp(30px, 3.6vw, 48px) !important;
-    line-height: 1.18;
-    letter-spacing: -0.025em;
+    font-weight: 600 !important;
+    font-size: clamp(28px, 3.3vw, 44px) !important;
+    line-height: 1.2;
+    letter-spacing: -0.022em;
+  }
+
+  .ady-title-line1 {
+    font-weight: 500 !important;
+    letter-spacing: -0.015em;
+  }
+
+  .ady-title-line2,
+  .ady-title-line3 {
+    font-weight: 600 !important;
+    letter-spacing: -0.022em;
   }
 
   h2,

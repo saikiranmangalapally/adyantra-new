@@ -54,8 +54,8 @@ export default function BrandingCreativeServicesPage() {
               </BlurIn>
 
               <BlurIn delay={0.2}>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[650] text-secondary tracking-tight leading-[1.18] mb-6">
-                  Build An Unforgettable Brand & <span className="text-primary font-[650]">Visual Identity</span>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-secondary tracking-tight leading-[1.18] mb-6">
+                  Build An Unforgettable Brand & <span className="text-primary font-semibold">Visual Identity</span>
                 </h1>
               </BlurIn>
 

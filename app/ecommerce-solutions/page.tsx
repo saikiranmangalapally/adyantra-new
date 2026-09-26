@@ -63,8 +63,8 @@ export default function EcommerceSolutionsPage() {
               </BlurIn>
 
               <BlurIn delay={0.2}>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[650] text-secondary tracking-tight leading-[1.18] mb-6">
-                  Shopify Plus & <span className="text-primary font-[650]">Headless E-Commerce Scale</span>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-secondary tracking-tight leading-[1.18] mb-6">
+                  Shopify Plus & <span className="text-primary font-semibold">Headless E-Commerce Scale</span>
                 </h1>
               </BlurIn>
 

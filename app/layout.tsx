@@ -31,7 +31,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="stylesheet" href="/styles.css?v=20260926_hero650_v4" />
+        <link rel="stylesheet" href="/styles.css?v=20260926_footer_theme_v5" />
       </head>
       <body className="bg-background text-foreground antialiased min-h-screen flex flex-col">
         <Navbar />

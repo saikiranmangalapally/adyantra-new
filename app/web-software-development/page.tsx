@@ -145,9 +145,9 @@ export default function WebSoftwareDevelopmentPage() {
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[650] tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
             Modern Web Software, Cloud Platforms &amp;{" "}
-            <span className="ady-gradient-text font-[650]">Scalable Applications</span>
+            <span className="ady-gradient-text font-semibold">Scalable Applications</span>
           </h1>
 
           <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">

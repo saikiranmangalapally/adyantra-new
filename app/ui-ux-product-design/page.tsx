@@ -62,8 +62,8 @@ export default function UIUXProductDesignPage() {
               </BlurIn>
 
               <BlurIn delay={0.2}>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[650] text-secondary tracking-tight leading-[1.18] mb-6">
-                  Figma Design Systems & <span className="text-primary font-[650]">Conversion UX</span>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-secondary tracking-tight leading-[1.18] mb-6">
+                  Figma Design Systems & <span className="text-primary font-semibold">Conversion UX</span>
                 </h1>
               </BlurIn>
 

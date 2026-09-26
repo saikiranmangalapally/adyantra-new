@@ -36,7 +36,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
           
-          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-[650] font-heading text-gray-900 leading-tight mb-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold font-heading text-gray-900 leading-tight mb-8">
             {post.title}
           </h1>
           
