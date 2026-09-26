@@ -4,38 +4,6 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="footer ady-theme-footer" id="site-footer">
-      {/* ── Pre-Footer Scalability Banner ── */}
-      <div className="shell">
-        <div className="footer-pre-banner">
-          <div className="footer-pre-banner__content">
-            <span className="ref-pill-kicker">WORK WITH ADYANTRA</span>
-            <h3 className="footer-pre-banner__title">
-              Ready to scale with deterministic AI &amp; <br />
-              <span className="ady-gradient-text">high-performance marketing?</span>
-            </h3>
-            <p className="footer-pre-banner__desc">
-              Connect directly with our senior technical strategists. Zero middle management, real-time attribution, and 100% in-house engineering.
-            </p>
-          </div>
-          <div className="footer-pre-banner__actions">
-            <Link href="/contact" className="ady-btn-dark">
-              <span>Schedule Strategy Call</span>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </Link>
-            <a href="https://wa.me/918309275093" target="_blank" rel="noopener noreferrer" className="ady-btn-ghost">
-              <span>WhatsApp Strategy Desk</span>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* ── Main Navigation Grid (Current Theme 5-Column Responsive Layout) ── */}
       <div className="shell footer__grid">
         {/* Col 1: Brand, Mission & Live Status */}
@@ -44,13 +12,13 @@ export default function Footer() {
             <Image
               src="/assets/img/logo.svg"
               alt="Adyantra Digital Logo"
-              width={145}
-              height={36}
-              style={{ height: "36px", width: "auto", display: "block" }}
+              width={140}
+              height={34}
+              style={{ height: "34px", width: "auto", display: "block" }}
             />
           </Link>
           <p className="footer-brand-desc">
-            Adyantra Digital is a technology-first growth engineering and enterprise AI agency. We design and operate scalable customer acquisition engines, server-side data infrastructure, and custom web software for ambitious brands.
+            Technology-first growth engineering and enterprise AI systems for scaling high-growth brands.
           </p>
 
           {/* Live System Availability Indicator */}
@@ -91,12 +59,12 @@ export default function Footer() {
           <h3 className="footer-nav-heading">Enterprise AI</h3>
           <ul className="footer-nav-list">
             <li><Link href="/ai-agent-development">Autonomous AI Agents</Link></li>
-            <li><Link href="/whatsapp-crm">WhatsApp Cloud API &amp; CRM</Link></li>
-            <li><Link href="/ai-automation#rag">Deterministic RAG Memory</Link></li>
+            <li><Link href="/whatsapp-crm">WhatsApp Cloud API</Link></li>
+            <li><Link href="/ai-automation#rag">Enterprise RAG Systems</Link></li>
             <li><Link href="/zapier-make-n8n">Make &amp; n8n Workflows</Link></li>
             <li><Link href="/crm-automation">Two-Way CRM State Sync</Link></li>
-            <li><Link href="/ai-architecture-consulting">Enterprise AI Architecture</Link></li>
-            <li><Link href="/lead-generation">Lead Qualification Systems</Link></li>
+            <li><Link href="/ai-architecture-consulting">AI Systems Architecture</Link></li>
+            <li><Link href="/lead-generation">AI Lead Qualification</Link></li>
           </ul>
         </div>
 
@@ -105,11 +73,11 @@ export default function Footer() {
           <h3 className="footer-nav-heading">Growth Marketing</h3>
           <ul className="footer-nav-list">
             <li><Link href="/performance-marketing">Google Ads &amp; PMax</Link></li>
-            <li><Link href="/digital-marketing-growth#meta-ads">Meta &amp; Instagram Ads (CAPI)</Link></li>
+            <li><Link href="/digital-marketing-growth#meta-ads">Meta &amp; Instagram Ads</Link></li>
             <li><Link href="/seo">Technical SEO &amp; Authority</Link></li>
-            <li><Link href="/digital-marketing-growth#cro">Conversion Optimization (CRO)</Link></li>
+            <li><Link href="/digital-marketing-growth#cro">Conversion Optimization</Link></li>
             <li><Link href="/web-software-development">Next.js Web Engineering</Link></li>
-            <li><Link href="/ecommerce-solutions">Shopify Plus &amp; Headless D2C</Link></li>
+            <li><Link href="/ecommerce-solutions">Shopify Plus &amp; Headless</Link></li>
             <li><Link href="/ui-ux-product-design">UI/UX Design Systems</Link></li>
           </ul>
         </div>
@@ -129,7 +97,7 @@ export default function Footer() {
             <li><Link href="/blog">Growth Insights Blog</Link></li>
             <li><Link href="/#industries">Target Industries</Link></li>
             <li><Link href="/#testimonials">Client Reviews</Link></li>
-            <li><Link href="/contact">Book Discovery Call</Link></li>
+            <li><Link href="/contact">Book Strategy Call</Link></li>
           </ul>
         </div>
 
@@ -165,7 +133,7 @@ export default function Footer() {
                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
-              <span>HITEC City, Hyderabad, TG 500081</span>
+              <span>HITEC City, Hyderabad</span>
             </div>
           </div>
 

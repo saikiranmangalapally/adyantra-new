@@ -4617,13 +4617,13 @@ section.contact {
   box-shadow: 0 14px 32px rgba(11, 14, 27, 0.48) !important;
 }
 
-/* ── Section 13: Footer (.footer, .ady-theme-footer) Redesigned for Current Theme ── */
+/* ── Section 13: Footer (.footer, .ady-theme-footer) Compact Light Theme (Single-Line Titles) ── */
 footer.footer,
 footer.ady-theme-footer {
   background: #ffffff !important;
   color: #64748b !important;
   border-top: 1px solid rgba(226, 232, 240, 0.85) !important;
-  padding: 0 0 36px 0 !important;
+  padding: 44px 0 22px 0 !important;
   position: relative !important;
   z-index: 10 !important;
   font-family: 'Poppins', sans-serif !important;
@@ -4638,63 +4638,20 @@ footer.footer::before {
   left: 50% !important;
   transform: translateX(-50%) !important;
   width: 900px !important;
-  height: 250px !important;
+  height: 200px !important;
   background: radial-gradient(ellipse at 50% 0%, rgba(239, 91, 82, 0.04) 0%, rgba(123, 75, 247, 0.03) 45%, transparent 70%) !important;
   pointer-events: none !important;
   z-index: 0 !important;
 }
 
-/* Pre-Footer Scalability Banner */
-.footer-pre-banner {
-  position: relative !important;
-  z-index: 1 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 36px !important;
-  background: linear-gradient(135deg, rgba(239, 91, 82, 0.03) 0%, rgba(123, 75, 247, 0.03) 100%) !important;
-  border: 1px solid rgba(226, 232, 240, 0.95) !important;
-  border-radius: 24px !important;
-  padding: 42px 48px !important;
-  margin: 54px 0 64px 0 !important;
-  box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.03) !important;
-}
-
-.footer-pre-banner__content {
-  max-width: 620px !important;
-}
-
-.footer-pre-banner__title {
-  font-size: clamp(20px, 2.2vw, 26px) !important;
-  font-weight: 600 !important;
-  color: #0f172a !important;
-  line-height: 1.25 !important;
-  margin: 10px 0 12px 0 !important;
-  letter-spacing: -0.02em !important;
-}
-
-.footer-pre-banner__desc {
-  font-size: 14px !important;
-  line-height: 1.6 !important;
-  color: #64748b !important;
-  margin: 0 !important;
-}
-
-.footer-pre-banner__actions {
-  display: flex !important;
-  align-items: center !important;
-  gap: 14px !important;
-  flex-shrink: 0 !important;
-}
-
-/* Main Navigation 5-Column Grid */
+/* Main Navigation 5-Column Grid (Sleek Compact Spacing, Single Line Titles) */
 .footer__grid {
   position: relative !important;
   z-index: 1 !important;
   display: grid !important;
-  grid-template-columns: 1.65fr 1fr 1fr 1fr 1.25fr !important;
-  gap: 40px !important;
-  padding-bottom: 56px !important;
+  grid-template-columns: 1.35fr 1.08fr 1.08fr 0.85fr 1.05fr !important;
+  gap: 28px !important;
+  padding-bottom: 28px !important;
 }
 
 /* Col 1: Brand & Status */
@@ -4706,32 +4663,33 @@ footer.footer::before {
 
 .footer-brand-logo {
   display: inline-block !important;
-  margin-bottom: 18px !important;
+  margin-bottom: 12px !important;
   text-decoration: none !important;
 }
 
 .footer-brand-desc {
-  font-size: 13.5px !important;
-  line-height: 1.65 !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
   color: #64748b !important;
-  margin: 0 0 20px 0 !important;
-  max-width: 320px !important;
+  margin: 0 0 14px 0 !important;
+  max-width: 290px !important;
 }
 
 /* Live System Availability Pill */
 .footer-status-pill {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
-  padding: 6px 14px !important;
+  gap: 7px !important;
+  padding: 5px 12px !important;
   border-radius: 9999px !important;
   background: rgba(16, 185, 129, 0.08) !important;
   border: 1px solid rgba(16, 185, 129, 0.22) !important;
   color: #059669 !important;
-  font-size: 11.5px !important;
+  font-size: 11px !important;
   font-weight: 500 !important;
-  margin-bottom: 22px !important;
+  margin-bottom: 16px !important;
   letter-spacing: -0.01em !important;
+  white-space: nowrap !important;
 }
 
 .footer-status-dot {
@@ -4752,7 +4710,7 @@ footer.footer::before {
 /* Social Buttons */
 .footer-social-links {
   display: flex !important;
-  gap: 10px !important;
+  gap: 8px !important;
   align-items: center !important;
 }
 
@@ -4761,14 +4719,14 @@ footer.footer::before {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 36px !important;
-  height: 36px !important;
-  border-radius: 10px !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 8px !important;
   background: #f8fafc !important;
   border: 1px solid rgba(226, 232, 240, 0.95) !important;
   color: #475569 !important;
   transition: all 0.25s ease !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
 }
 
 .footer-social-btn svg,
@@ -4804,20 +4762,21 @@ footer.footer::before {
   stroke: #ffffff !important;
 }
 
-/* Nav Columns */
+/* Nav Columns (Single-Line Titles without Spacings) */
 .footer-nav-col {
   display: flex !important;
   flex-direction: column !important;
 }
 
 .footer-nav-heading {
-  font-size: 13px !important;
+  font-size: 12px !important;
   font-weight: 700 !important;
   color: #0f172a !important;
-  letter-spacing: 0.06em !important;
+  letter-spacing: 0.07em !important;
   text-transform: uppercase !important;
-  margin: 4px 0 18px 0 !important;
+  margin: 2px 0 13px 0 !important;
   position: relative !important;
+  white-space: nowrap !important;
 }
 
 .footer-nav-list {
@@ -4826,17 +4785,18 @@ footer.footer::before {
   margin: 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 11px !important;
+  gap: 7px !important;
 }
 
 .footer-nav-list a {
-  font-size: 13.5px !important;
+  font-size: 13px !important;
   color: #64748b !important;
   text-decoration: none !important;
-  line-height: 1.4 !important;
+  line-height: 1.35 !important;
   transition: all 0.2s ease !important;
   display: inline-flex !important;
   align-items: center !important;
+  white-space: nowrap !important;
 }
 
 .footer-nav-list a:hover {
@@ -4845,41 +4805,44 @@ footer.footer::before {
 }
 
 .footer-badge-hiring {
-  font-size: 10px !important;
+  font-size: 9.5px !important;
   font-weight: 600 !important;
-  padding: 1px 7px !important;
+  padding: 1px 6px !important;
   border-radius: 9999px !important;
   background: rgba(239, 91, 82, 0.1) !important;
   color: #ef5b52 !important;
   border: 1px solid rgba(239, 91, 82, 0.2) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.05em !important;
+  line-height: 1.2 !important;
 }
 
 /* Direct Contact Column */
 .footer-contact-item {
   display: flex !important;
   flex-direction: column !important;
-  gap: 4px !important;
-  margin-bottom: 15px !important;
+  gap: 3px !important;
+  margin-bottom: 10px !important;
 }
 
 .footer-contact-label {
-  font-size: 11px !important;
+  font-size: 10.5px !important;
   font-weight: 600 !important;
   color: #94a3b8 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.06em !important;
+  white-space: nowrap !important;
 }
 
 .footer-contact-value {
-  font-size: 13.5px !important;
+  font-size: 13px !important;
   color: #1e293b !important;
   text-decoration: none !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 7px !important;
   transition: color 0.2s ease !important;
+  white-space: nowrap !important;
 }
 
 .footer-contact-value--highlight {
@@ -4893,21 +4856,23 @@ footer.footer::before {
 
 .footer-contact-value--text {
   color: #64748b !important;
-  line-height: 1.45 !important;
+  line-height: 1.4 !important;
+  white-space: nowrap !important;
 }
 
 .footer-sla-badge {
   display: inline-flex !important;
   align-items: center !important;
   gap: 6px !important;
-  padding: 5px 11px !important;
+  padding: 4px 10px !important;
   border-radius: 8px !important;
   background: rgba(123, 75, 247, 0.07) !important;
   border: 1px solid rgba(123, 75, 247, 0.18) !important;
   color: #7b4bf7 !important;
-  font-size: 11.5px !important;
+  font-size: 11px !important;
   font-weight: 500 !important;
   margin-top: 4px !important;
+  white-space: nowrap !important;
 }
 
 .footer-sla-dot {
@@ -4924,18 +4889,19 @@ footer.footer::before {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  padding: 24px 0 0 0 !important;
+  padding: 18px 0 0 0 !important;
   border-top: 1px solid rgba(226, 232, 240, 0.85) !important;
   color: #94a3b8 !important;
-  font-size: 12.5px !important;
+  font-size: 12px !important;
   flex-wrap: wrap !important;
-  gap: 16px !important;
+  gap: 14px !important;
 }
 
 .footer__bottom a {
   color: #64748b !important;
   text-decoration: none !important;
   transition: color 0.2s ease !important;
+  white-space: nowrap !important;
 }
 
 .footer__bottom a:hover {
@@ -4943,27 +4909,22 @@ footer.footer::before {
 }
 
 .footer-pedigree {
-  font-size: 12px !important;
+  font-size: 11.5px !important;
   color: #94a3b8 !important;
   letter-spacing: 0.02em !important;
+  white-space: nowrap !important;
 }
 
 .footer__bottom-right {
   display: flex !important;
   align-items: center !important;
-  gap: 20px !important;
+  gap: 18px !important;
 }
 
 @media (max-width: 1024px) {
-  .footer-pre-banner {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 24px !important;
-    padding: 32px 28px !important;
-  }
   .footer__grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 36px 28px !important;
+    gap: 28px 24px !important;
   }
   .footer-col-brand {
     grid-column: 1 / -1 !important;
@@ -4973,11 +4934,14 @@ footer.footer::before {
 @media (max-width: 640px) {
   .footer__grid {
     grid-template-columns: 1fr !important;
+    gap: 22px !important;
   }
-  .footer-pre-banner__actions {
+  .footer__bottom {
     flex-direction: column !important;
-    width: 100% !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
   }
+}
   .footer-pre-banner__actions a {
     width: 100% !important;
     justify-content: center !important;
