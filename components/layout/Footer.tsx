@@ -21,12 +21,6 @@ export default function Footer() {
             Technology-first growth engineering and enterprise AI systems for scaling high-growth brands.
           </p>
 
-          {/* Live System Availability Indicator */}
-          <div className="footer-status-pill">
-            <span className="footer-status-dot" />
-            <span className="footer-status-text">Available for Q4 Enterprise Projects</span>
-          </div>
-
           {/* Social Proof Links */}
           <div className="social-links footer-social-links">
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="footer-social-btn">
