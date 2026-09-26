@@ -75,9 +75,9 @@ export default function ExpertiseVisualStage({
         </div>
       </div>
 
-      {/* ── Corner 4 (Bottom-Right): Tailored Growth (Dark Card) ── */}
-      <div className="team-proof-chip team-proof-chip--br team-proof-chip--dark">
-        <div className="team-proof-chip__icon team-proof-chip__icon--dark-amber">
+      {/* ── Corner 4 (Bottom-Right): Autonomous Scale / Tailored Growth (Light Card) ── */}
+      <div className="team-proof-chip team-proof-chip--br">
+        <div className="team-proof-chip__icon team-proof-chip__icon--amber">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
             <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
@@ -85,8 +85,8 @@ export default function ExpertiseVisualStage({
           </svg>
         </div>
         <div className="team-proof-chip__content">
-          <strong className="team-proof-chip__title team-proof-chip__title--white">{chipBR.title}</strong>
-          <span className="team-proof-chip__sub team-proof-chip__sub--silver">{chipBR.sub}</span>
+          <strong className="team-proof-chip__title">{chipBR.title}</strong>
+          <span className="team-proof-chip__sub team-proof-chip__sub--amber">{chipBR.sub}</span>
         </div>
       </div>
     </div>

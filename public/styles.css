@@ -530,8 +530,8 @@ body {
 
 .ady-main-title {
   font-family: var(--font-family-primary) !important;
-  font-size: clamp(26px, 3.1vw, 42px) !important;
-  font-weight: 600 !important;
+  font-size: clamp(30px, 3.6vw, 48px) !important;
+  font-weight: 650 !important;
   letter-spacing: -0.025em;
   line-height: 1.18;
   margin-bottom: 18px;
@@ -542,7 +542,7 @@ body {
   display: block;
   font-family: var(--font-family-primary) !important;
   font-size: inherit;
-  font-weight: 600 !important;
+  font-weight: 650 !important;
   color: #11142e;
   text-shadow: 0 4px 20px rgba(17, 20, 46, 0.05);
 }
@@ -553,7 +553,7 @@ body {
   white-space: nowrap;
   font-family: var(--font-family-primary) !important;
   font-size: inherit;
-  font-weight: 600 !important;
+  font-weight: 650 !important;
   background: linear-gradient(90deg, #7b4bf7 0%, #a438ee 30%, #de358d 65%, #f14c5c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -565,7 +565,7 @@ body {
   white-space: nowrap;
   font-family: var(--font-family-primary) !important;
   font-size: inherit;
-  font-weight: 600 !important;
+  font-weight: 650 !important;
   background: linear-gradient(90deg, #b832a8 0%, #e02f74 40%, #f14c5c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2401,7 +2401,7 @@ section.bento-services-section {
 .service-card a, .text-link { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 8px; color: #7e49d1; font-size: 13px; font-weight: 700; text-decoration: none; transition: gap .2s ease; }
 .service-card a:hover, .text-link:hover { gap: 13px; }.service-card a b, .text-link b { font-size: 18px; line-height: 10px; }
 
-.expertise { background: linear-gradient(180deg, #fff 0%, #f6f7fe 100%); }
+.expertise { background: #ffffff !important; }
 .split-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .94fr); align-items: center; gap: clamp(56px, 8vw, 116px); }
 /* Modern .expertise-visual is styled in the unified component block below */
 .copy-block h2 { max-width: 530px; }.copy-block > p:not(.kicker) { margin: 20px 0; }
@@ -3582,12 +3582,13 @@ section.testimonials {
 #team-expertise.team-ref-section,
 .team-ref-section,
 .section.expertise {
-  background: #f8fafd !important;
-  background-color: #f8fafd !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
   padding: 80px 0 !important;
   position: relative !important;
   overflow: hidden !important;
-  border-bottom: 1px solid #eef2f8 !important;
+  border-bottom: none !important;
+  border-top: none !important;
   color: #0f172a !important;
 }
 
@@ -4310,7 +4311,75 @@ section.process {
   font-size: 13.5px !important;
   line-height: 1.65 !important;
   color: #586882 !important;
-  margin: 0 !important;
+  margin: 0 0 16px 0 !important;
+  flex-grow: 1 !important;
+}
+
+.process-phase-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-family: var(--font-family-mono, monospace) !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #ef5b52 !important;
+  background: rgba(239, 91, 82, 0.08) !important;
+  border: 1px solid rgba(239, 91, 82, 0.2) !important;
+  border-radius: 999px !important;
+  padding: 3px 10px !important;
+  margin-bottom: 12px !important;
+}
+
+.process-chip-group {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  margin-bottom: 16px !important;
+  width: 100% !important;
+}
+
+.process-chip {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  color: #475569 !important;
+  background: #f8fafc !important;
+  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  border-radius: 6px !important;
+  padding: 2.5px 8px !important;
+  white-space: nowrap !important;
+  transition: all 0.2s ease !important;
+}
+
+.process-grid article:hover .process-chip {
+  border-color: rgba(123, 75, 247, 0.25) !important;
+  background: #ffffff !important;
+}
+
+.process-metric-pill {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  padding: 8px 12px !important;
+  border-radius: 10px !important;
+  background: rgba(16, 185, 129, 0.07) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  color: #065f46 !important;
+  font-family: var(--font-family-mono, monospace) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  margin-top: auto !important;
+}
+
+.process-metric-dot {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background: #10b981 !important;
+  display: inline-block !important;
 }
 
 /* ── Section 9: The Adyantra Advantage (.advantage) ── */
@@ -6525,8 +6594,8 @@ button.ady-nav-link {
    ═════════════════════════════════════════════════════════════════ */
 
 .expert-showcase-section {
-  padding: 48px 0 54px 0 !important;
-  background: radial-gradient(ellipse at 50% 0%, #ffffff 0%, #f8faff 50%, #f1f5f9 100%) !important;
+  padding: 64px 0 70px 0 !important;
+  background: #ffffff !important;
   position: relative !important;
 }
 
@@ -6587,10 +6656,22 @@ button.ady-nav-link {
   border-radius: 20px !important;
   overflow: hidden !important;
   padding: 24px 22px !important;
-  background: linear-gradient(135deg, #0b0e1b 0%, #1e1b4b 50%, #172554 100%) !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 16px 36px -10px rgba(15, 23, 42, 0.3) !important;
+  background: linear-gradient(135deg, #fff7f5 0%, #fdf4ff 50%, #eff6ff 100%) !important;
+  border: 1.5px solid rgba(239, 91, 82, 0.22) !important;
+  box-shadow: 0 14px 32px -10px rgba(239, 91, 82, 0.08) !important;
   text-align: left !important;
+}
+
+.expert-compact-cta-card h4 {
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.expert-compact-cta-card p {
+  color: #475569 !important;
+  -webkit-text-fill-color: #475569 !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* Top Header Grid: Left Text & Right Tablet Card */
@@ -6837,13 +6918,13 @@ button.ady-nav-link {
   gap: 16px !important;
 }
 
-/* Card 1: Recent Services (Dark Navy theme card) */
+/* Card 1: Recent Services (Light theme card) */
 .expert-recent-services-card {
-  background: linear-gradient(135deg, #11142e 0%, #1e2246 100%) !important;
-  border: 1.5px solid rgba(123, 75, 247, 0.3) !important;
+  background: #ffffff !important;
+  border: 1.5px solid rgba(220, 230, 248, 0.95) !important;
   border-radius: 20px !important;
   padding: 22px 22px !important;
-  box-shadow: 0 14px 32px -10px rgba(17, 20, 46, 0.25) !important;
+  box-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.06) !important;
   text-align: left !important;
   box-sizing: border-box !important;
   margin: 0 !important;
@@ -6853,7 +6934,7 @@ button.ady-nav-link {
   font-family: 'Poppins', sans-serif !important;
   font-size: 18px !important;
   font-weight: 800 !important;
-  color: #ffffff !important;
+  color: #0f172a !important;
   margin: 0 !important;
 }
 
@@ -6873,13 +6954,13 @@ button.ady-nav-link {
   font-family: 'Poppins', sans-serif !important;
   font-size: 13px !important;
   font-weight: 600 !important;
-  color: #e2e8f0 !important;
+  color: #334155 !important;
   transition: all 0.25s ease !important;
   cursor: pointer !important;
 }
 
 .expert-recent-item:hover {
-  color: #ffffff !important;
+  color: #ef5b52 !important;
   transform: translateX(4px) !important;
 }
 
@@ -7050,7 +7131,7 @@ button.ady-nav-link {
 .section.advantage-exact-section {
   position: relative;
   padding: 110px 0;
-  background: linear-gradient(180deg, #ffffff 0%, #f6f7fe 100%);
+  background: #ffffff !important;
   overflow: hidden;
 }
 
@@ -7110,11 +7191,10 @@ button.ady-nav-link {
 
 #advantage.expertise,
 .section.expertise {
-  padding: 85px 0 95px 0 !important;
-  background: radial-gradient(ellipse at 50% 0%, #ffffff 0%, #f8faff 50%, #f0f4fc 100%) !important;
-  background-color: #f8faff !important;
-  border-top: 1px solid #eef2f8 !important;
-  border-bottom: 1px solid #eef2f8 !important;
+  padding: 80px 0 90px 0 !important;
+  background: #ffffff !important;
+  border-top: none !important;
+  border-bottom: none !important;
   position: relative !important;
   overflow: visible !important;
 }
@@ -7251,8 +7331,8 @@ button.ady-nav-link {
 
 /* Icon Badges */
 .team-proof-chip__icon {
-  width: 38px !important;
-  height: 38px !important;
+  width: 36px !important;
+  height: 36px !important;
   border-radius: 10px !important;
   display: grid !important;
   place-items: center !important;
@@ -7260,23 +7340,28 @@ button.ady-nav-link {
 }
 
 .team-proof-chip__icon--purple {
-  background: #ede8ff !important;
+  background: rgba(123, 75, 247, 0.08) !important;
   color: #7b4bf7 !important;
+  border: 1px solid rgba(123, 75, 247, 0.16) !important;
 }
 
 .team-proof-chip__icon--emerald {
-  background: #dcfce7 !important;
+  background: rgba(16, 185, 129, 0.08) !important;
   color: #10b981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.16) !important;
 }
 
 .team-proof-chip__icon--lavender {
-  background: #f3e8ff !important;
-  color: #7c3aed !important;
+  background: rgba(239, 91, 82, 0.08) !important;
+  color: #ef5b52 !important;
+  border: 1px solid rgba(239, 91, 82, 0.16) !important;
 }
 
-.team-proof-chip__icon--dark-amber {
-  background: rgba(255, 255, 255, 0.14) !important;
-  color: #bef264 !important;
+.team-proof-chip__icon--dark-amber,
+.team-proof-chip__icon--amber {
+  background: rgba(245, 158, 11, 0.08) !important;
+  color: #d97706 !important;
+  border: 1px solid rgba(245, 158, 11, 0.16) !important;
 }
 
 /* Typography in Chips */
@@ -7326,11 +7411,30 @@ button.ady-nav-link {
   font-weight: 500 !important;
 }
 
-/* Dark Card for Bottom-Right (Tailored Growth) */
+.team-proof-chip__icon--amber {
+  background: #fef3c7 !important;
+  color: #d97706 !important;
+}
+
+.team-proof-chip__sub--amber {
+  color: #d97706 !important;
+  font-weight: 600 !important;
+}
+
+/* Light Card for Bottom-Right (Zero Dark Mode) */
 .team-proof-chip--dark {
-  background: #11142e !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  box-shadow: 0 16px 36px -4px rgba(17, 20, 46, 0.45) !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  box-shadow: 0 12px 28px -4px rgba(30, 27, 75, 0.14) !important;
+}
+
+.team-proof-chip--dark .team-proof-chip__title--white {
+  color: #11142e !important;
+}
+
+.team-proof-chip--dark .team-proof-chip__sub--silver {
+  color: #d97706 !important;
+  font-weight: 600 !important;
 }
 
 /* Floating animation for chips */
@@ -7364,13 +7468,13 @@ button.ady-nav-link {
 
 .advantage-exact-heading {
   font-family: 'Poppins', sans-serif !important;
-  font-size: clamp(32px, 3.2vw, 42px) !important;
-  font-weight: 800 !important;
-  line-height: 1.22 !important;
+  font-size: clamp(20px, 2.2vw, 28px) !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
   color: #0f172a !important;
   -webkit-text-fill-color: #0f172a !important;
   margin: 0 0 18px 0 !important;
-  letter-spacing: -0.025em !important;
+  letter-spacing: -0.02em !important;
 }
 
 /* Growth Strategists Highlight (Gradient + Signature Coral Underline) */
@@ -7409,32 +7513,37 @@ button.ady-nav-link {
 }
 
 .advantage-feature-icon {
-  width: 34px !important;
-  height: 34px !important;
-  border-radius: 9px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 10px !important;
   display: grid !important;
   place-items: center !important;
   flex-shrink: 0 !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
 }
 
 .advantage-feature-icon--purple {
-  background: rgba(239, 91, 82, 0.1) !important;
+  background: rgba(239, 91, 82, 0.08) !important;
   color: #ef5b52 !important;
+  border: 1px solid rgba(239, 91, 82, 0.16) !important;
 }
 
 .advantage-feature-icon--indigo {
-  background: rgba(99, 102, 241, 0.1) !important;
-  color: #6366f1 !important;
+  background: rgba(123, 75, 247, 0.08) !important;
+  color: #7b4bf7 !important;
+  border: 1px solid rgba(123, 75, 247, 0.16) !important;
 }
 
 .advantage-feature-icon--sky {
-  background: rgba(2, 132, 199, 0.1) !important;
-  color: #0284c7 !important;
+  background: rgba(59, 130, 246, 0.08) !important;
+  color: #3b82f6 !important;
+  border: 1px solid rgba(59, 130, 246, 0.16) !important;
 }
 
 .advantage-feature-icon--emerald {
-  background: rgba(16, 185, 129, 0.1) !important;
+  background: rgba(16, 185, 129, 0.08) !important;
   color: #10b981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.16) !important;
 }
 
 .advantage-feature-text {
@@ -7939,5 +8048,61 @@ img, svg, video, iframe {
     padding: 8px 14px !important;
   }
 }
+
+/* ═════════════════════════════════════════════════════════════════
+   GLOBAL TYPOGRAPHY REFINEMENT:
+   Hero H1 Weight 650 with Increased Prominence
+   Section Headings (H2) Remain Decreased (Weight 600)
+   ═════════════════════════════════════════════════════════════════ */
+.ady-hero-section h1,
+.ady-hero-section .ady-main-title,
+.hero-section h1,
+.ady-title-line1,
+.ady-title-line2,
+.ady-title-line3,
+.subpage-title {
+  font-weight: 650 !important;
+  font-size: clamp(30px, 3.6vw, 48px) !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.18 !important;
+}
+
+h2,
+h2 *,
+.services-ref-heading,
+.section-heading h2,
+.copy-block h2,
+.growth-banner h2,
+.contact h2,
+.advantage-exact-heading,
+.about-headline,
+.industries-ref-heading,
+.reviews-ref-heading,
+.subpage-title,
+#services-ref-title,
+#expert-showcase-heading,
+#about-title,
+#growth-title,
+#process-title,
+#advantage-title,
+#expertise-title,
+#reviews-ref-title,
+#faq-title,
+#contact-title {
+  font-weight: 600 !important;
+  font-size: clamp(20px, 2.2vw, 28px) !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
+}
+
+h2 em,
+h2 strong,
+h2 b,
+h2 span,
+.ady-gradient-text,
+.team-growth-highlight {
+  font-weight: 600 !important;
+}
+
 
 

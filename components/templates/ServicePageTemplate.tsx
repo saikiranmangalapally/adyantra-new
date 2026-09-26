@@ -352,116 +352,68 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE ═══════════════════ */}
-      <section className="section expert-showcase-section" id="ecosystem" aria-labelledby="expert-showcase-heading">
+      {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE (MINIMAL & EFFECTIVE) ═══════════════════ */}
+      <section className="section expert-showcase-section bg-white" id="ecosystem" aria-labelledby="expert-showcase-heading">
         <div className="shell">
           {/* Unified Section Header */}
-          <div className="services-ref-header services-ref-header--centered" style={{ marginBottom: "26px" }}>
+          <div className="services-ref-header services-ref-header--centered mb-10">
             <span className="ref-pill-kicker">OUR EXPERTISE</span>
-            <h2 id="expert-showcase-heading" className="services-ref-heading">
+            <h2 id="expert-showcase-heading" className="services-ref-heading mt-2 font-semibold">
               {data.about.title}
             </h2>
-            <p className="services-ref-subtitle" style={{ maxWidth: "780px", marginBottom: "0" }}>
+            <p className="services-ref-subtitle max-w-2xl mx-auto">
               {data.about.paragraphs[0]}
             </p>
           </div>
 
-          {/* Unified Balanced 2-Column Grid (Zero Spacings and Gaps) */}
-          <div className="expert-unified-grid">
-            {/* Left Column: Interactive Tablet + Dual Visuals + Strategic Overview */}
-            <div className="expert-left-pane">
-              {/* 1. Executive Tablet Stage */}
-              <div className="expert-tablet-card">
-                <ExecutiveTabletMockup title={data.about.title} />
-              </div>
+          {/* Minimal & Effective 4-Card Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {data.subServices.slice(0, 4).map((svc, idx) => {
+              const badgeColors = [
+                { bg: "bg-[#ef5b52]/8 text-[#ef5b52] border-[#ef5b52]/15", iconBg: "bg-[#ef5b52]/10 text-[#ef5b52]" },
+                { bg: "bg-[#7b4bf7]/8 text-[#7b4bf7] border-[#7b4bf7]/15", iconBg: "bg-[#7b4bf7]/10 text-[#7b4bf7]" },
+                { bg: "bg-[#3b82f6]/8 text-[#3b82f6] border-[#3b82f6]/15", iconBg: "bg-[#3b82f6]/10 text-[#3b82f6]" },
+                { bg: "bg-[#10b981]/8 text-[#10b981] border-[#10b981]/15", iconBg: "bg-[#10b981]/10 text-[#10b981]" },
+              ];
+              const color = badgeColors[idx % badgeColors.length];
 
-              {/* 2. Dual Side-by-Side Visuals */}
-              <div className="expert-dual-images">
-                <ExecutionRoadmapVisual />
-                <DataAttributionVisual />
-              </div>
-
-              {/* 3. Strategic Overview Card */}
-              <div className="expert-overview-box">
-                <h3 className="expert-box-title">Technical Overview &amp; Execution Framework</h3>
-                <p className="expert-box-text">
-                  {data.about.paragraphs.slice(1).join(" ") || data.about.paragraphs[0]}
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column: What's Included Pillars + Core Systems + Transform CTA */}
-            <div className="expert-right-pane">
-              {/* What's Included & Core Capabilities Card */}
-              <div className="expert-included-card">
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="expert-included-title">What&apos;s Included</h4>
-                  <span className="text-[10.5px] font-bold text-[#ef5b52] px-2.5 py-0.5 rounded-full bg-coral-500/10 border border-[#ef5b52]/20 uppercase tracking-wide">
-                    FULL-STACK
-                  </span>
-                </div>
-                <div className="expert-accent-line" />
-                <p className="expert-included-desc">
-                  Full-funnel technical deliverables covering strategic architecture, automated workflows, and continuous optimization.
-                </p>
-
-                <div className="expert-check-grid">
-                  {data.about.pillars.map((pillar, idx) => (
-                    <div key={idx} className="expert-check-item">
-                      <span className="expert-check-icon">
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                          <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                          <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </span>
-                      <span>{pillar}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Core Systems Module List */}
-              <div className="expert-recent-services-card">
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="expert-recent-title">Core Systems</h4>
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                    {data.subServices.length} SYSTEMS
-                  </span>
-                </div>
-                <div className="expert-accent-line" style={{ width: "40px" }} />
-                <ul className="expert-recent-list">
-                  {data.subServices.slice(0, 5).map((svc, idx) => (
-                    <li key={idx} className="expert-recent-item">
-                      <span className="expert-check-icon">
-                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
-                          <circle cx="10" cy="10" r="9" stroke="#ef5b52" strokeWidth="2" fill="rgba(239, 91, 82, 0.15)" />
-                          <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </span>
-                      <span>{svc.title}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Compact Transform CTA Card */}
-              <div className="expert-compact-cta-card">
-                <h4 className="text-xl font-extrabold text-white mb-1.5 leading-snug">
-                  Transform Your Business with <span className="ady-gradient-text">Adyantra!</span>
-                </h4>
-                <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                  Deploy data-backed acquisition systems and custom AI automations engineered for scalable revenue.
-                </p>
-                <Link
-                  href="#contact"
-                  className="ady-btn-dark w-full justify-center text-xs py-2.5"
-                  style={{ width: "100%" }}
+              return (
+                <article
+                  key={idx}
+                  className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between"
                 >
-                  <span>Book A Discovery Call</span>
-                  <span className="readmore-btn-arrow">&rarr;</span>
-                </Link>
-              </div>
-            </div>
+                  <div>
+                    <div className="flex items-center justify-between mb-5">
+                      <div className={`w-11 h-11 rounded-xl ${color.iconBg} flex items-center justify-center transition-transform group-hover:scale-105 duration-300`}>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                      </div>
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border ${color.bg}`}>
+                        Core 0{idx + 1}
+                      </span>
+                    </div>
+                    <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                      {svc.title}
+                    </h3>
+                    <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                      {svc.desc}
+                    </p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+
+          {/* Minimal Centered Action */}
+          <div className="mt-10 text-center">
+            <Link href="#contact" className="ady-btn-dark">
+              <span>Book A Discovery Call</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

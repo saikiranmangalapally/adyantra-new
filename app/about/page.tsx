@@ -6,8 +6,6 @@ import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
 import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
 import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
-import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
-import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
 
 export default function AboutPage() {
   const faqs = [
@@ -130,149 +128,123 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE ═══════════════════ */}
-      <section className="section expert-showcase-section" id="ecosystem" aria-labelledby="expert-showcase-heading">
+      {/* ═══════════════════ SECTION 4: OUR OPERATING MODEL (MINIMAL & EFFECTIVE) ═══════════════════ */}
+      <section className="section expert-showcase-section bg-white" id="ecosystem" aria-labelledby="expert-showcase-heading">
         <div className="shell">
-          {/* Top Header Grid */}
-          <div className="expert-top-grid">
-            <div className="expert-header-left">
-              <span className="expert-kicker-pill">
-                <span className="expert-kicker-dot" />
-                Our Heritage &amp; Mission
-              </span>
-              <h2 id="expert-showcase-heading" className="expert-main-heading">
-                Transforming Fragmented Marketing <br />
-                <span className="ady-gradient-text">Into Compounding Growth</span>
-              </h2>
-              <p className="expert-main-desc">
-                We believe marketing without engineering is guesswork, and software without distribution is invisible. At Adyantra, we combine technical craftsmanship with aggressive customer acquisition so your business operates on predictable unit economics.
-              </p>
-            </div>
-
-            <div className="expert-tablet-card w-full">
-              <ExecutiveTabletMockup title="Adyantra Engineering Mindset" />
-            </div>
+          {/* Section Heading */}
+          <div className="services-ref-header services-ref-header--centered mb-10">
+            <span className="ref-pill-kicker">OUR OPERATING MODEL</span>
+            <h2 id="expert-showcase-heading" className="services-ref-heading mt-2 font-semibold">
+              Transforming Fragmented Marketing <br />
+              <span className="ady-gradient-text font-semibold">Into Compounding Growth</span>
+            </h2>
+            <p className="services-ref-subtitle max-w-2xl mx-auto">
+              We combine in-house technical engineering with disciplined growth marketing so your business scales with predictable unit economics and zero operational friction.
+            </p>
           </div>
 
-          {/* Main Content Split Grid */}
-          <div className="expert-split-grid">
-            <div className="expert-content-col">
-              <div className="expert-overview-block">
-                <h3 className="expert-section-title">The Engineering-First Difference</h3>
-                <p className="expert-overview-text">
-                  Most agencies hand client accounts over to entry-level coordinators and hide behind vanity impressions. Adyantra was founded on a different standard: direct access to senior practitioners, real-time server-side tracking, custom automation pipelines, and radical commercial accountability.
+          {/* Minimal & Effective 4-Card Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#ef5b52]/10 text-[#ef5b52] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#ef5b52]/8 text-[#ef5b52] border-[#ef5b52]/15">
+                    100% In-House
+                  </span>
+                </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Technical Guild
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  Direct collaboration with senior developers, growth architects, and designers with zero middle management.
                 </p>
               </div>
+            </article>
 
-              {/* Dual Photos */}
-              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/about/about-technical-dna.svg"
-                    alt="Cross-Functional In-House Guild"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#7b4bf7]/10 text-[#7b4bf7] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10" />
+                      <line x1="12" y1="20" x2="12" y2="4" />
+                      <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#7b4bf7]/8 text-[#7b4bf7] border-[#7b4bf7]/15">
+                    Verified CAPI
+                  </span>
                 </div>
-                <div className="expert-dual-img-card">
-                  <Image
-                    src="/assets/img/about/about-client-impact.svg"
-                    alt="50+ Brands Scaled & Attributable Growth"
-                    width={600}
-                    height={400}
-                    className="expert-photo"
-                  />
-                </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Server-Side Tracking
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  First-party server attribution bypassing ad blockers to feed clean conversion signals to Google and Meta.
+                </p>
               </div>
-            </div>
+            </article>
 
-            {/* Right Column: Recent Services + Transform Banner */}
-            <aside className="expert-sidebar-col">
-              <div className="expert-recent-services-card">
-                <h4 className="expert-recent-title">Core Services Deployed</h4>
-                <div className="expert-accent-line" style={{ width: "45px" }} />
-                <ul className="expert-recent-list">
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Performance Google &amp; Meta Ads</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Technical SEO &amp; Local Maps</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>AI Lead Gen &amp; Sales Follow-Up</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Modern Next.js Web Engineering</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>E-Commerce CRO &amp; D2C Scale</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Full-Funnel Attribution Analytics</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="expert-cta-card">
-                <TransformCtaBannerVisual />
-                <div className="expert-cta-overlay" />
-                <div className="expert-cta-content">
-                  <h4 className="expert-cta-heading">
-                    Transform <br />
-                    Your Business <br />
-                    with <span className="ady-gradient-text">Adyantra!</span>
-                  </h4>
-                  <p className="expert-cta-desc">
-                    Take your digital growth to the next level with data-driven strategies and innovative automation. Let’s create something amazing together!
-                  </p>
-                  <a
-                    href="#contact"
-                    className="shadcn-input-button-solid"
-                    style={{ marginTop: "10px", width: "100%", justifyContent: "space-between" }}
-                  >
-                    <span>Book A Discovery Call</span>
-                    <span className="badge-icon">→</span>
-                  </a>
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#3b82f6]/10 text-[#3b82f6] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#3b82f6]/8 text-[#3b82f6] border-[#3b82f6]/15">
+                    Continuous Sprints
+                  </span>
                 </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Rapid Iteration
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  Weekly creative testing, copy variations, and bid tuning to prevent ad fatigue and keep acquisition costs low.
+                </p>
               </div>
-            </aside>
+            </article>
+
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#10b981]/10 text-[#10b981] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#10b981]/8 text-[#10b981] border-[#10b981]/15">
+                    Zero Markups
+                  </span>
+                </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Commercial Clarity
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  Transparent milestone pricing, live Looker Studio executive dashboards, and full client ownership of all assets.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          {/* Minimal Centered Action */}
+          <div className="mt-10 text-center">
+            <Link href="/contact" className="ady-btn-dark">
+              <span>Partner With Our Team</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

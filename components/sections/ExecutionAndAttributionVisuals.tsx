@@ -2,82 +2,104 @@
 
 import React from "react";
 
-export function ExecutionRoadmapVisual() {
-  const steps = [
+export function ExecutionRoadmapVisual({
+  badge = "Execution Sprint",
+  sub = "In-House Tech Delivery",
+  steps = [
     { num: "01", title: "Architecture Blueprint", status: "VERIFIED" },
     { num: "02", title: "CAPI & Funnel Build", status: "INTEGRATED" },
     { num: "03", title: "Algorithmic Launch", status: "LIVE" },
     { num: "04", title: "24/7 AI Optimization", status: "AUTONOMOUS" },
-  ];
-
+  ],
+  footerLeft = "Zero Outsourcing",
+  footerRight = "100% Accountable",
+}: {
+  badge?: string;
+  sub?: string;
+  steps?: Array<{ num: string; title: string; status: string }>;
+  footerLeft?: string;
+  footerRight?: string;
+}) {
   return (
-    <div className="w-full h-full min-h-[220px] rounded-2xl bg-[#090d16] border border-slate-800 p-5 flex flex-col justify-between text-white relative overflow-hidden">
-      <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
-        <span className="text-xs font-mono uppercase tracking-wider text-[#ef5b52]">
-          Execution Sprint
+    <div className="w-full h-full min-h-[220px] rounded-2xl bg-white border border-slate-200/90 shadow-sm p-5 flex flex-col justify-between text-slate-800 relative overflow-hidden transition-all hover:border-slate-300">
+      <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+        <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#ef5b52]">
+          {badge}
         </span>
-        <span className="text-[11px] font-mono text-slate-400">
-          In-House Tech Delivery
+        <span className="text-[11px] font-mono text-slate-500 font-medium">
+          {sub}
         </span>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 my-auto py-2">
+      <div className="grid grid-cols-2 gap-3 my-auto py-3">
         {steps.map((s, idx) => (
-          <div key={idx} className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col">
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] font-mono font-bold text-[#ef5b52]">{s.num}</span>
-              <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-slate-800 text-emerald-400">
+          <div key={idx} className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col hover:bg-slate-100/60 transition-colors">
+            <div className="flex items-center justify-between mb-1.5">
+              <span className="text-[11px] font-mono font-extrabold text-[#ef5b52]">{s.num}</span>
+              <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200/80">
                 {s.status}
               </span>
             </div>
-            <span className="text-xs font-semibold text-slate-200 leading-tight">
+            <span className="text-xs font-bold text-slate-900 leading-tight">
               {s.title}
             </span>
           </div>
         ))}
       </div>
 
-      <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
-        <span>Zero Outsourcing</span>
-        <span className="text-emerald-400 font-medium">100% Accountable</span>
+      <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-mono">
+        <span>{footerLeft}</span>
+        <span className="text-emerald-700 font-bold">{footerRight}</span>
       </div>
     </div>
   );
 }
 
-export function DataAttributionVisual() {
+export function DataAttributionVisual({
+  badge = "Attribution Telemetry",
+  sub = "Server-Side Active",
+  metrics = [
+    { name: "Meta CAPI Attribution", val: "99.4% Match", width: "94%", color: "bg-gradient-to-r from-[#ef5b52] to-[#7b4bf7]" },
+    { name: "Google sGTM Recovery", val: "100% Synced", width: "98%", color: "bg-gradient-to-r from-[#7b4bf7] to-[#0284c7]" },
+    { name: "Lead Response Latency (< 5s)", val: "2.4s Avg", width: "95%", color: "bg-[#10b981]" },
+  ],
+  footerLeft = "iOS14+ Bypass Active",
+  footerRight = "+340% Attributed ROAS",
+}: {
+  badge?: string;
+  sub?: string;
+  metrics?: Array<{ name: string; val: string; width: string; color: string }>;
+  footerLeft?: string;
+  footerRight?: string;
+}) {
   return (
-    <div className="w-full h-full min-h-[220px] rounded-2xl bg-[#090d16] border border-slate-800 p-5 flex flex-col justify-between text-white relative overflow-hidden">
-      <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
-        <span className="text-xs font-mono uppercase tracking-wider text-[#38bdf8]">
-          Attribution Telemetry
+    <div className="w-full h-full min-h-[220px] rounded-2xl bg-white border border-slate-200/90 shadow-sm p-5 flex flex-col justify-between text-slate-800 relative overflow-hidden transition-all hover:border-slate-300">
+      <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+        <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#0284c7]">
+          {badge}
         </span>
-        <span className="text-[11px] font-mono text-emerald-400">
-          Server-Side Active
+        <span className="text-[11px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/70">
+          {sub}
         </span>
       </div>
 
-      <div className="my-auto py-2 flex flex-col gap-2">
-        <div className="flex items-center justify-between text-xs font-mono">
-          <span className="text-slate-300">Meta CAPI Attribution</span>
-          <span className="text-emerald-400 font-bold">99.4% Match</span>
-        </div>
-        <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-          <div className="h-full rounded-full bg-gradient-to-r from-[#ef5b52] to-[#38bdf8]" style={{ width: "94%" }} />
-        </div>
-
-        <div className="flex items-center justify-between text-xs font-mono mt-1">
-          <span className="text-slate-300">Google sGTM Recovery</span>
-          <span className="text-[#38bdf8] font-bold">100% Synced</span>
-        </div>
-        <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-          <div className="h-full rounded-full bg-[#38bdf8]" style={{ width: "98%" }} />
-        </div>
+      <div className="my-auto py-3 flex flex-col gap-3">
+        {metrics.map((m, i) => (
+          <div key={i} className="flex flex-col gap-1.5">
+            <div className="flex items-center justify-between text-xs font-mono">
+              <span className="text-slate-700 font-medium">{m.name}</span>
+              <span className="text-emerald-700 font-bold">{m.val}</span>
+            </div>
+            <div className="w-full h-2 rounded-full bg-slate-100 border border-slate-200/60 overflow-hidden">
+              <div className={`h-full rounded-full ${m.color}`} style={{ width: m.width }} />
+            </div>
+          </div>
+        ))}
       </div>
 
-      <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
-        <span>iOS14+ Bypass Active</span>
-        <span className="text-[#ef5b52] font-semibold">+340% Attributed ROAS</span>
+      <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-mono">
+        <span>{footerLeft}</span>
+        <span className="text-[#ef5b52] font-bold">{footerRight}</span>
       </div>
     </div>
   );

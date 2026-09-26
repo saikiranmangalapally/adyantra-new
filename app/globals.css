@@ -37,22 +37,34 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1 {
+  .ady-hero-section h1,
+  .ady-main-title,
+  .hero-section h1,
+  .ady-title-line1,
+  .ady-title-line2,
+  .ady-title-line3,
+  .subpage-title {
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-weight: 600 !important;
-    font-size: clamp(26px, 3.0vw, 40px);
+    font-weight: 650 !important;
+    font-size: clamp(30px, 3.6vw, 48px) !important;
     line-height: 1.18;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
   }
 
-  h2 {
+  h2,
+  h2 *,
+  .services-ref-heading,
+  .advantage-exact-heading,
+  .about-headline,
+  .industries-ref-heading,
+  .reviews-ref-heading {
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-weight: 600 !important;
-    font-size: clamp(24px, 2.6vw, 33px);
+    font-size: clamp(20px, 2.2vw, 28px) !important;
     line-height: 1.25;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
   }
 
   h3 {
@@ -418,8 +430,8 @@ main > div:first-of-type {
 
 .ady-main-title {
   font-family: var(--font-sans) !important;
-  font-size: clamp(26px, 3.1vw, 42px) !important;
-  font-weight: 600 !important;
+  font-size: clamp(30px, 3.6vw, 48px) !important;
+  font-weight: 650 !important;
   letter-spacing: -0.025em;
   line-height: 1.18;
   margin-bottom: 18px;
@@ -429,7 +441,7 @@ main > div:first-of-type {
   display: block;
   font-family: var(--font-sans) !important;
   font-size: inherit;
-  font-weight: 600 !important;
+  font-weight: 650 !important;
   color: #11142e;
   text-shadow: 0 4px 20px rgba(17, 20, 46, 0.05);
 }
@@ -1076,13 +1088,13 @@ main > div:first-of-type {
   gap: 28px !important;
 }
 
-/* Card 1: Recent Services (Dark Navy theme card) */
+/* Card 1: Recent Services (Light theme card) */
 .expert-recent-services-card {
-  background: linear-gradient(135deg, #11142e 0%, #1e2246 100%) !important;
-  border: 1.5px solid rgba(123, 75, 247, 0.3) !important;
+  background: #ffffff !important;
+  border: 1.5px solid rgba(220, 230, 248, 0.95) !important;
   border-radius: 24px !important;
   padding: 34px 28px !important;
-  box-shadow: 0 20px 45px -12px rgba(17, 20, 46, 0.3) !important;
+  box-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.06) !important;
   text-align: left !important;
   box-sizing: border-box !important;
 }
@@ -1091,7 +1103,7 @@ main > div:first-of-type {
   font-family: 'Poppins', sans-serif !important;
   font-size: 22px !important;
   font-weight: 800 !important;
-  color: #ffffff !important;
+  color: #0f172a !important;
   margin: 0 !important;
 }
 
@@ -1111,13 +1123,13 @@ main > div:first-of-type {
   font-family: 'Poppins', sans-serif !important;
   font-size: 14px !important;
   font-weight: 600 !important;
-  color: #e2e8f0 !important;
+  color: #334155 !important;
   transition: all 0.25s ease !important;
   cursor: pointer !important;
 }
 
 .expert-recent-item:hover {
-  color: #ffffff !important;
+  color: #ef5b52 !important;
   transform: translateX(4px) !important;
 }
 

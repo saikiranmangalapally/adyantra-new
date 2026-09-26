@@ -493,129 +493,113 @@ export default function DigitalMarketingGrowthPage() {
       </section>
 
       {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE ═══════════════════ */}
-      <section className="section expert-showcase-section" id="ecosystem" aria-labelledby="expert-showcase-heading">
+      {/* ═══════════════════ SECTION 4: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE (MINIMAL & EFFECTIVE) ═══════════════════ */}
+      <section className="section expert-showcase-section bg-white" id="ecosystem" aria-labelledby="expert-showcase-heading">
         <div className="shell">
           {/* Centered Section Header */}
-          <div className="services-ref-header services-ref-header--centered" style={{ marginBottom: "26px" }}>
+          <div className="services-ref-header services-ref-header--centered mb-10">
             <span className="ref-pill-kicker">OUR EXPERTISE</span>
-            <h2 id="expert-showcase-heading" className="services-ref-heading">
-              Boost Your Brand with Strategic <br />
-              <span className="ady-gradient-text">Social Media &amp; Digital Marketing</span>
+            <h2 id="expert-showcase-heading" className="services-ref-heading mt-2 font-semibold">
+              Strategic Digital Performance &amp; <br />
+              <span className="ady-gradient-text font-semibold">Growth Engineering</span>
             </h2>
-            <p className="services-ref-subtitle" style={{ maxWidth: "780px", marginBottom: "0" }}>
-              Maximize engagement, build loyal customer communities, and drive predictable conversions across all major platforms with custom-engineered data, creative performance, and autonomous intelligence.
+            <p className="services-ref-subtitle max-w-2xl mx-auto">
+              Data-backed multi-channel execution, autonomous pipeline orchestration, and creative iteration designed for scalable customer lifetime value.
             </p>
           </div>
 
-          {/* Unified Balanced 2-Column Grid (Zero Spacings and Gaps) */}
-          <div className="expert-unified-grid">
-            {/* Left Column: Interactive Tablet + Dual Visuals + Strategic Overview */}
-            <div className="expert-left-pane">
-              {/* 1. Executive Tablet Stage */}
-              <div className="expert-tablet-card">
-                <ExecutiveTabletMockup title="Integrated Growth Engine Architecture" />
-              </div>
-
-              {/* 2. Dual Side-by-Side Visuals */}
-              <div className="expert-dual-images">
-                <ExecutionRoadmapVisual />
-                <DataAttributionVisual />
-              </div>
-
-              {/* 3. Strategic Overview Card */}
-              <div className="expert-overview-box">
-                <h3 className="expert-box-title">Overview &amp; Strategic Execution</h3>
-                <p className="expert-box-text">
-                  At Adyantra, we help brands grow through custom-tailored marketing and automation strategies that connect deeply with your audience. From content creation to multi-channel campaign optimization, we make sure your presence on platforms like Instagram, Facebook, LinkedIn, Google, and TikTok stands out. Whether you’re launching a new brand or scaling an existing enterprise, our experts turn fragmented marketing into a powerful, compounding growth engine.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column: What's Included / Recent Services + Transform CTA */}
-            <div className="expert-right-pane">
-              {/* Card 1: What's Included Card */}
-              <div className="expert-included-card">
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="expert-included-title">What&apos;s Included</h4>
-                  <span className="text-[10.5px] font-bold text-[#ef5b52] px-2.5 py-0.5 rounded-full bg-coral-500/10 border border-[#ef5b52]/20 uppercase tracking-wide">
-                    FULL-FUNNEL
-                  </span>
-                </div>
-                <div className="expert-accent-line" />
-                <p className="expert-included-desc">
-                  Data-backed multi-channel execution, autonomous pipeline orchestration, and creative iteration designed for scalable customer lifetime value.
-                </p>
-                <div className="expert-check-grid">
-                  {[
-                    "Multi-Channel Campaign Architecture",
-                    "Predictable Unit Economics & CAC",
-                    "Custom Ad Creatives & Video Hook Testing",
-                    "Omnichannel Attribution Modeling",
-                    "Conversion Rate Optimization (CRO)",
-                    "Cross-Platform Retargeting Workflows"
-                  ].map((pillar, idx) => (
-                    <div key={idx} className="expert-check-item">
-                      <span className="expert-check-icon">
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                          <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.08)" />
-                          <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </span>
-                      <span>{pillar}</span>
+          {/* Minimal & Effective 4-Card Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Paid Performance Ads",
+                desc: "High-ROAS multi-channel campaigns across Google Ads, Meta Ads, and LinkedIn B2B with predictive budget allocation.",
+                badge: "4.8x Blended ROAS",
+                badgeStyle: "bg-[#ef5b52]/8 text-[#ef5b52] border-[#ef5b52]/15",
+                iconBg: "bg-[#ef5b52]/10 text-[#ef5b52]",
+                icon: (
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="22" y1="12" x2="18" y2="12" />
+                    <line x1="6" y1="12" x2="2" y2="12" />
+                    <line x1="12" y1="6" x2="12" y2="2" />
+                    <line x1="12" y1="22" x2="12" y2="18" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Technical SEO & Authority",
+                desc: "Programmatic site architecture, high-intent keyword clustering, and authoritative PR backlinks that dominate search rankings.",
+                badge: "Top 3 Search Ranks",
+                badgeStyle: "bg-[#7b4bf7]/8 text-[#7b4bf7] border-[#7b4bf7]/15",
+                iconBg: "bg-[#7b4bf7]/10 text-[#7b4bf7]",
+                icon: (
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Conversion Rate (CRO)",
+                desc: "Scientific A/B testing of value propositions, checkout funnels, and landing page UX that doubles conversion efficiency.",
+                badge: "+64% Conversion Lift",
+                badgeStyle: "bg-[#3b82f6]/8 text-[#3b82f6] border-[#3b82f6]/15",
+                iconBg: "bg-[#3b82f6]/10 text-[#3b82f6]",
+                icon: (
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                    <polyline points="17 6 23 6 23 12" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Attribution & Server CAPI",
+                desc: "Server-side tracking via Meta CAPI and Google Enhanced Conversions for 100% data fidelity and zero signal loss.",
+                badge: "100% Signal Fidelity",
+                badgeStyle: "bg-[#10b981]/8 text-[#10b981] border-[#10b981]/15",
+                iconBg: "bg-[#10b981]/10 text-[#10b981]",
+                icon: (
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <polyline points="9 12 11 14 15 10" />
+                  </svg>
+                ),
+              },
+            ].map((c, i) => (
+              <article
+                key={i}
+                className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-5">
+                    <div className={`w-11 h-11 rounded-xl ${c.iconBg} flex items-center justify-center transition-transform group-hover:scale-105 duration-300`}>
+                      {c.icon}
                     </div>
-                  ))}
+                    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border ${c.badgeStyle}`}>
+                      {c.badge}
+                    </span>
+                  </div>
+                  <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                    {c.title}
+                  </h3>
+                  <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                    {c.desc}
+                  </p>
                 </div>
-              </div>
+              </article>
+            ))}
+          </div>
 
-              {/* Card 2: Core Systems Modules */}
-              <div className="expert-recent-services-card">
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="expert-recent-title">Core Systems</h4>
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                    6 DISCIPLINES
-                  </span>
-                </div>
-                <div className="expert-accent-line" style={{ width: "40px" }} />
-                <ul className="expert-recent-list">
-                  {[
-                    "Social Media Marketing",
-                    "Content Marketing & SEO",
-                    "PPC Advertising (Meta, Google, TikTok)",
-                    "Lifecycle Email Marketing & CRM",
-                    "Brand Identity & Creative Design",
-                    "High-Converting Web Development"
-                  ].map((svc, idx) => (
-                    <li key={idx} className="expert-recent-item">
-                      <span className="expert-check-icon">
-                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
-                          <circle cx="10" cy="10" r="9" stroke="#ef5b52" strokeWidth="2" fill="rgba(239, 91, 82, 0.15)" />
-                          <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </span>
-                      <span>{svc}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Card 3: Compact Transform CTA Card */}
-              <div className="expert-compact-cta-card">
-                <h4 className="text-xl font-extrabold text-white mb-1.5 leading-snug">
-                  Transform Your Business with <span className="ady-gradient-text">Adyantra!</span>
-                </h4>
-                <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                  Take your digital marketing to the next level with data-driven strategies and innovative solutions.
-                </p>
-                <Link
-                  href="/contact"
-                  className="ady-btn-dark w-full justify-center text-xs py-2.5"
-                  style={{ width: "100%" }}
-                >
-                  <span>Book A Discovery Call</span>
-                  <span className="readmore-btn-arrow">&rarr;</span>
-                </Link>
-              </div>
-            </div>
+          {/* Minimal Centered Action */}
+          <div className="mt-10 text-center">
+            <Link href="/contact" className="ady-btn-dark">
+              <span>Explore Digital Growth Architecture</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

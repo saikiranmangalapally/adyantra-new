@@ -8,9 +8,6 @@ import { AIGuideAvatar } from "@/components/icons/AIGuideAvatar";
 import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
 import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
 import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
-import ExecutiveTabletMockup from "@/components/sections/ExecutiveTabletMockup";
-import { ExecutionRoadmapVisual, DataAttributionVisual } from "@/components/sections/ExecutionAndAttributionVisuals";
-import TransformCtaBannerVisual from "@/components/sections/TransformCtaBannerVisual";
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -385,111 +382,121 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 7: SYSTEM VISUALIZATION / EXPERTISE SHOWCASE ═══════════════════ */}
-      <section className="section expert-showcase-section" id="ecosystem" aria-labelledby="expert-showcase-heading">
+      {/* ═══════════════════ SECTION 7: OUR EXPERTISE / PUBLISHED SYSTEMS (MINIMAL & EFFECTIVE) ═══════════════════ */}
+      <section className="section expert-showcase-section bg-white" id="ecosystem" aria-labelledby="expert-showcase-heading">
         <div className="shell">
-          <div className="expert-top-grid">
-            <div className="expert-header-left">
-              <span className="expert-kicker-pill">
-                <span className="expert-kicker-dot" />
-                Live Strategic Performance
-              </span>
-              <h2 id="expert-showcase-heading" className="expert-main-heading">
-                Tested Architectures Built for <br />
-                <span className="ady-gradient-text">Enterprise Reliability</span>
-              </h2>
-              <p className="expert-main-desc">
-                From real-time CAPI attribution tracking to multi-step autonomous AI workflows, our published teardowns reflect the highest standards in digital growth execution.
-              </p>
-            </div>
-
-            <div className="expert-tablet-card w-full">
-              <ExecutiveTabletMockup title="Strategic Marketing Intelligence" />
-            </div>
+          {/* Section Heading */}
+          <div className="services-ref-header services-ref-header--centered mb-10">
+            <span className="ref-pill-kicker">OUR EXPERTISE</span>
+            <h2 id="expert-showcase-heading" className="services-ref-heading mt-2 font-semibold">
+              Tested Architectures Built for <br />
+              <span className="ady-gradient-text font-semibold">Enterprise Reliability</span>
+            </h2>
+            <p className="services-ref-subtitle max-w-2xl mx-auto">
+              From real-time CAPI attribution tracking to multi-step autonomous AI agents, our published teardowns reflect our highest standards in digital growth execution.
+            </p>
           </div>
 
-          <div className="expert-split-grid">
-            <div className="expert-content-col">
-              <div className="expert-overview-block">
-                <h3 className="expert-section-title">Tested in Production</h3>
-                <p className="expert-overview-text">
-                  Our articles are written by senior practitioners actively writing code, managing media spend, and monitoring pipeline health. When you read our dispatches, you are reviewing verified systems designed to survive real-world algorithm updates and conversion friction.
+          {/* Minimal & Effective 4-Card Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#ef5b52]/10 text-[#ef5b52] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#ef5b52]/8 text-[#ef5b52] border-[#ef5b52]/15">
+                    Production Tested
+                  </span>
+                </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Autonomous AI Agents
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  Enterprise workflows, WhatsApp AI routers, and deterministic RAG architectures operating 24/7 with zero downtime.
                 </p>
               </div>
+            </article>
 
-              <div className="expert-dual-images grid grid-cols-1 md:grid-cols-2 gap-4">
-                <ExecutionRoadmapVisual />
-                <DataAttributionVisual />
-              </div>
-            </div>
-
-            <aside className="expert-sidebar-col">
-              <div className="expert-recent-services-card">
-                <h4 className="expert-recent-title">Trending Categories</h4>
-                <div className="expert-accent-line" style={{ width: "45px" }} />
-                <ul className="expert-recent-list">
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Autonomous AI Agents</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>PMax &amp; CAPI Optimization</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>Next.js 15 Server Performance</span>
-                  </li>
-                  <li className="expert-recent-item">
-                    <span className="expert-check-icon">
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="9" stroke="#7b4bf7" strokeWidth="2" fill="rgba(123, 75, 247, 0.2)" />
-                        <path d="M6 10.5L8.5 13L14 7.5" stroke="#ef5b52" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <span>WhatsApp CRM Bots</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="expert-cta-card">
-                <TransformCtaBannerVisual />
-                <div className="expert-cta-overlay" />
-                <div className="expert-cta-content">
-                  <h4 className="expert-cta-heading">
-                    Transform <br />
-                    Your Business <br />
-                    with <span className="ady-gradient-text">Adyantra!</span>
-                  </h4>
-                  <p className="expert-cta-desc">
-                    Need help deploying these systems? Connect with our senior engineering team for a dedicated implementation roadmap.
-                  </p>
-                  <a
-                    href="#contact"
-                    className="shadcn-input-button-solid"
-                    style={{ marginTop: "10px", width: "100%", justifyContent: "space-between" }}
-                  >
-                    <span>Request System Audit</span>
-                    <span className="badge-icon">→</span>
-                  </a>
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#7b4bf7]/10 text-[#7b4bf7] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10" />
+                      <line x1="12" y1="20" x2="12" y2="4" />
+                      <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#7b4bf7]/8 text-[#7b4bf7] border-[#7b4bf7]/15">
+                    Attributable Scale
+                  </span>
                 </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Performance Ads &amp; CAPI
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  Server-side event streaming, PMax tuning frameworks, and unit-economics tracking across Google and Meta.
+                </p>
               </div>
-            </aside>
+            </article>
+
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#3b82f6]/10 text-[#3b82f6] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="16 18 22 12 16 6" />
+                      <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#3b82f6]/8 text-[#3b82f6] border-[#3b82f6]/15">
+                    Sub-Second LCP
+                  </span>
+                </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Modern Web Engineering
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  Next.js 15, headless CMS integrations, and responsive landing pages engineered for maximum conversion velocity.
+                </p>
+              </div>
+            </article>
+
+            <article className="group p-6 rounded-2xl bg-white border border-slate-200/70 hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-[#10b981]/10 text-[#10b981] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-[#10b981]/8 text-[#10b981] border-[#10b981]/15">
+                    +48% Avg Lift
+                  </span>
+                </div>
+                <h3 className="text-base font-semibold text-slate-900 tracking-tight mb-2">
+                  Conversion CRO &amp; UX
+                </h3>
+                <p className="text-[13.5px] text-slate-500 leading-relaxed">
+                  Algorithmic friction removal, checkout optimization, and full-funnel behavioral user journey analytics.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          {/* Minimal Centered Action */}
+          <div className="mt-10 text-center">
+            <Link href="/contact" className="ady-btn-dark">
+              <span>Request System Audit</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

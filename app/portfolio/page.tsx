@@ -112,9 +112,9 @@ export default function PortfolioPage() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[650] tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
             Measured Outcomes &amp;{" "}
-            <span className="ady-gradient-text">Scalable Case Studies</span>
+            <span className="ady-gradient-text font-[650]">Scalable Case Studies</span>
           </h1>
 
           <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">

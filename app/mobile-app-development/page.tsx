@@ -67,8 +67,8 @@ export default function MobileAppDevelopmentPage() {
               </BlurIn>
 
               <BlurIn delay={0.2}>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary tracking-tight leading-[1.15] mb-6">
-                  Cross-Platform iOS & <span className="text-primary">Android App Scale</span>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[650] text-secondary tracking-tight leading-[1.18] mb-6">
+                  Cross-Platform iOS & <span className="text-primary font-[650]">Android App Scale</span>
                 </h1>
               </BlurIn>
 

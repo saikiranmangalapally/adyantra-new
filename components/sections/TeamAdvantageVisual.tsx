@@ -53,36 +53,36 @@ export default function TeamAdvantageVisual() {
   ];
 
   return (
-    <div className="w-full max-w-[600px] mx-auto relative rounded-2xl sm:rounded-3xl bg-[#090d16] border border-slate-800/90 shadow-2xl p-5 sm:p-6 overflow-hidden text-white flex flex-col justify-between">
+    <div className="w-full max-w-[600px] mx-auto relative rounded-2xl sm:rounded-3xl bg-white border border-slate-200/90 shadow-xl p-5 sm:p-6 overflow-hidden text-slate-800 flex flex-col justify-between">
       {/* Subtle organic ambient glow */}
       <div 
-        className="absolute -top-20 -right-20 w-64 h-64 rounded-full pointer-events-none opacity-25 blur-3xl"
+        className="absolute -top-20 -right-20 w-64 h-64 rounded-full pointer-events-none opacity-20 blur-3xl"
         style={{ background: "radial-gradient(circle, #ef5b52 0%, transparent 70%)" }}
       />
       <div 
-        className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full pointer-events-none opacity-20 blur-3xl"
+        className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full pointer-events-none opacity-15 blur-3xl"
         style={{ background: "radial-gradient(circle, #38bdf8 0%, transparent 70%)" }}
       />
 
       {/* Top Header Bar */}
-      <div className="relative z-10 flex items-center justify-between pb-3.5 border-b border-slate-800/80 mb-4">
+      <div className="relative z-10 flex items-center justify-between pb-3.5 border-b border-slate-100 mb-4">
         <div className="flex items-center gap-2">
           <div className="w-2.5 h-2.5 rounded-full bg-[#ef5b52]" />
           <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
           <div className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-          <span className="ml-2 text-xs font-mono tracking-wider uppercase text-slate-300 font-semibold">
+          <span className="ml-2 text-xs font-mono tracking-wider uppercase text-slate-700 font-bold">
             Adyantra Engineering &amp; Strategy Squad
           </span>
         </div>
-        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-[11px] font-mono">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-700 text-[11px] font-mono font-bold">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
           <span>100% In-House</span>
         </div>
       </div>
 
       {/* Centerpiece: Handcrafted Organic Graphic Designer SVG Workspace Studio */}
       <div className="relative z-10 w-full my-auto py-1">
-        <div className="relative w-full aspect-[16/10] max-h-[240px] rounded-xl bg-slate-950/80 border border-slate-800/70 p-3 flex items-center justify-center overflow-hidden">
+        <div className="relative w-full aspect-[16/10] max-h-[240px] rounded-xl bg-slate-50 border border-slate-200/80 p-3 flex items-center justify-center overflow-hidden">
           <svg
             viewBox="0 0 540 320"
             fill="none"
@@ -270,19 +270,19 @@ export default function TeamAdvantageVisual() {
         {proofItems.map((item, i) => (
           <div
             key={i}
-            className="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 hover:border-slate-700/80 transition-colors"
+            className="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-slate-300 transition-colors"
           >
-            <div className="w-8 h-8 rounded-lg bg-slate-800/80 flex items-center justify-center shrink-0 mt-0.5">
+            <div className="w-8 h-8 rounded-lg bg-white border border-slate-200/70 flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
               {item.icon}
             </div>
             <div className="flex flex-col min-w-0">
               <span className="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-[#ef5b52] leading-none mb-1">
                 {item.kicker}
               </span>
-              <span className="text-xs sm:text-[13px] font-semibold text-slate-100 leading-tight truncate">
+              <span className="text-xs sm:text-[13px] font-bold text-slate-900 leading-tight truncate">
                 {item.label}
               </span>
-              <span className="text-[10px] sm:text-[11px] text-slate-400 leading-normal mt-0.5 truncate hidden sm:inline">
+              <span className="text-[10px] sm:text-[11px] text-slate-500 leading-normal mt-0.5 truncate hidden sm:inline">
                 {item.desc}
               </span>
             </div>
