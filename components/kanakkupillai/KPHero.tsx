@@ -130,7 +130,7 @@ export default function KPHero() {
             <span className="text-xs sm:text-[13.5px] font-medium text-white font-sans tracking-wide">
               <span className="text-[#FFC400] font-semibold">India&apos;s Trusted Digital Growth &amp; AI Partner</span>
               <span className="mx-2 text-[#315E80]">•</span>
-              <span className="text-[#A9C7E4]">Delivering Proven Scale &amp; Automation for 500+ Businesses</span>
+              <span className="text-[#A9C7E4]">Delivering Proven Scale &amp; Automation for Businesses</span>
             </span>
           </div>
 
