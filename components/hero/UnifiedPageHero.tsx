@@ -81,7 +81,7 @@ export default function UnifiedPageHero({
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0D416D]/90 border border-[#315E80] text-xs font-medium tracking-wider text-white mb-6 shadow-sm w-fit backdrop-blur-md">
               <span className="text-[#FFC400] text-sm">★★★★★</span>
               <span className="text-[#315E80]">|</span>
-              <span className="text-white font-medium">{ratingText || "4.9 / 5 RATED"}</span>
+              <span className="text-white font-semibold">4.9 / 5 RATED</span>
               <span className="text-[#A9C7E4]">ACROSS 500+ VERIFIED ENTERPRISES</span>
             </div>
 
