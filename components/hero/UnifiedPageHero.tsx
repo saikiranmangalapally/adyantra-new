@@ -22,7 +22,7 @@ export interface UnifiedPageHeroProps {
 }
 
 export default function UnifiedPageHero({
-  badge = "4.9 / 5 RATED ACROSS 500+ VERIFIED ENTERPRISES",
+  badge,
   ratingText,
   headlinePrefix = "Accelerate Your Brand with",
   highlightedText,
@@ -54,6 +54,14 @@ export default function UnifiedPageHero({
   });
   const [submitted, setSubmitted] = useState(false);
 
+  // Parse contextual badge content for service pages
+  const badgeContent = badge || serviceTitle || "ENTERPRISE SERVICE BLUEPRINT";
+  const badgeParts = badgeContent.includes("•")
+    ? badgeContent.split("•").map((s) => s.trim())
+    : badgeContent.includes("   ")
+    ? badgeContent.split(/\s{3,}/).map((s) => s.trim())
+    : [badgeContent, "ENTERPRISE EXECUTION BLUEPRINT"];
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (onAuditSubmit) {
@@ -77,12 +85,23 @@ export default function UnifiedPageHero({
           {/* ── Left Column: Value Proposition & Social Proof (Matches Image 2) ── */}
           <div className="lg:col-span-7 flex flex-col justify-center">
             
-            {/* 5-Star Rating Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0D416D]/90 border border-[#315E80] text-xs font-medium tracking-wider text-white mb-6 shadow-sm w-fit backdrop-blur-md">
-              <span className="text-[#FFC400] text-sm">★★★★★</span>
-              <span className="text-[#315E80]">|</span>
-              <span className="text-white font-semibold">4.9 / 5 RATED</span>
-              <span className="text-[#A9C7E4]">ACROSS 500+ VERIFIED ENTERPRISES</span>
+            {/* ── Contextual Service Authority Badge (Replaces generic 5-star rating) ── */}
+            <div className="inline-flex items-center gap-2 sm:gap-2.5 px-4 sm:px-5 py-2 rounded-full bg-[#0D416D]/90 border border-[#315E80] text-xs font-medium tracking-wide text-white mb-6 shadow-sm w-fit backdrop-blur-md group hover:border-[#FFC400] transition-all">
+              <span className="flex h-2 w-2 relative shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1AB26E] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#1AB26E]"></span>
+              </span>
+              <span className="text-[#FFC400] font-semibold tracking-wider uppercase font-sans">
+                {badgeParts[0]}
+              </span>
+              {badgeParts.length > 1 && badgeParts[1] && (
+                <>
+                  <span className="text-[#315E80]">•</span>
+                  <span className="text-[#A9C7E4] font-medium tracking-wider uppercase font-sans">
+                    {badgeParts[1]}
+                  </span>
+                </>
+              )}
             </div>
 
             {/* Main Headline with Signature Golden Yellow Underline Accent */}
