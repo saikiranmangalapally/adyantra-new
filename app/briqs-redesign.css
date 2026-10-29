@@ -1,0 +1,2455 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   DIGTEK DESIGN SYSTEM - SPECIFIED COLOR PALETTE & TYPOGRAPHY
+   Reference: https://ex-coders.com/php-template/digtek/index-2.php
+
+   Typography:
+     - Primary Headings: 'Plus Jakarta Sans', sans-serif (700, 800)
+     - Body & Descriptions: 'DM Sans', 'Plus Jakarta Sans', sans-serif (400, 500, 600)
+
+   Palette Specification:
+     - Primary Purple:        #6C3BFF  (Primary brand color and accents)
+     - Deep Purple:           #4320A8  (Hover states and dark accents)
+     - Light / Soft Purple:   #F1EDFF  (Light backgrounds, feature sections, & icon backgrounds)
+     - Accent Lime:           #C8F31D  (CTA buttons & highlights)
+     - Accent Lime Hover:     #B6E20B  (CTA hover state)
+     - White:                 #FFFFFF  (Cards, main background, text on dark)
+     - Near Black:            #17151F  (Dark backgrounds, primary headings)
+     - Secondary Heading:     #292438  (Section sub-headings)
+     - Deep Purple Dark:      #241443  (Dark promotional sections)
+     - Light Background:      #F8F7FC  (Alternate sections)
+     - Body Text:             #6F6B7A  (Paragraphs & descriptions)
+     - Muted Text:            #9994A5  (Supporting information)
+     - Light Border:          #EAE7F2  (Borders & card outlines)
+     - Purple Border:         #D9CCFF  (Badges & purple accents)
+     - Divider:               #F0EDF5  (Dividers & lines)
+     - Subtle Shadow:         0 8px 24px rgba(23, 21, 31, 0.08)
+     - Purple Shadow:         0 8px 24px rgba(108, 59, 255, 0.15)
+     - Disabled Background:   #F0EEF4
+     - Disabled Text:         #A6A2B0
+══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --font-family-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-body: 'DM Sans', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Primary Brand Colors */
+  --primary-purple: #6C3BFF;
+  --deep-purple: #4320A8;
+  --light-purple: #F1EDFF;
+  --accent-lime: #C8F31D;
+  --accent-lime-hover: #B6E20B;
+  --white: #FFFFFF;
+  --near-black: #17151F;
+
+  /* Backgrounds */
+  --primary-bg: #FFFFFF;
+  --light-bg: #F8F7FC;
+  --purple-bg: #6C3BFF;
+  --deep-purple-bg: #241443;
+  --dark-bg: #17151F;
+  --card-bg: #FFFFFF;
+  --soft-purple-bg: #F1EDFF;
+
+  /* Typography Colors */
+  --primary-heading: #17151F;
+  --secondary-heading: #292438;
+  --body-text: #6F6B7A;
+  --muted-text: #9994A5;
+  --white-text: #FFFFFF;
+  --purple-text: #6C3BFF;
+  --lime-text: #C8F31D;
+
+  /* Borders, Dividers & Accents */
+  --light-border: #EAE7F2;
+  --purple-border: #D9CCFF;
+  --divider: #F0EDF5;
+  --icon-bg: #F1EDFF;
+  --subtle-shadow: 0 8px 24px rgba(23, 21, 31, 0.08);
+  --purple-shadow: 0 8px 24px rgba(108, 59, 255, 0.15);
+  --disabled-bg: #F0EEF4;
+  --disabled-text: #A6A2B0;
+}
+
+/* ── Typography Overrides ── */
+body, input, select, textarea, button {
+  font-family: var(--font-family-body) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.briqs-hero-title,
+.briqs-section-title,
+.briqs-services-main-title,
+.briqs-agency-headline,
+.briqs-revenue-title,
+.briqs-process-title,
+.advantage-exact-heading,
+.industries-ref-heading,
+.reviews-ref-heading,
+.briqs-faq-main-heading,
+.briqs-card-title,
+.briqs-step-title,
+.team-proof-chip__title {
+  font-family: var(--font-family-heading) !important;
+}
+
+/* ── Container Shell ── */
+.briqs-shell {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Shared Kicker Pill (Light Purple Background #F1EDFF + Purple Text #6C3BFF) ── */
+.briqs-kicker-pill,
+.ref-pill-kicker,
+.briqs-services-pill,
+.briqs-process-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 6px 16px !important;
+  border-radius: 9999px !important;
+  background-color: var(--light-purple) !important;
+  color: var(--primary-purple) !important;
+  border: 1px solid var(--purple-border) !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 16px !important;
+  font-family: var(--font-family-heading) !important;
+}
+
+.briqs-section-title {
+  font-size: 2.65rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--primary-heading);
+  letter-spacing: -0.025em;
+  margin-bottom: 16px;
+}
+
+.briqs-gradient-heading,
+.briqs-hero-gradient-text,
+.briqs-brand-gradient,
+.team-growth-highlight,
+.ady-gradient-text,
+h1 .ady-gradient-text,
+h2 .ady-gradient-text,
+h3 .ady-gradient-text,
+.industries-ref-heading .ady-gradient-text,
+.reviews-ref-heading .ady-gradient-text {
+  color: var(--primary-purple) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--primary-purple) !important;
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+}
+
+.briqs-section-desc {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--body-text);
+  max-width: 680px;
+}
+
+.briqs-section-center-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px auto;
+}
+
+.briqs-section-center-header .briqs-section-desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   BUTTONS & CTAs (Per Exact Specification Table)
+   - Primary CTA:    Background #C8F31D, Text #17151F, Hover #B6E20B
+   - Secondary CTA:  Background #6C3BFF, Text #FFFFFF, Hover #4320A8
+   - Dark CTA:       Background #17151F, Text #FFFFFF, Hover #292438
+   - Outline Button: Background #FFFFFF, Text #6C3BFF, Hover #F1EDFF
+══════════════════════════════════════════════════════════════════════════ */
+.briqs-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--accent-lime) !important;
+  color: var(--near-black) !important;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 13px 26px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(200, 243, 29, 0.35);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-btn-primary:hover {
+  background-color: var(--accent-lime-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(182, 226, 11, 0.45);
+}
+
+.briqs-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-purple) !important;
+  color: var(--white) !important;
+  border: 1px solid var(--primary-purple);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 13px 26px;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(108, 59, 255, 0.25);
+  font-family: var(--font-family-heading);
+}
+
+.briqs-btn-secondary:hover {
+  background-color: var(--deep-purple) !important;
+  border-color: var(--deep-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 32, 168, 0.35);
+  color: var(--white) !important;
+}
+
+.briqs-btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--near-black) !important;
+  color: var(--white) !important;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 13px 26px;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border: none;
+}
+
+.briqs-btn-dark:hover {
+  background-color: var(--secondary-heading) !important;
+  transform: translateY(-2px);
+}
+
+.briqs-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white) !important;
+  color: var(--primary-purple) !important;
+  border: 1.5px solid var(--purple-border) !important;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 13px 26px;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.briqs-btn-outline:hover {
+  background-color: var(--light-purple) !important;
+  border-color: var(--primary-purple) !important;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   1. HERO SECTION (Light Background #F8F7FC + Purple Glow & Lime CTAs)
+══════════════════════════════════════════════════════════════════════════ */
+.briqs-hero-wrapper {
+  position: relative;
+  background: linear-gradient(180deg, var(--light-bg) 0%, var(--primary-bg) 100%);
+  padding-top: 76px;
+  padding-bottom: 88px;
+  overflow: hidden;
+  color: var(--primary-heading);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.briqs-hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 15% 25%, rgba(108, 59, 255, 0.08) 0%, transparent 50%),
+              radial-gradient(circle at 85% 75%, rgba(200, 243, 29, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.briqs-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.briqs-hero-left {
+  position: relative;
+  z-index: 2;
+}
+
+.briqs-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: var(--light-purple);
+  border: 1px solid var(--purple-border);
+  color: var(--primary-purple);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-purple);
+  box-shadow: 0 0 8px rgba(108, 59, 255, 0.6);
+}
+
+.briqs-hero-title {
+  font-size: 3.35rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--primary-heading);
+  margin-bottom: 20px;
+}
+
+.briqs-hero-desc {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--body-text);
+  max-width: 580px;
+  margin-bottom: 32px;
+}
+
+/* Benefit Checkmark Pills */
+.briqs-hero-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.briqs-benefit-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--light-purple);
+  border: 1px solid var(--purple-border);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-heading);
+  transition: all 0.2s ease;
+}
+
+.briqs-benefit-pill:hover {
+  background: var(--white);
+  border-color: var(--primary-purple);
+  box-shadow: var(--subtle-shadow);
+}
+
+.briqs-benefit-icon {
+  color: var(--primary-purple) !important;
+  flex-shrink: 0;
+}
+
+.briqs-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Right Column Card (Card Background #FFFFFF + Purple Header & Accent Lime Button) */
+.briqs-card-container {
+  background: var(--card-bg);
+  color: var(--primary-heading);
+  border-radius: 24px;
+  padding: 34px;
+  border: 1.5px solid var(--light-border);
+  box-shadow: var(--subtle-shadow);
+  position: relative;
+  z-index: 2;
+  transition: all 0.25s ease;
+}
+
+.briqs-card-container:hover {
+  box-shadow: var(--purple-shadow);
+  border-color: var(--purple-border);
+}
+
+.briqs-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 16px;
+}
+
+.briqs-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-heading);
+  margin-bottom: 4px;
+}
+
+.briqs-card-sub {
+  font-size: 0.8125rem;
+  color: var(--body-text);
+  font-weight: 500;
+}
+
+.briqs-badge-allin {
+  background-color: var(--light-purple);
+  color: var(--primary-purple);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--purple-border);
+}
+
+.briqs-hero-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.briqs-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.briqs-form-field label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--secondary-heading);
+}
+
+.briqs-form-field input,
+.briqs-form-field select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--light-border);
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  color: var(--primary-heading);
+  background-color: var(--light-bg);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.briqs-form-field input:focus,
+.briqs-form-field select:focus {
+  border-color: var(--primary-purple);
+  background-color: var(--white);
+  box-shadow: 0 0 0 3px rgba(108, 59, 255, 0.15);
+}
+
+.briqs-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--accent-lime) !important;
+  color: var(--near-black) !important;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 9999px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 4px 14px rgba(200, 243, 29, 0.35);
+  transition: all 0.2s ease;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-card-btn:hover {
+  background: var(--accent-lime-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(182, 226, 11, 0.45);
+}
+
+.briqs-card-footer-tags {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--divider);
+  font-size: 0.75rem;
+  color: var(--body-text);
+  font-weight: 600;
+}
+
+.briqs-card-footer-tags span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.briqs-card-footer-tags svg {
+  color: var(--primary-purple) !important;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   2. OUR SERVICES SECTION (Light Background #F8F7FC + Card Background #FFFFFF)
+══════════════════════════════════════════════════════════════════════════ */
+.briqs-services-section-v2 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--light-bg);
+  position: relative;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.briqs-services-center-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.briqs-services-main-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--primary-heading);
+  letter-spacing: -0.025em;
+  margin-bottom: 14px;
+}
+
+.briqs-services-lead-desc {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--body-text);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* 1 x 3 Horizontal Scroll Track */
+.briqs-services-1x3-scroll-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 48px) / 3);
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 32px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.briqs-services-1x3-scroll-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Service Card (Card Background #FFFFFF per user table: "Card Background: #FFFFFF - Service and content cards") */
+.briqs-service-card-v2 {
+  scroll-snap-align: start;
+  background: var(--card-bg);
+  border: 1.5px solid var(--light-border);
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--subtle-shadow);
+  transition: all 0.25s ease;
+}
+
+.briqs-service-card-v2:hover {
+  transform: translateY(-4px);
+  border-color: var(--purple-border);
+  box-shadow: var(--purple-shadow);
+}
+
+/* Upper Icon Highlight: Light Purple Background #F1EDFF + Primary Purple Stroke #6C3BFF */
+.briqs-service-icon-box-v2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--icon-bg);
+  border: 1px solid var(--purple-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  transition: all 0.2s ease;
+}
+
+.briqs-service-card-v2:hover .briqs-service-icon-box-v2 {
+  background: var(--primary-purple);
+}
+
+.briqs-service-icon-box-v2 svg {
+  stroke: var(--primary-purple) !important;
+  width: 18px !important;
+  height: 18px !important;
+  transition: stroke 0.2s ease;
+}
+
+.briqs-service-card-v2:hover .briqs-service-icon-box-v2 svg {
+  stroke: var(--white) !important;
+}
+
+.briqs-service-title-v2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-heading);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.briqs-service-desc-v2 {
+  font-size: 0.90625rem;
+  line-height: 1.6;
+  color: var(--body-text);
+  margin-bottom: 24px;
+}
+
+/* Lower Illustration Box */
+.briqs-service-illustration-box {
+  background: var(--light-bg);
+  border-radius: 16px;
+  height: 240px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--light-border);
+  margin-top: auto;
+}
+
+.briqs-service-illustration-img {
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
+}
+
+.briqs-service-card-v2:hover .briqs-service-illustration-img {
+  transform: scale(1.22);
+}
+
+/* Bottom Centered Arrow Controls */
+.briqs-carousel-bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.briqs-arrow-round-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1.5px solid var(--purple-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-purple);
+  box-shadow: var(--subtle-shadow);
+  transition: all 0.2s ease;
+}
+
+.briqs-arrow-round-btn:hover {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--purple-shadow);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   3. ABOUT ADYANTRA DIGITAL (Primary Background #FFFFFF)
+══════════════════════════════════════════════════════════════════════════ */
+.briqs-about-agency-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--primary-bg);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.briqs-about-agency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Collage */
+.briqs-about-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.briqs-collage-left-tall {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 440px;
+  border: 1px solid var(--light-border);
+  box-shadow: var(--subtle-shadow);
+}
+
+.briqs-collage-right-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 440px;
+}
+
+.briqs-collage-top-img {
+  border-radius: 16px;
+  overflow: hidden;
+  flex: 1;
+  border: 1px solid var(--light-border);
+  box-shadow: var(--subtle-shadow);
+}
+
+/* Purple Card: Purple Background #6C3BFF per user table */
+.briqs-collage-purple-card {
+  background-color: var(--primary-purple);
+  border-radius: 16px;
+  padding: 24px 20px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  box-shadow: var(--purple-shadow);
+}
+
+.briqs-megaphone-icon {
+  color: var(--accent-lime);
+}
+
+.briqs-purple-card-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--white);
+}
+
+.briqs-collage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Content */
+.briqs-agency-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-purple);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-agency-line-dot {
+  color: var(--accent-lime);
+  letter-spacing: 0.05em;
+}
+
+.briqs-agency-headline {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--primary-heading);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
+
+.briqs-agency-desc {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--body-text);
+  margin-bottom: 28px;
+}
+
+.briqs-agency-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.briqs-mission-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.briqs-mission-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--light-purple);
+  color: var(--primary-purple);
+  font-size: 12px;
+  font-weight: 800;
+  border: 1px solid var(--purple-border);
+}
+
+.briqs-mission-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-heading);
+}
+
+.briqs-mission-desc {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--body-text);
+}
+
+.briqs-agency-skill-block {
+  margin-bottom: 32px;
+}
+
+.briqs-skill-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--primary-heading);
+  margin-bottom: 8px;
+}
+
+.briqs-skill-percent {
+  color: var(--primary-purple);
+  font-weight: 800;
+}
+
+.briqs-skill-track {
+  width: 100%;
+  height: 8px;
+  background: var(--light-purple);
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 1px solid var(--purple-border);
+}
+
+.briqs-skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-purple) 0%, var(--deep-purple) 100%);
+  border-radius: 9999px;
+}
+
+.briqs-agency-action-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* Secondary CTA: Background #6C3BFF, Text #FFFFFF, Hover #4320A8 */
+.briqs-agency-discover-btn {
+  background: var(--primary-purple);
+  color: var(--white) !important;
+  padding: 13px 30px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(108, 59, 255, 0.25);
+  font-family: var(--font-family-heading);
+}
+
+.briqs-agency-discover-btn:hover {
+  background: var(--deep-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 32, 168, 0.35);
+}
+
+.briqs-agency-founder-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.briqs-founder-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--purple-border);
+}
+
+.briqs-founder-name {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-heading);
+}
+
+.briqs-founder-role {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--body-text);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   4. ACCELERATE YOUR REVENUE (Deep Purple Background #241443 + Lime CTA #C8F31D)
+   Matching Table: "Deep Purple Background: #241443 - Dark promotional sections"
+══════════════════════════════════════════════════════════════════════════ */
+.briqs-revenue-banner {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--light-bg);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.briqs-revenue-card {
+  background: var(--deep-purple-bg);
+  border: 1px solid rgba(217, 204, 255, 0.25);
+  border-radius: 24px;
+  padding: 44px 48px;
+  color: var(--white);
+  box-shadow: 0 20px 48px rgba(36, 20, 67, 0.4);
+}
+
+.briqs-revenue-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.briqs-revenue-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-lime);
+  margin-bottom: 12px;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-revenue-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--white) !important;
+  -webkit-text-fill-color: var(--white) !important;
+}
+
+.briqs-revenue-title em {
+  font-style: normal;
+  color: var(--accent-lime) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--accent-lime) !important;
+}
+
+.briqs-revenue-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.briqs-revenue-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--light-purple);
+}
+
+/* Primary CTA: Background #C8F31D, Text #17151F, Hover #B6E20B */
+.briqs-btn-white-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-lime);
+  color: var(--near-black) !important;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  padding: 13px 28px;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(200, 243, 29, 0.35);
+  transition: all 0.2s ease;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-btn-white-pill:hover {
+  background: var(--accent-lime-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(182, 226, 11, 0.5);
+}
+
+.briqs-revenue-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 24px;
+}
+
+.briqs-revenue-stat-col {
+  text-align: left;
+}
+
+.briqs-revenue-stat-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent-lime);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.briqs-revenue-stat-label {
+  font-size: 0.8125rem;
+  color: var(--light-purple);
+  font-weight: 500;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   5. OUR PROVEN PROCESS (Primary Background #FFFFFF)
+══════════════════════════════════════════════════════════════════════════ */
+.briqs-process-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--primary-bg);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.briqs-process-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 56px auto;
+}
+
+.briqs-process-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-heading);
+  margin-bottom: 12px;
+}
+
+.briqs-process-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--body-text);
+}
+
+.briqs-process-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+}
+
+.briqs-step-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 260px;
+}
+
+/* Double Ring Outer Circle */
+.briqs-step-circle-outer {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid var(--purple-border);
+  background-color: var(--light-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.briqs-step-item:hover .briqs-step-circle-outer {
+  border-color: var(--primary-purple);
+  box-shadow: var(--purple-shadow);
+  transform: translateY(-2px);
+}
+
+.briqs-step-circle-inner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--white);
+  box-shadow: 0 4px 14px rgba(108, 59, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.briqs-step-circle-inner svg {
+  stroke: var(--primary-purple) !important;
+}
+
+/* Primary Purple Pill Number Badge on Top Right */
+.briqs-step-num-pill {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--white);
+  box-shadow: 0 2px 6px rgba(108, 59, 255, 0.3);
+}
+
+.briqs-step-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary-heading);
+  margin-bottom: 10px;
+}
+
+.briqs-step-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--body-text);
+}
+
+.briqs-step-arrow-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 45px;
+  color: var(--purple-border);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   6. OUR TEAM & EXPERTISE (Light Background #F8F7FC)
+══════════════════════════════════════════════════════════════════════════ */
+#advantage, .section.expertise {
+  background-color: var(--light-bg) !important;
+  border-bottom: 1px solid var(--light-border);
+}
+
+/* Secondary CTA: Background #6C3BFF, Text #FFFFFF, Hover #4320A8 */
+.team-leadership-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: var(--primary-purple) !important;
+  color: var(--white) !important;
+  padding: 13px 28px !important;
+  border-radius: 9999px !important;
+  font-weight: 800 !important;
+  font-size: 0.875rem !important;
+  letter-spacing: 0.04em !important;
+  box-shadow: 0 4px 16px rgba(108, 59, 255, 0.3) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  margin-top: 16px !important;
+  font-family: var(--font-family-heading) !important;
+}
+
+.team-leadership-btn:hover {
+  background: var(--deep-purple) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(67, 32, 168, 0.4) !important;
+}
+
+.team-leadership-arrow-circle {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50% !important;
+  background: var(--white) !important;
+  color: var(--primary-purple) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.advantage-exact-heading {
+  color: var(--primary-heading) !important;
+}
+
+.advantage-exact-desc {
+  color: var(--body-text) !important;
+  -webkit-text-fill-color: var(--body-text) !important;
+}
+
+.advantage-feature-text {
+  color: var(--primary-heading) !important;
+  -webkit-text-fill-color: var(--primary-heading) !important;
+}
+
+.advantage-feature-icon {
+  background: var(--light-purple) !important;
+  border: 1px solid var(--purple-border) !important;
+}
+
+.advantage-feature-icon svg {
+  stroke: var(--primary-purple) !important;
+}
+
+.team-proof-chip {
+  background: var(--white) !important;
+  border: 1px solid var(--light-border) !important;
+  box-shadow: var(--subtle-shadow) !important;
+}
+
+.team-proof-chip__title {
+  color: var(--primary-heading) !important;
+}
+
+.team-proof-chip__sub {
+  color: var(--body-text) !important;
+}
+
+.team-proof-chip--dark-navy {
+  background: var(--deep-purple-bg) !important;
+  border: 1.5px solid var(--purple-border) !important;
+}
+
+.team-proof-chip--dark-navy .team-proof-chip__title {
+  color: var(--white) !important;
+}
+
+.team-proof-chip--dark-navy .team-proof-chip__sub {
+  color: var(--accent-lime) !important;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   7. TARGET DOMAINS & CLIENT REVIEWS (Primary Background #FFFFFF)
+══════════════════════════════════════════════════════════════════════════ */
+.industries-ref-section {
+  background-color: var(--primary-bg) !important;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.industries-ref-heading {
+  color: var(--primary-heading) !important;
+}
+
+.industries-ref-subtitle {
+  color: var(--body-text) !important;
+}
+
+.domain-pill-card {
+  background: var(--light-bg) !important;
+  border: 1px solid var(--light-border) !important;
+  color: var(--primary-heading) !important;
+  transition: all 0.2s ease !important;
+}
+
+.domain-pill-card:hover {
+  background: var(--light-purple) !important;
+  border-color: var(--purple-border) !important;
+  color: var(--primary-purple) !important;
+}
+
+.domain-pill-text {
+  color: var(--primary-heading) !important;
+}
+
+.domain-pill-icon svg {
+  stroke: var(--primary-purple) !important;
+}
+
+.reviews-ref-section {
+  background-color: var(--light-bg) !important;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.reviews-ref-heading {
+  color: var(--primary-heading) !important;
+}
+
+.reviews-ref-subtitle {
+  color: var(--body-text) !important;
+}
+
+.review-ref-card {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--light-border) !important;
+  box-shadow: var(--subtle-shadow) !important;
+  transition: all 0.25s ease !important;
+}
+
+.review-ref-card:hover {
+  border-color: var(--purple-border) !important;
+  box-shadow: var(--purple-shadow) !important;
+}
+
+.review-ref-name {
+  color: var(--primary-heading) !important;
+}
+
+.review-ref-avatar {
+  background: var(--light-purple) !important;
+  color: var(--primary-purple) !important;
+  border: 1px solid var(--purple-border) !important;
+  font-weight: 700 !important;
+}
+
+.review-ref-role-pill {
+  background: var(--light-purple) !important;
+  color: var(--primary-purple) !important;
+  border: 1px solid var(--purple-border) !important;
+}
+
+.review-ref-quote {
+  color: var(--body-text) !important;
+}
+
+.review-ref-stars {
+  color: var(--primary-purple) !important;
+  -webkit-text-fill-color: var(--primary-purple) !important;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   8. FAQ & CONNECT WITH OUR TEAM (Light Background #F8F7FC & Card #FFFFFF)
+══════════════════════════════════════════════════════════════════════════ */
+.briqs-faq-clean-section {
+  position: relative;
+  background-color: var(--light-bg);
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-top: 1px solid var(--light-border);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.briqs-faq-section-head {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 56px auto;
+}
+
+.briqs-faq-main-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--primary-heading) !important;
+  letter-spacing: -0.025em;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.briqs-faq-lead-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--body-text);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.briqs-faq-clean-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* White Card Shell */
+.briqs-card-white {
+  background: var(--card-bg);
+  border: 1.5px solid var(--light-border);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: var(--subtle-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+
+.briqs-card-white:hover {
+  border-color: var(--purple-border);
+  box-shadow: var(--purple-shadow);
+}
+
+.briqs-box-head-block,
+.briqs-card-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--divider);
+}
+
+.briqs-card-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: var(--light-purple) !important;
+  border: 1px solid var(--purple-border) !important;
+  color: var(--primary-purple) !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 10px !important;
+  font-family: var(--font-family-heading) !important;
+}
+
+.briqs-card-title {
+  display: block !important;
+  width: 100% !important;
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+  color: var(--primary-heading) !important;
+  line-height: 1.25 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.briqs-card-subtitle {
+  display: block !important;
+  width: 100% !important;
+  font-size: 0.875rem !important;
+  color: var(--body-text) !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+/* Left: Accordion Styling */
+.briqs-accordion-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.briqs-accordion-row {
+  border-bottom: 1px solid var(--divider);
+}
+
+.briqs-accordion-row:last-child {
+  border-bottom: none;
+}
+
+.briqs-accordion-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.briqs-accordion-q-text {
+  font-size: 0.96875rem;
+  font-weight: 700;
+  color: var(--primary-heading);
+  line-height: 1.4;
+  transition: color 0.2s ease;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-accordion-btn:hover .briqs-accordion-q-text {
+  color: var(--primary-purple);
+}
+
+.briqs-accordion-icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--light-purple);
+  color: var(--primary-purple);
+  border: 1px solid var(--purple-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.briqs-accordion-row.is-open .briqs-accordion-icon-circle {
+  background-color: var(--primary-purple);
+  color: var(--white);
+  border-color: var(--primary-purple);
+}
+
+.briqs-accordion-answer-box {
+  padding-bottom: 18px;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--body-text);
+}
+
+/* Right: Consultation Form Styling */
+.briqs-clean-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.briqs-form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.briqs-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.briqs-clean-label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--secondary-heading);
+}
+
+.briqs-clean-input,
+.briqs-clean-select,
+.briqs-clean-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--light-border);
+  border-radius: 10px;
+  font-size: 0.875rem;
+  color: var(--primary-heading);
+  outline: none;
+  background-color: var(--light-bg);
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.briqs-clean-input:focus,
+.briqs-clean-select:focus,
+.briqs-clean-textarea:focus {
+  border-color: var(--primary-purple);
+  background-color: var(--white);
+  box-shadow: 0 0 0 3px rgba(108, 59, 255, 0.15);
+}
+
+.briqs-clean-textarea {
+  resize: vertical;
+}
+
+/* Primary CTA Submit Button: Background #C8F31D, Text #17151F, Hover #B6E20B */
+.briqs-clean-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--accent-lime);
+  color: var(--near-black);
+  font-weight: 800;
+  font-size: 0.90625rem;
+  padding: 13px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(200, 243, 29, 0.35);
+  margin-top: 4px;
+  font-family: var(--font-family-heading);
+}
+
+.briqs-clean-submit-btn:hover {
+  background-color: var(--accent-lime-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(182, 226, 11, 0.45);
+}
+
+.briqs-clean-form-badges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--divider);
+  font-size: 0.75rem;
+  color: var(--body-text);
+  font-weight: 600;
+}
+
+.briqs-clean-form-badges span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.briqs-clean-form-badges svg {
+  color: var(--primary-purple) !important;
+}
+
+.briqs-form-success-box {
+  text-align: center;
+  padding: 36px 12px;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   NAVBAR & FOOTER THEME INTEGRATION
+   Navbar: Pure White with Primary Purple links and Accent Lime CTA
+   Footer: Dark Background #17151F with White Headings and Muted Links
+══════════════════════════════════════════════════════════════════════════ */
+header, .site-header, .navbar-wrapper, .ady-header-wrapper {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--light-border) !important;
+}
+
+.nav-link, .single-nav-link, .nav-menu a, .ady-nav-link {
+  color: var(--primary-heading) !important;
+  font-family: var(--font-family-heading) !important;
+  font-weight: 600 !important;
+}
+
+.nav-link:hover, .single-nav-link:hover, .ady-nav-link:hover {
+  color: var(--primary-purple) !important;
+}
+
+.header-cta-btn, .nav-btn, .button.button--primary, .ady-header-cta, .ady-mobile-cta {
+  background-color: var(--accent-lime) !important;
+  color: var(--near-black) !important;
+  border-radius: 9999px !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 14px rgba(200, 243, 29, 0.35) !important;
+  font-family: var(--font-family-heading) !important;
+}
+
+.header-cta-btn:hover, .nav-btn:hover, .ady-header-cta:hover, .ady-mobile-cta:hover {
+  background-color: var(--accent-lime-hover) !important;
+  transform: translateY(-1px) !important;
+}
+
+footer, .site-footer, .ady-theme-footer {
+  background-color: var(--dark-bg) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: var(--muted-text) !important;
+}
+
+.footer-brand-desc, .footer p {
+  color: var(--muted-text) !important;
+}
+
+.footer-nav-heading, .footer h3, .footer h4 {
+  color: var(--white) !important;
+  font-family: var(--font-family-heading) !important;
+}
+
+footer a, .footer-nav-list a {
+  color: var(--muted-text) !important;
+  transition: color 0.2s ease !important;
+}
+
+footer a:hover, .footer-nav-list a:hover {
+  color: var(--accent-lime) !important;
+}
+
+.footer-social-btn {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  color: var(--white) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  transition: all 0.2s ease !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   LOTECH REFERENCE SECTIONS:
+   1. Services Carousel (https://bracketweb.com/lotech-html/services-carousel.html)
+   2. Branding Solutions as Marketing & AI Automation Solutions
+   3. Our Team Member Section (https://bracketweb.com/lotech-html/index-2.html)
+══════════════════════════════════════════════════════════════════════════ */
+
+/* ── 1. Lotech Services Carousel ── */
+.lotech-services-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--light-bg);
+  position: relative;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.lotech-services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.lotech-services-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--primary-heading);
+  letter-spacing: -0.025em;
+  margin-top: 10px;
+}
+
+.lotech-services-header__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.lotech-services-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--body-text);
+  max-width: 480px;
+  text-align: right;
+  margin: 0;
+}
+
+.lotech-carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lotech-arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1.5px solid var(--purple-border);
+  color: var(--primary-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--subtle-shadow);
+  transition: all 0.2s ease;
+}
+
+.lotech-arrow-btn:hover {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--purple-shadow);
+}
+
+/* Carousel Track with 3-column scroll */
+.lotech-services-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 48px) / 3);
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 8px 4px 24px 4px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.lotech-services-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Service Card Matching Lotech Service Item */
+.lotech-service-card {
+  scroll-snap-align: start;
+  background: var(--card-bg);
+  border: 1.5px solid var(--light-border);
+  border-radius: 24px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--subtle-shadow);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.lotech-service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--purple-border);
+  box-shadow: var(--purple-shadow);
+}
+
+/* Lotech corner accent marks */
+.lotech-service-card__hover {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.lotech-service-hover-corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.lotech-service-hover-corner.tl {
+  top: 14px;
+  left: 14px;
+  border-top: 2px solid var(--primary-purple);
+  border-left: 2px solid var(--primary-purple);
+}
+
+.lotech-service-hover-corner.tr {
+  top: 14px;
+  right: 14px;
+  border-top: 2px solid var(--primary-purple);
+  border-right: 2px solid var(--primary-purple);
+}
+
+.lotech-service-hover-corner.bl {
+  bottom: 14px;
+  left: 14px;
+  border-bottom: 2px solid var(--primary-purple);
+  border-left: 2px solid var(--primary-purple);
+}
+
+.lotech-service-hover-corner.br {
+  bottom: 14px;
+  right: 14px;
+  border-bottom: 2px solid var(--primary-purple);
+  border-right: 2px solid var(--primary-purple);
+}
+
+.lotech-service-card:hover .lotech-service-hover-corner {
+  opacity: 1;
+}
+
+.lotech-service-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.lotech-service-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--icon-bg);
+  border: 1px solid var(--purple-border);
+  color: var(--primary-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.lotech-service-card:hover .lotech-service-icon-box {
+  background: var(--primary-purple);
+  color: var(--white);
+  border-color: var(--primary-purple);
+}
+
+.lotech-service-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--primary-purple);
+  background: var(--light-purple);
+  border: 1px solid var(--purple-border);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+}
+
+.lotech-service-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-heading);
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.lotech-service-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lotech-service-title a:hover {
+  color: var(--primary-purple);
+}
+
+.lotech-service-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--body-text);
+  margin-bottom: 20px;
+}
+
+/* Preserved Illustration Container */
+.lotech-service-illustration-wrap {
+  height: 180px;
+  background: var(--light-bg);
+  border-radius: 16px;
+  border: 1px solid var(--light-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 14px;
+  margin-bottom: 22px;
+  transition: background-color 0.25s ease;
+}
+
+.lotech-service-card:hover .lotech-service-illustration-wrap {
+  background: var(--light-purple);
+  border-color: var(--purple-border);
+}
+
+.lotech-service-illustration {
+  width: 100%;
+  height: 100%;
+  max-height: 155px;
+  object-fit: contain;
+  transform: scale(1.05);
+  transition: transform 0.35s ease;
+}
+
+.lotech-service-card:hover .lotech-service-illustration {
+  transform: scale(1.15);
+}
+
+/* Lotech Read More Button */
+.lotech-service-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 14px;
+  border-top: 1px solid var(--light-border);
+  text-decoration: none;
+  font-size: 0.90625rem;
+  font-weight: 700;
+  color: var(--primary-heading);
+  transition: color 0.2s ease;
+  font-family: var(--font-family-heading);
+}
+
+.lotech-service-btn__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--light-purple);
+  color: var(--primary-purple);
+  border: 1px solid var(--purple-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.lotech-service-card:hover .lotech-service-btn {
+  color: var(--primary-purple);
+}
+
+.lotech-service-card:hover .lotech-service-btn__icon {
+  background: var(--primary-purple);
+  color: var(--white);
+  border-color: var(--primary-purple);
+  transform: translateX(4px);
+}
+
+.lotech-carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.lotech-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--light-border);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.lotech-dot.active {
+  width: 28px;
+  background: var(--primary-purple);
+}
+
+
+/* ── 2. Branding Solutions Banner (Marketing & AI Automation Solutions) ── */
+.lotech-slide-solutions-section {
+  background: linear-gradient(180deg, var(--near-black) 0%, var(--deep-purple-bg) 100%);
+  padding: 48px 0 32px 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lotech-slide-svg-wrap {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 16px auto;
+  padding: 0 20px;
+}
+
+.lotech-slide-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lotech-slide-svg-text {
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 2px;
+  font-family: var(--font-family-heading);
+  transition: stroke 0.3s ease, fill 0.3s ease;
+}
+
+.lotech-slide-solutions-section:hover .lotech-slide-svg-text {
+  stroke: var(--accent-lime);
+  filter: drop-shadow(0 0 16px rgba(200, 243, 29, 0.35));
+}
+
+.lotech-marquee-outer {
+  overflow: hidden;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lotech-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: lotechMarqueeScroll 28s linear infinite;
+}
+
+.lotech-marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  white-space: nowrap;
+  padding-right: 32px;
+}
+
+.lotech-marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-family: var(--font-family-heading);
+  letter-spacing: 0.02em;
+}
+
+.lotech-marquee-bullet {
+  color: var(--accent-lime);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@keyframes lotechMarqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ── 3. Our Team Member Section (Matching Lotech team-two) ── */
+.lotech-team-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--light-bg);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.lotech-team-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.lotech-team-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--primary-heading);
+  letter-spacing: -0.025em;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.lotech-team-desc {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--body-text);
+  margin-bottom: 28px;
+}
+
+.lotech-team-proof-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.lotech-proof-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--primary-heading);
+}
+
+.lotech-team-action-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Primary Purple CTA matching Digtek */
+.lotech-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(108, 59, 255, 0.28);
+  transition: all 0.2s ease;
+  font-family: var(--font-family-heading);
+}
+
+.lotech-btn-primary:hover {
+  background-color: var(--deep-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 32, 168, 0.4);
+}
+
+.lotech-btn-icon-wrap {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lotech Team List with Floating Image Preview */
+.lotech-team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.lotech-team-item {
+  position: relative;
+  padding: 20px 18px;
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.lotech-team-item.active,
+.lotech-team-item:hover {
+  background: var(--white);
+  box-shadow: var(--subtle-shadow);
+  border: 1px solid var(--purple-border);
+}
+
+.lotech-team-item-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  gap: 16px;
+}
+
+.lotech-team-item-info {
+  flex: 1;
+}
+
+.lotech-team-specialty {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary-purple);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.lotech-team-item-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-heading);
+  margin-bottom: 4px;
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+
+.lotech-team-item:hover .lotech-team-item-name {
+  color: var(--primary-purple);
+}
+
+.lotech-team-item-role {
+  font-size: 0.875rem;
+  color: var(--body-text);
+  margin: 0;
+}
+
+/* Photo Thumbnail Preview */
+.lotech-team-item-photo-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid var(--purple-border);
+  box-shadow: 0 4px 14px rgba(108, 59, 255, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.lotech-team-item.active .lotech-team-item-photo-wrap,
+.lotech-team-item:hover .lotech-team-item-photo-wrap {
+  width: 96px;
+  height: 96px;
+  border-color: var(--primary-purple);
+  box-shadow: var(--purple-shadow);
+  transform: scale(1.05);
+}
+
+.lotech-team-item-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lotech-team-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--light-purple);
+  color: var(--primary-purple);
+  border: 1px solid var(--purple-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.lotech-team-item.active .lotech-team-arrow-btn,
+.lotech-team-item:hover .lotech-team-arrow-btn {
+  background: var(--accent-lime);
+  color: var(--near-black);
+  border-color: var(--accent-lime);
+  transform: translate(2px, -2px);
+  box-shadow: 0 4px 12px rgba(200, 243, 29, 0.4);
+}
+
+.lotech-team-item-divider {
+  height: 1px;
+  background: var(--divider);
+  width: 100%;
+  margin-top: 18px;
+}
+
+.lotech-team-item.active .lotech-team-item-divider,
+.lotech-team-item:hover .lotech-team-item-divider {
+  opacity: 0;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+══════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .lotech-services-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lotech-services-header__right {
+    align-items: flex-start;
+  }
+
+  .lotech-services-subtitle {
+    text-align: left;
+  }
+
+  .lotech-services-track {
+    grid-auto-columns: calc((100% - 24px) / 2);
+  }
+
+  .lotech-team-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .lotech-slide-svg-text {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lotech-services-track {
+    grid-auto-columns: 88%;
+  }
+
+  .lotech-slide-svg-text {
+    font-size: 36px;
+  }
+
+  .lotech-team-title {
+    font-size: 2.25rem;
+  }
+
+  .lotech-team-item-photo-wrap {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .briqs-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .briqs-hero-title {
+    font-size: 2.75rem;
+  }
+
+  .briqs-services-1x3-scroll-track {
+    grid-auto-columns: calc((100% - 24px) / 2);
+  }
+
+  .briqs-about-agency-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .briqs-revenue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .briqs-faq-clean-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .briqs-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .briqs-hero-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .briqs-services-1x3-scroll-track {
+    grid-auto-columns: 88%;
+  }
+
+  .briqs-about-collage {
+    grid-template-columns: 1fr;
+  }
+
+  .briqs-collage-left-tall,
+  .briqs-collage-right-stack {
+    height: 300px;
+  }
+
+  .briqs-revenue-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .briqs-process-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .briqs-step-arrow-wrap {
+    transform: rotate(90deg);
+    padding: 16px 0;
+  }
+
+  .briqs-card-white {
+    padding: 24px;
+  }
+
+  .briqs-form-row-2col {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,257 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   AVISTA ONELINE AGENCY COMPLETE THEME STYLES
+   Exact recreation of https://themexriver.com/wp/avista/home-01-onepage/
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --as-font-1: "Inter", sans-serif;
+  --as-font-2: "Geist Mono", monospace;
+  --as-font-3: "Mona Sans", sans-serif;
+  --as-clr-pr-1: #fd3f00;
+  --as-clr-pr-3: #fb0d1f;
+  --as-clr-h-1: #0a0a0a;
+  --as-clr-h-2: #000000;
+  --as-clr-p-1: #3e3e3e;
+  --as-clr-p-2: #515151;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--as-font-1);
+  color: #000;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ── Keyframe Animations ── */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes marquee_left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee_right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee_up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* ── Marquee Continuous Motion ── */
+.wa_marquee_left_nopause {
+  display: flex !important;
+  white-space: nowrap !important;
+  animation: marquee_left 28s linear infinite !important;
+}
+
+.wa_marquee_right_nopause {
+  display: flex !important;
+  white-space: nowrap !important;
+  animation: marquee_right 28s linear infinite !important;
+}
+
+.wa_marquee_down_top {
+  animation: marquee_up 24s linear infinite !important;
+}
+
+/* ── Header Sticky Effect ── */
+.as-header-1-area.header-sticky {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.as-header-1-area.header-sticky .as-header-1-wrap {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Primary Buttons & Split Effects ── */
+.as-pr-btn-1,
+.as-pr-btn-1-v2 {
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.as-pr-btn-1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(253, 63, 0, 0.35);
+}
+
+.as-pr-btn-1-v2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Offcanvas Transitions ── */
+.wa-offcanvas-area {
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ── Tilt & Hover Card Effects ── */
+.as-team-1-member:hover .member-img img {
+  transform: scale(1.05);
+}
+
+.as-team-1-member .member-img img {
+  transition: transform 0.4s ease;
+}
+
+.as-portfolio-1-item:hover .item-img img {
+  transform: scale(1.04);
+}
+
+.as-portfolio-1-item .item-img img {
+  transition: transform 0.5s ease;
+}
+
+/* ── Subtitle Badges ── */
+.as-subtitle-1 {
+  font-family: var(--as-font-2);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fd3f00;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Fix for list styles ── */
+.wa-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ── Accordion Plus Icon Rotate ── */
+.as-accordion-item .item-title .icon i {
+  transition: transform 0.25s ease;
+}
+
+.as-accordion-item.active .item-title .icon i {
+  color: #fd3f00;
+}
+
+/* ── Responsive adjustments ── */
+@media (max-width: 991px) {
+  .as-hero-1-wrap {
+    flex-direction: column-reverse;
+  }
+  .as-hero-1-left {
+    display: none;
+  }
+  .as-hero-1-right {
+    width: 100%;
+  }
+  .as-hero-1-img {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 30px auto 0;
+    max-width: 80%;
+  }
+  .as-cta-2-wrap {
+    flex-direction: column;
+  }
+  .as-price-1-wrap {
+    flex-direction: column;
+  }
+  .as-price-1-left {
+    display: none;
+  }
+  .as-price-1-right {
+    width: 100%;
+  }
+}
+
+/* ── Features Cards Contrast & Text Styling ── */
+.as-features-1-creative .title,
+.as-features-1-result .title {
+  color: #ffffff !important;
+}
+
+.as-features-1-creative .disc,
+.as-features-1-result .disc {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.as-features-1-quality .title {
+  color: #ffffff !important;
+}
+
+.as-features-1-quality .disc {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.as-features-1-rating .rating-number {
+  color: #111111 !important;
+}
+
+.as-features-1-rating .rating-disc {
+  color: #555555 !important;
+}
+
+/* ── Services Section Text Contrast ── */
+.as-services-1-item .item-title a {
+  color: #181818;
+  transition: color 0.3s ease;
+}
+
+.as-services-1-item:hover .item-title a {
+  color: #fd3f00;
+}
+
+/* ── Operating Model Heading Contrast ── */
+.as-operating-model-section .tx-title,
+.as-operating-model-section h2 {
+  color: #ffffff !important;
+}
+
+/* ── Process Card Typography Contrast ── */
+.as-process-1-card .title {
+  color: #ffffff !important;
+}
+
+.as-process-1-card .disc {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+/* ── Testimonials Stars ── */
+.rating-icon i,
+.review-star i {
+  color: #fd3f00 !important;
+}
+
+
+

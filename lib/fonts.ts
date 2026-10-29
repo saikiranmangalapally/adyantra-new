@@ -1,18 +1,9 @@
-import { Poppins, DM_Mono } from "next/font/google";
+import { Urbanist } from "next/font/google";
 
-export const poppins = Poppins({
+// Universal Single Typography for entire website
+export const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-urbanist",
   display: "swap",
 });
-
-export const jakarta = poppins; // Backwards compatibility for existing variable references
-
-export const dmMono = DM_Mono({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-mono",
-  display: "swap",
-});
-

@@ -6,25 +6,29 @@ import {
   Building2,
   Store,
   CheckCircle2,
-  ArrowUpRight,
+  ArrowRight,
   ShieldCheck,
   TrendingUp,
-  Award,
-  Zap,
+  AlertCircle,
 } from "lucide-react";
-import CTABanner from "@/components/ui/CTABanner";
+import UnifiedPageHero from "@/components/hero/UnifiedPageHero";
+import KPDomainsWeServe from "@/components/kanakkupillai/KPDomainsWeServe";
+import KPTeamExpertise from "@/components/kanakkupillai/KPTeamExpertise";
+import KPTestimonials from "@/components/kanakkupillai/KPTestimonials";
+import KPFAQAccordion from "@/components/kanakkupillai/KPFAQAccordion";
+import KPContactSection from "@/components/kanakkupillai/KPContactSection";
 
 const industryData: Record<string, any> = {
   healthcare: {
-    title: "Healthcare & Life Sciences Digital Solutions",
+    title: "Healthcare & Life Sciences",
     subtitle: "HIPAA-compliant, high-intent patient acquisition and AI healthcare workflows",
     icon: Stethoscope,
-    badge: "Healthcare & Pharma Vertical",
+    badge: "HEALTHCARE & CLINIC VERTICAL",
     stats: [
-      { label: "Patient Conversions", value: "+320%" },
-      { label: "Cost Per Acquisition", value: "-45%" },
-      { label: "Search Visibility", value: "#1 Rank" },
-      { label: "HIPAA & Compliance", value: "100%" },
+      { label: "Patient Conversions", val: "+320%" },
+      { label: "Cost Per Acquisition", val: "-45%" },
+      { label: "Search Visibility", val: "#1 Rank" },
+      { label: "HIPAA & Compliance", val: "100%" },
     ],
     challenges: [
       "Strict HIPAA & medical ad policy restrictions on Meta and Google",
@@ -44,71 +48,71 @@ const industryData: Record<string, any> = {
     },
   },
   education: {
-    title: "EdTech & Education Digital Growth",
+    title: "EdTech & Academies",
     subtitle: "Scale student enrollments with precision funnel marketing & AI counseling bots",
     icon: GraduationCap,
-    badge: "EdTech & University Vertical",
+    badge: "EDTECH & UNIVERSITY VERTICAL",
     stats: [
-      { label: "Qualified Leads", value: "+450%" },
-      { label: "Admission Conversion", value: "3.4x" },
-      { label: "CPL Reduction", value: "-52%" },
-      { label: "Bot Engagement", value: "88%" },
+      { label: "Qualified Leads", val: "+450%" },
+      { label: "Admission Conversion", val: "3.4x" },
+      { label: "Cost Per Enrolment", val: "-35%" },
+      { label: "WhatsApp Engagement", val: "88%" },
     ],
     challenges: [
-      "Long inquiry-to-admission decision cycles among prospective students",
-      "High lead drop-off rates on standard inquiry forms",
-      "Seasonal admission surges requiring instant campaign scaling",
-      "Differentiating courses against aggressive EdTech competitors",
+      "High student drop-off between inquiry submission and counseling calls",
+      "Generic lead capture forms generating cold, unqualified parent leads",
+      "Long enrollment decision cycles requiring continuous nurture touchpoints",
+      "Seasonal admission surges overwhelming manual sales counselors",
     ],
     solutions: [
-      "AI Counselor Chatbots providing instant course guidance 24/7",
-      "Performance Meta & Google lead ads targeting high-intent students",
-      "Automated email & WhatsApp lead nurturing sequences",
-      "Interactive tuition calculator & admission funnel landing pages",
+      "Instant WhatsApp counseling bot qualifying student eligibility 24/7",
+      "Multi-variant direct-response Meta campaigns targeting parent cohorts",
+      "Programmatic SEO topical clusters for curriculum and course keywords",
+      "Automated calendar booking syncing directly into your admission CRM",
     ],
     caseStudy: {
-      client: "Global Scholars Institute",
-      results: "Increased fall enrollment by 210% while reducing marketing acquisition cost by 52%.",
+      client: "Global Scholars Education Group",
+      results: "Enrolled 1,200+ students in a single intake window while cutting lead response latency to under 15 seconds.",
     },
   },
   "real-estate": {
-    title: "Real Estate & Housing Marketing Ecosystems",
-    subtitle: "High-value buyer lead generation and immersive 3D project showcases",
+    title: "Real Estate & Developers",
+    subtitle: "High-value property buyer acquisition, virtual tours, and automated CRM pipelines",
     icon: Building2,
-    badge: "Real Estate & Commercial Vertical",
+    badge: "REAL ESTATE & HNI PROPERTY VERTICAL",
     stats: [
-      { label: "Site Visit Bookings", value: "1,200+" },
-      { label: "Qualified Buyers", value: "+280%" },
-      { label: "Cost Per Lead", value: "₹450" },
-      { label: "Pipeline Value", value: "₹150 Cr+" },
+      { label: "Site Visit Inquiries", val: "+280%" },
+      { label: "Verified Buyer Intent", val: "92%" },
+      { label: "Gross Transaction Value", val: "₹180 Cr" },
+      { label: "Lead Response Time", val: "< 15s" },
     ],
     challenges: [
-      "Distinguishing genuine high-net-worth buyers from casual window shoppers",
-      "Managing location-specific keyword competition on Google Search",
-      "Showcasing luxury project amenities virtually before site visits",
-      "Long transaction closing cycles requiring multi-touch remarketing",
+      "High volume of junk portal leads wasting real estate broker capacity",
+      "Delayed broker follow-ups causing prospective buyers to look elsewhere",
+      "Complex multi-tier project portfolios confusing online visitors",
+      "Difficulty attributing high-value unit sales back to specific ad campaigns",
     ],
     solutions: [
-      "Hyper-targeted Meta video ads featuring 3D virtual walkthroughs",
-      "Geo-fenced Google Search campaigns for luxury residential buyers",
-      "Automated instant WhatsApp brochures & interactive price sheet bots",
-      "CRM integration with immediate sales-agent lead routing",
+      "Hyper-targeted HNI audience targeting on Google Search & Meta CAPI",
+      "Interactive 3D virtual floorplan and project walkthrough landing experiences",
+      "Automated phone & WhatsApp verification filtering real property buyers",
+      "Live Looker Studio pipeline tracking measuring verified booked site visits",
     ],
     caseStudy: {
-      client: "Skyline Luxury Builders",
-      results: "Sold out 85% of Phase-1 luxury apartments within 60 days of digital launch.",
+      client: "Skyline Luxury Residences",
+      results: "Sold out 85% of Phase-1 luxury inventory in 60 days via direct-response HNI digital acquisition.",
     },
   },
   ecommerce: {
-    title: "E-Commerce & Retail Revenue Engine",
-    subtitle: "Scale Shopify & custom storefronts with ROAS-first Meta, Google & TikTok ads",
+    title: "Retail & D2C Brands",
+    subtitle: "High-ROAS Meta Advantage+ ads, headless Shopify stores, and retention loops",
     icon: Store,
-    badge: "E-Commerce & Retail Vertical",
+    badge: "RETAIL & D2C E-COMMERCE VERTICAL",
     stats: [
-      { label: "Average ROAS", value: "5.8x" },
-      { label: "Monthly Revenue", value: "₹2.5 Cr+" },
-      { label: "Cart Abandonment", value: "-35%" },
-      { label: "Repeat Purchase", value: "42%" },
+      { label: "Average Client ROAS", val: "4.6x" },
+      { label: "Abandoned Cart Recovery", val: "+38%" },
+      { label: "Page Load Speed", val: "< 0.8s" },
+      { label: "Customer LTV Gain", val: "+55%" },
     ],
     challenges: [
       "Rising CPMs and customer acquisition costs across Meta and TikTok",
@@ -150,74 +154,68 @@ export default async function IndustrySinglePage({
     notFound();
   }
 
-  const IconComponent = data.icon;
-
   return (
-    <div className="min-h-screen pt-32 pb-20">
-      {/* ── Hero Section ── */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px]">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider mb-6 border border-primary/20">
-              <IconComponent className="w-4 h-4" />
-              <span>{data.badge}</span>
-            </div>
-            
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-secondary tracking-tight leading-[1.18] mb-6">
-              {data.title}
-            </h1>
+    <main className="min-h-screen overflow-x-hidden font-sans bg-[#FFFFFF] text-[#12304A]">
+      {/* ═══════════════════ HERO ═══════════════════ */}
+      <UnifiedPageHero
+        badge={data.badge}
+        ratingText="4.9 / 5 RATING"
+        headlinePrefix="Tailored Digital Systems For"
+        highlightedText={data.title}
+        headlineSuffix="Engineered for Scalable ROAS."
+        description={data.subtitle}
+        primaryCtaText="REQUEST VERTICAL AUDIT"
+        primaryCtaHref="/contact"
+        secondaryCtaText="EXPLORE FRAMEWORK"
+        secondaryCtaHref="#challenges"
+        serviceTitle={data.badge}
+        stats={data.stats}
+      />
 
-            <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed mb-8 max-w-2xl">
-              {data.subtitle}
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="shadcn-input-button-solid">
-                <span>Request {data.badge} Audit</span>
-                <span className="badge-icon">
-                  <ArrowUpRight className="size-4" />
+      {/* ═══════════════════ CHALLENGES & SOLUTIONS ═══════════════════ */}
+      <section className="py-12 sm:py-14 lg:py-16 bg-[#FAFBFC] border-b border-[#DCE3EB] font-sans relative overflow-hidden" id="challenges">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Section Header: Matching Image Style */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14">
+            <div>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-xs sm:text-[13px] font-medium uppercase tracking-widest text-[#12304A] font-sans">
+                  DIAGNOSTIC ARCHITECTURE
                 </span>
-              </Link>
+                <span className="w-14 h-[2px] bg-[#FFC400] rounded-full inline-block" />
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-medium tracking-tight leading-[1.12] font-sans text-[#12304A]">
+                Overcoming Vertical Bottlenecks <br />
+                <span className="text-[#FFC400]">With Engineered Systems</span>
+              </h2>
+            </div>
+
+            <div className="max-w-md">
+              <p className="text-base sm:text-[17px] font-normal leading-relaxed font-sans text-[#64748B]">
+                Eliminating regulatory friction, high acquisition costs, and pipeline leakage with tailored technical infrastructure.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ── Key Performance Metrics ── */}
-      <section className="py-12 bg-slate-900 text-white">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px]">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {data.stats.map((stat: any) => (
-              <div key={stat.label} className="p-6 rounded-2xl bg-white/5 border border-white/10">
-                <div className="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-xs md:text-sm font-semibold text-slate-300 uppercase tracking-wider">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Industry Challenges vs Solutions ── */}
-      <section className="py-20 bg-surface/50">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* 2-Column Grid: Challenges vs Solutions */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             
-            {/* Industry Challenges */}
-            <div className="bg-white p-8 md:p-10 rounded-3xl border border-border shadow-sm">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center font-bold">
-                  !
+            {/* Common Industry Bottlenecks */}
+            <div className="bg-[#FFFFFF] p-7 sm:p-9 rounded-[28px] border border-[#DCE3EB] shadow-[0_4px_20px_rgba(18,48,74,0.04)]">
+              <div className="flex items-center gap-3.5 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-rose-50 border border-rose-200 text-rose-600 flex items-center justify-center shrink-0">
+                  <AlertCircle className="w-5 h-5 stroke-[2.2]" />
                 </div>
-                <h3 className="text-2xl font-bold text-secondary">Common Industry Bottlenecks</h3>
+                <h3 className="text-xl sm:text-2xl font-medium text-[#12304A] font-sans">
+                  Common Industry Bottlenecks
+                </h3>
               </div>
-              <ul className="space-y-4">
-                {data.challenges.map((c: string) => (
-                  <li key={c} className="flex items-start gap-3 text-slate-700 text-sm md:text-base font-medium">
-                    <span className="w-2 h-2 rounded-full bg-red-500 mt-2 shrink-0" />
+              <ul className="space-y-3.5">
+                {data.challenges.map((c: string, idx: number) => (
+                  <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-[#64748B] font-normal leading-relaxed font-sans">
+                    <span className="w-2 h-2 rounded-full bg-rose-500 mt-2 shrink-0" />
                     <span>{c}</span>
                   </li>
                 ))}
@@ -225,17 +223,19 @@ export default async function IndustrySinglePage({
             </div>
 
             {/* Adyantra Engineered Solutions */}
-            <div className="bg-white p-8 md:p-10 rounded-3xl border border-border shadow-sm">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
-                  <CheckCircle2 className="w-5 h-5" />
+            <div className="bg-[#FFFFFF] p-7 sm:p-9 rounded-[28px] border border-[#DCE3EB] shadow-[0_4px_20px_rgba(18,48,74,0.04)] hover:border-[#FFC400] transition-colors">
+              <div className="flex items-center gap-3.5 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center shrink-0">
+                  <CheckCircle2 className="w-5 h-5 stroke-[2.5]" />
                 </div>
-                <h3 className="text-2xl font-bold text-secondary">Our Engineered Strategy</h3>
+                <h3 className="text-xl sm:text-2xl font-medium text-[#12304A] font-sans">
+                  Our Engineered Solutions
+                </h3>
               </div>
-              <ul className="space-y-4">
-                {data.solutions.map((s: string) => (
-                  <li key={s} className="flex items-start gap-3 text-slate-700 text-sm md:text-base font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+              <ul className="space-y-3.5">
+                {data.solutions.map((s: string, idx: number) => (
+                  <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-[#12304A] font-normal leading-relaxed font-sans">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 stroke-[2.5] shrink-0 mt-0.5" />
                     <span>{s}</span>
                   </li>
                 ))}
@@ -243,32 +243,49 @@ export default async function IndustrySinglePage({
             </div>
 
           </div>
-        </div>
-      </section>
 
-      {/* ── Featured Case Study Spotlight ── */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 md:px-8 max-w-[1320px]">
-          <div className="bg-gradient-to-r from-secondary to-slate-900 rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+          {/* Featured Case Study Spotlight Card */}
+          <div className="mt-8 bg-[#12304A] text-white rounded-[32px] p-8 sm:p-12 shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-8 border border-[#DCE3EB]/20">
             <div>
-              <span className="text-xs font-extrabold text-cyan-400 uppercase tracking-widest">Verified Case Study Spotlight</span>
-              <h3 className="text-2xl md:text-3xl font-bold mt-2">{data.caseStudy.client}</h3>
-              <p className="text-slate-300 text-base md:text-lg mt-3 max-w-xl font-medium">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs font-semibold text-[#FFC400] uppercase tracking-widest font-sans">
+                  VERIFIED OUTCOME SPOTLIGHT
+                </span>
+                <span className="w-10 h-[2px] bg-[#FFC400] rounded-full inline-block" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-medium font-sans text-white">
+                {data.caseStudy.client}
+              </h3>
+              <p className="text-[#DCE3EB] text-sm sm:text-base mt-2 max-w-xl font-normal leading-relaxed font-sans">
                 &ldquo;{data.caseStudy.results}&rdquo;
               </p>
             </div>
             <Link
               href="/contact"
-              className="bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full shrink-0 flex items-center gap-2 shadow-lg"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#FFC400] hover:bg-[#e6b000] text-[#12304A] font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md shrink-0 font-sans cursor-pointer"
             >
-              <span>Read Full Case Study</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <span>Request Similar Blueprint</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+
         </div>
       </section>
 
-      <CTABanner />
-    </div>
+      {/* ═══════════════════ TARGET DOMAINS WE SERVE ═══════════════════ */}
+      <KPDomainsWeServe />
+
+      {/* ═══════════════════ SENIOR EXECUTION SQUADS ═══════════════════ */}
+      <KPTeamExpertise />
+
+      {/* ═══════════════════ CLIENT REVIEWS ═══════════════════ */}
+      <KPTestimonials />
+
+      {/* ═══════════════════ FREQUENTLY ASKED QUESTIONS ═══════════════════ */}
+      <KPFAQAccordion />
+
+      {/* ═══════════════════ DIRECT CONTACT & AUDIT FORM ═══════════════════ */}
+      <KPContactSection />
+    </main>
   );
 }

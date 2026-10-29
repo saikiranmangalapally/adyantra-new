@@ -88,10 +88,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                {/* We parse the simple markdown content we defined. For a real app, you'd use a markdown parser. */}
                {post.content.split('\n\n').map((paragraph, idx) => {
                  if (paragraph.startsWith('## ')) {
-                   return <h2 key={idx} className="text-3xl font-bold font-heading mt-10 mb-6 text-gray-900">{paragraph.replace('## ', '')}</h2>
+                   return <h2 key={idx} className="text-3xl font-semibold font-heading mt-10 mb-6 text-gray-900">{paragraph.replace('## ', '')}</h2>
                  }
                  if (paragraph.startsWith('### ')) {
-                   return <h3 key={idx} className="text-2xl font-bold font-heading mt-8 mb-4 text-gray-800">{paragraph.replace('### ', '')}</h3>
+                   return <h3 key={idx} className="text-2xl font-semibold font-heading mt-8 mb-4 text-gray-800">{paragraph.replace('### ', '')}</h3>
                  }
                  if (paragraph.startsWith('- ')) {
                    const items = paragraph.split('\n').filter(i => i.startsWith('- '));
@@ -122,7 +122,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="bg-primary text-white rounded-3xl p-12 text-center relative overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold font-heading mb-4">Want to apply these insights to your business?</h2>
+              <h2 className="text-3xl font-semibold font-heading mb-4">Want to apply these insights to your business?</h2>
               <p className="text-blue-100 mb-8 max-w-xl mx-auto">
                 Speak with our team to see how Adyantra can help you implement these strategies and drive measurable growth.
               </p>

@@ -247,7 +247,7 @@ export default function ModernTeamExpertiseSection() {
                   key={d.id}
                   type="button"
                   onClick={() => setActiveTab(d.id)}
-                  className={`px-4 py-2 rounded-full text-xs font-semibold font-['Poppins'] transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ${
+                  className={`px-4 py-2 rounded-full text-xs font-semibold font-sans transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ${
                     isSelected
                       ? "bg-[#0f172a] text-white shadow-md"
                       : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/60"
@@ -281,10 +281,10 @@ export default function ModernTeamExpertiseSection() {
                 </svg>
               </div>
               <div>
-                <strong className="text-xs font-bold text-purple-950 font-['Poppins'] uppercase tracking-wider block">
+                <strong className="text-xs font-bold text-purple-950 font-sans uppercase tracking-wider block">
                   Direct Senior Technical Access
                 </strong>
-                <p className="text-xs text-purple-900/80 font-['Poppins'] leading-relaxed mt-0.5">
+                <p className="text-xs text-purple-900/80 font-sans leading-relaxed mt-0.5">
                   {current.directAccessCallout}
                 </p>
               </div>
@@ -299,7 +299,7 @@ export default function ModernTeamExpertiseSection() {
                   </div>
                   <div className="flex flex-col">
                     <span className="advantage-feature-text leading-snug">{feat.title}</span>
-                    <span className="text-xs text-slate-500 font-['Poppins'] leading-relaxed mt-1">
+                    <span className="text-xs text-slate-500 font-sans leading-relaxed mt-1">
                       {feat.desc}
                     </span>
                   </div>

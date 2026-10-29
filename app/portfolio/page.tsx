@@ -1,9 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
-import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
+import UnifiedPageHero from "@/components/hero/UnifiedPageHero";
+import KPDomainsWeServe from "@/components/kanakkupillai/KPDomainsWeServe";
+import KPTeamExpertise from "@/components/kanakkupillai/KPTeamExpertise";
+import KPTestimonials from "@/components/kanakkupillai/KPTestimonials";
+import KPFAQAccordion from "@/components/kanakkupillai/KPFAQAccordion";
+import KPContactSection from "@/components/kanakkupillai/KPContactSection";
+import { ArrowRight, Sparkles, TrendingUp } from "lucide-react";
 
 export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -20,7 +25,7 @@ export default function PortfolioPage() {
       statDesc: "Scaled monthly revenue from $25k to $140k in 7 months",
       desc: "Architected a full-funnel acquisition engine combining Meta Advantage+ shopping campaigns, Google PMax retargeting, and automated post-purchase Klaviyo retention flows.",
       tags: ["Meta Ads", "Google PMax", "Shopify Plus", "Klaviyo"],
-      img: "/assets/img/portfolio/case-study-ecommerce-scaling.svg",
+      img: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 2,
@@ -33,7 +38,7 @@ export default function PortfolioPage() {
       statDesc: "Autonomous qualification and CRM sync for 1,200+ monthly enterprise leads",
       desc: "Engineered an autonomous lead ingestion engine using LLM classifiers, instant HubSpot contact enrichment, and bidirectional Slack notifications for immediate executive booking.",
       tags: ["AI Agents", "HubSpot CRM", "FastAPI", "Slack Webhooks"],
-      img: "/assets/img/portfolio/case-study-fintech-ai.svg",
+      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 3,
@@ -46,7 +51,7 @@ export default function PortfolioPage() {
       statDesc: "Sub-second Next.js web application with real-time slot calendar synchronization",
       desc: "Re-engineered a legacy appointment portal into a high-performance Next.js 15 web application with automated WhatsApp appointment reminders and local search optimization.",
       tags: ["Next.js 15", "PostgreSQL", "WhatsApp Cloud API", "Tailwind CSS"],
-      img: "/assets/img/portfolio/case-study-booking-automation.svg",
+      img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 4,
@@ -59,7 +64,7 @@ export default function PortfolioPage() {
       statDesc: "RAG knowledge assistant handling 40,000+ monthly admission inquiries",
       desc: "Deployed a 24/7 conversational counseling bot integrated into WhatsApp and web chat that evaluates student eligibility, recommends curricula, and collects enrollment fees.",
       tags: ["RAG Vectors", "OpenAI API", "Stripe Connect", "Make.com"],
-      img: "/assets/img/portfolio/case-study-whatsapp-crm.svg",
+      img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 5,
@@ -72,7 +77,7 @@ export default function PortfolioPage() {
       statDesc: "Hyper-targeted HNI acquisition via Google Search & Meta lead pipelines",
       desc: "Built a private investor acquisition funnel leveraging geo-fenced high-intent search terms, interactive 3D virtual floorplans, and instant CRM call scheduling.",
       tags: ["Google Search", "Meta Ads", "Salesforce Sync", "Interactive 3D"],
-      img: "/assets/img/portfolio/case-study-saas-seo.svg",
+      img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 6,
@@ -85,7 +90,7 @@ export default function PortfolioPage() {
       statDesc: "Multi-tenant regulatory portal processing high-volume transactions",
       desc: "Engineered an audit-ready compliance dashboard with strict role-based access control, cryptographic verification, and distributed microservices deployed to AWS ECS.",
       tags: ["React", "TypeScript", "AWS ECS", "Docker"],
-      img: "/assets/img/portfolio/case-study-mobile-web-app.svg",
+      img: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80",
     },
   ];
 
@@ -95,78 +100,73 @@ export default function PortfolioPage() {
       : caseStudies.filter((item) => item.category === activeFilter);
 
   return (
-    <main className="ady-main-content">
-      {/* ═══════════════════ SECTION 1: FLAGSHIP HERO ═══════════════════ */}
-      <section className="ady-hero-section relative overflow-hidden" id="home">
-        <div className="ady-tunnel-container" id="adyTunnel">
-          <div className="ady-tunnel-layer ady-tunnel-1" />
-          <div className="ady-tunnel-layer ady-tunnel-2" />
-          <div className="ady-tunnel-layer ady-tunnel-3" />
-        </div>
+    <main className="min-h-screen overflow-x-hidden font-sans bg-[#FFFFFF] text-[#12304A]">
+      {/* ═══════════════════ HERO ═══════════════════ */}
+      <UnifiedPageHero
+        badge="PROVEN CLIENT IMPACT • MEASURED OUTCOMES"
+        ratingText="4.9 / 5 RATING"
+        headlinePrefix="Engineering Commercial Advantage with"
+        highlightedText="Verified Case Studies & ROAS"
+        headlineSuffix="Across 50+ Enterprises."
+        description="Explore how we combine aggressive performance marketing, modern web software, and autonomous AI automation to scale pipeline value for ambitious enterprises."
+        primaryCtaText="BOOK A STRATEGY CALL"
+        primaryCtaHref="/contact"
+        secondaryCtaText="VIEW CASE STUDIES"
+        secondaryCtaHref="#case-studies"
+        serviceTitle="Performance Marketing (Meta/Google Ads)"
+        stats={[
+          { val: "3.4x", label: "Average Blended ROAS" },
+          { val: "$140k+", label: "Monthly Revenue Scaled" },
+          { val: "85%", label: "Lead Resolution Auto" },
+          { val: "100%", label: "In-House Delivery" },
+        ]}
+      />
 
-        <div className="shell text-center relative z-10 pt-16 pb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#ef5b52]/20 shadow-sm mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#ef5b52]">
-              Proven Client Impact
-            </span>
-          </div>
+      {/* ═══════════════════ CASE STUDIES GRID ═══════════════════ */}
+      <section className="py-12 sm:py-14 lg:py-16 bg-[#FAFBFC] border-b border-[#DCE3EB] font-sans relative overflow-hidden" id="case-studies">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Section Header: Matching Exact Image Style */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14">
+            <div>
+              {/* Tagline Badge with Golden Yellow Line */}
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-xs sm:text-[13px] font-medium uppercase tracking-widest text-[#12304A] font-sans">
+                  SELECTED ENGAGEMENTS
+                </span>
+                <span className="w-14 h-[2px] bg-[#FFC400] rounded-full inline-block" />
+              </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-[#0f172a] max-w-4xl mx-auto leading-tight mb-6">
-            Measured Outcomes &amp;{" "}
-            <span className="ady-gradient-text font-semibold">Scalable Case Studies</span>
-          </h1>
+              {/* Two-Line Headline */}
+              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-medium tracking-tight leading-[1.12] font-sans text-[#12304A]">
+                Verified Deliverables <br />
+                <span className="text-[#FFC400]">&amp; Commercial Outcomes</span>
+              </h2>
+            </div>
 
-          <p className="text-lg md:text-xl text-[#586882] max-w-2xl mx-auto mb-8 font-normal">
-            Explore how we combine aggressive performance marketing, modern web software, and autonomous AI automation to scale pipeline value for ambitious enterprises.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a href="#case-studies" className="shadcn-input-button-solid">
-              <span>View Case Studies</span>
-              <span className="badge-icon">&darr;</span>
-            </a>
-            <Link href="/contact" className="shadcn-input-button">
-              <span>Request Growth Audit</span>
-              <span className="badge-icon">&rarr;</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════ SERVICES SCROLLING SECTION ═══════════════════ */}
-      <ServicesScrollingBar />
-
-      {/* ═══════════════════ SECTION 2: CASE STUDIES GRID WITH FILTER ═══════════════════ */}
-      <section className="section py-20 bg-white border-t border-[#e2e8f0]" id="case-studies">
-        <div className="shell">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b4bf7]/10 text-[#7b4bf7] text-xs font-semibold uppercase tracking-wider mb-3">
-              Selected Engagements
-            </span>
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0f172a] mb-4">
-              Real Work Delivering Predictable Results
-            </h2>
-            <p className="text-base text-[#586882]">
-              Filter our verified deliverables across paid marketing campaigns, autonomous AI systems, and modern software architectures.
-            </p>
+            {/* Right Subhead Paragraph */}
+            <div className="max-w-md">
+              <p className="text-base sm:text-[17px] font-normal leading-relaxed font-sans text-[#64748B]">
+                Filter our verified deliverables across paid marketing campaigns, autonomous AI systems, and modern software architectures.
+              </p>
+            </div>
           </div>
 
           {/* Filter Pills */}
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
+          <div className="flex flex-wrap gap-2.5 mb-10">
             {[
-              { id: "all", label: "All Engagements (6)" },
-              { id: "marketing", label: "Performance Marketing (2)" },
-              { id: "ai", label: "AI Automation Systems (2)" },
-              { id: "software", label: "Web Software (2)" },
+              { id: "all", label: `All Engagements (${caseStudies.length})` },
+              { id: "marketing", label: "Performance Marketing" },
+              { id: "ai", label: "AI Automation Systems" },
+              { id: "software", label: "Web Software" },
             ].map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveFilter(tab.id)}
-                className={`px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
+                className={`px-5 py-2.5 rounded-full text-xs font-medium tracking-wider transition-all duration-200 cursor-pointer font-sans ${
                   activeFilter === tab.id
-                    ? "bg-[#0f172a] text-white shadow-md -translate-y-0.5"
-                    : "bg-[#f8fafc] text-[#586882] hover:bg-[#f1f5f9] border border-[#e2e8f0]"
+                    ? "bg-[#12304A] text-white shadow-sm"
+                    : "bg-[#FFFFFF] text-[#64748B] hover:text-[#12304A] border border-[#DCE3EB] hover:bg-[#F5F7FA]"
                 }`}
               >
                 {tab.label}
@@ -174,107 +174,101 @@ export default function PortfolioPage() {
             ))}
           </div>
 
-          {/* Case Studies Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Case Studies Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((item) => (
               <article
                 key={item.id}
-                className="rounded-3xl bg-[#f8fafc] border border-[#e2e8f0] overflow-hidden hover:border-[#cbd5e1] hover:bg-white hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                className="rounded-[28px] bg-[#FFFFFF] border border-[#DCE3EB] overflow-hidden hover:border-[#FFC400] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group p-6 sm:p-7 shadow-[0_4px_20px_rgba(18,48,74,0.04)]"
               >
                 <div>
-                  {/* Card Visual Header */}
-                  <div className="p-6 bg-gradient-to-b from-[#f1f5f9] to-[#f8fafc] border-b border-[#e2e8f0] flex items-center justify-center h-56">
+                  {/* Photo Container */}
+                  <div className="h-48 sm:h-52 rounded-2xl overflow-hidden relative shadow-sm mb-5 bg-[#FAFBFC]">
                     <img
                       src={item.img}
                       alt={item.title}
-                      className="max-h-44 w-auto object-contain drop-shadow"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
+                    <div className="absolute top-3 right-3">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#12304A]/90 text-[#FFC400] backdrop-blur-md shadow-sm font-sans">
+                        <TrendingUp className="w-3.5 h-3.5" />
+                        <span>{item.highlightMetric}</span>
+                      </span>
+                    </div>
                   </div>
 
-                  {/* Card Body */}
-                  <div className="p-6">
-                    <div className="flex items-center justify-between gap-2 mb-3">
-                      <span className="text-[11px] font-semibold text-[#7b4bf7] uppercase tracking-wide">
-                        {item.categoryLabel}
+                  {/* Category & Title */}
+                  <div className="mb-2">
+                    <span className="text-[11px] font-semibold text-[#12304A] uppercase tracking-wider font-sans">
+                      {item.categoryLabel}
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl font-medium text-[#12304A] mb-1 leading-snug font-sans group-hover:text-[#12304A] transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs font-normal text-[#64748B] mb-3 font-sans">
+                    {item.client}
+                  </p>
+
+                  <p className="text-xs sm:text-[13.5px] text-[#64748B] leading-relaxed mb-5 font-sans font-normal">
+                    {item.desc}
+                  </p>
+
+                  {/* Stat Highlight Box */}
+                  <div className="p-4 rounded-xl bg-[#FAFBFC] border border-[#DCE3EB] mb-5">
+                    <div className="text-lg font-semibold text-[#12304A] font-sans">
+                      {item.statValue}
+                    </div>
+                    <div className="text-[11.5px] text-[#64748B] mt-0.5 leading-snug font-sans font-normal">
+                      {item.statDesc}
+                    </div>
+                  </div>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-1.5 mb-2">
+                    {item.tags.map((t, idx) => (
+                      <span
+                        key={idx}
+                        className="text-[11px] font-medium text-[#12304A] px-2.5 py-0.5 rounded-full bg-[#EAF2F9] border border-[#DCE3EB] font-sans"
+                      >
+                        {t}
                       </span>
-                      <span className="text-xs font-bold text-[#ef5b52] px-2.5 py-0.5 rounded-full bg-[#ef5b52]/10">
-                        {item.highlightMetric}
-                      </span>
-                    </div>
-
-                    <h3 className="text-xl font-semibold text-[#0f172a] mb-2 leading-snug">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs font-medium text-[#586882] mb-4">
-                      {item.client}
-                    </p>
-
-                    <p className="text-xs text-[#586882] leading-relaxed mb-6">
-                      {item.desc}
-                    </p>
-
-                    {/* Stat Highlight Box */}
-                    <div className="p-4 rounded-xl bg-white border border-[#e2e8f0] mb-5">
-                      <div className="text-lg font-bold text-[#0f172a] font-mono">
-                        {item.statValue}
-                      </div>
-                      <div className="text-[11px] text-[#586882] mt-0.5 leading-snug">
-                        {item.statDesc}
-                      </div>
-                    </div>
-
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-1.5 mb-2">
-                      {item.tags.map((t, idx) => (
-                        <span
-                          key={idx}
-                          className="text-[10px] font-medium text-[#586882] px-2 py-0.5 rounded bg-white border border-[#e2e8f0]"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
+                    ))}
                   </div>
                 </div>
 
-                <div className="px-6 pb-6 pt-2 border-t border-[#f1f5f9]">
+                <div className="pt-4 mt-2 border-t border-[#DCE3EB]">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 text-xs font-semibold text-[#ef5b52] hover:text-[#d9483f]"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#12304A] hover:bg-[#1a4469] text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md group/btn w-full font-sans"
                   >
                     <span>Request Similar Growth Plan</span>
-                    <span>&rarr;</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </article>
             ))}
           </div>
+
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 3: CALL TO ACTION BANNER ═══════════════════ */}
-      <section className="growth-banner" id="growth-banner">
-        <div className="shell">
-          <div className="growth-banner__inner">
-            <div className="growth-banner__content">
-              <span className="growth-banner__kicker">READY FOR MEASURABLE RESULTS?</span>
-              <h2 id="growth-title" className="text-2xl md:text-3xl font-semibold text-white mt-2 mb-3">
-                Let&apos;s Build Your Next Flagship Case Study.
-              </h2>
-              <p className="text-sm text-white/80 max-w-xl">
-                Partner with senior practitioners to evaluate your current bottlenecks, scale ad performance, and engineer automated conversion pipelines.
-              </p>
-            </div>
-            <div className="growth-banner__action">
-              <Link href="/contact" className="btn btn--white btn--shadow">
-                <span>Book Strategy Call</span>
-                <span className="btn__arrow">&rarr;</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ═══════════════════ TARGET DOMAINS WE SERVE ═══════════════════ */}
+      <KPDomainsWeServe />
+
+      {/* ═══════════════════ SENIOR EXECUTION SQUADS ═══════════════════ */}
+      <KPTeamExpertise />
+
+      {/* ═══════════════════ CLIENT REVIEWS ═══════════════════ */}
+      <KPTestimonials />
+
+      {/* ═══════════════════ FREQUENTLY ASKED QUESTIONS ═══════════════════ */}
+      <KPFAQAccordion />
+
+      {/* ═══════════════════ DIRECT CONTACT & AUDIT FORM ═══════════════════ */}
+      <KPContactSection />
     </main>
   );
 }

@@ -1,19 +1,41 @@
+
+/* ═══════════════════════════════════════════════════════════
+   KANAKKUPILLAI TYPOGRAPHY SYSTEM
+   Headings: Urbanist (700-900)
+   Body / UI / Inputs: Martel Sans (400-700)
+   ═══════════════════════════════════════════════════════════ */
+:root {
+  --primary-font: 'Martel Sans', sans-serif;
+  --alt-font: 'Urbanist', sans-serif;
+  --font-family-primary: 'Urbanist', 'Martel Sans', sans-serif;
+  --font-sans: 'Urbanist', 'Martel Sans', sans-serif;
+  --font-plus-jakarta-sans: 'Urbanist', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Urbanist', sans-serif !important;
+}
+
+body, p, span, a, button, input, select, textarea, label {
+  font-family: 'Martel Sans', 'Urbanist', sans-serif;
+}
+
 /* ═══════════════════════════════════════════════════════════
    ADYANTRA DIGITAL — COMPLETE STYLES (POPPINS TYPOGRAPHY)
    Exact Match to Reference Screenshot & Requested Typography:
-   • Hero H1: Poppins 800
-   • Gradient H1: Poppins 800
-   • Body paragraph: Poppins 400–500 (450)
-   • Navigation: Poppins 500
-   • Buttons: Poppins 600
-   • Chat widget: Poppins 400–600
+   • Hero H1: Urbanist 800
+   • Gradient H1: Urbanist 800
+   • Body paragraph: Urbanist 400–500 (450)
+   • Navigation: Urbanist 500
+   • Buttons: Urbanist 600
+   • Chat widget: Urbanist 400–600
    ═══════════════════════════════════════════════════════════ */
 
 :root {
-  --font-family-primary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-plus-jakarta-sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-dm-mono: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-primary: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-plus-jakarta-sans: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-dm-mono: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
   --ink-primary: #0f172a;
   --ink-coral: #ef5b52;
   --text-muted: #5b6b82;
@@ -127,7 +149,7 @@ body {
   line-height: 1;
 }
 
-/* ── Navigation Menu (Poppins 500) ── */
+/* ── Navigation Menu (Urbanist 500) ── */
 .ady-nav-menu {
   display: flex;
   align-items: center;
@@ -261,7 +283,7 @@ body {
   line-height: 1.35;
 }
 
-/* ── Header Right: Black Pill 'Book A Call' (Poppins 600) ── */
+/* ── Header Right: Black Pill 'Book A Call' (Urbanist 600) ── */
 .ady-header-actions {
   display: flex;
   align-items: center;
@@ -518,7 +540,7 @@ body {
   z-index: 2;
 }
 
-/* ── Typography Section (Hero H1: Poppins 800, Body: Poppins 450) ── */
+/* ── Typography Section (Hero H1: Urbanist 800, Body: Urbanist 450) ── */
 .ady-hero-content {
   position: relative;
   z-index: 10;
@@ -575,7 +597,7 @@ body {
   background-clip: text;
 }
 
-/* Body Paragraph (Poppins 400) */
+/* Body Paragraph (Urbanist 400) */
 .ady-subtitle {
   font-family: var(--font-family-primary) !important;
   font-size: 15px !important;
@@ -586,7 +608,7 @@ body {
   line-height: 1.6;
 }
 
-/* ── Hero Dual Action Buttons (Poppins 600) ── */
+/* ── Hero Dual Action Buttons (Urbanist 600) ── */
 .ady-cta-group {
   display: flex;
   gap: 16px;
@@ -954,12 +976,12 @@ button.fixed[aria-label*="WhatsApp"] {
 
 /* ═══════════════════════════════════════════════════════════
    GLOBAL SECTION TYPOGRAPHY (POPPINS ACROSS ALL HOMEPAGE SECTIONS)
-   • Headings (H1, H2, H3, H4, Section Titles): Poppins 600 (SemiBold)
-   • Subtitles / Badges: Poppins 600 / 500
-   • Body Paragraphs & Descriptions: Poppins 400 (Regular)
-   • Navigation & Links: Poppins 500 (Medium)
-   • Buttons & Action Pills: Poppins 600 (SemiBold)
-   • Stats & Numbers: Poppins 700 / 500
+   • Headings (H1, H2, H3, H4, Section Titles): Urbanist 600 (SemiBold)
+   • Subtitles / Badges: Urbanist 600 / 500
+   • Body Paragraphs & Descriptions: Urbanist 400 (Regular)
+   • Navigation & Links: Urbanist 500 (Medium)
+   • Buttons & Action Pills: Urbanist 600 (SemiBold)
+   • Stats & Numbers: Urbanist 700 / 500
    ═══════════════════════════════════════════════════════════ */
 
 /* Universal font family enforcement */
@@ -2432,7 +2454,7 @@ section.bento-services-section {
 .growth-banner::after { position: absolute; right: -150px; bottom: -250px; width: 680px; height: 520px; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; box-shadow: 0 0 0 55px rgba(255,255,255,.08), 0 0 0 110px rgba(255,255,255,.05); content: ""; }
 .growth-banner .shell { position: relative; z-index: 1; display: grid; grid-template-columns: 1.2fr .8fr; gap: 45px; }.growth-banner .kicker { color: #ffd0ce; }.growth-banner h2,
 #growth-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(28px, 3.3vw, 44px) !important;
   font-weight: 700 !important;
   color: #ffffff !important;
@@ -2451,7 +2473,7 @@ section.bento-services-section {
 .faq { background: #fafbff; }.faq-layout { display: grid; grid-template-columns: .74fr 1.26fr; gap: clamp(50px, 8vw, 120px); align-items: start; }.faq-list { border-top: 1px solid #dde2ee; }.faq-list details { border-bottom: 1px solid #dde2ee; }.faq-list summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 21px 0; color: #252a49; font-size: 15px; font-weight: 600; cursor: pointer; list-style: none; }.faq-list summary::-webkit-details-marker { display: none; }.faq-list summary b { display: grid; flex: 0 0 auto; width: 23px; height: 23px; place-items: center; border: 1px solid #d8ddea; border-radius: 50%; color: #9351d4; font-size: 19px; font-weight: 400; transition: transform .2s ease; }.faq-list details[open] summary b { transform: rotate(45deg); }.faq-list details p { max-width: 600px; margin: -4px 40px 20px 0; color: #747d98; font-size: 13px; line-height: 1.55; }
 
 .contact { padding: 107px 0; background: linear-gradient(130deg, #eceafd, #fdf9ff 53%, #ffe9eb); }.contact__grid { display: grid; grid-template-columns: .87fr 1.13fr; gap: clamp(54px, 8vw, 116px); align-items: start; }.contact__copy > p:not(.kicker) { max-width: 440px; }.contact-method { display: flex; gap: 13px; margin-top: 25px; }.contact-method > span { display: grid; flex: 0 0 auto; width: 36px; height: 36px; place-items: center; border-radius: 9px; background: #fff; color: #9d4ee1; box-shadow: 0 8px 17px rgba(82,70,134,.1); }.contact-method div { display: flex; flex-direction: column; gap: 3px; }.contact-method b { color: #2d3150; font-size: 12px; text-transform: uppercase; }.contact-method a { color: #6d7692; font-size: 13px; text-decoration: none; }.contact-form { padding: 34px; border: 1px solid rgba(255,255,255,.92); border-radius: 21px; background: rgba(255,255,255,.77); box-shadow: 0 17px 39px rgba(84,74,133,.11); backdrop-filter: blur(8px); }.contact-form h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -2548,7 +2570,7 @@ section.testimonials {
 .reviews-ref-subtitle {
   color: #586882 !important;
   -webkit-text-fill-color: #586882 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 400 !important;
   font-size: 15.5px !important;
 }
@@ -2596,7 +2618,7 @@ section.testimonials {
 /* Universal Pill Kicker */
 .ref-pill-kicker {
   display: inline-block;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12px !important;
   font-weight: 600 !important;
   letter-spacing: 0.8px !important;
@@ -2613,7 +2635,7 @@ section.testimonials {
   display: inline-flex !important;
   align-items: center !important;
   gap: 10px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
   text-decoration: none !important;
@@ -2627,7 +2649,7 @@ section.testimonials {
   background: #0b0e1b !important;
   color: #ffffff !important;
   box-shadow: 0 8px 24px rgba(11, 14, 27, 0.28) !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   padding: 13px 28px !important;
   display: inline-flex !important;
@@ -2685,7 +2707,7 @@ section.testimonials {
 }
 
 .services-ref-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(30px, 3.8vw, 44px) !important;
   font-weight: 800 !important;
   line-height: 1.22 !important;
@@ -2695,7 +2717,7 @@ section.testimonials {
 }
 
 .services-ref-subtitle {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
@@ -2715,7 +2737,7 @@ section.testimonials {
 }
 
 .services-tab {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12px !important;
   font-weight: 600 !important;
   letter-spacing: 0.06em !important;
@@ -2861,7 +2883,7 @@ section.testimonials {
 
 /* 2. Title (Second) */
 .service-ref-card__title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 19px !important;
   font-weight: 700 !important;
   color: #0f172a !important;
@@ -2878,7 +2900,7 @@ section.testimonials {
 
 /* 3. Subtitle / Content (Third - Tight margin directly above button, decreased font size) */
 .service-ref-card__desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 400 !important;
   line-height: 1.48 !important;
@@ -2904,7 +2926,7 @@ section.testimonials {
   align-items: center !important;
   justify-content: center !important;
   gap: 8px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 600 !important;
   color: #475569 !important;
@@ -3059,7 +3081,7 @@ section.testimonials {
 
 .badge-star-text b {
   display: block !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
   color: #0f172a !important;
@@ -3068,7 +3090,7 @@ section.testimonials {
 
 .badge-star-text span {
   display: block !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11px !important;
   font-weight: 500 !important;
   color: #64748b !important;
@@ -3104,14 +3126,14 @@ section.testimonials {
 }
 
 .insights-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   color: #0f172a !important;
 }
 
 .insights-period {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 10px !important;
   font-weight: 600 !important;
   color: #7b4bf7 !important;
@@ -3131,7 +3153,7 @@ section.testimonials {
 .insights-days {
   display: flex !important;
   justify-content: space-between !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 9px !important;
   font-weight: 600 !important;
   color: #94a3b8 !important;
@@ -3166,7 +3188,7 @@ section.testimonials {
 }
 
 .about-ref-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(30px, 3.8vw, 44px) !important;
   font-weight: 800 !important;
   line-height: 1.22 !important;
@@ -3175,7 +3197,7 @@ section.testimonials {
 }
 
 .about-ref-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
@@ -3230,7 +3252,7 @@ section.testimonials {
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 16px !important;
   font-weight: 800 !important;
   color: #0f172a !important;
@@ -3238,7 +3260,7 @@ section.testimonials {
 
 .meter-label b {
   display: block !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 700 !important;
   color: #0f172a !important;
@@ -3247,7 +3269,7 @@ section.testimonials {
 
 .meter-label span {
   display: block !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #64748b !important;
@@ -3279,7 +3301,7 @@ section.testimonials {
 }
 
 .industries-ref-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(28px, 3.3vw, 44px) !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -3289,7 +3311,7 @@ section.testimonials {
 }
 
 .industries-ref-subtitle {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   color: #586882 !important;
@@ -3348,7 +3370,7 @@ section.testimonials {
 }
 
 .domain-pill-text {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 600 !important;
   color: #1e293b !important;
@@ -3379,7 +3401,7 @@ section.testimonials {
 }
 
 .reviews-ref-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(28px, 3.8vw, 42px) !important;
   font-weight: 800 !important;
   line-height: 1.25 !important;
@@ -3388,7 +3410,7 @@ section.testimonials {
 }
 
 .reviews-ref-subtitle {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   line-height: 1.65 !important;
@@ -3453,7 +3475,7 @@ section.testimonials {
   height: 44px !important;
   border-radius: 12px !important;
   color: #ffffff !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 700 !important;
   font-size: 15px !important;
   display: flex !important;
@@ -3478,7 +3500,7 @@ section.testimonials {
 }
 
 .review-ref-name {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -3493,7 +3515,7 @@ section.testimonials {
   background: #ede9fe !important;
   color: #7b4bf7 !important;
   border: 1px solid rgba(123, 75, 247, 0.2) !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11px !important;
   font-weight: 600 !important;
   padding: 3px 10px !important;
@@ -3513,7 +3535,7 @@ section.testimonials {
 }
 
 .review-ref-quote {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   font-weight: 400 !important;
   line-height: 1.68 !important;
@@ -3687,7 +3709,7 @@ section.testimonials {
 }
 
 .team-ref-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(30px, 3.8vw, 44px) !important;
   font-weight: 800 !important;
   line-height: 1.22 !important;
@@ -3704,7 +3726,7 @@ section.testimonials {
 }
 
 .team-ref-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
@@ -3761,13 +3783,13 @@ section.testimonials {
    UNIFIED HERO PALETTE, BACKGROUND & TYPOGRAPHY ACROSS ALL SECTIONS
    Exact harmony with Hero Section:
    • Backgrounds: Luminous pearl radial gradient alternating with crisp white
-   • Typography: Strict Poppins 800/700/600/400 hierarchy throughout
+   • Typography: Strict Urbanist 800/700/600/400 hierarchy throughout
    • Color Palette: Dark navy ink #11142e, Hero gradient, Violet #7b4bf7, Coral #ef5b52, Pearl
    ═══════════════════════════════════════════════════════════════════════════════ */
 
 /* ── Global Font Enforcements ── */
 body, html, main, div, p, span, a, button, input, textarea, select, h1, h2, h3, h4, h5, h6, li, blockquote, dt, dd {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 /* ── Unified Eyebrow Pill Kickers (Matching Hero Style) ── */
@@ -3775,7 +3797,7 @@ body, html, main, div, p, span, a, button, input, textarea, select, h1, h2, h3, 
 .kicker:not(.growth-banner .kicker) {
   display: inline-flex !important;
   align-items: center !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 600 !important;
   letter-spacing: 0.08em !important;
@@ -3804,7 +3826,7 @@ h2,
 #reviews-ref-title,
 #faq-title,
 #contact-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(30px, 3.6vw, 45px) !important;
   font-weight: 800 !important;
   color: #11142e !important;
@@ -3846,7 +3868,7 @@ p,
 .review-ref-quote,
 .contact__copy > p:not(.kicker),
 #faq .faq-list details p {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   line-height: 1.68 !important;
@@ -3859,7 +3881,7 @@ h3,
 .pillar-panel h3,
 .process-grid article h3,
 .contact-form h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -3877,13 +3899,13 @@ h3,
   border-bottom: 1px solid rgba(220, 230, 248, 0.85) !important;
 }
 .ady-stat-value {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   color: #0f172a !important;
   -webkit-text-fill-color: #0f172a !important;
 }
 .ady-stat-label {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 500 !important;
   color: #64748b !important;
   -webkit-text-fill-color: #64748b !important;
@@ -3911,14 +3933,14 @@ h3,
   border-color: rgba(123, 75, 247, 0.35) !important;
 }
 .service-ref-card__title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 19px !important;
   font-weight: 700 !important;
   color: #11142e !important;
   -webkit-text-fill-color: #11142e !important;
 }
 .service-ref-explore-btn {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 600 !important;
   color: #11142e !important;
@@ -3976,7 +3998,7 @@ h3,
 
 #about .pillar-panel h3,
 .pillar-panel h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 16.5px !important;
   font-weight: 600 !important;
   color: #11142e !important;
@@ -3999,7 +4021,7 @@ h3,
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #11142e !important;
@@ -4023,7 +4045,7 @@ h3,
   color: #de358d !important;
   background: transparent !important;
   -webkit-text-fill-color: #de358d !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
   padding: 0 !important;
@@ -4037,7 +4059,7 @@ h3,
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 600 !important;
   color: #7b4bf7 !important;
@@ -4074,33 +4096,33 @@ h3,
 }
 .badge-star-text b {
   color: #11142e !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 .badge-star-text span {
   color: #586882 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 .insights-title {
   color: #11142e !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 .insights-period {
   color: #586882 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 .meter-value {
   color: #11142e !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 700 !important;
 }
 .meter-label b {
   color: #11142e !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 700 !important;
 }
 .meter-label span {
   color: #586882 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 
 /* ── Section 6: Target Domain Expertise (#industries) ── */
@@ -4122,7 +4144,7 @@ h3,
   gap: 14px !important;
 }
 .domain-pill-text {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 600 !important;
   color: #11142e !important;
@@ -4138,7 +4160,7 @@ h3,
 }
 .growth-banner h2,
 #growth-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(28px, 3.3vw, 44px) !important;
   font-weight: 700 !important;
   color: #ffffff !important;
@@ -4156,7 +4178,7 @@ h3,
   -webkit-text-fill-color: transparent !important;
 }
 .growth-banner__action > p {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 400 !important;
   color: #94a3b8 !important;
   font-size: 16px !important;
@@ -4167,7 +4189,7 @@ h3,
   background: #ffffff !important;
   color: #7b4bf7 !important;
   -webkit-text-fill-color: #7b4bf7 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   border-radius: 999px !important;
   padding: 0 32px !important;
@@ -4214,7 +4236,7 @@ h3,
 }
 .growth-banner .stat-row div b,
 .growth-banner .stat-row b {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(30px, 3.2vw, 44px) !important;
   font-weight: 600 !important;
   color: #ffffff !important;
@@ -4226,7 +4248,7 @@ h3,
 }
 .growth-banner .stat-row div span,
 .growth-banner .stat-row span {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: rgba(255, 255, 255, 0.85) !important;
@@ -4288,7 +4310,7 @@ section.process {
   background: linear-gradient(135deg, rgba(239, 91, 82, 0.1) 0%, rgba(123, 75, 247, 0.1) 100%) !important;
   color: #ef5b52 !important;
   border: 1px solid rgba(239, 91, 82, 0.22) !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 700 !important;
   margin-bottom: 20px !important;
@@ -4302,7 +4324,7 @@ section.process {
   box-shadow: 0 6px 18px rgba(239, 91, 82, 0.35) !important;
 }
 .process-grid article h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 18px !important;
   font-weight: 700 !important;
   color: #0f172a !important;
@@ -4310,7 +4332,7 @@ section.process {
   margin: 0 0 10px 0 !important;
 }
 .process-grid article p {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   line-height: 1.65 !important;
   color: #586882 !important;
@@ -4344,7 +4366,7 @@ section.process {
 }
 
 .process-chip {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11px !important;
   font-weight: 500 !important;
   color: #475569 !important;
@@ -4401,7 +4423,7 @@ section.advantage {
   padding: 0 !important;
 }
 .advantage .check-list li {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   font-weight: 500 !important;
   color: #11142e !important;
@@ -4415,7 +4437,7 @@ section.advantage {
   border-radius: 12px !important;
   box-shadow: 0 10px 26px -4px rgba(15, 23, 42, 0.08) !important;
   color: #11142e !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 700 !important;
 }
 .advantage .badge b {
@@ -4423,7 +4445,7 @@ section.advantage {
   font-weight: 500 !important;
 }
 .advantage .text-link {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 600 !important;
   color: #7b4bf7 !important;
@@ -4470,7 +4492,7 @@ section.faq {
   box-shadow: 0 8px 24px -4px rgba(123, 75, 247, 0.08) !important;
 }
 #faq summary {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 16.5px !important;
   font-weight: 600 !important;
   color: #11142e !important;
@@ -4491,7 +4513,7 @@ section.faq {
 #faq details p {
   padding: 0 24px 22px !important;
   margin: 0 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   line-height: 1.68 !important;
   color: #586882 !important;
@@ -4529,14 +4551,14 @@ section.contact {
 }
 .contact-method b {
   display: block !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 700 !important;
   color: #11142e !important;
   margin-bottom: 2px !important;
 }
 .contact-method a {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   color: #586882 !important;
   text-decoration: none !important;
@@ -4553,7 +4575,7 @@ section.contact {
   padding: 38px 34px !important;
 }
 .contact-form h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -4561,13 +4583,13 @@ section.contact {
   line-height: 1.3 !important;
 }
 .contact-form > p {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   color: #586882 !important;
   margin: 0 0 24px 0 !important;
 }
 .contact-form label {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
   color: #11142e !important;
@@ -4575,7 +4597,7 @@ section.contact {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   background: #fbfdff !important;
   border: 1px solid rgba(200, 215, 245, 0.7) !important;
@@ -4596,7 +4618,7 @@ section.contact {
 .contact-form button[type="submit"] {
   background: #0b0e1b !important;
   color: #ffffff !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 600 !important;
   border-radius: 999px !important;
@@ -4626,7 +4648,7 @@ footer.ady-theme-footer {
   padding: 44px 0 22px 0 !important;
   position: relative !important;
   z-index: 10 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   overflow: hidden !important;
 }
 
@@ -4932,7 +4954,7 @@ footer.footer::before {
 #about .copy-block--dark > p {
   color: #586882 !important;
   -webkit-text-fill-color: #586882 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
@@ -4941,7 +4963,7 @@ footer.footer::before {
 
 #about .text-link {
   color: #7b4bf7 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -4963,7 +4985,7 @@ footer.footer::before {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
   background: none !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 800 !important;
   font-style: normal !important;
   text-shadow: 0 4px 18px rgba(0, 0, 0, 0.15) !important;
@@ -4977,7 +4999,7 @@ footer.footer::before {
   backdrop-filter: blur(8px) !important;
   display: inline-flex !important;
   align-items: center !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 600 !important;
   letter-spacing: 0.08em !important;
@@ -4994,7 +5016,7 @@ footer.footer::before {
 
 /* ═══════════════════════════════════════════════════════════════════════════════
    FINAL HERO HARMONIZATION & BOXES REMOVAL (MASTER SPECIFICATION)
-   1. Typography: Poppins 700 headings, Poppins 700 card titles, Poppins 400 body
+   1. Typography: Urbanist 700 headings, Urbanist 700 card titles, Urbanist 400 body
    2. Palette: #11142e headings, Hero Gradient accents, #586882 text, #7b4bf7 / #ef5b52
    3. Backgrounds: Alternating Pearl Radial Canvas / Crisp White
    4. Clear Answers (FAQ): Completely unboxed, modern sleek hairline accordion
@@ -5003,7 +5025,7 @@ footer.footer::before {
 
 /* ── Global Typography Unification ── */
 body, html, main, section, div, p, span, a, button, input, textarea, select, h1, h2, h3, h4, h5, h6, li, blockquote {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 /* ── Eyebrow Pill Kickers ── */
@@ -5012,7 +5034,7 @@ body, html, main, section, div, p, span, a, button, input, textarea, select, h1,
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12px !important;
   font-weight: 600 !important;
   letter-spacing: 0.08em !important;
@@ -5057,7 +5079,7 @@ h2,
 #reviews-ref-title,
 #faq-title,
 #contact-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(28px, 3.3vw, 44px) !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -5088,7 +5110,7 @@ h2 em,
   font-weight: inherit !important;
 }
 
-/* ── Subtitles, Descriptions, Body Copy (Poppins 400, #586882) ── */
+/* ── Subtitles, Descriptions, Body Copy (Urbanist 400, #586882) ── */
 p,
 .services-ref-desc,
 .service-ref-card__desc,
@@ -5100,7 +5122,7 @@ p,
 .review-ref-quote,
 .contact__copy > p:not(.kicker),
 .contact-form > p {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   line-height: 1.68 !important;
@@ -5108,13 +5130,13 @@ p,
   -webkit-text-fill-color: #586882 !important;
 }
 
-/* ── Card Titles & Sub-Headings (H3 — Poppins 700, #11142e) ── */
+/* ── Card Titles & Sub-Headings (H3 — Urbanist 700, #11142e) ── */
 h3,
 .service-ref-card__title,
 .pillar-panel h3,
 .process-grid article h3,
 .contact-form h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -5172,7 +5194,7 @@ h3,
 #team-expertise a.button {
   background: #0b0e1b !important;
   color: #ffffff !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 600 !important;
   border-radius: 999px !important;
@@ -5286,7 +5308,7 @@ section.faq {
 }
 
 #faq summary {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 16.5px !important;
   font-weight: 600 !important;
   color: #11142e !important;
@@ -5332,7 +5354,7 @@ section.faq {
 #faq details p {
   padding: 0 36px 24px 0 !important;
   margin: 0 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
@@ -5396,7 +5418,7 @@ section.contact {
 
 .contact-method b {
   display: block !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -5405,7 +5427,7 @@ section.contact {
 
 .contact-method a {
   display: block !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   font-weight: 400 !important;
   color: #586882 !important;
@@ -5429,7 +5451,7 @@ section.contact {
 }
 
 .contact-form h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -5438,7 +5460,7 @@ section.contact {
 }
 
 .contact-form > p {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   color: #586882 !important;
@@ -5460,7 +5482,7 @@ section.contact {
 }
 
 .contact-form label {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12px !important;
   font-weight: 600 !important;
   color: #11142e !important;
@@ -5476,7 +5498,7 @@ section.contact {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   font-weight: 400 !important;
   background: #fcfdfe !important;
@@ -5514,7 +5536,7 @@ section.contact {
 .contact-form button[type="submit"] {
   background: #0b0e1b !important;
   color: #ffffff !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15.5px !important;
   font-weight: 600 !important;
   border-radius: 999px !important;
@@ -5567,7 +5589,7 @@ section.contact {
 #contact h3,
 #contact .contact-form h3,
 .contact-form h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -5596,7 +5618,7 @@ section.contact {
    ═══════════════════════════════════════════════════════════════════════════════ */
 
 /* ── 1. Heading Weights & Sizes ── */
-/* All Section Headings (H1 & H2) -> Poppins 600 */
+/* All Section Headings (H1 & H2) -> Urbanist 600 */
 h1,
 h2,
 .ady-main-title,
@@ -5622,7 +5644,7 @@ h2,
 #faq-title,
 #contact-title,
 .contact h2 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   letter-spacing: -0.025em !important;
 }
@@ -5686,7 +5708,7 @@ h3,
 .contact-form h3,
 #contact h3,
 #contact .contact-form h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   font-size: 18.5px !important;
   line-height: 1.35 !important;
@@ -5694,7 +5716,7 @@ h3,
 
 .pillar-panel h3,
 #about .pillar-panel h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   font-size: 16.5px !important;
   line-height: 1.45 !important;
@@ -5702,7 +5724,7 @@ h3,
 
 .review-ref-name,
 footer.footer h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   font-size: 15px !important;
 }
@@ -5741,7 +5763,7 @@ footer.footer h3 {
 
 #about .pillar-panel h3,
 .pillar-panel h3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
   color: #11142e !important;
   -webkit-text-fill-color: #11142e !important;
@@ -5767,7 +5789,7 @@ footer.footer h3 {
   border-top: 1px solid rgba(215, 225, 245, 0.75) !important;
   color: #11142e !important;
   -webkit-text-fill-color: #11142e !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
 }
@@ -5787,7 +5809,7 @@ footer.footer h3 {
   color: #de358d !important;
   background: transparent !important;
   -webkit-text-fill-color: #de358d !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
   padding: 0 !important;
@@ -5875,7 +5897,7 @@ section.advantage {
   color: #7b4bf7 !important;
   -webkit-text-fill-color: #7b4bf7 !important;
   border-radius: 999px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-weight: 600 !important;
 }
 
@@ -6080,7 +6102,7 @@ section.advantage {
 }
 
 .ady-stat-value {
-  font-family: var(--font-family-primary), 'Poppins', sans-serif !important;
+  font-family: var(--font-family-primary), 'Urbanist', sans-serif !important;
   font-size: clamp(30px, 3.2vw, 42px) !important;
   font-weight: 600 !important;
   color: #0f172a !important;
@@ -6091,7 +6113,7 @@ section.advantage {
 }
 
 .ady-stat-label {
-  font-family: var(--font-family-primary), 'Poppins', sans-serif !important;
+  font-family: var(--font-family-primary), 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #64748b !important;
@@ -6153,7 +6175,7 @@ section.advantage {
 
 /* Services Subtitle: exactly 2 balanced lines */
 .services-ref-subtitle {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   line-height: 1.6 !important;
@@ -6285,7 +6307,7 @@ button.ady-nav-link {
 }
 
 .ady-drop-col-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
@@ -6300,7 +6322,7 @@ button.ady-nav-link {
   display: block !important;
   padding: 7px 10px !important;
   border-radius: 8px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 500 !important;
   color: #334155 !important;
@@ -6340,7 +6362,7 @@ button.ady-nav-link {
 }
 
 .domain-pill-text {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13px !important;
   font-weight: 500 !important;
   color: #1e293b !important;
@@ -6462,7 +6484,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-step-num {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11px !important;
   font-weight: 700 !important;
   color: #7b4bf7 !important;
@@ -6472,7 +6494,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-step-name {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -6481,7 +6503,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-step-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11.5px !important;
   font-weight: 400 !important;
   color: #64748b !important;
@@ -6563,7 +6585,7 @@ button.ady-nav-link {
   align-items: center !important;
   gap: 10px !important;
   z-index: 5 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 
 .sys-viz-badge-top-left {
@@ -6614,7 +6636,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-node-pill {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11.5px !important;
   font-weight: 600 !important;
   letter-spacing: 0.04em !important;
@@ -6642,7 +6664,7 @@ button.ady-nav-link {
 
 /* Active Subsystem Title & Desc */
 .sys-viz-active-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(22px, 2.4vw, 28px) !important;
   font-weight: 800 !important;
   line-height: 1.3 !important;
@@ -6652,7 +6674,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-active-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   line-height: 1.65 !important;
   color: #586882 !important;
@@ -6694,7 +6716,7 @@ button.ady-nav-link {
   border-radius: 12px !important;
   background: #ffffff !important;
   border: 1px solid #eef2f8 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 500 !important;
   color: #1e293b !important;
@@ -6740,7 +6762,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-flywheel-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 700 !important;
   color: #11142e !important;
@@ -6798,7 +6820,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-flywheel-num {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11px !important;
   font-weight: 700 !important;
   color: #7b4bf7 !important;
@@ -6813,7 +6835,7 @@ button.ady-nav-link {
 }
 
 .sys-viz-flywheel-label {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 600 !important;
   color: #1e293b !important;
@@ -6898,7 +6920,7 @@ button.ady-nav-link {
 }
 
 .expert-box-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   color: #0f172a !important;
@@ -6906,7 +6928,7 @@ button.ady-nav-link {
 }
 
 .expert-box-text {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   line-height: 1.65 !important;
   color: #586882 !important;
@@ -6927,13 +6949,13 @@ button.ady-nav-link {
 .expert-compact-cta-card h4 {
   color: #0f172a !important;
   -webkit-text-fill-color: #0f172a !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 
 .expert-compact-cta-card p {
   color: #475569 !important;
   -webkit-text-fill-color: #475569 !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
 }
 
 /* Top Header Grid: Left Text & Right Tablet Card */
@@ -6963,7 +6985,7 @@ button.ady-nav-link {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11.5px !important;
   font-weight: 700 !important;
   letter-spacing: 0.12em !important;
@@ -6986,7 +7008,7 @@ button.ady-nav-link {
 }
 
 .expert-main-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(26px, 3.2vw, 40px) !important;
   font-weight: 800 !important;
   color: #0f172a !important;
@@ -6996,7 +7018,7 @@ button.ady-nav-link {
 }
 
 .expert-main-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   line-height: 1.65 !important;
   color: #586882 !important;
@@ -7054,7 +7076,7 @@ button.ady-nav-link {
 }
 
 .expert-section-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 24px !important;
   font-weight: 800 !important;
   color: #0f172a !important;
@@ -7063,7 +7085,7 @@ button.ady-nav-link {
 }
 
 .expert-overview-text {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14.5px !important;
   line-height: 1.65 !important;
   color: #586882 !important;
@@ -7118,7 +7140,7 @@ button.ady-nav-link {
 }
 
 .expert-included-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 20px !important;
   font-weight: 800 !important;
   color: #0f172a !important;
@@ -7134,7 +7156,7 @@ button.ady-nav-link {
 }
 
 .expert-included-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   line-height: 1.6 !important;
   color: #64748b !important;
@@ -7159,7 +7181,7 @@ button.ady-nav-link {
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13px !important;
   font-weight: 600 !important;
   color: #1e293b !important;
@@ -7193,7 +7215,7 @@ button.ady-nav-link {
 }
 
 .expert-recent-title {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 18px !important;
   font-weight: 800 !important;
   color: #0f172a !important;
@@ -7213,7 +7235,7 @@ button.ady-nav-link {
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13px !important;
   font-weight: 600 !important;
   color: #334155 !important;
@@ -7281,7 +7303,7 @@ button.ady-nav-link {
 }
 
 .expert-cta-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(24px, 2.5vw, 28px) !important;
   font-weight: 800 !important;
   color: #ffffff !important;
@@ -7291,7 +7313,7 @@ button.ady-nav-link {
 }
 
 .expert-cta-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   line-height: 1.6 !important;
   color: #cbd5e1 !important;
@@ -7636,7 +7658,7 @@ button.ady-nav-link {
 
 .team-proof-chip__title {
   color: #11142e !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
@@ -7647,7 +7669,7 @@ button.ady-nav-link {
 }
 
 .team-proof-chip__sub {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 11.5px !important;
   line-height: 1.2 !important;
 }
@@ -7714,7 +7736,7 @@ button.ady-nav-link {
 }
 
 .advantage-copy-block .ref-pill-kicker {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   padding: 6px 16px !important;
@@ -7729,7 +7751,7 @@ button.ady-nav-link {
 }
 
 .advantage-exact-heading {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: clamp(20px, 2.2vw, 28px) !important;
   font-weight: 600 !important;
   line-height: 1.25 !important;
@@ -7751,7 +7773,7 @@ button.ady-nav-link {
 }
 
 .advantage-exact-desc {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 15px !important;
   line-height: 1.65 !important;
   color: #64748b !important;
@@ -7811,7 +7833,7 @@ button.ady-nav-link {
 .advantage-feature-text {
   color: #0f172a !important;
   -webkit-text-fill-color: #0f172a !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 14px !important;
   font-weight: 600 !important;
   line-height: 1.3 !important;

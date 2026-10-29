@@ -23,7 +23,7 @@ const config: Config = {
         muted: "#a1a1aa", // zinc-400
       },
       fontFamily: {
-        sans: ["var(--font-jakarta)", "sans-serif"],
+        sans: ["var(--font-urbanist)", "Urbanist", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       fontSize: {

@@ -50,6 +50,55 @@ const rawMap: Record<string, ServicePageData> = {
   ...marketingData,
   ...aiSystemsData,
   ...aiArchitectureData,
+  "performance-marketing": marketingData["digital-marketing-growth"],
+  "ai-automation": {
+    ...aiSystemsData["whatsapp-crm"],
+    hero: {
+      badge: "ENTERPRISE AI ARCHITECTURE • AUTONOMOUS AGENTS",
+      title: <>Automate Revenue Operations with <span className="text-primary underline decoration-accent/60 decoration-4">Autonomous AI &amp; CRM Agents</span></>,
+      description: "Deploy cognitive lead qualification agents, bi-directional CRM syncing, and multi-channel conversational AI workflows that convert prospects instantly."
+    }
+  },
+  "branding-creative-services": {
+    ...marketingData["social-media-marketing"],
+    hero: {
+      badge: "BRAND IDENTITY & CREATIVE SERVICES",
+      title: <>Craft Memorable Brand Authority With <span className="text-primary underline decoration-accent/60 decoration-4">Creative Design Systems</span></>,
+      description: "Elevate your market perception with high-conversion visual design, direct-response ad creative suites, and authoritative brand architecture."
+    }
+  },
+  "ecommerce-solutions": {
+    ...marketingData["ecommerce-marketing"],
+    hero: {
+      badge: "HEADLESS ECOMMERCE • HIGH CONVERSION",
+      title: <>Scale Online Store Revenue With <span className="text-primary underline decoration-accent/60 decoration-4">Composable E-Commerce</span></>,
+      description: "Sub-second Next.js storefronts, automated cart recovery sequences, and algorithmic product recommendation funnels driving high AOV."
+    }
+  },
+  "mobile-app-development": {
+    ...marketingData["web-design-development"],
+    hero: {
+      badge: "CROSS-PLATFORM MOBILE ENGINEERING",
+      title: <>Deploy Native &amp; Hybrid Apps With <span className="text-primary underline decoration-accent/60 decoration-4">React Native &amp; Swift</span></>,
+      description: "High-performance iOS and Android applications engineered for fluid 60fps responsiveness, offline-first reliability, and seamless API sync."
+    }
+  },
+  "ui-ux-product-design": {
+    ...marketingData["web-design-development"],
+    hero: {
+      badge: "CONVERSION-FIRST PRODUCT DESIGN",
+      title: <>Engineered For Retention With <span className="text-primary underline decoration-accent/60 decoration-4">Modern UI/UX Design Systems</span></>,
+      description: "Data-driven user interface and experience design focused on eliminating checkout friction, maximizing session duration, and scaling conversion rates."
+    }
+  },
+  "web-software-development": {
+    ...marketingData["web-design-development"],
+    hero: {
+      badge: "NEXT.JS 15 & REACT WEB SOFTWARE",
+      title: <>Sub-Second Load Times With <span className="text-primary underline decoration-accent/60 decoration-4">Modern Web Architecture</span></>,
+      description: "Ultra-fast Next.js web applications, headless CMS backends, and server-side tracking pipelines engineered for 100/100 Core Web Vitals."
+    }
+  },
 };
 
 export const serviceDataMap: Record<string, ServicePageData> = new Proxy(rawMap, {

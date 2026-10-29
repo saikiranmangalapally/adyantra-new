@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import ServicesScrollingBar from "@/components/sections/ServicesScrollingBar";
-import HeroWaveformStage from "@/components/hero/HeroWaveformStage";
-import OurTeamExpertiseSection from "@/components/sections/OurTeamExpertiseSection";
-import { DomainIcon } from "@/components/icons/DomainIcons";
+import UnifiedPageHero from "@/components/hero/UnifiedPageHero";
+import KPTeamExpertise from "@/components/kanakkupillai/KPTeamExpertise";
+import KPFAQAccordion from "@/components/kanakkupillai/KPFAQAccordion";
+import KPContactSection from "@/components/kanakkupillai/KPContactSection";
+import { ArrowRight, Sparkles, Laptop, Rocket, Zap, HeartHandshake } from "lucide-react";
 
 export default function CareerPage() {
   const [activeDept, setActiveDept] = useState("all");
@@ -52,121 +53,115 @@ export default function CareerPage() {
       tech: ["Ahrefs", "Screaming Frog", "Semrush", "Schema.org", "BigQuery"],
     },
     {
-      id: "product-designer",
+      id: "cro-designer",
       dept: "design",
-      deptLabel: "Design",
-      title: "Senior UI/UX & Motion Designer",
+      deptLabel: "Design Systems",
+      title: "UI/UX & Conversion Rate Designer",
       location: "HITEC City, Hyderabad (Hybrid)",
       type: "Full-Time",
-      desc: "Design premium, conversion-obsessed web interfaces, design systems in Figma, 3D web assets, and micro-interactions with smooth UX fidelity.",
-      tech: ["Figma", "Framer", "Spline / Blender", "CSS Animation", "Design Systems"],
+      desc: "Design high-converting Figma design systems, direct-response ad creative bundles, and interactive landing pages backed by heatmaps.",
+      tech: ["Figma", "Design Tokens", "Hotjar", "After Effects", "Tailwind CSS"],
     },
   ];
 
   const perks = [
     {
-      title: "Competitive Compensation & ESOPs",
-      desc: "Top-tier base salary benchmarked against top product agencies, with equity options for core engineering contributors.",
-      icon: "https://img.icons8.com/?size=96&id=852&format=png&color=ef5b52",
+      icon: Laptop,
+      title: "Top-Tier Workstations",
+      desc: "Latest Apple Silicon M-series hardware, 4K displays, and your choice of paid developer tools & IDEs.",
     },
     {
-      title: "Annual Learning & AI Budget",
-      desc: "₹1,00,000+ per year for courses, LLM subscriptions, technical books, API testing credits, and developer tools.",
-      icon: "https://img.icons8.com/?size=96&id=4052&format=png&color=0284c7",
+      icon: Rocket,
+      title: "High-Autonomy Culture",
+      desc: "Zero bureaucracy or micro-management. Own your projects from architectural blueprinting to production deploy.",
     },
     {
-      title: "Top-Tier Hardware",
-      desc: "Latest Apple MacBook Pro M3/M4 or custom Linux dev workstation with dual 4K external monitors.",
-      icon: "https://img.icons8.com/?size=96&id=16412&format=png&color=ef5b52",
+      icon: Zap,
+      title: "Generous Learning Stipend",
+      desc: "Annual allowance for technical conferences, certifications, books, and frontier AI model subscriptions.",
     },
     {
-      title: "Flexible Hybrid Autonomy",
-      desc: "Work from our modern HITEC City collaborative studio or from home. We measure outcomes, not clocked seat time.",
-      icon: "https://img.icons8.com/?size=96&id=2854&format=png&color=7b4bf7",
+      icon: HeartHandshake,
+      title: "Comprehensive Wellness",
+      desc: "Premium family health insurance, flexible hybrid schedules, and dedicated wellness breaks.",
+    },
+  ];
+
+  const careerFaqs = [
+    {
+      q: "Where is the Adyantra engineering office located?",
+      a: "Our core engineering studio is located in HITEC City, Hyderabad, Telangana. We support hybrid work models with in-person collaboration sprints.",
+    },
+    {
+      q: "What is your interview and evaluation process?",
+      a: "Our process consists of 3 stages: an initial 20-minute cultural alignment conversation, a practical take-home or live technical architecture session with senior peers, and a final leadership conversation.",
+    },
+    {
+      q: "Do you hire remote team members?",
+      a: "Yes. Certain roles, especially Technical SEO and specialized engineering, are open to remote candidates located across India and overlapping time zones.",
     },
   ];
 
   const filteredJobs =
-    activeDept === "all" ? jobs : jobs.filter((j) => j.dept === activeDept);
+    activeDept === "all"
+      ? jobs
+      : jobs.filter((j) => j.dept === activeDept);
 
   return (
-    <main className="min-h-screen overflow-x-hidden">
-      {/* ═══════════════════ SECTION 1: FLAGSHIP HERO (HOME PAGE THEME) ═══════════════════ */}
-      <section className="ady-hero-section relative overflow-hidden" id="home">
-        <div className="ady-canvas-container">
-          <div className="ady-hero-card">
-            {/* 3D Concentric Oval Tunnel */}
-            <div className="ady-tunnel-container" id="adyTunnel">
-              <div className="ady-tunnel-ring ady-ring-outermost" />
-              <div className="ady-tunnel-ring ady-ring-7" />
-              <div className="ady-tunnel-ring ady-ring-6" />
-              <div className="ady-tunnel-ring ady-ring-5" />
-              <div className="ady-tunnel-ring ady-ring-4" />
-              <div className="ady-tunnel-ring ady-ring-3" />
-              <div className="ady-tunnel-ring ady-ring-2" />
-              <div className="ady-tunnel-ring ady-ring-1" />
-              <div className="ady-tunnel-ring ady-center-well" />
-            </div>
+    <main className="min-h-screen overflow-x-hidden font-sans bg-[#FFFFFF] text-[#12304A]">
+      {/* ═══════════════════ HERO ═══════════════════ */}
+      <UnifiedPageHero
+        badge="JOIN OUR CORE TEAM • HITEC CITY, HYDERABAD"
+        ratingText="4.9 / 5 RATING"
+        headlinePrefix="Build The Future Of"
+        highlightedText="Autonomous AI & Growth Systems"
+        headlineSuffix="With Senior Engineers."
+        description="Work with a high-density team of senior software engineers, AI architects, and performance marketers in HITEC City, Hyderabad. Zero red tape, high autonomy."
+        primaryCtaText="VIEW OPEN ROLES"
+        primaryCtaHref="#open-roles"
+        secondaryCtaText="CULTURE & PERKS"
+        secondaryCtaHref="#culture"
+        serviceTitle="Full-Stack & AI Engineering"
+        stats={[
+          { val: "Top 1%", label: "Senior Engineering Density" },
+          { val: "100%", label: "Direct In-House Culture" },
+          { val: "HITEC City", label: "Hyderabad Tech Hub" },
+          { val: "Flexible", label: "Hybrid Work Culture" },
+        ]}
+      />
 
-            {/* Typography */}
-            <div className="ady-hero-content">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/5 border border-slate-900/10 text-xs font-semibold tracking-wider text-[#ef5b52] mb-4 shadow-xs">
-                <span className="w-2 h-2 rounded-full bg-[#ef5b52] animate-pulse" />
-                JOIN OUR CORE TEAM
+      {/* ═══════════════════ OPEN ROLES SECTION ═══════════════════ */}
+      <section className="py-12 sm:py-14 lg:py-16 bg-[#FAFBFC] border-b border-[#DCE3EB] font-sans relative overflow-hidden" id="open-roles">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Section Header: Matching Exact Image Style */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14">
+            <div>
+              {/* Tagline Badge with Golden Yellow Line */}
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-xs sm:text-[13px] font-medium uppercase tracking-widest text-[#12304A] font-sans">
+                  CAREER OPPORTUNITIES
+                </span>
+                <span className="w-14 h-[2px] bg-[#FFC400] rounded-full inline-block" />
               </div>
 
-              <h1 className="ady-main-title">
-                <span className="ady-title-line1">Build The Future Of</span>
-                <span className="ady-title-line2">Autonomous Growth &amp;</span>
-                <span className="ady-title-line3">Digital Engineering.</span>
-              </h1>
-              <p className="ady-subtitle">
-                Work with a high-density team of senior software engineers, AI architects, and performance marketers in HITEC City, Hyderabad.
+              {/* Two-Line Headline */}
+              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-medium tracking-tight leading-[1.12] font-sans text-[#12304A]">
+                Open Positions Across <br />
+                <span className="text-[#FFC400]">Engineering &amp; Growth</span>
+              </h2>
+            </div>
+
+            {/* Right Subhead Paragraph */}
+            <div className="max-w-md">
+              <p className="text-base sm:text-[17px] font-normal leading-relaxed font-sans text-[#64748B]">
+                Explore active openings and apply directly to work on high-impact projects alongside senior practitioners.
               </p>
-
-              {/* Action Buttons */}
-              <div className="ady-cta-group">
-                <a href="#open-roles" className="ady-btn-dark">
-                  <span>View Open Roles</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </a>
-                <a href="#culture" className="ady-btn-ghost">
-                  <span>Culture &amp; Perks</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
             </div>
-
-            {/* Waveform Stage with Unbroken Luminous Curve, Floating Squircles & AI Assistant */}
-            <HeroWaveformStage />
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════ SERVICES SCROLLING SECTION ═══════════════════ */}
-      <ServicesScrollingBar />
-
-      {/* ═══════════════════ SECTION 2: OPEN ROLES BOARD (HOME PAGE CARD STYLE) ═══════════════════ */}
-      <section className="section services-ref-section" id="open-roles" aria-labelledby="roles-title">
-        <div className="shell max-w-5xl mx-auto">
-          <div className="services-ref-header services-ref-header--centered">
-            <span className="ref-pill-kicker">CAREER OPPORTUNITIES</span>
-            <h2 id="roles-title" className="services-ref-heading">
-              Open Positions Across <span className="ady-gradient-text">Engineering &amp; Growth</span>
-            </h2>
-            <p className="services-ref-subtitle">
-              Explore active openings and apply directly to work on high-impact projects.
-            </p>
           </div>
 
           {/* Department Filter Tabs */}
-          <div className="services-filter-tabs mb-10">
+          <div className="flex flex-wrap gap-2.5 mb-10">
             {[
               { id: "all", label: `ALL ROLES (${jobs.length})` },
               { id: "ai", label: "AI SYSTEMS" },
@@ -177,40 +172,43 @@ export default function CareerPage() {
               <button
                 key={d.id}
                 onClick={() => setActiveDept(d.id)}
-                className={`services-tab ${activeDept === d.id ? "services-tab--active" : ""}`}
+                className={`px-5 py-2.5 rounded-full text-xs font-medium tracking-wider transition-all duration-200 cursor-pointer font-sans ${
+                  activeDept === d.id
+                    ? "bg-[#12304A] text-white shadow-sm"
+                    : "bg-[#FFFFFF] text-[#64748B] hover:text-[#12304A] border border-[#DCE3EB] hover:bg-[#F5F7FA]"
+                }`}
               >
                 {d.label}
               </button>
             ))}
           </div>
 
-          {/* Job Cards in Home Page Ref Card Style */}
+          {/* Job Cards */}
           <div className="space-y-4">
             {filteredJobs.map((job) => (
               <div
                 key={job.id}
-                className="service-ref-card p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6"
-                style={{ textAlign: "left", alignItems: "flex-start" }}
+                className="rounded-[24px] bg-[#FFFFFF] border border-[#DCE3EB] p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-[#FFC400] hover:shadow-lg transition-all duration-300 shadow-[0_4px_20px_rgba(18,48,74,0.04)]"
               >
                 <div className="max-w-2xl">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <span className="text-[10px] font-bold text-[#ef5b52] px-2.5 py-0.5 rounded-full bg-coral-500/10 border border-[#ef5b52]/20 uppercase tracking-wide">
+                  <div className="flex flex-wrap items-center gap-2 mb-2.5">
+                    <span className="text-[11px] font-semibold text-[#12304A] px-2.5 py-0.5 rounded-full bg-[#EAF2F9] border border-[#DCE3EB] uppercase tracking-wide font-sans">
                       {job.deptLabel}
                     </span>
-                    <span className="text-xs text-slate-400">&bull;</span>
-                    <span className="text-xs font-medium text-slate-500">{job.location}</span>
-                    <span className="text-xs text-slate-400">&bull;</span>
-                    <span className="text-xs font-medium text-slate-500">{job.type}</span>
+                    <span className="text-xs text-[#64748B]">&bull;</span>
+                    <span className="text-xs font-normal text-[#64748B] font-sans">{job.location}</span>
+                    <span className="text-xs text-[#64748B]">&bull;</span>
+                    <span className="text-xs font-normal text-[#64748B] font-sans">{job.type}</span>
                   </div>
 
-                  <h3 className="service-ref-card__title mb-2">{job.title}</h3>
-                  <p className="service-ref-card__desc mb-4" style={{ WebkitLineClamp: "none" }}>{job.desc}</p>
+                  <h3 className="text-xl font-medium text-[#12304A] mb-2 font-sans">{job.title}</h3>
+                  <p className="text-xs sm:text-[13.5px] text-[#64748B] font-normal leading-relaxed mb-4 font-sans">{job.desc}</p>
 
                   <div className="flex flex-wrap gap-1.5">
                     {job.tech.map((t, idx) => (
                       <span
                         key={idx}
-                        className="text-[11px] font-medium text-slate-700 px-2.5 py-0.5 rounded-full bg-slate-100 border border-slate-200"
+                        className="text-[11px] font-normal text-[#12304A] px-2.5 py-0.5 rounded-full bg-[#FAFBFC] border border-[#DCE3EB] font-sans"
                       >
                         {t}
                       </span>
@@ -221,160 +219,78 @@ export default function CareerPage() {
                 <div className="shrink-0 self-start md:self-center">
                   <Link
                     href="/contact"
-                    className="service-ref-readmore-btn"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#12304A] hover:bg-[#1a4469] text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md group cursor-pointer font-sans"
                   >
                     <span>Apply Now</span>
-                    <span className="readmore-btn-arrow">&rarr;</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 3: CULTURE & PERKS ═══════════════════ */}
-      <section className="section py-20 bg-slate-50/50 border-t border-slate-100" id="culture">
-        <div className="shell">
-          <div className="section-heading section-heading--center">
-            <span className="ref-pill-kicker">LIFE AT ADYANTRA</span>
-            <h2>
-              Invested In Your <span className="ady-gradient-text">Long-Term Mastery</span>
-            </h2>
-            <p>
-              We believe elite talent does its best work when equipped with the best tools, complete autonomy, and competitive incentives.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {perks.map((p, i) => (
-              <div key={i} className="service-ref-card p-6 flex flex-col justify-between" style={{ textAlign: "left" }}>
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-5">
-                    <img src={p.icon} width="24" height="24" alt={p.title} />
-                  </div>
-                  <h3 className="service-ref-card__title mb-2 text-base">{p.title}</h3>
-                  <p className="service-ref-card__desc text-xs" style={{ WebkitLineClamp: "none" }}>{p.desc}</p>
-                </div>
+      {/* ═══════════════════ CULTURE & PERKS ═══════════════════ */}
+      <section className="py-12 sm:py-14 lg:py-16 bg-[#FFFFFF] border-b border-[#DCE3EB] font-sans relative overflow-hidden" id="culture">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14">
+            <div>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-xs sm:text-[13px] font-medium uppercase tracking-widest text-[#12304A] font-sans">
+                  LIFE AT ADYANTRA
+                </span>
+                <span className="w-14 h-[2px] bg-[#FFC400] rounded-full inline-block" />
               </div>
-            ))}
+
+              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-medium tracking-tight leading-[1.12] font-sans text-[#12304A]">
+                Invested In Your <br />
+                <span className="text-[#FFC400]">Long-Term Mastery</span>
+              </h2>
+            </div>
+
+            <div className="max-w-md">
+              <p className="text-base sm:text-[17px] font-normal leading-relaxed font-sans text-[#64748B]">
+                We believe elite talent does its best work when equipped with the best tools, complete autonomy, and competitive incentives.
+              </p>
+            </div>
           </div>
+
+          {/* 4 Perk Cards with Decreased, Balanced Icons */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {perks.map((perk, idx) => {
+              const Icon = perk.icon;
+              return (
+                <div
+                  key={idx}
+                  className="rounded-[28px] bg-[#FFFFFF] border border-[#DCE3EB] p-6 sm:p-7 shadow-[0_4px_20px_rgba(18,48,74,0.04)] hover:border-[#FFC400] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5"
+                >
+                  <div>
+                    <div className="w-10 h-10 rounded-xl bg-[#EAF2F9] border border-[#DCE3EB] text-[#12304A] group-hover:bg-[#12304A] group-hover:text-[#FFC400] flex items-center justify-center shrink-0 shadow-xs transition-all duration-300 mb-5">
+                      <Icon className="w-4.5 h-4.5 stroke-[2.2]" />
+                    </div>
+                    <h3 className="text-lg font-medium text-[#12304A] mb-2 font-sans">{perk.title}</h3>
+                    <p className="text-xs sm:text-[13.5px] text-[#64748B] font-normal leading-relaxed font-sans">{perk.desc}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
         </div>
       </section>
 
-      {/* ═══════════════════ SECTION 4: TARGET DOMAIN EXPERTISE MARQUEE ═══════════════════ */}
-      <section className="section industries-ref-section" id="industries" aria-labelledby="industries-ref-title">
-        <div className="industries-ref-glow" />
-        <div className="shell">
-          <div className="section-heading section-heading--center">
-            <span className="ref-pill-kicker">TARGET DOMAIN EXPERTISE</span>
-            <h2 id="industries-ref-title" className="industries-ref-heading">
-              Domains <span className="ady-gradient-text">We Serve</span>
-            </h2>
-            <p className="industries-ref-subtitle">
-              Custom digital marketing strategies and AI automation solutions tailored for high-growth business sectors.
-            </p>
-          </div>
-        </div>
+      {/* ═══════════════════ SENIOR EXECUTION SQUADS ═══════════════════ */}
+      <KPTeamExpertise />
 
-        <div className="domains-marquee-wrap">
-          <div className="domains-marquee-track">
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Education &amp; Academies</span>
-              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
-              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
-              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
-              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">IT &amp; Software Enterprises</span>
-              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Real Estate &amp; Housing</span>
-              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Healthcare &amp; Clinics</span>
-              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
-              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
-            </div>
+      {/* ═══════════════════ FREQUENTLY ASKED QUESTIONS ═══════════════════ */}
+      <KPFAQAccordion customFaqs={careerFaqs} />
 
-            {/* Duplicate Set for Seamless Loop */}
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Education &amp; Academies</span>
-              <span className="domain-pill-icon"><DomainIcon name="education" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Fashion &amp; D2C Apparel</span>
-              <span className="domain-pill-icon"><DomainIcon name="fashion" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">NGOs &amp; Non-Profits</span>
-              <span className="domain-pill-icon"><DomainIcon name="ngo" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Other Enterprises &amp; Businesses</span>
-              <span className="domain-pill-icon"><DomainIcon name="enterprise" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">IT &amp; Software Enterprises</span>
-              <span className="domain-pill-icon"><DomainIcon name="software" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Real Estate &amp; Housing</span>
-              <span className="domain-pill-icon"><DomainIcon name="realestate" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">Healthcare &amp; Clinics</span>
-              <span className="domain-pill-icon"><DomainIcon name="healthcare" /></span>
-            </div>
-            <div className="domain-pill-card">
-              <span className="domain-pill-text">E-Commerce &amp; Retail Brands</span>
-              <span className="domain-pill-icon"><DomainIcon name="ecommerce" /></span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════ SECTION 5: ACCELERATE YOUR REVENUE BANNER ═══════════════════ */}
-      <section className="growth-banner" id="growth-banner">
-        <div className="shell">
-          <div>
-            <p className="kicker">Accelerate your career</p>
-            <h2 id="growth-title">
-              Don&apos;t see your specific role? <em>Pitch us your superpower.</em>
-            </h2>
-          </div>
-          <div className="growth-banner__action">
-            <p>We are always excited to meet exceptional engineers, designers, and growth practitioners. Send us your GitHub, portfolio, or proof of work.</p>
-            <a className="button button--coral" href="mailto:careers@adyantra.in">
-              Send Open Application <b>&rarr;</b>
-            </a>
-          </div>
-          <div className="stat-row" aria-label="Adyantra culture metrics">
-            <div><b>100%</b><span>Autonomy &amp; Ownership</span></div>
-            <div><b>₹1.0L+</b><span>Annual Learning Budget</span></div>
-            <div><b>Hybrid</b><span>HITEC City Studio</span></div>
-            <div><b>Top 1%</b><span>Engineering Standards</span></div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════ SECTION 6: OUR TEAM & EXPERTISE ═══════════════════ */}
-      <OurTeamExpertiseSection />
+      {/* ═══════════════════ DIRECT CONTACT & AUDIT FORM ═══════════════════ */}
+      <KPContactSection />
     </main>
   );
 }

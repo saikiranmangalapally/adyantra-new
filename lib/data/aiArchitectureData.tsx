@@ -204,5 +204,203 @@ export const aiArchitectureData: Record<string, ServicePageData> = {
       { q: "Is our business phone number safe from bans on WhatsApp?", a: "Yes. By using the official Meta WhatsApp Business Cloud API through verified Meta Business accounts, your number is completely protected from unapproved third-party bot bans." },
       { q: "Can multiple team members manage customer chats simultaneously?", a: "Yes. We deploy a multi-agent team inbox where incoming conversations are auto-routed to available sales representatives with full customer CRM history visible." }
     ]
+  },
+
+  "ai-system-design": {
+    hero: {
+      badge: "AI SYSTEM DESIGN & ARCHITECTURE",
+      title: <>Blueprint Enterprise AI Systems Built For <span className="text-primary underline decoration-accent/60 decoration-4">Deterministic Scale</span></>,
+      description: "We engineer production-grade enterprise AI infrastructure, model selection pipelines, and cognitive reasoning topologies tailored to your operational workflows."
+    },
+    about: {
+      title: "Engineered For Scalable Business Growth",
+      paragraphs: [
+        "In a rapidly evolving digital marketplace, relying on legacy processes leads to operational bottlenecks and lost revenue. Adyantra Digital builds modern, high-efficiency digital ecosystems tailored to your strategic objectives.",
+        "Our multi-disciplinary team of engineers, growth strategists, and AI architects work together to design, deploy, and optimize end-to-end solutions that deliver measurable ROI."
+      ],
+      pillars: [
+        "Multi-Layer LLM Orchestration & State Machine Design",
+        "Deterministic Vector Database & RAG Topologies (Qdrant & Pinecone)",
+        "Automated Model Evaluation, Latency & Token Benchmarking",
+        "Enterprise Guardrail Frameworks & PII Masking Filters",
+        "High-Concurrency Microservices on Kubernetes & Docker",
+        "Continuous Telemetry, Token Observability & Cost Caps"
+      ]
+    },
+    intro: {
+      tagline: "Strategic AI Architecture",
+      headline: "Engineering Scalable AI Infrastructure",
+      description: "From vector storage and embedding models to deterministic reasoning guardrails, we eliminate latency, hallucinations, and infrastructure bottlenecks."
+    },
+    subServices: [
+      { title: "Cognitive Architecture Design", desc: "Designing multi-layer LLM orchestration loops and state machines for deterministic execution.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-architecture.svg" },
+      { title: "Vector Database & RAG Topologies", desc: "Enterprise retrieval-augmented generation schemas with zero hallucination risk.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-chatbots.svg" },
+      { title: "Model Evaluation & Benchmarking", desc: "Systematic latency, throughput, and token cost benchmarking across frontier LLMs.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" },
+      { title: "AI Safety & Guardrail Frameworks", desc: "Adversarial testing, input sanitization, and PII protection for enterprise compliance.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" }
+    ],
+    processSteps: [
+      { title: "Enterprise Architecture Discovery", description: "Auditing internal APIs, database topologies, security requirements, and data governance policies.", timeline: "Week 1" },
+      { title: "System Blueprint & Model Selection", description: "Designing deterministic agent graphs, context windows, vector indexing pipelines, and cost models.", timeline: "Weeks 2-3" },
+      { title: "Prototype & Guardrail Hardening", description: "Implementing strict eval suites, zero-hallucination guardrails, and adversarial red-teaming.", timeline: "Weeks 4-5" },
+      { title: "Production Deployment & Observability", description: "Deploying high-throughput endpoints with sub-second latency tracking and automated fallback circuits.", timeline: "Ongoing" }
+    ],
+    whyChooseUs: [
+      { title: "Senior AI Infrastructure Engineers", description: "Our architects have deployed production ML and LLM pipelines processing millions of inferences daily." },
+      { title: "Zero-Hallucination Guarantees", description: "We enforce strict deterministic evaluation frameworks and schema validations across all system outputs." },
+      { title: "Model-Agnostic Flexibility", description: "We design portable architectures compatible with OpenAI, Anthropic, Gemini, DeepSeek, and open-source models." },
+      { title: "Bank-Grade Data Privacy", description: "Zero training on your proprietary data, on-premise VPC deployment options, and strict PII token masking." }
+    ],
+    faqData: [
+      { q: "How do you prevent AI hallucinations in critical business workflows?", a: "We implement deterministic RAG pipelines with source citations, semantic output validation, and strict Pydantic schemas that reject any ungrounded assertions." },
+      { q: "Can you deploy AI models inside our private cloud or VPC?", a: "Yes. We design and deploy AI systems across AWS, Google Cloud, Azure, and private VPC clusters ensuring zero customer data leaves your security boundary." },
+      { q: "How do you optimize LLM token costs and latency at scale?", a: "We utilize semantic caching, prompt compression, smaller fine-tuned specialist models for high-frequency tasks, and intelligent model routing." }
+    ]
+  },
+
+  "ai-stack-integration": {
+    hero: {
+      badge: "AI STACK & API INTEGRATION",
+      title: <>Connect Frontier AI Models Directly to Your <span className="text-primary underline decoration-accent/60 decoration-4">Enterprise Stack</span></>,
+      description: "Eliminate manual data transfers. We engineer robust API middleware, webhook topologies, and real-time data pipelines linking LLMs to your CRM, ERP, and databases."
+    },
+    about: {
+      title: "Seamless Enterprise Data & AI Interoperability",
+      paragraphs: [
+        "AI applications are only as powerful as the operational data they can access. Isolated chatbots that cannot query inventory, update deal stages, or trigger invoicing create friction.",
+        "We build fault-tolerant middleware connecting your core enterprise systems to frontier AI models with sub-second response times and zero data leakage."
+      ],
+      pillars: [
+        "Bi-Directional CRM & ERP Ingestion Pipelines (HubSpot, Salesforce, SAP)",
+        "REST & GraphQL Microservices for High-Concurrency Model Access",
+        "Real-Time Webhook Topologies with Idempotent Deduplication",
+        "Legacy Database Wrappers with Schema Translation & Validation",
+        "Strict Token Masking & Enterprise Security Compliance",
+        "Automated Dead-Letter Queue Monitoring & Self-Healing Retries"
+      ]
+    },
+    intro: {
+      tagline: "Enterprise Integration",
+      headline: "Unite Your Tools With Scalable AI Middleware",
+      description: "Connect your enterprise applications, databases, and third-party APIs into a unified, high-speed automated pipeline."
+    },
+    subServices: [
+      { title: "REST & GraphQL AI Middleware", desc: "High-throughput API microservices linking LLM reasoning loops to internal SQL and NoSQL data stores.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-architecture.svg" },
+      { title: "CRM & ERP Automated Ingestion", desc: "Bi-directional event sync across Salesforce, HubSpot, SAP, NetSuite, and Zoho.", href: "/contact", img: "/assets/img/service/illustrations/service-crm-automation.svg" },
+      { title: "Streaming Webhook Event Pipelines", desc: "Sub-second webhook listeners with automatic retry queues and dead-letter handling.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" },
+      { title: "Legacy System Modernization", desc: "Non-invasive AI wrappers and scrapers enabling automated interaction with legacy software.", href: "/contact", img: "/assets/img/service/illustrations/service-web-development.svg" }
+    ],
+    processSteps: [
+      { title: "API & Data Schema Audit", description: "Mapping data structures, rate limits, and authentication protocols across all target endpoints.", timeline: "Week 1" },
+      { title: "Middleware Architecture", description: "Designing secure API gateways, caching policies, and schema conversion layers.", timeline: "Weeks 1-2" },
+      { title: "Integration & Load Stress Testing", description: "Simulating peak concurrency, handling network drops, and verifying zero packet loss.", timeline: "Weeks 3-4" },
+      { title: "Deployment & Production Telemetry", description: "Launching endpoints with real-time error logging and automatic incident alerts.", timeline: "Ongoing" }
+    ],
+    whyChooseUs: [
+      { title: "Sub-Second Data Latency", description: "Optimized connection pooling and Redis caching deliver instant response times." },
+      { title: "Zero Data Duplication", description: "Idempotent event keys prevent duplicate records across synchronized platforms." },
+      { title: "Enterprise Security Guardrails", description: "All API tokens, secrets, and credentials are encrypted via hardware security modules (HSM)." }
+    ],
+    faqData: [
+      { q: "Can you connect with internal on-premise databases?", a: "Yes. We build secure reverse proxy tunnels and VPC peering connections to integrate on-premise SQL servers safely with modern cloud AI runtimes." },
+      { q: "What happens if a third-party API endpoint experiences downtime?", a: "Our middleware implements circuit-breaker patterns and exponential backoff queues that preserve event payloads until downstream services recover." }
+    ]
+  },
+
+  "zapier-make-n8n": {
+    hero: {
+      badge: "AUTOMATION ENGINE ARCHITECTURE",
+      title: <>Production-Grade Make, Zapier & n8n Pipelines with <span className="text-primary underline decoration-accent/60 decoration-4">99.9% Uptime</span></>,
+      description: "Replace brittle point-and-click zaps with fault-tolerant, self-healing integration pipelines engineered with error alerts, deduplication, and atomic logging."
+    },
+    about: {
+      title: "Resilient Multi-Platform Automation Pipelines",
+      paragraphs: [
+        "When business operations run on fragile automations that fail silently, revenue and customer trust are compromised. Missing webhook payloads and broken zaps cost companies thousands of hours.",
+        "We architect robust, enterprise-grade scenarios on Make.com, Zapier, and self-hosted n8n clusters equipped with automated error fallbacks, dead-letter notification channels, and strict rate-limit protection."
+      ],
+      pillars: [
+        "Self-Hosted Enterprise n8n Cluster Architecture & Security",
+        "Modular Multi-Router Make.com (Integromat) Scenarios",
+        "Custom Python & JavaScript Code Steps in Enterprise Zapier",
+        "Idempotent Deduplication Queues with Zero Lead Leakage",
+        "Automated Error Notifications via Slack, Discord & SMS",
+        "24/7 Run Health Monitoring & Daily Execution Audits"
+      ]
+    },
+    intro: {
+      tagline: "Pipeline Engineering",
+      headline: "Zero-Failure Automation Architecture",
+      description: "Upgrade your business workflows to production-grade automation engines with built-in disaster recovery and instant failovers."
+    },
+    subServices: [
+      { title: "Self-Hosted n8n Enterprise Clusters", desc: "High-volume, private automation nodes deployed on your own infrastructure with unlimited executions.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" },
+      { title: "Advanced Make.com Architecture", desc: "Modular scenarios with nested routers, error-handling directives, and custom webhook filters.", href: "/contact", img: "/assets/img/service/illustrations/service-email-workflows.svg" },
+      { title: "Zapier Multi-Step Enterprise Workflows", desc: "Code-step automations using Python and JavaScript for complex data transformations.", href: "/contact", img: "/assets/img/service/illustrations/service-lead-generation.svg" },
+      { title: "Idempotency & Deduplication Queues", desc: "Zero duplicate leads, zero missing webhook payloads, and complete transactional audit logs.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" }
+    ],
+    processSteps: [
+      { title: "Workflow Diagnostic & Failure Audit", description: "Cataloging all current zaps and scenarios to isolate brittle triggers and silent errors.", timeline: "Days 1-5" },
+      { title: "Modular Architecture Blueprint", description: "Restructuring sprawling scenarios into clean, reusable sub-routines with dedicated error routes.", timeline: "Days 6-12" },
+      { title: "Idempotency & Alerting Implementation", description: "Adding payload hashes to prevent duplicate runs and configuring real-time failure alerts.", timeline: "Days 13-20" },
+      { title: "Production Migration & Team Training", description: "Executing zero-downtime cutover and training your team on scenario maintenance.", timeline: "Ongoing" }
+    ],
+    whyChooseUs: [
+      { title: "Zero Lost Webhook Payloads", description: "Every execution is persisted in fallback storage to ensure zero data is lost during outages." },
+      { title: "90% Cost Reduction vs Zapier Tier Limits", description: "By migrating heavy operations to self-hosted n8n, clients eliminate tens of thousands in monthly fees." },
+      { title: "Instant Incident Notifications", description: "Receive immediate Slack alerts with full diagnostic context the second a workflow encounters an unexpected error." }
+    ],
+    faqData: [
+      { q: "Why should we migrate from Zapier to self-hosted n8n?", a: "n8n offers unlimited workflow runs without per-task billing, full data sovereignty on your own servers, and native support for advanced conditional logic and loops." },
+      { q: "How do you handle rate-limit throttling from external APIs?", a: "We build rate-limiting throttle buffers and queuing stages that pace requests strictly within API tier boundaries." }
+    ]
+  },
+
+  "ai-audit-strategy": {
+    hero: {
+      badge: "AI STRATEGY & ROADMAP",
+      title: <>Identify High-ROI Bottlenecks with a <span className="text-primary underline decoration-accent/60 decoration-4">360° AI Audit</span></>,
+      description: "Discover where your business is losing hours and capital. We conduct deep technical and workflow audits to blueprint your customized 12-month AI transformation roadmap."
+    },
+    about: {
+      title: "Data-Driven AI Transformation Strategy",
+      paragraphs: [
+        "Many companies invest in disconnected AI tools that fail to deliver tangible bottom-line improvements. Without a structured architectural roadmap, technology initiatives stall in experimental purgatory.",
+        "Our comprehensive AI Audit & Strategy Roadmap analyzes your current software stack, operational workflows, and team capacity to produce a prioritized, high-ROI deployment schedule with realistic financial and operational milestones."
+      ],
+      pillars: [
+        "Comprehensive Workflow Bottleneck & Overhead Diagnostic",
+        "Financial ROI & Cost-Savings Opportunity Matrix",
+        "Security, Data Privacy & Regulatory Compliance Assessment",
+        "Vendor Neutral Model & Tool Selection Scoring",
+        "12-Month Phased Implementation & Deployment Roadmap",
+        "Internal Team AI Literacy & Enablement Framework"
+      ]
+    },
+    intro: {
+      tagline: "Strategic Advisory",
+      headline: "Blueprint Your AI Transformation",
+      description: "Cut through the hype with an actionable, engineering-backed audit that details exact ROI, timelines, and architectural requirements."
+    },
+    subServices: [
+      { title: "Workflow Bottleneck Diagnostic", desc: "Mapping every manual process, data handoff, and communication delay across departments.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-audit.svg" },
+      { title: "AI Opportunity & ROI Matrix", desc: "Prioritizing automations based on implementation effort, cost savings, and revenue velocity.", href: "/contact", img: "/assets/img/service/illustrations/service-analytics.svg" },
+      { title: "Security & Compliance Review", desc: "Evaluating data privacy risks, vendor terms, and regulatory compliance for proposed AI systems.", href: "/contact", img: "/assets/img/service/illustrations/service-ai-architecture.svg" },
+      { title: "12-Month Execution Blueprint", desc: "Detailed technical architecture, resource allocation plan, and milestone delivery roadmap.", href: "/contact", img: "/assets/img/service/illustrations/service-workflow-integrations.svg" }
+    ],
+    processSteps: [
+      { title: "Stakeholder Interviews & Discovery", description: "Interviewing department leads and auditing current tools, databases, and daily workflows.", timeline: "Week 1" },
+      { title: "Technical & Architectural Review", description: "Evaluating API capabilities, data quality, security posture, and compliance boundaries.", timeline: "Week 2" },
+      { title: "Opportunity Prioritization & ROI Modeling", description: "Calculating projected hours saved, cost reductions, and revenue uplift across 15+ potential use cases.", timeline: "Week 3" },
+      { title: "Executive Roadmap Presentation", description: "Delivering the complete strategic documentation, architectural diagrams, and phased rollout plan.", timeline: "Week 4" }
+    ],
+    whyChooseUs: [
+      { title: "Unbiased Technical Architects", description: "We are pure engineers—we don't take vendor kickbacks or push proprietary software." },
+      { title: "Guaranteed ROI Identification", description: "We identify at least 3-5 high-impact automation initiatives with proven payback periods under 90 days." },
+      { title: "Executive-Ready Deliverables", description: "Clear, boardroom-ready documentation combining financial models with technical architectures." }
+    ],
+    faqData: [
+      { q: "How long does a full enterprise AI audit take?", a: "Our standard comprehensive audit sprint takes 2 to 4 weeks depending on the size of your organization and number of integrated systems." },
+      { q: "What deliverables do we receive at the conclusion of the audit?", a: "You receive an executive summary, a prioritized ROI matrix, complete technical architecture blueprints, and a 12-month phased deployment schedule." }
+    ]
   }
 };

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { poppins, dmMono } from "@/lib/fonts";
+import { urbanist } from "@/lib/fonts";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { ConditionalNavbar, ConditionalFooter } from "@/components/layout/ConditionalNavFooter";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 export const metadata: Metadata = {
@@ -27,16 +26,25 @@ export default function RootLayout({
   return (
     <html 
       lang="en" 
-      className={`${poppins.variable} ${dmMono.variable} font-sans`}
+      className={`${urbanist.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <head>
-        <link rel="stylesheet" href="/styles.css?v=20260926_footer_theme_v7" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
       </head>
-      <body className="bg-background text-foreground antialiased min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1 flex flex-col relative">{children}</main>
-        <Footer />
+      <body className="bg-white text-[#1e3238] antialiased min-h-screen flex flex-col font-sans">
+        <ConditionalNavbar />
+        <main className="flex-1 flex flex-col relative font-sans">{children}</main>
+        <ConditionalFooter />
         <WhatsAppButton />
       </body>
     </html>

@@ -1,0 +1,1652 @@
+/* ==========================================================================
+   DIGIPLUS THEME EXACT TYPOGRAPHY & PLACEMENT RESET
+   Dev252 Digiplus Home Layout 4 Exact Match
+   ========================================================================== */
+
+:root {
+  --theme-color1: #f5a623 !important;
+  --theme-color2: #111216 !important;
+  --theme-color-dark: #0f1015 !important;
+  --theme-color-white: #ffffff !important;
+  --body-font-family: "DM Sans", sans-serif !important;
+  --heading-font-family: "Outfit", sans-serif !important;
+  --section-title-font-family: "Outfit", sans-serif !important;
+  --section-title-subtitle-font-family: "DM Sans", sans-serif !important;
+  --dp-primary: #f5a623 !important;
+  --dp-primary-hover: #e09419 !important;
+  --dp-dark: #0f1015 !important;
+  --dp-cream: #faf7f2 !important;
+  --dp-text-dark: #111216 !important;
+  --dp-text-muted: #6d6c74 !important;
+}
+
+/* 1. Global Page Font Stack - DM Sans for body, Outfit for Headings */
+body.theme-digiplus,
+.dp-page-wrapper,
+.dp-page-wrapper p,
+.dp-page-wrapper span,
+.dp-page-wrapper li,
+.dp-page-wrapper a,
+.dp-page-wrapper input,
+.dp-page-wrapper textarea,
+.dp-page-wrapper button,
+.dp-page-wrapper .tm-text-editor,
+.dp-page-wrapper .tm-text-editor * {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* 2. All Headings & Titles strictly Outfit */
+.dp-page-wrapper h1,
+.dp-page-wrapper h2,
+.dp-page-wrapper h3,
+.dp-page-wrapper h4,
+.dp-page-wrapper h5,
+.dp-page-wrapper h6,
+.dp-page-wrapper .title,
+.dp-page-wrapper .title a,
+.dp-page-wrapper .entry-title,
+.dp-page-wrapper .entry-title a,
+.dp-page-wrapper .widgettitle,
+.dp-page-wrapper .widget-title,
+.dp-page-wrapper .counter,
+.dp-page-wrapper .counter-number,
+.dp-page-wrapper .btn-title,
+.dp-page-wrapper .font-heading {
+  font-family: "Outfit", sans-serif !important;
+}
+
+/* 3. Section Titles - 48px Outfit 700 with proper 56px line height (Fix 28px clamp bug) */
+.dp-page-wrapper .tm-sc-section-title .title,
+.dp-page-wrapper .elementor-widget-tm-ele-section-title .title,
+.dp-page-wrapper .elementor-widget-tm-ele-section-title h2,
+.dp-page-wrapper .elementor-widget-tm-ele-section-title h2.title,
+.dp-page-wrapper .e-con .title:is(h2, h3) {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 56px !important;
+  letter-spacing: -0.01em !important;
+  color: #111216 !important;
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+}
+
+@media (max-width: 991px) {
+  .dp-page-wrapper .tm-sc-section-title .title,
+  .dp-page-wrapper .elementor-widget-tm-ele-section-title .title,
+  .dp-page-wrapper .elementor-widget-tm-ele-section-title h2 {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .dp-page-wrapper .tm-sc-section-title .title,
+  .dp-page-wrapper .elementor-widget-tm-ele-section-title .title,
+  .dp-page-wrapper .elementor-widget-tm-ele-section-title h2 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+}
+
+/* 4. Section Subtitles - 16px DM Sans 700 uppercase brand yellow */
+.dp-page-wrapper .subtitle,
+.dp-page-wrapper .sub-title,
+.dp-page-wrapper .tm-sc-section-title .subtitle,
+.dp-page-wrapper .tm-sc-section-title .sub-title,
+.dp-page-wrapper .elementor-widget-tm-ele-section-title .subtitle,
+.dp-page-wrapper [class*="-subtitle"] {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #f5a623 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 8px !important;
+  display: inline-block !important;
+}
+
+/* 5. Header Navigation & Side Icon Phone Callout */
+.dp-page-wrapper .menuzord-menu > li > a,
+.dp-page-wrapper .menuzord-menu > li.menu-item > a,
+.menuzord .menuzord-menu > li > a {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+  color: #000000 !important;
+}
+
+.dp-page-wrapper .menuzord-menu > li:hover > a,
+.dp-page-wrapper .menuzord-menu > li.active > a,
+.dp-page-wrapper .menuzord-menu > li.current-menu-item > a {
+  color: #f5a623 !important;
+}
+
+.dp-page-wrapper .elementor-element-527d691f .icon-box-title {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #6d6c74 !important;
+}
+
+.dp-page-wrapper .elementor-element-527d691f .content,
+.dp-page-wrapper .elementor-element-527d691f .content * {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #222429 !important;
+}
+
+/* 6. Buttons across all sections */
+.dp-page-wrapper .btn-theme-colored1,
+.dp-page-wrapper .theme-btn,
+.dp-page-wrapper .btn-style5,
+.dp-page-wrapper input[type="submit"],
+.dp-page-wrapper .btn-view-details {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  border-radius: 50px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* 7. Body text & Paragraphs */
+.dp-page-wrapper p,
+.dp-page-wrapper .tm-text-editor,
+.dp-page-wrapper .tm-text-editor p {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.85 !important;
+  color: #6d6c74 !important;
+}
+
+/* Hero description paragraph */
+.dp-page-wrapper .elementor-element-8b71a90 p {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  color: #111216 !important;
+}
+
+/* 8. Hero Huge Typography Placement */
+.dp-page-wrapper .elementor-element-8f9a91a .title {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 118px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.02em !important;
+  color: #111216 !important;
+}
+
+.dp-page-wrapper .elementor-element-f8c0cc0 .title {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 90px !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+  letter-spacing: 10px !important;
+  text-transform: uppercase !important;
+  color: #111216 !important;
+}
+
+@media (max-width: 1200px) {
+  .dp-page-wrapper .elementor-element-8f9a91a .title {
+    font-size: 80px !important;
+  }
+  .dp-page-wrapper .elementor-element-f8c0cc0 .title {
+    font-size: 60px !important;
+    letter-spacing: 6px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .dp-page-wrapper .elementor-element-8f9a91a .title {
+    font-size: 48px !important;
+  }
+  .dp-page-wrapper .elementor-element-f8c0cc0 .title {
+    font-size: 36px !important;
+    letter-spacing: 3px !important;
+  }
+}
+
+/* 9. Hero Counters: 90% and 100+ */
+.dp-page-wrapper .elementor-element-f0a65e8 .counter,
+.dp-page-wrapper .elementor-element-f952af9 .counter {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 100px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  color: #222429 !important;
+}
+
+.dp-page-wrapper .elementor-element-f0a65e8 .counter .counter-postfix,
+.dp-page-wrapper .elementor-element-f952af9 .counter .counter-postfix {
+  font-size: 50px !important;
+  font-weight: 700 !important;
+}
+
+.dp-page-wrapper .elementor-element-f0a65e8 .counter-title,
+.dp-page-wrapper .elementor-element-f952af9 .title {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #222429 !important;
+}
+
+/* 10. Services Section (Dark Container 5e17c5b) */
+.dp-page-wrapper .elementor-element-b0cfa0c .title {
+  color: #ffffff !important;
+}
+
+.dp-page-wrapper .service-block-style2 .inner-box {
+  background: #1c1424 !important;
+  border-radius: 20px !important;
+  padding: 40px 30px !important;
+  transition: all 0.3s ease !important;
+}
+
+.dp-page-wrapper .service-block-style2 .title,
+.dp-page-wrapper .service-block-style2 .title a {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  transition: color 0.3s ease !important;
+}
+
+.dp-page-wrapper .service-block-style2:hover .title a {
+  color: #f5a623 !important;
+}
+
+.dp-page-wrapper .service-block-style2 .text {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #a5a3a9 !important;
+  line-height: 1.7 !important;
+}
+
+/* 11. Why Choose Us Section */
+.dp-page-wrapper .features-block-style1 .title,
+.dp-page-wrapper .features-block-style1 .title a {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #111216 !important;
+}
+
+.dp-page-wrapper .features-block-style1 .text {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #6d6c74 !important;
+}
+
+/* 12. Funfacts Bar (Dark Container 9a26a72) */
+.dp-page-wrapper .elementor-element-9a26a72 .counter,
+.dp-page-wrapper .elementor-element-3f79eb1 .counter,
+.dp-page-wrapper .elementor-element-bc2c855 .counter,
+.dp-page-wrapper .elementor-element-ed6517b .counter {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 90px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  transition: color 0.3s ease !important;
+}
+
+.dp-page-wrapper .elementor-element-3f79eb1:hover .counter,
+.dp-page-wrapper .elementor-element-bc2c855:hover .counter,
+.dp-page-wrapper .elementor-element-ed6517b:hover .counter {
+  color: #f5a623 !important;
+}
+
+.dp-page-wrapper .elementor-element-9a26a72 .title,
+.dp-page-wrapper .elementor-element-3f79eb1 .title,
+.dp-page-wrapper .elementor-element-bc2c855 .title,
+.dp-page-wrapper .elementor-element-ed6517b .title {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+}
+
+/* 13. FAQ / Accordion Section */
+.dp-page-wrapper .tm-accordion .card-header .title {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #111216 !important;
+}
+
+.dp-page-wrapper .tm-accordion .card-header .title:not(.collapsed) {
+  color: #f5a623 !important;
+}
+
+.dp-page-wrapper .tm-accordion .card .card-body {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #6d6c74 !important;
+  line-height: 1.8 !important;
+}
+
+/* 14. Testimonials Section (Dark Container 67de5fa) */
+.dp-page-wrapper .elementor-element-125ba8d .title {
+  color: #ffffff !important;
+}
+
+.dp-page-wrapper .testimonial-block-style1 .text {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 20px !important;
+  font-style: italic !important;
+  color: #ffffff !important;
+  line-height: 1.8 !important;
+}
+
+.dp-page-wrapper .testimonial-block-style1 .name {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.dp-page-wrapper .testimonial-block-style1 .designation {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 14px !important;
+  color: #f5a623 !important;
+  font-weight: 500 !important;
+}
+
+/* 15. Portfolio Section */
+.dp-page-wrapper .isotope-layout-filter a {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #111216 !important;
+}
+
+.dp-page-wrapper .isotope-layout-filter a.active,
+.dp-page-wrapper .isotope-layout-filter a:hover {
+  color: #f5a623 !important;
+}
+
+.dp-page-wrapper .project-block-style2 .title,
+.dp-page-wrapper .project-block-style2 .title a {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #111216 !important;
+}
+
+/* 16. Working Process Section (Dark Container 27c963c) */
+.dp-page-wrapper .elementor-element-d8c4561 .title {
+  color: #ffffff !important;
+}
+
+.dp-page-wrapper .working-block-style2 .working-title,
+.dp-page-wrapper .working-block-style2 .working-title a {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.dp-page-wrapper .working-block-style2 .working-details {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #a5a3a9 !important;
+  line-height: 1.7 !important;
+}
+
+/* 17. Contact Form Section (White floating card e622742) */
+.dp-page-wrapper .elementor-element-927f372 .title {
+  font-size: 44px !important;
+  line-height: 52px !important;
+}
+
+.dp-page-wrapper .tm-contact-form-7 input[type="text"],
+.dp-page-wrapper .tm-contact-form-7 input[type="email"],
+.dp-page-wrapper .tm-contact-form-7 input[type="tel"],
+.dp-page-wrapper .tm-contact-form-7 textarea {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  background-color: #f4f5f8 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 10px !important;
+  color: #111216 !important;
+  padding: 14px 20px !important;
+}
+
+/* 18. Blog Section */
+.dp-page-wrapper .blog-skin-style-current-theme1 .entry-title,
+.dp-page-wrapper .blog-skin-style-current-theme1 .entry-title a {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #111216 !important;
+  line-height: 1.35 !important;
+}
+
+.dp-page-wrapper .blog-skin-style-current-theme1 .entry-date {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #f5a623 !important;
+}
+
+.dp-page-wrapper .blog-skin-style-current-theme1 .entry-content,
+.dp-page-wrapper .blog-skin-style-current-theme1 .entry-content p {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #6d6c74 !important;
+  line-height: 1.75 !important;
+}
+
+/* 19. Footer Section */
+.dp-page-wrapper footer .widgettitle,
+.dp-page-wrapper footer .widget-title,
+.dp-page-wrapper #elementor-footer-top .title,
+.dp-page-wrapper #elementor-footer-top h4 {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.dp-page-wrapper footer p,
+.dp-page-wrapper footer a,
+.dp-page-wrapper footer li,
+.dp-page-wrapper footer span {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #a5a3a9 !important;
+}
+
+.dp-page-wrapper footer a:hover {
+  color: #f5a623 !important;
+}
+
+/* Ensure WOW animated elements are immediately visible */
+.wow {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Dark Sections: Force crisp white headings, text, and counters */
+.elementor-element-5e17c5b h2,
+.elementor-element-5e17c5b h2 *,
+.elementor-element-5e17c5b .title,
+.elementor-element-5e17c5b .title *,
+.elementor-element-5e17c5b .subtitle,
+.elementor-element-5e17c5b .counter,
+.elementor-element-5e17c5b .counter *,
+.elementor-element-5e17c5b .animate-number,
+.elementor-element-5e17c5b .counter-postfix,
+.elementor-element-b0cfa0c h2,
+.elementor-element-b0cfa0c h2 *,
+.elementor-element-b0cfa0c .title,
+.elementor-element-b0cfa0c .title *,
+.elementor-element-3f79eb1 .counter,
+.elementor-element-3f79eb1 .counter *,
+.elementor-element-3f79eb1 .title,
+.elementor-element-bc2c855 .counter,
+.elementor-element-bc2c855 .counter *,
+.elementor-element-bc2c855 .title,
+.elementor-element-ed6517b .counter,
+.elementor-element-ed6517b .counter *,
+.elementor-element-ed6517b .title,
+.elementor-element-67de5fa h2,
+.elementor-element-67de5fa h2 *,
+.elementor-element-67de5fa .title,
+.elementor-element-67de5fa .title *,
+.elementor-element-125ba8d h2,
+.elementor-element-125ba8d h2 *,
+.elementor-element-125ba8d .title,
+.elementor-element-125ba8d .title *,
+.elementor-element-27c963c h2,
+.elementor-element-27c963c h2 *,
+.elementor-element-27c963c .title,
+.elementor-element-27c963c .title *,
+.elementor-element-d8c4561 .title,
+.elementor-element-d8c4561 .title *,
+.elementor-element-c91d154 .tm-text-editor,
+.elementor-element-c91d154 .tm-text-editor *,
+.tm-sc-testimonials .testimonial-title,
+.tm-sc-testimonials .testimonial-title *,
+.tm-sc-testimonials .name,
+.tm-sc-testimonials h4,
+.tm-sc-testimonials h4 *,
+.tm-sc-working .working-title,
+.tm-sc-working .working-title *,
+.footer-dark,
+.footer-dark h1, .footer-dark h2, .footer-dark h3, .footer-dark h4, .footer-dark h5, .footer-dark h6,
+.footer-dark p, .footer-dark span, .footer-dark a {
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   AUTHENTIC DIGIPLUS HEADER: TRANSPARENT OVERLAY + SLIDE-DOWN STICKY
+   ========================================================================== */
+
+/* ==========================================================================
+   AUTHENTIC DIGIPLUS HEADER: TRANSPARENT OVERLAY + SLIDE-DOWN STICKY
+   ========================================================================== */
+
+/* Main Header Container: 100% transparent overlay at top 0 */
+header#header,
+header#header.header,
+header#header.header-layout-type-header-default {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(34, 36, 41, 0.1) !important;
+  height: 90px !important;
+  box-sizing: border-box !important;
+}
+
+/* Primary Transparent Navigation Bar */
+#elementor-header-top,
+.elementor-header-top-transparent {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 1001 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  padding: 0 50px !important;
+  height: 90px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+#elementor-header-top .elementor-element-4a822616 {
+  width: 100% !important;
+  max-width: 1700px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+#elementor-header-top .elementor-element-c88c52e {
+  background: transparent !important;
+  background-color: transparent !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  flex-wrap: nowrap !important;
+  height: 90px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  padding: 0 !important;
+}
+
+#elementor-header-top .elementor-element-70b16697 {
+  width: auto !important;
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+#elementor-header-top .elementor-element-4945314f {
+  width: auto !important;
+  flex: 1 1 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+}
+
+#elementor-header-top .elementor-element-63cc3592 {
+  width: auto !important;
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 20px !important;
+}
+
+/* Nav Menu Items: Single line, pristine spacing, no wrapping */
+#elementor-header-top .menuzord-menu {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  float: none !important;
+}
+
+#elementor-header-top .menuzord-menu > li.menu-item {
+  display: inline-flex !important;
+  padding: 0 16px !important;
+  margin: 0 !important;
+  float: none !important;
+  white-space: nowrap !important;
+}
+
+#elementor-header-top .menuzord-menu > li.menu-item > a {
+  padding: 10px 0 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #111216 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  transition: color 0.3s ease !important;
+  white-space: nowrap !important;
+}
+
+#elementor-header-top .menuzord-menu > li.menu-item:hover > a {
+  color: #f5a623 !important;
+}
+
+/* Sticky Header: Hidden when at top (y=0), slides down smoothly on scroll */
+#elementor-header-top-sticky {
+  opacity: 0 !important;
+  z-index: -1 !important;
+  visibility: hidden !important;
+  width: 100% !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  transform: translate(0px, -140px) !important;
+  transition: all 0.4s ease-out !important;
+  background: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+  pointer-events: none !important;
+}
+
+#elementor-header-top-sticky.visible,
+body.tm-header-sticky-active #elementor-header-top-sticky {
+  opacity: 1 !important;
+  z-index: 9999 !important;
+  visibility: visible !important;
+  transform: translate(0px, 0px) !important;
+  pointer-events: auto !important;
+}
+
+@media (min-width: 1025px) {
+  #elementor-header-top-mobile {
+    display: none !important;
+  }
+}
+
+/* Zero out unnecessary wrapper containers */
+.top-sliders-container {
+  display: none !important;
+}
+.main-content,
+.main-content-section-wrapper,
+.main-content-section-wrapper > .container,
+.main-content-section-wrapper > .container > .row,
+.main-content-section-wrapper > .container > .row > div,
+.main-content-area,
+.entry-content,
+.page-content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ==========================================================================
+   AUTHENTIC DIGIPLUS HERO SECTION: SEAMLESS GRADIENT & BIG TYPOGRAPHY
+   ========================================================================== */
+
+.elementor-19 .elementor-element.elementor-element-6b7380c {
+  position: relative !important;
+  top: 0 !important;
+  padding-top: 140px !important;
+  padding-bottom: 70px !important;
+  background-image: url("/assets/digiplus/images/bg-overlay.png") !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  min-height: auto !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-6b7380c::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-image: linear-gradient(165deg, #FFB326FA 0%, #F2295B00 51%) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-6b7380c > .e-con-inner {
+  position: relative !important;
+  z-index: 2 !important;
+  padding-top: 0 !important;
+}
+
+/* Hero Typography: Gigantic, bold headline matching dev252 */
+.elementor-19 .elementor-element.elementor-element-5253a31,
+.elementor-element-5253a31 {
+  width: 75% !important;
+  max-width: 75% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.elementor-element-8f9a91a {
+  margin-bottom: 0 !important;
+}
+
+.elementor-element-8f9a91a h2,
+.elementor-element-8f9a91a .title,
+.elementor-element-8f9a91a .title-part1,
+.elementor-element-8f9a91a [class*="title"],
+.elementor-19 .elementor-element.elementor-element-8f9a91a .title,
+.elementor-19 .elementor-element.elementor-element-8f9a91a .title-part1 {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 118px !important;
+  font-weight: 800 !important;
+  line-height: 1.05 !important;
+  text-transform: uppercase !important;
+  color: #111216 !important;
+  white-space: nowrap !important;
+  letter-spacing: -0.02em !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+.elementor-element-f8c0cc0 {
+  margin-top: 5px !important;
+  margin-bottom: 30px !important;
+}
+
+.elementor-element-f8c0cc0 h2,
+.elementor-element-f8c0cc0 .title,
+.elementor-element-f8c0cc0 .title-part1,
+.elementor-element-f8c0cc0 [class*="title"],
+.elementor-19 .elementor-element.elementor-element-f8c0cc0 .title,
+.elementor-19 .elementor-element.elementor-element-f8c0cc0 .title-part1 {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 90px !important;
+  font-weight: 300 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 10px !important;
+  text-transform: uppercase !important;
+  color: #111216 !important;
+  white-space: nowrap !important;
+  display: block !important;
+  margin: 10px 0 0 0 !important;
+}
+
+@media (max-width: 1366px) {
+  .elementor-element-8f9a91a h2,
+  .elementor-element-8f9a91a .title,
+  .elementor-element-8f9a91a .title-part1,
+  .elementor-element-8f9a91a [class*="title"] {
+    font-size: 104px !important;
+  }
+  .elementor-element-f8c0cc0 h2,
+  .elementor-element-f8c0cc0 .title,
+  .elementor-element-f8c0cc0 .title-part1,
+  .elementor-element-f8c0cc0 [class*="title"] {
+    font-size: 80px !important;
+    letter-spacing: 8px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .elementor-element-8f9a91a h2,
+  .elementor-element-8f9a91a .title,
+  .elementor-element-8f9a91a .title-part1,
+  .elementor-element-8f9a91a [class*="title"] {
+    font-size: 68px !important;
+  }
+  .elementor-element-f8c0cc0 h2,
+  .elementor-element-f8c0cc0 .title,
+  .elementor-element-f8c0cc0 .title-part1,
+  .elementor-element-f8c0cc0 [class*="title"] {
+    font-size: 52px !important;
+    letter-spacing: 6px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-element-8f9a91a h2,
+  .elementor-element-8f9a91a .title,
+  .elementor-element-8f9a91a .title-part1,
+  .elementor-element-8f9a91a [class*="title"] {
+    font-size: 44px !important;
+    white-space: normal !important;
+  }
+  .elementor-element-f8c0cc0 h2,
+  .elementor-element-f8c0cc0 .title,
+  .elementor-element-f8c0cc0 .title-part1,
+  .elementor-element-f8c0cc0 [class*="title"] {
+    font-size: 32px !important;
+    letter-spacing: 4px !important;
+    white-space: normal !important;
+  }
+}
+
+/* Bottom Row of Hero: Counters and Discover More */
+.elementor-19 .elementor-element.elementor-element-471136e,
+.elementor-element-471136e {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 60px !important;
+  margin-top: 25px !important;
+  width: 100% !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-77e9a2c,
+.elementor-element-77e9a2c {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 60px !important;
+  flex-shrink: 0 !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-c957745,
+.elementor-19 .elementor-element.elementor-element-e13da95,
+.elementor-element-c957745,
+.elementor-element-e13da95 {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Big Bold Counters: 100px font */
+.elementor-element-f0a65e8 .count-box,
+.elementor-element-f0a65e8 .counter,
+.elementor-element-f0a65e8 .animate-number,
+.elementor-element-f0a65e8 .count-box *,
+.elementor-element-f952af9 .count-box,
+.elementor-element-f952af9 .counter,
+.elementor-element-f952af9 .animate-number,
+.elementor-element-f952af9 .count-box * {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 100px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  color: #111216 !important;
+  display: inline-block !important;
+  margin: 0 !important;
+}
+
+.elementor-element-f0a65e8 .counter-postfix,
+.elementor-element-f952af9 .counter-postfix {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 50px !important;
+  font-weight: 800 !important;
+  color: #111216 !important;
+  vertical-align: top !important;
+  margin-left: 6px !important;
+  display: inline-block !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-f0a65e8 .title,
+.elementor-19 .elementor-element.elementor-element-f952af9 .title {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+  color: #666c77 !important;
+  max-width: 220px !important;
+  margin-top: 10px !important;
+}
+
+/* Description and CTA Button Container */
+.elementor-19 .elementor-element.elementor-element-4d6a702 {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  max-width: 420px !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-8b71a90 p {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  color: #555a64 !important;
+  margin-bottom: 24px !important;
+}
+
+/* Pill CTA Button */
+.elementor-19 .elementor-element.elementor-element-6b7380c .btn-theme-colored1,
+.elementor-19 .elementor-element.elementor-element-6b7380c .tm-btn,
+.elementor-19 .elementor-element.elementor-element-c6fb3d4 a {
+  display: inline-flex !important;
+  align-items: center !important;
+  background-color: #f5a623 !important;
+  color: #111216 !important;
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  border-radius: 50px !important;
+  padding: 16px 20px 16px 36px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  width: fit-content !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-6b7380c .btn-theme-colored1:hover,
+.elementor-19 .elementor-element.elementor-element-c6fb3d4 a:hover {
+  background-color: #111216 !important;
+  color: #ffffff !important;
+}
+
+/* 4-Column Grid for Features & Working Process (Prevents Bootstrap col-lg-3 collapse) */
+.isotope-layout.grid-4 .isotope-layout-inner {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 25px !important;
+  width: 100% !important;
+}
+
+.isotope-layout.grid-4 .isotope-layout-inner .isotope-item,
+.isotope-layout.grid-4 .isotope-layout-inner .working-block,
+.isotope-layout.grid-4 .isotope-layout-inner .features-block-style2 {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: none !important;
+  float: none !important;
+}
+
+@media (max-width: 991px) {
+  .isotope-layout.grid-4 .isotope-layout-inner {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .isotope-layout.grid-4 .isotope-layout-inner {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Why Choose Us Feature Icons & Dashed Rings */
+.features-block-style1 .inner-box .icon-box {
+  background-color: #1c1d24 !important;
+  border-radius: 50% !important;
+  color: #f5a623 !important;
+  width: 66px !important;
+  height: 66px !important;
+  min-width: 66px !important;
+  line-height: 66px !important;
+  text-align: center !important;
+  position: relative !important;
+  margin: 11px 37px 0 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.features-block-style1 .inner-box .icon-box::before {
+  border: 1px dashed #f5a623 !important;
+  border-radius: 50% !important;
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  height: 84px !important;
+  width: 84px !important;
+  transform: translate(-50%, -50%) !important;
+  pointer-events: none !important;
+}
+
+.features-block-style1 .inner-box .icon-box i,
+.features-block-style1 .inner-box .icon-box [class^="flaticon-"] {
+  font-size: 28px !important;
+  color: #f5a623 !important;
+}
+
+/* FAQ Section Right Side Image & Floating Badge */
+.elementor-19 .elementor-element.elementor-element-8ccbce3 img {
+  -webkit-mask-image: url(/assets/digiplus/images/bfl.png);
+  mask-image: url(/assets/digiplus/images/bfl.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center right;
+  mask-position: center right;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  border-radius: 200px 200px 20px 20px;
+  max-width: 100% !important;
+  height: 570px !important;
+  object-fit: cover !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-7e11103 {
+  position: absolute !important;
+  top: 160px !important;
+  right: 106px !important;
+  z-index: 10 !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-067ade6 .tm-sc-funfact {
+  background-color: #f5a623 !important;
+  border: 15px solid #ffffff !important;
+  border-radius: 200px !important;
+  padding: 30px 45px !important;
+  text-align: center !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12) !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-067ade6 .counter {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 54px !important;
+  font-weight: 800 !important;
+  color: #111216 !important;
+  line-height: 1 !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-067ade6 .title {
+  color: #111216 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 22px !important;
+}
+
+/* Swiper Service Carousel - Horizontal Layout & Cards */
+.tm-sc-service.tm-service-carousel .swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 30px !important;
+  overflow-x: auto !important;
+  scroll-behavior: smooth !important;
+  padding-bottom: 25px !important;
+  scrollbar-width: thin !important;
+}
+
+.tm-sc-service.tm-service-carousel .swiper-slide {
+  flex: 0 0 380px !important;
+  max-width: 380px !important;
+  width: 380px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Swiper Testimonial Carousel */
+.tm-sc-testimonials.tm-testimonial-carousel .swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 30px !important;
+  overflow-x: auto !important;
+  scroll-behavior: smooth !important;
+  padding-bottom: 25px !important;
+  scrollbar-width: thin !important;
+}
+
+.tm-sc-testimonials.tm-testimonial-carousel .swiper-slide {
+  flex: 0 0 450px !important;
+  max-width: 450px !important;
+  width: 450px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Swiper Team Carousel */
+.tm-sc-team.tm-team-carousel .swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 25px !important;
+  overflow-x: auto !important;
+  scroll-behavior: smooth !important;
+  padding-bottom: 25px !important;
+  scrollbar-width: thin !important;
+}
+
+.tm-sc-team.tm-team-carousel .swiper-slide {
+  flex: 0 0 300px !important;
+  max-width: 300px !important;
+  width: 300px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Work Showcase Portfolio Grid: 3 Columns */
+.tm-sc-projects .project-block-wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 25px !important;
+  width: 100% !important;
+}
+
+@media (max-width: 991px) {
+  .tm-sc-projects .project-block-wrapper {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tm-sc-projects .project-block-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.tm-sc-projects .projects-current-theme2 {
+  position: relative !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06) !important;
+}
+
+.tm-sc-projects .projects-current-theme2 .projects-featured-img img {
+  width: 100% !important;
+  height: 440px !important;
+  object-fit: cover !important;
+  border-radius: 30px !important;
+  transition: transform 0.4s ease !important;
+}
+
+.tm-sc-projects .projects-current-theme2:hover .projects-featured-img img {
+  transform: scale(1.04) !important;
+}
+
+.tm-sc-projects .projects-current-theme2 .click-btn-wrp {
+  position: absolute !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  z-index: 10 !important;
+}
+
+.tm-sc-projects .projects-current-theme2 .btn-circle-arrow {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 50% !important;
+  background-color: #f5a623 !important;
+  color: #0e0f14 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.tm-sc-projects .projects-current-theme2 .btn-circle-arrow::after {
+  content: '↗' !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.tm-sc-projects .projects-current-theme2 .btn-circle-arrow:hover {
+  background-color: #0e0f14 !important;
+  color: #ffffff !important;
+  transform: rotate(45deg) !important;
+}
+
+/* Why Choose Us Feature Item Icons */
+.features-item .icon-box,
+.features-item i {
+  color: #f5a623 !important;
+}
+
+/* FAQ Accordion Styling */
+.tm-accordion .card {
+  border: none !important;
+  background: #f4f5f8 !important;
+  border-radius: 16px !important;
+  margin-bottom: 16px !important;
+  overflow: hidden !important;
+}
+
+.tm-accordion .card-header h5.title {
+  padding: 20px 24px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #111216 !important;
+}
+
+.tm-accordion .card-body {
+  padding: 0 24px 20px 24px !important;
+  color: #555c68 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+/* Digiplus Section Badge */
+.dp-sub-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f5a623;
+  margin-bottom: 12px;
+}
+
+.dp-sub-title::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #f5a623;
+  border-radius: 2px;
+}
+
+/* Digiplus Section Title */
+.dp-section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(34px, 4.5vw, 54px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #111216;
+}
+
+/* Digiplus Authentic Pill Button */
+.dp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background-color: #f5a623;
+  color: #0e0f14;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 8px 6px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.25);
+}
+
+.dp-btn:hover {
+  background-color: #0e0f14;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dp-btn .dp-btn-arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #0e0f14;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.dp-btn:hover .dp-btn-arrow {
+  background-color: #f5a623;
+  color: #0e0f14;
+}
+
+.dp-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  color: #111216;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dp-btn-outline:hover {
+  background-color: #0e0f14;
+  color: #ffffff;
+  border-color: #0e0f14;
+}
+
+/* Horizontal Scroll Container */
+.dp-horizontal-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.dp-horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Pulse Play Button */
+.dp-play-btn-circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #0e0f14;
+  color: #f5a623;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dp-play-btn-circle::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 50%;
+  border: 2px solid rgba(245, 166, 35, 0.6);
+  animation: dpPulse 2s infinite;
+}
+
+@keyframes dpPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.dp-play-btn-circle:hover {
+  background: #f5a623;
+  color: #0e0f14;
+  transform: scale(1.08);
+}
+
+/* Floating Back To Top Button */
+.dp-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #f5a623;
+  color: #0e0f14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  border: none;
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.45);
+  transition: all 0.3s ease;
+}
+
+.dp-back-to-top:hover {
+  transform: translateY(-4px);
+  background: #0e0f14;
+  color: #ffffff;
+}
+
+/* Card Cutout Icon for Digiplus Pillars & Services */
+.dp-card-cutout-icon {
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #1c1d24;
+  color: #f5a623;
+  border: 6px solid #faf7f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.dp-service-card:hover .dp-card-cutout-icon {
+  background-color: #f5a623;
+  color: #0e0f14;
+  transform: translateY(-2px);
+}
+
+.dp-service-card {
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  padding-top: 48px;
+}
+
+.dp-service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245, 166, 35, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Appointment Form Inputs & Map Card */
+.elementor-19 .elementor-element.elementor-element-e622742 {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  background-color: #ffffff !important;
+  border-radius: 40px !important;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08) !important;
+  padding: 50px !important;
+  gap: 40px !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-22f41a1 {
+  width: 48% !important;
+  min-height: 520px !important;
+  display: flex !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-22f41a1 .elementor-widget-container,
+.elementor-19 .elementor-element.elementor-element-22f41a1 .elementor-custom-embed,
+.elementor-19 .elementor-element.elementor-element-22f41a1 iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 520px !important;
+  border-radius: 30px !important;
+  border: none !important;
+  display: block !important;
+}
+
+.elementor-19 .elementor-element.elementor-element-24e7847 {
+  width: 48% !important;
+}
+
+@media (max-width: 991px) {
+  .elementor-19 .elementor-element.elementor-element-e622742 {
+    flex-direction: column !important;
+    padding: 30px !important;
+  }
+  .elementor-19 .elementor-element.elementor-element-22f41a1,
+  .elementor-19 .elementor-element.elementor-element-24e7847 {
+    width: 100% !important;
+  }
+}
+
+.tm-contact-form-7 .wpcf7-form .wpcf7-form-control-wrap input,
+.tm-contact-form-7 .wpcf7-form .wpcf7-form-control-wrap textarea,
+.tm-contact-form-7 .wpcf7-form .wpcf7-form-control-wrap select {
+  width: 100% !important;
+  background-color: #f6f7f9 !important;
+  border: 1px solid #e5e8ec !important;
+  border-radius: 12px !important;
+  padding: 14px 20px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 15px !important;
+  color: #111216 !important;
+  margin-bottom: 16px !important;
+  outline: none !important;
+}
+
+.tm-contact-form-7 .wpcf7-form input[type="submit"] {
+  background-color: #f5a623 !important;
+  color: #0e0f14 !important;
+  border-radius: 50px !important;
+  padding: 16px 42px !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+  text-transform: uppercase !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.tm-contact-form-7 .wpcf7-form input[type="submit"]:hover {
+  background-color: #0e0f14 !important;
+  color: #ffffff !important;
+}
+
+/* Portfolio / Work Showcase 4-Pill Horizontal Layout */
+.border-radius-around-box .project-block-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  width: 100% !important;
+  flex-wrap: nowrap !important;
+}
+
+.projects-current-theme2 {
+  width: 25% !important;
+  height: 520px !important;
+  border-radius: 180px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  transition: all 0.5s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.projects-current-theme2:hover {
+  width: 32% !important;
+}
+
+.projects-current-theme2 .projects-featured-img,
+.projects-current-theme2 .projects-featured-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 180px !important;
+  display: block !important;
+}
+
+.projects-current-theme2 .btn-view-details {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50% !important;
+  background-color: #f5a623 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: all 0.3s ease !important;
+  z-index: 10 !important;
+}
+
+.projects-current-theme2:hover .btn-view-details {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.projects-current-theme2 .btn-circle-arrow::before {
+  content: "→" !important;
+  color: #111216 !important;
+  font-size: 28px !important;
+  font-weight: 800 !important;
+}
+
+/* Blog Cards Images Display & Layout */
+.blog-item-current-style1 {
+  background-color: #fafafc !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.35s ease !important;
+}
+
+.blog-item-current-style1:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08) !important;
+}
+
+.blog-item-current-style1 .entry-header .post-thumb {
+  border-radius: 30px 30px 0 0 !important;
+  overflow: hidden !important;
+  display: block !important;
+  height: 260px !important;
+  background-color: #f0f2f5 !important;
+}
+
+.blog-item-current-style1 .entry-header .post-thumb .thumb,
+.blog-item-current-style1 .entry-header .post-thumb .post-thumb-inner,
+.blog-item-current-style1 .entry-header .post-thumb img {
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 30px 30px 0 0 !important;
+}
+
+.blog-item-current-style1 .entry-content {
+  padding: 30px !important;
+}
+
+
+
